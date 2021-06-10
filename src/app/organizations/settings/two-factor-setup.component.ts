@@ -52,6 +52,6 @@ export class TwoFactorSetupComponent extends BaseTwoFactorSetupComponent {
     }
 
     protected filterProvider(type: TwoFactorProviderType) {
-        return type !== TwoFactorProviderType.OrganizationDuo;
+        return false;
     }
 }

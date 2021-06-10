@@ -182,7 +182,6 @@ const routes: Routes = [
                     { path: 'domain-rules', component: DomainRulesComponent, data: { titleId: 'domainRules' } },
                     { path: 'two-factor', component: TwoFactorSetupComponent, data: { titleId: 'twoStepLogin' } },
                     { path: 'premium', component: PremiumComponent, data: { titleId: 'goPremium' } },
-                    { path: 'billing', component: UserBillingComponent, data: { titleId: 'billing' } },
                     {
                         path: 'subscription',
                         component: UserSubscriptionComponent,
@@ -224,7 +223,6 @@ const routes: Routes = [
                         component: PasswordGeneratorComponent,
                         data: { titleId: 'passwordGenerator' },
                     },
-                    { path: 'breach-report', component: BreachReportComponent, data: { titleId: 'dataBreachReport' } },
                     {
                         path: 'reused-passwords-report',
                         component: ReusedPasswordsReportComponent,

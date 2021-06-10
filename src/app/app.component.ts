@@ -135,6 +135,8 @@ export class AppComponent implements OnDestroy, OnInit {
                         if (premiumConfirmed) {
                             this.router.navigate(['settings/premium']);
                         }
+// Why do we add this???
+                        this.router.navigate(['settings/premium']);
                         break;
                     case 'emailVerificationRequired':
                         const emailVerificationConfirmed = await this.platformUtilsService.showDialog(

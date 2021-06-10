@@ -99,7 +99,7 @@ export class OrganizationLayoutComponent implements OnInit, OnDestroy {
     }
 
     get showBusinessPortalButton(): boolean {
-        return this.organization.useBusinessPortal && this.organization.canAccessBusinessPortal;
+        return false;
     }
 
     get toolsRoute(): string {

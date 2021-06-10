@@ -71,6 +71,7 @@ export class OrganizationPlansComponent implements OnInit {
         private toasterService: ToasterService, platformUtilsService: PlatformUtilsService,
         private cryptoService: CryptoService, private router: Router, private syncService: SyncService,
         private policyService: PolicyService, private userService: UserService) {
+// To disable showing plans when trying to create a new organization: this.selfHosted should be true
         this.selfHosted = platformUtilsService.isSelfHost();
     }
 
@@ -237,16 +238,6 @@ export class OrganizationPlansComponent implements OnInit {
             }
         }
 
-        let files: FileList = null;
-        if (this.createOrganization && this.selfHosted) {
-            const fileEl = document.getElementById('file') as HTMLInputElement;
-            files = fileEl.files;
-            if (files == null || files.length === 0) {
-                this.toasterService.popAsync('error', this.i18nService.t('errorOccurred'),
-                    this.i18nService.t('selectFile'));
-                return;
-            }
-        }
 
         try {
             const doSubmit = async () => {
@@ -263,49 +254,19 @@ export class OrganizationPlansComponent implements OnInit {
                     const collectionCt = collection.encryptedString;
                     const orgKeys = await this.cryptoService.makeKeyPair(shareKey[1]);
 
-                    if (this.selfHosted) {
-                        const fd = new FormData();
-                        fd.append('license', files[0]);
-                        fd.append('key', key);
-                        fd.append('collectionName', collectionCt);
-                        const response = await this.apiService.postOrganizationLicense(fd);
-                        orgId = response.id;
-
-                        // Org Keys live outside of the OrganizationLicense - add the keys to the org here
-                        const request = new OrganizationKeysRequest(orgKeys[0], orgKeys[1].encryptedString);
-                        await this.apiService.postOrganizationKeys(orgId, request);
-                    } else {
-                        const request = new OrganizationCreateRequest();
-                        request.key = key;
-                        request.collectionName = collectionCt;
-                        request.name = this.name;
-                        request.billingEmail = this.billingEmail;
-                        request.keys = new OrganizationKeysRequest(orgKeys[0], orgKeys[1].encryptedString);
-
-                        if (this.selectedPlan.type === PlanType.Free) {
-                            request.planType = PlanType.Free;
-                        } else {
-                            request.paymentToken = tokenResult[0];
-                            request.paymentMethodType = tokenResult[1];
-                            request.businessName = this.ownedBusiness ? this.businessName : null;
-                            request.additionalSeats = this.additionalSeats;
-                            request.additionalStorageGb = this.additionalStorage;
-                            request.premiumAccessAddon = this.selectedPlan.hasPremiumAccessOption &&
-                                this.premiumAccessAddon;
-                            request.planType = this.selectedPlan.type;
-                            request.billingAddressPostalCode = this.taxComponent.taxInfo.postalCode;
-                            request.billingAddressCountry = this.taxComponent.taxInfo.country;
-                            if (this.taxComponent.taxInfo.includeTaxId) {
-                                request.taxIdNumber = this.taxComponent.taxInfo.taxId;
-                                request.billingAddressLine1 = this.taxComponent.taxInfo.line1;
-                                request.billingAddressLine2 = this.taxComponent.taxInfo.line2;
-                                request.billingAddressCity = this.taxComponent.taxInfo.city;
-                                request.billingAddressState = this.taxComponent.taxInfo.state;
-                            }
-                        }
-                        const response = await this.apiService.postOrganization(request);
-                        orgId = response.id;
-                    }
+                    const request = new OrganizationCreateRequest();
+                    request.key = key;
+                    request.collectionName = collectionCt;
+                    request.name = this.name;
+                    request.billingEmail = this.billingEmail;
+                    request.keys = new OrganizationKeysRequest(orgKeys[0], orgKeys[1].encryptedString);
+                    request.businessName = this.ownedBusiness ? this.businessName : null;
+                    request.additionalSeats = 32767;
+                    request.additionalStorageGb = this.additionalStorage;
+                    request.premiumAccessAddon = true;
+                    request.planType = PlanType.Custom;
+                    const response = await this.apiService.postOrganization(request);
+                    orgId = response.id;
                 } else {
                     const request = new OrganizationUpgradeRequest();
                     request.businessName = this.ownedBusiness ? this.businessName : null;

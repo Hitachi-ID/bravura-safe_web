@@ -41,14 +41,6 @@
                     <a routerLink="inactive-two-factor-report" class="list-group-item" routerLinkActive="active">
                         {{'inactive2faReport' | i18n}}
                     </a>
-                    <a routerLink="breach-report" class="list-group-item d-flex" routerLinkActive="active">
-                        {{'dataBreachReport' | i18n}}
-                        <div class="ml-auto">
-                            <span class="badge badge-success" *ngIf="!canAccessPremium">
-                                {{'free' | i18n | uppercase}}
-                            </span>
-                        </div>
-                    </a>
                 </div>
             </div>
         </div>
