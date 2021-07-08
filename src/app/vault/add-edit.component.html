@@ -109,11 +109,6 @@
                                     *ngIf="!organization && !cipher.organizationId && !canAccessPremium">
                                     {{'premium' | i18n}}
                                 </a>
-                                <a href="#" appStopClick class="badge badge-primary ml-3"
-                                    (click)="upgradeOrganization()"
-                                    *ngIf="(organization && !organization.useTotp) || (!organization && !canAccessPremium && cipher.organizationId && !cipher.organizationUseTotp)">
-                                    {{'upgrade' | i18n}}
-                                </a>
                             </div>
                             <div *ngIf="cipher.login.totp && totpCode" class="d-flex align-items-center">
                                 <span class="totp-countdown mr-3 ml-2">

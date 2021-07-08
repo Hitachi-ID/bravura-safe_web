@@ -71,7 +71,6 @@ export class OrganizationPlansComponent implements OnInit {
         private toasterService: ToasterService, platformUtilsService: PlatformUtilsService,
         private cryptoService: CryptoService, private router: Router, private syncService: SyncService,
         private policyService: PolicyService, private userService: UserService) {
-// To disable showing plans when trying to create a new organization: this.selfHosted should be true
         this.selfHosted = platformUtilsService.isSelfHost();
     }
 

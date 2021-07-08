@@ -180,33 +180,11 @@ const routes: Routes = [
                     { path: 'account', component: AccountComponent, data: { titleId: 'myAccount' } },
                     { path: 'options', component: OptionsComponent, data: { titleId: 'options' } },
                     { path: 'domain-rules', component: DomainRulesComponent, data: { titleId: 'domainRules' } },
-                    { path: 'two-factor', component: TwoFactorSetupComponent, data: { titleId: 'twoStepLogin' } },
-                    { path: 'premium', component: PremiumComponent, data: { titleId: 'goPremium' } },
-                    {
-                        path: 'subscription',
-                        component: UserSubscriptionComponent,
-                        data: { titleId: 'premiumMembership' },
-                    },
                     { path: 'organizations', component: OrganizationsComponent, data: { titleId: 'organizations' } },
                     {
                         path: 'create-organization',
                         component: CreateOrganizationComponent,
                         data: { titleId: 'newOrganization' },
-                    },
-                    {
-                        path: 'emergency-access',
-                        children: [
-                            {
-                                path: '',
-                                component: EmergencyAccessComponent,
-                                data: { titleId: 'emergencyAccess' },
-                            },
-                            {
-                                path: ':id',
-                                component: EmergencyAccessViewComponent,
-                                data: { titleId: 'emergencyAccess' },
-                            },
-                        ],
                     },
                 ],
             },
@@ -217,7 +195,6 @@ const routes: Routes = [
                 children: [
                     { path: '', pathMatch: 'full', redirectTo: 'generator' },
                     { path: 'import', component: ImportComponent, data: { titleId: 'importData' } },
-                    { path: 'export', component: ExportComponent, data: { titleId: 'exportVault' } },
                     {
                         path: 'generator',
                         component: PasswordGeneratorComponent,
@@ -276,15 +253,6 @@ const routes: Routes = [
                         canActivate: [OrganizationTypeGuardService],
                         data: {
                             titleId: 'importData',
-                            permissions: [Permissions.AccessImportExport],
-                        },
-                    },
-                    {
-                        path: 'export',
-                        component: OrgExportComponent,
-                        canActivate: [OrganizationTypeGuardService],
-                        data: {
-                            titleId: 'exportVault',
                             permissions: [Permissions.AccessImportExport],
                         },
                     },
