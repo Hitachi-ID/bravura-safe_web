@@ -64,10 +64,6 @@ export class ChangePasswordComponent extends BaseChangePasswordComponent {
                 const learnMore = await this.platformUtilsService.showDialog(
                     this.i18nService.t('oldAttachmentsNeedFixDesc'), null,
                     this.i18nService.t('learnMore'), this.i18nService.t('close'), 'warning');
-                if (learnMore) {
-                    this.platformUtilsService.launchUri(
-                        'https://help.bitwarden.com/article/attachments/#fixing-old-attachments');
-                }
                 this.rotateEncKey = false;
                 return;
             }

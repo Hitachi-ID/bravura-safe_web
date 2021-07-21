@@ -27,9 +27,7 @@
             <hr>
             <p *ngIf="fingerprint">
                 {{'yourAccountsFingerprint' | i18n}}:
-                <a href="https://help.bitwarden.com/article/fingerprint-phrase/" target="_blank" rel="noopener"
-                    appA11yTitle="{{'learnMore' | i18n}}">
-                    <i class="fa fa-question-circle-o" aria-hidden="true"></i></a><br>
+                <br>
                 <code>{{fingerprint}}</code>
             </p>
         </div>

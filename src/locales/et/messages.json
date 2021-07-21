@@ -5,7 +5,7 @@
     "placeholders": {
       "app_name": {
         "content": "$1",
-        "example": "Bitwarden"
+        "example": "Bravura Pass"
       }
     }
   },
@@ -512,7 +512,7 @@
     "message": "Ei"
   },
   "loginOrCreateNewAccount": {
-    "message": "Logi oma olemasolevasse kontosse sisse või loo uus konto."
+    "message": "Logi oma olemasolevasse konto."
   },
   "createAccount": {
     "message": "Konto loomine"
@@ -812,7 +812,7 @@
     "message": "Eksporditavate andmete krüpteerimiseks kasutatakse kontol olevat krüpteerimisvõtit. Kui sa peaksid seda krüpteerimise võtit roteerima, ei saa sa järgnevalt eksporditavaid andmeid enam dekrüpteerida."
   },
   "encExportAccountWarningDesc": {
-    "message": "Iga Bitwardeni kasutaja krüpteerimisvõti on unikaalne. Eksporditud andmeid ei saa importida teise Bitwardeni kasutajakontosse."
+    "message": "Iga Bravura Passi kasutaja krüpteerimisvõti on unikaalne. Eksporditud andmeid ei saa importida teise Bravura Passi kasutajakontosse."
   },
   "exportMasterPassword": {
     "message": "Hoidlas olevate andmete eksportimiseks on vajalik ülemparooli sisestamine."
@@ -902,7 +902,7 @@
     "message": "Palun logi uuesti sisse."
   },
   "logBackInOthersToo": {
-    "message": "Palun logi uuesti sisse. Kui kasutad teisi Bitwardeni rakendusi, pead ka nendes uuesti sisse logima."
+    "message": "Palun logi uuesti sisse. Kui kasutad teisi Bravura Passi rakendusi, pead ka nendes uuesti sisse logima."
   },
   "changeMasterPassword": {
     "message": "Muuda ülemparooli"
@@ -938,7 +938,7 @@
     }
   },
   "kdfIterationsWarning": {
-    "message": "Seadistades KDF-i liiga pikaks, võib Bitwardenisse sisselogimisel (ja lahtilukustamisel) tekkida jõudlusprobleeme ja hangumisi. Seda eriti aeglasemate protsessoritega seadmetes. Soovitame kasutada pikkust ligikaudu $INCREMENT$ ja testida jõudlust kõikides oma seadmetes.",
+    "message": "Seadistades KDF-i liiga pikaks, võib Bravura Passisse sisselogimisel (ja lahtilukustamisel) tekkida jõudlusprobleeme ja hangumisi. Seda eriti aeglasemate protsessoritega seadmetes. Soovitame kasutada pikkust ligikaudu $INCREMENT$ ja testida jõudlust kõikides oma seadmetes.",
     "placeholders": {
       "increment": {
         "content": "$1",
@@ -1097,7 +1097,7 @@
     "message": "Domeeni reeglid"
   },
   "domainRulesDesc": {
-    "message": "Kui sul on erinevatel domeenidel samade andmetega kontod, võid need domeenid märkida \"võrdväärseteks\". \"Globaalsed\" domeenid on need, mille Bitwarden juba eelseadistanud on."
+    "message": "Kui sul on erinevatel domeenidel samade andmetega kontod, võid need domeenid märkida \"võrdväärseteks\". \"Globaalsed\" domeenid on need, mille Bravura Pass juba eelseadistanud on."
   },
   "globalEqDomains": {
     "message": "Globaalsed võrdväärsed domeenid"
@@ -1142,7 +1142,7 @@
     "message": "Nõua organisatsiooni liikmetelt kaheastmelist kinnitamist, seadistades taolise teenuse pakkujad organisatsiooni tasemel."
   },
   "twoStepLoginRecoveryWarning": {
-    "message": "Kaheastmelise kinnitamine aktiveerimine võib luua olukorra, kus sul on võimatu oma Bitwardeni kontosse sisse logida. Näiteks juhtudel, kui kaotad oma nutiseadme. Taastamise kood võimaldab aga kontole ligi pääseda ka juhtudel, kui kaheastmelist kinnitamist ei ole võimalik läbi viia. Sellistel juhtudel ei saa ka Bitwardeni klienditugi sinu kontole ligipääsu taastada. Selle tõttu soovitame taastekoodi välja printida ja seda turvalises kohas hoida."
+    "message": "Kaheastmelise kinnitamine aktiveerimine võib luua olukorra, kus sul on võimatu oma Bravura Passi kontosse sisse logida. Näiteks juhtudel, kui kaotad oma nutiseadme. Taastamise kood võimaldab aga kontole ligi pääseda ka juhtudel, kui kaheastmelist kinnitamist ei ole võimalik läbi viia. Sellistel juhtudel ei saa ka Bravura Passi klienditugi sinu kontole ligipääsu taastada. Selle tõttu soovitame taastekoodi välja printida ja seda turvalises kohas hoida."
   },
   "viewRecoveryCode": {
     "message": "Vaata taastamise koodi"
@@ -1243,7 +1243,7 @@
     "message": "Salvesta vorm."
   },
   "twoFactorYubikeyWarning": {
-    "message": "Mõnede platvormi piirangute tõttu ei saa YubiKeysid kõikide Bitwardeni rakendustega kasutada. Võiksid kaaluda teise kaheastmelise kinnitamise aktiveerimist olukordadeks, kus YubiKeyde kasutamine ei ole võimalik. Toetatud platvormid:"
+    "message": "Mõnede platvormi piirangute tõttu ei saa YubiKeysid kõikide Bravura Passi rakendustega kasutada. Võiksid kaaluda teise kaheastmelise kinnitamise aktiveerimist olukordadeks, kus YubiKeyde kasutamine ei ole võimalik. Toetatud platvormid:"
   },
   "twoFactorYubikeySupportUsb": {
     "message": "Veebihoidla, töölaua rakendus, CLI ja kõikide brauserite lisad seadmes, mille USB port võimaldab YubiKeyd kasutada."
@@ -1294,7 +1294,7 @@
     "message": "Blokeeri kõik Võtmed"
   },
   "twoFactorDuoDesc": {
-    "message": "Sisesta oma Bitwardeni rakenduse informatsioon Duo admini paneelist."
+    "message": "Sisesta oma Bravura Passi rakenduse informatsioon Duo admini paneelist."
   },
   "twoFactorDuoIntegrationKey": {
     "message": "Integratsiooni võti"
@@ -1345,7 +1345,7 @@
     "message": "Salvesta vorm."
   },
   "twoFactorU2fWarning": {
-    "message": "Mõnede platvormi piirangute tõttu ei saa FIDO U2F-i kõikide Bitwardeni rakendustega kasutada. Võiksid kaaluda teise kaheastmelise kinnitamise aktiveerimist olukordadeks, kus FIDO U2F-i ei saa kasutada. Toetatud platvormid:"
+    "message": "Mõnede platvormi piirangute tõttu ei saa FIDO U2F-i kõikide Bravura Passi rakendustega kasutada. Võiksid kaaluda teise kaheastmelise kinnitamise aktiveerimist olukordadeks, kus FIDO U2F-i ei saa kasutada. Toetatud platvormid:"
   },
   "twoFactorU2fSupportWeb": {
     "message": "Veebihoidla ja brauseri lisad töölaual/sülearvutis kus on U2F toetusega brauser (Chrome, Opera, Vivaldi või Firefox, kus on FIDO U2F sisse lülitatud)."
@@ -1360,13 +1360,13 @@
     "message": "Turvavõtme lugemisel tekkis tõrge. Proovi uuesti."
   },
   "twoFactorWebAuthnWarning": {
-    "message": "Due to platform limitations, WebAuthn cannot be used on all Bitwarden applications. You should enable another two-step login provider so that you can access your account when WebAuthn cannot be used. Supported platforms:"
+    "message": "Due to platform limitations, WebAuthn cannot be used on all Bravura Pass applications. You should enable another two-step login provider so that you can access your account when WebAuthn cannot be used. Supported platforms:"
   },
   "twoFactorWebAuthnSupportWeb": {
     "message": "Web vault and browser extensions on a desktop/laptop with a WebAuthn enabled browser (Chrome, Opera, Vivaldi, or Firefox with FIDO U2F enabled)."
   },
   "twoFactorRecoveryYourCode": {
-    "message": "Bitwardeni kaheastmelise logimise varukood"
+    "message": "Bravura Passi kaheastmelise logimise varukood"
   },
   "twoFactorRecoveryNoCode": {
     "message": "Sa ei ole veel ühtegi kaheastmelise kinnituse teenust sisse lülitanud. Tule siia lehele pärast kaheastmelise kinnitamise sisselülitamist tagasi. Siis näed siin ka varukoodi, millega saad hädakorral kaheastmelise kinnitamise välja lülitada."
@@ -1460,7 +1460,7 @@
     "message": "Nõrkade paroolide raport"
   },
   "weakPasswordsReportDesc": {
-    "message": "Nõrgad paroolid on häkkerite poolt vägagi lihtsasti lahtimurtavad, sest selleks kasutatakse automatiseeritud tööriistu. Bitwardeni parooli genereerija aitab sul luua paroole, mida on märksa keerulisem lahti murda."
+    "message": "Nõrgad paroolid on häkkerite poolt vägagi lihtsasti lahtimurtavad, sest selleks kasutatakse automatiseeritud tööriistu. Bravura Passi parooli genereerija aitab sul luua paroole, mida on märksa keerulisem lahti murda."
   },
   "weakPasswordsFound": {
     "message": "Avastatud on nõrgad paroolid"
@@ -1571,11 +1571,11 @@
   },
   "accountCredit": {
     "message": "Konto krediit",
-    "description": "Financial term. In the case of Bitwarden, a positive balance means that you owe money, while a negative balance means that you have a credit (Bitwarden owes you money)."
+    "description": "Financial term. In the case of Bravura Pass, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Pass owes you money)."
   },
   "accountBalance": {
     "message": "Kontojääk",
-    "description": "Financial term. In the case of Bitwarden, a positive balance means that you owe money, while a negative balance means that you have a credit (Bitwarden owes you money)."
+    "description": "Financial term. In the case of Bravura Pass, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Pass owes you money)."
   },
   "addCredit": {
     "message": "Krediidi lisamine",
@@ -1886,7 +1886,7 @@
     "placeholders": {
       "file_name": {
         "content": "$1",
-        "example": "bitwarden_premium_license.json"
+        "example": "bravura_pass_premium_license.json"
       }
     }
   },
@@ -2181,7 +2181,7 @@
     "message": "Kutsu kasutaja"
   },
   "inviteUserDesc": {
-    "message": "Kutsu organisatsiooni uusi kasutajaid, sisestades alla nende Bitwardeni konto e-posti aadressid. Kui neil ei ole veel Bitwardeni kontot, pakutakse neile võimalus see luua."
+    "message": "Kutsu organisatsiooni uusi kasutajaid, sisestades alla nende Bravura Passi konto e-posti aadressid. Kui neil ei ole veel Bravura Passi kontot, pakutakse neile võimalus see luua."
   },
   "inviteMultipleEmailDesc": {
     "message": "Saad kutsuda kuni $COUNT$ kasutajat. Eralda nende e-posti aadressid komaga.",
@@ -2652,7 +2652,7 @@
     "message": "Liitu organisatsiooniga"
   },
   "joinOrganizationDesc": {
-    "message": "Sind on kutsutud ülal oleva organisatsiooniga liituma. Liitumise kinnitamiseks pead oma Bitwardeni kontosse sisse logima. Kui sul ei ole veel kontot, saad selle luua."
+    "message": "Sind on kutsutud ülal oleva organisatsiooniga liituma. Liitumise kinnitamiseks pead oma Bravura Passi kontosse sisse logima. Kui sul ei ole veel kontot, saad selle luua."
   },
   "inviteAccepted": {
     "message": "Kutse on vastu võetud"
@@ -2694,7 +2694,7 @@
     "message": "Kui sinu konto eksisteerib, saatsime e-postile edasised juhised."
   },
   "deleteRecoverConfirmDesc": {
-    "message": "Oled avaldanud soovi oma Bitwardeni konto kustutamiseks. Selle kinnitamiseks kliki allolevale nupule."
+    "message": "Oled avaldanud soovi oma Bravura Passi konto kustutamiseks. Selle kinnitamiseks kliki allolevale nupule."
   },
   "myOrganization": {
     "message": "Minu organisatsioon"
@@ -2859,7 +2859,7 @@
     "message": "Oleme kasutusele võtnud suuremad krüpteerimise võtmed, mis pakuvad paremat turvalisust ja uusi funktsioone. Krüpteerimisvõtmete uuendamine on lihtne ja kiire. Piisab ainult ülemparooli sisestamisest. See uuendus on möödapääsmatu ja tuleb ära teha."
   },
   "updateEncryptionKeyWarning": {
-    "message": "Pärast krüpteerimisvõtme uuendamist pead kõikides seadmetes, kus Bitwardeni rakendust kasutad, oma kontosse uuesti sisse logima (nt nutitelefonis ja brauseris). Välja- ja sisselogimise (mis ühtlasi laadib ka uue krüpteerimisvõtme) nurjumine võib tingida andmete riknemise. Üritame sinu seadmetest ise välja logida, aga see võib võtta natukene aega."
+    "message": "Pärast krüpteerimisvõtme uuendamist pead kõikides seadmetes, kus Bravura Passi rakendust kasutad, oma kontosse uuesti sisse logima (nt nutitelefonis ja brauseris). Välja- ja sisselogimise (mis ühtlasi laadib ka uue krüpteerimisvõtme) nurjumine võib tingida andmete riknemise. Üritame sinu seadmetest ise välja logida, aga see võib võtta natukene aega."
   },
   "updateEncryptionKeyExportWarning": {
     "message": "Mistahes krüpteeritud, eksporditud andmed muutuvad samuti vigaseks."
@@ -2979,7 +2979,7 @@
     "message": "Nõrk ülemparool"
   },
   "weakMasterPasswordDesc": {
-    "message": "Valitud ülemparool on nõrk. Oma Bitwardeni konto paremaks kaitsmiseks peaksid kasutama tugevat parooli. Oled kindel, et soovid seda parooli ülemparoolina kasutada?"
+    "message": "Valitud ülemparool on nõrk. Oma Bravura Passi konto paremaks kaitsmiseks peaksid kasutama tugevat parooli. Oled kindel, et soovid seda parooli ülemparoolina kasutada?"
   },
   "rotateAccountEncKey": {
     "message": "Roteeri ka minu konto krüpteerimise võtit"
@@ -3023,7 +3023,7 @@
     "message": "API võti"
   },
   "apiKeyDesc": {
-    "message": "Sinu API võtit saab kasutada Bitwardeni avalikus API-s autentimiseks."
+    "message": "Sinu API võtit saab kasutada Bravura Passi avalikus API-s autentimiseks."
   },
   "apiKeyRotateDesc": {
     "message": "API roteerimine muudab eelmise võtme kehtetuks. API võtme roteerimine on kasulik olukordades, kus on oht, et aktiivne võti ei pruugi enam turvaline olla."
@@ -3032,7 +3032,7 @@
     "message": "Sinu API võtmel on täielik ligipääs organisatsioonile. Seda võtit peab salajas hoidma ja kaitsma."
   },
   "userApiKeyDesc": {
-    "message": "Sinu API võtit saab kasutada Bitwardeni CLI-s autentimiseks."
+    "message": "Sinu API võtit saab kasutada Bravura Passi CLI-s autentimiseks."
   },
   "userApiKeyWarning": {
     "message": "API võti on alternatiivne autentimise mehhanism. Seda tuleks salajas hoida."
@@ -3309,7 +3309,7 @@
     "message": "Keela kasutajatel teiste organisatsioonidega liitumine."
   },
   "singleOrgBlockCreateMessage": {
-    "message": "Sinu praeguse organisatsiooni poliitika kohaselt ei saa sa olla rohkem kui ühe organisatsiooni liige. Palun kontakteeru oma praeguse organisatsiooni administraatoritega või kasuta liitumiseks teist Bitwardeni kontot."
+    "message": "Sinu praeguse organisatsiooni poliitika kohaselt ei saa sa olla rohkem kui ühe organisatsiooni liige. Palun kontakteeru oma praeguse organisatsiooni administraatoritega või kasuta liitumiseks teist Bravura Passi kontot."
   },
   "singleOrgPolicyWarning": {
     "message": "Sisselülitamisel eemaldatakse organisatsioonist liikmed, kes on juba mõne teise organisatsiooniga liitunud. See ei puuduta liikmeid, kelle staatus on Omanik või Administraator."
@@ -3340,78 +3340,78 @@
   },
   "createSend": {
     "message": "Loo uus Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "editSend": {
     "message": "Muuda Sendi",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "createdSend": {
     "message": "Send on loodud",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "editedSend": {
     "message": "Muutis Sendi",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "deletedSend": {
     "message": "Kustutas Sendi",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "deleteSend": {
     "message": "Kustuta Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "deleteSendConfirmation": {
     "message": "Soovid tõesti selle Sendi kustutada?",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "whatTypeOfSend": {
     "message": "Mis tüüpi Send see on?",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "deletionDate": {
     "message": "Kustutamise kuupäev"
   },
   "deletionDateDesc": {
     "message": "Send kustutatakse määratud kuupäeval ja kellaajal jäädavalt.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "expirationDate": {
     "message": "Aegumiskuupäev"
   },
   "expirationDateDesc": {
     "message": "Selle valimisel ei pääse sellele Sendile enam pärast määratud kuupäeva ligi.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "maxAccessCount": {
     "message": "Maksimaalne ligipääsude arv"
   },
   "maxAccessCountDesc": {
     "message": "Selle valimisel ei saa kasutajad pärast maksimaalse ligipääsude arvu saavutamist sellele Sendile enam ligi.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "currentAccessCount": {
     "message": "Hetkeline ligipääsude arv"
   },
   "sendPasswordDesc": {
     "message": "Soovi korral nõua parooli, millega Sendile ligi pääseb.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendNotesDesc": {
     "message": "Privaatne märkus selle Sendi kohta.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "disabled": {
     "message": "Keelatud"
   },
   "sendLink": {
     "message": "Sendi link",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "copySendLink": {
     "message": "Kopeeri Sendi link",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "removePassword": {
     "message": "Eemalda parool"
@@ -3427,7 +3427,7 @@
   },
   "disableThisSend": {
     "message": "Keela see Send, et keegi ei pääseks sellele ligi.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "allSends": {
     "message": "Kõik Sendid"
@@ -3443,34 +3443,34 @@
   },
   "searchSends": {
     "message": "Otsi Sende",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendProtectedPassword": {
     "message": "See Send on parooliga kaitstud. Jätkamiseks sisesta parool allolevale väljale.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
     "message": "Sa ei tea parooli? Küsi seda konkreetse Sendi saatjalt.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendHiddenByDefault": {
     "message": "See Send on vaikeseades peidetud. Saad selle nähtavust alloleva nupu abil seadistada.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "downloadFile": {
     "message": "Laadi fail alla"
   },
   "sendAccessUnavailable": {
     "message": "Send, millele üritad ligi pääseda, ei eksisteeri või see pole enam saadaval.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "missingSendFile": {
     "message": "Sendiga seotud faili ei suudetud leida.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "noSendsInList": {
     "message": "Puuduvad Sendid, mida kuvada.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "emergencyAccess": {
     "message": "Hädaolukorra ligipääs"
@@ -3503,7 +3503,7 @@
     "message": "Hädaolukorra kontakti muutmine"
   },
   "inviteEmergencyContactDesc": {
-    "message": "Kutsu oma hädaolukorra kontaktiks usaldusväärne kasutaja, sisestades alla tema Bitwardeni konto e-posti aadress. Kui tal ei ole veel Bitwardeni kontot, pakutakse talle võimalus see luua."
+    "message": "Kutsu oma hädaolukorra kontaktiks usaldusväärne kasutaja, sisestades alla tema Bravura Passi konto e-posti aadress. Kui tal ei ole veel Bravura Passi kontot, pakutakse talle võimalus see luua."
   },
   "emergencyAccessRecoveryInitiated": {
     "message": "Hädaolukorra ligipääs on käivitatud"
@@ -3542,7 +3542,7 @@
     "message": "Kasutaja on kutsutud."
   },
   "acceptEmergencyAccess": {
-    "message": "Sind on kutsutud ülal oleva kasutaja hädaolukorra kontaktiks. Liitumise kinnitamiseks pead oma Bitwardeni kontosse sisse logima. Kui sul ei ole veel kontot, saad selle luua."
+    "message": "Sind on kutsutud ülal oleva kasutaja hädaolukorra kontaktiks. Liitumise kinnitamiseks pead oma Bravura Passi kontosse sisse logima. Kui sul ei ole veel kontot, saad selle luua."
   },
   "emergencyInviteAcceptFailed": {
     "message": "Kutse vastuvõtmine nurjus. Palu kasutajal uus kutse saata."
@@ -3630,41 +3630,41 @@
     "message": "Keela Send"
   },
   "disableSendPolicyDesc": {
-    "message": "Ära võimalda kasutajatel Bitwardeni Sende luua või muuta. Olemasolevate Sendide kustutamise võimalikkus säilib.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "message": "Ära võimalda kasutajatel Bravura Passi Sende luua või muuta. Olemasolevate Sendide kustutamise võimalikkus säilib.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "disableSendExemption": {
     "message": "Neid organisatsiooni liikmeid, kes saavad hallata organisatsiooni poliitikaid, see muudatus ei mõjuta."
   },
   "sendDisabled": {
     "message": "Send on väljalülitatud",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendDisabledWarning": {
     "message": "Ettevõtte poliitika kohaselt saad ainult olemasolevat Sendi kustutada.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendOptions": {
     "message": "Send Options",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendOptionsPolicyDesc": {
     "message": "Set options for creating and editing Sends.",
-    "description": "'Sends' is a plural noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendOptionsExemption": {
     "message": "Organization users that can manage the organization's policies are exempt from this policy's enforcement."
   },
   "disableHideEmail": {
     "message": "Do not allow users to hide their email address from recipients when creating or editing a Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendOptionsPolicyInEffect": {
     "message": "The following organization policies are currently in effect:"
   },
   "sendDisableHideEmailInEffect": {
     "message": "Users are not allowed to hide their email address from recipients when creating or editing a Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "modifiedPolicyId": {
     "message": "Muutis poliitikat $ID$.",
@@ -3734,11 +3734,11 @@
   },
   "textHiddenByDefault": {
     "message": "Sendi avamisel peida tekst automaatselt",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendNameDesc": {
     "message": "Sisesta Sendi nimi.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendTextDesc": {
     "message": "Tekst, mida soovid saata."
@@ -3751,19 +3751,19 @@
   },
   "sendLinkLabel": {
     "message": "Sendi link",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "send": {
     "message": "Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendAccessTaglineProductDesc": {
-    "message": "Bitwardeni Send võimaldab sensitiivset, ajutist informatsiooni hõlpsasti ning turvaliselt edastada.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "message": "Bravura Passi Send võimaldab sensitiivset, ajutist informatsiooni hõlpsasti ning turvaliselt edastada.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendAccessTaglineLearnMore": {
     "message": "Rohkem infot",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bitwarden Send or sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Pass Send or sign up to try it today.'"
   },
   "sendVaultCardProductDesc": {
     "message": "Jaga tekste või faile ükskõik kellega."
@@ -3790,18 +3790,18 @@
   },
   "sendAccessTaglineOr": {
     "message": "või",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send **or** sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send **or** sign up to try it today.'"
   },
   "sendAccessTaglineSignUp": {
     "message": "loo konto,",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send or **sign up** to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send or **sign up** to try it today.'"
   },
   "sendAccessTaglineTryToday": {
     "message": "et seda ise proovida.",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send or sign up to **try it today.**'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send or sign up to **try it today.**'"
   },
   "sendCreatorIdentifier": {
-    "message": "Bitwardeni kasutaja $USER_IDENTIFIER$ jagas sinuga järgnevat",
+    "message": "Bravura Passi kasutaja $USER_IDENTIFIER$ jagas sinuga järgnevat",
     "placeholders": {
       "user_identifier": {
         "content": "$1",
@@ -3810,8 +3810,8 @@
     }
   },
   "viewSendHiddenEmailWarning": {
-    "message": "The Bitwarden user who created this Send has chosen to hide their email address. You should ensure you trust the source of this link before using or downloading its content.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "message": "The Bravura Pass user who created this Send has chosen to hide their email address. You should ensure you trust the source of this link before using or downloading its content.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "expirationDateIsInvalid": {
     "message": "Valitud aegumiskuupäev ei ole õige."

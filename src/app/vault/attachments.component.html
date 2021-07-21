@@ -23,11 +23,6 @@
                                 <div class="d-flex">
                                     <a href="#" appStopClick (click)="download(a)">{{a.fileName}}</a>
                                     <div *ngIf="showFixOldAttachments(a)" class="ml-2">
-                                        <a href="https://help.bitwarden.com/article/attachments/#fixing-old-attachments"
-                                            target="_blank" rel="noopener">
-                                            <i class="fa fa-exclamation-triangle text-warning"
-                                                title="{{'attachmentFixDesc' | i18n}}" aria-hidden="true"></i>
-                                            <span class="sr-only">{{'attachmentFixDesc' | i18n}}</span></a>
                                         <button type="button" class="btn btn-outline-primary btn-sm m-0 py-0 px-2"
                                             (click)="reupload(a)" #reuploadBtn [appApiAction]="reuploadPromises[a.id]"
                                             [disabled]="reuploadBtn.loading">{{'fix' | i18n}}</button>

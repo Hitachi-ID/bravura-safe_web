@@ -105,11 +105,6 @@ const routes: Routes = [
             { path: '', pathMatch: 'full', component: LoginComponent, canActivate: [UnauthGuardService] },
             { path: '2fa', component: TwoFactorComponent, canActivate: [UnauthGuardService] },
             {
-                path: 'register', component: RegisterComponent,
-                canActivate: [UnauthGuardService],
-                data: { titleId: 'createAccount' },
-            },
-            {
                 path: 'sso', component: SsoComponent,
                 canActivate: [UnauthGuardService],
                 data: { titleId: 'enterpriseSingleSignOn' },
@@ -161,7 +156,7 @@ const routes: Routes = [
             {
                 path: 'send/:sendId/:key',
                 component: AccessComponent,
-                data: { title: 'Bitwarden Send' },
+                data: { title: 'Bravura Pass Send' },
             },
         ],
     },

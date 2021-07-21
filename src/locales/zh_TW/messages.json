@@ -5,7 +5,7 @@
     "placeholders": {
       "app_name": {
         "content": "$1",
-        "example": "Bitwarden"
+        "example": "Bravura Pass"
       }
     }
   },
@@ -812,7 +812,7 @@
     "message": "將使用您帳戶的加密金鑰來加密匯出資料，若您更新了帳戶的加密金鑰，請重新匯出，才有辦法解密匯出的檔案。"
   },
   "encExportAccountWarningDesc": {
-    "message": "每個 Bitwarden 使用者帳戶的帳戶加密金鑰都不同，因此無法將加密過的匯出檔案匯入到不同帳戶中。"
+    "message": "每個 Bravura Pass 使用者帳戶的帳戶加密金鑰都不同，因此無法將加密過的匯出檔案匯入到不同帳戶中。"
   },
   "exportMasterPassword": {
     "message": "輸入您的主密碼以匯出密碼庫資料。"
@@ -902,7 +902,7 @@
     "message": "請重新登入。"
   },
   "logBackInOthersToo": {
-    "message": "請重新登入。如果您還在使用其他 Bitwarden 應用程式，也請登出並重新登入。"
+    "message": "請重新登入。如果您還在使用其他 Bravura Pass 應用程式，也請登出並重新登入。"
   },
   "changeMasterPassword": {
     "message": "變更主密碼"
@@ -938,7 +938,7 @@
     }
   },
   "kdfIterationsWarning": {
-    "message": "若將 KDF 迭代次數設定太高會導致在 CPU 較慢的裝置上登入（與解鎖）Bitwarden 時降低效能。我們建議您以 $INCREMENT$ 的增量值遞增並在所有的裝置上測試。",
+    "message": "若將 KDF 迭代次數設定太高會導致在 CPU 較慢的裝置上登入（與解鎖）Bravura Pass 時降低效能。我們建議您以 $INCREMENT$ 的增量值遞增並在所有的裝置上測試。",
     "placeholders": {
       "increment": {
         "content": "$1",
@@ -1097,7 +1097,7 @@
     "message": "網域規則"
   },
   "domainRulesDesc": {
-    "message": "如果您在多個不同網站使用相同的登入資料，您可以把這些網站標記為「通用」。Bitwarden 會為您設定 「全域」域名。"
+    "message": "如果您在多個不同網站使用相同的登入資料，您可以把這些網站標記為「通用」。Bravura Pass 會為您設定 「全域」域名。"
   },
   "globalEqDomains": {
     "message": "全域通用域名"
@@ -1142,7 +1142,7 @@
     "message": "可透過組織級別來設定提供方式，以要求所有使用者都必須開啟兩步驟登入。"
   },
   "twoStepLoginRecoveryWarning": {
-    "message": "啟用兩步驟登入可能會將您永久鎖定在您的 Bitwarden 帳戶外。如果您無法正常使用兩步驟登入驗證應用程式（例如，您遺失了裝置），則可以使用復原代碼存取您的帳戶。 如果您失去存取帳戶的權限，Bitwarden 也無法幫助您。所以我們建議您記下或列印復原代碼，並將其妥善保管。"
+    "message": "啟用兩步驟登入可能會將您永久鎖定在您的 Bravura Pass 帳戶外。如果您無法正常使用兩步驟登入驗證應用程式（例如，您遺失了裝置），則可以使用復原代碼存取您的帳戶。 如果您失去存取帳戶的權限，Bravura Pass 也無法幫助您。所以我們建議您記下或列印復原代碼，並將其妥善保管。"
   },
   "viewRecoveryCode": {
     "message": "檢視復原代碼"
@@ -1243,7 +1243,7 @@
     "message": "儲存表單"
   },
   "twoFactorYubikeyWarning": {
-    "message": "由於平台限制，無法於所有 Bitwarden 應用程式中使用 YubiKey。請開啟另一套兩步驟登入方式，以確保可在 YubiKey 無法使用時還能存取您的帳戶。支援的平台有:"
+    "message": "由於平台限制，無法於所有 Bravura Pass 應用程式中使用 YubiKey。請開啟另一套兩步驟登入方式，以確保可在 YubiKey 無法使用時還能存取您的帳戶。支援的平台有:"
   },
   "twoFactorYubikeySupportUsb": {
     "message": "具有 USB 埠的電腦上的網頁版密碼庫、桌面應用程式、命令行介面以及所有瀏覽器擴充套件均可接受您的 YubiKey 。"
@@ -1294,7 +1294,7 @@
     "message": "停用全部鑰匙"
   },
   "twoFactorDuoDesc": {
-    "message": "請輸入來自您的 Duo 管理面板的 Bitwarden 應用程式資訊。"
+    "message": "請輸入來自您的 Duo 管理面板的 Bravura Pass 應用程式資訊。"
   },
   "twoFactorDuoIntegrationKey": {
     "message": "整合金鑰"
@@ -1345,7 +1345,7 @@
     "message": "儲存表單"
   },
   "twoFactorU2fWarning": {
-    "message": "由於平台限制，無法於所有 Bitwarden 應用程式中使用 FIDO U2F。請開啟另一套兩步驟登入方式，以確保 FIDO U2F 無法使用時還能存取您的帳戶。支援的平台有："
+    "message": "由於平台限制，無法於所有 Bravura Pass 應用程式中使用 FIDO U2F。請開啟另一套兩步驟登入方式，以確保 FIDO U2F 無法使用時還能存取您的帳戶。支援的平台有："
   },
   "twoFactorU2fSupportWeb": {
     "message": "桌面/筆記本電腦上啓用了 U2F 的瀏覽器（Chrome、Opera、Vivaldi 或啓用了 FIDO U2F 的 Firefox）中的網頁版密碼庫和瀏覽器擴充套件。"
@@ -1360,13 +1360,13 @@
     "message": "讀取安全鑰匙時發生問題。請重試。"
   },
   "twoFactorWebAuthnWarning": {
-    "message": "Due to platform limitations, WebAuthn cannot be used on all Bitwarden applications. You should enable another two-step login provider so that you can access your account when WebAuthn cannot be used. Supported platforms:"
+    "message": "Due to platform limitations, WebAuthn cannot be used on all Bravura Pass applications. You should enable another two-step login provider so that you can access your account when WebAuthn cannot be used. Supported platforms:"
   },
   "twoFactorWebAuthnSupportWeb": {
     "message": "Web vault and browser extensions on a desktop/laptop with a WebAuthn enabled browser (Chrome, Opera, Vivaldi, or Firefox with FIDO U2F enabled)."
   },
   "twoFactorRecoveryYourCode": {
-    "message": "您的 Bitwarden 兩步驟登入復原代碼"
+    "message": "您的 Bravura Pass 兩步驟登入復原代碼"
   },
   "twoFactorRecoveryNoCode": {
     "message": "您尚未啟用任何兩步驟登入方式。等你啟用兩步驟登入方式後，您可回來這裡取得復原代碼。"
@@ -1460,7 +1460,7 @@
     "message": "弱強度密碼報告"
   },
   "weakPasswordsReportDesc": {
-    "message": "弱密碼可以輕易的被駭客和用於破解密碼的自動化工具猜中。Bitwarden 密碼生成器可以幫助您創建強密碼。"
+    "message": "弱密碼可以輕易的被駭客和用於破解密碼的自動化工具猜中。Bravura Pass 密碼生成器可以幫助您創建強密碼。"
   },
   "weakPasswordsFound": {
     "message": "發現弱密碼"
@@ -1571,11 +1571,11 @@
   },
   "accountCredit": {
     "message": "帳戶信用額度",
-    "description": "Financial term. In the case of Bitwarden, a positive balance means that you owe money, while a negative balance means that you have a credit (Bitwarden owes you money)."
+    "description": "Financial term. In the case of Bravura Pass, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Pass owes you money)."
   },
   "accountBalance": {
     "message": "帳戶餘額",
-    "description": "Financial term. In the case of Bitwarden, a positive balance means that you owe money, while a negative balance means that you have a credit (Bitwarden owes you money)."
+    "description": "Financial term. In the case of Bravura Pass, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Pass owes you money)."
   },
   "addCredit": {
     "message": "增加信用額度",
@@ -1886,7 +1886,7 @@
     "placeholders": {
       "file_name": {
         "content": "$1",
-        "example": "bitwarden_premium_license.json"
+        "example": "bravura_pass_premium_license.json"
       }
     }
   },
@@ -2181,7 +2181,7 @@
     "message": "邀請使用者"
   },
   "inviteUserDesc": {
-    "message": "在下面輸入 Bitwarden 賬戶的電子郵件位址，以邀請新使用者加入您的組織。如果他們沒有 Bitwarden 賬戶，將提示他們創建一個。"
+    "message": "在下面輸入 Bravura Pass 賬戶的電子郵件位址，以邀請新使用者加入您的組織。如果他們沒有 Bravura Pass 賬戶，將提示他們創建一個。"
   },
   "inviteMultipleEmailDesc": {
     "message": "透過使用逗號分隔的電子郵件位址，您可以一次性邀請 $COUNT$ 位使用者。",
@@ -2652,7 +2652,7 @@
     "message": "加入組織"
   },
   "joinOrganizationDesc": {
-    "message": "您已被邀請加入上面的組織。要接受邀請，您需要登錄或創建新的 Bitwarden 帳戶。"
+    "message": "您已被邀請加入上面的組織。要接受邀請，您需要登錄或創建新的 Bravura Pass 帳戶。"
   },
   "inviteAccepted": {
     "message": "邀請已接受"
@@ -2694,7 +2694,7 @@
     "message": "如果您的帳號存在，我們已傳送一封包含進一步指示的電子郵件。"
   },
   "deleteRecoverConfirmDesc": {
-    "message": "您已請求刪除您的 Bitwarden 帳戶。點擊下方的按鈕確認。"
+    "message": "您已請求刪除您的 Bravura Pass 帳戶。點擊下方的按鈕確認。"
   },
   "myOrganization": {
     "message": "我的組織"
@@ -2859,7 +2859,7 @@
     "message": "我們已經採用更強大的加密金鑰，此金鑰提供了更強的安全性及更新的功能。更新您的加密金鑰非常簡單快速，僅需要輸入您的主密碼即可。此次更新最終將強制執行。"
   },
   "updateEncryptionKeyWarning": {
-    "message": "更新加密金鑰後，您需要登出並重新登入到當前使用的所有 Bitwarden 應用程式（如移動應用程式或瀏覽器擴充套件）。登出和重新登入（這會下載新的加密金鑰）失敗可能會導致數據損壞。我們將嘗試自動登出，但可能會有延遲。"
+    "message": "更新加密金鑰後，您需要登出並重新登入到當前使用的所有 Bravura Pass 應用程式（如移動應用程式或瀏覽器擴充套件）。登出和重新登入（這會下載新的加密金鑰）失敗可能會導致數據損壞。我們將嘗試自動登出，但可能會有延遲。"
   },
   "updateEncryptionKeyExportWarning": {
     "message": "您儲存的任何加密匯出也將變為無效。"
@@ -2979,7 +2979,7 @@
     "message": "主密碼強度太弱"
   },
   "weakMasterPasswordDesc": {
-    "message": "您設定的主密碼很脆弱。您應該使用高強度的密碼（或密碼短語）來正確保護您的 bitwarden 帳戶。仍要使用這組主密碼嗎？"
+    "message": "您設定的主密碼很脆弱。您應該使用高強度的密碼（或密碼短語）來正確保護您的 Bravura Pass 帳戶。仍要使用這組主密碼嗎？"
   },
   "rotateAccountEncKey": {
     "message": "同時輪換帳戶的加密金鑰"
@@ -3023,7 +3023,7 @@
     "message": "API 金鑰"
   },
   "apiKeyDesc": {
-    "message": "您的 API 金鑰可于認證 Bitwarden 公用 API。"
+    "message": "您的 API 金鑰可于認證 Bravura Pass 公用 API。"
   },
   "apiKeyRotateDesc": {
     "message": "輪換 API 金鑰將使前一份金鑰失效。若您認為當前的金鑰不再安全，您可以輪換您的 API 金鑰。"
@@ -3032,7 +3032,7 @@
     "message": "你的 API 金鑰擁有對組織的完整的存取權限，應要保密。"
   },
   "userApiKeyDesc": {
-    "message": "您的 API 金鑰可用於在 Bitwarden CLI 當中進行認證。"
+    "message": "您的 API 金鑰可用於在 Bravura Pass CLI 當中進行認證。"
   },
   "userApiKeyWarning": {
     "message": "您的 API 金鑰是另一種身分認證機制，請嚴格保密。"
@@ -3309,7 +3309,7 @@
     "message": "限制使用者加入任何其他組織。"
   },
   "singleOrgBlockCreateMessage": {
-    "message": "當前組織的原則不允許您加入多個組織。請聯絡您的組織管理員或從其他 Bitwarden 帳戶注册。"
+    "message": "當前組織的原則不允許您加入多個組織。請聯絡您的組織管理員或從其他 Bravura Pass 帳戶注册。"
   },
   "singleOrgPolicyWarning": {
     "message": "不是擁有者或管理員並且已經是其他組織的成員的組織成員將從您的組織中移除。"
@@ -3340,78 +3340,78 @@
   },
   "createSend": {
     "message": "創建新的 Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "editSend": {
     "message": "編輯 Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "createdSend": {
     "message": "Send 已創建",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "editedSend": {
     "message": "Send 已編輯",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "deletedSend": {
     "message": "Send 已刪除",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "deleteSend": {
     "message": "刪除 Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "deleteSendConfirmation": {
     "message": "您確定要刪除此 Send 嗎？",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "whatTypeOfSend": {
     "message": "這是什麽類型的 Send？",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "deletionDate": {
     "message": "刪除日期"
   },
   "deletionDateDesc": {
     "message": "此 Send 將在指定的日期和時間被永久删除。",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "expirationDate": {
     "message": "逾期日期"
   },
   "expirationDateDesc": {
     "message": "如果設定了，對此 Send 的存取將在指定的日期和時間后逾期。",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "maxAccessCount": {
     "message": "最大存取次數"
   },
   "maxAccessCountDesc": {
     "message": "如果設定了，達到最大存取次數后，使用者將無法存取此 Send。",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "currentAccessCount": {
     "message": "目前存取次數"
   },
   "sendPasswordDesc": {
     "message": "可選。使用者需提供密碼才能存取此 Send。",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendNotesDesc": {
     "message": "關於此 Send 的私人注釋。",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "disabled": {
     "message": "已停用"
   },
   "sendLink": {
     "message": "Send 連結",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "copySendLink": {
     "message": "複製 Send 連結",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "removePassword": {
     "message": "移除密碼"
@@ -3427,7 +3427,7 @@
   },
   "disableThisSend": {
     "message": "停用此 Send 以阻止任何人存取它。",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "allSends": {
     "message": "所有 Send"
@@ -3443,34 +3443,34 @@
   },
   "searchSends": {
     "message": "搜尋 Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendProtectedPassword": {
     "message": "此 Send 受到密碼保護，請在下方輸入密碼以繼續。",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
     "message": "不知道密碼？請向此 Send 的發起人索取密碼。",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendHiddenByDefault": {
     "message": "此 Send 預設為隱藏。您可使用下方的按鈕切換其可見性。",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "downloadFile": {
     "message": "下載檔案"
   },
   "sendAccessUnavailable": {
     "message": "您嘗試存取的 Send 不存在或不再可用。",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "missingSendFile": {
     "message": "未找到與此 Send 相關聯的檔案。",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "noSendsInList": {
     "message": "沒有可顯示的 Send。",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "emergencyAccess": {
     "message": "緊急存取"
@@ -3503,7 +3503,7 @@
     "message": "編輯緊急聯絡人"
   },
   "inviteEmergencyContactDesc": {
-    "message": "透過在下麵輸入 Bitwarden 帳戶的電子郵件地址，以邀請新的緊急聯絡人。如果他們還沒有 Bitwarden 帳戶，系統將提示他們創建一個新的帳戶。"
+    "message": "透過在下麵輸入 Bravura Pass 帳戶的電子郵件地址，以邀請新的緊急聯絡人。如果他們還沒有 Bravura Pass 帳戶，系統將提示他們創建一個新的帳戶。"
   },
   "emergencyAccessRecoveryInitiated": {
     "message": "已發起緊急存取"
@@ -3542,7 +3542,7 @@
     "message": "已邀請使用者。"
   },
   "acceptEmergencyAccess": {
-    "message": "您已被邀請成為上述使用者的緊急聯絡人。要接受邀請，您需要登入或創建新的 Bitwarden 帳戶。"
+    "message": "您已被邀請成為上述使用者的緊急聯絡人。要接受邀請，您需要登入或創建新的 Bravura Pass 帳戶。"
   },
   "emergencyInviteAcceptFailed": {
     "message": "無法接受邀請。請使用者傳送一個新的邀請。"
@@ -3630,41 +3630,41 @@
     "message": "停用 Send"
   },
   "disableSendPolicyDesc": {
-    "message": "不允許使用者創建或編輯 Bitwarden Send。但允許刪除現有的 Send。",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "message": "不允許使用者創建或編輯 Bravura Pass Send。但允許刪除現有的 Send。",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "disableSendExemption": {
     "message": "可以管理組織原則的組織使用者豁免此原則的執行。"
   },
   "sendDisabled": {
     "message": "Send 已停用",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendDisabledWarning": {
     "message": "由於某個企業原則，您只能刪除已有的 Send。",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendOptions": {
     "message": "Send Options",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendOptionsPolicyDesc": {
     "message": "Set options for creating and editing Sends.",
-    "description": "'Sends' is a plural noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendOptionsExemption": {
     "message": "Organization users that can manage the organization's policies are exempt from this policy's enforcement."
   },
   "disableHideEmail": {
     "message": "Do not allow users to hide their email address from recipients when creating or editing a Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendOptionsPolicyInEffect": {
     "message": "The following organization policies are currently in effect:"
   },
   "sendDisableHideEmailInEffect": {
     "message": "Users are not allowed to hide their email address from recipients when creating or editing a Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "modifiedPolicyId": {
     "message": "原則 $ID$ 已修改。",
@@ -3734,11 +3734,11 @@
   },
   "textHiddenByDefault": {
     "message": "存取此 Send 時，預設將隱藏文本",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendNameDesc": {
     "message": "用於描述此 Send 的友好名稱。",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendTextDesc": {
     "message": "您想要傳送的文字。"
@@ -3751,19 +3751,19 @@
   },
   "sendLinkLabel": {
     "message": "Send 連結",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "send": {
     "message": "Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendAccessTaglineProductDesc": {
-    "message": "Bitwarden Send可以輕鬆安全地向其他人傳輸敏感的臨時資訊。",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "message": "Bravura Pass Send可以輕鬆安全地向其他人傳輸敏感的臨時資訊。",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendAccessTaglineLearnMore": {
     "message": "了解更多",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bitwarden Send or sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Pass Send or sign up to try it today.'"
   },
   "sendVaultCardProductDesc": {
     "message": "與任何人直接共享文字或檔案。"
@@ -3790,18 +3790,18 @@
   },
   "sendAccessTaglineOr": {
     "message": "或",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send **or** sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send **or** sign up to try it today.'"
   },
   "sendAccessTaglineSignUp": {
     "message": "註冊",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send or **sign up** to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send or **sign up** to try it today.'"
   },
   "sendAccessTaglineTryToday": {
     "message": "今天就體驗。",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send or sign up to **try it today.**'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send or sign up to **try it today.**'"
   },
   "sendCreatorIdentifier": {
-    "message": "Bitwarden 使用者 $USER_IDENTIFIER$ 為您共享了如下資料",
+    "message": "Bravura Pass 使用者 $USER_IDENTIFIER$ 為您共享了如下資料",
     "placeholders": {
       "user_identifier": {
         "content": "$1",
@@ -3810,8 +3810,8 @@
     }
   },
   "viewSendHiddenEmailWarning": {
-    "message": "The Bitwarden user who created this Send has chosen to hide their email address. You should ensure you trust the source of this link before using or downloading its content.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "message": "The Bravura Pass user who created this Send has chosen to hide their email address. You should ensure you trust the source of this link before using or downloading its content.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "expirationDateIsInvalid": {
     "message": "指定的逾期日期無效。"

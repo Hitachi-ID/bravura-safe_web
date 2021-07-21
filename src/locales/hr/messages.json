@@ -5,7 +5,7 @@
     "placeholders": {
       "app_name": {
         "content": "$1",
-        "example": "Bitwarden"
+        "example": "Bravura Pass"
       }
     }
   },
@@ -512,7 +512,7 @@
     "message": "Ne"
   },
   "loginOrCreateNewAccount": {
-    "message": "Prijavi se ili stvori novi račun za pristup svojem sigurnom trezoru."
+    "message": "Prijavi se da biste pristup svojem sigurnom trezoru."
   },
   "createAccount": {
     "message": "Stvori račun"
@@ -812,7 +812,7 @@
     "message": "Ovaj izvoz šifrira tvoje podatke koristeći ključ za šifriranje. Promijeniš li naknadno ključ za šifriranje, potrebno je ponovno napraviti izvoz jer nećeš moći dešifrirati ovu izvezenu datoteku."
   },
   "encExportAccountWarningDesc": {
-    "message": "Ključ za šifriranje jedinstven je za svakog Bitwarden korisnika, kako bi se šifrirani izvoz mogao uvesti u drugi korisnički račun."
+    "message": "Ključ za šifriranje jedinstven je za svakog Bravura Pass korisnika, kako bi se šifrirani izvoz mogao uvesti u drugi korisnički račun."
   },
   "exportMasterPassword": {
     "message": "Unesi glavnu lozinku za izvoz podataka iz trezora."
@@ -902,7 +902,7 @@
     "message": "Molimo, ponovno se prijavi."
   },
   "logBackInOthersToo": {
-    "message": "Molimo, ponovno se prijavi. Ako koristiš druge aplikacije Bitwarden i u njima napravi odjavu/prijavu."
+    "message": "Molimo, ponovno se prijavi. Ako koristiš druge aplikacije Bravura Pass i u njima napravi odjavu/prijavu."
   },
   "changeMasterPassword": {
     "message": "Promjeni glavnu lozinku"
@@ -938,7 +938,7 @@
     }
   },
   "kdfIterationsWarning": {
-    "message": "Postavljanje previsoke KDF iteracije može rezultirati slabijom izvedbom prilikom otključavanja Bitwardena na uređajima sa sporijim CPU-om. Predlažemo da vrijednost povećavaš za $INCREMENT$ i isprobaš na svim svojim uređajima.",
+    "message": "Postavljanje previsoke KDF iteracije može rezultirati slabijom izvedbom prilikom otključavanja Bravura Passa na uređajima sa sporijim CPU-om. Predlažemo da vrijednost povećavaš za $INCREMENT$ i isprobaš na svim svojim uređajima.",
     "placeholders": {
       "increment": {
         "content": "$1",
@@ -1097,7 +1097,7 @@
     "message": "Pravila domene"
   },
   "domainRulesDesc": {
-    "message": "Ako imaš iste pristupne podatke na više web domena, možeš web mjesto označiti kao „ekvivalentno”. Globalne domene su one koje je za tebe već stvorio Bitwarden."
+    "message": "Ako imaš iste pristupne podatke na više web domena, možeš web mjesto označiti kao „ekvivalentno”. Globalne domene su one koje je za tebe već stvorio Bravura Pass."
   },
   "globalEqDomains": {
     "message": "Globalne ekvivalentne domene"
@@ -1142,7 +1142,7 @@
     "message": "Zahtjevaj prijavu u dva koraka za svoje korisnike u organiziaciji konfigurirajući pružatelje usluga na razini organizacije."
   },
   "twoStepLoginRecoveryWarning": {
-    "message": "Uklkjučivanje prijave u dva koraka ti može trajno onemogućiti pristup tvojem Bitwarden računu. Kôd za oporavak ti omogućuje pristup računu u slučaju da više ne možeš koristiti redovnog pružatelja prijave u dva koraka (npr. izgubiš svoj uređaj). Bitwarden podrška ti neće moći pomoći ako izgubiš pristup svojem računu. Savjetujemo da zapišeš ili ispišeš kôd za oporavak i spremiš ga na sigurno mjesto."
+    "message": "Uklkjučivanje prijave u dva koraka ti može trajno onemogućiti pristup tvojem Bravura Pass računu. Kôd za oporavak ti omogućuje pristup računu u slučaju da više ne možeš koristiti redovnog pružatelja prijave u dva koraka (npr. izgubiš svoj uređaj). Bravura Pass podrška ti neće moći pomoći ako izgubiš pristup svojem računu. Savjetujemo da zapišeš ili ispišeš kôd za oporavak i spremiš ga na sigurno mjesto."
   },
   "viewRecoveryCode": {
     "message": "Kôd za oporavak"
@@ -1243,7 +1243,7 @@
     "message": "Spremite obrazac."
   },
   "twoFactorYubikeyWarning": {
-    "message": "Zbog platformskih ograničenja, YubiKey nije moguće koristiti s Bitwarden aplikacijama na svim platformama. Za pristup računu kada nije moguće koristiti YubiKey, trebalo bi uključiti drugog pružatelja prijave u dva koraka. Platforme na kojima je YubiKey podržan:"
+    "message": "Zbog platformskih ograničenja, YubiKey nije moguće koristiti s Bravura Pass aplikacijama na svim platformama. Za pristup računu kada nije moguće koristiti YubiKey, trebalo bi uključiti drugog pružatelja prijave u dva koraka. Platforme na kojima je YubiKey podržan:"
   },
   "twoFactorYubikeySupportUsb": {
     "message": "Web trezor, desktop aplikacija, CLI i sva proširenja preglednika na uređajima s USB priključkom na koji se može spojiti tvoj YubiKey."
@@ -1294,7 +1294,7 @@
     "message": "Onemogući sve ključeve"
   },
   "twoFactorDuoDesc": {
-    "message": "Unesi podatke o Bitwarden aplikaciji iz svoje Duo Admin ploče."
+    "message": "Unesi podatke o Bravura Pass aplikaciji iz svoje Duo Admin ploče."
   },
   "twoFactorDuoIntegrationKey": {
     "message": "Integracijski ključ"
@@ -1345,7 +1345,7 @@
     "message": "Spremi obrazac."
   },
   "twoFactorU2fWarning": {
-    "message": "Zbog platformskih ograničenja, FIDO U2F nije moguće koristiti s Bitwarden aplikacijama na svim platformama. Za pristup računu kada nije moguće koristiti FIDO U2F trebalo bi uključiti drugog pružatelja prijave u dva koraka. Platforme na kojima je FIDO U2F podržan:"
+    "message": "Zbog platformskih ograničenja, FIDO U2F nije moguće koristiti s Bravura Pass aplikacijama na svim platformama. Za pristup računu kada nije moguće koristiti FIDO U2F trebalo bi uključiti drugog pružatelja prijave u dva koraka. Platforme na kojima je FIDO U2F podržan:"
   },
   "twoFactorU2fSupportWeb": {
     "message": "Web trezor i proširenja preglednika na stolnim/prijenosnim računalima s U2F omogućenim preglednikom (npr. Chrome, Opera, Vivaldi ili Firefox s omogućenim FIDO U2F)."
@@ -1360,13 +1360,13 @@
     "message": "Došlo je do pogreške kod očitavanja sigurnosnog ključa. Pokušaj ponovno."
   },
   "twoFactorWebAuthnWarning": {
-    "message": "Due to platform limitations, WebAuthn cannot be used on all Bitwarden applications. You should enable another two-step login provider so that you can access your account when WebAuthn cannot be used. Supported platforms:"
+    "message": "Due to platform limitations, WebAuthn cannot be used on all Bravura Pass applications. You should enable another two-step login provider so that you can access your account when WebAuthn cannot be used. Supported platforms:"
   },
   "twoFactorWebAuthnSupportWeb": {
     "message": "Web vault and browser extensions on a desktop/laptop with a WebAuthn enabled browser (Chrome, Opera, Vivaldi, or Firefox with FIDO U2F enabled)."
   },
   "twoFactorRecoveryYourCode": {
-    "message": "Tvoj kôd za oporavak Bitwarden prijave u dva koraka"
+    "message": "Tvoj kôd za oporavak Bravura Pass prijave u dva koraka"
   },
   "twoFactorRecoveryNoCode": {
     "message": "Još nije omogućen niti jedan pružatelj prijave u dva koraka. Nakon omogućavanja prijave u dva koraka, ovdje ćeš pronaći svoj kôd za oporavak."
@@ -1460,7 +1460,7 @@
     "message": "Izvještaj o slabim lozinkama"
   },
   "weakPasswordsReportDesc": {
-    "message": "Slabe lozinke relativno jednostanvo mogu pogoditi hakeri i automatski alati koji se koriste za probijanje lozniki. Bitwardenov generator lozinki ti može pomoći stvoriti jake lozinke."
+    "message": "Slabe lozinke relativno jednostanvo mogu pogoditi hakeri i automatski alati koji se koriste za probijanje lozniki. Bravura Passov generator lozinki ti može pomoći stvoriti jake lozinke."
   },
   "weakPasswordsFound": {
     "message": "Pronađene slabe lozinke"
@@ -1571,11 +1571,11 @@
   },
   "accountCredit": {
     "message": "Sredstva računa",
-    "description": "Financial term. In the case of Bitwarden, a positive balance means that you owe money, while a negative balance means that you have a credit (Bitwarden owes you money)."
+    "description": "Financial term. In the case of Bravura Pass, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Pass owes you money)."
   },
   "accountBalance": {
     "message": "Stanje računa",
-    "description": "Financial term. In the case of Bitwarden, a positive balance means that you owe money, while a negative balance means that you have a credit (Bitwarden owes you money)."
+    "description": "Financial term. In the case of Bravura Pass, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Pass owes you money)."
   },
   "addCredit": {
     "message": "Dodaj sredstva",
@@ -1886,7 +1886,7 @@
     "placeholders": {
       "file_name": {
         "content": "$1",
-        "example": "bitwarden_premium_license.json"
+        "example": "bravura_pass_premium_license.json"
       }
     }
   },
@@ -2181,7 +2181,7 @@
     "message": "Pozovi korisnika"
   },
   "inviteUserDesc": {
-    "message": "Pozovi novog korisnika u svoju organizaciju unosom njihove Bitwarden adrese e-pošte. Ako još nemaju Bitwarden račun, biti će pozvani da stvore novi."
+    "message": "Pozovi novog korisnika u svoju organizaciju unosom njihove Bravura Pass adrese e-pošte. Ako još nemaju Bravura Pass račun, biti će pozvani da stvore novi."
   },
   "inviteMultipleEmailDesc": {
     "message": "Možeš pozvati do $COUNT$ korisnika odjednom. Odvoji adrese e-pošte zarezima.",
@@ -2652,7 +2652,7 @@
     "message": "Pridruži se organizaciji"
   },
   "joinOrganizationDesc": {
-    "message": "Primljen je poziv za pridruživanje gore navedenoj organizaciji. Za prihvaćanje poziva potrebno je prijaviti se na svoj postojeći Bitwarden račun ili stvoriti novi."
+    "message": "Primljen je poziv za pridruživanje gore navedenoj organizaciji. Za prihvaćanje poziva potrebno je prijaviti se na svoj postojeći Bravura Pass račun ili stvoriti novi."
   },
   "inviteAccepted": {
     "message": "Poziv prihvaćen"
@@ -2694,7 +2694,7 @@
     "message": "Ako tvoj račun postoji, poslali smo ti e-poštu s daljnjim uputama."
   },
   "deleteRecoverConfirmDesc": {
-    "message": "Zatraženo je brisanje tvojeg Bitwarden računa. Klikni u nastavku za potvrdu brisanja računa."
+    "message": "Zatraženo je brisanje tvojeg Bravura Pass računa. Klikni u nastavku za potvrdu brisanja računa."
   },
   "myOrganization": {
     "message": "Moja organizacija"
@@ -2859,7 +2859,7 @@
     "message": "Prešli smo na korištenje duljih ključeva za šifriranje koji pružaju bolju zaštitu kao i pristup novim uslugama. Ažuriranje ključa za šifriranje je brzo i jednostavno. Samo unesi svoju glavnu lozinku. Ova nadogradnja će uskoro postati obavezna."
   },
   "updateEncryptionKeyWarning": {
-    "message": "Nakon ažuriranja svojeg ključa za šifriranje, obavezno se trebaš odjaviti i ponovno prijaviti u sve Bitwarden aplikacije koje trenutno koristiš (npr. mobilna aplikacija, proširenje preglednika, ...). Ako se ne odjaviš i ponovno prijaviš (čime se preuzima tvoj novi ključ za šifriranje) može doći do oštećenja spremljenih podataka. Pokušati ćemo te automatski odjaviti, no, to bi možda moglo potrajati."
+    "message": "Nakon ažuriranja svojeg ključa za šifriranje, obavezno se trebaš odjaviti i ponovno prijaviti u sve Bravura Pass aplikacije koje trenutno koristiš (npr. mobilna aplikacija, proširenje preglednika, ...). Ako se ne odjaviš i ponovno prijaviš (čime se preuzima tvoj novi ključ za šifriranje) može doći do oštećenja spremljenih podataka. Pokušati ćemo te automatski odjaviti, no, to bi možda moglo potrajati."
   },
   "updateEncryptionKeyExportWarning": {
     "message": "Svi spremljeni šifrirani izvozi također će postati nevažeći."
@@ -2979,7 +2979,7 @@
     "message": "Slaba glavna lozinka"
   },
   "weakMasterPasswordDesc": {
-    "message": "Odabrana glavna lozinka je slaba. Trebaš koristiti jaču glavnu lozinku (ili frazu) kako bi tvoj Bitwarden račun bio pravilno zaštićen. Sigurno želiš koristiti ovakvu, slabu glavnu lozinku?"
+    "message": "Odabrana glavna lozinka je slaba. Trebaš koristiti jaču glavnu lozinku (ili frazu) kako bi tvoj Bravura Pass račun bio pravilno zaštićen. Sigurno želiš koristiti ovakvu, slabu glavnu lozinku?"
   },
   "rotateAccountEncKey": {
     "message": "Dodatno rotiraj ključ za šifriranje mojeg računa"
@@ -3023,7 +3023,7 @@
     "message": "API ključ"
   },
   "apiKeyDesc": {
-    "message": "API ključ se može koristiti za autentifikaciju prema javnom Bitwarden API-ju."
+    "message": "API ključ se može koristiti za autentifikaciju prema javnom Bravura Pass API-ju."
   },
   "apiKeyRotateDesc": {
     "message": "Rotacija API ključa poništiti će prethodno važeći ključ. Možeš napraviti rotaciju svog API ključa ako misliš da treutni ključ više nije siguran za upotrebu."
@@ -3032,7 +3032,7 @@
     "message": "API ključ ima potpuni pristup organizaciji. Treba ga držati tajnim."
   },
   "userApiKeyDesc": {
-    "message": "API ključ se može koristiti za autentifikaciju u Bitwarden CLI-ju."
+    "message": "API ključ se može koristiti za autentifikaciju u Bravura Pass CLI-ju."
   },
   "userApiKeyWarning": {
     "message": "API ključ je zamjenska mogućnost autentifikacije. Treba ga držati tajnim."
@@ -3309,7 +3309,7 @@
     "message": "Onemogući korisnicima da se pridruže drugim organizacijama."
   },
   "singleOrgBlockCreateMessage": {
-    "message": "Tvoja organizacija ima pravilo koje ti ne dozvoljava pridruživanje drugim organizacijama. Molimo kontaktiraj administratora svoje organizacije ili se prijavi s privatnim Bitwarden računom."
+    "message": "Tvoja organizacija ima pravilo koje ti ne dozvoljava pridruživanje drugim organizacijama. Molimo kontaktiraj administratora svoje organizacije ili se prijavi s privatnim Bravura Pass računom."
   },
   "singleOrgPolicyWarning": {
     "message": "Članovi organizacije koji nisu Vlasnici ili Administratori, a već su članovi neke druge organizacije, biti će uklonjeni iz tvoje organizacije."
@@ -3340,78 +3340,78 @@
   },
   "createSend": {
     "message": "Stvori novi Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "editSend": {
     "message": "Uredi Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "createdSend": {
     "message": "Send stvoren",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "editedSend": {
     "message": "Send uređen",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "deletedSend": {
     "message": "Send izbrisan",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "deleteSend": {
     "message": "Izbriši Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "deleteSendConfirmation": {
     "message": "Sigurno želiš izbrisati ovaj Send?",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "whatTypeOfSend": {
     "message": "Koja je ovo vrsta Send-a?",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "deletionDate": {
     "message": "Datum brisanja"
   },
   "deletionDateDesc": {
     "message": "Send će biti trajno izbrisan navedenog datuma.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "expirationDate": {
     "message": "Datum isteka"
   },
   "expirationDateDesc": {
     "message": "Ako je određeno, pristup ovom Sendu će isteći navedenog dana u navedeno vrijeme.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "maxAccessCount": {
     "message": "Najveći proj pristupanja"
   },
   "maxAccessCountDesc": {
     "message": "Ako je određen, korisnici neće moći pristupiti ovom Sendu nakon što se postigne najveći broj pristupanja.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "currentAccessCount": {
     "message": "Trenutni broj pristupanja"
   },
   "sendPasswordDesc": {
     "message": "Neobavezno zahtijevaj korisnika lozinku za pristup ovom Sendu.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendNotesDesc": {
     "message": "Privatne bilješke o Sendu.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "disabled": {
     "message": "Onemogućeno"
   },
   "sendLink": {
     "message": "Veza na Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "copySendLink": {
     "message": "Kopiraj vezu na Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "removePassword": {
     "message": "Ukloni lozinku"
@@ -3427,7 +3427,7 @@
   },
   "disableThisSend": {
     "message": "Onemogući ovaj Send da mu nitko ne može pristupiti.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "allSends": {
     "message": "Svi Sendovi"
@@ -3443,34 +3443,34 @@
   },
   "searchSends": {
     "message": "Pretraži Sendove",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendProtectedPassword": {
     "message": "Ovaj Send je zaštićen lozinkom. Unesi lozinku za nastavak.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
     "message": "Ne znaš lozinku? Upitaj pošiljatelja za lozinku za pristup ovom Sendu.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendHiddenByDefault": {
     "message": "Ovaj je Send zadano skriven. Moguće mu je promijeniti vidljivost.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "downloadFile": {
     "message": "Preuzmi datoteku"
   },
   "sendAccessUnavailable": {
     "message": "Send kojem pokušavaš pristupiti više ne postoji ili više nije dostupan.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "missingSendFile": {
     "message": "Datoteka povezana s ovim Sendom nije pronađena.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "noSendsInList": {
     "message": "Nema Sendova.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "emergencyAccess": {
     "message": "Pristup u nuždi"
@@ -3503,7 +3503,7 @@
     "message": "Uredi kontakt u nuždi"
   },
   "inviteEmergencyContactDesc": {
-    "message": "Pozovi novi kontakt u nuždi unosom njihove Bitwarden adrese e-pošte. Ako još nemaju Bitwarden račun, biti će pozvani da stvore novi."
+    "message": "Pozovi novi kontakt u nuždi unosom njihove Bravura Pass adrese e-pošte. Ako još nemaju Bravura Pass račun, biti će pozvani da stvore novi."
   },
   "emergencyAccessRecoveryInitiated": {
     "message": "Pokrenut pristup u nuždi"
@@ -3542,7 +3542,7 @@
     "message": "Pozvani korisnik."
   },
   "acceptEmergencyAccess": {
-    "message": "Pozvani ste da postanete kontakt u nuždi za našeg gore navedenog korisnika. Za prihvat poziva, prijavite se u Bitwarden. Ako još nemate Bitwarden račun, možete jednostavno stvoriti novi."
+    "message": "Pozvani ste da postanete kontakt u nuždi za našeg gore navedenog korisnika. Za prihvat poziva, prijavite se u Bravura Pass. Ako još nemate Bravura Pass račun, možete jednostavno stvoriti novi."
   },
   "emergencyInviteAcceptFailed": {
     "message": "Nije moguće prihvatiti poziv. Zamolite korisnika da pošalje novi poziv."
@@ -3631,40 +3631,40 @@
   },
   "disableSendPolicyDesc": {
     "message": "Ne dozvoli korisnicima stvaranje ili uređivanje Sendova. Brisanje postojećeg Senda je dozvoljeno.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "disableSendExemption": {
     "message": "Organizacijski korisnici koji mogu mijenjati pravila tvrtke nisu obuhvaćeni za provedbu ovog pravila."
   },
   "sendDisabled": {
     "message": "Send onemogućen",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendDisabledWarning": {
     "message": "Pravila tvrtke omogućuju brisanje samo postojećeg Senda.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendOptions": {
     "message": "Send Options",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendOptionsPolicyDesc": {
     "message": "Set options for creating and editing Sends.",
-    "description": "'Sends' is a plural noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendOptionsExemption": {
     "message": "Organization users that can manage the organization's policies are exempt from this policy's enforcement."
   },
   "disableHideEmail": {
     "message": "Do not allow users to hide their email address from recipients when creating or editing a Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendOptionsPolicyInEffect": {
     "message": "The following organization policies are currently in effect:"
   },
   "sendDisableHideEmailInEffect": {
     "message": "Users are not allowed to hide their email address from recipients when creating or editing a Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "modifiedPolicyId": {
     "message": "Izmijenjena polica $ID$.",
@@ -3734,11 +3734,11 @@
   },
   "textHiddenByDefault": {
     "message": "Zadano sakrij tekst pri pristupanju Sendu",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendNameDesc": {
     "message": "Nadimak za ovaj Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendTextDesc": {
     "message": "Tekst kojeg želiš poslati."
@@ -3751,19 +3751,19 @@
   },
   "sendLinkLabel": {
     "message": "Veza na Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "send": {
     "message": "Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendAccessTaglineProductDesc": {
-    "message": "Pomoću Bitwarden Send jednostavno i sigurno pošalji osjetljive, privremene podatke.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "message": "Pomoću Bravura Pass Send jednostavno i sigurno pošalji osjetljive, privremene podatke.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendAccessTaglineLearnMore": {
     "message": "Saznaj više o",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bitwarden Send or sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Pass Send or sign up to try it today.'"
   },
   "sendVaultCardProductDesc": {
     "message": "Dijeli tekst ili datoteke s bilo kim."
@@ -3790,18 +3790,18 @@
   },
   "sendAccessTaglineOr": {
     "message": "ili",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send **or** sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send **or** sign up to try it today.'"
   },
   "sendAccessTaglineSignUp": {
     "message": "registriraj se",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send or **sign up** to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send or **sign up** to try it today.'"
   },
   "sendAccessTaglineTryToday": {
     "message": "za isprobavanje.",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send or sign up to **try it today.**'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send or sign up to **try it today.**'"
   },
   "sendCreatorIdentifier": {
-    "message": "Bitwarden korisnik $USER_IDENTIFIER$ je s tobom podijelio",
+    "message": "Bravura Pass korisnik $USER_IDENTIFIER$ je s tobom podijelio",
     "placeholders": {
       "user_identifier": {
         "content": "$1",
@@ -3810,8 +3810,8 @@
     }
   },
   "viewSendHiddenEmailWarning": {
-    "message": "The Bitwarden user who created this Send has chosen to hide their email address. You should ensure you trust the source of this link before using or downloading its content.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "message": "The Bravura Pass user who created this Send has chosen to hide their email address. You should ensure you trust the source of this link before using or downloading its content.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "expirationDateIsInvalid": {
     "message": "Navedeni rok isteka nije valjan."

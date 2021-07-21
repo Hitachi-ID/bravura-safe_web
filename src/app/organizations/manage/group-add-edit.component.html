@@ -24,10 +24,6 @@
                 <h3 class="mt-4 d-flex">
                     <div class="mb-2">
                         {{'accessControl' | i18n}}
-                        <a target="_blank" rel="noopener" appA11yTitle="{{'learnMore' | i18n}}"
-                            href="https://bitwarden.com/help/article/user-types-access-control/#access-control">
-                            <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-                        </a>
                     </div>
                     <div class="ml-auto" *ngIf="access === 'selected' && collections && collections.length">
                         <button type="button" (click)="selectAll(true)" class="btn btn-link btn-sm py-0">

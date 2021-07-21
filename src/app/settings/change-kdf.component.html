@@ -25,10 +25,6 @@
         <div class="col-6">
             <div class="form-group mb-0">
                 <label for="kdfIterations">{{'kdfIterations' | i18n}}</label>
-                <a class="ml-auto" href="https://bitwarden.com/help/article/what-encryption-is-used/#pbkdf2" target="_blank" rel="noopener"
-                    appA11yTitle="{{'learnMore' | i18n}}">
-                    <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-                </a>
                 <input id="kdfIterations" type="number" min="5000" max="2000000" name="KdfIterations"
                     class="form-control" [(ngModel)]="kdfIterations" required>
             </div>

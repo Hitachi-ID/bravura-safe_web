@@ -5,7 +5,7 @@
     "placeholders": {
       "app_name": {
         "content": "$1",
-        "example": "Bitwarden"
+        "example": "Bravura Pass"
       }
     }
   },
@@ -512,7 +512,7 @@
     "message": "Nie"
   },
   "loginOrCreateNewAccount": {
-    "message": "Zaloguj się lub utwórz nowe konto, aby uzyskać dostęp do Twojego bezpiecznego sejfu."
+    "message": "Zaloguj się, aby uzyskać dostęp do Twojego bezpiecznego sejfu."
   },
   "createAccount": {
     "message": "Utwórz konto"
@@ -812,7 +812,7 @@
     "message": "Dane eksportu zostaną zaszyfrowane za pomocą klucza szyfrowania konta. Jeśli kiedykolwiek zmienisz ten klucz, wyeksportuj dane ponownie, ponieważ nie będziesz w stanie odszyfrować tego pliku."
   },
   "encExportAccountWarningDesc": {
-    "message": "Klucze szyfrowania konta są unikalne dla każdego użytkownika Bitwarden, więc nie możesz zaimportować zaszyfrowanego pliku eksportu na inne konto."
+    "message": "Klucze szyfrowania konta są unikalne dla każdego użytkownika Bravura Pass, więc nie możesz zaimportować zaszyfrowanego pliku eksportu na inne konto."
   },
   "exportMasterPassword": {
     "message": "Wpisz hasło główne, aby wyeksportować dane z sejfu."
@@ -902,7 +902,7 @@
     "message": "Proszę zalogować się ponownie."
   },
   "logBackInOthersToo": {
-    "message": "Proszę zalogować się ponownie. Jeśli używasz innych aplikacji Bitwarden, wyloguj się i zaloguj ponownie również w nich."
+    "message": "Proszę zalogować się ponownie. Jeśli używasz innych aplikacji Bravura Pass, wyloguj się i zaloguj ponownie również w nich."
   },
   "changeMasterPassword": {
     "message": "Zmień hasło główne"
@@ -938,7 +938,7 @@
     }
   },
   "kdfIterationsWarning": {
-    "message": "Ustawienie zbyt wysokiej liczby iteracji KDF może skutkować obniżeniem wydajności podczas logowania do Bitwarden (oraz odblokowywania sejfu) na urządzeniach z wolniejszym procesorem. Zalecamy stopniowe zwiększanie tej wartości o $INCREMENT$ i przetestowanie jej na wszystkich swoich urządzeniach.",
+    "message": "Ustawienie zbyt wysokiej liczby iteracji KDF może skutkować obniżeniem wydajności podczas logowania do Bravura Pass (oraz odblokowywania sejfu) na urządzeniach z wolniejszym procesorem. Zalecamy stopniowe zwiększanie tej wartości o $INCREMENT$ i przetestowanie jej na wszystkich swoich urządzeniach.",
     "placeholders": {
       "increment": {
         "content": "$1",
@@ -1097,7 +1097,7 @@
     "message": "Reguły domeny"
   },
   "domainRulesDesc": {
-    "message": "Jeśli używasz tych samych danych logowania na różnych domenach, możesz zaznaczyć tę stronę jako \"ekwiwalent\". \"Globalne\" domeny to domeny utworzone już przez zespół Bitwarden."
+    "message": "Jeśli używasz tych samych danych logowania na różnych domenach, możesz zaznaczyć tę stronę jako \"ekwiwalent\". \"Globalne\" domeny to domeny utworzone już przez zespół Bravura Pass."
   },
   "globalEqDomains": {
     "message": "Globalne domeny równoważne"
@@ -1142,7 +1142,7 @@
     "message": "Wymagaj logowania dwustopniowego dla użytkowników w Twojej organizacji, poprzez skonfigurowanie dostawców na poziomie organizacji."
   },
   "twoStepLoginRecoveryWarning": {
-    "message": "Włączenie logowania dwustopniowego można trwale zablokować konto Bitwarden. Kod odzyskiwania pozwala na dostęp do konta w przypadku, gdy nie będziesz mógł skorzystać ze standardowego dostawcy logowania dwustopniowego (np. w przypadku utraty urządzenia). Pomoc techniczna Bitwarden nie będzie w stanie Ci pomóc, jeśli stracisz dostęp do swojego konta. Zalecamy zapisanie lub wydrukowanie kodu odzyskiwania i przechowywanie go w bezpiecznym miejscu."
+    "message": "Włączenie logowania dwustopniowego można trwale zablokować konto Bravura Pass. Kod odzyskiwania pozwala na dostęp do konta w przypadku, gdy nie będziesz mógł skorzystać ze standardowego dostawcy logowania dwustopniowego (np. w przypadku utraty urządzenia). Pomoc techniczna Bravura Pass nie będzie w stanie Ci pomóc, jeśli stracisz dostęp do swojego konta. Zalecamy zapisanie lub wydrukowanie kodu odzyskiwania i przechowywanie go w bezpiecznym miejscu."
   },
   "viewRecoveryCode": {
     "message": "Wyświetl kod odzyskiwania"
@@ -1243,7 +1243,7 @@
     "message": "Zapisz formularz."
   },
   "twoFactorYubikeyWarning": {
-    "message": "Z powodu ograniczeń platformy, klucze YubiKey nie mogą być używane we wszystkich aplikacjach Bitwarden. Musisz włączyć inną metodę logowania dwustopniowego, aby zachować dostęp do konta w pozostałych sytuacjach. Wspierane platformy:"
+    "message": "Z powodu ograniczeń platformy, klucze YubiKey nie mogą być używane we wszystkich aplikacjach Bravura Pass. Musisz włączyć inną metodę logowania dwustopniowego, aby zachować dostęp do konta w pozostałych sytuacjach. Wspierane platformy:"
   },
   "twoFactorYubikeySupportUsb": {
     "message": "Sejf internetowy, aplikacja desktopowa, wiersz poleceń i rozszerzenia dla wszystkich przeglądarek na urządzeniu posiadającym port USB akceptujący Twój klucz YubiKey."
@@ -1294,7 +1294,7 @@
     "message": "Wyłącz wszystkie klucze"
   },
   "twoFactorDuoDesc": {
-    "message": "Wpisz informacje o aplikacji Bitwarden z panelu administracyjnego Duo."
+    "message": "Wpisz informacje o aplikacji Bravura Pass z panelu administracyjnego Duo."
   },
   "twoFactorDuoIntegrationKey": {
     "message": "Klucz integracji"
@@ -1345,7 +1345,7 @@
     "message": "Zapisz formularz."
   },
   "twoFactorU2fWarning": {
-    "message": "Z powodu ograniczeń platformy, klucze FIDO U2F nie mogą być używane we wszystkich aplikacjach Bitwarden. Musisz włączyć inną metodę logowania dwustopniowego, aby zachować dostęp do konta w pozostałych sytuacjach. Wspierane platformy:"
+    "message": "Z powodu ograniczeń platformy, klucze FIDO U2F nie mogą być używane we wszystkich aplikacjach Bravura Pass. Musisz włączyć inną metodę logowania dwustopniowego, aby zachować dostęp do konta w pozostałych sytuacjach. Wspierane platformy:"
   },
   "twoFactorU2fSupportWeb": {
     "message": "Sejf internetowy i rozszerzenia przeglądarki na komputerze/laptopie z przeglądarką obsługującą U2F (Chrome, Opera, Vivaldi lub Firefox z włączoną obsługą FIDO U2F)."
@@ -1360,13 +1360,13 @@
     "message": "Wystąpił problem z odczytem klucza bezpieczeństwa. Spróbuj ponownie."
   },
   "twoFactorWebAuthnWarning": {
-    "message": "Due to platform limitations, WebAuthn cannot be used on all Bitwarden applications. You should enable another two-step login provider so that you can access your account when WebAuthn cannot be used. Supported platforms:"
+    "message": "Due to platform limitations, WebAuthn cannot be used on all Bravura Pass applications. You should enable another two-step login provider so that you can access your account when WebAuthn cannot be used. Supported platforms:"
   },
   "twoFactorWebAuthnSupportWeb": {
     "message": "Web vault and browser extensions on a desktop/laptop with a WebAuthn enabled browser (Chrome, Opera, Vivaldi, or Firefox with FIDO U2F enabled)."
   },
   "twoFactorRecoveryYourCode": {
-    "message": "Kod odzyskiwania konta Bitwarden"
+    "message": "Kod odzyskiwania konta Bravura Pass"
   },
   "twoFactorRecoveryNoCode": {
     "message": "Nie włączyłeś żadnego dostawcy logowania dwustopniowego. Po włączeniu dostawcy wróć tutaj, aby odczytać swój kod odzyskiwania."
@@ -1460,7 +1460,7 @@
     "message": "Raport słabych haseł"
   },
   "weakPasswordsReportDesc": {
-    "message": "Słabe hasła mogą być łatwo odgadnięte przez hakerów i zautomatyzowane narzędzia używane do łamania haseł. Generator haseł Bitwarden tworzy silne hasła."
+    "message": "Słabe hasła mogą być łatwo odgadnięte przez hakerów i zautomatyzowane narzędzia używane do łamania haseł. Generator haseł Bravura Pass tworzy silne hasła."
   },
   "weakPasswordsFound": {
     "message": "Znaleźliśmy słabe hasła"
@@ -1571,11 +1571,11 @@
   },
   "accountCredit": {
     "message": "Dostępne środki",
-    "description": "Financial term. In the case of Bitwarden, a positive balance means that you owe money, while a negative balance means that you have a credit (Bitwarden owes you money)."
+    "description": "Financial term. In the case of Bravura Pass, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Pass owes you money)."
   },
   "accountBalance": {
     "message": "Saldo konta",
-    "description": "Financial term. In the case of Bitwarden, a positive balance means that you owe money, while a negative balance means that you have a credit (Bitwarden owes you money)."
+    "description": "Financial term. In the case of Bravura Pass, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Pass owes you money)."
   },
   "addCredit": {
     "message": "Dodaj środki",
@@ -1886,7 +1886,7 @@
     "placeholders": {
       "file_name": {
         "content": "$1",
-        "example": "bitwarden_premium_license.json"
+        "example": "bravura_pass_premium_license.json"
       }
     }
   },
@@ -2181,7 +2181,7 @@
     "message": "Zaproś użytkownika"
   },
   "inviteUserDesc": {
-    "message": "Zaproś nowego użytkownika do Twojej organizacji poprzez wpisanie poniżej jego adresu e-mail. Jeśli nie posiada on jeszcze konta Bitwarden, zostanie poproszony o jego utworzenie."
+    "message": "Zaproś nowego użytkownika do Twojej organizacji poprzez wpisanie poniżej jego adresu e-mail. Jeśli nie posiada on jeszcze konta Bravura Pass, zostanie poproszony o jego utworzenie."
   },
   "inviteMultipleEmailDesc": {
     "message": "Możesz zaprosić do $COUNT$ użytkowników jednocześnie, wpisując ich adresy e-mail oddzielone przecinkiem.",
@@ -2652,7 +2652,7 @@
     "message": "Dołącz do organizacji"
   },
   "joinOrganizationDesc": {
-    "message": "Zostałeś zaproszony do dołączenia do poniższej organizacji. Aby zaakceptować zaproszenie, musisz się zalogować lub utworzyć nowe konto Bitwarden."
+    "message": "Zostałeś zaproszony do dołączenia do poniższej organizacji. Aby zaakceptować zaproszenie, musisz się zalogować lub utworzyć nowe konto Bravura Pass."
   },
   "inviteAccepted": {
     "message": "Zaproszenie zostało zaakceptowane"
@@ -2694,7 +2694,7 @@
     "message": "Jeśli Twoje konto istnieje, otrzymasz e-mail z dalszymi instrukcjami."
   },
   "deleteRecoverConfirmDesc": {
-    "message": "Poprosiłeś o usunięcie konta Bitwarden. Kliknij poniższy przycisk, aby to potwierdzić."
+    "message": "Poprosiłeś o usunięcie konta Bravura Pass. Kliknij poniższy przycisk, aby to potwierdzić."
   },
   "myOrganization": {
     "message": "Moja organizacja"
@@ -2859,7 +2859,7 @@
     "message": "Zdecydowaliśmy się na używanie silniejszych kluczy szyfrowania, które zapewniają lepsze bezpieczeństwo i dostęp do nowych funkcji. Zaktualizowanie klucza szyfrowania jest szybkie i łatwe. Wystarczy wpisać poniżej swoje hasło. Aktualizacja klucza stanie się wkrótce obowiązkowa."
   },
   "updateEncryptionKeyWarning": {
-    "message": "Po zaktualizowaniu klucza szyfrowania, musisz ponownie zalogować się do wszystkich aplikacji Bitwarden, z których obecnie korzystasz (na przykład aplikacje mobilne lub rozszerzenia przeglądarki). Niepowodzenie logowania (podczas którego pobierany jest nowy klucz szyfrowania) może spowodować uszkodzenie danych. Postaramy się wylogować Ciebie automatycznie, jednak może to chwilę potrwać."
+    "message": "Po zaktualizowaniu klucza szyfrowania, musisz ponownie zalogować się do wszystkich aplikacji Bravura Pass, z których obecnie korzystasz (na przykład aplikacje mobilne lub rozszerzenia przeglądarki). Niepowodzenie logowania (podczas którego pobierany jest nowy klucz szyfrowania) może spowodować uszkodzenie danych. Postaramy się wylogować Ciebie automatycznie, jednak może to chwilę potrwać."
   },
   "updateEncryptionKeyExportWarning": {
     "message": "Wszystkie zaszyfrowane pliki eksportu, które wcześniej zapisałeś, staną się nieprawidłowe."
@@ -2979,7 +2979,7 @@
     "message": "Słabe hasło główne"
   },
   "weakMasterPasswordDesc": {
-    "message": "Wpisane przez Ciebie hasło główne jest słabe. Powinieneś użyć silniejszego hasła (lub frazy), aby właściwie chronić swoje konto Bitwarden. Czy na pewno chcesz użyć tego hasła głównego?"
+    "message": "Wpisane przez Ciebie hasło główne jest słabe. Powinieneś użyć silniejszego hasła (lub frazy), aby właściwie chronić swoje konto Bravura Pass. Czy na pewno chcesz użyć tego hasła głównego?"
   },
   "rotateAccountEncKey": {
     "message": "Zmień także mój klucz szyfrowania"
@@ -3023,7 +3023,7 @@
     "message": "Klucz interfejsu API"
   },
   "apiKeyDesc": {
-    "message": "Twój klucz interfejsu API może zostać użyty do uwierzytelniania dostępu do publicznego interfejsu API Bitwarden."
+    "message": "Twój klucz interfejsu API może zostać użyty do uwierzytelniania dostępu do publicznego interfejsu API Bravura Pass."
   },
   "apiKeyRotateDesc": {
     "message": "Zmiana klucza interfejsu API spowoduje unieważnienie poprzedniego klucza. Możesz zmienić klucz interfejsu, jeśli uważasz, że obecny klucz przestał być bezpieczny."
@@ -3032,7 +3032,7 @@
     "message": "Twój klucz interfejsu API umożliwia pełny dostęp do organizacji, dlatego powinien być dobrze strzeżony."
   },
   "userApiKeyDesc": {
-    "message": "Twój klucz interfejsu API może zostać użyty do uwierzytelniania dostępu do wiersza poleceń Bitwarden."
+    "message": "Twój klucz interfejsu API może zostać użyty do uwierzytelniania dostępu do wiersza poleceń Bravura Pass."
   },
   "userApiKeyWarning": {
     "message": "Twój klucz interfejsu API jest alternatywną metodą uwierzytelniania. Powinien być dobrze strzeżony."
@@ -3309,7 +3309,7 @@
     "message": "Zablokuj użytkownikom możliwość dołączania do innych organizacji."
   },
   "singleOrgBlockCreateMessage": {
-    "message": "Twoja obecna organizacja posiada zasady, które nie pozwalają na dołączanie do więcej niż jednej organizacji. Skontaktuj się z administratorami swojej organizacji lub zarejestruj się z innego konta Bitwarden."
+    "message": "Twoja obecna organizacja posiada zasady, które nie pozwalają na dołączanie do więcej niż jednej organizacji. Skontaktuj się z administratorami swojej organizacji lub zarejestruj się z innego konta Bravura Pass."
   },
   "singleOrgPolicyWarning": {
     "message": "Członkowie organizacji, którzy nie są właścicielami lub administratorami i są już członkami innej organizacji zostaną usunięci z Twojej organizacji."
@@ -3340,78 +3340,78 @@
   },
   "createSend": {
     "message": "Utwórz nową wysyłkę",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "editSend": {
     "message": "Edytuj wysyłkę",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "createdSend": {
     "message": "Wysyłka została utworzona",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "editedSend": {
     "message": "Wysyłka została zaktualizowana",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "deletedSend": {
     "message": "Wysyłka została usunięta",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "deleteSend": {
     "message": "Usuń wysyłkę",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "deleteSendConfirmation": {
     "message": "Czy na pewno chcesz usunąć tę wysyłkę?",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "whatTypeOfSend": {
     "message": "Jakiego typu jest to wysyłka?",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "deletionDate": {
     "message": "Data usunięcia"
   },
   "deletionDateDesc": {
     "message": "Wysyłka zostanie trwale usunięta w określonym czasie.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "expirationDate": {
     "message": "Data wygaśnięcia"
   },
   "expirationDateDesc": {
     "message": "Jeśli funkcja jest włączona, dostęp do wysyłki wygaśnie po określonym czasie.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "maxAccessCount": {
     "message": "Maksymalna liczba dostępów"
   },
   "maxAccessCountDesc": {
     "message": "Jeśli funkcja jest włączona, po osiągnięciu maksymalnej liczby dostępów, użytkownicy nie będą mieli dostępu do tej wysyłki.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "currentAccessCount": {
     "message": "Obecna liczba dostępów"
   },
   "sendPasswordDesc": {
     "message": "Opcjonalne hasło dla użytkownika, aby uzyskać dostęp do wysyłki.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendNotesDesc": {
     "message": "Prywatne notatki o tej wysyłce.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "disabled": {
     "message": "Wyłączone"
   },
   "sendLink": {
     "message": "Link wysyłki",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "copySendLink": {
     "message": "Kopiuj link wysyłki",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "removePassword": {
     "message": "Usuń hasło"
@@ -3427,7 +3427,7 @@
   },
   "disableThisSend": {
     "message": "Wyłącz tę wysyłkę, aby nikt nie miał do niej dostępu.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "allSends": {
     "message": "Wszystkie wysyłki"
@@ -3443,34 +3443,34 @@
   },
   "searchSends": {
     "message": "Szukaj w wysyłkach",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendProtectedPassword": {
     "message": "Wysyłka jest chroniona hasłem. Wpisz hasło, aby kontynuować.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
     "message": "Nie znasz hasła? Poproś nadawcę o hasło, aby uzyskać dostęp do wysyłki.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendHiddenByDefault": {
     "message": "Ta wysyłka jest domyślnie ukryta. Możesz zmienić jej widoczność za pomocą przycisku.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "downloadFile": {
     "message": "Pobierz plik"
   },
   "sendAccessUnavailable": {
     "message": "Wysyłka nie istnieje lub nie jest już dostępna.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "missingSendFile": {
     "message": "Plik powiązany z wysyłką nie został znaleziony.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "noSendsInList": {
     "message": "Brak wysyłek do wyświetlenia.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "emergencyAccess": {
     "message": "Dostęp awaryjny"
@@ -3503,7 +3503,7 @@
     "message": "Edytuj kontakt awaryjny"
   },
   "inviteEmergencyContactDesc": {
-    "message": "Zaproś nowy kontakt awaryjny poprzez wpisanie jego adresu e-mail poniżej. Jeśli nie posiada on jeszcze konta Bitwarden, zostanie poproszony o jego utworzenie."
+    "message": "Zaproś nowy kontakt awaryjny poprzez wpisanie jego adresu e-mail poniżej. Jeśli nie posiada on jeszcze konta Bravura Pass, zostanie poproszony o jego utworzenie."
   },
   "emergencyAccessRecoveryInitiated": {
     "message": "Dostęp awaryjny został zainicjowany"
@@ -3542,7 +3542,7 @@
     "message": "Użytkownik został zaproszony."
   },
   "acceptEmergencyAccess": {
-    "message": "Zostałeś zaproszony przez powyższego użytkownika do zostania jego kontaktem awaryjnym. Aby zaakceptować zaproszenie, musisz zalogować się lub utworzyć nowe konto Bitwarden."
+    "message": "Zostałeś zaproszony przez powyższego użytkownika do zostania jego kontaktem awaryjnym. Aby zaakceptować zaproszenie, musisz zalogować się lub utworzyć nowe konto Bravura Pass."
   },
   "emergencyInviteAcceptFailed": {
     "message": "Nie można zaakceptować zaproszenia. Poproś użytkownika o wysłanie nowego zaproszenia."
@@ -3631,40 +3631,40 @@
   },
   "disableSendPolicyDesc": {
     "message": "Nie zezwalaj użytkownikom na tworzenie i edytowanie wysyłek. Usunięcie obecnej wysyłki nadal jest dozwolone.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "disableSendExemption": {
     "message": "Użytkownicy organizacji, którzy mogą zarządzać zasadami organizacji są zwolnieni z przestrzegania wymagań zasad."
   },
   "sendDisabled": {
     "message": "Wysyłka została wyłączona",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendDisabledWarning": {
     "message": "Ze względu na zasadę przedsiębiorstwa, tylko Ty możesz usunąć obecną wysyłkę.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendOptions": {
     "message": "Send Options",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendOptionsPolicyDesc": {
     "message": "Set options for creating and editing Sends.",
-    "description": "'Sends' is a plural noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendOptionsExemption": {
     "message": "Organization users that can manage the organization's policies are exempt from this policy's enforcement."
   },
   "disableHideEmail": {
     "message": "Do not allow users to hide their email address from recipients when creating or editing a Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendOptionsPolicyInEffect": {
     "message": "The following organization policies are currently in effect:"
   },
   "sendDisableHideEmailInEffect": {
     "message": "Users are not allowed to hide their email address from recipients when creating or editing a Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "modifiedPolicyId": {
     "message": "Zasada $ID$ została zaktualizowana.",
@@ -3734,11 +3734,11 @@
   },
   "textHiddenByDefault": {
     "message": "Ukryj domyślnie tekst wysyłki",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendNameDesc": {
     "message": "Nazwa wysyłki.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendTextDesc": {
     "message": "Tekst, który chcesz wysłać."
@@ -3751,19 +3751,19 @@
   },
   "sendLinkLabel": {
     "message": "Link wysyłki",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "send": {
     "message": "Wyślij",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendAccessTaglineProductDesc": {
     "message": "Wysyłaj wrażliwe i krótkotrwałe informacje w łatwy i bezpieczny sposób.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "sendAccessTaglineLearnMore": {
     "message": "Dowiedz się więcej o funkcji",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bitwarden Send or sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Pass Send or sign up to try it today.'"
   },
   "sendVaultCardProductDesc": {
     "message": "Udostępniaj teksty i pliki."
@@ -3790,18 +3790,18 @@
   },
   "sendAccessTaglineOr": {
     "message": "lub",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send **or** sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send **or** sign up to try it today.'"
   },
   "sendAccessTaglineSignUp": {
     "message": "zarejestruj się",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send or **sign up** to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send or **sign up** to try it today.'"
   },
   "sendAccessTaglineTryToday": {
     "message": ", aby ją wypróbować.",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send or sign up to **try it today.**'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send or sign up to **try it today.**'"
   },
   "sendCreatorIdentifier": {
-    "message": "Użytkownik Bitwarden $USER_IDENTIFIER$ udostępnił Tobie",
+    "message": "Użytkownik Bravura Pass $USER_IDENTIFIER$ udostępnił Tobie",
     "placeholders": {
       "user_identifier": {
         "content": "$1",
@@ -3810,8 +3810,8 @@
     }
   },
   "viewSendHiddenEmailWarning": {
-    "message": "The Bitwarden user who created this Send has chosen to hide their email address. You should ensure you trust the source of this link before using or downloading its content.",
-    "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
+    "message": "The Bravura Pass user who created this Send has chosen to hide their email address. You should ensure you trust the source of this link before using or downloading its content.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
   },
   "expirationDateIsInvalid": {
     "message": "Data wygaśnięcia nie jest prawidłowa."
