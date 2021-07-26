@@ -7,6 +7,18 @@
                 {{'all' | i18n}}
                 <span class="badge badge-pill badge-info" *ngIf="allCount">{{allCount}}</span>
             </button>
+            <button type="button" class="btn btn-outline-secondary"
+                [ngClass]="{active: status == organizationUserStatusType.Invited}"
+                (click)="filter(organizationUserStatusType.Invited)">
+                {{'invited' | i18n}}
+                <span class="badge badge-pill badge-info" *ngIf="invitedCount">{{invitedCount}}</span>
+            </button>
+            <button type="button" class="btn btn-outline-secondary"
+                [ngClass]="{active: status == organizationUserStatusType.Accepted}"
+                (click)="filter(organizationUserStatusType.Accepted)">
+                {{'accepted' | i18n}}
+                <span class="badge badge-pill badge-warning" *ngIf="acceptedCount">{{acceptedCount}}</span>
+            </button>
         </div>
         <div class="ml-3">
             <label class="sr-only" for="search">{{'search' | i18n}}</label>
@@ -43,6 +55,10 @@
                 </button>
             </div>
         </div>
+        <button type="button" class="btn btn-sm btn-outline-primary ml-3" (click)="invite()">
+            <i class="fa fa-plus fa-fw" aria-hidden="true"></i>
+            {{'inviteUser' | i18n}}
+        </button>
     </div>
 </div>
 <ng-container *ngIf="loading">

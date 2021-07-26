@@ -105,6 +105,11 @@ const routes: Routes = [
             { path: '', pathMatch: 'full', component: LoginComponent, canActivate: [UnauthGuardService] },
             { path: '2fa', component: TwoFactorComponent, canActivate: [UnauthGuardService] },
             {
+                path: 'register', component: RegisterComponent,
+                canActivate: [UnauthGuardService],
+                data: { titleId: 'createAccount' },
+            },
+            {
                 path: 'sso', component: SsoComponent,
                 canActivate: [UnauthGuardService],
                 data: { titleId: 'enterpriseSingleSignOn' },
