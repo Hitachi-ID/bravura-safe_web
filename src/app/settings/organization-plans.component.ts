@@ -249,7 +249,7 @@ export class OrganizationPlansComponent implements OnInit {
                     const shareKey = await this.cryptoService.makeShareKey();
                     const key = shareKey[0].encryptedString;
                     const collection = await this.cryptoService.encrypt(
-                        this.i18nService.t('defaultCollection'), shareKey[1]);
+                        this.i18nService.t('defaultCollection') + ' - ' + this.name, shareKey[1]);
                     const collectionCt = collection.encryptedString;
                     const orgKeys = await this.cryptoService.makeKeyPair(shareKey[1]);
 

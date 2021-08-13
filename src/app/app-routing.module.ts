@@ -195,6 +195,7 @@ const routes: Routes = [
                 children: [
                     { path: '', pathMatch: 'full', redirectTo: 'generator' },
                     { path: 'import', component: ImportComponent, data: { titleId: 'importData' } },
+                    { path: 'export', component: ExportComponent, data: { titleId: 'exportVault' } },
                     {
                         path: 'generator',
                         component: PasswordGeneratorComponent,
@@ -253,6 +254,15 @@ const routes: Routes = [
                         canActivate: [OrganizationTypeGuardService],
                         data: {
                             titleId: 'importData',
+                            permissions: [Permissions.AccessImportExport],
+                        },
+                    },
+                    {
+                        path: 'export',
+                        component: OrgExportComponent,
+                        canActivate: [OrganizationTypeGuardService],
+                        data: {
+                            titleId: 'exportVault',
                             permissions: [Permissions.AccessImportExport],
                         },
                     },
