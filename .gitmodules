@@ -1,4 +1,4 @@
 [submodule "jslib"]
 	path = jslib
-	url = ../bitwarden_jslib.git
+	url = ../bravurapass_jslib.git
 	branch = master
