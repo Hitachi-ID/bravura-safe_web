@@ -5,7 +5,7 @@
     "placeholders": {
       "app_name": {
         "content": "$1",
-        "example": "Bravura Pass"
+        "example": "Bravura Vault"
       }
     }
   },
@@ -831,7 +831,7 @@
     "message": "При экспорте данные шифруются при помощи ключа шифрования учетной записи. Если вы решите сменить ключ шифрования, вам следует экспортировать данные повторно, поскольку вы не сможете расшифровать этот файл экспорта."
   },
   "encExportAccountWarningDesc": {
-    "message": "Ключи шифрования уникальны для каждой учетной записи Bravura Pass, поэтому нельзя импортировать зашифрованное хранилище в другой аккаунт."
+    "message": "Ключи шифрования уникальны для каждой учетной записи Bravura Vault, поэтому нельзя импортировать зашифрованное хранилище в другой аккаунт."
   },
   "exportMasterPassword": {
     "message": "Введите мастер-пароль для экспорта данных из хранилища."
@@ -924,7 +924,7 @@
     "message": "Пожалуйста, войдите снова."
   },
   "logBackInOthersToo": {
-    "message": "Пожалуйста, войдите снова. Если вы используете другие приложения Bravura Pass, выполните на них выход и повторный вход."
+    "message": "Пожалуйста, войдите снова. Если вы используете другие приложения Bravura Vault, выполните на них выход и повторный вход."
   },
   "changeMasterPassword": {
     "message": "Изменение мастер-пароля"
@@ -1122,7 +1122,7 @@
     "message": "Доменные правила"
   },
   "domainRulesDesc": {
-    "message": "Если у вас есть тот же логин на нескольких разных доменах веб-сайта, вы можете отметить веб-сайт как \"эквивалентный\". \"Глобальные\" - это домены, созданные для вас Bravura Pass."
+    "message": "Если у вас есть тот же логин на нескольких разных доменах веб-сайта, вы можете отметить веб-сайт как \"эквивалентный\". \"Глобальные\" - это домены, созданные для вас Bravura Vault."
   },
   "globalEqDomains": {
     "message": "Глобальные эквивалентные домены"
@@ -1167,7 +1167,7 @@
     "message": "Требовать двухфакторную аутентификацию для пользователей вашей организации, путем конфигурации ее на уровне организации."
   },
   "twoStepLoginRecoveryWarning": {
-    "message": "При включении двухфакторной аутентификации вы можете навсегда потерять доступ к вашей учетной записи Bravura Pass. Код восстановления позволяет получить доступ к вашему аккаунту в случае, если вы больше не можете использовать свой обычный метод двухфакторной аутентификации (например, при потере устройства). Поддержка Bravura Pass не сможет вам помочь, если вы потеряете доступ к своей учетной записи. Мы рекомендуем вам записать или распечатать код восстановления и сохранить его в надежном месте."
+    "message": "При включении двухфакторной аутентификации вы можете навсегда потерять доступ к вашей учетной записи Bravura Vault. Код восстановления позволяет получить доступ к вашему аккаунту в случае, если вы больше не можете использовать свой обычный метод двухфакторной аутентификации (например, при потере устройства). Поддержка Bravura Vault не сможет вам помочь, если вы потеряете доступ к своей учетной записи. Мы рекомендуем вам записать или распечатать код восстановления и сохранить его в надежном месте."
   },
   "viewRecoveryCode": {
     "message": "Просмотр кода восстановления"
@@ -1268,7 +1268,7 @@
     "message": "Сохранить форму."
   },
   "twoFactorYubikeyWarning": {
-    "message": "Из-за ограничений платформы, YubiKey можно использовать не во всех приложениях Bravura Pass. Если использовать YubiKey не удается, то включите другого провайдера двухфакторной аутентификации, чтобы иметь доступ к своему аккаунту. Поддерживаемые платформы:"
+    "message": "Из-за ограничений платформы, YubiKey можно использовать не во всех приложениях Bravura Vault. Если использовать YubiKey не удается, то включите другого провайдера двухфакторной аутентификации, чтобы иметь доступ к своему аккаунту. Поддерживаемые платформы:"
   },
   "twoFactorYubikeySupportUsb": {
     "message": "Веб-хранилище, приложение для компьютера, интерфейс командной строки (CLI) и все расширения браузеров на устройстве с USB-портом, совместимым с YubiKey."
@@ -1319,7 +1319,7 @@
     "message": "Отключить все ключи"
   },
   "twoFactorDuoDesc": {
-    "message": "Введите информацию о приложении Bravura Pass из панели администратора Duo."
+    "message": "Введите информацию о приложении Bravura Vault из панели администратора Duo."
   },
   "twoFactorDuoIntegrationKey": {
     "message": "Ключ интеграции"
@@ -1370,7 +1370,7 @@
     "message": "Сохранить форму."
   },
   "twoFactorU2fWarning": {
-    "message": "Из-за ограничений платформы, FIDO U2F можно использовать не во всех приложениях Bravura Pass. Если использовать FIDO U2F не удается, то включите другого провайдера двухфакторной аутентификации, чтобы иметь доступ к своему аккаунту. Поддерживаемые платформы:"
+    "message": "Из-за ограничений платформы, FIDO U2F можно использовать не во всех приложениях Bravura Vault. Если использовать FIDO U2F не удается, то включите другого провайдера двухфакторной аутентификации, чтобы иметь доступ к своему аккаунту. Поддерживаемые платформы:"
   },
   "twoFactorU2fSupportWeb": {
     "message": "Веб-хранилище и расширения браузера на компьютере/ноутбуке с браузером с поддержкой U2F (Chrome, Opera, Vivaldi или Firefox с включенным FIDO U2F)."
@@ -1385,13 +1385,13 @@
     "message": "Не удалось прочитать ключ безопасности. Попробуйте снова."
   },
   "twoFactorWebAuthnWarning": {
-    "message": "Из-за ограничений платформы WebAuthn нельзя использовать во всех приложениях Bravura Pass. Вы должны включить другого провайдера двухфакторной аутентификации, чтобы иметь возможность получить доступ к своей учетной записи, когда WebAuthn не может быть использован. Поддерживаемые платформы:"
+    "message": "Из-за ограничений платформы WebAuthn нельзя использовать во всех приложениях Bravura Vault. Вы должны включить другого провайдера двухфакторной аутентификации, чтобы иметь возможность получить доступ к своей учетной записи, когда WebAuthn не может быть использован. Поддерживаемые платформы:"
   },
   "twoFactorWebAuthnSupportWeb": {
     "message": "Веб-хранилище и расширения браузера на компьютере/ноутбуке с браузером с поддержкой WebAuthn (Chrome, Opera, Vivaldi или Firefox с включенным FIDO U2F)."
   },
   "twoFactorRecoveryYourCode": {
-    "message": "Ваш код восстановления двухфакторной аутентификации Bravura Pass"
+    "message": "Ваш код восстановления двухфакторной аутентификации Bravura Vault"
   },
   "twoFactorRecoveryNoCode": {
     "message": "Вы еще не включили ни одного провайдера двухфакторной аутентификации. После включения вернитесь сюда и получите свой код восстановления."
@@ -1485,7 +1485,7 @@
     "message": "Отчет о слабых паролях"
   },
   "weakPasswordsReportDesc": {
-    "message": "Слабые пароли могут быть легко подобраны хакерами и автоматизированными средствами для взлома паролей. Создавать надежные пароли может помочь генератор паролей Bravura Pass."
+    "message": "Слабые пароли могут быть легко подобраны хакерами и автоматизированными средствами для взлома паролей. Создавать надежные пароли может помочь генератор паролей Bravura Vault."
   },
   "weakPasswordsFound": {
     "message": "Обнаружены слабые пароли"
@@ -1596,11 +1596,11 @@
   },
   "accountCredit": {
     "message": "Средства аккаунта",
-    "description": "Financial term. In the case of Bravura Pass, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Pass owes you money)."
+    "description": "Financial term. In the case of Bravura Vault, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Vault owes you money)."
   },
   "accountBalance": {
     "message": "Баланс аккаунта",
-    "description": "Financial term. In the case of Bravura Pass, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Pass owes you money)."
+    "description": "Financial term. In the case of Bravura Vault, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Vault owes you money)."
   },
   "addCredit": {
     "message": "Пополнить счет",
@@ -2206,7 +2206,7 @@
     "message": "Пригласить пользователя"
   },
   "inviteUserDesc": {
-    "message": "Пригласите нового пользователя в свою организацию, введя ниже адрес email его аккаунта Bravura Pass. Если у него пока нет аккаунта Bravura Pass, ему будет предложено его создать."
+    "message": "Пригласите нового пользователя в свою организацию, введя ниже адрес email его аккаунта Bravura Vault. Если у него пока нет аккаунта Bravura Vault, ему будет предложено его создать."
   },
   "inviteMultipleEmailDesc": {
     "message": "Вы можете пригласить до $COUNT$ пользователей одновременно, разделяя адреса email запятыми.",
@@ -2677,7 +2677,7 @@
     "message": "Присоединиться к организации"
   },
   "joinOrganizationDesc": {
-    "message": "Вас пригласили присоединиться к организации, указанной выше. Чтобы принять приглашение, вам необходимо войти или создать новую учетную запись Bravura Pass."
+    "message": "Вас пригласили присоединиться к организации, указанной выше. Чтобы принять приглашение, вам необходимо войти или создать новую учетную запись Bravura Vault."
   },
   "inviteAccepted": {
     "message": "Приглашение принято"
@@ -2719,7 +2719,7 @@
     "message": "Если ваш аккаунт существует, мы отправим вам письмо с дальнейшими инструкциями."
   },
   "deleteRecoverConfirmDesc": {
-    "message": "Вы запросили удаление вашего аккаунта Bravura Pass. Нажмите кнопку ниже, чтобы подтвердить."
+    "message": "Вы запросили удаление вашего аккаунта Bravura Vault. Нажмите кнопку ниже, чтобы подтвердить."
   },
   "myOrganization": {
     "message": "Моя организация"
@@ -2884,7 +2884,7 @@
     "message": "Мы перешли на более сложные ключи шифрования, которые обеспечивают лучшую безопасность и доступ к новым возможностям. Обновление ключа шифрования происходит быстро и легко. Просто введите свой мастер-пароль ниже. Это обновление в конечном итоге станет обязательным."
   },
   "updateEncryptionKeyWarning": {
-    "message": "После обновления ключа шифрования необходимо выполнить выход во всех приложениях Bravura Pass, которые вы используете (например, мобильное приложение или расширение браузера). Невыполнение этого требования может привести к повреждению данных (так как при этом загружается ваш новый ключ шифрования). Мы попытаемся автоматически осуществить завершение ваших сессий, однако это может произойти с задержкой."
+    "message": "После обновления ключа шифрования необходимо выполнить выход во всех приложениях Bravura Vault, которые вы используете (например, мобильное приложение или расширение браузера). Невыполнение этого требования может привести к повреждению данных (так как при этом загружается ваш новый ключ шифрования). Мы попытаемся автоматически осуществить завершение ваших сессий, однако это может произойти с задержкой."
   },
   "updateEncryptionKeyExportWarning": {
     "message": "Любые зашифрованные экспортированные данные, которые вы сохранили, также станут недействительными."
@@ -3004,7 +3004,7 @@
     "message": "Слабый мастер-пароль"
   },
   "weakMasterPasswordDesc": {
-    "message": "Вы выбрали слабый мастер-пароль. Для надежной защиты аккаунта Bravura Pass следует использовать сильный мастер-пароль (или парольную фразу). Вы действительно хотите использовать этот мастер-пароль?"
+    "message": "Вы выбрали слабый мастер-пароль. Для надежной защиты аккаунта Bravura Vault следует использовать сильный мастер-пароль (или парольную фразу). Вы действительно хотите использовать этот мастер-пароль?"
   },
   "rotateAccountEncKey": {
     "message": "Также изменить ключ шифрования моего аккаунта"
@@ -3048,7 +3048,7 @@
     "message": "Ключ API"
   },
   "apiKeyDesc": {
-    "message": "Ваш ключ API может быть использован для аутентификации в публичном API Bravura Pass."
+    "message": "Ваш ключ API может быть использован для аутентификации в публичном API Bravura Vault."
   },
   "apiKeyRotateDesc": {
     "message": "Изменение ключа API приведет к аннулированию предыдущего ключа. Вы можете изменить свой ключ API, если считаете, что текущий ключ больше не безопасен для использования."
@@ -3057,7 +3057,7 @@
     "message": "Ваш ключ API имеет полный доступ к организации. Это должно храниться в секрете."
   },
   "userApiKeyDesc": {
-    "message": "Ваш ключ API может быть использован для аутентификации в Bravura Pass CLI."
+    "message": "Ваш ключ API может быть использован для аутентификации в Bravura Vault CLI."
   },
   "userApiKeyWarning": {
     "message": "Ваш ключ API является альтернативным механизмом аутентификации. Он должен храниться в секрете."
@@ -3334,7 +3334,7 @@
     "message": "Запретить пользователям присоединяться к другим организациям."
   },
   "singleOrgBlockCreateMessage": {
-    "message": "Политика вашей текущей организации не позволяет вам присоединиться к более чем одной организации. Пожалуйста, свяжитесь с администраторами вашей организации или авторизуйтесь под другим аккаунтом Bravura Pass."
+    "message": "Политика вашей текущей организации не позволяет вам присоединиться к более чем одной организации. Пожалуйста, свяжитесь с администраторами вашей организации или авторизуйтесь под другим аккаунтом Bravura Vault."
   },
   "singleOrgPolicyWarning": {
     "message": "Члены организации, которые не являются владельцами или администраторами и уже входят в другую организацию, будут удалены из вашей организации."
@@ -3365,78 +3365,78 @@
   },
   "createSend": {
     "message": "Создать новую Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "editSend": {
     "message": "Изменить Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "createdSend": {
     "message": "Созданная Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "editedSend": {
     "message": "Измененная Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "deletedSend": {
     "message": "Удаленная Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "deleteSend": {
     "message": "Удалить Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "deleteSendConfirmation": {
     "message": "Вы действительно хотите удалить эту Send?",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "whatTypeOfSend": {
     "message": "Выберите тип Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "deletionDate": {
     "message": "Срок удаления"
   },
   "deletionDateDesc": {
     "message": "Эта Send будет окончательно удалена в указанные дату и время.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "expirationDate": {
     "message": "Срок истечения"
   },
   "expirationDateDesc": {
     "message": "Если задано, доступ к этой Send истечет в указанные дату и время.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "maxAccessCount": {
     "message": "Максимум обращений"
   },
   "maxAccessCountDesc": {
     "message": "Если задано, пользователи больше не смогут получить доступ к этой Send, как только будет достигнуто максимальное количество обращений.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "currentAccessCount": {
     "message": "Текущих обращений"
   },
   "sendPasswordDesc": {
     "message": "По возможности запрашивать у пользователей пароль для доступа к этой Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendNotesDesc": {
     "message": "Личные заметки об этой Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "disabled": {
     "message": "Отключено"
   },
   "sendLink": {
     "message": "Ссылка на Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "copySendLink": {
     "message": "Скопировать ссылку на Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "removePassword": {
     "message": "Удалить пароль"
@@ -3452,7 +3452,7 @@
   },
   "disableThisSend": {
     "message": "Отключить эту Send, чтобы никто не мог получить к ней доступ.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "allSends": {
     "message": "Все Send’ы"
@@ -3468,34 +3468,34 @@
   },
   "searchSends": {
     "message": "Поиск Send’ов",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendProtectedPassword": {
     "message": "Эта Send защищена паролем. Введите пароль ниже, чтобы продолжить.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
     "message": "Не знаете пароль? Для доступа к этой Send, запросите его у отправителя.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendHiddenByDefault": {
     "message": "Эта Send по умолчанию скрыта. Вы можете переключить ее видимость с помощью расположенной ниже кнопки.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "downloadFile": {
     "message": "Скачать файл"
   },
   "sendAccessUnavailable": {
     "message": "Send, к которой вы пытаетесь получить доступ, больше не существует или недоступна.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "missingSendFile": {
     "message": "Не удалось найти файл, связанный с этой Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "noSendsInList": {
     "message": "В списке нет Send’ов.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "emergencyAccess": {
     "message": "Экстренный доступ"
@@ -3528,7 +3528,7 @@
     "message": "Редактировать контакт для экстренной ситуации"
   },
   "inviteEmergencyContactDesc": {
-    "message": "Пригласите новый контакт для экстренной ситуации, введя адрес email его учетной записи Bravura Pass ниже. Если у него пока нет учетной записи Bravura Pass, то будет предложено ее создать."
+    "message": "Пригласите новый контакт для экстренной ситуации, введя адрес email его учетной записи Bravura Vault ниже. Если у него пока нет учетной записи Bravura Vault, то будет предложено ее создать."
   },
   "emergencyAccessRecoveryInitiated": {
     "message": "Инициирован экстренный доступ"
@@ -3567,7 +3567,7 @@
     "message": "Приглашенный пользователь."
   },
   "acceptEmergencyAccess": {
-    "message": "Вы были приглашены в качестве контакта на случай экстренной ситуации для пользователя, указанного выше. Чтобы принять приглашение, необходимо авторизоваться или создать новый аккаунт Bravura Pass."
+    "message": "Вы были приглашены в качестве контакта на случай экстренной ситуации для пользователя, указанного выше. Чтобы принять приглашение, необходимо авторизоваться или создать новый аккаунт Bravura Vault."
   },
   "emergencyInviteAcceptFailed": {
     "message": "Не удается принять приглашение. Попросите пользователя выслать новое."
@@ -3655,41 +3655,41 @@
     "message": "Отключить Send"
   },
   "disableSendPolicyDesc": {
-    "message": "Не разрешать пользователям создавать или редактировать Bravura Pass Send. Удаление существующей Send по-прежнему разрешено.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "message": "Не разрешать пользователям создавать или редактировать Bravura Vault Send. Удаление существующей Send по-прежнему разрешено.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "disableSendExemption": {
     "message": "Политики не распространяются на пользователей организации, которые могут ими управлять."
   },
   "sendDisabled": {
     "message": "Send отключена",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendDisabledWarning": {
     "message": "В соответствии с корпоративной политикой вы можете удалить только существующую Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendOptions": {
     "message": "Настройки Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendOptionsPolicyDesc": {
     "message": "Установка параметров создания и редактирования Send.",
-    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendOptionsExemption": {
     "message": "Политики не распространяются на пользователей организации, которые могут ими управлять."
   },
   "disableHideEmail": {
     "message": "Запретить пользователям скрывать свой адрес email от получателей при создании или редактировании Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendOptionsPolicyInEffect": {
     "message": "На данный момент действуют следующие политики организации:"
   },
   "sendDisableHideEmailInEffect": {
     "message": "Пользователям не разрешается скрывать свой адрес email от получателей при создании или редактировании Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "modifiedPolicyId": {
     "message": "Изменена политика $ID$.",
@@ -3759,11 +3759,11 @@
   },
   "textHiddenByDefault": {
     "message": "При доступе к Send скрывать текст по умолчанию",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendNameDesc": {
     "message": "Понятное имя для описания этой Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendTextDesc": {
     "message": "Текст, который вы хотите отправить."
@@ -3776,19 +3776,19 @@
   },
   "sendLinkLabel": {
     "message": "Ссылка на Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "send": {
     "message": "Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendAccessTaglineProductDesc": {
-    "message": "Bravura Pass Send передает конфиденциальную, временную информацию другим легко и безопасно.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "message": "Bravura Vault Send передает конфиденциальную, временную информацию другим легко и безопасно.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendAccessTaglineLearnMore": {
     "message": "Узнать больше о",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Pass Send or sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Vault Send or sign up to try it today.'"
   },
   "sendVaultCardProductDesc": {
     "message": "Делитесь текстом или файлами напрямую с кем угодно."
@@ -3815,18 +3815,18 @@
   },
   "sendAccessTaglineOr": {
     "message": "или",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send **or** sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send **or** sign up to try it today.'"
   },
   "sendAccessTaglineSignUp": {
     "message": "зарегистрируйтесь",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send or **sign up** to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send or **sign up** to try it today.'"
   },
   "sendAccessTaglineTryToday": {
     "message": "чтобы попробовать уже сегодня.",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send or sign up to **try it today.**'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send or sign up to **try it today.**'"
   },
   "sendCreatorIdentifier": {
-    "message": "Пользователь Bravura Pass $USER_IDENTIFIER$ поделился с вами следующим",
+    "message": "Пользователь Bravura Vault $USER_IDENTIFIER$ поделился с вами следующим",
     "placeholders": {
       "user_identifier": {
         "content": "$1",
@@ -3835,8 +3835,8 @@
     }
   },
   "viewSendHiddenEmailWarning": {
-    "message": "Пользователь Bravura Pass, создавший эту Send, решил скрыть свой адрес email. Вы должны убедиться, что доверяете источнику этой ссылки, прежде чем использовать или скачивать ее содержимое.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "message": "Пользователь Bravura Vault, создавший эту Send, решил скрыть свой адрес email. Вы должны убедиться, что доверяете источнику этой ссылки, прежде чем использовать или скачивать ее содержимое.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "expirationDateIsInvalid": {
     "message": "Срок истечения указан некорректно."

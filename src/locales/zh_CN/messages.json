@@ -5,7 +5,7 @@
     "placeholders": {
       "app_name": {
         "content": "$1",
-        "example": "Bravura Pass"
+        "example": "Bravura Vault"
       }
     }
   },
@@ -831,7 +831,7 @@
     "message": "此导出将使用您账户的加密密钥来加密您的数据。 如果您曾经轮换过账户的加密密钥，您应将其重新导出，否则您将无法解密导出的文件。"
   },
   "encExportAccountWarningDesc": {
-    "message": "账户加密密钥对每个 Bravura Pass 用户账户都是唯一的，所以您不能将加密的导出导入到另一个账户。"
+    "message": "账户加密密钥对每个 Bravura Vault 用户账户都是唯一的，所以您不能将加密的导出导入到另一个账户。"
   },
   "exportMasterPassword": {
     "message": "输入主密码来导出你的密码库数据。"
@@ -924,7 +924,7 @@
     "message": "请重新登录。"
   },
   "logBackInOthersToo": {
-    "message": "请重新登录。如果您还在使用其他 Bravura Pass 应用，也请注销并重新登陆。"
+    "message": "请重新登录。如果您还在使用其他 Bravura Vault 应用，也请注销并重新登陆。"
   },
   "changeMasterPassword": {
     "message": "修改主密码"
@@ -960,7 +960,7 @@
     }
   },
   "kdfIterationsWarning": {
-    "message": "如果将 KDF 迭代设置得太高，可能会在 CPU 速度较慢的设备上登录（以及解锁）Bravura Pass 时性能变差。建议您以 $INCREMENT$ 的增量值递增，然后在所有设备上行进测试。",
+    "message": "如果将 KDF 迭代设置得太高，可能会在 CPU 速度较慢的设备上登录（以及解锁）Bravura Vault 时性能变差。建议您以 $INCREMENT$ 的增量值递增，然后在所有设备上行进测试。",
     "placeholders": {
       "increment": {
         "content": "$1",
@@ -1122,7 +1122,7 @@
     "message": "域名规则"
   },
   "domainRulesDesc": {
-    "message": "如果您在多个不同网站之间使用同一个登陆信息，您可以把这些网站标记为 “通用”。Bravura Pass 会为您设置 “全局” 域名。"
+    "message": "如果您在多个不同网站之间使用同一个登陆信息，您可以把这些网站标记为 “通用”。Bravura Vault 会为您设置 “全局” 域名。"
   },
   "globalEqDomains": {
     "message": "全局通用域名"
@@ -1167,7 +1167,7 @@
     "message": "在组织机构层面配置提供程序，以要求你组织的用户采用两步登录。"
   },
   "twoStepLoginRecoveryWarning": {
-    "message": "启用两步登录可能会将您永久锁定在 Bravura Pass 帐户之外。如果您无法使用常规的两步登录提供程序（例如您丢失了设备），则可以使用恢复代码访问您的帐户。如果您失去对您帐户的访问，Bravura Pass 支持也无法帮助您。我们建议您记下或打印恢复代码，并将其妥善保管。"
+    "message": "启用两步登录可能会将您永久锁定在 Bravura Vault 帐户之外。如果您无法使用常规的两步登录提供程序（例如您丢失了设备），则可以使用恢复代码访问您的帐户。如果您失去对您帐户的访问，Bravura Vault 支持也无法帮助您。我们建议您记下或打印恢复代码，并将其妥善保管。"
   },
   "viewRecoveryCode": {
     "message": "查看恢复代码"
@@ -1268,7 +1268,7 @@
     "message": "保存表单"
   },
   "twoFactorYubikeyWarning": {
-    "message": "由于平台的限制，YubiKey 不能在所有 Bravura Pass 应用程序上使用。您应该启用另一个两步登录提供程序，以便在无法使用 YubiKey 时可以访问您的帐户。支持的平台："
+    "message": "由于平台的限制，YubiKey 不能在所有 Bravura Vault 应用程序上使用。您应该启用另一个两步登录提供程序，以便在无法使用 YubiKey 时可以访问您的帐户。支持的平台："
   },
   "twoFactorYubikeySupportUsb": {
     "message": "具有 USB 端口的设备上的网页版密码库、桌面应用程序、CLI 以及浏览器扩展都可以使用您的 YubiKey。"
@@ -1319,7 +1319,7 @@
     "message": "禁用全部钥匙"
   },
   "twoFactorDuoDesc": {
-    "message": "输入 Duo 管理面板提供的 Bravura Pass 应用信息。"
+    "message": "输入 Duo 管理面板提供的 Bravura Vault 应用信息。"
   },
   "twoFactorDuoIntegrationKey": {
     "message": "集成密钥"
@@ -1370,7 +1370,7 @@
     "message": "保存表单。"
   },
   "twoFactorU2fWarning": {
-    "message": "由于平台的限制，FIDO U2F 不能在所有 Bravura Pass 应用程序上使用。您应该启用另一个两步登录提供程序，以便在无法使用 FIDO U2F 时可以访问您的帐户。 支持的平台："
+    "message": "由于平台的限制，FIDO U2F 不能在所有 Bravura Vault 应用程序上使用。您应该启用另一个两步登录提供程序，以便在无法使用 FIDO U2F 时可以访问您的帐户。 支持的平台："
   },
   "twoFactorU2fSupportWeb": {
     "message": "台式机 / 笔记本电脑上启用了 U2F 的浏览器（Chrome，Opera，Vivaldi 或启用了 FIDO U2F 的 Firefox）中的网页版密码库和浏览器扩展。"
@@ -1385,13 +1385,13 @@
     "message": "读取安全钥匙时出现问题，请再试一次。"
   },
   "twoFactorWebAuthnWarning": {
-    "message": "由于平台限制，无法在所有 Bravura Pass 应用程序中使用 WebAuthn。您应该启用另一种两步登录方式，以便在 WebAuthn 无法使用时可以访问您的帐户。支持的平台有："
+    "message": "由于平台限制，无法在所有 Bravura Vault 应用程序中使用 WebAuthn。您应该启用另一种两步登录方式，以便在 WebAuthn 无法使用时可以访问您的帐户。支持的平台有："
   },
   "twoFactorWebAuthnSupportWeb": {
     "message": "桌面/笔记本电脑上具有 WebAuthn 功能的浏览器（Chrome、Opera、Vivaldi 或启用了 FIDO U2F 的 Firefox）上的网页密码库和浏览器扩展。"
   },
   "twoFactorRecoveryYourCode": {
-    "message": "您的 Bravura Pass 两步登录恢复代码"
+    "message": "您的 Bravura Vault 两步登录恢复代码"
   },
   "twoFactorRecoveryNoCode": {
     "message": "您尚未启用任何两步登录提供程序。在启用了一个两步登录提供程序后，您可以在这里检查恢复代码。"
@@ -1485,7 +1485,7 @@
     "message": "弱密码报告"
   },
   "weakPasswordsReportDesc": {
-    "message": "弱密码很容易被黑客和用于破解密码的自动化工具猜中。Bravura Pass 密码生成器可以帮助您创建强密码。"
+    "message": "弱密码很容易被黑客和用于破解密码的自动化工具猜中。Bravura Vault 密码生成器可以帮助您创建强密码。"
   },
   "weakPasswordsFound": {
     "message": "找到弱密码"
@@ -1596,11 +1596,11 @@
   },
   "accountCredit": {
     "message": "账户信用额度",
-    "description": "Financial term. In the case of Bravura Pass, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Pass owes you money)."
+    "description": "Financial term. In the case of Bravura Vault, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Vault owes you money)."
   },
   "accountBalance": {
     "message": "账户余额",
-    "description": "Financial term. In the case of Bravura Pass, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Pass owes you money)."
+    "description": "Financial term. In the case of Bravura Vault, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Vault owes you money)."
   },
   "addCredit": {
     "message": "添加信用额度",
@@ -2206,7 +2206,7 @@
     "message": "邀请用户"
   },
   "inviteUserDesc": {
-    "message": "在下面输入 Bravura Pass 帐户的电子邮件地址，以邀请新用户加入您的组织。如果他们没有 Bravura Pass 帐户，将会提示他们创建一个。"
+    "message": "在下面输入 Bravura Vault 帐户的电子邮件地址，以邀请新用户加入您的组织。如果他们没有 Bravura Vault 帐户，将会提示他们创建一个。"
   },
   "inviteMultipleEmailDesc": {
     "message": "通过使用逗号分隔的电子邮件地址列表，您可以一次邀请 $COUNT$ 位用户。",
@@ -2677,7 +2677,7 @@
     "message": "加入组织"
   },
   "joinOrganizationDesc": {
-    "message": "您已被邀请加入上面的组织。要接受邀请，您需要登录或者创建一个 Bravura Pass 账户。"
+    "message": "您已被邀请加入上面的组织。要接受邀请，您需要登录或者创建一个 Bravura Vault 账户。"
   },
   "inviteAccepted": {
     "message": "邀请已接受"
@@ -2719,7 +2719,7 @@
     "message": "如果您的帐户存在，我们已经向您发送了电子邮件，其中包含了进一步说明。"
   },
   "deleteRecoverConfirmDesc": {
-    "message": "您已请求删除您的 Bravura Pass 帐户。单击下面的按钮以确认。"
+    "message": "您已请求删除您的 Bravura Vault 帐户。单击下面的按钮以确认。"
   },
   "myOrganization": {
     "message": "我的组织"
@@ -2884,7 +2884,7 @@
     "message": "我们已经采用更强大的加密密钥，提供了更强的安全性和更新的功能。更新您的加密密钥非常简单快捷，只需要输入主密码。此次更新最终将强制执行。"
   },
   "updateEncryptionKeyWarning": {
-    "message": "更新加密密钥后，您需要注销所有正在使用的 Bravura Pass 应用（比如手机版应用或者浏览器扩展）后重新登录。注销或者重新登录（这将下载新的加密密钥）失败可能会导致数据损坏。我们会尝试自动为您注销，但是，可能会有所延迟。"
+    "message": "更新加密密钥后，您需要注销所有正在使用的 Bravura Vault 应用（比如手机版应用或者浏览器扩展）后重新登录。注销或者重新登录（这将下载新的加密密钥）失败可能会导致数据损坏。我们会尝试自动为您注销，但是，可能会有所延迟。"
   },
   "updateEncryptionKeyExportWarning": {
     "message": "您保存的任何已加密导出也将变为无效。"
@@ -3004,7 +3004,7 @@
     "message": "脆弱的主密码"
   },
   "weakMasterPasswordDesc": {
-    "message": "您选择的主密码较弱。您应该使用强密码（或密码短语）来正确保护您的 Bravura Pass 账户。仍要使用此主密码吗？"
+    "message": "您选择的主密码较弱。您应该使用强密码（或密码短语）来正确保护您的 Bravura Vault 账户。仍要使用此主密码吗？"
   },
   "rotateAccountEncKey": {
     "message": "同时轮换帐户的加密密钥"
@@ -3048,7 +3048,7 @@
     "message": "API 密钥"
   },
   "apiKeyDesc": {
-    "message": "您的 API 密钥可用于认证 Bravura Pass 公共 API。"
+    "message": "您的 API 密钥可用于认证 Bravura Vault 公共 API。"
   },
   "apiKeyRotateDesc": {
     "message": "轮换 API 密钥将使前一个密钥无效。如果你认为当前密钥不再安全，你可以轮换您的 API 密钥。"
@@ -3057,7 +3057,7 @@
     "message": "您的 API 密钥拥有组织的全部访问权限。请将其存放在安全的地方。"
   },
   "userApiKeyDesc": {
-    "message": "您的 API 密钥可用于在 Bravura Pass CLI 中进行身份认证。"
+    "message": "您的 API 密钥可用于在 Bravura Vault CLI 中进行身份认证。"
   },
   "userApiKeyWarning": {
     "message": "您的 API 密钥是另一套等效的身份验证机制。请严格保密。"
@@ -3334,7 +3334,7 @@
     "message": "限制用户加入任何其他组织。"
   },
   "singleOrgBlockCreateMessage": {
-    "message": "您当前的组织策略禁止您加入多个组织。 请联系您的组织管理员，或从其他 Bravura Pass 帐户注册。"
+    "message": "您当前的组织策略禁止您加入多个组织。 请联系您的组织管理员，或从其他 Bravura Vault 帐户注册。"
   },
   "singleOrgPolicyWarning": {
     "message": "不是所有者或管理员并且已是其他组织的成员的组织成员将从您的组织中移除。"
@@ -3365,78 +3365,78 @@
   },
   "createSend": {
     "message": "创建新 Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "editSend": {
     "message": "编辑 Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "createdSend": {
     "message": "Send 已创建",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "editedSend": {
     "message": "Send 已编辑",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "deletedSend": {
     "message": "Send 已删除",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "deleteSend": {
     "message": "删除 Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "deleteSendConfirmation": {
     "message": "确定要删除此 Send 吗？",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "whatTypeOfSend": {
     "message": "这是什么类型的 Send？",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "deletionDate": {
     "message": "删除日期"
   },
   "deletionDateDesc": {
     "message": "此 Send 将在指定的日期和时间后被永久删除。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "expirationDate": {
     "message": "过期日期"
   },
   "expirationDateDesc": {
     "message": "如果设置了，此 Send 的访问将在指定的日期和时间后过期。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "maxAccessCount": {
     "message": "最大访问次数"
   },
   "maxAccessCountDesc": {
     "message": "如果设置了，达到最大访问次数后用户将无法访问此 Send。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "currentAccessCount": {
     "message": "当前访问次数"
   },
   "sendPasswordDesc": {
     "message": "可选，用户需要提供密码才能访问此 Send。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendNotesDesc": {
     "message": "关于此 Send 的私密备注。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "disabled": {
     "message": "已禁用"
   },
   "sendLink": {
     "message": "Send 链接",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "copySendLink": {
     "message": "复制 Send 链接",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "removePassword": {
     "message": "移除密码"
@@ -3452,7 +3452,7 @@
   },
   "disableThisSend": {
     "message": "禁用此 Send 以阻止任何人访问它。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "allSends": {
     "message": "所有 Send"
@@ -3468,34 +3468,34 @@
   },
   "searchSends": {
     "message": "搜索 Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendProtectedPassword": {
     "message": "此 Send 受到密码保护。在下方输入密码以继续。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
     "message": "不知道密码？请向提供此 Send 的发件人索要密码。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendHiddenByDefault": {
     "message": "此 Send 默认隐藏。您可使用下方的按钮切换其可见性。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "downloadFile": {
     "message": "下载文件"
   },
   "sendAccessUnavailable": {
     "message": "您尝试访问的 Send 不存在或不再可用。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "missingSendFile": {
     "message": "没有找到与此 Send 关联的文件。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "noSendsInList": {
     "message": "没有可列出的 Send。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "emergencyAccess": {
     "message": "紧急访问"
@@ -3528,7 +3528,7 @@
     "message": "编辑紧急联系人"
   },
   "inviteEmergencyContactDesc": {
-    "message": "通过在下面输入他们的 Bravura Pass 帐户电子邮件地址来邀请新的紧急联系人。 如果他们还没有 Bravura Pass 帐户，将提示创建一个新帐户。"
+    "message": "通过在下面输入他们的 Bravura Vault 帐户电子邮件地址来邀请新的紧急联系人。 如果他们还没有 Bravura Vault 帐户，将提示创建一个新帐户。"
   },
   "emergencyAccessRecoveryInitiated": {
     "message": "紧急访问已发起"
@@ -3567,7 +3567,7 @@
     "message": "已邀请用户。"
   },
   "acceptEmergencyAccess": {
-    "message": "您已被邀请成为上面所列用户的紧急联系人。要接受邀请，您需要登录或创建一个新的 Bravura Pass 帐户。"
+    "message": "您已被邀请成为上面所列用户的紧急联系人。要接受邀请，您需要登录或创建一个新的 Bravura Vault 帐户。"
   },
   "emergencyInviteAcceptFailed": {
     "message": "无法接受邀请。请向用户请求发送新的邀请。"
@@ -3655,41 +3655,41 @@
     "message": "禁用 Send"
   },
   "disableSendPolicyDesc": {
-    "message": "不允许用户创建和编辑 Bravura Pass Send。仍允许删除现有的 Send。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "message": "不允许用户创建和编辑 Bravura Vault Send。仍允许删除现有的 Send。",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "disableSendExemption": {
     "message": "可以管理组织策略的组织用户豁免此策略的执行。"
   },
   "sendDisabled": {
     "message": "Send 已禁用",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendDisabledWarning": {
     "message": "由于企业策略，您只能删除现有的 Send。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendOptions": {
     "message": "Send 选项",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendOptionsPolicyDesc": {
     "message": "设置用于创建和编辑 Send 的选项。",
-    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendOptionsExemption": {
     "message": "可以管理组织策略的组织用户豁免此策略的执行。"
   },
   "disableHideEmail": {
     "message": "不允许用户在创建或编辑 Send 时隐藏他们的电子邮件地址。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendOptionsPolicyInEffect": {
     "message": "以下组织策略目前正起作用："
   },
   "sendDisableHideEmailInEffect": {
     "message": "用户在创建或编辑 Send 时不允许隐藏他们的电子邮件地址。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "modifiedPolicyId": {
     "message": "策略 $ID$ 已修改。",
@@ -3759,11 +3759,11 @@
   },
   "textHiddenByDefault": {
     "message": "访问 Send 时，默认将隐藏文本",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendNameDesc": {
     "message": "用于描述此 Send 的友好名称。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendTextDesc": {
     "message": "您想要发送的文本。"
@@ -3776,19 +3776,19 @@
   },
   "sendLinkLabel": {
     "message": "Send 链接",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "send": {
     "message": "Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendAccessTaglineProductDesc": {
-    "message": "Bravura Pass Send 能轻松、安全地向他人传送敏感的临时信息。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "message": "Bravura Vault Send 能轻松、安全地向他人传送敏感的临时信息。",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendAccessTaglineLearnMore": {
     "message": "进一步了解",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Pass Send or sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Vault Send or sign up to try it today.'"
   },
   "sendVaultCardProductDesc": {
     "message": "直接与其他人分享文本或文件。"
@@ -3815,18 +3815,18 @@
   },
   "sendAccessTaglineOr": {
     "message": "或",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send **or** sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send **or** sign up to try it today.'"
   },
   "sendAccessTaglineSignUp": {
     "message": "注册",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send or **sign up** to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send or **sign up** to try it today.'"
   },
   "sendAccessTaglineTryToday": {
     "message": "来马上尝试。",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send or sign up to **try it today.**'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send or sign up to **try it today.**'"
   },
   "sendCreatorIdentifier": {
-    "message": "Bravura Pass 用户 $USER_IDENTIFIER$ 与您分享了以下内容",
+    "message": "Bravura Vault 用户 $USER_IDENTIFIER$ 与您分享了以下内容",
     "placeholders": {
       "user_identifier": {
         "content": "$1",
@@ -3835,8 +3835,8 @@
     }
   },
   "viewSendHiddenEmailWarning": {
-    "message": "创建此 Send 的 Bravura Pass 用户已选择隐藏他们的电子邮件地址。在使用或下载此链接的内容之前，应确保您信任此链接的来源。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "message": "创建此 Send 的 Bravura Vault 用户已选择隐藏他们的电子邮件地址。在使用或下载此链接的内容之前，应确保您信任此链接的来源。",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "expirationDateIsInvalid": {
     "message": "所提供的过期日期无效。"

@@ -5,7 +5,7 @@
     "placeholders": {
       "app_name": {
         "content": "$1",
-        "example": "Bravura Pass"
+        "example": "Bravura Vault"
       }
     }
   },
@@ -831,7 +831,7 @@
     "message": "Ez az exportálás titkosítja az adatokat a fiók titkosítási kulcsával. Ha valaha a diók forgatási kulcsa más lesz, akkor újra exportálni kell, mert nem lehet visszafejteni ezt az exportálási fájlt."
   },
   "encExportAccountWarningDesc": {
-    "message": "A fiók titkosítási kulcsai minden Bravura Pass felhasználói fiókhoz egyediek, ezért nem importálhatunk titkosított exportálást egy másik fiókba."
+    "message": "A fiók titkosítási kulcsai minden Bravura Vault felhasználói fiókhoz egyediek, ezért nem importálhatunk titkosított exportálást egy másik fiókba."
   },
   "exportMasterPassword": {
     "message": "A mesterjelszó megadása a széfadatok exportálásához."
@@ -924,7 +924,7 @@
     "message": "Ismételten be kell jelentkezni."
   },
   "logBackInOthersToo": {
-    "message": "Ismételten be kell jelentkezni. Ha másik Bravura Pass alkalmazásokat használunk, ott is jelentkezzünk ki és ismételten be."
+    "message": "Ismételten be kell jelentkezni. Ha másik Bravura Vault alkalmazásokat használunk, ott is jelentkezzünk ki és ismételten be."
   },
   "changeMasterPassword": {
     "message": "Mesterjelszó módosítása"
@@ -960,7 +960,7 @@
     }
   },
   "kdfIterationsWarning": {
-    "message": "A túl magas KDF iterációk lelassíthatják a lassabb CPU-val rendelkező eszközökön a bejelentkezést a Bravura Passbe (és a lezárást is). Javasoljuk az érték növelését $INCREMENT$ lépéssel és teszteljük azt az összes eszközön.",
+    "message": "A túl magas KDF iterációk lelassíthatják a lassabb CPU-val rendelkező eszközökön a bejelentkezést a Bravura Vaultbe (és a lezárást is). Javasoljuk az érték növelését $INCREMENT$ lépéssel és teszteljük azt az összes eszközön.",
     "placeholders": {
       "increment": {
         "content": "$1",
@@ -1122,7 +1122,7 @@
     "message": "Domain szabályok"
   },
   "domainRulesDesc": {
-    "message": "Ha ugyanazokat a bejelentkezési adatokat használjuk több különböző webhely domainen, ezeket \"azonos\"-ként jelölhetjük meg.  A \"Globális\" domainek a Bravura Pass által már létrehozottak."
+    "message": "Ha ugyanazokat a bejelentkezési adatokat használjuk több különböző webhely domainen, ezeket \"azonos\"-ként jelölhetjük meg.  A \"Globális\" domainek a Bravura Vault által már létrehozottak."
   },
   "globalEqDomains": {
     "message": "Globális azonos domainek"
@@ -1167,7 +1167,7 @@
     "message": "Kétlépéses bejelentkezés szükséges a szervezet felhasználói számára a szolgáltatók szervezeti szintű konfigurálásával."
   },
   "twoStepLoginRecoveryWarning": {
-    "message": "A kétlépcsős bejelentkezés engedélyezése véglegesen kizárhatja a felhasználót a Bravura Pass fiókból. A helyreállítási kód lehetővé teszi a fiókjához való hozzáférést abban az esetben, ha már nem tudjuk használni a szokásos kétlépcsős bejelentkezési szolgáltatást (pl. készülék elvesztése). A Bravura Pass támogatás nem tud segíteni abban az esetben, ha elveszítjük a hozzáférést a fiókhoz. Célszerű leírni vagy kinyomtatni a helyreállítási kódot és azt biztonságos helyen tartani."
+    "message": "A kétlépcsős bejelentkezés engedélyezése véglegesen kizárhatja a felhasználót a Bravura Vault fiókból. A helyreállítási kód lehetővé teszi a fiókjához való hozzáférést abban az esetben, ha már nem tudjuk használni a szokásos kétlépcsős bejelentkezési szolgáltatást (pl. készülék elvesztése). A Bravura Vault támogatás nem tud segíteni abban az esetben, ha elveszítjük a hozzáférést a fiókhoz. Célszerű leírni vagy kinyomtatni a helyreállítási kódot és azt biztonságos helyen tartani."
   },
   "viewRecoveryCode": {
     "message": "Helyreállító kód megtekintése"
@@ -1268,7 +1268,7 @@
     "message": "Az űrlap mentése."
   },
   "twoFactorYubikeyWarning": {
-    "message": "Platform korlátozások miatt nem lehetséges minden Bravura Pass alkalmazásban YubiKey eszközt használni. Engedélyezzünk egy másik kétlépcsős bejelentkezés szolgáltatót, hogy hozzáférhessünk a fiókhoz akkor is, ha a YubiKey nem használható. Támogatott platformok:"
+    "message": "Platform korlátozások miatt nem lehetséges minden Bravura Vault alkalmazásban YubiKey eszközt használni. Engedélyezzünk egy másik kétlépcsős bejelentkezés szolgáltatót, hogy hozzáférhessünk a fiókhoz akkor is, ha a YubiKey nem használható. Támogatott platformok:"
   },
   "twoFactorYubikeySupportUsb": {
     "message": "Webes széf, asztali alkalmazás, CLI, és minden egyéb böngésző bővítmény olyan USB porttal rendelkező eszközön, amely elfogadja a YubiKey eszközt."
@@ -1319,7 +1319,7 @@
     "message": "Összes kulcs letiltása"
   },
   "twoFactorDuoDesc": {
-    "message": "A Bravura Pass alkalmazás információjának megadása a Duo Admin panelről."
+    "message": "A Bravura Vault alkalmazás információjának megadása a Duo Admin panelről."
   },
   "twoFactorDuoIntegrationKey": {
     "message": "Integrációs kulcs"
@@ -1370,7 +1370,7 @@
     "message": "Az űrlap mentése."
   },
   "twoFactorU2fWarning": {
-    "message": "A platform korlátozások miatt nem lehet minden Bravura Pass alkalmazásban FIDO U2F-t használni. Célszerű engedélyezni egy másik kétlépcsős bejelentkezés szolgáltatót a fiók eléréséhez akkor, ha a FIDO U2F nem használható. Támogatott platformok:"
+    "message": "A platform korlátozások miatt nem lehet minden Bravura Vault alkalmazásban FIDO U2F-t használni. Célszerű engedélyezni egy másik kétlépcsős bejelentkezés szolgáltatót a fiók eléréséhez akkor, ha a FIDO U2F nem használható. Támogatott platformok:"
   },
   "twoFactorU2fSupportWeb": {
     "message": "Web széf és böngésző kiegészítők asztali gépen / laptopon engedélyezett U2F böngészővel (Chrome, Opera, Vivaldi, vagy Firefox bekapcsolt FIDO U2F-fel)."
@@ -1385,13 +1385,13 @@
     "message": "Probléma lépett fel a biztonsági kulcs olvasásakor. Próbáljuk újra."
   },
   "twoFactorWebAuthnWarning": {
-    "message": "A platform korlátozások miatt nem lehetséges minden Bravura Pass alkalmazásban YubiKey eszközt használni. Engedélyezzünk egy másik kétlépcsős bejelentkezés szolgáltatót, hogy hozzáférhessünk a fiókhoz akkor is, ha a YubiKey nem használható. Támogatott platformok:"
+    "message": "A platform korlátozások miatt nem lehetséges minden Bravura Vault alkalmazásban YubiKey eszközt használni. Engedélyezzünk egy másik kétlépcsős bejelentkezés szolgáltatót, hogy hozzáférhessünk a fiókhoz akkor is, ha a YubiKey nem használható. Támogatott platformok:"
   },
   "twoFactorWebAuthnSupportWeb": {
     "message": "Web széf és böngésző kiegészítők asztali gépen / laptopon engedélyezett U2F böngészővel (Chrome, Opera, Vivaldi, vagy Firefox bekapcsolt FIDO U2F-fel)."
   },
   "twoFactorRecoveryYourCode": {
-    "message": "Bravura Pass kétlépcsős bejelentkezés helyreállító kód"
+    "message": "Bravura Vault kétlépcsős bejelentkezés helyreállító kód"
   },
   "twoFactorRecoveryNoCode": {
     "message": "Még nem lett engedélyezve kétlépcsős bejelentkezés szolgáltató. A kétlépcsős bejelentkezés szolgáltató engedélyezése után visszatérhetünk ide a helyreállító kódért."
@@ -1485,7 +1485,7 @@
     "message": "Gyenge jelszavak jelentés"
   },
   "weakPasswordsReportDesc": {
-    "message": "A gyenge jelszavakat könnyen megfejthetik hackerek és jelszótöréshez használt eszközök. A Bravura Pass jelszógenerátor segít erős jelszót készíteni."
+    "message": "A gyenge jelszavakat könnyen megfejthetik hackerek és jelszótöréshez használt eszközök. A Bravura Vault jelszógenerátor segít erős jelszót készíteni."
   },
   "weakPasswordsFound": {
     "message": "Gyenge jelszavak találhatók."
@@ -1596,11 +1596,11 @@
   },
   "accountCredit": {
     "message": "Fiók  hitelkeret",
-    "description": "Financial term. In the case of Bravura Pass, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Pass owes you money)."
+    "description": "Financial term. In the case of Bravura Vault, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Vault owes you money)."
   },
   "accountBalance": {
     "message": "Számla egyenleg",
-    "description": "Financial term. In the case of Bravura Pass, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Pass owes you money)."
+    "description": "Financial term. In the case of Bravura Vault, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Vault owes you money)."
   },
   "addCredit": {
     "message": "Hitelkeret hozzáadása",
@@ -2206,7 +2206,7 @@
     "message": "Felhasználó meghívása"
   },
   "inviteUserDesc": {
-    "message": "Új felhasználó meghívása a szervezetéhez a Bravura Pass fiók e-mail címének megadásával. Ha még nem rendelkezik Bravura Pass-fiókkal, felkérjük új fiók létrehozására.\n"
+    "message": "Új felhasználó meghívása a szervezetéhez a Bravura Vault fiók e-mail címének megadásával. Ha még nem rendelkezik Bravura Vault-fiókkal, felkérjük új fiók létrehozására.\n"
   },
   "inviteMultipleEmailDesc": {
     "message": "Egymástól vesszővel elválasztott email címek megadásával egyszerre akár $COUNT$ felhasználó meghívható.",
@@ -2677,7 +2677,7 @@
     "message": "Csatlakozás szervezethez"
   },
   "joinOrganizationDesc": {
-    "message": "Meghívást érkezett a fenti szervezethez csatlakozáshoz.  A meghívás elfogadásához be kell jelentkezni vagy új Bravura Pass fiókot kell létrehozni."
+    "message": "Meghívást érkezett a fenti szervezethez csatlakozáshoz.  A meghívás elfogadásához be kell jelentkezni vagy új Bravura Vault fiókot kell létrehozni."
   },
   "inviteAccepted": {
     "message": "A meghívás elfogadásra került."
@@ -2719,7 +2719,7 @@
     "message": "Ha létezik a fiók, egy email kerül kiküldésre további utasításokkal."
   },
   "deleteRecoverConfirmDesc": {
-    "message": "A Bravura Pass fiók törlését kértük. Kattintás a lenti gombra a megerősítéshez."
+    "message": "A Bravura Vault fiók törlését kértük. Kattintás a lenti gombra a megerősítéshez."
   },
   "myOrganization": {
     "message": "Saját szervezet"
@@ -2884,7 +2884,7 @@
     "message": "Hosszabb titkosítókulcsok kerültek használatba, amelyek jobb biztonságot és hozzáférést biztosítanak új funkciókhoz. A titkosító kulcs frissítése könnyű és gyors. Csak meg kell adni a mesterjelszót. Ez a frissítés kötelezővé válik."
   },
   "updateEncryptionKeyWarning": {
-    "message": "A titkosítási kulcs frissítése után ki kell jelentkezni és vissza kell jelentkezni az összes jelenleg használt Bravura Pass alkalmazásba (például a mobilalkalmazás vagy a böngésző bővítmények). A kijelentkezés és a bejelentkezés elmulasztása (amely letölti az új titkosítási kulcsot) adatvesztést okozhat. Megkíséreljük az automatikusan kijelentkeztetést, azonban ez késhet."
+    "message": "A titkosítási kulcs frissítése után ki kell jelentkezni és vissza kell jelentkezni az összes jelenleg használt Bravura Vault alkalmazásba (például a mobilalkalmazás vagy a böngésző bővítmények). A kijelentkezés és a bejelentkezés elmulasztása (amely letölti az új titkosítási kulcsot) adatvesztést okozhat. Megkíséreljük az automatikusan kijelentkeztetést, azonban ez késhet."
   },
   "updateEncryptionKeyExportWarning": {
     "message": "Az el nem mentett titkosított exportok szintén érvénytelenné válnak."
@@ -3004,7 +3004,7 @@
     "message": "Gyenge mesterjelszó"
   },
   "weakMasterPasswordDesc": {
-    "message": "A választott mesterjelszó gyenge. Erős jelszót kell használni a Bravura Pass fiók megfelelő védelme érdekében. Biztosan ezt a mesterjelszót szeretnénk használni?"
+    "message": "A választott mesterjelszó gyenge. Erős jelszót kell használni a Bravura Vault fiók megfelelő védelme érdekében. Biztosan ezt a mesterjelszót szeretnénk használni?"
   },
   "rotateAccountEncKey": {
     "message": "A fiók titkosító kulcs forgatása is"
@@ -3048,7 +3048,7 @@
     "message": "API kulcs"
   },
   "apiKeyDesc": {
-    "message": "Az API kulcs használható a Bravura Pass nyilvános API hitelesítéséhez."
+    "message": "Az API kulcs használható a Bravura Vault nyilvános API hitelesítéséhez."
   },
   "apiKeyRotateDesc": {
     "message": "Az API kulcs forgatása érvényteleníti a korábbi kulcsot. Az API kulcs forgatható, ha a jelenlegi kulcs már nem tűnik biztonságosnak."
@@ -3057,7 +3057,7 @@
     "message": "Az API kulcs teljes hozzáférést biztosít a szervezethez. Célszerű titokban tartani."
   },
   "userApiKeyDesc": {
-    "message": "Az API kulcs használható a Bravura Pass CLI hitelesítéséhez."
+    "message": "Az API kulcs használható a Bravura Vault CLI hitelesítéséhez."
   },
   "userApiKeyWarning": {
     "message": "API kulcs alternatív hitelesítési mechanizmus. Célszerű titokban tartani."
@@ -3334,7 +3334,7 @@
     "message": "Korlátozza a felhasználókat más szervezetekhez csatlakozásban."
   },
   "singleOrgBlockCreateMessage": {
-    "message": "Jelenlegi szervezetének van olyan irányelve, amely nem engedélyezi, hogy több szervezethez csatlakozzunk. Lépjünk kapcsolatba szervezetünk adminisztrátorával vagy regisztráljunk egy másik Bravura Pass fiókból."
+    "message": "Jelenlegi szervezetének van olyan irányelve, amely nem engedélyezi, hogy több szervezethez csatlakozzunk. Lépjünk kapcsolatba szervezetünk adminisztrátorával vagy regisztráljunk egy másik Bravura Vault fiókból."
   },
   "singleOrgPolicyWarning": {
     "message": "A szervezet azon tagjait, akik nem tulajdonosok vagy rendszergazdák, és már egy másik szervezet tagjai, eltávolítjáara kerülnek a szervezetből."
@@ -3365,78 +3365,78 @@
   },
   "createSend": {
     "message": "Új küldés létrehozása",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "editSend": {
     "message": "Küldés szerkesztése",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "createdSend": {
     "message": "A küldés létrejött.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "editedSend": {
     "message": "A küldés szerkesztésre került.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "deletedSend": {
     "message": "A küldés törlésre került.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "deleteSend": {
     "message": "Küldés törlése",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "deleteSendConfirmation": {
     "message": "Biztosan törlésre kerüljön ez a küldés?",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "whatTypeOfSend": {
     "message": "Milyen típusú ez a küldés?",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "deletionDate": {
     "message": "Törlési dátum"
   },
   "deletionDateDesc": {
     "message": "A Send véglegesen törölve lesz a meghatározott időpontban.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "expirationDate": {
     "message": "Lejárati dátum"
   },
   "expirationDateDesc": {
     "message": "Amennyiben be van állítva, a hozzáférés ehhez a Küldéshez lejár a meghatározott időpontban.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "maxAccessCount": {
     "message": "Maximális elérési szám"
   },
   "maxAccessCountDesc": {
     "message": "Amennyiben be van állítva, a Send elérhetetlen lesz, amint elérik a meghatározott hozzáférések számát.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "currentAccessCount": {
     "message": "Aktuális elérési szám"
   },
   "sendPasswordDesc": {
     "message": "Opcionálissan egy jelszó kérhető a felhasználóktól a Küldés eléréséhez.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendNotesDesc": {
     "message": "Személyes megjegyzések erről a Küldésről.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "disabled": {
     "message": "Letiltva"
   },
   "sendLink": {
     "message": "Send link",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "copySendLink": {
     "message": "Hivatkozás küldés másolása",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "removePassword": {
     "message": "Jelszó eltávolítása"
@@ -3452,7 +3452,7 @@
   },
   "disableThisSend": {
     "message": "A Küldés letiltásával mindenki hozzáférése megvonható.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "allSends": {
     "message": "Összes küldés"
@@ -3468,34 +3468,34 @@
   },
   "searchSends": {
     "message": "Küldés keresése",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendProtectedPassword": {
     "message": "A küldés jelszóval védett. A folytatáshoz lentebb meg kell adni a jelszót.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
     "message": "Nem ismerjük a jelszót? Kérdezzünk rá a küldőnél a küldés elérésére szükséges jelszóért.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendHiddenByDefault": {
     "message": "Ez a küldés alapértelmezésben rejtett. Az alábbi gombbal átváltható a láthatósága.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "downloadFile": {
     "message": "Fájl letöltése"
   },
   "sendAccessUnavailable": {
     "message": "Az elérendő küldés nem létezik vagy már nem elérhető.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "missingSendFile": {
     "message": "A Küldéshez társított fájl nem található.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "noSendsInList": {
     "message": "A listában nincs küldés.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "emergencyAccess": {
     "message": "Sürgősségi hozzáférés"
@@ -3528,7 +3528,7 @@
     "message": "Sürgősségi kapcsolat szerkesztése"
   },
   "inviteEmergencyContactDesc": {
-    "message": "Új felhasználó meghívása sürgősségi kapcsolatként a Bravura Pass fiók email címének megadásával. Ha még nem rendelkezik Bravura Pass-fiókkal, felkérjük új fiók létrehozására."
+    "message": "Új felhasználó meghívása sürgősségi kapcsolatként a Bravura Vault fiók email címének megadásával. Ha még nem rendelkezik Bravura Vault-fiókkal, felkérjük új fiók létrehozására."
   },
   "emergencyAccessRecoveryInitiated": {
     "message": "A sürgősségi hozzáférés kezdeményezésre került."
@@ -3567,7 +3567,7 @@
     "message": "Meghívott felhasználó."
   },
   "acceptEmergencyAccess": {
-    "message": "Meghívást érkezett a fenti személytől sürgősségi kapcsolat tekintetében. A meghívás elfogadásához be kell jelentkezni vagy új Bravura Pass fiókot kell létrehozni."
+    "message": "Meghívást érkezett a fenti személytől sürgősségi kapcsolat tekintetében. A meghívás elfogadásához be kell jelentkezni vagy új Bravura Vault fiókot kell létrehozni."
   },
   "emergencyInviteAcceptFailed": {
     "message": "A meghívást nem lehet elfogadni. Kérjük meg a felhasználót új meghívó elküldésére."
@@ -3655,41 +3655,41 @@
     "message": "Küdlés letiltása"
   },
   "disableSendPolicyDesc": {
-    "message": "Ne engedjük a felhasználóknak a Bravura Pass Küldés létrehozását vagy szerkesztését. A meglévő küldés törlése továbbra is megengedett.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "message": "Ne engedjük a felhasználóknak a Bravura Vault Küldés létrehozását vagy szerkesztését. A meglévő küldés törlése továbbra is megengedett.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "disableSendExemption": {
     "message": "A szervezet házirendjét kezeő szervezeti felhasználók, mentesülnek az irányelvek végrehajtása alól."
   },
   "sendDisabled": {
     "message": "A küldés kikapcsolásra került",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendDisabledWarning": {
     "message": "A vállalati házirend miatt csak egy meglévő Küldés törölhető.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendOptions": {
     "message": "Send opciók",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendOptionsPolicyDesc": {
     "message": "Opciók beállítása Send elem létrehozásához és szerkesztéséhez.",
-    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendOptionsExemption": {
     "message": "A szervezet házirendjét kezelő szervezeti felhasználók mentesülnek az irányelvek végrehajtása alól."
   },
   "disableHideEmail": {
     "message": "Ne engedjük, hogy a felhasználók elrejtsék email címüket a címzettek elől a Send elem létrehozása vagy szerkesztése során.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendOptionsPolicyInEffect": {
     "message": "A következő szervezeti irányelvek vannak érvényben:"
   },
   "sendDisableHideEmailInEffect": {
     "message": "A felhasználók nem rejthetik el email címüket a címzettek elől egy Send elem létrehozásakor vagy szerkesztésekor.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "modifiedPolicyId": {
     "message": "$ID$ szabály módosításra került.",
@@ -3759,11 +3759,11 @@
   },
   "textHiddenByDefault": {
     "message": "A Küldés elérésekor alapértelmezés szerint a szöveg elrejtése",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendNameDesc": {
     "message": "Barátságos név a Küldés leírására.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendTextDesc": {
     "message": "A küldendő szöveg."
@@ -3776,19 +3776,19 @@
   },
   "sendLinkLabel": {
     "message": "Hivatkozás küldése",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "send": {
     "message": "Küldés",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendAccessTaglineProductDesc": {
-    "message": "A Bravura Pass Küldés könnyen és biztonságosan továbbítja az érzékeny, ideiglenes információkat másoknak.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "message": "A Bravura Vault Küldés könnyen és biztonságosan továbbítja az érzékeny, ideiglenes információkat másoknak.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "sendAccessTaglineLearnMore": {
     "message": "Bővebben erről",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Pass Send or sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Vault Send or sign up to try it today.'"
   },
   "sendVaultCardProductDesc": {
     "message": "Szöveg és fájlok közvetlen megosztása bárkivel."
@@ -3815,18 +3815,18 @@
   },
   "sendAccessTaglineOr": {
     "message": "vagy",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send **or** sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send **or** sign up to try it today.'"
   },
   "sendAccessTaglineSignUp": {
     "message": "regisztráció",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send or **sign up** to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send or **sign up** to try it today.'"
   },
   "sendAccessTaglineTryToday": {
     "message": "próbáljuk ki még ma.",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Pass Send or sign up to **try it today.**'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send or sign up to **try it today.**'"
   },
   "sendCreatorIdentifier": {
-    "message": "$USER_IDENTIFIER$ Bravura Pass felhasználó megosztotta a következőket",
+    "message": "$USER_IDENTIFIER$ Bravura Vault felhasználó megosztotta a következőket",
     "placeholders": {
       "user_identifier": {
         "content": "$1",
@@ -3835,8 +3835,8 @@
     }
   },
   "viewSendHiddenEmailWarning": {
-    "message": "Az ezt a Send elemet létrehozó Bravura Pass felhasználó úgy döntött, hogy elrejti email címét. Mielőtt felhasználnánk vagy letöltenénk a tartalmát, ellenőrizzük a hivatkozás megbízhatóságát.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Pass Send'. It should not be translated."
+    "message": "Az ezt a Send elemet létrehozó Bravura Vault felhasználó úgy döntött, hogy elrejti email címét. Mielőtt felhasználnánk vagy letöltenénk a tartalmát, ellenőrizzük a hivatkozás megbízhatóságát.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "expirationDateIsInvalid": {
     "message": "A megadott lejárati idő nem érvényes."
