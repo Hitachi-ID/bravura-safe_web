@@ -1,6 +1,6 @@
-FROM bitwarden/server
+FROM bravura_vault/server
 
-LABEL com.bitwarden.product="bitwarden"
+LABEL com.hitachi.product="bravura_vault"
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
