@@ -186,6 +186,21 @@ const routes: Routes = [
                         component: CreateOrganizationComponent,
                         data: { titleId: 'newOrganization' },
                     },
+                    {
+                        path: 'emergency-access',
+                        children: [
+                            {
+                                path: '',
+                                component: EmergencyAccessComponent,
+                                data: { titleId: 'emergencyAccess' },
+                            },
+                            {
+                                path: ':id',
+                                component: EmergencyAccessViewComponent,
+                                data: { titleId: 'emergencyAccess' },
+                            },
+                        ],
+                    },
                 ],
             },
             {
