@@ -10,8 +10,6 @@ import { Router } from '@angular/router';
 
 import { ToasterService } from 'angular2-toaster';
 
-import { PaymentMethodType } from 'jslib-common/enums/paymentMethodType';
-
 import { ApiService } from 'jslib-common/abstractions/api.service';
 import { CryptoService } from 'jslib-common/abstractions/crypto.service';
 import { I18nService } from 'jslib-common/abstractions/i18n.service';
@@ -23,8 +21,12 @@ import { UserService } from 'jslib-common/abstractions/user.service';
 import { PaymentComponent } from './payment.component';
 import { TaxInfoComponent } from './tax-info.component';
 
+import { EncString } from 'jslib-common/models/domain/encString';
+import { SymmetricCryptoKey } from 'jslib-common/models/domain/symmetricCryptoKey';
+
 import { OrganizationUserStatusType } from 'jslib-common/enums/organizationUserStatusType';
 import { OrganizationUserType } from 'jslib-common/enums/organizationUserType';
+import { PaymentMethodType } from 'jslib-common/enums/paymentMethodType';
 import { PlanType } from 'jslib-common/enums/planType';
 import { PolicyType } from 'jslib-common/enums/policyType';
 import { ProductType } from 'jslib-common/enums/productType';
@@ -32,8 +34,8 @@ import { ProductType } from 'jslib-common/enums/productType';
 import { OrganizationCreateRequest } from 'jslib-common/models/request/organizationCreateRequest';
 import { OrganizationKeysRequest } from 'jslib-common/models/request/organizationKeysRequest';
 import { OrganizationUpgradeRequest } from 'jslib-common/models/request/organizationUpgradeRequest';
+import { ProviderOrganizationCreateRequest } from 'jslib-common/models/request/provider/providerOrganizationCreateRequest';
 
-import { EncString } from 'jslib-common/models/domain';
 import { PlanResponse } from 'jslib-common/models/response/planResponse';
 
 @Component({
@@ -49,6 +51,7 @@ export class OrganizationPlansComponent implements OnInit {
     @Input() showCancel = false;
     @Input() product: ProductType = ProductType.Free;
     @Input() plan: PlanType = PlanType.Free;
+    @Input() providerId: string;
     @Output() onSuccess = new EventEmitter();
     @Output() onCanceled = new EventEmitter();
 
@@ -60,6 +63,7 @@ export class OrganizationPlansComponent implements OnInit {
     additionalSeats: number = 0;
     name: string;
     billingEmail: string;
+    clientOwnerEmail: string;
     businessName: string;
     productTypes = ProductType;
     formPromise: Promise<any>;
@@ -83,6 +87,12 @@ export class OrganizationPlansComponent implements OnInit {
                 this.ownedBusiness = true;
             }
         }
+
+        if (this.providerId) {
+            this.ownedBusiness = true;
+            this.changedOwnedBusiness();
+        }
+
         this.loading = false;
     }
 
@@ -235,7 +245,7 @@ export class OrganizationPlansComponent implements OnInit {
                     const collectionCt = collection.encryptedString;
                     const orgKeys = await this.cryptoService.makeKeyPair(shareKey[1]);
 
-                    orgId = await this.createCloudHosted(key, collectionCt, orgKeys);
+                    orgId = await this.createCloudHosted(key, collectionCt, orgKeys, shareKey[1]);
 
                     this.toasterService.popAsync('success', this.i18nService.t('organizationCreated'), this.i18nService.t('organizationReadyToGo'));
                 } else {
@@ -293,7 +303,7 @@ export class OrganizationPlansComponent implements OnInit {
         return this.organizationId;
     }
 
-    private async createCloudHosted(key: string, collectionCt: string, orgKeys: [string, EncString]) {
+    private async createCloudHosted(key: string, collectionCt: string, orgKeys: [string, EncString], orgKey: SymmetricCryptoKey) {
         const request = new OrganizationCreateRequest();
         request.key = key;
         request.collectionName = collectionCt;
@@ -306,8 +316,17 @@ export class OrganizationPlansComponent implements OnInit {
         request.additionalStorageGb = this.additionalStorage;
         request.premiumAccessAddon = true;
         request.planType = PlanType.Custom;
-        const response = await this.apiService.postOrganization(request);
-        return response.id;
+
+        if (this.providerId) {
+            const providerRequest = new ProviderOrganizationCreateRequest(this.clientOwnerEmail, request);
+            const providerKey = await this.cryptoService.getProviderKey(this.providerId);
+            providerRequest.organizationCreateRequest.key = (await this.cryptoService.encrypt(orgKey.key, providerKey)).encryptedString;
+            const orgId = (await this.apiService.postProviderCreateOrganization(this.providerId, providerRequest)).organizationId;
+
+            return orgId;
+        } else {
+            return (await this.apiService.postOrganization(request)).id;
+    }
     }
 
     private async createSelfHosted(key: string, collectionCt: string, orgKeys: [string, EncString]) {

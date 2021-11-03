@@ -18,6 +18,10 @@
             <input id="billingEmail" class="form-control" type="text" name="BillingEmail" [(ngModel)]="billingEmail"
                 required>
         </div>
+        <div class="form-group col-6" *ngIf="!!providerId">
+            <label for="email">{{'clientOwnerEmail' | i18n}}</label>
+            <input id="email" class="form-control" type="text" name="Email" [(ngModel)]="clientOwnerEmail" required>
+            <small class="text-muted">{{'clientOwnerDesc' | i18n : '20'}}</small>
     </div>
     <div *ngIf="singleOrgPolicyBlock" class="mt-4">
         <app-callout [type]="'error'">{{'singleOrgBlockCreateMessage' | i18n}}</app-callout>

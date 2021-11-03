@@ -81,6 +81,14 @@
                     <app-organizations [vault]="true"></app-organizations>
                 </div>
             </div>
+            <div class="card mt-4" *ngIf="showProviders">
+                <div class="card-header d-flex">
+                    {{'providers' | i18n}}
+                </div>
+                <div class="card-body">
+                    <app-providers vault="true"></app-providers>
+                </div>
+            </div>
         </div>
     </div>
 </div>

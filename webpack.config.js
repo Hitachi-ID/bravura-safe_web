@@ -112,6 +112,11 @@ const plugins = [
         filename: 'captcha-connector.html',
         chunks: ['connectors/captcha'],
     }),
+    new HtmlWebpackPlugin({
+        template: './src/connectors/captcha-mobile.html',
+        filename: 'captcha-mobile-connector.html',
+        chunks: ['connectors/captcha'],
+    }),
     new CopyWebpackPlugin({
         patterns:[
             { from: './src/.nojekyll' },
@@ -119,6 +124,7 @@ const plugins = [
             { from: './src/favicon.ico' },
             { from: './src/browserconfig.xml' },
             { from: './src/app-id.json' },
+            { from: './src/assetlinks.json' },
             { from: './src/404.html' },
             { from: './src/404', to: '404' },
             { from: './src/images', to: 'images' },

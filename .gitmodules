@@ -1,4 +1,4 @@
 [submodule "jslib"]
 	path = jslib
 	url = git@gitlab.hitachi-id.com:product/bravura-vault.git
-	branch = jslib
+	branch = tmp/gisselac/upgrade/jslib

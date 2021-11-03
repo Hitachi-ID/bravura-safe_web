@@ -361,7 +361,7 @@
     "message": "Jaa"
   },
   "moveToOrganization": {
-    "message": "Move to Organization"
+    "message": "Siirrä organisaatioon"
   },
   "valueCopied": {
     "message": "$VALUE$ kopioitiin",
@@ -404,7 +404,7 @@
     "message": "Holvi"
   },
   "moveSelectedToOrg": {
-    "message": "Move Selected to Organization"
+    "message": "Siirrä valitut organisaatioon"
   },
   "deleteSelected": {
     "message": "Poista valitut"
@@ -452,7 +452,7 @@
     "message": "Muokattiin kohdetta"
   },
   "movedItemToOrg": {
-    "message": "$ITEMNAME$ moved to $ORGNAME$",
+    "message": "$ITEMNAME$ siirrettiin organisaatioon $ORGNAME$",
     "placeholders": {
       "itemname": {
         "content": "$1",
@@ -465,7 +465,7 @@
     }
   },
   "movedItemsToOrg": {
-    "message": "Selected items moved to $ORGNAME$",
+    "message": "Valitut kohteet siirrettiin organisaatioon $ORGNAME$",
     "placeholders": {
       "orgname": {
         "content": "$1",
@@ -731,7 +731,7 @@
     "message": "Käytä YubiKey-todennuslaitetta tilisi avaukseen. Toimii YubiKey 4 ja 5 -sarjojen sekä NEO -laitteiden kanssa."
   },
   "duoDesc": {
-    "message": "Vahvista Duo Securityn avulla käyttäen Duo Mobile ‑sovellusta, tekstiviestiä, puhelua tai U2F-todennuslaitetta.",
+    "message": "Vahvista kirjautuminen Duo Securityn avulla käyttäen Duo Mobile ‑sovellusta, tekstiviestiä, puhelua tai U2F-todennuslaitetta.",
     "description": "'Duo Security' and 'Duo Mobile' are product names and should not be translated."
   },
   "duoOrganizationDesc": {
@@ -751,7 +751,7 @@
     "message": "Käytä mitä tahansa WebAuthn‑yhteensopivaa todennuslaitetta päästäksesi käsiksi tiliisi."
   },
   "webAuthnMigrated": {
-    "message": "(Siirretty FIDO:sta)"
+    "message": "(siirretty FIDO:sta)"
   },
   "emailTitle": {
     "message": "Sähköpostiosoite"
@@ -769,10 +769,10 @@
     "message": "Organisaatiot"
   },
   "moveToOrgDesc": {
-    "message": "Choose an organization that you wish to move this item to. Moving to an organization transfers ownership of the item to that organization. You will no longer be the direct owner of this item once it has been moved."
+    "message": "Valitse organisaatio, johon haluat siirtää kohteen. Tämä siirtää kohteen organisaation omistukseen, etkä tämän jälkeen ole enää sen suora omistaja."
   },
   "moveManyToOrgDesc": {
-    "message": "Choose an organization that you wish to move these items to. Moving to an organization transfers ownership of the items to that organization. You will no longer be the direct owner of these items once they have been moved."
+    "message": "Valitse organisaatio, johon haluat siirtää kohteet. Tämä siirtää kohteet organisaation omistukseen, etkä tämän jälkeen ole enää niiden suora omistaja."
   },
   "collectionsDesc": {
     "message": "Muokkaa kokoelmia, joihin tämä kohde on jaettu. Kohteen näkevät vain ne organisaation käyttäjät, joilla on käyttöoikeus näihin kokoelmiin."
@@ -796,7 +796,7 @@
     }
   },
   "moveSelectedItemsCountDesc": {
-    "message": "You have selected $COUNT$ item(s). $MOVEABLE_COUNT$ item(s) can be moved to an organization, $NONMOVEABLE_COUNT$ cannot.",
+    "message": "Olet valinnut $COUNT$ kohdetta. $MOVEABLE_COUNT$ kohdetta voidaan siirtää organisaatioon, $NONMOVEABLE_COUNT$ ei.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -837,7 +837,7 @@
     "message": "Syötä pääsalasanasi viedäksesi holvisi tiedot."
   },
   "export": {
-    "message": "Export"
+    "message": "Vie"
   },
   "exportVault": {
     "message": "Vie holvi"
@@ -978,7 +978,7 @@
     "message": "Vaaravyöhyke"
   },
   "dangerZoneDesc": {
-    "message": "Ole varovainen, nämä toiminnot eivät ole peruttavissa!"
+    "message": "Ole varovainen, näiden toimintojen peruminen ei ole mahdollista!"
   },
   "deauthorizeSessions": {
     "message": "Mitätöi kaikki istunnot"
@@ -1005,7 +1005,7 @@
     "message": "Jatka alla poistaaksesi kaikki organisaatiosi holvissa olevat kohteet."
   },
   "purgeVaultWarning": {
-    "message": "Tilin poisto on pysyvä toimenpide, eikä sitä ole mahdollista perua."
+    "message": "Tilin poisto on pysyvä toimenpide, eikä sen peruminen ole mahdollista."
   },
   "vaultPurged": {
     "message": "Holvisi tiedot on tyhjennetty."
@@ -1017,7 +1017,7 @@
     "message": "Jatka alla poistaaksesi tilisi ja kaikki siihen liittyvät tiedot."
   },
   "deleteAccountWarning": {
-    "message": "Tilin poisto on pysyvä toimenpide, eikä sitä ole mahdollista perua."
+    "message": "Tilin poisto on pysyvä toimenpide, eikä sen peruminen ole mahdollista."
   },
   "accountDeleted": {
     "message": "Tili poistettiin"
@@ -1059,7 +1059,7 @@
     "message": "Mitään ei tuotu."
   },
   "importEncKeyError": {
-    "message": "Error decrypting the exported file. Your encryption key does not match the encryption key used export the data."
+    "message": "Virhe purettaessa viedyn tiedoston salausta. Salausavaimesi ei vastaa viennissä käytettyä salausavainta."
   },
   "selectFormat": {
     "message": "Valitse tuotavan tiedoston muoto"
@@ -1122,7 +1122,7 @@
     "message": "Verkkotunnusten säännöt"
   },
   "domainRulesDesc": {
-    "message": "Jos kirjautumistietosi ovat samat useille verkkotunnuksille, voit merkata sivustot vastaavanlaisiksi. Bravura Vault on luonut sinulle valmiiksi globaaleita verkkotunnuksia."
+    "message": "Jos kirjautumistietosi ovat samat useille verkkotunnuksille, voit merkata sivustot vastaavanlaisiksi. Bravura Vault on luonut sinulle valmiiksi joitakin globaaleja verkkotunnuksia."
   },
   "globalEqDomains": {
     "message": "Globaalit vastaavat verkkotunnukset"
@@ -1636,7 +1636,7 @@
     "message": "Muita kaksivaiheisen kirjautumisen todennusmenetelmiä kuten YubiKey, FIDO U2F ja Duo Security."
   },
   "premiumSignUpEmergency": {
-    "message": "Hätäyhteys"
+    "message": "Varmuuskäyttö"
   },
   "premiumSignUpReports": {
     "message": "Salasanahygienian, tilin terveyden ja tietovuotojen raportointitoiminnot pitävät holvisi turvassa."
@@ -1660,7 +1660,7 @@
     }
   },
   "addons": {
-    "message": "Lisäykset"
+    "message": "Laajennukset"
   },
   "premiumAccess": {
     "message": "Premium-käyttöoikeus"
@@ -1679,7 +1679,7 @@
     }
   },
   "additionalStorageGb": {
-    "message": "Lisättävä tallennustila, Gt"
+    "message": "Lisää tallennustilaa (Gt)"
   },
   "additionalStorageGbDesc": {
     "message": "Gigatavujen määrä"
@@ -1718,10 +1718,10 @@
     "description": "Short abbreviation for 'month'"
   },
   "paymentChargedAnnually": {
-    "message": "Maksutapaasi veloitetaan välittömästi ja jatkossa kerran vuodessa. Voit peruuttaa tilauksen milloin tahansa."
+    "message": "Maksutapaasi veloitetaan välittömästi ja jatkossa kerran vuodessa. Voit irtisanoa tilauksen koska tahansa."
   },
   "paymentCharged": {
-    "message": "Maksutapaasi veloitetaan välittömästi ja jatkossa joka $INTERVAL$. Voit peruuttaa tilauksen milloin tahansa.",
+    "message": "Maksutapaasi veloitetaan välittömästi ja jatkossa joka $INTERVAL$. Voit irtisanoa tilauksen koska tahansa.",
     "placeholders": {
       "interval": {
         "content": "$1",
@@ -1730,7 +1730,7 @@
     }
   },
   "paymentChargedWithTrial": {
-    "message": "Tilauksesi sisältää ilmaisen 7 päivän kokeilujakson. Maksutapaasi ei veloiteta ennen kokeilujakson päättymistä. Jatkossa veloitus tapahtuu joka $INTERVAL$. Voit peruuttaa tilauksen milloin tahansa.",
+    "message": "Tilauksesi sisältää ilmaisen 7 päivän kokeilujakson. Maksutapaasi ei veloiteta ennen kokeilujakson päättymistä. Jatkossa veloitus tapahtuu joka $INTERVAL$. Voit irtisanoa tilauksen koska tahansa.",
     "placeholders": {
       "interval": {
         "content": "$1",
@@ -1751,31 +1751,31 @@
     "message": "Klikkaa PayPal-painiketta kirjautuaksesi PayPal-tilillesi ja sen jälkeen alta \"Jatka\"."
   },
   "cancelSubscription": {
-    "message": "Peruuta tilaus"
+    "message": "Irtisano tilaus"
   },
   "subscriptionCanceled": {
-    "message": "Tilaus on peruttu."
+    "message": "Tilaus on irtisanottu."
   },
   "pendingCancellation": {
-    "message": "Odottaa peruutusta"
+    "message": "Odottaa irtisanomista"
   },
   "subscriptionPendingCanceled": {
-    "message": "Tilaus on merkitty päättyväksi kuluvan laskutuskauden lopussa."
+    "message": "Tilaus on merkitty päättymään kuluvan laskutuskauden lopussa."
   },
   "reinstateSubscription": {
     "message": "Palauta tilaus voimaan"
   },
   "reinstateConfirmation": {
-    "message": "Haluatko varmasti poistaa odottavan peruutuspyynnön ja pitää tilauksesi voimassa?"
+    "message": "Haluatko varmasti poistaa odottavan irtisanomispyynnön ja pitää tilauksesi voimassa?"
   },
   "reinstated": {
     "message": "Tilauksesi on palautettu voimaan."
   },
   "cancelConfirmation": {
-    "message": "Haluatko varmasti peruuttaa tilauksen? Menetät pääsyn kaikkiin tilauksen tarjoamiin ominaisuuksiin kuluvan laskutuskauden lopussa."
+    "message": "Haluatko varmasti irtisanoa tilauksen? Menetät pääsyn kaikkiin tilauksen tarjoamiin ominaisuuksiin kuluvan laskutuskauden lopussa."
   },
   "canceledSubscription": {
-    "message": "Tilaus on peruttu."
+    "message": "Tilaus on irtisanottu."
   },
   "neverExpires": {
     "message": "Ei eräänny koskaan"
@@ -1874,7 +1874,7 @@
     }
   },
   "gbStorageAdd": {
-    "message": "Lisättävä tallennustila, Gt"
+    "message": "Lisättävän tallennustilan määrä (Gt)"
   },
   "gbStorageRemove": {
     "message": "Poistettava tallennustila, Gt"
@@ -1934,7 +1934,7 @@
     "message": "Organisaation nimi"
   },
   "accountOwnedBusiness": {
-    "message": "Tämän tilin omistaa yritys."
+    "message": "Tlin omistaa yritys."
   },
   "billingEmail": {
     "message": "Laskutuksen sähköpostiosoite"
@@ -2092,7 +2092,7 @@
     "message": "Ensisijainen asiakastuki"
   },
   "xDayFreeTrial": {
-    "message": "$COUNT$ päivän ilmainen kokeilujakso, peruuta milloin tahansa",
+    "message": "$COUNT$ päivän ilmainen kokeilujakso, irtisano koska tahansa",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -2107,7 +2107,7 @@
     "message": "Vuosittainen"
   },
   "basePrice": {
-    "message": "Perushinta"
+    "message": "Lähtöhinta"
   },
   "organizationCreated": {
     "message": "Organisaatio luotiin"
@@ -2353,7 +2353,7 @@
     }
   },
   "movedItemIdToOrg": {
-    "message": "Moved item $ID$ to an organization.",
+    "message": "Kohde $ID$ siirrettiin organisaatioon.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2731,7 +2731,7 @@
     "message": "Jatka alla poistaaksesi organisaation ja kaikki siihen liittyvät tiedot. Yksittäiset käyttäjätilit säilyvät, mutta ne eivät ole enää kytköksissä tähän organisaatioon."
   },
   "deleteOrganizationWarning": {
-    "message": "Tilin poisto on pysyvä toimenpide, eikä sitä ole mahdollista perua."
+    "message": "Organisaation poisto on pysyvä toimenpide, eikä sen peruminen ole mahdollista."
   },
   "organizationDeleted": {
     "message": "Organisaatio poistettiin"
@@ -3396,17 +3396,17 @@
     "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "deletionDate": {
-    "message": "Poistopäivä"
+    "message": "Poistoajankohta"
   },
   "deletionDateDesc": {
-    "message": "Send poistetaan pysyvästi määritettynä ajankohtana.",
+    "message": "Send poistuu pysyvästi määritettynä ajankohtana.",
     "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "expirationDate": {
-    "message": "Erääntymispäivä"
+    "message": "Erääntymisajankohta"
   },
   "expirationDateDesc": {
-    "message": "Jos määritetty, Send erääntyy määritettynä ajankohtana.",
+    "message": "Send erääntyy määritettynä ajankohtana.",
     "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "maxAccessCount": {
@@ -3498,43 +3498,43 @@
     "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "emergencyAccess": {
-    "message": "Hätäyhteys"
+    "message": "Varmuuskäyttö"
   },
   "emergencyAccessDesc": {
-    "message": "Myönnä ja hallitse luotettujen kontaktien hätäkäyttöoikeuksia. Luotetut kontaktit voivat anoa oikeutta tilisi tarkasteluun tai hallintaan hätätilanteessa. Käy ohjesivullamme saadaksesi lisätietoja ja tarkempia tietoja siitä, miten nollatiedon jako toimii."
+    "message": "Myönnä ja hallitse luotettujen kontaktien varmuuskäyttöoikeuksia. Luotetut kontaktit voivat anoa oikeutta tilisi tarkasteluun tai hallintaan ongelmatilanteissa. Käy ohjesivullamme saadaksesi lisätietoja ja tarkempia tietoja siitä, miten Zero Knowledge -jako toimii (englanniksi)."
   },
   "emergencyAccessOwnerWarning": {
-    "message": "Olet yhden tai useamman organisaation omistaja. Jos myönnät hätäkontaktille hallintaoikeuden, on heillä haltuunoton jälkeen samat oikeudet."
+    "message": "Olet yhden tai useamman organisaation omistaja. Jos myönnät varmuuskontaktille hallintaoikeuden, on heillä haltuunoton jälkeen samat oikeudet."
   },
   "trustedEmergencyContacts": {
-    "message": "Luotetut hätäkontaktit"
+    "message": "Luotetut varmuuskontaktit"
   },
   "noTrustedContacts": {
-    "message": "Et ole vielä lisännyt hätäkontakteja. Kutsu luotettu kontakti aloittaaksesi."
+    "message": "Et ole vielä lisännyt varmuuskontakteja. Kutsu luotettu kontakti aloittaaksesi."
   },
   "addEmergencyContact": {
-    "message": "Lisää hätäkontakti"
+    "message": "Lisää varmuuskontakti"
   },
   "designatedEmergencyContacts": {
-    "message": "Määritetty hätäkontaktiksi"
+    "message": "Määritetty varmuuskontaktiksi"
   },
   "noGrantedAccess": {
-    "message": "Sinua ei ole vielä määritetty kenenkään hätäkontaktiksi."
+    "message": "Sinua ei ole vielä määritetty kenenkään varmuuskontaktiksi."
   },
   "inviteEmergencyContact": {
-    "message": "Kutsu hätäkontakti"
+    "message": "Kutsu varmuuskontakti"
   },
   "editEmergencyContact": {
-    "message": "Muokkaa hätäkontaktia"
+    "message": "Muokkaa varmuuskontaktia"
   },
   "inviteEmergencyContactDesc": {
-    "message": "Kutsu uusi hätäkontakti syöttämällä alle heidän Bravura Vault-tilinsä sähköpostiosoite. Jos heillä ei vielä ole Bravura Vault-tiliä, heitä pyydetään luomaan uusi tili."
+    "message": "Kutsu uusi varmuuskontakti syöttämällä alle heidän Bravura Vault-tilinsä sähköpostiosoite. Jos heillä ei vielä ole Bravura Vault-tiliä, heitä pyydetään luomaan uusi tili."
   },
   "emergencyAccessRecoveryInitiated": {
-    "message": "Hätäkäyttö aloitettu"
+    "message": "Varmuuskäyttö aloitettu"
   },
   "emergencyAccessRecoveryApproved": {
-    "message": "Hätäkäyttö sallittu"
+    "message": "Varmuuskäyttö sallittu"
   },
   "viewDesc": {
     "message": "Voi tarkastella kaikkia holvisi kohteita."
@@ -3567,7 +3567,7 @@
     "message": "Kutsuttu käyttäjä."
   },
   "acceptEmergencyAccess": {
-    "message": "Sinut on kutsuttu yllä mainitun käyttäjän hätäkontaktiksi. Hyväksyäksesi kutsun, sinun tulee kirjautua tilillesi tai luoda uusi Bravura Vault tili."
+    "message": "Sinut on kutsuttu yllä mainitun käyttäjän varmuuskontaktiksi. Hyväksyäksesi kutsun, sinun tulee kirjautua tilillesi tai luoda uusi Bravura Vault tili."
   },
   "emergencyInviteAcceptFailed": {
     "message": "Kutsun hyväksyntä ei onnistu. Pyydä käyttäjää lähettämään uusi kutsu."
@@ -3582,13 +3582,13 @@
     }
   },
   "emergencyInviteAcceptedDesc": {
-    "message": "Voit käyttää tämän käyttäjän hätävalintoja kun henkilöllisyytesi on vahvistettu. Saat vahvistuksesta ilmoituksen sähköpostitse."
+    "message": "Voit käyttää tämän käyttäjän varmuusvalintoja kun henkilöllisyytesi on vahvistettu. Saat vahvistuksesta ilmoituksen sähköpostitse."
   },
   "requestAccess": {
     "message": "Pyydä käyttöoikeutta"
   },
   "requestAccessConfirmation": {
-    "message": "Haluatko varmasti anoa hätäkäyttöoikeutta? Pääsy myönnetään $WAITTIME$ päivän kuluttua tai käyttäjän hyväksyessä käyttöoikeuden manuaalisesti.",
+    "message": "Haluatko varmasti anoa varmuuskäyttöä? Pääsy myönnetään $WAITTIME$ päivän kuluttua tai käyttäjän hyväksyessä käyttöoikeuden manuaalisesti.",
     "placeholders": {
       "waittime": {
         "content": "$1",
@@ -3597,7 +3597,7 @@
     }
   },
   "requestSent": {
-    "message": "Hätäkäyttöoikeutta pyydetty käyttäjältä $USER$. Kun voit jatkaa, saat ilmoituksen sähköpostitse.",
+    "message": "Varmuuskäyttöä pyydetty käyttäjältä $USER$. Kun voit jatkaa, saat ilmoituksen sähköpostitse.",
     "placeholders": {
       "user": {
         "content": "$1",
@@ -3612,7 +3612,7 @@
     "message": "Hylkää"
   },
   "approveAccessConfirmation": {
-    "message": "Haluatko varmasti sallia hätäyhteyden? Tämä sallii käyttäjälle $USER$ tiliisi oikeuden: $ACTION$.",
+    "message": "Haluatko varmasti sallia varmuuskäytön? Tämä sallii käyttäjälle $USER$ tiliisi oikeuden: $ACTION$.",
     "placeholders": {
       "user": {
         "content": "$1",
@@ -3625,10 +3625,10 @@
     }
   },
   "emergencyApproved": {
-    "message": "Hätäkäyttö sallittu."
+    "message": "Varmuuskäyttö sallittu."
   },
   "emergencyRejected": {
-    "message": "Hätäyhteys hylätty"
+    "message": "Varmuuskäyttö hylätty."
   },
   "passwordResetFor": {
     "message": "Käyttäjän $USER$ salasana on palautettu. Voit nyt kirjautua sisään käyttäen uutta salasanaa.",
@@ -3746,7 +3746,7 @@
     "message": "Käyttäjien hallinta"
   },
   "manageResetPassword": {
-    "message": "Hallinnoi salasanan palautusta"
+    "message": "Salasanan palautusavun hallinta"
   },
   "disableRequireSsoError": {
     "message": "Yrityksen kertakirjautuminen (SSO) on poistettava käytöstä manuaalisesti ennen kuin tämän käytännön voi poistaa käytöstä."
@@ -3839,49 +3839,49 @@
     "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "expirationDateIsInvalid": {
-    "message": "Asetettu erääntymispäivä on virhellinen."
+    "message": "Määritetty erääntymismisajankohta on virheellinen."
   },
   "deletionDateIsInvalid": {
-    "message": "Asetettu poistopäivä on virheellinen."
+    "message": "Määritetty poistoajankohta on virheellinen."
   },
   "expirationDateAndTimeRequired": {
-    "message": "Viimeinen voimassaolopäivä ja aika vaaditaan."
+    "message": "Erääntymispäivä ja -aika vaaditaan."
   },
   "deletionDateAndTimeRequired": {
     "message": "Poistopäivä ja -aika vaaditaan."
   },
   "dateParsingError": {
-    "message": "Tapahtui virhe tallennettaessa poisto- ja erääntymispäiviä."
+    "message": "Tapahtui virhe tallennettaessa poisto- ja erääntymisajankohtia."
   },
   "webAuthnFallbackMsg": {
     "message": "Vahvista kaksivaiheinen kirjautuminen (2FA) klikkaamalla alla olevaa painiketta."
   },
   "webAuthnAuthenticate": {
-    "message": "Todenna WebAuthn"
+    "message": "WebAuthn-todennus"
   },
   "webAuthnNotSupported": {
     "message": "WebAuthn ei ole tuettu tässä selaimessa."
   },
   "webAuthnSuccess": {
-    "message": "<strong>WebAuthn vahvistettiin onnistuneesti!</strong><br>Voit sulkea välilehden."
+    "message": "WebAuthn-todennus onnistui! Voit sulkea välilehden."
   },
   "hintEqualsPassword": {
     "message": "Salasanavihjeesi ei voi olla sama kuin salasanasi."
   },
   "enrollPasswordReset": {
-    "message": "Liity salasanan palautukseen"
+    "message": "Liity salasanan palautusapuun"
   },
   "enrolledPasswordReset": {
-    "message": "Liitetty salasanan palautukseen"
+    "message": "Liitetty salasanan palautusapuun"
   },
   "withdrawPasswordReset": {
-    "message": "Poistu salasanan palautuksesta"
+    "message": "Poistu salasanan palautusavusta"
   },
   "enrollPasswordResetSuccess": {
-    "message": "Liittyminen onnistui!"
+    "message": "Liitos onnistui!"
   },
   "withdrawPasswordResetSuccess": {
-    "message": "Poistuttu onnistuneesti!"
+    "message": "Poistuminen onnistui!"
   },
   "eventEnrollPasswordReset": {
     "message": "Käyttäjä $ID$ liittyi salasanan palautusapuun.",
@@ -3902,7 +3902,7 @@
     }
   },
   "eventAdminPasswordReset": {
-    "message": "Master password reset for user $ID$.",
+    "message": "Käyttäjän $ID$ pääsalasanan palautus.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -3911,10 +3911,10 @@
     }
   },
   "resetPassword": {
-    "message": "Reset Password"
+    "message": "Palauta salasana"
   },
   "resetPasswordLoggedOutWarning": {
-    "message": "Proceeding will log $NAME$ out of their current session, requiring them to log back in. Active sessions on other devices may continue to remain active for up to one hour.",
+    "message": "Jatkamalla kirjataan käyttäjät $NAME$ ulos nykyisistä istunnoistaan, jonka jälkeen heidän on kirjauduttava uudelleen. Aktiiviset istunnot toisilla laitteilla saattavat pysyä aktiivisina vielä tunnin ajan.",
     "placeholders": {
       "name": {
         "content": "$1",
@@ -3923,52 +3923,52 @@
     }
   },
   "thisUser": {
-    "message": "this user"
+    "message": "tämä käyttäjä"
   },
   "resetPasswordMasterPasswordPolicyInEffect": {
-    "message": "One or more organization policies require the master password to meet the following requirements:"
+    "message": "Yksi tai useampi organisaatiokäytäntö edellyttää, että pääsalasanasi täyttää seuraavat vaatimukset:"
   },
   "resetPasswordSuccess": {
-    "message": "Password reset success!"
+    "message": "Salasanan palautus onnistui!"
   },
   "resetPasswordEnrollmentWarning": {
-    "message": "Enrollment will allow organization administrators to change your master password. Are you sure you want to enroll?"
+    "message": "Liitos sallii organisaation ylläpitäjien vaihtaa pääsalasanasi. Haluatko varmasti liittyä?"
   },
   "resetPasswordPolicy": {
-    "message": "Master Password Reset"
+    "message": "Pääsalasanan palautus"
   },
   "resetPasswordPolicyDescription": {
-    "message": "Allow administrators in the organization to reset organization users' master password."
+    "message": "Salli organisaation ylläpitäjien palauttaa organisaation käyttäjien pääsalasanat."
   },
   "resetPasswordPolicyWarning": {
-    "message": "Users in the organization will need to self-enroll or be auto-enrolled before administrators can reset their master password."
+    "message": "Organisaation käyttäjien on liityttävä itse tai automaattisen liitoksen välityksellä ennen kuin ylläpitäjät voivat palauttaa heidän pääsalasanojaan."
   },
   "resetPasswordPolicyAutoEnroll": {
-    "message": "Automatic Enrollment"
+    "message": "Automaattinen liitos"
   },
   "resetPasswordPolicyAutoEnrollDescription": {
-    "message": "All users will be automatically enrolled in password reset once their invite is accepted."
+    "message": "Kaikki käyttäjät liitetään salasanan palautusapuun automaattisesti kun heidän kutsunsa on hyväksytty."
   },
   "resetPasswordPolicyAutoEnrollWarning": {
-    "message": "Users already in the organization will not be retroactively enrolled in password reset. They will need to self-enroll before administrators can reset their master password."
+    "message": "Vanhoja organisaation käyttäjiä ei liitetä salasanan palautusapuun takautuvasti, vaan heidän on itse liityttävä siihen ennen kuin järjestelmänvalvojat voivat palauttaa heidän pääsalasanojaan."
   },
   "resetPasswordPolicyAutoEnrollCheckbox": {
-    "message": "Automatically enroll new users"
+    "message": "Liitä uudet käyttäjät automaattisesti"
   },
   "resetPasswordAutoEnrollInviteWarning": {
-    "message": "This organization has an enterprise policy that will automatically enroll you in password reset. Enrollment will allow organization administrators to change your master password."
+    "message": "Organisaatiolla on käytäntö, joka liittää tilisi automaattisesti salasanan palautusapuun. Liitos sallii organisaation ylläpitäjien vaihtaa pääsalasanasi."
   },
   "resetPasswordOrgKeysError": {
-    "message": "Organization Keys response is null"
+    "message": "Organisaatioavainten vastaus on tyhjä"
   },
   "resetPasswordDetailsError": {
-    "message": "Reset Password Details response is null"
+    "message": "Salasanan palautuksen tietojen vastaus on tyhjä"
   },
   "trashCleanupWarning": {
-    "message": "Roskakorissa yli 30 päivää olleet salausavaimet poistetaan automaattisesti."
+    "message": "Roskakorissa yli 30 päivää olleet kohteet poistetaan automaattisesti."
   },
   "trashCleanupWarningSelfHosted": {
-    "message": "Roskakorissa jonkin aikaa olleet salausavaimet poistetaan automaattisesti."
+    "message": "Roskakorissa jonkin aikaa olleet kohteet poistetaan automaattisesti."
   },
   "passwordPrompt": {
     "message": "Pääsalasanan uudelleenkysely"
@@ -3980,42 +3980,42 @@
     "message": "Toiminto on suojattu. Jatkaaksesi, syötä pääsalasanasi uudelleen vahvistaaksesi henkilöllisyytesi."
   },
   "reinviteSelected": {
-    "message": "Resend Invitations"
+    "message": "Lähetä kutsut uudelleen"
   },
   "noSelectedUsersApplicable": {
-    "message": "This action is not applicable to any of the selected users."
+    "message": "Toiminto ei koske valittuja käyttäjiä."
   },
   "removeUsersWarning": {
-    "message": "Are you sure you want to remove the following users? The process may take a few seconds to complete and cannot be interrupted or canceled."
+    "message": "Haluatko varmasti poistaa poistaa seuraavat käyttäjät? Toiminto saattaa kestää muutamia sekunteja, eikä sen keskeytys tai peruminen ole mahdollista."
   },
   "confirmSelected": {
-    "message": "Confirm Selected"
+    "message": "Vahvista valitut"
   },
   "bulkConfirmStatus": {
-    "message": "Bulk action status"
+    "message": "Joukkotoiminnon tila"
   },
   "bulkConfirmMessage": {
-    "message": "Confirmed successfully."
+    "message": "Vahvistettu onnistuneesti."
   },
   "bulkReinviteMessage": {
-    "message": "Reinvited successfully."
+    "message": "Kutsuttu uudelleen onnistuneesti."
   },
   "bulkRemovedMessage": {
-    "message": "Removed successfully"
+    "message": "Poistettu onnistuneesti."
   },
   "bulkFilteredMessage": {
-    "message": "Excluded, not applicable for this action."
+    "message": "Ohitettu, ei koske tätä toimintoa."
   },
   "fingerprint": {
-    "message": "Fingerprint"
+    "message": "Sormenjälki"
   },
   "removeUsers": {
-    "message": "Remove Users"
+    "message": "Poista käyttäjiä"
   },
   "error": {
-    "message": "Error"
+    "message": "Virhe"
   },
   "resetPasswordManageUsers": {
-    "message": "Manage Users must also be enabled with the Manage Password Reset permission"
+    "message": "Myös \"Käyttäjien hallinta\" -oikeuden on oltava käytössä \"Salasanan palautusavun hallinta\" -oikeuden kanssa"
   }
 }
