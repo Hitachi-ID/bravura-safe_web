@@ -52,7 +52,9 @@ $navbar-brand-height: 35px;
 $navbar-brand-padding-y: 0;
 $navbar-dark-color: rgba(#ffffff, .7);
 $navbar-dark-hover-color: rgba(#ffffff, .9);
+$nav-link-padding-y: 0;
 $navbar-nav-link-padding-x: 0.8rem;
+
 
 $input-bg: #fbfbfb;
 $input-focus-bg: #ffffff;
@@ -184,6 +186,10 @@ input, select, textarea {
 .navbar-brand {
     margin-top: -20px;
     margin-bottom: -20px;
+}
+
+.navbar-nav {
+    line-height: 50px;
 }
 
 .dropdown-menu {
