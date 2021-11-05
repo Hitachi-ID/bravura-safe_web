@@ -188,8 +188,18 @@ input, select, textarea {
     margin-bottom: -20px;
 }
 
-.navbar-nav {
+ul.navbar-nav {
     line-height: 50px;
+    padding: 0 10px;
+    li.nav-item {
+        &:hover {
+            background-color: rgba(0,0,0,.6);
+        }
+        &.active {
+            background-color: rgba(0,0,0,.6);
+            border-bottom: 2px solid $primary-accent;
+        }
+    }
 }
 
 .dropdown-menu {
