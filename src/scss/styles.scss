@@ -41,6 +41,7 @@ $list-group-active-color: $body-color;
 $list-group-active-bg: #ffffff;
 $list-group-active-border-color: rgba(#000000, .125);
 
+$navbar-bg: rgba(0,0,0,.6);
 $navbar-brand-font-size: 35px;
 $navbar-brand-height: 35px;
 $navbar-brand-padding-y: 0;
@@ -185,7 +186,7 @@ input, select, textarea {
 
 .dropdown-item {
     &:hover {
-        background-color: rgba(0,0,0,.6);
+        background-color: $navbar-bg;
         color: #ffffff;
     }
 }
@@ -200,10 +201,10 @@ ul.navbar-nav {
     padding: 0 10px;
     li.nav-item {
         &:hover {
-            background-color: rgba(0,0,0,.6);
+            background-color: $navbar-bg;
         }
         &.active {
-            background-color: rgba(0,0,0,.6);
+            background-color: $navbar-bg;
             border-bottom: 2px solid $primary-accent;
         }
     }
