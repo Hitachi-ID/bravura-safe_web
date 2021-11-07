@@ -570,6 +570,13 @@ app-vault-groupings, app-org-vault-groupings, .groupings {
     }
 }
 
+app-vault div.vault-filters div.card-body {
+    padding: 0;
+    ul.card-ul {
+        margin-left: 0;
+    }
+}
+
 app-password-generator {
     #lengthRange {
         width: 100%;
