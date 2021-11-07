@@ -260,10 +260,15 @@ ul.navbar-nav {
 
     li {
         word-break: break-all;
+        margin: 10px;
     }
 
     .fa-li {
         top: 4px;
+    }
+
+    .fa-folder-o {
+        top: 10px;
     }
 
     &.carets {
