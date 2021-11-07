@@ -41,12 +41,6 @@ $list-group-active-color: $body-color;
 $list-group-active-bg: #ffffff;
 $list-group-active-border-color: rgba(#000000, .125);
 
-$dropdown-link-color: $body-color;
-$dropdown-link-hover-bg: rgba(#000000, .06);
-$dropdown-link-active-color: $dropdown-link-color;
-$dropdown-link-active-bg: rgba(#000000, .1);
-$dropdown-item-padding-x: 1rem;
-
 $navbar-brand-font-size: 35px;
 $navbar-brand-height: 35px;
 $navbar-brand-padding-y: 0;
@@ -55,6 +49,12 @@ $navbar-dark-hover-color: rgba(#ffffff, .9);
 $nav-link-padding-y: 0;
 $navbar-nav-link-padding-x: 0.8rem;
 
+$dropdown-bg: $secondary-alt;
+$dropdown-link-color: $navbar-dark-color;
+$dropdown-link-hover-bg: rgba(#000000, .06);
+$dropdown-link-active-color: $dropdown-link-color;
+$dropdown-link-active-bg: rgba(#000000, .1);
+$dropdown-item-padding-x: 1rem;
 
 $input-bg: #fbfbfb;
 $input-focus-bg: #ffffff;
@@ -180,6 +180,13 @@ input, select, textarea {
 
     .nav-link {
         font-weight: 600;
+    }
+}
+
+.dropdown-item {
+    &:hover {
+        background-color: rgba(0,0,0,.6);
+        color: #ffffff;
     }
 }
 
