@@ -546,12 +546,13 @@ app-vault-groupings, app-org-vault-groupings, .groupings {
         }
 
         ul:last-child {
-            margin-bottom: 0;
+            margin-bottom: 5px;
         }
 
         .card-body a {
             color: $body-color;
             display: block;
+            margin-right: 5px;
 
             &:hover {
                 text-decoration: none;
@@ -590,7 +591,8 @@ app-vault-groupings, app-org-vault-groupings, .groupings {
     }
 }
 
-app-vault div.vault-filters div.card-body {
+app-vault div.vault-filters div.card-body,
+app-send div.vault-filters div.card-body {
     padding: 0;
     ul.card-ul {
         margin-left: 0;
