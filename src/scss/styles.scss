@@ -260,11 +260,12 @@ ul.navbar-nav {
 
     li {
         word-break: break-all;
-        margin: 10px;
+        margin: 10px 0;
+        padding: 0 0 0 10px;
     }
 
     .fa-li {
-        top: 4px;
+        position: static;
     }
 
     .fa-folder-o {
@@ -518,13 +519,15 @@ input[type="search"]::-webkit-search-cancel-button {
 app-vault-groupings, app-org-vault-groupings, .groupings {
     .card {
         #search {
-            margin-bottom: 1rem;
+            margin: .5rem;
+            width: calc(100% - 1rem);
         }
 
         h3 {
             font-weight: normal;
             text-transform: uppercase;
             color: $text-muted;
+            margin-left: 5px;
         }
 
         ul:last-child {
