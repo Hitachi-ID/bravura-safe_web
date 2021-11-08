@@ -551,6 +551,7 @@ app-vault-groupings, app-org-vault-groupings, .groupings {
 
         .card-body a {
             color: $body-color;
+            display: block;
 
             &:hover {
                 text-decoration: none;
