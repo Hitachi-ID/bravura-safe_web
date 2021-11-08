@@ -260,8 +260,20 @@ ul.navbar-nav {
 
     li {
         word-break: break-all;
-        margin: 10px 0;
+        line-height: 30px;
         padding: 0 0 0 10px;
+        &.active {
+            background: #c7e2f4;
+            color: #0064a7;
+            font-weight: 700;
+            border-radius: 0 100px 100px 0;
+        }
+        &:hover {
+            background: #d6eaf7;
+            border-left-color: rgba(103,103,103,.4);
+            border-radius: 0 100px 100px 0;
+            color: #0064a7;
+        }
     }
 
     .fa-li {
@@ -528,6 +540,9 @@ app-vault-groupings, app-org-vault-groupings, .groupings {
             text-transform: uppercase;
             color: $text-muted;
             margin-left: 5px;
+            a {
+                margin-right: 5px;
+            }
         }
 
         ul:last-child {
@@ -538,6 +553,7 @@ app-vault-groupings, app-org-vault-groupings, .groupings {
             color: $body-color;
 
             &:hover {
+                text-decoration: none;
                 &.text-muted {
                     color: $body-color !important;
                 }
