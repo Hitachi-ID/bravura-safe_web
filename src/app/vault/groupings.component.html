@@ -22,7 +22,7 @@
                 </a>
             </li>
         </ul>
-        <span [ngClass]="{'type-label': typeLabel}">
+        <span class="type-label">
             <h3>{{'types' | i18n}}</h3>
         </span>
         <ul class="fa-ul card-ul">
@@ -53,7 +53,7 @@
         </p>
         <ng-container *ngIf="loaded">
             <ng-container *ngIf="showFolders">
-                <span [ngClass]="{'folder-label': folderLabel}">
+                <span class="folder-label">
                     <h3 class="d-flex">
                         {{'folders' | i18n}}
                         <a href="#" class="text-muted ml-auto" appStopClick (click)="addFolder()"
