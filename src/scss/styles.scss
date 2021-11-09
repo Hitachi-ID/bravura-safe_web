@@ -274,6 +274,14 @@ ul.navbar-nav {
             border-radius: 0 100px 100px 0;
             color: #0064a7;
         }
+        div.d-flex {
+            a.text-break {
+                width: 80%;
+            }
+            a.ml-auto {
+                margin-left: 5px !important;
+            }
+        }
     }
 
     .fa-li {
@@ -535,13 +543,31 @@ app-vault-groupings, app-org-vault-groupings, .groupings {
             width: calc(100% - 1rem);
         }
 
-        h3 {
-            font-weight: normal;
-            text-transform: uppercase;
-            color: $text-muted;
-            margin-left: 5px;
-            a {
-                margin-right: 5px;
+        span {
+            display: inline-block;
+            margin-bottom: .25rem;
+            padding: .25rem 0 .25rem .5rem;
+            position: relative;
+            width: 100%;
+            &.type-label,
+            &.folder-label {
+                &::after {
+                    background-color: #c00;
+                    bottom: 0;
+                    content: "";
+                    height: 2px;
+                    left: .5rem;
+                    position: absolute;
+                    width: 4ch
+                }
+            }
+            h3 {
+                font-weight: normal;
+                text-transform: uppercase;
+                color: $text-muted;
+                a {
+                    margin-right: 5px;
+                }
             }
         }
 
