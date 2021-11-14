@@ -239,6 +239,10 @@ ul.navbar-nav {
     padding-left: calc(#{$list-group-item-padding-x} - 3px);
 }
 
+.card {
+    margin: .5em 0 .5em 0;
+}
+
 .card-header, .modal-header {
     font-weight: bold;
     text-transform: uppercase;
