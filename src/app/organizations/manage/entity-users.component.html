@@ -54,7 +54,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr *ngFor="let u of searchedUsers">
+                            <tr *ngFor="let u of searchedUsers" [ngClass]="{'table-active': u.checked}">
                                 <td class="table-list-checkbox" (click)="check(u)">
                                     <input type="checkbox" [(ngModel)]="u.checked" name="{{u.id.substr(0,8)}}_Checked"
                                         [disabled]="entity === 'collection' && u.accessAll"

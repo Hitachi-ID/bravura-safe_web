@@ -75,7 +75,7 @@
         <table class="table table-hover table-list" infiniteScroll [infiniteScrollDistance]="1"
             [infiniteScrollDisabled]="!isPaging()" (scrolled)="loadMore()">
             <tbody>
-                <tr *ngFor="let u of searchedUsers">
+                <tr *ngFor="let u of searchedUsers" [ngClass]="{'table-active': u.checked}">
                     <td (click)="checkUser(u)" class="table-list-checkbox">
                         <input type="checkbox" [(ngModel)]="u.checked" appStopProp>
                     </td>
