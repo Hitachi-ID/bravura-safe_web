@@ -24,7 +24,9 @@
                             </a>
                         </li>
                     </ul>
-                    <h3>{{'types' | i18n}}</h3>
+                    <span class="type-label">
+                        <h3>{{'types' | i18n}}</h3>
+                    </span>
                     <ul class="fa-ul card-ul">
                         <li [ngClass]="{active: selectedType === sendType.Text}">
                             <a href="#" appStopClick (click)="selectType(sendType.Text)">

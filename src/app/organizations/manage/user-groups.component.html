@@ -21,7 +21,7 @@
                 </div>
                 <table class="table table-hover table-list mb-0" *ngIf="groups && groups.length">
                     <tbody>
-                        <tr *ngFor="let g of groups; let i = index">
+                        <tr *ngFor="let g of groups; let i = index" [ngClass]="{'table-active': g.checked}">
                             <td class="table-list-checkbox" (click)="check(g)">
                                 <input type="checkbox" [(ngModel)]="g.checked" name="Groups[{{i}}].Checked" appStopProp>
                             </td>

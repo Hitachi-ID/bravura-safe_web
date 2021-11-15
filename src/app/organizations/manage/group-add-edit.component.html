@@ -64,7 +64,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr *ngFor="let c of collections; let i = index">
+                            <tr *ngFor="let c of collections; let i = index" [ngClass]="{'table-active': c.checked}">
                                 <td class="table-list-checkbox" (click)="check(c)">
                                     <input type="checkbox" [(ngModel)]="c.checked" name="Collection[{{i}}].Checked"
                                         appStopProp>

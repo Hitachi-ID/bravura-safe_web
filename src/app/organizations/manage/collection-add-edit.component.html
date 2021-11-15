@@ -47,7 +47,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr *ngFor="let g of groups; let i = index">
+                            <tr *ngFor="let g of groups; let i = index" [ngClass]="{'table-active': g.checked}">
                                 <td class="table-list-checkbox" (click)="check(g)">
                                     <input type="checkbox" [(ngModel)]="g.checked" name="Groups[{{i}}].Checked"
                                         [disabled]="g.accessAll" appStopProp>

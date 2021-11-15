@@ -22,7 +22,9 @@
                 </a>
             </li>
         </ul>
-        <h3>{{'types' | i18n}}</h3>
+        <span class="type-label">
+            <h3>{{'types' | i18n}}</h3>
+        </span>
         <ul class="fa-ul card-ul">
             <li [ngClass]="{active: selectedType === cipherType.Login}">
                 <a href="#" appStopClick (click)="selectType(cipherType.Login)">
@@ -51,13 +53,15 @@
         </p>
         <ng-container *ngIf="loaded">
             <ng-container *ngIf="showFolders">
-                <h3 class="d-flex">
-                    {{'folders' | i18n}}
-                    <a href="#" class="text-muted ml-auto" appStopClick (click)="addFolder()"
-                        appA11yTitle="{{'addFolder' | i18n}}">
-                        <i class="fa fa-plus fa-fw" aria-hidden="true"></i>
-                    </a>
-                </h3>
+                <span class="folder-label">
+                    <h3 class="d-flex">
+                        {{'folders' | i18n}}
+                        <a href="#" class="text-muted ml-auto" appStopClick (click)="addFolder()"
+                            appA11yTitle="{{'addFolder' | i18n}}">
+                            <i class="fa fa-plus fa-fw" aria-hidden="true"></i>
+                        </a>
+                    </h3>
+                </span>
                 <ul class="fa-ul card-ul">
                     <ng-template #recursiveFolders let-folders>
                         <li *ngFor="let f of folders"

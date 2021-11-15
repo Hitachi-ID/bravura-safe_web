@@ -2,7 +2,7 @@
     <table class="table table-hover table-list table-ciphers" *ngIf="filteredCiphers.length" infiniteScroll
         [infiniteScrollDistance]="1" [infiniteScrollDisabled]="!isPaging()" (scrolled)="loadMore()">
         <tbody>
-            <tr *ngFor="let c of filteredCiphers">
+            <tr *ngFor="let c of filteredCiphers" [ngClass]="{'table-active': c.checked}">
                 <td (click)="checkCipher(c)" class="table-list-checkbox">
                     <input type="checkbox" [(ngModel)]="c.checked" appStopProp>
                 </td>
