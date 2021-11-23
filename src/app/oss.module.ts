@@ -154,6 +154,7 @@ import { PasswordGeneratorHistoryComponent } from './tools/password-generator-hi
 import { PasswordGeneratorComponent } from './tools/password-generator.component';
 import { ReusedPasswordsReportComponent } from './tools/reused-passwords-report.component';
 import { ToolsComponent } from './tools/tools.component';
+import { ReportsComponent } from './reports/reports.component'
 import { UnsecuredWebsitesReportComponent } from './tools/unsecured-websites-report.component';
 import { WeakPasswordsReportComponent } from './tools/weak-passwords-report.component';
 
@@ -422,6 +423,7 @@ registerLocaleData(localeZhTw, 'zh-TW');
         StopPropDirective,
         TaxInfoComponent,
         ToolsComponent,
+        ReportsComponent,
         TrueFalseValueDirective,
         TwoFactorAuthenticatorComponent,
         TwoFactorComponent,

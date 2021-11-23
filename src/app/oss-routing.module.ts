@@ -81,6 +81,7 @@ import { InactiveTwoFactorReportComponent } from './tools/inactive-two-factor-re
 import { PasswordGeneratorComponent } from './tools/password-generator.component';
 import { ReusedPasswordsReportComponent } from './tools/reused-passwords-report.component';
 import { ToolsComponent } from './tools/tools.component';
+import { ReportsComponent } from './reports/reports.component';
 import { UnsecuredWebsitesReportComponent } from './tools/unsecured-websites-report.component';
 import { WeakPasswordsReportComponent } from './tools/weak-passwords-report.component';
 
@@ -223,6 +224,39 @@ const routes: Routes = [
                         component: PasswordGeneratorComponent,
                         data: { titleId: 'passwordGenerator' },
                     },
+                    {
+                        path: 'reused-passwords-report',
+                        component: ReusedPasswordsReportComponent,
+                        data: { titleId: 'reusedPasswordsReport' },
+                    },
+                    {
+                        path: 'unsecured-websites-report',
+                        component: UnsecuredWebsitesReportComponent,
+                        data: { titleId: 'unsecuredWebsitesReport' },
+                    },
+                    {
+                        path: 'weak-passwords-report',
+                        component: WeakPasswordsReportComponent,
+                        data: { titleId: 'weakPasswordsReport' },
+                    },
+                    {
+                        path: 'exposed-passwords-report',
+                        component: ExposedPasswordsReportComponent,
+                        data: { titleId: 'exposedPasswordsReport' },
+                    },
+                    {
+                        path: 'inactive-two-factor-report',
+                        component: InactiveTwoFactorReportComponent,
+                        data: { titleId: 'inactive2faReport' },
+                    },
+                ],
+            },
+            {
+                path: 'reports',
+                component: ReportsComponent,
+                canActivate: [AuthGuardService],
+                children: [
+                    { path: '', pathMatch: 'full', redirectTo: 'reused-passwords-report' },
                     {
                         path: 'reused-passwords-report',
                         component: ReusedPasswordsReportComponent,
