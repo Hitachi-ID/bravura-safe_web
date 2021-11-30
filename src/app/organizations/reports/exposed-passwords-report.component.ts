@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
+import { AuditService } from 'jslib-common/abstractions/audit.service';
 import { CipherService } from 'jslib-common/abstractions/cipher.service';
 import { MessagingService } from 'jslib-common/abstractions/messaging.service';
 import { PasswordRepromptService } from 'jslib-common/abstractions/passwordReprompt.service';
@@ -8,32 +9,31 @@ import { UserService } from 'jslib-common/abstractions/user.service';
 
 import { ModalService } from 'jslib-angular/services/modal.service';
 
-import { Cipher } from 'jslib-common/models/domain/cipher';
+import {
+    ExposedPasswordsReportComponent as BaseExposedPasswordsReportComponent,
+} from '../../reports/exposed-passwords-report.component';
 
+import { Cipher } from 'jslib-common/models/domain/cipher';
 import { CipherView } from 'jslib-common/models/view/cipherView';
 
-import {
-    ReusedPasswordsReportComponent as BaseReusedPasswordsReportComponent,
-} from '../../tools/reused-passwords-report.component';
-
 @Component({
-    selector: 'app-reused-passwords-report',
-    templateUrl: '../../tools/reused-passwords-report.component.html',
+    selector: 'app-exposed-passwords-report',
+    templateUrl: '../../reports/exposed-passwords-report.component.html',
 })
-export class ReusedPasswordsReportComponent extends BaseReusedPasswordsReportComponent {
+export class ExposedPasswordsReportComponent extends BaseExposedPasswordsReportComponent {
     manageableCiphers: Cipher[];
 
-    constructor(cipherService: CipherService, modalService: ModalService,
-        messagingService: MessagingService, userService: UserService, passwordRepromptService: PasswordRepromptService,
-        private route: ActivatedRoute) {
-        super(cipherService, modalService, messagingService, userService, passwordRepromptService);
+    constructor(cipherService: CipherService, auditService: AuditService,
+        modalService: ModalService, messagingService: MessagingService,
+        userService: UserService, passwordRepromptService: PasswordRepromptService, private route: ActivatedRoute) {
+        super(cipherService, auditService, modalService, messagingService, userService, passwordRepromptService);
     }
 
-    async ngOnInit() {
+    ngOnInit() {
         this.route.parent.parent.params.subscribe(async params => {
             this.organization = await this.userService.getOrganization(params.organizationId);
             this.manageableCiphers = await this.cipherService.getAll();
-            await super.ngOnInit();
+            super.ngOnInit();
         });
     }
 

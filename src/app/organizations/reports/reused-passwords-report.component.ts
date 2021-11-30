@@ -8,17 +8,21 @@ import { UserService } from 'jslib-common/abstractions/user.service';
 
 import { ModalService } from 'jslib-angular/services/modal.service';
 
-import {
-    UnsecuredWebsitesReportComponent as BaseUnsecuredWebsitesReportComponent,
-} from '../../tools/unsecured-websites-report.component';
+import { Cipher } from 'jslib-common/models/domain/cipher';
 
 import { CipherView } from 'jslib-common/models/view/cipherView';
 
+import {
+    ReusedPasswordsReportComponent as BaseReusedPasswordsReportComponent,
+} from '../../reports/reused-passwords-report.component';
+
 @Component({
-    selector: 'app-unsecured-websites-report',
-    templateUrl: '../../tools/unsecured-websites-report.component.html',
+    selector: 'app-reused-passwords-report',
+    templateUrl: '../../reports/reused-passwords-report.component.html',
 })
-export class UnsecuredWebsitesReportComponent extends BaseUnsecuredWebsitesReportComponent {
+export class ReusedPasswordsReportComponent extends BaseReusedPasswordsReportComponent {
+    manageableCiphers: Cipher[];
+
     constructor(cipherService: CipherService, modalService: ModalService,
         messagingService: MessagingService, userService: UserService, passwordRepromptService: PasswordRepromptService,
         private route: ActivatedRoute) {
@@ -28,11 +32,16 @@ export class UnsecuredWebsitesReportComponent extends BaseUnsecuredWebsitesRepor
     async ngOnInit() {
         this.route.parent.parent.params.subscribe(async params => {
             this.organization = await this.userService.getOrganization(params.organizationId);
+            this.manageableCiphers = await this.cipherService.getAll();
             await super.ngOnInit();
         });
     }
 
     getAllCiphers(): Promise<CipherView[]> {
         return this.cipherService.getAllFromApiForOrganization(this.organization.id);
+    }
+
+    canManageCipher(c: CipherView): boolean {
+        return this.manageableCiphers.some(x => x.id === c.id);
     }
 }
