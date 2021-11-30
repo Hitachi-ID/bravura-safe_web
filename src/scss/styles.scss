@@ -557,7 +557,8 @@ input[type="search"]::-webkit-search-cancel-button {
     color: #c40800;
 }
 
-app-vault-groupings, app-org-vault-groupings, .groupings {
+app-vault-groupings, app-org-vault-groupings,
+.groupings {
     .card {
         #search {
             margin: .5rem;
@@ -571,7 +572,8 @@ app-vault-groupings, app-org-vault-groupings, .groupings {
             position: relative;
             width: 100%;
             &.type-label,
-            &.folder-label {
+            &.folder-label,
+            &.collection-label {
                 &::after {
                     background-color: #c00;
                     bottom: 0;
@@ -639,6 +641,7 @@ app-vault-groupings, app-org-vault-groupings, .groupings {
 }
 
 app-vault div.vault-filters div.card-body,
+app-org-vault div.vault-filters div.card-body,
 app-send div.vault-filters div.card-body {
     padding: 0;
     ul.card-ul {
