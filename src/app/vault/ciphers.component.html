@@ -32,11 +32,11 @@
                         <ng-container *ngIf="c.type === cipherType.Login && !c.isDeleted">
                             <a class="list-options-item" href="#" appStopClick
                                 (click)="copy(c, c.login.username, 'username', 'Username')">
-                                <i class="fa fa-fw fas fa-user fa-lg" aria-hidden="true" title="{{'copyUsername' | i18n}}"></i>
+                                <i class="fa fa-fw fa-user fa-lg" aria-hidden="true" title="{{'copyUsername' | i18n}}"></i>
                             </a>
                             <a class="list-options-item" href="#" appStopClick
                                 (click)="copy(c, c.login.password, 'password', 'Password')" *ngIf="c.viewPassword">
-                                <i class="fa fa-fw fas fa-key fa-lg" aria-hidden="true" title="{{'copyPassword' | i18n}}"></i>
+                                <i class="fa fa-fw fa-key fa-lg" aria-hidden="true" title="{{'copyPassword' | i18n}}"></i>
                             </a>
                             <a class="list-options-item" href="#" appStopClick (click)="copy(c, c.login.totp, 'verificationCodeTotp', 'TOTP')"
                                 *ngIf="displayTotpCopyButton(c)">
