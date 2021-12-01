@@ -30,24 +30,24 @@
                 <td class="table-list-options">
                     <div class="list-options">
                         <ng-container *ngIf="c.type === cipherType.Login && !c.isDeleted">
-                            <a class="list-optioins-item" href="#" appStopClick
+                            <a class="list-options-item" href="#" appStopClick
                                 (click)="copy(c, c.login.username, 'username', 'Username')">
                                 <i class="fa fa-fw fas fa-user fa-lg" aria-hidden="true" title="{{'copyUsername' | i18n}}"></i>
                             </a>
-                            <a class="list-optioins-item" href="#" appStopClick
+                            <a class="list-options-item" href="#" appStopClick
                                 (click)="copy(c, c.login.password, 'password', 'Password')" *ngIf="c.viewPassword">
                                 <i class="fa fa-fw fas fa-key fa-lg" aria-hidden="true" title="{{'copyPassword' | i18n}}"></i>
                             </a>
-                            <a class="list-optioins-item" href="#" appStopClick (click)="copy(c, c.login.totp, 'verificationCodeTotp', 'TOTP')"
+                            <a class="list-options-item" href="#" appStopClick (click)="copy(c, c.login.totp, 'verificationCodeTotp', 'TOTP')"
                                 *ngIf="displayTotpCopyButton(c)">
                                 <i class="fa fa-fw fa-clone fa-lg" aria-hidden="true" title="{{'copyVerificationCode' | i18n}}"></i>
                             </a>
-                            <a class="list-optioins-item" href="#" appStopClick *ngIf="c.login.canLaunch"
+                            <a class="list-options-item" href="#" appStopClick *ngIf="c.login.canLaunch"
                                 (click)="launch(c.login.launchUri)">
                                 <i class="fa fa-fw fa-share-square-o fa-lg" aria-hidden="true" title="{{'launch' | i18n}}"></i>
                             </a>
                         </ng-container>
-                        <a class="list-optioins-item" href="#" appStopClick (click)="attachments(c)">
+                        <a class="list-options-item" href="#" appStopClick (click)="attachments(c)">
                             <i class="fa fa-fw fa-paperclip fa-lg" aria-hidden="true" title="{{'attachments' | i18n}}"></i>
                         </a>
                         <a class="list-optioins-item" href="#" appStopClick (click)="restore(c)" *ngIf="c.isDeleted">
