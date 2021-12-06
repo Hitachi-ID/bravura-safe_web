@@ -18,7 +18,8 @@
 </ng-container>
 <ng-container *ngIf="!loading && (isPaging() ? pagedGroups : groups | search:searchText:'name':'id') as searchedGroups">
     <p *ngIf="!searchedGroups.length">{{'noGroupsInList' | i18n}}</p>
-    <table class="table table-hover table-list" *ngIf="searchedGroups.length" infiniteScroll
+    <div class="table-container">
+        <table class="table table-hover table-list" *ngIf="searchedGroups.length" infiniteScroll
         [infiniteScrollDistance]="1" [infiniteScrollDisabled]="!isPaging()" (scrolled)="loadMore()">
         <tbody>
             <tr *ngFor="let g of searchedGroups">
@@ -46,6 +47,7 @@
             </tr>
         </tbody>
     </table>
+    </div>
 </ng-container>
 <ng-template #addEdit></ng-template>
 <ng-template #usersTemplate></ng-template>

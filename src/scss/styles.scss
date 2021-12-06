@@ -175,9 +175,19 @@ body {
                     height: 100%;
                     div.col-9 {
                         height: 100%;
-                        overflow: auto;
                     }
                 }
+            }
+        }
+        app-vault, app-send, app-settings, app-reports {
+            div.page-header {
+                height: 40px;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+            div.table-container {
+                height: calc(100% - 50px);
+                overflow: auto;
             }
         }
         app-footer {
@@ -206,9 +216,19 @@ body {
                     height: 100%;
                     div.col-9 {
                         height: 100%;
-                        overflow: auto;
                     }
                 }
+            }
+        }
+        app-org-vault, app-org-manage {
+            div.page-header {
+                height: 40px;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+            div.table-container {
+                height: calc(100% - 50px);
+                overflow: auto;
             }
         }
         app-footer {

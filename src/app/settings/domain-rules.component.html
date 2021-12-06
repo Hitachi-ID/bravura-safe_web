@@ -34,37 +34,39 @@
         <i class="fa fa-spinner fa-spin text-muted" title="{{'loading' | i18n}}" aria-hidden="true"></i>
         <span class="sr-only">{{'loading' | i18n}}</span>
     </p>
-    <table class="table table-hover table-list" *ngIf="!loading && global.length > 0">
-        <tbody>
-            <tr *ngFor="let d of global">
-                <td [ngClass]="{'table-list-strike': d.excluded}">{{d.domains}}</td>
-                <td class="table-list-options">
-                    <div appListDropdown>
-                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false" appA11yTitle="{{'options' | i18n}}">
-                            <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="#" appStopClick (click)="toggleExcluded(d)"
-                                *ngIf="!d.excluded">
-                                <i class="fa fa-fw fa-close" aria-hidden="true"></i>
-                                {{'exclude' | i18n}}
-                            </a>
-                            <a class="dropdown-item" href="#" appStopClick (click)="toggleExcluded(d)"
-                                *ngIf="d.excluded">
-                                <i class="fa fa-fw fa-plus" aria-hidden="true"></i>
-                                {{'include' | i18n}}
-                            </a>
-                            <a class="dropdown-item" href="#" appStopClick (click)="customize(d)">
-                                <i class="fa fa-fw fa-scissors" aria-hidden="true"></i>
-                                {{'customize' | i18n}}
-                            </a>
+    <div class="table-container">
+        <table class="table table-hover table-list" *ngIf="!loading && global.length > 0">
+            <tbody>
+                <tr *ngFor="let d of global">
+                    <td [ngClass]="{'table-list-strike': d.excluded}">{{d.domains}}</td>
+                    <td class="table-list-options">
+                        <div appListDropdown>
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" appA11yTitle="{{'options' | i18n}}">
+                                <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="#" appStopClick (click)="toggleExcluded(d)"
+                                    *ngIf="!d.excluded">
+                                    <i class="fa fa-fw fa-close" aria-hidden="true"></i>
+                                    {{'exclude' | i18n}}
+                                </a>
+                                <a class="dropdown-item" href="#" appStopClick (click)="toggleExcluded(d)"
+                                    *ngIf="d.excluded">
+                                    <i class="fa fa-fw fa-plus" aria-hidden="true"></i>
+                                    {{'include' | i18n}}
+                                </a>
+                                <a class="dropdown-item" href="#" appStopClick (click)="customize(d)">
+                                    <i class="fa fa-fw fa-scissors" aria-hidden="true"></i>
+                                    {{'customize' | i18n}}
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <button type="submit" class="btn btn-primary btn-submit" [disabled]="form.loading">
         <i class="fa fa-spinner fa-spin" title="{{'loading' | i18n}}" aria-hidden="true"></i>
         <span>{{'save' | i18n}}</span>

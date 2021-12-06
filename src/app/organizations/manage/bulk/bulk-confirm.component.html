@@ -24,66 +24,70 @@
                     <p>
                         {{'fingerprintEnsureIntegrityVerify' | i18n}}
                     </p>
-                    <table class="table table-hover table-list">
-                        <thead>
-                            <tr>
-                                <th colspan="2">{{'user' | i18n}}</th>
-                                <th>{{'fingerprint' | i18n}}</th>
+                    <div class="table-container">
+                        <table class="table table-hover table-list">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">{{'user' | i18n}}</th>
+                                    <th>{{'fingerprint' | i18n}}</th>
+                                </tr>
+                            </thead>
+                            <tr *ngFor="let user of filteredUsers">
+                                <td width="30">
+                                    <app-avatar [data]="user | userName" [email]="user.email" size="25" [circle]="true"
+                                        [fontSize]="14"></app-avatar>
+                                </td>
+                                <td>
+                                    {{user.email}}
+                                    <small class="text-muted d-block" *ngIf="user.name">{{user.name}}</small>
+                                </td>
+                                <td>
+                                    {{fingerprints.get(user.id)}}
+                                </td>
                             </tr>
-                        </thead>
-                        <tr *ngFor="let user of filteredUsers">
-                            <td width="30">
-                                <app-avatar [data]="user | userName" [email]="user.email" size="25" [circle]="true"
-                                    [fontSize]="14"></app-avatar>
-                            </td>
-                            <td>
-                                {{user.email}}
-                                <small class="text-muted d-block" *ngIf="user.name">{{user.name}}</small>
-                            </td>
-                            <td>
-                                {{fingerprints.get(user.id)}}
-                            </td>
-                        </tr>
-                        <tr *ngFor="let user of excludedUsers">
-                            <td width="30">
-                                <app-avatar [data]="user | userName" [email]="user.email" size="25" [circle]="true"
-                                    [fontSize]="14"></app-avatar>
-                            </td>
-                            <td>
-                                {{user.email}}
-                                <small class="text-muted d-block" *ngIf="user.name">{{user.name}}</small>
-                            </td>
-                            <td>
-                                {{'bulkFilteredMessage' | i18n}}
-                            </td>
-                        </tr>
-                    </table>
+                            <tr *ngFor="let user of excludedUsers">
+                                <td width="30">
+                                    <app-avatar [data]="user | userName" [email]="user.email" size="25" [circle]="true"
+                                        [fontSize]="14"></app-avatar>
+                                </td>
+                                <td>
+                                    {{user.email}}
+                                    <small class="text-muted d-block" *ngIf="user.name">{{user.name}}</small>
+                                </td>
+                                <td>
+                                    {{'bulkFilteredMessage' | i18n}}
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </ng-container>
                 <ng-container *ngIf="!loading && done">
-                    <table class="table table-hover table-list">
-                        <thead>
-                            <tr>
-                                <th colspan="2">{{'user' | i18n}}</th>
-                                <th>{{'status' | i18n}}</th>
+                    <div class="table-container">
+                        <table class="table table-hover table-list">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">{{'user' | i18n}}</th>
+                                    <th>{{'status' | i18n}}</th>
+                                </tr>
+                            </thead>
+                            <tr *ngFor="let user of filteredUsers">
+                                <td width="30">
+                                    <app-avatar [data]="user | userName" [email]="user.email" size="25" [circle]="true"
+                                        [fontSize]="14"></app-avatar>
+                                </td>
+                                <td>
+                                    {{user.email}}
+                                    <small class="text-muted d-block" *ngIf="user.name">{{user.name}}</small>
+                                </td>
+                                <td *ngIf="statuses.has(user.id)">
+                                    {{statuses.get(user.id)}}
+                                </td>
+                                <td *ngIf="!statuses.has(user.id)">
+                                    {{'bulkFilteredMessage' | i18n}}
+                                </td>
                             </tr>
-                        </thead>
-                        <tr *ngFor="let user of filteredUsers">
-                            <td width="30">
-                                <app-avatar [data]="user | userName" [email]="user.email" size="25" [circle]="true"
-                                    [fontSize]="14"></app-avatar>
-                            </td>
-                            <td>
-                                {{user.email}}
-                                <small class="text-muted d-block" *ngIf="user.name">{{user.name}}</small>
-                            </td>
-                            <td *ngIf="statuses.has(user.id)">
-                                {{statuses.get(user.id)}}
-                            </td>
-                            <td *ngIf="!statuses.has(user.id)">
-                                {{'bulkFilteredMessage' | i18n}}
-                            </td>
-                        </tr>
-                    </table>
+                        </table>
+                    </div>
                 </ng-container>
             </div>
             <div class="modal-footer">
