@@ -165,7 +165,7 @@ body {
             flex-shrink: 0;
         }
         app-vault, app-send, app-settings, app-tools, app-reports {
-            height: calc(100% - 140px);
+            height: calc(100% - 85px);
             flex-grow: 1;
             flex-shrink: 0;
             padding: 20px;
@@ -191,7 +191,7 @@ body {
             }
         }
         app-footer {
-            line-height: 90px;
+            line-height: 30px;
             flex-shrink: 0;
         }
     }
@@ -206,7 +206,7 @@ body {
             flex-shrink: 0;
         }
         app-org-vault, app-org-tools, app-org-manage, app-org-settings {
-            height: calc(100% - 140px);
+            height: calc(100% - 85px);
             flex-grow: 1;
             flex-shrink: 0;
             padding: 20px;
@@ -232,7 +232,7 @@ body {
             }
         }
         app-footer {
-            line-height: 90px;
+            line-height: 30px;
             flex-shrink: 0;
         }
     }
