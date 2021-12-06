@@ -18,6 +18,9 @@ $secondary-alt-light: #b3b3b3;
 $black: #000000;
 $black-light: #3d3d3d;
 
+$gray: #8a8a8a;
+$gray-light: #c4c4c4;
+
 $theme-colors: (  
     "primary-accent": $primary-accent,
     "secondary-alt": $secondary-alt,
@@ -75,6 +78,7 @@ $table-accent-bg: rgba($black, .02);
 $table-hover-bg: rgba($primary, 0.1);
 $table-options-bg: rgba($black, 0.8);
 $table-options-hover-bg:rgba($black-light, 0.9);
+$table-options-disable-bg: rgba($gray, 0.9);
 
 $modal-backdrop-opacity: 0.3;
 $btn-font-weight: 600;
@@ -568,6 +572,13 @@ input[type="search"]::-webkit-search-cancel-button {
                 color: $table-options-bg;
                 &:hover {
                     color: $table-options-hover-bg;
+                }
+            }
+            a.list-options-item.list-options-item-disable {
+                color: $table-options-disable-bg;
+                cursor: not-allowed;
+                &:hover {
+                    color: $table-options-disable-bg;
                 }
             }
         }
