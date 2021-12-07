@@ -1,18 +1,20 @@
 <div class="container page-content">
     <div class="row">
         <div class="col-3">
-            <div class="card mb-4">
+            <div class="card vault-filters mb-4">
                 <div class="card-header">{{'tools' | i18n}}</div>
-                <div class="list-group list-group-flush">
-                    <a routerLink="generator" class="list-group-item" routerLinkActive="active">
-                        {{'passwordGenerator' | i18n}}
-                    </a>
-                    <a routerLink="import" class="list-group-item" routerLinkActive="active">
-                        {{'importData' | i18n}}
-                    </a>
-                    <a routerLink="export" class="list-group-item" routerLinkActive="active">
-                        {{'exportVault' | i18n}}
-                    </a>
+                <div class="card-body">
+                    <ul class="fa-ul card-ul">
+                        <li [ngClass]="{active: toolsFilter.generator}" (click)="filter('generator')">
+                            <a>{{'passwordGenerator' | i18n}}</a>
+                        </li>
+                        <li [ngClass]="{active: toolsFilter.import}" (click)="filter('import')">
+                            <a>{{'importData' | i18n}}</a>
+                        </li>
+                        <li [ngClass]="{active: toolsFilter.export}" (click)="filter('export')">
+                            <a>{{'exportVault' | i18n}}</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

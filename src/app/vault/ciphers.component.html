@@ -31,6 +31,9 @@
                     <td class="table-list-options">
                         <div class="list-options">
                             <ng-container *ngIf="c.type === cipherType.Login && !c.isDeleted">
+                                <a class="list-options-item" [ngClass]="{'list-options-item-disable': !c.login.launchUri}" href="#" appStopClick (click)="launch(c.login.launchUri)">
+                                    <i class="fa fa-fw fa-share-square-o fa-lg" aria-hidden="true" title="{{'launch' | i18n}}"></i>
+                                </a>
                                 <a class="list-options-item" [ngClass]="{'list-options-item-disable': !c.login.username}" href="#" appStopClick (click)="copy(c, c.login.username, 'username', 'Username')">
                                     <i class="fa fa-fw fa-user fa-lg" aria-hidden="true" title="{{'copyUsername' | i18n}}"></i>
                                 </a>
@@ -40,9 +43,6 @@
                                 <a class="list-options-item" [ngClass]="{'list-options-item-disable': !c.login.totp}" href="#" appStopClick (click)="copy(c, c.login.totp, 'verificationCodeTotp', 'TOTP')"
                                     *ngIf="displayTotpCopyButton(c)">
                                     <i class="fa fa-fw fa-clone fa-lg" aria-hidden="true" title="{{'copyVerificationCode' | i18n}}"></i>
-                                </a>
-                                <a class="list-options-item" [ngClass]="{'list-options-item-disable': !c.login.launchUri}" href="#" appStopClick (click)="launch(c.login.launchUri)">
-                                    <i class="fa fa-fw fa-share-square-o fa-lg" aria-hidden="true" title="{{'launch' | i18n}}"></i>
                                 </a>
                             </ng-container>
                             <a class="list-options-item" href="#" [ngClass]="{'list-options-item-disable': !c}" appStopClick (click)="attachments(c)">
