@@ -8,19 +8,21 @@ import { MessagingService } from 'jslib-common/abstractions/messaging.service';
 import { UserService } from 'jslib-common/abstractions/user.service';
 
 @Component({
-    selector: 'app-tools',
-    templateUrl: 'tools.component.html',
+    selector: 'app-reports',
+    templateUrl: 'reports.component.html',
 })
-export class ToolsComponent implements OnInit {
+export class ReportsComponent implements OnInit {
     canAccessPremium = false;
 
-    public toolsFilter: ToolsFilter = {
-        'generator': true,
-        'import': false,
-        'export': false,
-    }
+    public reportsFilter: ReportsFilter = {
+        'exposed-passwords-report': true,
+        'reused-passwords-report': false,
+        'weak-passwords-report': false,
+        'unsecured-websites-report': false,
+        'inactive-two-factor-report': false,
+    };
 
-    public filters: String[] = ['generator', 'import', 'export'];
+    public filters: String[] = ['exposed-passwords-report', 'reused-passwords-report', 'weak-passwords-report', 'unsecured-websites-report', 'inactive-two-factor-report'];
 
     constructor(private userService: UserService, private messagingService: MessagingService, private router: Router, private route: ActivatedRoute) { }
 
@@ -31,7 +33,7 @@ export class ToolsComponent implements OnInit {
         if (this.filters.includes(url)) {
             this.filter(url);
         } else {
-            this.filter('generator');
+            this.filter('exposed-passwords-report');
         }
     }
 
@@ -43,17 +45,17 @@ export class ToolsComponent implements OnInit {
     }
 
     public filter(filterType: String): void {
-        for (let prop in this.toolsFilter) {
+        for (let prop in this.reportsFilter) {
             if (prop === filterType) {
-                this.toolsFilter[prop] = true;
+                this.reportsFilter[prop] = true;
                 this.router.navigate([prop], {relativeTo: this.route});
             } else {
-                this.toolsFilter[prop] = false;
+                this.reportsFilter[prop] = false;
             }
         }
     }
 }
 
-interface ToolsFilter {
+interface ReportsFilter {
     [key: string]: any;
 }
