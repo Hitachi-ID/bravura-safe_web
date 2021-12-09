@@ -20,53 +20,49 @@
                     <app-callout type="warning" *ngIf="users.length > 0 && !error">
                         {{'removeUsersWarning' | i18n}}
                     </app-callout>
-                    <div class="table-container">
-                        <table class="table table-hover table-list">
-                            <thead>
-                                <tr>
-                                    <th colspan="2">{{'user' | i18n}}</th>
-                                </tr>
-                            </thead>
-                            <tr *ngFor="let user of users">
-                                <td width="30">
-                                    <app-avatar [data]="user | userName" [email]="user.email" size="25" [circle]="true"
-                                        [fontSize]="14"></app-avatar>
-                                </td>
-                                <td>
-                                    {{user.email}}
-                                    <small class="text-muted d-block" *ngIf="user.name">{{user.name}}</small>
-                                </td>
+                    <table class="table table-hover table-list">
+                        <thead>
+                            <tr>
+                                <th colspan="2">{{'user' | i18n}}</th>
                             </tr>
-                        </table>
-                    </div>
+                        </thead>
+                        <tr *ngFor="let user of users">
+                            <td width="30">
+                                <app-avatar [data]="user | userName" [email]="user.email" size="25" [circle]="true"
+                                    [fontSize]="14"></app-avatar>
+                            </td>
+                            <td>
+                                {{user.email}}
+                                <small class="text-muted d-block" *ngIf="user.name">{{user.name}}</small>
+                            </td>
+                        </tr>
+                    </table>
                 </ng-container>
                 <ng-container *ngIf="done">
-                    <div class="table-container">
-                        <table class="table table-hover table-list">
-                            <thead>
-                                <tr>
-                                    <th colspan="2">{{'user' | i18n}}</th>
-                                    <th>{{'status' | i18n}}</th>
-                                </tr>
-                            </thead>
-                            <tr *ngFor="let user of users">
-                                <td width="30">
-                                    <app-avatar [data]="user | userName" [email]="user.email" size="25" [circle]="true"
-                                        [fontSize]="14"></app-avatar>
-                                </td>
-                                <td>
-                                    {{user.email}}
-                                    <small class="text-muted d-block" *ngIf="user.name">{{user.name}}</small>
-                                </td>
-                                <td *ngIf="statuses.has(user.id)">
-                                    {{statuses.get(user.id)}}
-                                </td>
-                                <td *ngIf="!statuses.has(user.id)">
-                                    {{'bulkFilteredMessage' | i18n}}
-                                </td>
+                    <table class="table table-hover table-list">
+                        <thead>
+                            <tr>
+                                <th colspan="2">{{'user' | i18n}}</th>
+                                <th>{{'status' | i18n}}</th>
                             </tr>
-                        </table>
-                    </div>
+                        </thead>
+                        <tr *ngFor="let user of users">
+                            <td width="30">
+                                <app-avatar [data]="user | userName" [email]="user.email" size="25" [circle]="true"
+                                    [fontSize]="14"></app-avatar>
+                            </td>
+                            <td>
+                                {{user.email}}
+                                <small class="text-muted d-block" *ngIf="user.name">{{user.name}}</small>
+                            </td>
+                            <td *ngIf="statuses.has(user.id)">
+                                {{statuses.get(user.id)}}
+                            </td>
+                            <td *ngIf="!statuses.has(user.id)">
+                                {{'bulkFilteredMessage' | i18n}}
+                            </td>
+                        </tr>
+                    </table>
                 </ng-container>
             </div>
             <div class="modal-footer">

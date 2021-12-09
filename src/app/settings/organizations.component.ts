@@ -3,7 +3,6 @@ import {
     Input,
     OnInit,
 } from '@angular/core';
-import { Router } from '@angular/router';
 
 import { ToasterService } from 'angular2-toaster';
 
@@ -39,8 +38,7 @@ export class OrganizationsComponent implements OnInit {
     constructor(private userService: UserService, private platformUtilsService: PlatformUtilsService,
         private i18nService: I18nService, private apiService: ApiService,
         private toasterService: ToasterService, private syncService: SyncService,
-        private cryptoService: CryptoService, private policyService: PolicyService,
-        private router: Router,) { }
+        private cryptoService: CryptoService, private policyService: PolicyService) { }
 
     async ngOnInit() {
         if (!this.vault) {
@@ -161,9 +159,5 @@ export class OrganizationsComponent implements OnInit {
             this.platformUtilsService.showToast('success', null, this.i18nService.t(toastStringRef));
             await this.load();
         } catch { }
-    }
-
-    public navigateOrg(id: string): void {
-        this.router.navigate(['/organizations', id]);
     }
 }

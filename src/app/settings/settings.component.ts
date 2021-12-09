@@ -4,7 +4,6 @@ import {
     OnDestroy,
     OnInit,
 } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
 
 import { PlatformUtilsService } from 'jslib-common/abstractions/platformUtils.service';
 import { TokenService } from 'jslib-common/abstractions/token.service';
@@ -21,19 +20,8 @@ export class SettingsComponent implements OnInit, OnDestroy {
     premium: boolean;
     selfHosted: boolean;
 
-    public settingsFilter: SettingsFilter = {
-        'account': true,        
-        'options': false,
-        'organizations': false,
-        'billing': false,
-        'domain-rules': false,
-        'emergency-access': false,
-    }
-
-    public filters: String[] = ['account', 'options', 'organizations', 'billing', 'domain-rules', 'emergency-access'];
-
     constructor(private tokenService: TokenService, private broadcasterService: BroadcasterService,
-        private ngZone: NgZone, private platformUtilsService: PlatformUtilsService, private router: Router, private route: ActivatedRoute) { }
+        private ngZone: NgZone, private platformUtilsService: PlatformUtilsService) { }
 
     async ngOnInit() {
         this.broadcasterService.subscribe(BroadcasterSubscriptionId, async (message: any) => {
@@ -49,13 +37,6 @@ export class SettingsComponent implements OnInit, OnDestroy {
 
         this.selfHosted = await this.platformUtilsService.isSelfHost();
         await this.load();
-        const urls: String[] = this.router.url.split('/');
-        const url = urls[urls.length - 1];
-        if (this.filters.includes(url)) {
-            this.filter(url);
-        } else {
-            this.filter('account');
-        }
     }
 
     ngOnDestroy() {
@@ -65,19 +46,4 @@ export class SettingsComponent implements OnInit, OnDestroy {
     async load() {
         this.premium = await this.tokenService.getPremium();
     }
-
-    public filter(filterType: String):void {
-        for (let prop in this.settingsFilter) {
-            if (prop === filterType) {
-                this.settingsFilter[prop] = true;
-                this.router.navigate([prop], {relativeTo: this.route});
-            } else {
-                this.settingsFilter[prop] = false;
-            }
-        }
-    }
-}
-
-interface SettingsFilter {
-    [key: string]: any;
 }

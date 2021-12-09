@@ -15,7 +15,7 @@ import { CipherType } from 'jslib-common/enums/cipherType';
 
 import { Utils } from 'jslib-common/misc/utils';
 
-import { CipherReportComponent } from '../tools/cipher-report.component';
+import { CipherReportComponent } from './cipher-report.component';
 
 @Component({
     selector: 'app-inactive-two-factor-report',

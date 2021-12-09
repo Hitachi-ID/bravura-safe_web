@@ -1,29 +1,27 @@
 <div class="container page-content">
     <div class="row">
         <div class="col-3">
-            <div class="card vault-filters">
+            <div class="card">
                 <div class="card-header">{{'settings' | i18n}}</div>
-                <div class="card-body">
-                    <ul class="fa-ul card-ul">
-                        <li [ngClass]="{active: settingsFilter.account}" (click)="filter('account')">
-                            <a>{{'myAccount' | i18n}}</a>
-                        </li>
-                        <li [ngClass]="{active: settingsFilter.options}" (click)="filter('options')">
-                            <a>{{'options' | i18n}}</a>
-                        </li>
-                        <li [ngClass]="{active: settingsFilter.organizations}" (click)="filter('organizations')">
-                            <a>{{'organizations' | i18n}}</a>
-                        </li>
-                        <li [ngClass]="{active: settingsFilter.billing}" (click)="filter('billing')" *ngIf="!selfHosted">
-                            <a>{{'billing' | i18n}}</a>
-                        </li>
-                        <li [ngClass]="{active: settingsFilter['domain-rules']}" (click)="filter('domain-rules')">
-                            <a>{{'domainRules' | i18n}}</a>
-                        </li>
-                        <li [ngClass]="{active: settingsFilter['emergency-access']}" (click)="filter('emergency-access')">
-                            <a>{{'emergencyAccess' | i18n}}</a>
-                        </li>
-                    </ul>
+                <div class="list-group list-group-flush">
+                    <a routerLink="account" class="list-group-item" routerLinkActive="active">
+                        {{'myAccount' | i18n}}
+                    </a>
+                    <a routerLink="options" class="list-group-item" routerLinkActive="active">
+                        {{'options' | i18n}}
+                    </a>
+                    <a routerLink="organizations" class="list-group-item" routerLinkActive="active">
+                        {{'organizations' | i18n}}
+                    </a>
+                    <a routerLink="billing" class="list-group-item" routerLinkActive="active" *ngIf="!selfHosted">
+                        {{'billing' | i18n}}
+                    </a>
+                    <a routerLink="domain-rules" class="list-group-item" routerLinkActive="active">
+                        {{'domainRules' | i18n}}
+                    </a>
+                    <a routerLink="emergency-access" class="list-group-item" routerLinkActive="active">
+                        {{'emergencyAccess' | i18n}}
+                    </a>
                 </div>
             </div>
         </div>

@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { CipherService } from 'jslib-common/abstractions/cipher.service';
 import { MessagingService } from 'jslib-common/abstractions/messaging.service';
+import { PasswordGenerationService } from 'jslib-common/abstractions/passwordGeneration.service';
 import { UserService } from 'jslib-common/abstractions/user.service';
 
 import { ModalService } from 'jslib-angular/services/modal.service';
@@ -12,20 +13,20 @@ import { Cipher } from 'jslib-common/models/domain/cipher';
 import { CipherView } from 'jslib-common/models/view/cipherView';
 
 import {
-    ReusedPasswordsReportComponent as BaseReusedPasswordsReportComponent,
-} from '../../reports/reused-passwords-report.component';
+    WeakPasswordsReportComponent as BaseWeakPasswordsReportComponent,
+} from '../../tools/weak-passwords-report.component';
 
 @Component({
-    selector: 'app-reused-passwords-report',
-    templateUrl: '../../reports/reused-passwords-report.component.html',
+    selector: 'app-weak-passwords-report',
+    templateUrl: '../../tools/weak-passwords-report.component.html',
 })
-export class ReusedPasswordsReportComponent extends BaseReusedPasswordsReportComponent {
+export class WeakPasswordsReportComponent extends BaseWeakPasswordsReportComponent {
     manageableCiphers: Cipher[];
 
-    constructor(cipherService: CipherService, modalService: ModalService,
-        messagingService: MessagingService, userService: UserService,
-        private route: ActivatedRoute) {
-        super(cipherService, modalService, messagingService, userService);
+    constructor(cipherService: CipherService, passwordGenerationService: PasswordGenerationService,
+        modalService: ModalService, messagingService: MessagingService,
+        userService: UserService, private route: ActivatedRoute) {
+        super(cipherService, passwordGenerationService, modalService, messagingService, userService);
     }
 
     async ngOnInit() {
