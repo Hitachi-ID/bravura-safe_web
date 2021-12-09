@@ -8,16 +8,16 @@ import { UserService } from 'jslib-common/abstractions/user.service';
 import { ModalService } from 'jslib-angular/services/modal.service';
 
 import {
-    InactiveTwoFactorReportComponent as BaseInactiveTwoFactorReportComponent,
-} from '../../reports/inactive-two-factor-report.component';
+    UnsecuredWebsitesReportComponent as BaseUnsecuredWebsitesReportComponent,
+} from '../../tools/unsecured-websites-report.component';
 
 import { CipherView } from 'jslib-common/models/view/cipherView';
 
 @Component({
-    selector: 'app-inactive-two-factor-report',
-    templateUrl: '../../reports/inactive-two-factor-report.component.html',
+    selector: 'app-unsecured-websites-report',
+    templateUrl: '../../tools/unsecured-websites-report.component.html',
 })
-export class InactiveTwoFactorReportComponent extends BaseInactiveTwoFactorReportComponent {
+export class UnsecuredWebsitesReportComponent extends BaseUnsecuredWebsitesReportComponent {
     constructor(cipherService: CipherService, modalService: ModalService,
         messagingService: MessagingService, userService: UserService,
         private route: ActivatedRoute) {

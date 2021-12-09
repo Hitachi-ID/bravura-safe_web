@@ -613,7 +613,7 @@ index 000000000..7ae60d678
 +                        <a [routerLink]="['/organizations', o.organizationId]">{{o.organizationName}}</a>
 +                    </td>
 +                    <td class="table-list-options" *ngIf="manageOrganizations">
-+                        <div appListDropdown>
++                        <div class="dropdown" appListDropdown>
 +                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
 +                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
 +                                appA11yTitle="{{'options' | i18n}}">
@@ -1341,7 +1341,7 @@ index 000000000..e97b24ad5
 +                        <span *ngIf="u.type === userType.Custom">{{'custom' | i18n}}</span>
 +                    </td>
 +                    <td class="table-list-options">
-+                        <div appListDropdown>
++                        <div class="dropdown" appListDropdown>
 +                            <button class="btn btn-outline-secondary dropdown-toggle" type="button"
 +                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
 +                                appA11yTitle="{{'options' | i18n}}">

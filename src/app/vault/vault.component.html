@@ -1,6 +1,6 @@
-<div class="container page-content app-content">
+<div class="container page-content">
     <div class="row">
-        <div class="col-3 sidebar-panel">
+        <div class="col-3">
             <div class="card border-warning mb-4" *ngIf="showUpdateKey">
                 <div class="card-header bg-warning text-white">
                     <i class="fa fa-warning fa-fw" aria-hidden="true"></i> {{'updateKeyTitle' | i18n}}
@@ -36,23 +36,20 @@
                     </a>
                 </div>
             </div>
-            <div class="dropdown organizations">
-                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                    appA11yTitle="{{'organizations' | i18n}}">
-                    <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
-                    {{'organizations' | i18n}}
-                </button>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                    <app-organizations [vault]="true"></app-organizations>
-                </div>
-            </div>
             <app-vault-groupings (onAllClicked)="clearGroupingFilters()" (onFavoritesClicked)="filterFavorites()"
                 (onCipherTypeClicked)="filterCipherType($event)" (onFolderClicked)="filterFolder($event.id)"
                 (onAddFolder)="addFolder()" (onEditFolder)="editFolder($event.id)"
                 (onCollectionClicked)="filterCollection($event.id)" (onSearchTextChanged)="filterSearchText($event)"
                 (onTrashClicked)="filterDeleted()">
             </app-vault-groupings>
+            <div class="card">
+                <div class="card-header d-flex">
+                    {{'organizations' | i18n}}
+                </div>
+                <div class="card-body">
+                    <app-organizations [vault]="true"></app-organizations>
+                </div>
+            </div>
             <div class="card mt-4" *ngIf="showProviders">
                 <div class="card-header d-flex">
                     {{'providers' | i18n}}

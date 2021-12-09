@@ -108,12 +108,11 @@ export class CiphersComponent extends BaseCiphersComponent implements OnDestroy 
     }
 
     launch(uri: string) {
-        if (uri)
-            this.platformUtilsService.launchUri(uri);
+        this.platformUtilsService.launchUri(uri);
     }
 
     async attachments(c: CipherView) {
-        if (!c || !await this.repromptCipher(c)) {
+        if (!await this.repromptCipher(c)) {
             return;
         }
         this.onAttachmentsClicked.emit(c);
@@ -189,9 +188,6 @@ export class CiphersComponent extends BaseCiphersComponent implements OnDestroy 
             return;
         }
 
-        // 1. if password or username not exist, return
-        // 2. if type = totp and cannot display totp copy button, return
-        // 3. so disable class working for the button
         if (value == null || aType === 'TOTP' && !this.displayTotpCopyButton(cipher)) {
             return;
         } else if (value === cipher.login.totp) {

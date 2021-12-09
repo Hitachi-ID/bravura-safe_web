@@ -90,11 +90,7 @@
                 </ul>
             </ng-container>
             <ng-container *ngIf="showCollections && collections && collections.length">
-                <span class="collection-label">
-                    <h3 class="d-flex">
-                        {{'collections' | i18n}}
-                    </h3>
-                </span>
+                <h3>{{'collections' | i18n}}</h3>
                 <ul class="fa-ul card-ul">
                     <ng-template #recursiveCollections let-collections>
                         <li *ngFor="let c of collections" [ngClass]="{active: c.node.id === selectedCollectionId}">

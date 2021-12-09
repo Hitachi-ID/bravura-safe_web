@@ -1,8 +1,25 @@
 <div class="page-header">
-    <h1>{{'vault' | i18n}}</h1>
+    <h1>
+        {{'unsecuredWebsitesReport' | i18n}}
+        <small *ngIf="hasLoaded && loading">
+            <i class="fa fa-spinner fa-spin text-muted" title="{{'loading' | i18n}}" aria-hidden="true"></i>
+            <span class="sr-only">{{'loading' | i18n}}</span>
+        </small>
+    </h1>
 </div>
-<div class="mt-4">
+<p>{{'unsecuredWebsitesReportDesc' | i18n}}</p>
+<div *ngIf="!hasLoaded && loading">
+    <i class="fa fa-spinner fa-spin text-muted" title="{{'loading' | i18n}}" aria-hidden="true"></i>
+    <span class="sr-only">{{'loading' | i18n}}</span>
+</div>
+<div class="mt-4" *ngIf="hasLoaded">
+    <app-callout type="success" title="{{'goodNews' | i18n}}" *ngIf="!ciphers.length">
+        {{'noUnsecuredWebsites' | i18n}}
+    </app-callout>
     <ng-container *ngIf="ciphers.length">
+        <app-callout type="danger" title="{{'unsecuredWebsitesFound' | i18n}}">
+            {{'unsecuredWebsitesFoundDesc' | i18n : (ciphers.length | number)}}
+        </app-callout>
         <table class="table table-hover table-list table-ciphers">
             <tbody>
                 <tr *ngFor="let c of ciphers">
@@ -23,25 +40,9 @@
                         <br>
                         <small>{{c.subTitle}}</small>
                     </td>
-                    <td class="table-list-options">
-                        <div class="dropdown" appListDropdown *ngIf="c.hasAttachments">
-                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                appA11yTitle="{{'options' | i18n}}">
-                                <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#" appStopClick (click)="viewAttachments(c)">
-                                    <i class="fa fa-fw fa-paperclip" aria-hidden="true"></i>
-                                    {{'attachments' | i18n}}
-                                </a>
-                            </div>
-                        </div>
-                    </td>
                 </tr>
             </tbody>
         </table>
     </ng-container>
 </div>
 <ng-template #cipherAddEdit></ng-template>
-<ng-template #attachments></ng-template>
