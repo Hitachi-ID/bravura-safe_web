@@ -187,6 +187,7 @@ const routes: Routes = [
                     { path: 'account', component: AccountComponent, data: { titleId: 'myAccount' } },
                     { path: 'options', component: OptionsComponent, data: { titleId: 'options' } },
                     { path: 'domain-rules', component: DomainRulesComponent, data: { titleId: 'domainRules' } },
+                    { path: 'two-factor', component: TwoFactorSetupComponent, data: { titleId: 'twoStepLogin' } },
                     { path: 'organizations', component: OrganizationsComponent, data: { titleId: 'organizations' } },
                     {
                         path: 'create-organization',
