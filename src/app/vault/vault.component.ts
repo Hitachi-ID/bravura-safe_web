@@ -12,6 +12,8 @@ import {
     Router,
 } from '@angular/router';
 
+import { first } from 'rxjs/operators';
+
 import { CipherType } from 'jslib-common/enums/cipherType';
 
 import { CipherView } from 'jslib-common/models/view/cipherView';
@@ -81,12 +83,8 @@ export class VaultComponent implements OnInit, OnDestroy {
             this.platformUtilsService.isSelfHost() ? 'trashCleanupWarningSelfHosted' : 'trashCleanupWarning'
         );
 
-        const queryParamsSub = this.route.queryParams.subscribe(async params => {
+        this.route.queryParams.pipe(first()).subscribe(async params => {
             await this.syncService.fullSync(false);
-
-            if (await this.userService.getForcePasswordReset()) {
-                this.router.navigate(['update-temp-password']);
-            }
 
             this.showUpdateKey = !(await this.cryptoService.hasEncKey());
             const canAccessPremium = await this.userService.canAccessPremium();
@@ -143,10 +141,6 @@ export class VaultComponent implements OnInit, OnDestroy {
                     }
                 });
             });
-
-            if (queryParamsSub != null) {
-                queryParamsSub.unsubscribe();
-            }
         });
     }
 

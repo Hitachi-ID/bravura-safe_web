@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
 import { ToasterModule } from 'angular2-toaster';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
-import { AvatarComponent } from './components/avatar.component';
+import { NestedCheckboxComponent } from './components/nested-checkbox.component';
 import { PasswordRepromptComponent } from './components/password-reprompt.component';
 import { PasswordStrengthComponent } from './components/password-strength.component';
 
@@ -59,7 +59,7 @@ import { UserConfirmComponent as OrgUserConfirmComponent } from './organizations
 import { UserGroupsComponent as OrgUserGroupsComponent } from './organizations/manage/user-groups.component';
 
 import { AccountComponent as OrgAccountComponent } from './organizations/settings/account.component';
-import { AdjustSeatsComponent } from './organizations/settings/adjust-seats.component';
+import { AdjustSubscription } from './organizations/settings/adjust-subscription.component';
 import { ChangePlanComponent } from './organizations/settings/change-plan.component';
 import { DeleteOrganizationComponent } from './organizations/settings/delete-organization.component';
 import { DownloadLicenseComponent } from './organizations/settings/download-license.component';
@@ -174,6 +174,7 @@ import { VaultComponent } from './vault/vault.component';
 
 import { ProvidersComponent } from './providers/providers.component';
 
+import { AvatarComponent } from 'jslib-angular/components/avatar.component';
 import { CalloutComponent } from 'jslib-angular/components/callout.component';
 import { IconComponent } from 'jslib-angular/components/icon.component';
 
@@ -303,7 +304,7 @@ registerLocaleData(localeZhTw, 'zh-TW');
         AddCreditComponent,
         AddEditComponent,
         AdjustPaymentComponent,
-        AdjustSeatsComponent,
+        AdjustSubscription,
         AdjustStorageComponent,
         ApiActionDirective,
         ApiKeyComponent,
@@ -356,6 +357,7 @@ registerLocaleData(localeZhTw, 'zh-TW');
         LockComponent,
         LoginComponent,
         NavbarComponent,
+        NestedCheckboxComponent,
         OptionsComponent,
         OrgAccountComponent,
         OrgAddEditComponent,

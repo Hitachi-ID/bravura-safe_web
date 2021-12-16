@@ -3,6 +3,7 @@ const fs = require('fs');
 const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackInjector = require('html-webpack-injector');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
@@ -28,7 +29,7 @@ const moduleRules = [
     },
     {
         test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
-        exclude: /loading.svg/,
+        exclude: /loading(|-white).svg/,
         use: [{
             loader: 'file-loader',
             options: {
@@ -80,8 +81,9 @@ const plugins = [
     new HtmlWebpackPlugin({
         template: './src/index.html',
         filename: 'index.html',
-        chunks: ['app/polyfills', 'app/vendor', 'app/main'],
+        chunks: ['theme_head', 'app/polyfills', 'app/vendor', 'app/main'],
     }),
+    new HtmlWebpackInjector(),
     new HtmlWebpackPlugin({
         template: './src/connectors/duo.html',
         filename: 'duo-connector.html',
@@ -167,7 +169,7 @@ const plugins = [
 
 // ref: https://webpack.js.org/configuration/dev-server/#devserver
 let certSuffix = fs.existsSync('dev-server.local.pem') ? '.local' : '.shared';
-const devServer = ENV !== 'development' ? {} : {
+const devServer = NODE_ENV !== 'development' ? {} : {
     https: {
         key: fs.readFileSync('dev-server' + certSuffix + '.pem'),
         cert: fs.readFileSync('dev-server' + certSuffix + '.pem'),
@@ -175,38 +177,32 @@ const devServer = ENV !== 'development' ? {} : {
     // host: '192.168.1.9',
     proxy: {
         '/api': {
-            target: envConfig['proxyApi'],
+            target: envConfig.dev?.proxyApi,
             pathRewrite: {'^/api' : ''},
             secure: false,
             changeOrigin: true
         },
         '/identity': {
-            target: envConfig['proxyIdentity'],
+            target: envConfig.dev?.proxyIdentity,
             pathRewrite: {'^/identity' : ''},
             secure: false,
             changeOrigin: true
         },
         '/events': {
-            target: envConfig['proxyEvents'],
+            target: envConfig.dev?.proxyEvents,
             pathRewrite: {'^/events' : ''},
             secure: false,
             changeOrigin: true
         },
         '/notifications': {
-            target: envConfig['proxyNotifications'],
+            target: envConfig.dev?.proxyNotifications,
             pathRewrite: {'^/notifications' : ''},
             secure: false,
             changeOrigin: true
         },
-        '/portal': {
-            target: envConfig['proxyEnterprise'],
-            pathRewrite: {'^/portal' : ''},
-            secure: false,
-            changeOrigin: true
-        }
     },
     hot: false,
-    allowedHosts: envConfig['allowedHosts']
+    allowedHosts: envConfig.dev?.allowedHosts,
 };
 
 const webpackConfig = {
@@ -222,6 +218,7 @@ const webpackConfig = {
         'connectors/duo': './src/connectors/duo.ts',
         'connectors/sso': './src/connectors/sso.ts',
         'connectors/captcha': './src/connectors/captcha.ts',
+        'theme_head': './src/theme.js',
     },
     externals: {
         'u2f': 'u2f',

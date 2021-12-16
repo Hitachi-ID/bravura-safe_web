@@ -185,7 +185,7 @@ export class AppComponent implements OnDestroy, OnInit {
             new MasterPasswordPolicy(),
             new PasswordGeneratorPolicy(),
             new SingleOrgPolicy(),
-            new RequireSsoPolicy(),
+//            new RequireSsoPolicy(),
             new PersonalOwnershipPolicy(),
             new DisableSendPolicy(),
             new SendOptionsPolicy(),

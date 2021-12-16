@@ -10,6 +10,7 @@ import { ToasterService } from 'angular2-toaster';
 import { ApiService } from 'jslib-common/abstractions/api.service';
 import { CryptoService } from 'jslib-common/abstractions/crypto.service';
 import { I18nService } from 'jslib-common/abstractions/i18n.service';
+import { LogService } from 'jslib-common/abstractions/log.service';
 import { PlatformUtilsService } from 'jslib-common/abstractions/platformUtils.service';
 import { PolicyService } from 'jslib-common/abstractions/policy.service';
 import { SyncService } from 'jslib-common/abstractions/sync.service';
@@ -40,7 +41,8 @@ export class OrganizationsComponent implements OnInit {
         private i18nService: I18nService, private apiService: ApiService,
         private toasterService: ToasterService, private syncService: SyncService,
         private cryptoService: CryptoService, private policyService: PolicyService,
-        private router: Router,) { }
+        private logService: LogService,
+        private router: Router ) { }
 
     async ngOnInit() {
         if (!this.vault) {
@@ -87,7 +89,9 @@ export class OrganizationsComponent implements OnInit {
             await this.actionPromise;
             this.toasterService.popAsync('success', null, 'Unlinked SSO');
             await this.load();
-        } catch { }
+        } catch (e) {
+            this.logService.error(e);
+        }
     }
 
     async leave(org: Organization) {
@@ -105,7 +109,9 @@ export class OrganizationsComponent implements OnInit {
             await this.actionPromise;
             this.toasterService.popAsync('success', null, this.i18nService.t('leftOrganization'));
             await this.load();
-        } catch { }
+        } catch (e) {
+            this.logService.error(e);
+        }
     }
 
     async toggleResetPasswordEnrollment(org: Organization) {
@@ -160,10 +166,12 @@ export class OrganizationsComponent implements OnInit {
             await this.actionPromise;
             this.platformUtilsService.showToast('success', null, this.i18nService.t(toastStringRef));
             await this.load();
-        } catch { }
+        } catch (e) {
+            this.logService.error(e);
+        }
     }
 
-    public navigateOrg(id: string): void {
+    navigateOrg(id: string): void {
         this.router.navigate(['/organizations', id]);
     }
 }
