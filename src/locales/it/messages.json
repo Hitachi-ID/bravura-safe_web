@@ -166,6 +166,10 @@
   "cfTypeBoolean": {
     "message": "Booleano"
   },
+  "cfTypeLinked": {
+    "message": "Collegato",
+    "description": "This describes a field that is 'linked' (related) to another field."
+  },
   "remove": {
     "message": "Rimuovi"
   },
@@ -310,6 +314,9 @@
   },
   "lastName": {
     "message": "Cognome"
+  },
+  "fullName": {
+    "message": "Nome completo"
   },
   "address1": {
     "message": "Indirizzo 1"
@@ -531,7 +538,7 @@
     "message": "No"
   },
   "loginOrCreateNewAccount": {
-    "message": "Accedi per accedere alla tua cassaforte."
+    "message": "Accedi o crea un nuovo account per accedere alla tua cassaforte."
   },
   "createAccount": {
     "message": "Crea account"
@@ -769,10 +776,10 @@
     "message": "Organizzazioni"
   },
   "moveToOrgDesc": {
-    "message": "Scegli un'organizzazione in cui desideri spostare questo elemento. Spostare in un'organizzazione trasferisce la proprietà dell'elemento all'organizzazione. Non sarai più il proprietario diretto di questo elemento una volta spostato."
+    "message": "Scegli un'organizzazione in cui desideri spostare questo elemento. Lo spostamento in un'organizzazione trasferisce la proprietà dell'elemento all'organizzazione. Non sarai più il proprietario diretto di questo elemento una volta spostato."
   },
   "moveManyToOrgDesc": {
-    "message": "Scegli un'organizzazione in cui desideri spostare questo elemento. Spostare in un'organizzazione trasferisce la proprietà dell'elemento all'organizzazione. Non sarai più il proprietario diretto di questo elemento una volta spostato."
+    "message": "Scegli un'organizzazione in cui desideri spostare questo elemento. Lo spostamento in un'organizzazione trasferisce la proprietà dell'elemento all'organizzazione. Non sarai più il proprietario diretto di questo elemento una volta spostato."
   },
   "collectionsDesc": {
     "message": "Modifica le raccolte con le quali questo elemento viene condiviso. Solo gli utenti di organizzazioni che hanno accesso a queste raccolte saranno in grado di visualizzare questo elemento."
@@ -832,9 +839,6 @@
   },
   "encExportAccountWarningDesc": {
     "message": "Le chiavi di cifratura dell'account sono uniche per ogni account utente Bravura Vault, quindi non è possibile importare un'esportazione cifrata in un account diverso."
-  },
-  "exportMasterPassword": {
-    "message": "Inserisci la tua password principale per esportare i dati della tua cassaforte."
   },
   "export": {
     "message": "Esporta"
@@ -900,7 +904,7 @@
     "message": "Cambia indirizzo email"
   },
   "changeEmailTwoFactorWarning": {
-    "message": "Proceeding will change your account email address. It will not change the email address used for two-factor authentication. You can change this email address in the Two-Step Login settings."
+    "message": "Procedendo l'indirizzo email del tuo account sarà modificato ma non cambierà l'email utilizzata per l'autenticazione a due fattori. È possibile modificare questa email nelle impostazioni di accesso in due passaggi."
   },
   "newEmail": {
     "message": "Nuova email"
@@ -1002,7 +1006,7 @@
     "message": "Cassaforte dell'organizzazione svuotata."
   },
   "vaultAccessedByProvider": {
-    "message": "Vault accessed by provider."
+    "message": "Accesso della cassaforte da parte del fornitore."
   },
   "purgeVaultDesc": {
     "message": "Procedi in basso per eliminare tutti gli elementi e le cartelle nella cassaforte. Gli elementi che appartengono a un'organizzazione con cui condividi non saranno eliminati."
@@ -1044,7 +1048,7 @@
     "message": "Errore di importazione"
   },
   "importErrorDesc": {
-    "message": "Si è verificato un problema con i dati che hai provato ad importare. Risolvi gli errori elencati di seguito nel file importato e riprova."
+    "message": "Si è verificato un problema con i dati che hai provato a importare. Risolvi gli errori elencati di seguito nel file importato e riprova."
   },
   "importSuccess": {
     "message": "I dati sono stati importati correttamente nella tua cassaforte."
@@ -1179,7 +1183,7 @@
     "message": "Visualizza codice di recupero"
   },
   "providers": {
-    "message": "Metodi",
+    "message": "Fornitori",
     "description": "Two-step login providers such as YubiKey, Duo, Authenticator apps, Email, etc."
   },
   "enable": {
@@ -1394,7 +1398,7 @@
     "message": "A causa di limitazioni della piattaforma, WebAuthn non può essere utilizzato su tutte le applicazioni Bravura Vault. Dovresti abilitare un altro metodo di verifica in due passaggi in modo da poter accedere al tuo account anche dove WebAuthn non può essere usato. Piattaforme supportate:"
   },
   "twoFactorWebAuthnSupportWeb": {
-    "message": "Cassaforte Web ed estensione per il browser desktop/laptop con un browser abilitato per WebAuthn (Chrome, Opera, Vivaldi o Firefox con FIDO U2F abilitato)."
+    "message": "Cassaforte Web ed estensione per il browser desktop/portatile con un browser abilitato per WebAuthn (Chrome, Opera, Vivaldi o Firefox con FIDO U2F abilitato)."
   },
   "twoFactorRecoveryYourCode": {
     "message": "Il tuo codice di recupero Bravura Vault per la verifica in due passaggi"
@@ -1620,7 +1624,7 @@
     "message": "Il credito aggiunto apparirà sul tuo account dopo che il pagamento è stato completamente elaborato. Alcuni metodi di pagamento sono in ritardo e possono richiedere più tempo per il processo rispetto ad altri."
   },
   "makeSureEnoughCredit": {
-    "message": "Assicurati che il tuo account abbia abbastanza credito disponibile per questo acquisto. Se il tuo account non ha abbastanza credito disponibile, il tuo metodo di pagamento predefinito verrà utilizzato per la differenza. Puoi aggiungere credito al tuo account dalla pagina di fatturazione."
+    "message": "Assicurati che il tuo account abbia abbastanza credito disponibile per questo acquisto. Se il tuo account non ha abbastanza credito disponibile, il tuo metodo di pagamento predefinito sarà utilizzato per la differenza. Puoi aggiungere credito al tuo account dalla pagina di fatturazione."
   },
   "creditAppliedDesc": {
     "message": "Il credito del tuo account può essere utilizzato per effettuare acquisti. Ogni credito disponibile sarà automaticamente applicato alle fatture generate per questo account."
@@ -1736,13 +1740,7 @@
     }
   },
   "paymentChargedWithTrial": {
-    "message": "Il tuo piano include una prova gratuita di 7 giorni. La tua carta non verrà addebitata fino alla fine del periodo di prova e su base ricorrente ogni $INTERVAL$. È possibile annullare in qualsiasi momento.",
-    "placeholders": {
-      "interval": {
-        "content": "$1",
-        "example": "month or year"
-      }
-    }
+    "message": "Il tuo piano include una prova gratuita di 7 giorni. La tua carta non verrà addebitata fino alla fine del periodo di prova e su base ricorrente ogni $INTERVAL$. È possibile annullare in qualsiasi momento."
   },
   "paymentInformation": {
     "message": "Informazioni sul pagamento"
@@ -1863,7 +1861,7 @@
     "message": "Nessuna transazione."
   },
   "chargeNoun": {
-    "message": "Carica",
+    "message": "Addebito",
     "description": "Noun. A charge from a payment method."
   },
   "refundNoun": {
@@ -2152,13 +2150,13 @@
     "message": "Persone"
   },
   "policies": {
-    "message": "Policy"
+    "message": "Politiche"
   },
   "singleSignOn": {
     "message": "Single Sign-On"
   },
   "editPolicy": {
-    "message": "Modifica policy"
+    "message": "Modifica politica"
   },
   "groups": {
     "message": "Gruppi"
@@ -2177,6 +2175,9 @@
   },
   "removeUserConfirmation": {
     "message": "Confermi di voler rimuovere questo utente?"
+  },
+  "removeUserConfirmationKeyConnector": {
+    "message": "Attenzione! Questo utente richiede Key Connector per gestire la crittografia. Rimuovere questo utente dalla propria organizzazione disabiliterà definitivamente l'account. Questa azione non può essere annullata. Vuoi procedere?"
   },
   "externalId": {
     "message": "Id esterno"
@@ -2248,7 +2249,7 @@
     "message": "Confermato"
   },
   "clientOwnerEmail": {
-    "message": "Client Owner Email"
+    "message": "Email del proprietario (cliente)"
   },
   "owner": {
     "message": "Proprietario"
@@ -2257,19 +2258,19 @@
     "message": "L'utente con accesso più alto sarà in grado di gestire tutti gli aspetti della tua organizzazione."
   },
   "clientOwnerDesc": {
-    "message": "This user should be independent of the Provider. If the Provider is disassociated with the organization, this user will maintain ownership of the organization."
+    "message": "Questo utente non dovrebbe dipendere dal fornitore. Se il fornitore viene rimosso dall'organizzazione, questo utente manterrà la proprietà dell'organizzazione."
   },
   "admin": {
     "message": "Amministratore"
   },
   "adminDesc": {
-    "message": " Gli amministratori possono accedere e gestire tutti gli elementi, le raccolte e gli utenti dell'organizzazione."
+    "message": "Gli amministratori possono accedere e gestire tutti gli elementi, le raccolte e gli utenti dell'organizzazione."
   },
   "user": {
     "message": "Utente"
   },
   "userDesc": {
-    "message": "User normale con accesso alle raccolte della tua organizzazione."
+    "message": "Un utente normale con accesso alle raccolte della tua organizzazione."
   },
   "manager": {
     "message": "Responsabile"
@@ -2593,7 +2594,7 @@
     }
   },
   "createdOrganizationId": {
-    "message": "Created organization $ID$.",
+    "message": "Organizzazione $ID$ creata.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2602,7 +2603,7 @@
     }
   },
   "addedOrganizationId": {
-    "message": "Added organization $ID$.",
+    "message": "Organizzazione $ID$ aggiunta.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2611,7 +2612,7 @@
     }
   },
   "removedOrganizationId": {
-    "message": "Removed organization $ID$.",
+    "message": "Organizzazione $ID$ rimossa.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2620,7 +2621,7 @@
     }
   },
   "accessedClientVault": {
-    "message": "Accessed $ID$ organization vault.",
+    "message": "Accesso alla cassaforte dell'organizzazione $ID$.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2657,6 +2658,9 @@
   },
   "resendInvitation": {
     "message": "Invia nuovamente l'invito"
+  },
+  "resendEmail": {
+    "message": "Invia nuovamente l'email"
   },
   "hasBeenReinvited": {
     "message": "$USER$ è stato invitato.",
@@ -2737,7 +2741,7 @@
     "message": "Puoi accedere a questa organizzazione una volta che un amministratore conferma la tua iscrizione. Ti invieremo una email quando accadrà."
   },
   "inviteAcceptFailed": {
-    "message": "Non è possibile accettare l'invito. Chiedi ad un amministratore di organizzazione di inviare un nuovo invito."
+    "message": "Non è possibile accettare l'invito. Chiedi ad un amministratore dell'organizzazione di inviare un nuovo invito."
   },
   "inviteAcceptFailedShort": {
     "message": "Impossibile accettare l'invito. $DESCRIPTION$",
@@ -2755,7 +2759,7 @@
     "message": "Se non puoi accedere al tuo account attraverso i normali metodi di verifica in due passaggi, puoi usare il codice di recupero per la verifica in due passaggi per disabilitare tutti i metodi di verifica in due passaggi presenti sul tuo account."
   },
   "recoverAccountTwoStep": {
-    "message": "Ripristina la verifica in due passaggi dall'account"
+    "message": "Ripristina la verifica in due passaggi dell'account"
   },
   "twoStepRecoverDisabled": {
     "message": "La verifica in due passaggi è stata disabilitata sul tuo account."
@@ -2779,7 +2783,7 @@
     "message": "Elimina organizzazione"
   },
   "deleteOrganizationDesc": {
-    "message": "Procedere sotto per eliminare questa organizzazione e tutti i dati associati. I singoli account utente rimarranno, anche se non saranno più associati a questa organizzazione. "
+    "message": "Procedi sotto per eliminare questa organizzazione e tutti i dati associati. I singoli account utente rimarranno, anche se non saranno più associati a questa organizzazione. "
   },
   "deleteOrganizationWarning": {
     "message": "L'eliminazione dell'organizzazione è permanente. Non può essere annullata."
@@ -2797,7 +2801,7 @@
     "message": "Informazioni fiscali"
   },
   "taxInformationDesc": {
-    "message": "Si prega di contattare il servizio clienti per fornire (o aggiornare) le informazioni fiscali per le fatture."
+    "message": "Per i clienti negli Stati Uniti, il codice ZIP è necessario per soddisfare i requisiti relativi all'imposta sulle vendite, per altri paesi è possibile fornire facoltativamente un numero di identificazione fiscale (IVA/GST) e/o un indirizzo da visualizzare sulle fatture."
   },
   "billingPlan": {
     "message": "Piano",
@@ -2808,11 +2812,7 @@
     "description": "A billing plan/package. For example: families, teams, enterprise, etc."
   },
   "changeBillingPlanUpgrade": {
-    "message": "Aggiorna il tuo account ad un altro piano fornendo le informazioni qui sotto. Assicurati di avere un metodo di pagamento attivo aggiunto all'account.",
-    "description": "A billing plan/package. For example: families, teams, enterprise, etc."
-  },
-  "changeBillingPlanDesc": {
-    "message": "Contatta il servizio clienti se desideri modificare il tuo piano tariffario. Assicurati di avere un metodo di pagamento attivo.",
+    "message": "Aggiorna il tuo account a un altro piano fornendo le informazioni qui sotto. Assicurati di avere un metodo di pagamento attivo aggiunto all'account.",
     "description": "A billing plan/package. For example: families, teams, enterprise, etc."
   },
   "invoiceNumber": {
@@ -2860,14 +2860,14 @@
     }
   },
   "routingNumber": {
-    "message": "Numero di registrazione",
+    "message": "Coordinate bancarie",
     "description": "Bank account routing number"
   },
   "accountNumber": {
     "message": "Numero del conto"
   },
   "accountHolderName": {
-    "message": "Nome dell'intestatario"
+    "message": "Titolare del conto"
   },
   "bankAccountType": {
     "message": "Tipo di conto"
@@ -2882,14 +2882,14 @@
     "message": "Inserisci il tuo id di installazione"
   },
   "limitSubscriptionDesc": {
-    "message": "Set a seat limit for your subscription. Once this limit is reached, you will not be able to invite new users."
+    "message": "Imposta un limite di slot utenti per il tuo abbonamento. Una volta raggiunto questo limite, non potrai invitare nuovi utenti."
   },
   "maxSeatLimit": {
-    "message": "Maximum Seat Limit (optional)",
+    "message": "Numero massimo di slot (opzionale)",
     "description": "Upper limit of seats to allow through autoscaling"
   },
   "maxSeatCost": {
-    "message": "Max potential seat cost"
+    "message": "Costo massimo dello slot"
   },
   "addSeats": {
     "message": "Aggiungi postazioni",
@@ -2900,7 +2900,7 @@
     "description": "Seat = User Seat"
   },
   "subscriptionDesc": {
-    "message": "Adjustments to your subscription will result in prorated changes to your billing totals. If newly invited users exceed your subscription seats, you will immediately receive a prorated charge for the additional users."
+    "message": "Le modifiche apportate al tuo abbonamento comporteranno corrispondenti cambi al totale in fattura. Se i nuovi utenti invitati superano gli slot del tuo abbonamento, riceverai immediatamente un addebito per gli utenti aggiuntivi."
   },
   "subscriptionUserSeats": {
     "message": "L'abbonamento consente un totale di $COUNT$ utenti.",
@@ -2912,25 +2912,25 @@
     }
   },
   "limitSubscription": {
-    "message": "Limit Subscription (Optional)"
+    "message": "Limite di abbonamento (facoltativo)"
   },
   "subscriptionSeats": {
-    "message": "Subscription Seats"
+    "message": "Slot abbonamento"
   },
   "subscriptionUpdated": {
-    "message": "Subscription updated"
+    "message": "Abbonamento aggiornato"
   },
   "additionalOptions": {
-    "message": "Additional Options"
+    "message": "Opzioni aggiuntive"
   },
   "additionalOptionsDesc": {
-    "message": "For additional help in managing your subscription, please contact Customer Support."
+    "message": "Per ulteriori informazioni sulla gestione del tuo abbonamento, contatta il servizio clienti."
   },
   "subscriptionUserSeatsUnlimitedAutoscale": {
-    "message": "Adjustments to your subscription will result in prorated changes to your billing totals. If newly invited users exceed your subscription seats, you will immediately receive a prorated charge for the additional users."
+    "message": "Le modifiche apportate al tuo abbonamento comporteranno corrispondenti cambi al totale in fattura. Se i nuovi utenti invitati superano gli slot del tuo abbonamento, riceverai immediatamente un addebito per gli utenti aggiuntivi."
   },
   "subscriptionUserSeatsLimitedAutoscale": {
-    "message": "Adjustments to your subscription will result in prorated changes to your billing totals. If newly invited users exceed your subscription seats, you will immediately receive a prorated charge for the additional users until your $MAX$ seat limit is reached.",
+    "message": "Le modifiche apportate al tuo abbonamento comporteranno corrispondenti cambi al totale in fattura. Se i nuovi utenti invitati superano gli slot utente del tuo abbonamento, riceverai immediatamente un addebito per gli utenti aggiuntivi fino al raggiungimento del limite di $MAX$ slot.",
     "placeholders": {
       "max": {
         "content": "$1",
@@ -2938,8 +2938,35 @@
       }
     }
   },
+  "subscriptionFreePlan": {
+    "message": "Non puoi invitare più di $COUNT$ utenti senza aggiornare il tuo piano.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "subscriptionFamiliesPlan": {
+    "message": "Non puoi invitare più di $COUNT$ utenti senza aggiornare il tuo piano. Contatta il supporto clienti per aggiornare.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "6"
+      }
+    }
+  },
+  "subscriptionSponsoredFamiliesPlan": {
+    "message": "Il tuo abbonamento consente un totale di $COUNT$ utenti. Il tuo piano è sponsorizzato e addebitato a un'organizzazione esterna.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "6"
+      }
+    }
+  },
   "subscriptionMaxReached": {
-    "message": "Adjustments to your subscription will result in prorated changes to your billing totals. You cannot invite more than $COUNT$ users without increasing your subscription seats.",
+    "message": "Le modifiche apportate al tuo abbonamento comporteranno corrispondenti cambi al totale in fattura. Non è possibile invitare più di $COUNT$ utenti senza aumentare gli slot dell'abbonamento.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -3056,7 +3083,7 @@
     "message": "4 ore"
   },
   "onRefresh": {
-    "message": "Al riavvio del browser"
+    "message": "All'aggiornamento del browser"
   },
   "dateUpdated": {
     "message": "Aggiornato",
@@ -3203,16 +3230,16 @@
     "message": "I membri dell'organizzazione che non hanno attivato l'autenticazione a due fattori per il proprio account personale saranno espulsi dall'organizzazione e riceveranno a tale proposito un'email di notifica."
   },
   "twoStepLoginPolicyUserWarning": {
-    "message": "Sei membro di una organizzazione che richiede che sugli account personali sia attiva l'autenticazione a due fattori. Se disabiliti tutti i secondi fattori di autenticazione, sarai automaticamente espulso dall'organizzazione."
+    "message": "Sei membro di una organizzazione che richiede che sugli account personali sia attiva l'autenticazione a due fattori. Se disabiliti tutti i secondi fattori di autenticazione, sarai automaticamente rimosso dall'organizzazione."
   },
   "passwordGeneratorPolicyDesc": {
     "message": "Imposta i requisiti minimi per la configurazione del generatore di password."
   },
   "passwordGeneratorPolicyInEffect": {
-    "message": "Una o più policy dell'organizzazione controllano le impostazioni del tuo generatore."
+    "message": "Una o più politiche dell'organizzazione controllano le impostazioni del tuo generatore."
   },
   "masterPasswordPolicyInEffect": {
-    "message": "La password principale deve avere i seguenti requisiti, stabiliti da una o più regole dell'organizzazione:"
+    "message": "Una o più regole dell'organizzazione richiedono che la password principale verifichi i seguenti requisiti:"
   },
   "policyInEffectMinComplexity": {
     "message": "Punteggio minimo di complessità di $SCORE$",
@@ -3263,7 +3290,7 @@
     "message": "Preferenze utente"
   },
   "vaultTimeoutAction": {
-    "message": "Azione Timeout Cassaforte"
+    "message": "Azione timeout cassaforte"
   },
   "vaultTimeoutActionLockDesc": {
     "message": "Una cassaforte bloccata richiede l'inserimento della password principale per accedere nuovamente."
@@ -3370,10 +3397,10 @@
     "message": "Informazioni richieste esclusivamente per il calcolo dell'IVA e rendicontazione finanziaria."
   },
   "includeVAT": {
-    "message": "Aggiungi partita IVA (facoltativo)"
+    "message": "Aggiungi partita IVA/GST (facoltativo)"
   },
   "taxIdNumber": {
-    "message": "Partita IVA"
+    "message": "Partita IVA/GST"
   },
   "taxInfoUpdated": {
     "message": "Dati fiscali aggiornati."
@@ -3630,7 +3657,7 @@
     "message": "Accesso di emergenza approvato"
   },
   "viewDesc": {
-    "message": "Può vedere tutti gli elementi nella cassaforte."
+    "message": "Può visualizzare tutti gli elementi nella cassaforte."
   },
   "takeover": {
     "message": "Entra in possesso"
@@ -3663,10 +3690,10 @@
     "message": "Sei stato designato come contatto di emergenza per l'utente indicato sopra. Per accettare l'invito, accedi alla tua cassaforte o crea un nuovo utente Bravura Vault."
   },
   "emergencyInviteAcceptFailed": {
-    "message": "Non è possibile accettare l'invito. Chiedi all'utente di inviare un nuovo invito."
+    "message": "Impossibile accettare l'invito. Chiedi all'utente di inviare un nuovo invito."
   },
   "emergencyInviteAcceptFailedShort": {
-    "message": "Non è possibile accettare l'invito. $DESCRIPTION$",
+    "message": "Impossibile accettare l'invito. $DESCRIPTION$",
     "placeholders": {
       "description": {
         "content": "$1",
@@ -3681,7 +3708,7 @@
     "message": "Richiedi l'accesso"
   },
   "requestAccessConfirmation": {
-    "message": "Sei sicuro di voler richiedere l'accesso di emergenza? Ti sarà possibile accedere dopo $WAITTIME$ giorno/i o subito, qualora l'utente approvi la richiesta.",
+    "message": "Sei sicuro di voler richiedere l'accesso di emergenza? Ti sarà possibile accedere dopo $WAITTIME$ giorni o subito, qualora l'utente approvi la richiesta.",
     "placeholders": {
       "waittime": {
         "content": "$1",
@@ -3690,7 +3717,7 @@
     }
   },
   "requestSent": {
-    "message": "Accesso di emergenza richiesto per $USER$. Verrai notificato tramite email quando sarà possibile proseguire.",
+    "message": "Accesso di emergenza richiesto per $USER$. Riceverai una notifica tramite email quando sarà possibile proseguire.",
     "placeholders": {
       "user": {
         "content": "$1",
@@ -3724,7 +3751,7 @@
     "message": "Accesso di emergenza rifiutato"
   },
   "passwordResetFor": {
-    "message": "Password reimpostata per $USER$. Ora puoi effettuare il login utilizzando la nuova password.",
+    "message": "Password ripristinata per $USER$. Ora puoi effettuare l'accesso utilizzando la nuova password.",
     "placeholders": {
       "user": {
         "content": "$1",
@@ -3781,7 +3808,7 @@
     "message": "Attualmente sono in vigore le seguenti policy dell'organizzazione:"
   },
   "sendDisableHideEmailInEffect": {
-    "message": "Agli utenti non è permesso nascondere il proprio indirizzo email dai destinatari quando si crea o modifica un Send.",
+    "message": "Agli utenti non è consentito nascondere il proprio indirizzo email dai destinatari quando si crea o modifica un Send.",
     "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
   },
   "modifiedPolicyId": {
@@ -3817,26 +3844,29 @@
   "accessReports": {
     "message": "Accedi ai resoconti"
   },
+  "missingPermissions": {
+    "message": "Non hai i permessi necessari per eseguire questa azione."
+  },
   "manageAllCollections": {
     "message": "Gestisci tutte le raccolte"
   },
   "createNewCollections": {
-    "message": "Create New Collections"
+    "message": "Crea nuove raccolte"
   },
   "editAnyCollection": {
-    "message": "Edit Any Collection"
+    "message": "Modifica tutte le raccolte"
   },
   "deleteAnyCollection": {
-    "message": "Delete Any Collection"
+    "message": "Elimina tutte le raccolte"
   },
   "manageAssignedCollections": {
     "message": "Gestisci le raccolte assegnate"
   },
   "editAssignedCollections": {
-    "message": "Edit Assigned Collections"
+    "message": "Modifica le raccolte assegnate"
   },
   "deleteAssignedCollections": {
-    "message": "Delete Assigned Collections"
+    "message": "Elimina raccolte assegnate"
   },
   "manageGroups": {
     "message": "Gestisci i gruppi"
@@ -3851,10 +3881,10 @@
     "message": "Gestisci gli utenti"
   },
   "manageResetPassword": {
-    "message": "Gestisci reset password"
+    "message": "Gestisci ripristino password"
   },
   "disableRequiredError": {
-    "message": "You must manually disable the $POLICYNAME$ policy before this policy can be disabled.",
+    "message": "Per disabilitare questa policy, è necessario prima disabilitare la policy $POLICYNAME$.",
     "placeholders": {
       "policyName": {
         "content": "$1",
@@ -3866,7 +3896,7 @@
     "message": "Una policy dell'organizzazione controlla le opzioni di proprietà."
   },
   "personalOwnershipPolicyInEffectImports": {
-    "message": "An organization policy has disabled importing items into your personal vault."
+    "message": "Una policy dell'organizzazione ha disabilitato l'importazione di elementi nella tua cassaforte personale."
   },
   "personalOwnershipCheckboxDesc": {
     "message": "Disabilita la proprietà personale per gli utenti dell'organizzazione"
@@ -3886,7 +3916,7 @@
     "message": "Il file che desideri inviare."
   },
   "copySendLinkOnSave": {
-    "message": "Copia il link per condividere questo Send nei miei appunti al momento del salvataggio."
+    "message": "Copia il collegamento per condividere questo Send nei miei appunti al momento del salvataggio."
   },
   "sendLinkLabel": {
     "message": "Collegamento del Send",
@@ -3940,7 +3970,7 @@
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send or sign up to **try it today.**'"
   },
   "sendCreatorIdentifier": {
-    "message": "L'utente Bravura Vault$USER_IDENTIFIER$ ha condiviso questo con te",
+    "message": "L'utente Bravura Vault $USER_IDENTIFIER$ ha condiviso questo con te",
     "placeholders": {
       "user_identifier": {
         "content": "$1",
@@ -3983,22 +4013,22 @@
     "message": "Il suggerimento della password non può essere uguale alla password."
   },
   "enrollPasswordReset": {
-    "message": "Aderisci al reset password"
+    "message": "Aderisci al ripristino della password"
   },
   "enrolledPasswordReset": {
-    "message": "Hai aderito al reset della password"
+    "message": "Hai aderito al ripristino della password"
   },
   "withdrawPasswordReset": {
-    "message": "Rifiuta il reset della password"
+    "message": "Rifiuta il ripristino della password"
   },
   "enrollPasswordResetSuccess": {
-    "message": "Adesione completata!"
+    "message": "Iscrizione completata!"
   },
   "withdrawPasswordResetSuccess": {
     "message": "Rinuncia completata!"
   },
   "eventEnrollPasswordReset": {
-    "message": "L'utente $ID$ ha aderito all'assistenza per il reset della password.",
+    "message": "Utente $ID$ registrato all'assistenza per il ripristino della password.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -4007,7 +4037,7 @@
     }
   },
   "eventWithdrawPasswordReset": {
-    "message": "L'utente $ID$ ha rinunciato all'assistenza per il reset della password.",
+    "message": "Utente $ID$ prelevato dall'assistenza per il ripristino della password.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -4025,7 +4055,16 @@
     }
   },
   "eventResetSsoLink": {
-    "message": "Reset Sso link for user $ID$",
+    "message": "Ripristina collegamento SSO per l'utente $ID$",
+    "placeholders": {
+      "id": {
+        "content": "$1",
+        "example": "John Smith"
+      }
+    }
+  },
+  "firstSsoLogin": {
+    "message": "$ID$ ha effettuato l'accesso tramite SSO per la prima volta",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -4049,13 +4088,13 @@
     "message": "questo utente"
   },
   "resetPasswordMasterPasswordPolicyInEffect": {
-    "message": "La password principale deve avere i seguenti requisiti, stabiliti da una o più regole dell'organizzazione:"
+    "message": "Una o più regole dell'organizzazione richiedono che la password principale verifichi i seguenti requisiti:"
   },
   "resetPasswordSuccess": {
-    "message": "Password ripristinata con successo!"
+    "message": "Password ripristinata correttamente!"
   },
   "resetPasswordEnrollmentWarning": {
-    "message": "L'iscrizione consentirà agli amministratori dell'organizzazione di cambiare la tua password principale. Sei sicuro di voler iscriverti?"
+    "message": "L'iscrizione consentirà agli amministratori dell'organizzazione di cambiare la tua password principale. Sei sicuro di volerti iscrivere?"
   },
   "resetPasswordPolicy": {
     "message": "Ripristino password principale"
@@ -4070,16 +4109,16 @@
     "message": "Iscrizione automatica"
   },
   "resetPasswordPolicyAutoEnrollDescription": {
-    "message": "Tutti gli utenti saranno automaticamente iscritti alla procedura di reimpostazione della password una volta accettato l'invito."
+    "message": "Tutti gli utenti saranno automaticamente iscritti alla procedura di ripristino della password una volta accettato l'invito."
   },
   "resetPasswordPolicyAutoEnrollWarning": {
     "message": "Gli utenti già presenti nell'organizzazione non saranno iscritti retroattivamente al ripristino della password. Essi dovranno auto-iscriversi prima che gli amministratori possano ripristinare la loro password principale."
   },
   "resetPasswordPolicyAutoEnrollCheckbox": {
-    "message": "Iscrivi automaticamente i nuovi utenti"
+    "message": "Richiedi l'iscrizione automatica dei nuovi utenti"
   },
   "resetPasswordAutoEnrollInviteWarning": {
-    "message": "Questa organizzazione ha una politica aziendale che ti iscriverà automaticamente al reset della password. Ciò permetterà agli amministratori dell'organizzazione di cambiare la tua password principale."
+    "message": "Questa organizzazione ha una policy aziendale che ti iscriverà automaticamente al ripristino della password. Ciò permetterà agli amministratori dell'organizzazione di cambiare la tua password principale."
   },
   "resetPasswordOrgKeysError": {
     "message": "La risposta delle chiavi dell'organizzazione è nulla"
@@ -4112,19 +4151,19 @@
     "message": "Sei sicuro di voler rimuovere i seguenti utenti? Il processo potrebbe richiedere alcuni secondi per essere completato e non può essere interrotto o annullato."
   },
   "theme": {
-    "message": "Theme"
+    "message": "Tema"
   },
   "themeDesc": {
-    "message": "Choose a theme for your web vault."
+    "message": "Scegli un tema per la tua cassaforte web."
   },
   "themeSystem": {
-    "message": "Use System Theme"
+    "message": "Usa tema di sistema"
   },
   "themeDark": {
-    "message": "Dark"
+    "message": "Scuro"
   },
   "themeLight": {
-    "message": "Light"
+    "message": "Chiaro"
   },
   "confirmSelected": {
     "message": "Conferma selezionati"
@@ -4157,70 +4196,70 @@
     "message": "Gestisci utenti deve essere abilitato con il permesso di gestione del ripristino delle password"
   },
   "setupProvider": {
-    "message": "Provider Setup"
+    "message": "Configurazione del fornitore"
   },
   "setupProviderLoginDesc": {
-    "message": "You've been invited to setup a new provider. To continue, you need to log in or create a new Bravura Vault account."
+    "message": "Sei stato invitato a impostare un nuovo fornitore. Per continuare, accedi o crea un nuovo account Bravura Vault."
   },
   "setupProviderDesc": {
-    "message": "Please enter the details below to complete the provider setup. Contact Customer Support if you have any questions."
+    "message": "Inserisci i dettagli sotto per completare la configurazione del fornitore. Se hai bisogno di aiuto, contatta il supporto clienti."
   },
   "providerName": {
-    "message": "Provider Name"
+    "message": "Nome del fornitore"
   },
   "providerSetup": {
-    "message": "The provider has been set up."
+    "message": "Il fornitore è stato configurato."
   },
   "clients": {
-    "message": "Clients"
+    "message": "Clienti"
   },
   "providerAdmin": {
-    "message": "Provider Admin"
+    "message": "Amministratore del fornitore"
   },
   "providerAdminDesc": {
-    "message": "The highest access user that can manage all aspects of your provider as well as access and manage client organizations."
+    "message": "L'utente con privilegi di accesso più elevato che può gestire tutti gli aspetti del tuo fornitore nonché accedere e gestire le organizzazioni dei clienti."
   },
   "serviceUser": {
-    "message": "Service User"
+    "message": "Utente di servizio"
   },
   "serviceUserDesc": {
-    "message": "Service users can access and manage all client organizations."
+    "message": "Gli utenti di servizio che possono accedere e gestire tutte le organizzazioni cliente."
   },
   "providerInviteUserDesc": {
-    "message": "Invite a new user to your provider by entering their Bravura Vault account email address below. If they do not have a Bravura Vault account already, they will be prompted to create a new account."
+    "message": "Invita un nuovo utente nella tua organizzazione inserendo di seguito l'indirizzo email del suo account Bravura Vault. Se non in possesso di un account Bravura Vault, sarà richiesto di crearne uno nuovo."
   },
   "joinProvider": {
-    "message": "Join Provider"
+    "message": "Unisciti al fornitore"
   },
   "joinProviderDesc": {
-    "message": "You've been invited to join the provider listed above. To accept the invitation, you need to log in or create a new Bravura Vault account."
+    "message": "Sei stato invitato a unirti al fornitore indicato in alto. Per accettare l'invito, accedi o crea un nuovo account Bravura Vault."
   },
   "providerInviteAcceptFailed": {
-    "message": "Unable to accept invitation. Ask a provider admin to send a new invitation."
+    "message": "Impossibile accettare l'invito. Chiedi all'amministratore del fornitore di inviare un nuovo invito."
   },
   "providerInviteAcceptedDesc": {
-    "message": "You can access this provider once an administrator confirms your membership. We'll send you an email when that happens."
+    "message": "Potrai accedere a questo fornitore quando l'amministratore confermerà la tua iscrizione. Riceverai un'email a conferma avvenuta."
   },
   "providerUsersNeedConfirmed": {
-    "message": "You have users that have accepted their invitation, but still need to be confirmed. Users will not have access to the provider until they are confirmed."
+    "message": "Hai utenti che hanno accettato il loro invito, ma devono ancora essere confermati. Gli utenti non avranno accesso al fornitore fino a quando non saranno confermati."
   },
   "provider": {
-    "message": "Provider"
+    "message": "Fornitore"
   },
   "newClientOrganization": {
-    "message": "New Client Organization"
+    "message": "Nuova organizzazione cliente"
   },
   "newClientOrganizationDesc": {
-    "message": "Create a new client organization that will be associated with you as the provider. You will be able to access and manage this organization."
+    "message": "Crea una nuovo organizzazione cliente che sarà associata a te come fornitore. Sarai in grado di accedere e gestire questa organizzazione."
   },
   "addExistingOrganization": {
-    "message": "Add Existing Organization"
+    "message": "Aggiungi organizzazione esistente"
   },
   "myProvider": {
-    "message": "My Provider"
+    "message": "Il mio fornitore"
   },
   "addOrganizationConfirmation": {
-    "message": "Are you sure you want to add $ORGANIZATION$ as a client to $PROVIDER$?",
+    "message": "Sei sicuro di voler aggiungere $ORGANIZATION$ come cliente di $PROVIDER$?",
     "placeholders": {
       "organization": {
         "content": "$1",
@@ -4233,10 +4272,10 @@
     }
   },
   "organizationJoinedProvider": {
-    "message": "Organization was successfully added to the provider"
+    "message": "Organizzazione aggiunta con successo al fornitore"
   },
   "accessingUsingProvider": {
-    "message": "Accessing organization using provider $PROVIDER$",
+    "message": "Accesso in corso all'organizzazione con il fornitore $PROVIDER$",
     "placeholders": {
       "provider": {
         "content": "$1",
@@ -4245,13 +4284,13 @@
     }
   },
   "providerIsDisabled": {
-    "message": "Provider is disabled."
+    "message": "Il fornitore è disabilitato."
   },
   "providerUpdated": {
-    "message": "Provider updated"
+    "message": "Fornitore aggiornato"
   },
   "yourProviderIs": {
-    "message": "Your provider is $PROVIDER$. They have administrative and billing privileges for your organization.",
+    "message": "Il tuo fornitore è $PROVIDER$. Hanno privilegi amministrativi e di fatturazione per la tua organizzazione.",
     "placeholders": {
       "provider": {
         "content": "$1",
@@ -4260,7 +4299,7 @@
     }
   },
   "detachedOrganization": {
-    "message": "The organization $ORGANIZATION$ has been detached from your provider.",
+    "message": "L'organizzazione $ORGANIZATION$ è stata sganciata dal tuo fornitore.",
     "placeholders": {
       "organization": {
         "content": "$1",
@@ -4269,40 +4308,40 @@
     }
   },
   "detachOrganizationConfirmation": {
-    "message": "Are you sure you want to detach this organization? The organization will continue to exist but will no longer be managed by the provider."
+    "message": "Sei sicuro di voler rimuovere questa organizzazione? L'organizzazione continuerà ad esistere ma non sarà più gestita dal fornitore."
   },
   "add": {
-    "message": "Add"
+    "message": "Aggiungi"
   },
   "updatedMasterPassword": {
-    "message": "Updated Master Password"
+    "message": "Password principale aggiornata"
   },
   "updateMasterPassword": {
-    "message": "Update Master Password"
+    "message": "Aggiorna password principale"
   },
   "updateMasterPasswordWarning": {
-    "message": "Your Master Password was recently changed by an administrator in your organization. In order to access the vault, you must update your Master Password now. Proceeding will log you out of your current session, requiring you to log back in. Active sessions on other devices may continue to remain active for up to one hour."
+    "message": "La tua password principale è stata recentemente modificata da un amministratore nella tua organizzazione. Per accedere alla cassaforte, aggiorna ora la password. Procedendo sarai disconnesso dalla sessione attuale e ti sarà richiesto di effettuare nuovamente l'accesso. Le sessioni attive su altri dispositivi potrebbero continuare a rimanere attive per un massimo di un'ora."
   },
   "maximumVaultTimeout": {
-    "message": "Vault Timeout"
+    "message": "Timeout cassaforte"
   },
   "maximumVaultTimeoutDesc": {
-    "message": "Configure a maximum vault timeout for all users."
+    "message": "Configura un timeout massimo della cassaforte per tutti gli utenti."
   },
   "maximumVaultTimeoutLabel": {
-    "message": "Maximum Vault Timeout"
+    "message": "Timeout massimo della cassaforte"
   },
   "invalidMaximumVaultTimeout": {
-    "message": "Invalid Maximum Vault Timeout."
+    "message": "Timeout massimo della cassaforte non valido."
   },
   "hours": {
-    "message": "Hours"
+    "message": "Ore"
   },
   "minutes": {
-    "message": "Minutes"
+    "message": "Minuti"
   },
   "vaultTimeoutPolicyInEffect": {
-    "message": "Your organization policies are affecting your vault timeout. Maximum allowed Vault Timeout is $HOURS$ hour(s) and $MINUTES$ minute(s)",
+    "message": "Le politiche dell'organizzazione controllano il timeout della tua cassaforte. Il tempo massimo consentito è di $HOURS$ ore e $MINUTES$ minuti",
     "placeholders": {
       "hours": {
         "content": "$1",
@@ -4315,115 +4354,115 @@
     }
   },
   "customVaultTimeout": {
-    "message": "Custom Vault Timeout"
+    "message": "Timeout cassaforte personalizzato"
   },
   "vaultTimeoutToLarge": {
-    "message": "Your vault timeout exceeds the restriction set by your organization."
+    "message": "Il timeout della tua cassaforte supera le restrizioni impostate dalla tua organizzazione."
   },
   "disablePersonalVaultExport": {
-    "message": "Disable Personal Vault Export"
+    "message": "Disabilita esportazione cassaforte personale"
   },
   "disablePersonalVaultExportDesc": {
-    "message": "Prohibits users from exporting their private vault data."
+    "message": "Impedisce agli utenti di esportare i loro dati privati della cassaforte."
   },
   "vaultExportDisabled": {
-    "message": "Vault Export Disabled"
+    "message": "Esportazione cassaforte disabilitata"
   },
   "personalVaultExportPolicyInEffect": {
-    "message": "One or more organization policies prevents you from exporting your personal vault."
+    "message": "Una o più politiche di organizzazione ti impediscono di esportare la tua cassaforte personale."
   },
   "selectType": {
-    "message": "Select SSO Type"
+    "message": "Seleziona tipo di SSO"
   },
   "type": {
-    "message": "Type"
+    "message": "Tipo"
   },
   "openIdConnectConfig": {
-    "message": "OpenID Connect Configuration"
+    "message": "Configurazione OpenID Connect"
   },
   "samlSpConfig": {
-    "message": "SAML Service Provider Configuration"
+    "message": "Configurazione del fornitore del servizio SAML"
   },
   "samlIdpConfig": {
-    "message": "SAML Identity Provider Configuration"
+    "message": "Configurazione del fornitore di identità SAML"
   },
   "callbackPath": {
-    "message": "Callback Path"
+    "message": "URL di callback"
   },
   "signedOutCallbackPath": {
-    "message": "Signed Out Callback Path"
+    "message": "URL di disconnessione"
   },
   "authority": {
-    "message": "Authority"
+    "message": "Autorità"
   },
   "clientId": {
-    "message": "Client ID"
+    "message": "ID cliente"
   },
   "clientSecret": {
-    "message": "Client Secret"
+    "message": "Segreto cliente"
   },
   "metadataAddress": {
-    "message": "Metadata Address"
+    "message": "Indirizzo metadata"
   },
   "oidcRedirectBehavior": {
-    "message": "OIDC Redirect Behavior"
+    "message": "Comportamento di redirezione OIDC"
   },
   "getClaimsFromUserInfoEndpoint": {
-    "message": "Get Claims From User Info Endpoint"
+    "message": "Ottieni claim dall'endpoint di informazioni utente"
   },
   "additionalScopes": {
-    "message": "Additional/Custom Scopes (comma delimited)"
+    "message": "Scope aggiuntivi/personalizzati (separati da virgola)"
   },
   "additionalUserIdClaimTypes": {
-    "message": "Additional/Custom User ID Claim Types (comma delimited)"
+    "message": "Tipi di claim 'User ID' aggiuntivi/personalizzati (separati da virgola)"
   },
   "additionalEmailClaimTypes": {
-    "message": "Additional/Custom Email Claim Types (comma delimited)"
+    "message": "Tipi di claim 'Email' aggiuntivi/personalizzati (separati da virgola)"
   },
   "additionalNameClaimTypes": {
-    "message": "Additional/Custom Name Claim Types (comma delimited)"
+    "message": "Tipi di claim \"Name\" aggiuntivi/personalizzati (separati da virgola)"
   },
   "acrValues": {
-    "message": "Requested Authentication Context Class Reference values (acr_values)"
+    "message": "Valori di riferimento della classe del contesto di autenticazione richiesta (acr_values)"
   },
   "expectedReturnAcrValue": {
-    "message": "Expected \"acr\" Claim Value In Response (acr validation)"
+    "message": "Valore atteso di claim \"acr\" nella risposta (convalida acr)"
   },
   "spEntityId": {
-    "message": "SP Entity ID"
+    "message": "ID entità SP"
   },
   "spMetadataUrl": {
-    "message": "SAML 2.0 Metadata URL"
+    "message": "URL metadati SAML 2.0"
   },
   "spAcsUrl": {
     "message": "Assertion Consumer Service (ACS) URL"
   },
   "spNameIdFormat": {
-    "message": "Name ID Format"
+    "message": "Formato 'Name ID'"
   },
   "spOutboundSigningAlgorithm": {
     "message": "Outbound Signing Algorithm"
   },
   "spSigningBehavior": {
-    "message": "Signing Behavior"
+    "message": "Comportamento firma"
   },
   "spMinIncomingSigningAlgorithm": {
-    "message": "Minimum Incoming Signing Algorithm"
+    "message": "Algoritmo di firma minimo in entrata"
   },
   "spWantAssertionsSigned": {
-    "message": "Want Assertions Signed"
+    "message": "Necessarie asserzioni firmate"
   },
   "spValidateCertificates": {
-    "message": "Validate Certificates"
+    "message": "Convalida i certificati"
   },
   "idpEntityId": {
-    "message": "Entity ID"
+    "message": "ID entità"
   },
   "idpBindingType": {
-    "message": "Binding Type"
+    "message": "Tipo di associazione"
   },
   "idpSingleSignOnServiceUrl": {
-    "message": "Single Sign On Service URL"
+    "message": "URL del servizio di Single Sign On"
   },
   "idpSingleLogoutServiceUrl": {
     "message": "Single Log Out Service URL"
@@ -4432,21 +4471,267 @@
     "message": "Artifact Resolution Service URL"
   },
   "idpX509PublicCert": {
-    "message": "X509 Public Certificate"
+    "message": "Certificato pubblico X509"
   },
   "idpOutboundSigningAlgorithm": {
-    "message": "Outbound Signing Algorithm"
+    "message": "Algoritmo di firma in uscita"
   },
   "idpAllowUnsolicitedAuthnResponse": {
-    "message": "Allow Unsolicited Authentication Response"
+    "message": "Consenti risposta di autenticazione non richiesta"
   },
   "idpDisableOutboundLogoutRequests": {
-    "message": "Disable Outbound Logout Requests"
+    "message": "Disabilita le richieste di logout in uscita"
   },
   "idpWantAuthnRequestsSigned": {
-    "message": "Want Authentication Requests Signed"
+    "message": "Necessarie richieste di autenticazione firmate"
   },
   "ssoSettingsSaved": {
-    "message": "Single Sign-On configuration was saved."
+    "message": "La configurazione del Single Sign-On è stata salvata."
+  },
+  "sponsoredFamilies": {
+    "message": "Bravura Vault Families gratuito"
+  },
+  "sponsoredFamiliesEligible": {
+    "message": "Tu e la tua famiglia siete eleggibili per Bravura Vault Families gratis. Aderisci all'offerta con la tua mail personale e mantieni i tuoi dati al sicuro anche quando non sei a lavoro."
+  },
+  "sponsoredFamiliesEligibleCard": {
+    "message": "Riscatta oggi il tuo piano Bravura Vault per famiglie gratuito per mantenere i tuoi dati al sicuro anche quando non sei al lavoro."
+  },
+  "sponsoredFamiliesInclude": {
+    "message": "Il piano Bravura Vault Families include"
+  },
+  "sponsoredFamiliesPremiumAccess": {
+    "message": "Accesso premium fino a 6 utenti"
+  },
+  "sponsoredFamiliesSharedCollections": {
+    "message": "Raccolte condivise per segreti di famiglia"
+  },
+  "badToken": {
+    "message": "Il link non è più valido. Per favore chiedi allo sponsor di inviare nuovamente l'offerta."
+  },
+  "reclaimedFreePlan": {
+    "message": "Piano gratuito riscattato"
+  },
+  "redeem": {
+    "message": "Riscatta"
+  },
+  "sponsoredFamiliesSelectOffer": {
+    "message": "Seleziona l'organizzazione che desideri sponsorizzare"
+  },
+  "familiesSponsoringOrgSelect": {
+    "message": "Quale offerta gratis per famiglie vorresti riscattare?"
+  },
+  "sponsoredFamiliesEmail": {
+    "message": "Digita la tua email personale per riscattare Bravura Vault per famiglie"
+  },
+  "sponsoredFamiliesLeaveCopy": {
+    "message": "Se lasci o sei rimosso da questa organizzazione, il piano Famiglie scadrà alla fine del periodo di fatturazione."
+  },
+  "acceptBitwardenFamiliesHelp": {
+    "message": "Accetta l'offerta per un'organizzazione esistente o crea una nuova organizzazione Famiglie."
+  },
+  "setupSponsoredFamiliesLoginDesc": {
+    "message": "Ti è stato offerto un piano gratuito per Bravura Vault per famiglie. Per continuare, devi accedere all'account che ha ricevuto l'offerta."
+  },
+  "sponsoredFamiliesAcceptFailed": {
+    "message": "Impossibile accettare l'offerta. Invia nuovamente l'email di offerta dal tuo account aziendale e riprova."
+  },
+  "sponsoredFamiliesAcceptFailedShort": {
+    "message": "Impossibile accettare l'offerta. $DESCRIPTION$",
+    "placeholders": {
+      "description": {
+        "content": "$1",
+        "example": "You must have at least one existing Families Organization."
+      }
+    }
+  },
+  "sponsoredFamiliesOffer": {
+    "message": "Riscatta l'offerta di Bravura Vault Families (Organizzazione)"
+  },
+  "sponsoredFamiliesOfferRedeemed": {
+    "message": "Offerta gratuita di Bravura Vault per famiglie riscattata correttamente"
+  },
+  "redeemed": {
+    "message": "Riscattato"
+  },
+  "redeemedAccount": {
+    "message": "Account riscattato"
+  },
+  "revokeAccount": {
+    "message": "Revoca l'account $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "My Sponsorship Name"
+      }
+    }
+  },
+  "resendEmailLabel": {
+    "message": "Reinvia l'email sponsor allo sponsor $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "My Sponsorship Name"
+      }
+    }
+  },
+  "freeFamiliesPlan": {
+    "message": "Piano Families gratis"
+  },
+  "redeemNow": {
+    "message": "Riscatta ora"
+  },
+  "recipient": {
+    "message": "Destinatario"
+  },
+  "removeSponsorship": {
+    "message": "Rimuovi sponsorizzazione"
+  },
+  "removeSponsorshipConfirmation": {
+    "message": "Dopo aver rimosso una sponsorizzazione, sarai responsabile di questo abbonamento e delle relative fatture. Sei sicuro di voler continuare?"
+  },
+  "sponsorshipCreated": {
+    "message": "Sponsorizzazione creata"
+  },
+  "revoke": {
+    "message": "Revoca"
+  },
+  "emailSent": {
+    "message": "Email inviata"
+  },
+  "revokeSponsorshipConfirmation": {
+    "message": "Dopo aver rimosso questo account, il proprietario dell'organizzazione Famiglie sarà responsabile di questo abbonamento e delle relative fatture. Sei sicuro di voler continuare?"
+  },
+  "removeSponsorshipSuccess": {
+    "message": "Sponsorizzazione rimossa"
+  },
+  "ssoKeyConnectorUnavailable": {
+    "message": "Impossibile raggiungere il key connector, riprova più tardi."
+  },
+  "keyConnectorUrl": {
+    "message": "URL del key connector"
+  },
+  "sendVerificationCode": {
+    "message": "Invia un codice di verifica alla tua email"
+  },
+  "sendCode": {
+    "message": "Invia codice"
+  },
+  "codeSent": {
+    "message": "Codice inviato"
+  },
+  "verificationCode": {
+    "message": "Codice di verifica"
+  },
+  "confirmIdentity": {
+    "message": "Conferma la tua identità per continuare."
+  },
+  "verificationCodeRequired": {
+    "message": "Il codice di verifica è obbligatorio."
+  },
+  "invalidVerificationCode": {
+    "message": "Codice di verifica non valido"
+  },
+  "convertOrganizationEncryptionDesc": {
+    "message": "$ORGANIZATION$ sta usando SSO con una chiave server self-hosted. Non è più richiesta una password principale per accedere per i membri di questa organizzazione.",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
+  },
+  "leaveOrganization": {
+    "message": "Lascia l'organizzazione"
+  },
+  "removeMasterPassword": {
+    "message": "Rimuovi la password principale"
+  },
+  "removedMasterPassword": {
+    "message": "Password principale rimossa."
+  },
+  "allowSso": {
+    "message": "Consenti autenticazione SSO"
+  },
+  "allowSsoDesc": {
+    "message": "Una volta impostata, la tua configurazione sarà salvata e i membri potranno autenticarsi utilizzando le credenziali del loro Identity Provider."
+  },
+  "ssoPolicyHelpStart": {
+    "message": "Abilita la",
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enable the SSO Authentication policy to require all members to log in with SSO.'"
+  },
+  "ssoPolicyHelpLink": {
+    "message": "policy SSO",
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enable the SSO Authentication policy to require all members to log in with SSO.'"
+  },
+  "ssoPolicyHelpEnd": {
+    "message": "per obbligare tutti i membri ad accedere con SSO.",
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enable the SSO Authentication policy to require all members to log in with SSO.'"
+  },
+  "ssoPolicyHelpKeyConnector": {
+    "message": "L'autenticazione SSO e i criteri dell'organizzazione unica sono necessari per configurare la decifratura del connettore chiave."
+  },
+  "memberDecryptionOption": {
+    "message": "Opzioni di decifratura membro"
+  },
+  "memberDecryptionPassDesc": {
+    "message": "Una volta autenticati, i membri decrittograferanno i dati della cassaforte con le loro password principali."
+  },
+  "keyConnector": {
+    "message": "Key connector"
+  },
+  "memberDecryptionKeyConnectorDesc": {
+    "message": "Collega il tuo accesso con SSO al tuo server \"self-hosted\" di decrittazione. Utilizzando questa opzione, i membri non avranno bisogno di utilizzare la loro password principale per decrittare la cassaforte."
+  },
+  "keyConnectorPolicyRestriction": {
+    "message": "\"Accesso con SSO e decrittazione key connector\" è abilitato. Questa politica sarà applicata solo ai proprietari e agli amministratori."
+  },
+  "enabledSso": {
+    "message": "SSO abilitato"
+  },
+  "disabledSso": {
+    "message": "SSO disabilitato"
+  },
+  "enabledKeyConnector": {
+    "message": "Key connector abilitato"
+  },
+  "disabledKeyConnector": {
+    "message": "Key connector disabilitato"
+  },
+  "keyConnectorWarning": {
+    "message": "Una volta impostato il key connector, le opzioni di decrittazione dei membri non potranno più essere modificate."
+  },
+  "migratedKeyConnector": {
+    "message": "Migrato al key connector"
+  },
+  "paymentSponsored": {
+    "message": "Fornisci un metodo di pagamento da associare all'organizzazione. Non ti preoccupare, non ti addebiteremo nulla a meno che non selezioni funzionalità aggiuntive o la tua sponsorizzazione scada. "
+  },
+  "orgCreatedSponsorshipInvalid": {
+    "message": "L'offerta di sponsorizzazione è scaduta e puoi eliminare l'organizzazione creata per evitare un addebito al termine della prova di 7 giorni. Altrimenti puoi chiudere questa richiesta per mantenere l'organizzazione e assumerti la responsabilità della fatturazione."
+  },
+  "newFamiliesOrganization": {
+    "message": "Nuova organizzazione Famiglie"
+  },
+  "acceptOffer": {
+    "message": "Accetta l'offerta"
+  },
+  "sponsoringOrg": {
+    "message": "Organizzazione sponsor"
+  },
+  "keyConnectorTest": {
+    "message": "Prova"
+  },
+  "keyConnectorTestSuccess": {
+    "message": "Key connector raggiunto!"
+  },
+  "keyConnectorTestFail": {
+    "message": "Impossibile raggiungere il Key Connector. Controlla l'URL."
+  },
+  "sponsorshipTokenHasExpired": {
+    "message": "L'offerta di sponsorizzazione è scaduta."
+  },
+  "freeWithSponsorship": {
+    "message": "GRATUITO con sponsorizzazione"
   }
 }

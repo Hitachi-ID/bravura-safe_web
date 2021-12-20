@@ -5,8 +5,6 @@ import {
 } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { ToasterService } from 'angular2-toaster';
-
 import { ApiService } from 'jslib-common/abstractions/api.service';
 import { CryptoService } from 'jslib-common/abstractions/crypto.service';
 import { I18nService } from 'jslib-common/abstractions/i18n.service';
@@ -39,7 +37,7 @@ export class OrganizationsComponent implements OnInit {
 
     constructor(private userService: UserService, private platformUtilsService: PlatformUtilsService,
         private i18nService: I18nService, private apiService: ApiService,
-        private toasterService: ToasterService, private syncService: SyncService,
+        private syncService: SyncService,
         private cryptoService: CryptoService, private policyService: PolicyService,
         private logService: LogService,
         private router: Router ) { }
@@ -87,7 +85,7 @@ export class OrganizationsComponent implements OnInit {
                 return this.syncService.fullSync(true);
             });
             await this.actionPromise;
-            this.toasterService.popAsync('success', null, 'Unlinked SSO');
+            this.platformUtilsService.showToast('success', null, 'Unlinked SSO');
             await this.load();
         } catch (e) {
             this.logService.error(e);
@@ -107,7 +105,7 @@ export class OrganizationsComponent implements OnInit {
                 return this.syncService.fullSync(true);
             });
             await this.actionPromise;
-            this.toasterService.popAsync('success', null, this.i18nService.t('leftOrganization'));
+            this.platformUtilsService.showToast('success', null, this.i18nService.t('leftOrganization'));
             await this.load();
         } catch (e) {
             this.logService.error(e);

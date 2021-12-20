@@ -166,6 +166,10 @@
   "cfTypeBoolean": {
     "message": "Логическое"
   },
+  "cfTypeLinked": {
+    "message": "Связано",
+    "description": "This describes a field that is 'linked' (related) to another field."
+  },
   "remove": {
     "message": "Удалить"
   },
@@ -310,6 +314,9 @@
   },
   "lastName": {
     "message": "Фамилия"
+  },
+  "fullName": {
+    "message": "Полное имя"
   },
   "address1": {
     "message": "Строка адреса 1"
@@ -833,9 +840,6 @@
   "encExportAccountWarningDesc": {
     "message": "Ключи шифрования уникальны для каждой учетной записи Bravura Vault, поэтому нельзя импортировать зашифрованное хранилище в другой аккаунт."
   },
-  "exportMasterPassword": {
-    "message": "Введите мастер-пароль для экспорта данных из хранилища."
-  },
   "export": {
     "message": "Экспорт"
   },
@@ -900,7 +904,7 @@
     "message": "Изменение email"
   },
   "changeEmailTwoFactorWarning": {
-    "message": "Proceeding will change your account email address. It will not change the email address used for two-factor authentication. You can change this email address in the Two-Step Login settings."
+    "message": "В результате будет изменен адрес email вашего аккаунта. Это не приведет к изменению адреса электронной почты, используемого для двухфакторной аутентификации. Вы можете изменить этот адрес электронной почты в настройках двухэтапного входа."
   },
   "newEmail": {
     "message": "Новый email"
@@ -1002,7 +1006,7 @@
     "message": "Хранилище организации очищено."
   },
   "vaultAccessedByProvider": {
-    "message": "Vault accessed by provider."
+    "message": "Хранилище, к которому имеет доступ поставщик."
   },
   "purgeVaultDesc": {
     "message": "Чтобы удалить все элементы и папки из вашего хранилища, выполните следующие действия. Элементы, принадлежащие организации, с которой вы делитесь, удалены не будут."
@@ -1736,13 +1740,7 @@
     }
   },
   "paymentChargedWithTrial": {
-    "message": "Ваш план включает семидневную бесплатную пробную версию. Ваш метод оплаты не будет использован до окончания пробной версии. Оплата будет осуществляться каждый $INTERVAL$. Вы можете отменить в любое время.",
-    "placeholders": {
-      "interval": {
-        "content": "$1",
-        "example": "month or year"
-      }
-    }
+    "message": "Ваш план включает семидневную бесплатную пробную версию. Ваш метод оплаты не будет использован до окончания пробной версии. Оплата будет выполняться каждый $INTERVAL$. Вы можете отказаться в любое время."
   },
   "paymentInformation": {
     "message": "Платежная информация"
@@ -2155,7 +2153,7 @@
     "message": "Политики"
   },
   "singleSignOn": {
-    "message": "Single Sign-On"
+    "message": "Единый вход"
   },
   "editPolicy": {
     "message": "Редактировать политику"
@@ -2177,6 +2175,9 @@
   },
   "removeUserConfirmation": {
     "message": "Вы действительно хотите удалить этого пользователя?"
+  },
+  "removeUserConfirmationKeyConnector": {
+    "message": "Внимание! Этому пользователю необходим соединитель ключей для управления шифрованием. Удаление этого пользователя из вашей организации приведет к окончательному отключению его учетной записи. Это действие нельзя отменить. Вы хотите продолжить?"
   },
   "externalId": {
     "message": "Внешний ID"
@@ -2248,7 +2249,7 @@
     "message": "Подтверждено"
   },
   "clientOwnerEmail": {
-    "message": "Client Owner Email"
+    "message": "Email владельца клиента"
   },
   "owner": {
     "message": "Владелец"
@@ -2257,7 +2258,7 @@
     "message": "Высший пользовательский уровень доступа, который позволяет управлять всеми аспектами вашей организации."
   },
   "clientOwnerDesc": {
-    "message": "This user should be independent of the Provider. If the Provider is disassociated with the organization, this user will maintain ownership of the organization."
+    "message": "Этот пользователь должен быть независимым от поставщика. Если поставщик будет отсоединен от организации, этот пользователь сохранит право собственности на организацию."
   },
   "admin": {
     "message": "Администратор"
@@ -2593,7 +2594,7 @@
     }
   },
   "createdOrganizationId": {
-    "message": "Created organization $ID$.",
+    "message": "Создана организация $ID$.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2602,7 +2603,7 @@
     }
   },
   "addedOrganizationId": {
-    "message": "Added organization $ID$.",
+    "message": "Добавлена организация $ID$.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2611,7 +2612,7 @@
     }
   },
   "removedOrganizationId": {
-    "message": "Removed organization $ID$.",
+    "message": "Удалена организация $ID$.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2620,7 +2621,7 @@
     }
   },
   "accessedClientVault": {
-    "message": "Accessed $ID$ organization vault.",
+    "message": "Доступ к хранилищу организации $ID$.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2657,6 +2658,9 @@
   },
   "resendInvitation": {
     "message": "Пригласить повторно"
+  },
+  "resendEmail": {
+    "message": "Отправить email повторно"
   },
   "hasBeenReinvited": {
     "message": "$USER$ был приглашен повторно.",
@@ -2811,10 +2815,6 @@
     "message": "Обновите свой аккаунт до другого плана, предоставив информацию ниже. Пожалуйста, убедитесь, что в вашем аккаунте есть активный способ оплаты.",
     "description": "A billing plan/package. For example: families, teams, enterprise, etc."
   },
-  "changeBillingPlanDesc": {
-    "message": "Если вы хотите изменить свой план, обратитесь в службу поддержки. Убедитесь, что у вас есть активный способ оплаты, добавленный в аккаунт.",
-    "description": "A billing plan/package. For example: families, teams, enterprise, etc."
-  },
   "invoiceNumber": {
     "message": "Счет #$NUMBER$",
     "description": "ex. Invoice #79C66F0-0001",
@@ -2882,14 +2882,14 @@
     "message": "Введите идентификатор установки"
   },
   "limitSubscriptionDesc": {
-    "message": "Set a seat limit for your subscription. Once this limit is reached, you will not be able to invite new users."
+    "message": "Установите лимит мест для вашей подписки. По достижении этого лимита вы не сможете приглашать новых пользователей."
   },
   "maxSeatLimit": {
-    "message": "Maximum Seat Limit (optional)",
+    "message": "Максимальный предел мест (необязательно)",
     "description": "Upper limit of seats to allow through autoscaling"
   },
   "maxSeatCost": {
-    "message": "Max potential seat cost"
+    "message": "Максимальная потенциальная стоимость места"
   },
   "addSeats": {
     "message": "Добавить лицензии",
@@ -2900,7 +2900,7 @@
     "description": "Seat = User Seat"
   },
   "subscriptionDesc": {
-    "message": "Adjustments to your subscription will result in prorated changes to your billing totals. If newly invited users exceed your subscription seats, you will immediately receive a prorated charge for the additional users."
+    "message": "Корректировка вашей подписки приведет к пропорциональному изменению суммарного счета. Если количество новых приглашенных пользователей превысит количество мест в вашей подписке, вы сразу же получите пропорциональную плату за дополнительных пользователей."
   },
   "subscriptionUserSeats": {
     "message": "Ваша подписка разрешает в общей сложности $COUNT$ пользователей.",
@@ -2912,25 +2912,25 @@
     }
   },
   "limitSubscription": {
-    "message": "Limit Subscription (Optional)"
+    "message": "Ограничить подписку (необязательно)"
   },
   "subscriptionSeats": {
-    "message": "Subscription Seats"
+    "message": "Места для подписки"
   },
   "subscriptionUpdated": {
-    "message": "Subscription updated"
+    "message": "Подписка обновлена"
   },
   "additionalOptions": {
-    "message": "Additional Options"
+    "message": "Дополнительные настройки"
   },
   "additionalOptionsDesc": {
-    "message": "For additional help in managing your subscription, please contact Customer Support."
+    "message": "За дополнительной помощью в управлении подпиской обращайтесь в службу поддержки клиентов."
   },
   "subscriptionUserSeatsUnlimitedAutoscale": {
-    "message": "Adjustments to your subscription will result in prorated changes to your billing totals. If newly invited users exceed your subscription seats, you will immediately receive a prorated charge for the additional users."
+    "message": "Корректировка вашей подписки приведет к пропорциональному изменению суммарного счета. Если количество новых приглашенных пользователей превысит количество мест в вашей подписке, вы сразу же получите пропорциональную плату за дополнительных пользователей."
   },
   "subscriptionUserSeatsLimitedAutoscale": {
-    "message": "Adjustments to your subscription will result in prorated changes to your billing totals. If newly invited users exceed your subscription seats, you will immediately receive a prorated charge for the additional users until your $MAX$ seat limit is reached.",
+    "message": "Корректировка вашей подписки приведет к пропорциональному изменению суммарного счета. Если количество новых приглашенных пользователей превысит количество мест в вашей подписке, вы сразу же получите пропорциональную плату за дополнительных пользователей, пока не будет достигнут лимит мест $MAX$.",
     "placeholders": {
       "max": {
         "content": "$1",
@@ -2938,8 +2938,35 @@
       }
     }
   },
+  "subscriptionFreePlan": {
+    "message": "Вы не можете пригласить более $COUNT$ пользователей без обновления вашего плана.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "subscriptionFamiliesPlan": {
+    "message": "Вы не можете пригласить более $COUNT$ пользователей без обновления вашего плана. Для обновления обратитесь в службу поддержки клиентов.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "6"
+      }
+    }
+  },
+  "subscriptionSponsoredFamiliesPlan": {
+    "message": "Ваша подписка разрешена в общей сложности для $COUNT$ пользователей. Ваш план спонсируется и оплачивается внешней организацией.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "6"
+      }
+    }
+  },
   "subscriptionMaxReached": {
-    "message": "Adjustments to your subscription will result in prorated changes to your billing totals. You cannot invite more than $COUNT$ users without increasing your subscription seats.",
+    "message": "Изменения в вашей подписке приведут к пропорциональным изменениям в сумме счетов. Без увеличения числа мест подписки количество приглашаемых пользователей - не более $COUNT$.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -3032,10 +3059,10 @@
     "message": "Фильтры"
   },
   "vaultTimeout": {
-    "message": "Таймаут хранилища"
+    "message": "Тайм-аут хранилища"
   },
   "vaultTimeoutDesc": {
-    "message": "Выберите таймаут для хранилища и действие, которое необходимо предпринять."
+    "message": "Выберите тайм-аут для хранилища и действие, которое необходимо предпринять."
   },
   "oneMinute": {
     "message": "1 минута"
@@ -3200,7 +3227,7 @@
     "message": "Требовать от пользователей настройки двухэтапной авторизации в их личных аккаунтах."
   },
   "twoStepLoginPolicyWarning": {
-    "message": "Участники организации, у которых в личном аккаунте не включена двухфакторная аутентификация, будут удалены из организации и получат об этом уведомление по электронной почте."
+    "message": "Члены организации, у которых в личном аккаунте отключена двухфакторная аутентификация, будут удалены из организации и получат об этом уведомление по email."
   },
   "twoStepLoginPolicyUserWarning": {
     "message": "Вы участник организации, которая требует, чтобы в вашем аккаунте была включена двухфакторная аутентификация. Если вы отключите всех провайдеров двухфакторной аутентификации, то будете автоматически удалены из этих организаций."
@@ -3263,7 +3290,7 @@
     "message": "Предпочтения пользователя"
   },
   "vaultTimeoutAction": {
-    "message": "Действие по таймауту хранилища"
+    "message": "Действие по тайм-ауту хранилища"
   },
   "vaultTimeoutActionLockDesc": {
     "message": "Заблокированное хранилище потребует повторного ввода мастер-пароля для получения доступа к нему."
@@ -3358,10 +3385,10 @@
     }
   },
   "vaultTimeoutLogOutConfirmation": {
-    "message": "По истечении таймаута будет выполнен выход, что приведет к отмене всех прав доступа к вашему хранилищу и потребует онлайн-аутентификации. Вы уверены, что хотите использовать этот параметр?"
+    "message": "По истечении тайм-аута будет выполнен выход, что приведет к отмене всех прав доступа к вашему хранилищу и потребует онлайн-аутентификации. Вы уверены, что хотите использовать этот параметр?"
   },
   "vaultTimeoutLogOutConfirmationTitle": {
-    "message": "Подтверждение действия по таймауту"
+    "message": "Подтверждение действия по тайм-ауту"
   },
   "hidePasswords": {
     "message": "Скрывать пароли"
@@ -3800,7 +3827,7 @@
     "message": "Предполагаемый налог"
   },
   "custom": {
-    "message": "Другой"
+    "message": "Пользовательский"
   },
   "customDesc": {
     "message": "Позволяет более гибко контролировать права пользователей для расширенных конфигураций."
@@ -3817,26 +3844,29 @@
   "accessReports": {
     "message": "Доступ к отчетам"
   },
+  "missingPermissions": {
+    "message": "У вас нет необходимых разрешений для выполнения этого действия."
+  },
   "manageAllCollections": {
     "message": "Управлять всеми коллекциями"
   },
   "createNewCollections": {
-    "message": "Create New Collections"
+    "message": "Создать новые коллекции"
   },
   "editAnyCollection": {
-    "message": "Edit Any Collection"
+    "message": "Редактировать любую коллекцию"
   },
   "deleteAnyCollection": {
-    "message": "Delete Any Collection"
+    "message": "Удалить любую коллекцию"
   },
   "manageAssignedCollections": {
     "message": "Управление назначенными коллекциями"
   },
   "editAssignedCollections": {
-    "message": "Edit Assigned Collections"
+    "message": "Изменить назначенные коллекции"
   },
   "deleteAssignedCollections": {
-    "message": "Delete Assigned Collections"
+    "message": "Удалить назначенные коллекции"
   },
   "manageGroups": {
     "message": "Управление группами"
@@ -3854,7 +3884,7 @@
     "message": "Управление сбросом пароля"
   },
   "disableRequiredError": {
-    "message": "You must manually disable the $POLICYNAME$ policy before this policy can be disabled.",
+    "message": "Перед отключением этой политики необходимо сначала отключить политику $POLICYNAME$.",
     "placeholders": {
       "policyName": {
         "content": "$1",
@@ -3866,7 +3896,7 @@
     "message": "Политика организации влияет на ваши варианты владения."
   },
   "personalOwnershipPolicyInEffectImports": {
-    "message": "An organization policy has disabled importing items into your personal vault."
+    "message": "Импорт элементов в ваше личное хранилище отключен политикой организации."
   },
   "personalOwnershipCheckboxDesc": {
     "message": "Отключить личное владение для пользователей организации"
@@ -3992,7 +4022,7 @@
     "message": "Отменить сброс пароля"
   },
   "enrollPasswordResetSuccess": {
-    "message": "Записано успешно!"
+    "message": "Регистрация успешна!"
   },
   "withdrawPasswordResetSuccess": {
     "message": "Запись успешно отменена!"
@@ -4025,7 +4055,16 @@
     }
   },
   "eventResetSsoLink": {
-    "message": "Reset Sso link for user $ID$",
+    "message": "Сбросить SSO-ссылку для пользователя $ID$",
+    "placeholders": {
+      "id": {
+        "content": "$1",
+        "example": "John Smith"
+      }
+    }
+  },
+  "firstSsoLogin": {
+    "message": "$ID$ впервые выполнил вход используя SSO",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -4079,7 +4118,7 @@
     "message": "Автоматически регистрировать новых пользователей"
   },
   "resetPasswordAutoEnrollInviteWarning": {
-    "message": "Эта организация имеет политику предприятия, которая автоматически зачислит вас в сброс пароля. Регистрация позволит администраторам организации изменить ваш мастер-пароль."
+    "message": "В этой организации действует корпоративная политика, которая автоматически зарегистрирует вас на сброс пароля. Регистрация позволит администраторам организации изменить ваш мастер-пароль."
   },
   "resetPasswordOrgKeysError": {
     "message": "Ответ на ключи организации пустой"
@@ -4112,19 +4151,19 @@
     "message": "Вы уверены, что хотите удалить следующих пользователей? Процесс может занять несколько секунд и не может быть прерван или отменен."
   },
   "theme": {
-    "message": "Theme"
+    "message": "Тема"
   },
   "themeDesc": {
-    "message": "Choose a theme for your web vault."
+    "message": "Выберите тему для своего веб-хранилища."
   },
   "themeSystem": {
-    "message": "Use System Theme"
+    "message": "Использовать системную тему"
   },
   "themeDark": {
-    "message": "Dark"
+    "message": "Темная"
   },
   "themeLight": {
-    "message": "Light"
+    "message": "Светлая"
   },
   "confirmSelected": {
     "message": "Подтвердить выбранное"
@@ -4157,70 +4196,70 @@
     "message": "Управление пользователями также должно быть включено с разрешением Управление сбросом пароля"
   },
   "setupProvider": {
-    "message": "Provider Setup"
+    "message": "Настройка поставщика"
   },
   "setupProviderLoginDesc": {
-    "message": "You've been invited to setup a new provider. To continue, you need to log in or create a new Bravura Vault account."
+    "message": "Вы приглашены для установки нового поставщика. Чтобы продолжить, войдите или создайте новый аккаунт Bravura Vault."
   },
   "setupProviderDesc": {
-    "message": "Please enter the details below to complete the provider setup. Contact Customer Support if you have any questions."
+    "message": "Введите подробную информацию ниже, чтобы завершить установку поставщика. Если у вас есть какие-либо вопросы, обратитесь в службу поддержки."
   },
   "providerName": {
-    "message": "Provider Name"
+    "message": "Название поставщика"
   },
   "providerSetup": {
-    "message": "The provider has been set up."
+    "message": "Поставщик настроен."
   },
   "clients": {
-    "message": "Clients"
+    "message": "Клиенты"
   },
   "providerAdmin": {
-    "message": "Provider Admin"
+    "message": "Администратор поставщика"
   },
   "providerAdminDesc": {
-    "message": "The highest access user that can manage all aspects of your provider as well as access and manage client organizations."
+    "message": "Пользователь с наивысшим уровнем доступа, который может управлять всеми аспектами деятельности вашего поставщика, а также доступом и управлением клиентскими организациями."
   },
   "serviceUser": {
-    "message": "Service User"
+    "message": "Пользователь сервиса"
   },
   "serviceUserDesc": {
-    "message": "Service users can access and manage all client organizations."
+    "message": "Пользователи сервиса могут получать доступ и управлять всеми клиентскими организациями."
   },
   "providerInviteUserDesc": {
-    "message": "Invite a new user to your provider by entering their Bravura Vault account email address below. If they do not have a Bravura Vault account already, they will be prompted to create a new account."
+    "message": "Пригласите нового пользователя в свою организацию, введя адрес email его учетной записи Bravura Vault ниже. Если у него еще нет учетной записи, ему будет предложено ее создать."
   },
   "joinProvider": {
-    "message": "Join Provider"
+    "message": "Присоединиться к поставщику"
   },
   "joinProviderDesc": {
-    "message": "You've been invited to join the provider listed above. To accept the invitation, you need to log in or create a new Bravura Vault account."
+    "message": "Вас пригласили присоединиться к указанной выше организации. Чтобы принять приглашение, войдите или создайте новую учетную запись Bravura Vault."
   },
   "providerInviteAcceptFailed": {
-    "message": "Unable to accept invitation. Ask a provider admin to send a new invitation."
+    "message": "Невозможно принять приглашение. Попросите администратора поставщика отправить новое приглашение."
   },
   "providerInviteAcceptedDesc": {
-    "message": "You can access this provider once an administrator confirms your membership. We'll send you an email when that happens."
+    "message": "Вы сможете получить доступ к этому поставщику, как только администратор подтвердит ваше членство. Мы отправим вам email, когда это произойдет."
   },
   "providerUsersNeedConfirmed": {
-    "message": "You have users that have accepted their invitation, but still need to be confirmed. Users will not have access to the provider until they are confirmed."
+    "message": "У вас есть пользователи, которые приняли приглашение, но не были подтверждены. Пользователи не будут иметь доступа к поставщику, пока не получат подтверждение."
   },
   "provider": {
-    "message": "Provider"
+    "message": "Поставщик"
   },
   "newClientOrganization": {
-    "message": "New Client Organization"
+    "message": "Организация нового клиента"
   },
   "newClientOrganizationDesc": {
-    "message": "Create a new client organization that will be associated with you as the provider. You will be able to access and manage this organization."
+    "message": "Создайте новую организацию клиента, которая будет связана с вами как с поставщиком услуг. Вы сможете получить доступ к этой организации и управлять ею."
   },
   "addExistingOrganization": {
-    "message": "Add Existing Organization"
+    "message": "Добавить существующую организацию"
   },
   "myProvider": {
-    "message": "My Provider"
+    "message": "Мой поставщик"
   },
   "addOrganizationConfirmation": {
-    "message": "Are you sure you want to add $ORGANIZATION$ as a client to $PROVIDER$?",
+    "message": "Вы уверены, что хотите добавить $ORGANIZATION$ в качестве клиента к $PROVIDER$?",
     "placeholders": {
       "organization": {
         "content": "$1",
@@ -4233,10 +4272,10 @@
     }
   },
   "organizationJoinedProvider": {
-    "message": "Organization was successfully added to the provider"
+    "message": "Организация была успешно добавлена к поставщику"
   },
   "accessingUsingProvider": {
-    "message": "Accessing organization using provider $PROVIDER$",
+    "message": "Доступ к организации с используя поставщика $PROVIDER$",
     "placeholders": {
       "provider": {
         "content": "$1",
@@ -4245,13 +4284,13 @@
     }
   },
   "providerIsDisabled": {
-    "message": "Provider is disabled."
+    "message": "Поставщик отключен."
   },
   "providerUpdated": {
-    "message": "Provider updated"
+    "message": "Поставщик обновлен"
   },
   "yourProviderIs": {
-    "message": "Your provider is $PROVIDER$. They have administrative and billing privileges for your organization.",
+    "message": "Ваш поставщик услуг - $PROVIDER$. Он обладает административными и биллинговыми привилегиями для вашей организации.",
     "placeholders": {
       "provider": {
         "content": "$1",
@@ -4260,7 +4299,7 @@
     }
   },
   "detachedOrganization": {
-    "message": "The organization $ORGANIZATION$ has been detached from your provider.",
+    "message": "Организация $ORGANIZATION$ была отсоединена от вашего поставщика.",
     "placeholders": {
       "organization": {
         "content": "$1",
@@ -4269,40 +4308,40 @@
     }
   },
   "detachOrganizationConfirmation": {
-    "message": "Are you sure you want to detach this organization? The organization will continue to exist but will no longer be managed by the provider."
+    "message": "Вы уверены, что хотите отсоединить эту организацию? Организация продолжит существовать, но больше не будет управляться поставщиком."
   },
   "add": {
-    "message": "Add"
+    "message": "Добавить"
   },
   "updatedMasterPassword": {
-    "message": "Updated Master Password"
+    "message": "Мастер-пароль обновлен"
   },
   "updateMasterPassword": {
-    "message": "Update Master Password"
+    "message": "Обновить мастер-пароль"
   },
   "updateMasterPasswordWarning": {
-    "message": "Your Master Password was recently changed by an administrator in your organization. In order to access the vault, you must update your Master Password now. Proceeding will log you out of your current session, requiring you to log back in. Active sessions on other devices may continue to remain active for up to one hour."
+    "message": "Мастер-пароль недавно был изменен администратором вашей организации. Чтобы получить доступ к хранилищу, вы должны обновить мастер-пароль сейчас. В результате текущая сессия будет завершена, потребуется повторный вход. Активные сессии на других устройствах могут оставаться активными в течение одного часа."
   },
   "maximumVaultTimeout": {
-    "message": "Vault Timeout"
+    "message": "Тайм-аут хранилища"
   },
   "maximumVaultTimeoutDesc": {
-    "message": "Configure a maximum vault timeout for all users."
+    "message": "Настроить максимальный тайм-аут хранилища для всех пользователей."
   },
   "maximumVaultTimeoutLabel": {
-    "message": "Maximum Vault Timeout"
+    "message": "Максимальный тайм-аут хранилища"
   },
   "invalidMaximumVaultTimeout": {
-    "message": "Invalid Maximum Vault Timeout."
+    "message": "Недопустимый максимальный тайм-аут хранилища."
   },
   "hours": {
-    "message": "Hours"
+    "message": "Час."
   },
   "minutes": {
-    "message": "Minutes"
+    "message": "Мин."
   },
   "vaultTimeoutPolicyInEffect": {
-    "message": "Your organization policies are affecting your vault timeout. Maximum allowed Vault Timeout is $HOURS$ hour(s) and $MINUTES$ minute(s)",
+    "message": "Политики вашей организации влияют на тайм-аут хранилища. Максимально допустимый тайм-аут хранилища составляет $HOURS$ час. и $MINUTES$ мин.",
     "placeholders": {
       "hours": {
         "content": "$1",
@@ -4315,138 +4354,384 @@
     }
   },
   "customVaultTimeout": {
-    "message": "Custom Vault Timeout"
+    "message": "Пользовательский тайм-аут хранилища"
   },
   "vaultTimeoutToLarge": {
-    "message": "Your vault timeout exceeds the restriction set by your organization."
+    "message": "Тайм-аут вашего хранилища превышает ограничение, установленное вашей организацией."
   },
   "disablePersonalVaultExport": {
-    "message": "Disable Personal Vault Export"
+    "message": "Отключить экспорт личного хранилища"
   },
   "disablePersonalVaultExportDesc": {
-    "message": "Prohibits users from exporting their private vault data."
+    "message": "Запрещает пользователям экспортировать данные своего личного хранилища."
   },
   "vaultExportDisabled": {
-    "message": "Vault Export Disabled"
+    "message": "Экспорт хранилища отключен"
   },
   "personalVaultExportPolicyInEffect": {
-    "message": "One or more organization policies prevents you from exporting your personal vault."
+    "message": "Экспорт вашего личного хранилища запрещен одной или несколькими политиками организации."
   },
   "selectType": {
-    "message": "Select SSO Type"
+    "message": "Выберите тип SSO"
   },
   "type": {
-    "message": "Type"
+    "message": "Тип"
   },
   "openIdConnectConfig": {
-    "message": "OpenID Connect Configuration"
+    "message": "Конфигурация OpenID Connect"
   },
   "samlSpConfig": {
-    "message": "SAML Service Provider Configuration"
+    "message": "Конфигурация поставщика услуг SAML"
   },
   "samlIdpConfig": {
-    "message": "SAML Identity Provider Configuration"
+    "message": "Конфигурация поставщика удостоверений SAML"
   },
   "callbackPath": {
-    "message": "Callback Path"
+    "message": "Резервный маршрут"
   },
   "signedOutCallbackPath": {
-    "message": "Signed Out Callback Path"
+    "message": "Выход с резервного маршрута"
   },
   "authority": {
-    "message": "Authority"
+    "message": "Сервер авторизации"
   },
   "clientId": {
-    "message": "Client ID"
+    "message": "ID клиента"
   },
   "clientSecret": {
-    "message": "Client Secret"
+    "message": "Секрет клиента"
   },
   "metadataAddress": {
-    "message": "Metadata Address"
+    "message": "Адрес метаданных"
   },
   "oidcRedirectBehavior": {
-    "message": "OIDC Redirect Behavior"
+    "message": "Поведение перенаправления OIDC"
   },
   "getClaimsFromUserInfoEndpoint": {
-    "message": "Get Claims From User Info Endpoint"
+    "message": "Получать запросы от конечной точки информации о пользователе"
   },
   "additionalScopes": {
-    "message": "Additional/Custom Scopes (comma delimited)"
+    "message": "Дополнительные/пользовательские области видимости (разделенные запятыми)"
   },
   "additionalUserIdClaimTypes": {
-    "message": "Additional/Custom User ID Claim Types (comma delimited)"
+    "message": "Дополнительные/пользовательские типы требований к ID пользователя (разделенные запятыми)"
   },
   "additionalEmailClaimTypes": {
-    "message": "Additional/Custom Email Claim Types (comma delimited)"
+    "message": "Дополнительные/пользовательские типы требований к email (разделенные запятыми)"
   },
   "additionalNameClaimTypes": {
-    "message": "Additional/Custom Name Claim Types (comma delimited)"
+    "message": "Дополнительные/пользовательские типы требований к имени (разделенные запятыми)"
   },
   "acrValues": {
-    "message": "Requested Authentication Context Class Reference values (acr_values)"
+    "message": "Запрошенные справочные значения класса контекста аутентификации (acr_values)"
   },
   "expectedReturnAcrValue": {
-    "message": "Expected \"acr\" Claim Value In Response (acr validation)"
+    "message": "Ожидаемый \"acr\" Значение утверждения в ответе (проверка acr)"
   },
   "spEntityId": {
-    "message": "SP Entity ID"
+    "message": "ID объекта SP"
   },
   "spMetadataUrl": {
-    "message": "SAML 2.0 Metadata URL"
+    "message": "URL метаданных SAML 2.0"
   },
   "spAcsUrl": {
-    "message": "Assertion Consumer Service (ACS) URL"
+    "message": "URL службы подтверждения клиентов (ACS)"
   },
   "spNameIdFormat": {
-    "message": "Name ID Format"
+    "message": "Формат ID названия"
   },
   "spOutboundSigningAlgorithm": {
-    "message": "Outbound Signing Algorithm"
+    "message": "Алгоритм исходящей подписи"
   },
   "spSigningBehavior": {
-    "message": "Signing Behavior"
+    "message": "Поведение при подписании"
   },
   "spMinIncomingSigningAlgorithm": {
-    "message": "Minimum Incoming Signing Algorithm"
+    "message": "Алгоритм минимальной входящей подписи"
   },
   "spWantAssertionsSigned": {
-    "message": "Want Assertions Signed"
+    "message": "Требуется подпись"
   },
   "spValidateCertificates": {
-    "message": "Validate Certificates"
+    "message": "Проверка сертификатов"
   },
   "idpEntityId": {
-    "message": "Entity ID"
+    "message": "ID субъекта"
   },
   "idpBindingType": {
-    "message": "Binding Type"
+    "message": "Тип привязки"
   },
   "idpSingleSignOnServiceUrl": {
-    "message": "Single Sign On Service URL"
+    "message": "URL службы единого входа"
   },
   "idpSingleLogoutServiceUrl": {
-    "message": "Single Log Out Service URL"
+    "message": "URL службы единого выхода"
   },
   "idpArtifactResolutionServiceUrl": {
-    "message": "Artifact Resolution Service URL"
+    "message": "URL службы разрешения артефактов"
   },
   "idpX509PublicCert": {
-    "message": "X509 Public Certificate"
+    "message": "Публичный сертификат X509"
   },
   "idpOutboundSigningAlgorithm": {
-    "message": "Outbound Signing Algorithm"
+    "message": "Алгоритм исходящей подписи"
   },
   "idpAllowUnsolicitedAuthnResponse": {
-    "message": "Allow Unsolicited Authentication Response"
+    "message": "Разрешить нежелательный ответ на аутентификацию"
   },
   "idpDisableOutboundLogoutRequests": {
-    "message": "Disable Outbound Logout Requests"
+    "message": "Отключить исходящие запросы на выход"
   },
   "idpWantAuthnRequestsSigned": {
-    "message": "Want Authentication Requests Signed"
+    "message": "Требуется подписать запросы на аутентификацию"
   },
   "ssoSettingsSaved": {
-    "message": "Single Sign-On configuration was saved."
+    "message": "Конфигурация единого входа сохранена."
+  },
+  "sponsoredFamilies": {
+    "message": "Бесплатные семьи Bravura Vault"
+  },
+  "sponsoredFamiliesEligible": {
+    "message": "Вы и ваша семья имеют право на бесплатные семьи Bravura Vault. Используйте свой личный адрес электронной почты, чтобы защитить данные даже тогда, когда вы не на работе."
+  },
+  "sponsoredFamiliesEligibleCard": {
+    "message": "Redeem your Free Bravura Vault for Families plan today to keep your data secure even when you are not at work."
+  },
+  "sponsoredFamiliesInclude": {
+    "message": "The Bravura Vault for Families plan include"
+  },
+  "sponsoredFamiliesPremiumAccess": {
+    "message": "Премиум-доступ для 6 пользователей"
+  },
+  "sponsoredFamiliesSharedCollections": {
+    "message": "Shared collections for Family secrets"
+  },
+  "badToken": {
+    "message": "Ссылка больше не действительна. Пожалуйста, попросите спонсора повторно отправить предложение."
+  },
+  "reclaimedFreePlan": {
+    "message": "Reclaimed free plan"
+  },
+  "redeem": {
+    "message": "Redeem"
+  },
+  "sponsoredFamiliesSelectOffer": {
+    "message": "Select the organization you would like sponsored"
+  },
+  "familiesSponsoringOrgSelect": {
+    "message": "Which Free Families offer would you like to redeem?"
+  },
+  "sponsoredFamiliesEmail": {
+    "message": "Enter your personal email to redeem Bravura Vault Families"
+  },
+  "sponsoredFamiliesLeaveCopy": {
+    "message": "If you leave or are removed from the sponsoring organization, your Families plan will expire at the end of the billing period."
+  },
+  "acceptBitwardenFamiliesHelp": {
+    "message": "Accept offer for an existing organization or create a new Families organization."
+  },
+  "setupSponsoredFamiliesLoginDesc": {
+    "message": "You've been offered a free Bravura Vault Families Plan Organization. To continue, you need to log in to the account that received the offer."
+  },
+  "sponsoredFamiliesAcceptFailed": {
+    "message": "Unable to accept offer. Please resend the offer email from your enterprise account and try again."
+  },
+  "sponsoredFamiliesAcceptFailedShort": {
+    "message": "Unable to accept offer. $DESCRIPTION$",
+    "placeholders": {
+      "description": {
+        "content": "$1",
+        "example": "You must have at least one existing Families Organization."
+  }
+}
+  },
+  "sponsoredFamiliesOffer": {
+    "message": "Accept Free Bravura Vault Families"
+  },
+  "sponsoredFamiliesOfferRedeemed": {
+    "message": "Free Bravura Vault Families offer successfully redeemed"
+  },
+  "redeemed": {
+    "message": "Redeemed"
+  },
+  "redeemedAccount": {
+    "message": "Redeemed Account"
+  },
+  "revokeAccount": {
+    "message": "Revoke account $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "My Sponsorship Name"
+      }
+    }
+  },
+  "resendEmailLabel": {
+    "message": "Resend Sponsorship email to $NAME$ sponsorship",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "My Sponsorship Name"
+      }
+    }
+  },
+  "freeFamiliesPlan": {
+    "message": "Free Families Plan"
+  },
+  "redeemNow": {
+    "message": "Redeem Now"
+  },
+  "recipient": {
+    "message": "Получатель"
+  },
+  "removeSponsorship": {
+    "message": "Remove Sponsorship"
+  },
+  "removeSponsorshipConfirmation": {
+    "message": "After removing a sponsorship, you will be responsible for this subscription and related invoices. Are you sure you want to continue?"
+  },
+  "sponsorshipCreated": {
+    "message": "Sponsorship Created"
+  },
+  "revoke": {
+    "message": "Revoke"
+  },
+  "emailSent": {
+    "message": "Email Sent"
+  },
+  "revokeSponsorshipConfirmation": {
+    "message": "After removing this account, the Families organization owner will be responsible for this subscription and related invoices. Are you sure you want to continue?"
+  },
+  "removeSponsorshipSuccess": {
+    "message": "Sponsorship Removed"
+  },
+  "ssoKeyConnectorUnavailable": {
+    "message": "Не удается подключиться к соединителю ключей, повторите попытку позже."
+  },
+  "keyConnectorUrl": {
+    "message": "URL соединителя ключей"
+  },
+  "sendVerificationCode": {
+    "message": "Отправить код подтверждения на ваш email"
+  },
+  "sendCode": {
+    "message": "Отправить код"
+  },
+  "codeSent": {
+    "message": "Код отправлен"
+  },
+  "verificationCode": {
+    "message": "Код подтверждения"
+  },
+  "confirmIdentity": {
+    "message": "Подтвердите вашу личность, чтобы продолжить."
+  },
+  "verificationCodeRequired": {
+    "message": "Необходимо ввести код подтверждения."
+  },
+  "invalidVerificationCode": {
+    "message": "Неверный код подтверждения"
+  },
+  "convertOrganizationEncryptionDesc": {
+    "message": "$ORGANIZATION$ использует SSO с собственным сервером ключей. Для авторизации членам этой организации больше не требуется мастер-пароль.",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
+  },
+  "leaveOrganization": {
+    "message": "Покинуть организацию"
+  },
+  "removeMasterPassword": {
+    "message": "Удалить мастер-пароль"
+  },
+  "removedMasterPassword": {
+    "message": "Мастер-пароль удален."
+  },
+  "allowSso": {
+    "message": "Разрешить аутентификацию SSO"
+  },
+  "allowSsoDesc": {
+    "message": "После настройки ваша конфигурация будет сохранена, и пользователи смогут проходить аутентификацию, используя свои учетные данные Провайдера идентификации."
+  },
+  "ssoPolicyHelpStart": {
+    "message": "Активировать",
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enable the SSO Authentication policy to require all members to log in with SSO.'"
+  },
+  "ssoPolicyHelpLink": {
+    "message": "политику SSO",
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enable the SSO Authentication policy to require all members to log in with SSO.'"
+  },
+  "ssoPolicyHelpEnd": {
+    "message": "для обеспечения авторизации всех членов при помощи единого входа.",
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enable the SSO Authentication policy to require all members to log in with SSO.'"
+  },
+  "ssoPolicyHelpKeyConnector": {
+    "message": "Для настройки расшифровки соединителя ключей требуются политики проверки подлинности SSO и единой организации."
+  },
+  "memberDecryptionOption": {
+    "message": "Параметры расшифровки членов"
+  },
+  "memberDecryptionPassDesc": {
+    "message": "После аутентификации участники будут расшифровывать данные хранилища, используя свои мастер-пароли."
+  },
+  "keyConnector": {
+    "message": "Соединитель ключей"
+  },
+  "memberDecryptionKeyConnectorDesc": {
+    "message": "Подключите авторизацию посредством SSO к вашему собственному серверу расшифровки ключей. При использовании этой опции членам не нужно будет использовать свои мастер-пароли для расшифровки данных хранилища."
+  },
+  "keyConnectorPolicyRestriction": {
+    "message": "\"Авторизация посредством SSO и расшифровки соединителя ключей\" включена. Эта политика будет применяться только к владельцам и администраторам."
+  },
+  "enabledSso": {
+    "message": "SSO включен"
+  },
+  "disabledSso": {
+    "message": "SSO отключен"
+  },
+  "enabledKeyConnector": {
+    "message": "Соединитель ключей включен"
+  },
+  "disabledKeyConnector": {
+    "message": "Соединитель ключей отключен"
+  },
+  "keyConnectorWarning": {
+    "message": "После настройки соединителя ключей параметры расшифровки членов не могут быть изменены."
+  },
+  "migratedKeyConnector": {
+    "message": "Выполнена миграция на соединитель ключей"
+  },
+  "paymentSponsored": {
+    "message": "Please provide a payment method to associate with the organization. Don't worry, we won't charge you anything unless you select additional features or your sponsorship expires. "
+  },
+  "orgCreatedSponsorshipInvalid": {
+    "message": "The sponsorship offer has expired. You may delete the organization you created to avoid a charge at the end of your 7 day trial. Otherwise you may close this prompt to keep the organization and assume billing responsibility."
+  },
+  "newFamiliesOrganization": {
+    "message": "New Families Organization"
+  },
+  "acceptOffer": {
+    "message": "Accept Offer"
+  },
+  "sponsoringOrg": {
+    "message": "Sponsoring Organization"
+  },
+  "keyConnectorTest": {
+    "message": "Тест"
+  },
+  "keyConnectorTestSuccess": {
+    "message": "Успешно! Соединитель ключей проверен."
+  },
+  "keyConnectorTestFail": {
+    "message": "Не удается связаться с соединителем ключей. Проверьте URL."
+  },
+  "sponsorshipTokenHasExpired": {
+    "message": "The sponsorship offer has expired."
+  },
+  "freeWithSponsorship": {
+    "message": "БЕСПЛАТНО при спонсорской поддержке"
   }
 }

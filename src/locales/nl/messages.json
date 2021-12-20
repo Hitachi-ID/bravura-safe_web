@@ -166,6 +166,10 @@
   "cfTypeBoolean": {
     "message": "Boolean"
   },
+  "cfTypeLinked": {
+    "message": "Gekoppeld",
+    "description": "This describes a field that is 'linked' (related) to another field."
+  },
   "remove": {
     "message": "Verwijderen"
   },
@@ -310,6 +314,9 @@
   },
   "lastName": {
     "message": "Achternaam"
+  },
+  "fullName": {
+    "message": "Volledige naam"
   },
   "address1": {
     "message": "Adres 1"
@@ -531,7 +538,7 @@
     "message": "Nee"
   },
   "loginOrCreateNewAccount": {
-    "message": "Log in om toegang te krijgen tot je beveiligde kluis."
+    "message": "Log in of maak een nieuw account aan om toegang te krijgen tot je beveiligde kluis."
   },
   "createAccount": {
     "message": "Account aanmaken"
@@ -833,9 +840,6 @@
   "encExportAccountWarningDesc": {
     "message": "Encryptiesleutels zijn uniek voor elk Bravura Vault-gebruikersaccount, je kun kunt een versleutelde niet in een ander account importeren."
   },
-  "exportMasterPassword": {
-    "message": "Voer je hoofdwachtwoord in om de kluisgegevens te exporteren."
-  },
   "export": {
     "message": "Exporteren"
   },
@@ -900,7 +904,7 @@
     "message": "E-mailadres wijzigen"
   },
   "changeEmailTwoFactorWarning": {
-    "message": "Proceeding will change your account email address. It will not change the email address used for two-factor authentication. You can change this email address in the Two-Step Login settings."
+    "message": "Doorgaan zal het e-mailadres van je account wijzigen. Het verander het e-mailadres dat wordt gebruikt voor tweestapsaanmelding niet. Je kunt dit e-mailadres wijzigen in de tweestapsaanmeldingsinstellingen."
   },
   "newEmail": {
     "message": "Nieuw e-mailadres"
@@ -1002,7 +1006,7 @@
     "message": "Organisatiekluis verwijderd."
   },
   "vaultAccessedByProvider": {
-    "message": "Vault accessed by provider."
+    "message": "Kluis benaderd door provider."
   },
   "purgeVaultDesc": {
     "message": "Ga hieronder verder om alle items en mappen in je kluis te verwijderen. Items die behoren tot een organisatie waarmee je deelt, worden niet verwijderd."
@@ -1736,13 +1740,7 @@
     }
   },
   "paymentChargedWithTrial": {
-    "message": "Je lidmaatschap omvat een gratis proefperiode van 7 dagen. Kosten worden pas in rekening gebracht als de proefperiode voorbij is. De betaling vindt ieder(e) $INTERVAL$ op terugkerende basis plaats. Je kunt op ieder moment opzeggen.",
-    "placeholders": {
-      "interval": {
-        "content": "$1",
-        "example": "month or year"
-      }
-    }
+    "message": "Je lidmaatschap omvat een gratis proefperiode van 7 dagen. Kosten worden pas in rekening gebracht als de proefperiode voorbij is. De betaling vindt ieder(e) $INTERVAL$ op terugkerende basis plaats. Je kunt op ieder moment opzeggen."
   },
   "paymentInformation": {
     "message": "Betaalgegevens"
@@ -2155,7 +2153,7 @@
     "message": "Beleidseisen"
   },
   "singleSignOn": {
-    "message": "Single Sign-On"
+    "message": "Single sign-on"
   },
   "editPolicy": {
     "message": "Beleid bewerken"
@@ -2177,6 +2175,9 @@
   },
   "removeUserConfirmation": {
     "message": "Weet je zeker dat je deze gebruiker wilt verwijderen?"
+  },
+  "removeUserConfirmationKeyConnector": {
+    "message": "Waarschuwing! Deze gebruiker vereist de Key Connector om de versleuteling te beheren. Als je deze gebruiker uit je organisatie verwijdert, wordt zijn account permanent uitgeschakeld. Deze actie kan niet ongedaan worden gemaakt. Wil je doorgaan?"
   },
   "externalId": {
     "message": "Externe ID"
@@ -2248,7 +2249,7 @@
     "message": "Bevestigd"
   },
   "clientOwnerEmail": {
-    "message": "Client Owner Email"
+    "message": "E-mailadres apparaateigenaar"
   },
   "owner": {
     "message": "Eigenaar"
@@ -2257,7 +2258,7 @@
     "message": "De gebruiker met de hoogste toegangsrechten. Deze gebruiker kan alle aspecten van je organisatie beheren."
   },
   "clientOwnerDesc": {
-    "message": "This user should be independent of the Provider. If the Provider is disassociated with the organization, this user will maintain ownership of the organization."
+    "message": "Deze gebruiker moet onafhankelijk zijn van de provider. Als de provider is losgekoppeld van de organisatie, blijft deze gebruiker eigenaar van de organisatie."
   },
   "admin": {
     "message": "Beheerder"
@@ -2593,7 +2594,7 @@
     }
   },
   "createdOrganizationId": {
-    "message": "Created organization $ID$.",
+    "message": "Organisatie $ID$ aangemaakt.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2602,7 +2603,7 @@
     }
   },
   "addedOrganizationId": {
-    "message": "Added organization $ID$.",
+    "message": "Organisatie $ID$ toegevoegd.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2611,7 +2612,7 @@
     }
   },
   "removedOrganizationId": {
-    "message": "Removed organization $ID$.",
+    "message": "Organisatie $ID$ verwijderd.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2620,7 +2621,7 @@
     }
   },
   "accessedClientVault": {
-    "message": "Accessed $ID$ organization vault.",
+    "message": "$ID$ organisatiekluis geopend.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2657,6 +2658,9 @@
   },
   "resendInvitation": {
     "message": "Uitnodiging opnieuw versturen"
+  },
+  "resendEmail": {
+    "message": "E-mail opnieuw versturen"
   },
   "hasBeenReinvited": {
     "message": "$USER$ is opnieuw uitgenodigd.",
@@ -2811,10 +2815,6 @@
     "message": "Upgrade je account naar een ander abonnement door onderstaande informatie door te geven. Verzeker jezelf ervan dat er een actieve betaalmethode aan het account is gekoppeld.",
     "description": "A billing plan/package. For example: families, teams, enterprise, etc."
   },
-  "changeBillingPlanDesc": {
-    "message": "Neem contact op met de klantondersteuning als je je abonnement wilt aanpassen. Zorg ervoor dat je een actieve betaalmethode aan het account hebt toegevoegd.",
-    "description": "A billing plan/package. For example: families, teams, enterprise, etc."
-  },
   "invoiceNumber": {
     "message": "Factuur #$NUMBER$",
     "description": "ex. Invoice #79C66F0-0001",
@@ -2882,14 +2882,14 @@
     "message": "Installatie-id invoeren"
   },
   "limitSubscriptionDesc": {
-    "message": "Set a seat limit for your subscription. Once this limit is reached, you will not be able to invite new users."
+    "message": "Stel een limiet voor gebruikersplaatsen in voor je abonnement. Zodra deze limiet is bereikt, kun je geen nieuwe gebruikers uitnodigen."
   },
   "maxSeatLimit": {
-    "message": "Maximum Seat Limit (optional)",
+    "message": "Maximale gebruikersplaatsen (optioneel)",
     "description": "Upper limit of seats to allow through autoscaling"
   },
   "maxSeatCost": {
-    "message": "Max potential seat cost"
+    "message": "Max. potentiële kosten gebruikersplaatsen"
   },
   "addSeats": {
     "message": "Plaatsen toevoegen",
@@ -2900,7 +2900,7 @@
     "description": "Seat = User Seat"
   },
   "subscriptionDesc": {
-    "message": "Adjustments to your subscription will result in prorated changes to your billing totals. If newly invited users exceed your subscription seats, you will immediately receive a prorated charge for the additional users."
+    "message": "Aanpassingen aan je abonnement leiden tot evenredige wijzigingen in je factuurtotaal. Als nieuwe gebruikers je gebruikersplaatsen overschrijden, ontvang je onmiddellijk een afschrijving voor de extra gebruikers."
   },
   "subscriptionUserSeats": {
     "message": "Je abonnement omvat $COUNT$ gebruikers.",
@@ -2912,25 +2912,25 @@
     }
   },
   "limitSubscription": {
-    "message": "Limit Subscription (Optional)"
+    "message": "Limiteer abonnement (optioneel)"
   },
   "subscriptionSeats": {
-    "message": "Subscription Seats"
+    "message": "Gebruikersplaatsen abonnement"
   },
   "subscriptionUpdated": {
-    "message": "Subscription updated"
+    "message": "Abonnement bijgewerkt"
   },
   "additionalOptions": {
-    "message": "Additional Options"
+    "message": "Extra opties"
   },
   "additionalOptionsDesc": {
-    "message": "For additional help in managing your subscription, please contact Customer Support."
+    "message": "Neem contact op met de klantenservice voor extra hulp bij het beheren van je abonnement."
   },
   "subscriptionUserSeatsUnlimitedAutoscale": {
-    "message": "Adjustments to your subscription will result in prorated changes to your billing totals. If newly invited users exceed your subscription seats, you will immediately receive a prorated charge for the additional users."
+    "message": "Aanpassingen aan je abonnement leiden tot evenredige wijzigingen in je factuurtotaal. Als nieuwe gebruikers je gebruikersplaatsen overschrijden, ontvang je onmiddellijk een afschrijving voor de extra gebruikers."
   },
   "subscriptionUserSeatsLimitedAutoscale": {
-    "message": "Adjustments to your subscription will result in prorated changes to your billing totals. If newly invited users exceed your subscription seats, you will immediately receive a prorated charge for the additional users until your $MAX$ seat limit is reached.",
+    "message": "Aanpassingen aan je abonnement leiden tot evenredige wijzigingen in je factuurtotaal. Als nieuwe gebruikers je gebruikersplaatsen overschrijden, ontvang je onmiddellijk een afschrijving voor de extra gebruikers tot het aantal van $MAX$ gebruikersplaatsen is bereikt.",
     "placeholders": {
       "max": {
         "content": "$1",
@@ -2938,8 +2938,35 @@
       }
     }
   },
+  "subscriptionFreePlan": {
+    "message": "Je kunt niet meer dan $COUNT$ gebruikers uitnodigen zonder je abonnement te upgraden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "subscriptionFamiliesPlan": {
+    "message": "Je kunt niet meer dan $COUNT$ gebruikers uitnodigen zonder je abonnement te upgraden. Neem contact op met Customer Support om te upgraden.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "6"
+      }
+    }
+  },
+  "subscriptionSponsoredFamiliesPlan": {
+    "message": "Je abonnement staat $COUNT$ gebruikers toe. Je abonnement wordt gesponsord en gefactureerd aan een externe organisatie.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "6"
+      }
+    }
+  },
   "subscriptionMaxReached": {
-    "message": "Adjustments to your subscription will result in prorated changes to your billing totals. You cannot invite more than $COUNT$ users without increasing your subscription seats.",
+    "message": "Aanpassingen aan je abonnement leiden tot evenredige wijzigingen in uw factuurtotaal. Je kunt niet meer dan $COUNT$ gebruikers uitnodigen zonder je abonnementsplaatsen te verhogen.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -3817,26 +3844,29 @@
   "accessReports": {
     "message": "Rapporten"
   },
+  "missingPermissions": {
+    "message": "Je hebt geen rechten om deze actie uit te voeren."
+  },
   "manageAllCollections": {
     "message": "Alle verbindingen beheren"
   },
   "createNewCollections": {
-    "message": "Create New Collections"
+    "message": "Nieuwe verzamelingen aanmaken"
   },
   "editAnyCollection": {
-    "message": "Edit Any Collection"
+    "message": "Iedere verzameling bewerken"
   },
   "deleteAnyCollection": {
-    "message": "Delete Any Collection"
+    "message": "Iedere verzameling verwijderen"
   },
   "manageAssignedCollections": {
     "message": "Toegewezen collecties beheren"
   },
   "editAssignedCollections": {
-    "message": "Edit Assigned Collections"
+    "message": "Toegewezen verzamelingen bewerken"
   },
   "deleteAssignedCollections": {
-    "message": "Delete Assigned Collections"
+    "message": "Toegewezen verzamelingen verwijderen"
   },
   "manageGroups": {
     "message": "Groepen beheren"
@@ -3854,7 +3884,7 @@
     "message": "Wachtwoordherstel beheren"
   },
   "disableRequiredError": {
-    "message": "You must manually disable the $POLICYNAME$ policy before this policy can be disabled.",
+    "message": "Je moet handmatig het $POLICYNAME$-beleid uitschakelen voordat je dit beleid kunt uitschakelen.",
     "placeholders": {
       "policyName": {
         "content": "$1",
@@ -3866,7 +3896,7 @@
     "message": "Een organisatiebeleid heeft invloed op je eigendomsopties."
   },
   "personalOwnershipPolicyInEffectImports": {
-    "message": "An organization policy has disabled importing items into your personal vault."
+    "message": "Een organisatiebeleid heeft het importeren van items in je persoonlijke kluis uitgeschakeld."
   },
   "personalOwnershipCheckboxDesc": {
     "message": "Schakel persoonlijke eigendom uit voor organisatiegebruikers"
@@ -4025,7 +4055,16 @@
     }
   },
   "eventResetSsoLink": {
-    "message": "Reset Sso link for user $ID$",
+    "message": "Sso-link voor gebruiker $ID$ opnieuw instellen",
+    "placeholders": {
+      "id": {
+        "content": "$1",
+        "example": "John Smith"
+      }
+    }
+  },
+  "firstSsoLogin": {
+    "message": "$ID$ heeft voor de eerste keer ingelogd met Sso",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -4112,19 +4151,19 @@
     "message": "Weet je zeker dat je de volgende gebruikers wilt verwijderen? Dit proces duurt enkele seconden en kan niet worden onderbroken of geannuleerd."
   },
   "theme": {
-    "message": "Theme"
+    "message": "Thema"
   },
   "themeDesc": {
-    "message": "Choose a theme for your web vault."
+    "message": "Kies een thema voor je webkluis."
   },
   "themeSystem": {
-    "message": "Use System Theme"
+    "message": "Systeemthema"
   },
   "themeDark": {
-    "message": "Dark"
+    "message": "Donker"
   },
   "themeLight": {
-    "message": "Light"
+    "message": "Licht"
   },
   "confirmSelected": {
     "message": "Bevestig selectie"
@@ -4157,70 +4196,70 @@
     "message": "Gebruikers beheren moet ingeschakeld zijn met de optie Wachtwoordherstel beheren"
   },
   "setupProvider": {
-    "message": "Provider Setup"
+    "message": "Providerinstellingen"
   },
   "setupProviderLoginDesc": {
-    "message": "You've been invited to setup a new provider. To continue, you need to log in or create a new Bravura Vault account."
+    "message": "Je bent uitgenodigd om een nieuwe provider in te stellen. Om door te gaan, moet je inloggen of een nieuw Bravura Vault-account aanmaken."
   },
   "setupProviderDesc": {
-    "message": "Please enter the details below to complete the provider setup. Contact Customer Support if you have any questions."
+    "message": "Vul de gegevens hieronder in om de configuratie van de provider te voltooien. Neem contact op met de klantenservice als je vragen hebt."
   },
   "providerName": {
-    "message": "Provider Name"
+    "message": "Providernaam"
   },
   "providerSetup": {
-    "message": "The provider has been set up."
+    "message": "De provider is ingesteld."
   },
   "clients": {
-    "message": "Clients"
+    "message": "Apparaten"
   },
   "providerAdmin": {
-    "message": "Provider Admin"
+    "message": "Providerbeheerder"
   },
   "providerAdminDesc": {
-    "message": "The highest access user that can manage all aspects of your provider as well as access and manage client organizations."
+    "message": "De gebruiker met de hoogste toegang, die alle aspecten van je provider kan beheren alsmede toegang en klantorganisaties kan beheren."
   },
   "serviceUser": {
-    "message": "Service User"
+    "message": "Servicegebruiker"
   },
   "serviceUserDesc": {
-    "message": "Service users can access and manage all client organizations."
+    "message": "Servicegebruikers hebben toegang tot alle clientorganisaties en kunnen deze beheren."
   },
   "providerInviteUserDesc": {
-    "message": "Invite a new user to your provider by entering their Bravura Vault account email address below. If they do not have a Bravura Vault account already, they will be prompted to create a new account."
+    "message": "Nodig een nieuw gebruikers uit voor je provider door hun Bravura Vault-account e-mailadres hieronder in te vullen. Wanneer ze nog geen Bravura Vault-account hebben worden ze gevraagd om een nieuw account aan te maken."
   },
   "joinProvider": {
-    "message": "Join Provider"
+    "message": "Aansluiten bij provider"
   },
   "joinProviderDesc": {
-    "message": "You've been invited to join the provider listed above. To accept the invitation, you need to log in or create a new Bravura Vault account."
+    "message": "Je bent uitgenodigd om je aan te sluiten bij de bovenstaande provider. Om de uitnodiging te accepteren, moet je inloggen of een nieuw Bravura Vault-account aanmaken."
   },
   "providerInviteAcceptFailed": {
-    "message": "Unable to accept invitation. Ask a provider admin to send a new invitation."
+    "message": "Kan de uitnodiging niet accepteren. Vraag een providerbeheerder om een nieuwe uitnodiging te versturen."
   },
   "providerInviteAcceptedDesc": {
-    "message": "You can access this provider once an administrator confirms your membership. We'll send you an email when that happens."
+    "message": "Je krijgt toegang tot deze provider zodra een beheerder je lidmaatschap bevestigt. We sturen je een e-mail wanneer dat gebeurt."
   },
   "providerUsersNeedConfirmed": {
-    "message": "You have users that have accepted their invitation, but still need to be confirmed. Users will not have access to the provider until they are confirmed."
+    "message": "Je hebt gebruikers die hun uitnodiging hebben geaccepteerd, maar die nog moeten worden bevestigd. Gebruikers hebben geen toegang tot de provider totdat ze zijn bevestigd."
   },
   "provider": {
     "message": "Provider"
   },
   "newClientOrganization": {
-    "message": "New Client Organization"
+    "message": "Nieuwe klant-organisatie"
   },
   "newClientOrganizationDesc": {
-    "message": "Create a new client organization that will be associated with you as the provider. You will be able to access and manage this organization."
+    "message": "Maak een nieuwe klantorganisatie aan die aan jou als provider zal worden gekoppeld. Je kunt toegang krijgen tot en deze organisatie beheren."
   },
   "addExistingOrganization": {
-    "message": "Add Existing Organization"
+    "message": "Bestaande organisatie toevoegen"
   },
   "myProvider": {
-    "message": "My Provider"
+    "message": "Mijn provider"
   },
   "addOrganizationConfirmation": {
-    "message": "Are you sure you want to add $ORGANIZATION$ as a client to $PROVIDER$?",
+    "message": "Weet je zeker dat je $ORGANIZATION$ als client wilt toevoegen aan $PROVIDER$?",
     "placeholders": {
       "organization": {
         "content": "$1",
@@ -4233,10 +4272,10 @@
     }
   },
   "organizationJoinedProvider": {
-    "message": "Organization was successfully added to the provider"
+    "message": "Organisatie succesvol toegevoegd aan de provider"
   },
   "accessingUsingProvider": {
-    "message": "Accessing organization using provider $PROVIDER$",
+    "message": "Organisatie benaderen via provider $PROVIDER$",
     "placeholders": {
       "provider": {
         "content": "$1",
@@ -4245,13 +4284,13 @@
     }
   },
   "providerIsDisabled": {
-    "message": "Provider is disabled."
+    "message": "Provider is uitgeschakeld."
   },
   "providerUpdated": {
-    "message": "Provider updated"
+    "message": "Provider bijgewerkt"
   },
   "yourProviderIs": {
-    "message": "Your provider is $PROVIDER$. They have administrative and billing privileges for your organization.",
+    "message": "Je provider is $PROVIDER$. Ze hebben administratieve- en factuurrechten voor jouw organisatie.",
     "placeholders": {
       "provider": {
         "content": "$1",
@@ -4260,7 +4299,7 @@
     }
   },
   "detachedOrganization": {
-    "message": "The organization $ORGANIZATION$ has been detached from your provider.",
+    "message": "De organisatie $ORGANIZATION$ is losgekoppeld van jouw provider.",
     "placeholders": {
       "organization": {
         "content": "$1",
@@ -4269,40 +4308,40 @@
     }
   },
   "detachOrganizationConfirmation": {
-    "message": "Are you sure you want to detach this organization? The organization will continue to exist but will no longer be managed by the provider."
+    "message": "Weet je zeker dat je deze organisatie wilt loskoppelen? De organisatie zal blijven bestaan maar zal niet langer worden beheerd door de provider."
   },
   "add": {
-    "message": "Add"
+    "message": "Toevoegen"
   },
   "updatedMasterPassword": {
-    "message": "Updated Master Password"
+    "message": "Hoofdwachtwoord bijgewerkt"
   },
   "updateMasterPassword": {
-    "message": "Update Master Password"
+    "message": "Hoofdwachtwoord bijwerken"
   },
   "updateMasterPasswordWarning": {
-    "message": "Your Master Password was recently changed by an administrator in your organization. In order to access the vault, you must update your Master Password now. Proceeding will log you out of your current session, requiring you to log back in. Active sessions on other devices may continue to remain active for up to one hour."
+    "message": "Je hoofdwachtwoord is onlangs veranderd door een beheerder in jouw organisatie. Om toegang te krijgen tot de kluis, moet je deze nu bijwerken. Doorgaan zal je huidige sessie uitloggen, waarna je opnieuw moet inloggen. Actieve sessies op andere apparaten blijven mogelijk nog een uur actief."
   },
   "maximumVaultTimeout": {
-    "message": "Vault Timeout"
+    "message": "Time-out van de kluis"
   },
   "maximumVaultTimeoutDesc": {
-    "message": "Configure a maximum vault timeout for all users."
+    "message": "Stel een maximale time-out van de kluis in voor alle gebruikers."
   },
   "maximumVaultTimeoutLabel": {
-    "message": "Maximum Vault Timeout"
+    "message": "Maximale time-out van de kluis"
   },
   "invalidMaximumVaultTimeout": {
-    "message": "Invalid Maximum Vault Timeout."
+    "message": "Ongeldige maximale time-out van de kluis."
   },
   "hours": {
-    "message": "Hours"
+    "message": "Uren"
   },
   "minutes": {
-    "message": "Minutes"
+    "message": "Minuten"
   },
   "vaultTimeoutPolicyInEffect": {
-    "message": "Your organization policies are affecting your vault timeout. Maximum allowed Vault Timeout is $HOURS$ hour(s) and $MINUTES$ minute(s)",
+    "message": "Het beleid van je organisatie heeft invloed op de time-out van je kluis. De maximaal toegestane time-out voor je kluis is $HOURS$ uur en $MINUTES$ minuten",
     "placeholders": {
       "hours": {
         "content": "$1",
@@ -4315,25 +4354,25 @@
     }
   },
   "customVaultTimeout": {
-    "message": "Custom Vault Timeout"
+    "message": "Aangepaste time-out van de kluis"
   },
   "vaultTimeoutToLarge": {
-    "message": "Your vault timeout exceeds the restriction set by your organization."
+    "message": "Je kluis time-out is hoger dan het maximum van jouw organisatie."
   },
   "disablePersonalVaultExport": {
-    "message": "Disable Personal Vault Export"
+    "message": "Persoonlijke kluis exporteren uitschakelen"
   },
   "disablePersonalVaultExportDesc": {
-    "message": "Prohibits users from exporting their private vault data."
+    "message": "Verbiedt gebruikers om hun privékluisgegevens te exporteren."
   },
   "vaultExportDisabled": {
-    "message": "Vault Export Disabled"
+    "message": "Kluis exporteren uitgeschakeld"
   },
   "personalVaultExportPolicyInEffect": {
-    "message": "One or more organization policies prevents you from exporting your personal vault."
+    "message": "Organisatiebeleid voorkomt dat je je persoonlijke kluis exporteert."
   },
   "selectType": {
-    "message": "Select SSO Type"
+    "message": "Selecteer Type"
   },
   "type": {
     "message": "Type"
@@ -4438,15 +4477,261 @@
     "message": "Outbound Signing Algorithm"
   },
   "idpAllowUnsolicitedAuthnResponse": {
-    "message": "Allow Unsolicited Authentication Response"
+    "message": "Unsolicited Authentication Response toestaan"
   },
   "idpDisableOutboundLogoutRequests": {
-    "message": "Disable Outbound Logout Requests"
+    "message": "Outbound Logout Requests uitschakelen"
   },
   "idpWantAuthnRequestsSigned": {
     "message": "Want Authentication Requests Signed"
   },
   "ssoSettingsSaved": {
-    "message": "Single Sign-On configuration was saved."
+    "message": "Single Sign-On configuratie is opgeslagen."
+  },
+  "sponsoredFamilies": {
+    "message": "Gratis Bravura Vault Families"
+  },
+  "sponsoredFamiliesEligible": {
+    "message": "Jij en je familie komen in aanmerking voor gratis Bravura Vault Families. Verzilver met je persoonlijke e-mail om je gegevens veilig te houden, zelfs als je niet op het werk bent."
+  },
+  "sponsoredFamiliesEligibleCard": {
+    "message": "Verzilver je gratis Bravura Vault Families vandaag om je gegevens veilig te houden, zelfs wanneer je niet aan het werk bent."
+  },
+  "sponsoredFamiliesInclude": {
+    "message": "Bravura Vault Families omvat"
+  },
+  "sponsoredFamiliesPremiumAccess": {
+    "message": "Premium-toegang voor maximaal 6 gebruikers"
+  },
+  "sponsoredFamiliesSharedCollections": {
+    "message": "Gedeelde collecties voor familiegeheimen"
+  },
+  "badToken": {
+    "message": "De link is niet langer geldig. Zorg ervoor dat de sponsors de uitnodiging opnieuw versturen."
+  },
+  "reclaimedFreePlan": {
+    "message": "Gratis abonnement hergebruikt"
+  },
+  "redeem": {
+    "message": "Verzilveren"
+  },
+  "sponsoredFamiliesSelectOffer": {
+    "message": "Selecteer de organisatie die je wilt sponsoren"
+  },
+  "familiesSponsoringOrgSelect": {
+    "message": "Welke gratis Families wil je inwisselen?"
+  },
+  "sponsoredFamiliesEmail": {
+    "message": "Voer je persoonlijke e-mailadres in om Bravura Vault Families te verzilveren"
+  },
+  "sponsoredFamiliesLeaveCopy": {
+    "message": "Als je vertrekt of verwijderd wordt uit deze organisatie, vervalt je Families-plan aan het einde van de factureringsperiode."
+  },
+  "acceptBitwardenFamiliesHelp": {
+    "message": "Accepteer aanbod voor een bestaande organisatie of maak een nieuwe Families-organisatie aan."
+  },
+  "setupSponsoredFamiliesLoginDesc": {
+    "message": "Je hebt een gratis Bravura Vault Families Plan-organisatie aangeboden gekregen. Om door te gaan, moet je inloggen op het account dat de aanbieding heeft ontvangen."
+  },
+  "sponsoredFamiliesAcceptFailed": {
+    "message": "Kan aanbieding niet accepteren. Verstuur de aanbieding opnieuw via je bedrijfsaccount en probeer het opnieuw."
+  },
+  "sponsoredFamiliesAcceptFailedShort": {
+    "message": "Kan aanbieding niet accepteren. $DESCRIPTION$",
+    "placeholders": {
+      "description": {
+        "content": "$1",
+        "example": "You must have at least one existing Families Organization."
+      }
+    }
+  },
+  "sponsoredFamiliesOffer": {
+    "message": "Gratis Bravura Vault Families-organisatieaanbod verzilveren"
+  },
+  "sponsoredFamiliesOfferRedeemed": {
+    "message": "Gratis Bravura Vault Families-aanbod succesvol verzilverd"
+  },
+  "redeemed": {
+    "message": "Verzilverd"
+  },
+  "redeemedAccount": {
+    "message": "Account verzilverd"
+  },
+  "revokeAccount": {
+    "message": "Account $NAME$ intrekken",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "My Sponsorship Name"
+      }
+    }
+  },
+  "resendEmailLabel": {
+    "message": "Sponsoring e-mail opnieuw verzenden naar $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "My Sponsorship Name"
+      }
+    }
+  },
+  "freeFamiliesPlan": {
+    "message": "Gratis Families Plan"
+  },
+  "redeemNow": {
+    "message": "Nu verzilveren"
+  },
+  "recipient": {
+    "message": "Ontvanger"
+  },
+  "removeSponsorship": {
+    "message": "Sponsoring verwijderen"
+  },
+  "removeSponsorshipConfirmation": {
+    "message": "Na het verwijderen van sponsoring ben je verantwoordelijk voor dit abonnement en de bijbehorende facturen. Weet je zeker dat je wilt doorgaan?"
+  },
+  "sponsorshipCreated": {
+    "message": "Sponsoring aangemaakt"
+  },
+  "revoke": {
+    "message": "Intrekken"
+  },
+  "emailSent": {
+    "message": "E-mail verzonden"
+  },
+  "revokeSponsorshipConfirmation": {
+    "message": "Als je dit account verwijderd is de eigenaar van de Families-organisatie verantwoordelijk voor dit abonnement en de bijbehorende facturen. Weet je zeker dat je wilt doorgaan?"
+  },
+  "removeSponsorshipSuccess": {
+    "message": "Sponsoring verwijderd"
+  },
+  "ssoKeyConnectorUnavailable": {
+    "message": "Kan de Key Connector niet bereiken, probeer het later opnieuw."
+  },
+  "keyConnectorUrl": {
+    "message": "Key Connector URL"
+  },
+  "sendVerificationCode": {
+    "message": "Stuur een verificatiecode naar je e-mail"
+  },
+  "sendCode": {
+    "message": "Code versturen"
+  },
+  "codeSent": {
+    "message": "Code verstuurd"
+  },
+  "verificationCode": {
+    "message": "Verificatiecode"
+  },
+  "confirmIdentity": {
+    "message": "Bevestig je identiteit om door te gaan."
+  },
+  "verificationCodeRequired": {
+    "message": "Verificatiecode vereist."
+  },
+  "invalidVerificationCode": {
+    "message": "Ongeldige verificatiecode"
+  },
+  "convertOrganizationEncryptionDesc": {
+    "message": "$ORGANIZATION$ gebruikt SSO met een zelf gehoste sleutelserver. Leden van deze organisatie kunnen inloggen zonder hoofdwachtwoord.",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
+  },
+  "leaveOrganization": {
+    "message": "Organisatie verlaten"
+  },
+  "removeMasterPassword": {
+    "message": "Hoofdwachtwoord verwijderen"
+  },
+  "removedMasterPassword": {
+    "message": "Hoofdwachtwoord verwijderd."
+  },
+  "allowSso": {
+    "message": "SSO-authenticatie toestaan"
+  },
+  "allowSsoDesc": {
+    "message": "Na het instellen zal uw configuratie worden opgeslagen en kunnen leden zich authenticeren met behulp van hun Identity Provider inloggegevens."
+  },
+  "ssoPolicyHelpStart": {
+    "message": "Inschakelen",
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enable the SSO Authentication policy to require all members to log in with SSO.'"
+  },
+  "ssoPolicyHelpLink": {
+    "message": "SSO-beleid",
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enable the SSO Authentication policy to require all members to log in with SSO.'"
+  },
+  "ssoPolicyHelpEnd": {
+    "message": "om alle leden inloggen met SSO te verplichten.",
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enable the SSO Authentication policy to require all members to log in with SSO.'"
+  },
+  "ssoPolicyHelpKeyConnector": {
+    "message": "SSO-authenticatie en Enkele Organisatie-beleid zijn vereist voor het instellen van de versleuteling van de Key Connector."
+  },
+  "memberDecryptionOption": {
+    "message": "Member Decryption Options"
+  },
+  "memberDecryptionPassDesc": {
+    "message": "Eenmaal ingelogd, ontsleutelen leden kluisgegevens met hun hoofdwachtwoorden."
+  },
+  "keyConnector": {
+    "message": "Key Connector"
+  },
+  "memberDecryptionKeyConnectorDesc": {
+    "message": "Verbind Login met SSO met je zelf gehoste decoderingssleutelserver. Met deze optie kunnen leden kluisgegevens ontsleutelen zonder hoofdwachtwoord."
+  },
+  "keyConnectorPolicyRestriction": {
+    "message": "\"Login met SSO en Key Connector Decryption\" is ingeschakeld. Dit beleid is alleen van toepassing op de eigenaren en beheerders."
+  },
+  "enabledSso": {
+    "message": "SSO ingeschakeld"
+  },
+  "disabledSso": {
+    "message": "SSO uitgeschakeld"
+  },
+  "enabledKeyConnector": {
+    "message": "Key Connector ingeschakeld"
+  },
+  "disabledKeyConnector": {
+    "message": "Key Connector uigeschakeld"
+  },
+  "keyConnectorWarning": {
+    "message": "Zodra Key Connector is ingesteld, kunnen Member Decryption Options niet worden gewijzigd."
+  },
+  "migratedKeyConnector": {
+    "message": "Gemigreerd naar Key Connector"
+  },
+  "paymentSponsored": {
+    "message": "Geef een betalingsmethode om aan de organisatie te koppelen. Maak je geen zorgen, we brengen niets in rekening tenzij je aanvullende functies kiest of je sponsoring verloopt. "
+  },
+  "orgCreatedSponsorshipInvalid": {
+    "message": "De sponsoring is verlopen. Je kunt de organisatie die je hebt aangemaakt verwijderen om kosten aan het einde van je proefperiode van 7 dagen te voorkomen. Anders kun je deze pop-up sluiten om de organisatie te behouden en factureringsverantwoordelijkheid te nemen."
+  },
+  "newFamiliesOrganization": {
+    "message": "Nieuwe Families-oganisatie"
+  },
+  "acceptOffer": {
+    "message": "Aanbod accepteren"
+  },
+  "sponsoringOrg": {
+    "message": "Sponsoringorganisatie"
+  },
+  "keyConnectorTest": {
+    "message": "Test"
+  },
+  "keyConnectorTestSuccess": {
+    "message": "Gelukt! Key Connector bereikt."
+  },
+  "keyConnectorTestFail": {
+    "message": "Kan Key Connector niet bereiken. Controleer de URL."
+  },
+  "sponsorshipTokenHasExpired": {
+    "message": "De sponsoring is verlopen."
+  },
+  "freeWithSponsorship": {
+    "message": "GRATIS met sponsoring"
   }
 }

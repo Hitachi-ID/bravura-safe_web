@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 
-import { ToasterService } from 'angular2-toaster';
-
 import { ApiService } from 'jslib-common/abstractions/api.service';
 import { I18nService } from 'jslib-common/abstractions/i18n.service';
 import { LogService } from 'jslib-common/abstractions/log.service';
 import { PlatformUtilsService } from 'jslib-common/abstractions/platformUtils.service';
 import { UserService } from 'jslib-common/abstractions/user.service';
+import { UserVerificationService } from 'jslib-common/abstractions/userVerification.service';
 
 import { TwoFactorEmailRequest } from 'jslib-common/models/request/twoFactorEmailRequest';
 
@@ -29,9 +28,10 @@ export class TwoFactorEmailComponent extends TwoFactorBaseComponent {
     emailPromise: Promise<any>;
 
     constructor(apiService: ApiService, i18nService: I18nService,
-        toasterService: ToasterService, platformUtilsService: PlatformUtilsService,
-        private userService: UserService, logService: LogService) {
-        super(apiService, i18nService, toasterService, platformUtilsService, logService);
+        platformUtilsService: PlatformUtilsService,
+        logService: LogService, userVerificationService: UserVerificationService,
+        private userService: UserService) {
+        super(apiService, i18nService, platformUtilsService, logService, userVerificationService);
     }
 
     auth(authResponse: any) {
@@ -49,7 +49,8 @@ export class TwoFactorEmailComponent extends TwoFactorBaseComponent {
 
     async sendEmail() {
         try {
-            const request = new TwoFactorEmailRequest(this.email, this.masterPasswordHash);
+            const request = await this.buildRequestModel(TwoFactorEmailRequest);
+            request.email = this.email;
             this.emailPromise = this.apiService.postTwoFactorEmailSetup(request);
             await this.emailPromise;
             this.sentEmail = this.email;
@@ -58,9 +59,8 @@ export class TwoFactorEmailComponent extends TwoFactorBaseComponent {
         }
     }
 
-    protected enable() {
-        const request = new UpdateTwoFactorEmailRequest();
-        request.masterPasswordHash = this.masterPasswordHash;
+    protected async enable() {
+        const request = await this.buildRequestModel(UpdateTwoFactorEmailRequest);
         request.email = this.email;
         request.token = this.token;
 

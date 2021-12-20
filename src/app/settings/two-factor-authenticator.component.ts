@@ -4,13 +4,12 @@ import {
     OnInit,
 } from '@angular/core';
 
-import { ToasterService } from 'angular2-toaster';
-
 import { ApiService } from 'jslib-common/abstractions/api.service';
 import { I18nService } from 'jslib-common/abstractions/i18n.service';
 import { LogService } from 'jslib-common/abstractions/log.service';
 import { PlatformUtilsService } from 'jslib-common/abstractions/platformUtils.service';
 import { UserService } from 'jslib-common/abstractions/user.service';
+import { UserVerificationService } from 'jslib-common/abstractions/userVerification.service';
 
 import { UpdateTwoFactorAuthenticatorRequest } from 'jslib-common/models/request/updateTwoFactorAuthenticatorRequest';
 import { TwoFactorAuthenticatorResponse } from 'jslib-common/models/response/twoFactorAuthenticatorResponse';
@@ -32,9 +31,10 @@ export class TwoFactorAuthenticatorComponent extends TwoFactorBaseComponent impl
     private qrScript: HTMLScriptElement;
 
     constructor(apiService: ApiService, i18nService: I18nService,
-        toasterService: ToasterService, private userService: UserService,
-        platformUtilsService: PlatformUtilsService, logService: LogService) {
-        super(apiService, i18nService, toasterService, platformUtilsService, logService);
+        userVerificationService: UserVerificationService,
+        platformUtilsService: PlatformUtilsService, logService: LogService,
+        private userService: UserService) {
+        super(apiService, i18nService, platformUtilsService, logService, userVerificationService);
         this.qrScript = window.document.createElement('script');
         this.qrScript.src = 'scripts/qrious.min.js';
         this.qrScript.async = true;
@@ -61,9 +61,8 @@ export class TwoFactorAuthenticatorComponent extends TwoFactorBaseComponent impl
         }
     }
 
-    protected enable() {
-        const request = new UpdateTwoFactorAuthenticatorRequest();
-        request.masterPasswordHash = this.masterPasswordHash;
+    protected async enable() {
+        const request = await this.buildRequestModel(UpdateTwoFactorAuthenticatorRequest);
         request.token = this.token;
         request.key = this.key;
 

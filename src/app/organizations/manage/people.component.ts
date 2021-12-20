@@ -12,8 +12,6 @@ import {
     Router,
 } from '@angular/router';
 
-import { ToasterService } from 'angular2-toaster';
-
 import { ValidationService } from 'jslib-angular/services/validation.service';
 
 import { ApiService } from 'jslib-common/abstractions/api.service';
@@ -82,12 +80,12 @@ export class PeopleComponent extends BasePeopleComponent<OrganizationUserUserDet
 
     constructor(apiService: ApiService, private route: ActivatedRoute,
         i18nService: I18nService, modalService: ModalService,
-        platformUtilsService: PlatformUtilsService, toasterService: ToasterService,
+        platformUtilsService: PlatformUtilsService,
         cryptoService: CryptoService, private userService: UserService, private router: Router,
         storageService: StorageService, searchService: SearchService,
         validationService: ValidationService, private policyService: PolicyService,
         logService: LogService, searchPipe: SearchPipe, userNamePipe: UserNamePipe, private syncService: SyncService) {
-            super(apiService, searchService, i18nService, platformUtilsService, toasterService, cryptoService,
+            super(apiService, searchService, i18nService, platformUtilsService, cryptoService,
                 storageService, validationService, modalService, logService, searchPipe, userNamePipe);
         }
 
@@ -193,6 +191,7 @@ export class PeopleComponent extends BasePeopleComponent<OrganizationUserUserDet
             comp.name = this.userNamePipe.transform(user);
             comp.organizationId = this.organizationId;
             comp.organizationUserId = user != null ? user.id : null;
+            comp.usesKeyConnector = user?.usesKeyConnector;
             comp.onSavedUser.subscribe(() => {
                 modal.close();
                 this.load();
@@ -238,7 +237,7 @@ export class PeopleComponent extends BasePeopleComponent<OrganizationUserUserDet
         const filteredUsers = users.filter(u => u.status === OrganizationUserStatusType.Invited);
 
         if (filteredUsers.length <= 0) {
-            this.toasterService.popAsync('error', this.i18nService.t('errorOccurred'),
+            this.platformUtilsService.showToast('error', this.i18nService.t('errorOccurred'),
                 this.i18nService.t('noSelectedUsersApplicable'));
             return;
         }
@@ -289,6 +288,14 @@ export class PeopleComponent extends BasePeopleComponent<OrganizationUserUserDet
                 this.load();
             });
         });
+    }
+
+    protected deleteWarningMessage(user: OrganizationUserUserDetailsResponse): string {
+        if (user.usesKeyConnector) {
+            return this.i18nService.t('removeUserConfirmationKeyConnector');
+        }
+
+        return super.deleteWarningMessage(user);
     }
 
     private async showBulkStatus(users: OrganizationUserUserDetailsResponse[], filteredUsers: OrganizationUserUserDetailsResponse[],
