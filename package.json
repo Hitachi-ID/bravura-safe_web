@@ -64,7 +64,6 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "@angular/animations": "^13.1.1",
     "@bitwarden/jslib-angular": "file:jslib/angular",
     "@bitwarden/jslib-common": "file:jslib/common",
     "bootstrap": "4.6.0",

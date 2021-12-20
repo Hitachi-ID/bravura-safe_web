@@ -11,7 +11,7 @@ import {
     Router,
 } from '@angular/router';
 import * as jq from 'jquery';
-// import { IndividualConfig, ToastrService } from 'ngx-toastr';
+import { IndividualConfig, ToastrService } from 'ngx-toastr';
 import Swal from 'sweetalert2';
 
 import { AuthService } from 'jslib-common/abstractions/auth.service';
