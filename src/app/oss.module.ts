@@ -73,21 +73,22 @@ import {
 import { ExportComponent as OrgExportComponent } from './organizations/tools/export.component';
 import {
     ExposedPasswordsReportComponent as OrgExposedPasswordsReportComponent,
-} from './organizations/tools/exposed-passwords-report.component';
+} from './organizations/reports/exposed-passwords-report.component';
 import { ImportComponent as OrgImportComponent } from './organizations/tools/import.component';
 import {
     InactiveTwoFactorReportComponent as OrgInactiveTwoFactorReportComponent,
-} from './organizations/tools/inactive-two-factor-report.component';
+} from './organizations/reports/inactive-two-factor-report.component';
 import {
     ReusedPasswordsReportComponent as OrgReusedPasswordsReportComponent,
-} from './organizations/tools/reused-passwords-report.component';
+} from './organizations/reports/reused-passwords-report.component';
 import { ToolsComponent as OrgToolsComponent } from './organizations/tools/tools.component';
+import { ReportsComponent as OrgReportsComponent } from './organizations/reports/reports.component';
 import {
     UnsecuredWebsitesReportComponent as OrgUnsecuredWebsitesReportComponent,
-} from './organizations/tools/unsecured-websites-report.component';
+} from './organizations/reports/unsecured-websites-report.component';
 import {
     WeakPasswordsReportComponent as OrgWeakPasswordsReportComponent,
-} from './organizations/tools/weak-passwords-report.component';
+} from './organizations/reports/weak-passwords-report.component';
 
 import { FamiliesForEnterpriseSetupComponent } from './organizations/sponsorships/families-for-enterprise-setup.component';
 import { AddEditComponent as OrgAddEditComponent } from './organizations/vault/add-edit.component';
@@ -150,15 +151,16 @@ import { VerifyEmailComponent } from './settings/verify-email.component';
 
 import { BreachReportComponent } from './tools/breach-report.component';
 import { ExportComponent } from './tools/export.component';
-import { ExposedPasswordsReportComponent } from './tools/exposed-passwords-report.component';
+import { ExposedPasswordsReportComponent } from './reports/exposed-passwords-report.component';
 import { ImportComponent } from './tools/import.component';
-import { InactiveTwoFactorReportComponent } from './tools/inactive-two-factor-report.component';
+import { InactiveTwoFactorReportComponent } from './reports/inactive-two-factor-report.component';
 import { PasswordGeneratorHistoryComponent } from './tools/password-generator-history.component';
 import { PasswordGeneratorComponent } from './tools/password-generator.component';
-import { ReusedPasswordsReportComponent } from './tools/reused-passwords-report.component';
+import { ReusedPasswordsReportComponent } from './reports/reused-passwords-report.component';
 import { ToolsComponent } from './tools/tools.component';
-import { UnsecuredWebsitesReportComponent } from './tools/unsecured-websites-report.component';
-import { WeakPasswordsReportComponent } from './tools/weak-passwords-report.component';
+import { ReportsComponent } from './reports/reports.component'
+import { UnsecuredWebsitesReportComponent } from './reports/unsecured-websites-report.component';
+import { WeakPasswordsReportComponent } from './reports/weak-passwords-report.component';
 
 import { AddEditCustomFieldsComponent } from './vault/add-edit-custom-fields.component';
 import { AddEditComponent } from './vault/add-edit.component';
@@ -397,6 +399,7 @@ registerLocaleData(localeZhTw, 'zh-TW');
         OrgReusedPasswordsReportComponent,
         OrgSettingComponent,
         OrgToolsComponent,
+        OrgReportsComponent,
         OrgTwoFactorSetupComponent,
         OrgUserAddEditComponent,
         OrgUserConfirmComponent,
@@ -433,6 +436,7 @@ registerLocaleData(localeZhTw, 'zh-TW');
         StopPropDirective,
         TaxInfoComponent,
         ToolsComponent,
+        ReportsComponent,
         TrueFalseValueDirective,
         TwoFactorAuthenticatorComponent,
         TwoFactorComponent,

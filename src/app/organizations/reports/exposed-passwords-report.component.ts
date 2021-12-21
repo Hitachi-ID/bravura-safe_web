@@ -11,14 +11,14 @@ import { ModalService } from 'jslib-angular/services/modal.service';
 
 import {
     ExposedPasswordsReportComponent as BaseExposedPasswordsReportComponent,
-} from '../../tools/exposed-passwords-report.component';
+} from '../../reports/exposed-passwords-report.component';
 
 import { Cipher } from 'jslib-common/models/domain/cipher';
 import { CipherView } from 'jslib-common/models/view/cipherView';
 
 @Component({
     selector: 'app-exposed-passwords-report',
-    templateUrl: '../../tools/exposed-passwords-report.component.html',
+    templateUrl: '../../reports/exposed-passwords-report.component.html',
 })
 export class ExposedPasswordsReportComponent extends BaseExposedPasswordsReportComponent {
     manageableCiphers: Cipher[];

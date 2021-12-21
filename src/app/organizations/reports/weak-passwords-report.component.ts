@@ -15,11 +15,11 @@ import { CipherView } from 'jslib-common/models/view/cipherView';
 
 import {
     WeakPasswordsReportComponent as BaseWeakPasswordsReportComponent,
-} from '../../tools/weak-passwords-report.component';
+} from '../../reports/weak-passwords-report.component';
 
 @Component({
     selector: 'app-weak-passwords-report',
-    templateUrl: '../../tools/weak-passwords-report.component.html',
+    templateUrl: '../../reports/weak-passwords-report.component.html',
 })
 export class WeakPasswordsReportComponent extends BaseWeakPasswordsReportComponent {
     manageableCiphers: Cipher[];
