@@ -58,6 +58,23 @@ import { UserAddEditComponent as OrgUserAddEditComponent } from './organizations
 import { UserConfirmComponent as OrgUserConfirmComponent } from './organizations/manage/user-confirm.component';
 import { UserGroupsComponent as OrgUserGroupsComponent } from './organizations/manage/user-groups.component';
 
+import {
+    ExposedPasswordsReportComponent as OrgExposedPasswordsReportComponent,
+} from './organizations/reports/exposed-passwords-report.component';
+import {
+    InactiveTwoFactorReportComponent as OrgInactiveTwoFactorReportComponent,
+} from './organizations/reports/inactive-two-factor-report.component';
+import { ReportsComponent as OrgReportsComponent } from './organizations/reports/reports.component';
+import {
+    ReusedPasswordsReportComponent as OrgReusedPasswordsReportComponent,
+} from './organizations/reports/reused-passwords-report.component';
+import {
+    UnsecuredWebsitesReportComponent as OrgUnsecuredWebsitesReportComponent,
+} from './organizations/reports/unsecured-websites-report.component';
+import {
+    WeakPasswordsReportComponent as OrgWeakPasswordsReportComponent,
+} from './organizations/reports/weak-passwords-report.component';
+
 import { AccountComponent as OrgAccountComponent } from './organizations/settings/account.component';
 import { AdjustSubscription } from './organizations/settings/adjust-subscription.component';
 import { ChangePlanComponent } from './organizations/settings/change-plan.component';
@@ -70,33 +87,25 @@ import {
     TwoFactorSetupComponent as OrgTwoFactorSetupComponent,
 } from './organizations/settings/two-factor-setup.component';
 
-import { ExportComponent as OrgExportComponent } from './organizations/tools/export.component';
-import {
-    ExposedPasswordsReportComponent as OrgExposedPasswordsReportComponent,
-} from './organizations/reports/exposed-passwords-report.component';
-import { ImportComponent as OrgImportComponent } from './organizations/tools/import.component';
-import {
-    InactiveTwoFactorReportComponent as OrgInactiveTwoFactorReportComponent,
-} from './organizations/reports/inactive-two-factor-report.component';
-import {
-    ReusedPasswordsReportComponent as OrgReusedPasswordsReportComponent,
-} from './organizations/reports/reused-passwords-report.component';
-import { ToolsComponent as OrgToolsComponent } from './organizations/tools/tools.component';
-import { ReportsComponent as OrgReportsComponent } from './organizations/reports/reports.component';
-import {
-    UnsecuredWebsitesReportComponent as OrgUnsecuredWebsitesReportComponent,
-} from './organizations/reports/unsecured-websites-report.component';
-import {
-    WeakPasswordsReportComponent as OrgWeakPasswordsReportComponent,
-} from './organizations/reports/weak-passwords-report.component';
-
 import { FamiliesForEnterpriseSetupComponent } from './organizations/sponsorships/families-for-enterprise-setup.component';
+
+import { ExportComponent as OrgExportComponent } from './organizations/tools/export.component';
+import { ImportComponent as OrgImportComponent } from './organizations/tools/import.component';
+import { ToolsComponent as OrgToolsComponent } from './organizations/tools/tools.component';
+
 import { AddEditComponent as OrgAddEditComponent } from './organizations/vault/add-edit.component';
 import { AttachmentsComponent as OrgAttachmentsComponent } from './organizations/vault/attachments.component';
 import { CiphersComponent as OrgCiphersComponent } from './organizations/vault/ciphers.component';
 import { CollectionsComponent as OrgCollectionsComponent } from './organizations/vault/collections.component';
 import { GroupingsComponent as OrgGroupingsComponent } from './organizations/vault/groupings.component';
 import { VaultComponent as OrgVaultComponent } from './organizations/vault/vault.component';
+
+import { ExposedPasswordsReportComponent } from './reports/exposed-passwords-report.component';
+import { InactiveTwoFactorReportComponent } from './reports/inactive-two-factor-report.component';
+import { ReportsComponent } from './reports/reports.component';
+import { ReusedPasswordsReportComponent } from './reports/reused-passwords-report.component';
+import { UnsecuredWebsitesReportComponent } from './reports/unsecured-websites-report.component';
+import { WeakPasswordsReportComponent } from './reports/weak-passwords-report.component';
 
 import { AccessComponent } from './send/access.component';
 import { AddEditComponent as SendAddEditComponent } from './send/add-edit.component';
@@ -151,16 +160,10 @@ import { VerifyEmailComponent } from './settings/verify-email.component';
 
 import { BreachReportComponent } from './tools/breach-report.component';
 import { ExportComponent } from './tools/export.component';
-import { ExposedPasswordsReportComponent } from './reports/exposed-passwords-report.component';
 import { ImportComponent } from './tools/import.component';
-import { InactiveTwoFactorReportComponent } from './reports/inactive-two-factor-report.component';
 import { PasswordGeneratorHistoryComponent } from './tools/password-generator-history.component';
 import { PasswordGeneratorComponent } from './tools/password-generator.component';
-import { ReusedPasswordsReportComponent } from './reports/reused-passwords-report.component';
 import { ToolsComponent } from './tools/tools.component';
-import { ReportsComponent } from './reports/reports.component'
-import { UnsecuredWebsitesReportComponent } from './reports/unsecured-websites-report.component';
-import { WeakPasswordsReportComponent } from './reports/weak-passwords-report.component';
 
 import { AddEditCustomFieldsComponent } from './vault/add-edit-custom-fields.component';
 import { AddEditComponent } from './vault/add-edit.component';
