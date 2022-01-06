@@ -5,7 +5,7 @@
     "placeholders": {
       "app_name": {
         "content": "$1",
-        "example": "Bravura Vault"
+        "example": "Bravura Safe"
       }
     }
   },
@@ -838,7 +838,7 @@
     "message": "Cet export chiffre vos données en utilisant la clé de chiffrement de votre compte. Si jamais vous modifiez la clé de chiffrement de votre compte, vous devriez exporter à nouveau car vous ne pourrez pas déchiffrer ce fichier."
   },
   "encExportAccountWarningDesc": {
-    "message": "Les clés de chiffrement du compte sont spécifiques à chaque utilisateur Bravura Vault. Vous ne pouvez donc pas importer d'export chiffré dans un compte différent."
+    "message": "Les clés de chiffrement du compte sont spécifiques à chaque utilisateur Bravura Safe. Vous ne pouvez donc pas importer d'export chiffré dans un compte différent."
   },
   "export": {
     "message": "Exporter"
@@ -931,7 +931,7 @@
     "message": "Veuillez vous reconnecter."
   },
   "logBackInOthersToo": {
-    "message": "Veuillez vous reconnecter. Si vous utilisez d'autres applications Bravura Vault, déconnectez-vous puis reconnectez-vous dans ces applications également."
+    "message": "Veuillez vous reconnecter. Si vous utilisez d'autres applications Bravura Safe, déconnectez-vous puis reconnectez-vous dans ces applications également."
   },
   "changeMasterPassword": {
     "message": "Modifier le mot de passe maître"
@@ -967,7 +967,7 @@
     }
   },
   "kdfIterationsWarning": {
-    "message": "Si vous définissez un nombre d'itérations KDF trop élevé, les performances risquent d'être mauvaises lorsque vous vous connectez (et déverrouillez) Bravura Vault sur des périphériques dont les processeurs sont plus lents. Nous vous recommandons d'augmenter la valeur par incréments de $INCREMENT$, puis de tester tous vos appareils.",
+    "message": "Si vous définissez un nombre d'itérations KDF trop élevé, les performances risquent d'être mauvaises lorsque vous vous connectez (et déverrouillez) Bravura Safe sur des périphériques dont les processeurs sont plus lents. Nous vous recommandons d'augmenter la valeur par incréments de $INCREMENT$, puis de tester tous vos appareils.",
     "placeholders": {
       "increment": {
         "content": "$1",
@@ -1132,7 +1132,7 @@
     "message": "Règles de domaine"
   },
   "domainRulesDesc": {
-    "message": "Si vous avez un même identifiant sur plusieurs noms de domaines différents, vous pouvez marquer le site web comme \"équivalent\". Des domaines \"globaux\" sont déjà créés pour vous par Bravura Vault."
+    "message": "Si vous avez un même identifiant sur plusieurs noms de domaines différents, vous pouvez marquer le site web comme \"équivalent\". Des domaines \"globaux\" sont déjà créés pour vous par Bravura Safe."
   },
   "globalEqDomains": {
     "message": "Domaines équivalents globaux"
@@ -1177,7 +1177,7 @@
     "message": "Exigez une connexion en deux étapes pour les utilisateurs de votre organisation en configurant les services au niveau de l'organisation."
   },
   "twoStepLoginRecoveryWarning": {
-    "message": "Activer la connexion en deux étapes peut vous empêcher définitivement d'accéder à votre compte Bravura Vault. Un code de récupération vous permet d'accéder à votre compte dans le cas où vous ne pouvez plus utiliser votre service de connexion en deux étapes habituel (ex. vous perdez votre appareil). Le support Bravura Vault ne pourra pas vous aider si vous perdez l'accès à votre compte. Nous vous recommandons d'écrire ou d'imprimer le code de récupération et de le conserver en lieu sûr."
+    "message": "Activer la connexion en deux étapes peut vous empêcher définitivement d'accéder à votre compte Bravura Safe. Un code de récupération vous permet d'accéder à votre compte dans le cas où vous ne pouvez plus utiliser votre service de connexion en deux étapes habituel (ex. vous perdez votre appareil). Le support Bravura Safe ne pourra pas vous aider si vous perdez l'accès à votre compte. Nous vous recommandons d'écrire ou d'imprimer le code de récupération et de le conserver en lieu sûr."
   },
   "viewRecoveryCode": {
     "message": "Voir le code de récupération"
@@ -1278,7 +1278,7 @@
     "message": "Sauvegarder le contenu du formulaire."
   },
   "twoFactorYubikeyWarning": {
-    "message": "En raison de limitations de plateforme, les YubiKeys ne sont pas utilisables sur toutes les applications Bravura Vault. Vous devriez activer un autre fournisseur de connexion en deux étapes afin de pouvoir accéder à votre compte lorsque vous ne pouvez pas utiliser les YubiKeys. Plateformes prises en charge :"
+    "message": "En raison de limitations de plateforme, les YubiKeys ne sont pas utilisables sur toutes les applications Bravura Safe. Vous devriez activer un autre fournisseur de connexion en deux étapes afin de pouvoir accéder à votre compte lorsque vous ne pouvez pas utiliser les YubiKeys. Plateformes prises en charge :"
   },
   "twoFactorYubikeySupportUsb": {
     "message": "Coffre web, application de bureau, interface ligne de commande (CLI) et toutes les extensions de navigateur sur un appareil doté d'un port USB pouvant accepter votre YubiKey."
@@ -1329,7 +1329,7 @@
     "message": "Désactiver toutes les clés"
   },
   "twoFactorDuoDesc": {
-    "message": "Entrez les informations de l'application Bravura Vault provenant de votre panneau Duo Admin."
+    "message": "Entrez les informations de l'application Bravura Safe provenant de votre panneau Duo Admin."
   },
   "twoFactorDuoIntegrationKey": {
     "message": "Clé d'intégration"
@@ -1380,7 +1380,7 @@
     "message": "Sauvegarder le contenu du formulaire."
   },
   "twoFactorU2fWarning": {
-    "message": "En raison de limitations de plateforme, FIDO U2F n'est pas utilisable sur toutes les applications Bravura Vault. Vous devriez activer un autre fournisseur de connexion en deux étapes afin de pouvoir accéder à votre compte lorsque vous ne pouvez pas utiliser FIDO U2F. Plateformes prises en charge :"
+    "message": "En raison de limitations de plateforme, FIDO U2F n'est pas utilisable sur toutes les applications Bravura Safe. Vous devriez activer un autre fournisseur de connexion en deux étapes afin de pouvoir accéder à votre compte lorsque vous ne pouvez pas utiliser FIDO U2F. Plateformes prises en charge :"
   },
   "twoFactorU2fSupportWeb": {
     "message": "Coffre web et extensions sur un ordinateur fixe/portable avec un navigateur compatible U2F (Chrome, Opera, Vivaldi ou Firefox avec FIDO U2F activé)."
@@ -1395,13 +1395,13 @@
     "message": "Un problème est survenu lors de la lecture de la clé de sécurité. Veuillez réessayer."
   },
   "twoFactorWebAuthnWarning": {
-    "message": "En raison de limitations de plateforme, WebAuthn n'est pas utilisable sur toutes les applications Bravura Vault. Vous devriez activer un autre fournisseur de connexion en deux étapes afin de pouvoir accéder à votre compte lorsque vous ne pouvez pas utiliser WebAuthn. Plateformes prises en charge :"
+    "message": "En raison de limitations de plateforme, WebAuthn n'est pas utilisable sur toutes les applications Bravura Safe. Vous devriez activer un autre fournisseur de connexion en deux étapes afin de pouvoir accéder à votre compte lorsque vous ne pouvez pas utiliser WebAuthn. Plateformes prises en charge :"
   },
   "twoFactorWebAuthnSupportWeb": {
     "message": "Coffre web et extensions sur un ordinateur fixe/portable avec un navigateur compatible WebAuthn (Chrome, Opera, Vivaldi ou Firefox avec FIDO U2F activé)."
   },
   "twoFactorRecoveryYourCode": {
-    "message": "Votre code de récupération de connexion en deux étapes Bravura Vault"
+    "message": "Votre code de récupération de connexion en deux étapes Bravura Safe"
   },
   "twoFactorRecoveryNoCode": {
     "message": "Vous n'avez pas encore activé de fournisseur de connexion en deux étapes. Après avoir activé un fournisseur de connexion en deux étapes, vous pouvez consulter ici votre code de récupération."
@@ -1495,7 +1495,7 @@
     "message": "Rapport sur les mots de passe faibles"
   },
   "weakPasswordsReportDesc": {
-    "message": "Les mots de passe faibles peuvent être facilement devinés par des pirates informatiques et des outils automatisés qui sont utilisés pour pirater les mots de passe. Le générateur de mots de passe de Bravura Vault peut vous aider à créer des mots de passe forts."
+    "message": "Les mots de passe faibles peuvent être facilement devinés par des pirates informatiques et des outils automatisés qui sont utilisés pour pirater les mots de passe. Le générateur de mots de passe de Bravura Safe peut vous aider à créer des mots de passe forts."
   },
   "weakPasswordsFound": {
     "message": "Mots de passe faibles trouvés"
@@ -1606,11 +1606,11 @@
   },
   "accountCredit": {
     "message": "Compte créditeur",
-    "description": "Financial term. In the case of Bravura Vault, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Vault owes you money)."
+    "description": "Financial term. In the case of Bravura Safe, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Safe owes you money)."
   },
   "accountBalance": {
     "message": "Solde du compte",
-    "description": "Financial term. In the case of Bravura Vault, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Vault owes you money)."
+    "description": "Financial term. In the case of Bravura Safe, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Safe owes you money)."
   },
   "addCredit": {
     "message": "Ajouter du crédit",
@@ -2216,7 +2216,7 @@
     "message": "Inviter un utilisateur"
   },
   "inviteUserDesc": {
-    "message": "Invitez de nouveaux utilisateurs à votre organisation en entrant l'adresse e-mail de leur compte Bravura Vault ci-dessous. S'ils n’ont pas déjà un compte Bravura Vault, il leur sera demandé d'en créer un nouveau."
+    "message": "Invitez de nouveaux utilisateurs à votre organisation en entrant l'adresse e-mail de leur compte Bravura Safe ci-dessous. S'ils n’ont pas déjà un compte Bravura Safe, il leur sera demandé d'en créer un nouveau."
   },
   "inviteMultipleEmailDesc": {
     "message": "Vous pouvez inviter jusqu'à $COUNT$ utilisateurs à la fois en séparant les adresses e-mail par une virgule.",
@@ -2732,7 +2732,7 @@
     "message": "Rejoindre l'organisation"
   },
   "joinOrganizationDesc": {
-    "message": "Vous avez été invité à rejoindre l'organisation ci-dessus. Pour accepter l'invitation, vous devez vous connecter ou créer un nouveau compte Bravura Vault."
+    "message": "Vous avez été invité à rejoindre l'organisation ci-dessus. Pour accepter l'invitation, vous devez vous connecter ou créer un nouveau compte Bravura Safe."
   },
   "inviteAccepted": {
     "message": "Invitation acceptée"
@@ -2774,7 +2774,7 @@
     "message": "Si votre compte existe, nous vous avons envoyé un e-mail avec des instructions supplémentaires."
   },
   "deleteRecoverConfirmDesc": {
-    "message": "Vous avez demandé de supprimer votre compte Bravura Vault. Cliquez sur le bouton ci-dessous pour confirmer."
+    "message": "Vous avez demandé de supprimer votre compte Bravura Safe. Cliquez sur le bouton ci-dessous pour confirmer."
   },
   "myOrganization": {
     "message": "Mon organisation"
@@ -3011,7 +3011,7 @@
     "message": "Nous sommes passés à des clés de chiffrement plus longues qui fournissent une meilleure sécurité et permettent l'accès à de nouvelles fonctionnalités. La mise à jour de votre clé de chiffrement est rapide et facile. Tapez simplement votre mot de passe maître ci-dessous. Cette mise à jour deviendra peut-être obligatoire."
   },
   "updateEncryptionKeyWarning": {
-    "message": "Après avoir mis à jour votre clé de chiffrement, vous devrez vous reconnecter sur toutes les applications Bravura Vault que vous utilisez actuellement (comme par exemple l'application mobile ou les extensions de navigateur). Le fait de ne pas vous déconnecter et de vous reconnecter (ce qui télécharge votre nouvelle clé de chiffrement) pourrait entraîner une corruption des données. Nous allons essayer de vous déconnecter automatiquement, mais cela demande un peu de temps."
+    "message": "Après avoir mis à jour votre clé de chiffrement, vous devrez vous reconnecter sur toutes les applications Bravura Safe que vous utilisez actuellement (comme par exemple l'application mobile ou les extensions de navigateur). Le fait de ne pas vous déconnecter et de vous reconnecter (ce qui télécharge votre nouvelle clé de chiffrement) pourrait entraîner une corruption des données. Nous allons essayer de vous déconnecter automatiquement, mais cela demande un peu de temps."
   },
   "updateEncryptionKeyExportWarning": {
     "message": "Tous les exports chiffrés que vous avez enregistrés deviendront également invalides."
@@ -3131,7 +3131,7 @@
     "message": "Mot de passe maître faible"
   },
   "weakMasterPasswordDesc": {
-    "message": "Le mot de passe maître que vous avez choisi est faible. Vous devriez utiliser un mot de passe (ou une phrase de passe) fort(e) pour protéger correctement votre compte Bravura Vault. Êtes-vous sûr de vouloir utiliser ce mot de passe maître ?"
+    "message": "Le mot de passe maître que vous avez choisi est faible. Vous devriez utiliser un mot de passe (ou une phrase de passe) fort(e) pour protéger correctement votre compte Bravura Safe. Êtes-vous sûr de vouloir utiliser ce mot de passe maître ?"
   },
   "rotateAccountEncKey": {
     "message": "Révoquer également la clé de chiffrement de mon compte"
@@ -3175,7 +3175,7 @@
     "message": "Clé d'API"
   },
   "apiKeyDesc": {
-    "message": "Votre clé d'API peut être utilisée pour s'authentifier auprès de l'API publique Bravura Vault."
+    "message": "Votre clé d'API peut être utilisée pour s'authentifier auprès de l'API publique Bravura Safe."
   },
   "apiKeyRotateDesc": {
     "message": "Révoquer la clé d'API invalidera la clé précédente. Vous pouvez révoquer votre clé d'API si vous pensez que la clé actuelle a été compromise."
@@ -3184,7 +3184,7 @@
     "message": "Votre clé d'API a un accès complet à l'organisation. Elle doit être gardée secrète."
   },
   "userApiKeyDesc": {
-    "message": "Votre clé d'API peut être utilisée pour vous authentifier dans l'interface ligne de commande (CLI) de Bravura Vault."
+    "message": "Votre clé d'API peut être utilisée pour vous authentifier dans l'interface ligne de commande (CLI) de Bravura Safe."
   },
   "userApiKeyWarning": {
     "message": "Votre clé d'API est un mécanisme d'authentification alternatif. Elle doit être gardée secrète."
@@ -3454,7 +3454,7 @@
     "message": "Empêcher les utilisateurs de pouvoir rejoindre d'autres organisations."
   },
   "singleOrgBlockCreateMessage": {
-    "message": "Votre organisation actuelle a une politique qui ne vous permet pas de rejoindre plus d'une organisation. Veuillez contacter les administrateurs de votre organisation ou vous inscrire à partir d'un compte Bravura Vault différent."
+    "message": "Votre organisation actuelle a une politique qui ne vous permet pas de rejoindre plus d'une organisation. Veuillez contacter les administrateurs de votre organisation ou vous inscrire à partir d'un compte Bravura Safe différent."
   },
   "singleOrgPolicyWarning": {
     "message": "Les membres de l'organisation qui ne sont ni propriétaires ni administrateurs et qui sont déjà membres d'une autre organisation seront retirés de votre organisation."
@@ -3485,78 +3485,78 @@
   },
   "createSend": {
     "message": "Créer un nouveau Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "editSend": {
     "message": "Modifier le Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "createdSend": {
     "message": "Send créé",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "editedSend": {
     "message": "Send modifié",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "deletedSend": {
     "message": "Send supprimé",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "deleteSend": {
     "message": "Supprimer le Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "deleteSendConfirmation": {
     "message": "Êtes-vous sûr de vouloir supprimer ce Send ?",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "whatTypeOfSend": {
     "message": "De quel type de Send s'agit-il ?",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "deletionDate": {
     "message": "Date de suppression"
   },
   "deletionDateDesc": {
     "message": "Le Send sera définitivement supprimé à la date et heure spécifiées.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "expirationDate": {
     "message": "Date d'expiration"
   },
   "expirationDateDesc": {
     "message": "Si défini, l'accès à ce Send expirera à la date et heure spécifiées.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "maxAccessCount": {
     "message": "Nombre maximum d'accès"
   },
   "maxAccessCountDesc": {
     "message": "Si défini, les utilisateurs ne seront plus en mesure d'accéder à ce Send une fois que le nombre maximum d'accès sera atteint.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "currentAccessCount": {
     "message": "Nombre d'accès actuel"
   },
   "sendPasswordDesc": {
     "message": "Vous pouvez, si vous le souhaitez, exiger un mot de passe pour accéder à ce Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendNotesDesc": {
     "message": "Notes privées à propos de ce Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "disabled": {
     "message": "Désactivé"
   },
   "sendLink": {
     "message": "Lien du Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "copySendLink": {
     "message": "Copier le lien du Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "removePassword": {
     "message": "Supprimer le mot de passe"
@@ -3572,7 +3572,7 @@
   },
   "disableThisSend": {
     "message": "Désactiver ce Send pour que personne ne puisse y accéder.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "allSends": {
     "message": "Tous les Sends"
@@ -3588,34 +3588,34 @@
   },
   "searchSends": {
     "message": "Rechercher dans les Sends",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendProtectedPassword": {
     "message": "Ce Send est protégé par un mot de passe. Veuillez saisir le mot de passe ci-dessous pour continuer.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
     "message": "Vous ne connaissez pas le mot de passe ? Demandez à l'expéditeur le mot de passe nécessaire pour accéder à ce Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendHiddenByDefault": {
     "message": "Ce Send est masqué par défaut. Vous pouvez changer sa visibilité en utilisant le bouton ci-dessous.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "downloadFile": {
     "message": "Télécharger le fichier"
   },
   "sendAccessUnavailable": {
     "message": "Le Send que vous essayez d'accéder n'existe pas ou n'est plus disponible.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "missingSendFile": {
     "message": "Le fichier associé à ce Send est introuvable.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "noSendsInList": {
     "message": "Il n'y a aucun Send à afficher.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "emergencyAccess": {
     "message": "Accès d'urgence"
@@ -3648,7 +3648,7 @@
     "message": "Modifier le contact d'urgence"
   },
   "inviteEmergencyContactDesc": {
-    "message": "Invitez un nouveau contact d'urgence en entrant l'adresse e-mail de leur compte Bravura Vault ci-dessous. S'ils n'ont pas encore de compte Bravura Vault, ils seront invités à en créer un."
+    "message": "Invitez un nouveau contact d'urgence en entrant l'adresse e-mail de leur compte Bravura Safe ci-dessous. S'ils n'ont pas encore de compte Bravura Safe, ils seront invités à en créer un."
   },
   "emergencyAccessRecoveryInitiated": {
     "message": "Accès d'urgence initié"
@@ -3687,7 +3687,7 @@
     "message": "Utilisateur invité."
   },
   "acceptEmergencyAccess": {
-    "message": "Vous avez été invité à devenir un contact d'urgence pour l'utilisateur indiqué ci-dessus. Pour accepter l'invitation, vous devez vous connecter ou créer un nouveau compte Bravura Vault."
+    "message": "Vous avez été invité à devenir un contact d'urgence pour l'utilisateur indiqué ci-dessus. Pour accepter l'invitation, vous devez vous connecter ou créer un nouveau compte Bravura Safe."
   },
   "emergencyInviteAcceptFailed": {
     "message": "Impossible d'accepter l'invitation. Demandez à l'utilisateur d'envoyer une nouvelle invitation."
@@ -3775,41 +3775,41 @@
     "message": "Désactiver le Send"
   },
   "disableSendPolicyDesc": {
-    "message": "Ne pas autoriser les utilisateurs à créer ou modifier un Send Bravura Vault. La suppression d'un envoi existant est toujours autorisée.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "message": "Ne pas autoriser les utilisateurs à créer ou modifier un Send Bravura Safe. La suppression d'un envoi existant est toujours autorisée.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "disableSendExemption": {
     "message": "Les utilisateurs de l'organisation qui peuvent gérer les politiques de l'organisation sont exonérés de l'application de cette politique."
   },
   "sendDisabled": {
     "message": "Send désactivé",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendDisabledWarning": {
     "message": "En raison d'une politique d'entreprise, vous ne pouvez que supprimer un Send existant.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendOptions": {
     "message": "Options Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendOptionsPolicyDesc": {
     "message": "Définir les options pour la création et la modification des Sends.",
-    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendOptionsExemption": {
     "message": "Les utilisateurs de l'organisation qui peuvent gérer les politiques de l'organisation sont exonérés de l'application de cette politique."
   },
   "disableHideEmail": {
     "message": "Interdire aux utilisateurs de masquer leur adresse e-mail aux destinataires lors de la création ou de la modification d'un Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendOptionsPolicyInEffect": {
     "message": "Les politiques d'organisation suivantes sont actuellement en vigueur :"
   },
   "sendDisableHideEmailInEffect": {
     "message": "Les utilisateurs ne sont pas autorisés à masquer leur adresse e-mail aux destinataires lors de la création ou de la modification d'un Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "modifiedPolicyId": {
     "message": "Politique $ID$ modifiée.",
@@ -3903,11 +3903,11 @@
   },
   "textHiddenByDefault": {
     "message": "Lors de l'accès à ce Send, masquer le texte par défaut",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendNameDesc": {
     "message": "Un nom convivial pour décrire ce Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendTextDesc": {
     "message": "Le texte que vous voulez envoyer."
@@ -3920,19 +3920,19 @@
   },
   "sendLinkLabel": {
     "message": "Lien du Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "send": {
     "message": "Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendAccessTaglineProductDesc": {
-    "message": "Les Send Bravura Vault permettent d'envoyer des informations sensibles et temporaires à d'autres, facilement et en toute sécurité.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "message": "Les Send Bravura Safe permettent d'envoyer des informations sensibles et temporaires à d'autres, facilement et en toute sécurité.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendAccessTaglineLearnMore": {
     "message": "Apprenez-en plus sur",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Vault Send or sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Safe Send or sign up to try it today.'"
   },
   "sendVaultCardProductDesc": {
     "message": "Partagez du texte ou des fichiers directement avec n'importe qui."
@@ -3959,18 +3959,18 @@
   },
   "sendAccessTaglineOr": {
     "message": "ou",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send **or** sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send **or** sign up to try it today.'"
   },
   "sendAccessTaglineSignUp": {
     "message": "inscrivez-vous",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send or **sign up** to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send or **sign up** to try it today.'"
   },
   "sendAccessTaglineTryToday": {
     "message": "pour l'essayer dès aujourd'hui.",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send or sign up to **try it today.**'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send or sign up to **try it today.**'"
   },
   "sendCreatorIdentifier": {
-    "message": "L'utilisateur Bravura Vault $USER_IDENTIFIER$ a partagé ce qui suit avec vous",
+    "message": "L'utilisateur Bravura Safe $USER_IDENTIFIER$ a partagé ce qui suit avec vous",
     "placeholders": {
       "user_identifier": {
         "content": "$1",
@@ -3979,8 +3979,8 @@
     }
   },
   "viewSendHiddenEmailWarning": {
-    "message": "L'utilisateur Bravura Vault qui a créé ce Send a choisi de masquer son adresse e-mail. Vous devez vous assurer que vous faites confiance à la source de ce lien avant d'utiliser ou de télécharger son contenu.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "message": "L'utilisateur Bravura Safe qui a créé ce Send a choisi de masquer son adresse e-mail. Vous devez vous assurer que vous faites confiance à la source de ce lien avant d'utiliser ou de télécharger son contenu.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "expirationDateIsInvalid": {
     "message": "La date d'expiration indiquée n'est pas valide."
@@ -4199,7 +4199,7 @@
     "message": "Configuration du Fournisseur"
   },
   "setupProviderLoginDesc": {
-    "message": "Vous avez été invité à configurer un nouveau fournisseur. Pour continuer, vous devez vous connecter ou créer un nouveau compte Bravura Vault."
+    "message": "Vous avez été invité à configurer un nouveau fournisseur. Pour continuer, vous devez vous connecter ou créer un nouveau compte Bravura Safe."
   },
   "setupProviderDesc": {
     "message": "Veuillez entrer les détails ci-dessous pour finaliser la configuration du fournisseur. Contactez le Service à la Clientèle si vous avez des questions."
@@ -4226,13 +4226,13 @@
     "message": "Les utilisateurs du service peuvent accéder et gérer toutes les organisations clientes."
   },
   "providerInviteUserDesc": {
-    "message": "Invitez un nouvel utilisateur à votre fournisseur en entrant l'adresse courriel de son compte Bravura Vault ci-dessous. S'ils n'ont pas déjà de compte Bravura Vault, ils seront invités à créer un nouveau compte."
+    "message": "Invitez un nouvel utilisateur à votre fournisseur en entrant l'adresse courriel de son compte Bravura Safe ci-dessous. S'ils n'ont pas déjà de compte Bravura Safe, ils seront invités à créer un nouveau compte."
   },
   "joinProvider": {
     "message": "Rejoindre le Fournisseur"
   },
   "joinProviderDesc": {
-    "message": "Vous avez été invité à rejoindre le fournisseur ci-dessus. Pour accepter l'invitation, vous devez vous connecter ou créer un nouveau compte Bravura Vault."
+    "message": "Vous avez été invité à rejoindre le fournisseur ci-dessus. Pour accepter l'invitation, vous devez vous connecter ou créer un nouveau compte Bravura Safe."
   },
   "providerInviteAcceptFailed": {
     "message": "Impossible d'accepter l'invitation. Demandez à un administrateur du fournisseur d'envoyer une nouvelle invitation."
@@ -4489,16 +4489,16 @@
     "message": "La configuration de l'Authentification Unique a été enregistrée."
   },
   "sponsoredFamilies": {
-    "message": "Bravura Vault Familles Gratuit"
+    "message": "Bravura Safe Familles Gratuit"
   },
   "sponsoredFamiliesEligible": {
-    "message": "Vous et votre famille êtes éligibles pour Bravura Vault Familles Gratuit. Réclamez-le avec votre courriel personnel pour garder vos données en sécurité même lorsque vous n'êtes pas au travail."
+    "message": "Vous et votre famille êtes éligibles pour Bravura Safe Familles Gratuit. Réclamez-le avec votre courriel personnel pour garder vos données en sécurité même lorsque vous n'êtes pas au travail."
   },
   "sponsoredFamiliesEligibleCard": {
-    "message": "Réclamez votre abonnement Bravura Vault pour les Familles Gratuit aujourd'hui pour garder vos données en sécurité même lorsque vous n'êtes pas au travail."
+    "message": "Réclamez votre abonnement Bravura Safe pour les Familles Gratuit aujourd'hui pour garder vos données en sécurité même lorsque vous n'êtes pas au travail."
   },
   "sponsoredFamiliesInclude": {
-    "message": "L'abonnement Bravura Vault pour les Familles inclut"
+    "message": "L'abonnement Bravura Safe pour les Familles inclut"
   },
   "sponsoredFamiliesPremiumAccess": {
     "message": "Accès premium pour un maximum de 6 utilisateurs"
@@ -4522,7 +4522,7 @@
     "message": "Quelle offre de Familles Gratuites aimeriez-vous réclamer?"
   },
   "sponsoredFamiliesEmail": {
-    "message": "Entrez votre adresse courriel personnelle pour réclamer Bravura Vault Familles"
+    "message": "Entrez votre adresse courriel personnelle pour réclamer Bravura Safe Familles"
   },
   "sponsoredFamiliesLeaveCopy": {
     "message": "Si vous quittez ou que vous êtes retiré de cette organisation, votre forfait Familles expirera à la fin de la période de facturation."
@@ -4531,7 +4531,7 @@
     "message": "Accepter une offre pour une organisation existante ou créer une nouvelle organisation Familles."
   },
   "setupSponsoredFamiliesLoginDesc": {
-    "message": "Vous avez reçu une offre gratuite pour une Organisation de l'Abonnement Familles de Bravura Vault. Pour continuer, vous devez vous connecter au compte qui a reçu l'offre."
+    "message": "Vous avez reçu une offre gratuite pour une Organisation de l'Abonnement Familles de Bravura Safe. Pour continuer, vous devez vous connecter au compte qui a reçu l'offre."
   },
   "sponsoredFamiliesAcceptFailed": {
     "message": "Impossible d'accepter l'offre. Veuillez renvoyer le courriel de l'offre de votre compte d'entreprise et réessayer."
@@ -4546,10 +4546,10 @@
     }
   },
   "sponsoredFamiliesOffer": {
-    "message": "Réclamez l'Offre Gratuite de l'Organisation Bravura Vault Familles"
+    "message": "Réclamez l'Offre Gratuite de l'Organisation Bravura Safe Familles"
   },
   "sponsoredFamiliesOfferRedeemed": {
-    "message": "L'offre gratuite de Bravura Vault Familles a été réclamée avec succès"
+    "message": "L'offre gratuite de Bravura Safe Familles a été réclamée avec succès"
   },
   "redeemed": {
     "message": "Réclamée"

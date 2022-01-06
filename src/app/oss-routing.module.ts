@@ -170,7 +170,7 @@ const routes: Routes = [
             {
                 path: 'send/:sendId/:key',
                 component: AccessComponent,
-                data: { title: 'Bravura Vault Send' },
+                data: { title: 'Bravura Safe Send' },
             },
             {
                 path: 'update-temp-password',

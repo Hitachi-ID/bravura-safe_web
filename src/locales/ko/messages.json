@@ -5,7 +5,7 @@
     "placeholders": {
       "app_name": {
         "content": "$1",
-        "example": "Bravura Vault"
+        "example": "Bravura Safe"
       }
     }
   },
@@ -838,7 +838,7 @@
     "message": "이 내보내기는 계정의 암호화 키를 사용하여 데이터를 암호화합니다. 추후 계정의 암호화 키를 교체할 경우 다시 내보내기를 진행해야 합니다. 그러지 않을 경우 이 내보내기 파일을 해독할 수 없게 됩니다."
   },
   "encExportAccountWarningDesc": {
-    "message": "모든 Bravura Vault 사용자 계정은 고유한 계정 암호화 키를 가지고 있습니다. 따라서, 다른 계정에서는 암호화된 내보내기를 가져올 수 없습니다."
+    "message": "모든 Bravura Safe 사용자 계정은 고유한 계정 암호화 키를 가지고 있습니다. 따라서, 다른 계정에서는 암호화된 내보내기를 가져올 수 없습니다."
   },
   "export": {
     "message": "내보내기"
@@ -931,7 +931,7 @@
     "message": "다시 로그인해 주세요."
   },
   "logBackInOthersToo": {
-    "message": "다시 로그인해 주세요. 다른 Bravura Vault 앱을 사용 중인 경우 해당 앱에서도 다시 로그인해야 합니다."
+    "message": "다시 로그인해 주세요. 다른 Bravura Safe 앱을 사용 중인 경우 해당 앱에서도 다시 로그인해야 합니다."
   },
   "changeMasterPassword": {
     "message": "마스터 비밀번호 변경"
@@ -967,7 +967,7 @@
     }
   },
   "kdfIterationsWarning": {
-    "message": "KDF 반복자를 너무 높게 설정하면 CPU가 느린 장치에서 Bravura Vault에 로그인(및 잠금 해제)할 때 성능이 저하될 수 있습니다. $INCREMENT$ 단위로 값을 올려가며 모든 장치를 테스트하는 것이 좋습니다.",
+    "message": "KDF 반복자를 너무 높게 설정하면 CPU가 느린 장치에서 Bravura Safe에 로그인(및 잠금 해제)할 때 성능이 저하될 수 있습니다. $INCREMENT$ 단위로 값을 올려가며 모든 장치를 테스트하는 것이 좋습니다.",
     "placeholders": {
       "increment": {
         "content": "$1",
@@ -1132,7 +1132,7 @@
     "message": "도메인 규칙"
   },
   "domainRulesDesc": {
-    "message": "여러 웹 사이트 도메인에 대해 동일한 로그인이 있는 경우, 웹 사이트가 \"유사\"하다고 표시할 수 있습니다. \"전역\" 도메인은 Bravura Vault에서 당신을 위해 이미 생성했습니다."
+    "message": "여러 웹 사이트 도메인에 대해 동일한 로그인이 있는 경우, 웹 사이트가 \"유사\"하다고 표시할 수 있습니다. \"전역\" 도메인은 Bravura Safe에서 당신을 위해 이미 생성했습니다."
   },
   "globalEqDomains": {
     "message": "전역 유사 도메인"
@@ -1177,7 +1177,7 @@
     "message": "조직 수준에서 제공자를 구성하여 조직 내 사용자에게 2단계 로그인을 요구합니다."
   },
   "twoStepLoginRecoveryWarning": {
-    "message": "2단계 로그인을 활성화하면 Bravura Vault 계정을 영원히 잠글 수 있습니다. 복구 코드를 사용하면 정상적인 2단계 로그인 제공자를 더 이상 사용할 수 없는 경우(예. 장치를 잃어버렸을 때) 계정에 액세스할 수 있습니다. 계정에 접근하지 못한다면 Bravura Vault 지원팀은 어떤 도움도 줄 수 없습니다. 복구 코드를 기록하거나 출력하여 안전한 장소에 보관할 것을 권장합니다."
+    "message": "2단계 로그인을 활성화하면 Bravura Safe 계정을 영원히 잠글 수 있습니다. 복구 코드를 사용하면 정상적인 2단계 로그인 제공자를 더 이상 사용할 수 없는 경우(예. 장치를 잃어버렸을 때) 계정에 액세스할 수 있습니다. 계정에 접근하지 못한다면 Bravura Safe 지원팀은 어떤 도움도 줄 수 없습니다. 복구 코드를 기록하거나 출력하여 안전한 장소에 보관할 것을 권장합니다."
   },
   "viewRecoveryCode": {
     "message": "복구 코드"
@@ -1278,7 +1278,7 @@
     "message": "폼 저장하기"
   },
   "twoFactorYubikeyWarning": {
-    "message": "플랫폼 제한으로 인해, 모든 Bravura Vault 애플리케이션에서 YubiKey를 사용할 수 없습니다. YubiKey를 사용할 수 없을 때 계정에 접근할 수 있도록 다른 2단계 로그인 제공자를 활성화하십시오. 지원하는 플랫폼:"
+    "message": "플랫폼 제한으로 인해, 모든 Bravura Safe 애플리케이션에서 YubiKey를 사용할 수 없습니다. YubiKey를 사용할 수 없을 때 계정에 접근할 수 있도록 다른 2단계 로그인 제공자를 활성화하십시오. 지원하는 플랫폼:"
   },
   "twoFactorYubikeySupportUsb": {
     "message": "웹 보관함, 데스크톱 응용프로그램, 명령 줄 인터페이스, USB 포트가 있는 장치의 브라우저 확장 기능은 YubiKey를 사용할 수 있습니다."
@@ -1329,7 +1329,7 @@
     "message": "Disable All Keys"
   },
   "twoFactorDuoDesc": {
-    "message": "Duo 관리자 패널에서 Bravura Vault 애플리케이션 정보를 입력하십시오."
+    "message": "Duo 관리자 패널에서 Bravura Safe 애플리케이션 정보를 입력하십시오."
   },
   "twoFactorDuoIntegrationKey": {
     "message": "Integration Key"
@@ -1380,7 +1380,7 @@
     "message": "폼 저장하기"
   },
   "twoFactorU2fWarning": {
-    "message": "플랫폼 제한으로 인해, 모든 Bravura Vault 애플리케이션에서 FIDO U2F를 사용할 수 없습니다. FIDO U2F를 사용할 수 없을 때 계정에 접근할 수 있도록 다른 2단계 로그인 제공자를 활성화하십시오. 지원하는 플랫폼:"
+    "message": "플랫폼 제한으로 인해, 모든 Bravura Safe 애플리케이션에서 FIDO U2F를 사용할 수 없습니다. FIDO U2F를 사용할 수 없을 때 계정에 접근할 수 있도록 다른 2단계 로그인 제공자를 활성화하십시오. 지원하는 플랫폼:"
   },
   "twoFactorU2fSupportWeb": {
     "message": "U2F 지원 브라우저가 있는 데스크탑/랩탑의 웹 보관함 및 브라우저 확장 (FIDO U2F가 활성화된 Chrome, Opera, Vivaldi 또는 Firefox 사용)"
@@ -1395,13 +1395,13 @@
     "message": "보안 키를 읽어오는데 문제가 발생했습니다. 다시 시도해보십시오."
   },
   "twoFactorWebAuthnWarning": {
-    "message": "플랫폼 제한으로 인해, 모든 Bravura Vault 애플리케이션에서 WebAuthn을 사용할 수 없습니다. WebAuthn을 사용할 수 없을 때 계정에 접근할 수 있도록 다른 2단계 로그인 방법을 활성화하십시오. 지원하는 플랫폼:"
+    "message": "플랫폼 제한으로 인해, 모든 Bravura Safe 애플리케이션에서 WebAuthn을 사용할 수 없습니다. WebAuthn을 사용할 수 없을 때 계정에 접근할 수 있도록 다른 2단계 로그인 방법을 활성화하십시오. 지원하는 플랫폼:"
   },
   "twoFactorWebAuthnSupportWeb": {
     "message": "WebAuthn 지원 브라우저가 있는 데스크탑/랩탑의 웹 보관함 및 브라우저 확장 (WebAuthn이 활성화된 Chrome, Opera, Vivaldi 또는 Firefox 사용)"
   },
   "twoFactorRecoveryYourCode": {
-    "message": "Bravura Vault 2단계 로그인 복구 코드"
+    "message": "Bravura Safe 2단계 로그인 복구 코드"
   },
   "twoFactorRecoveryNoCode": {
     "message": "아직 2단계 로그인 제공자를 사용하도록 설정하지 않았습니다. 2단계 로그인 제공자를 사용하도록 설정한 후 여기에서 복구 코드를 확인하십시오."
@@ -1495,7 +1495,7 @@
     "message": "취약한 비밀번호 보고서"
   },
   "weakPasswordsReportDesc": {
-    "message": "취약한 비밀번호는 해커와 암호 해독에 사용되는 자동화 도구로 쉽게 짐작할 수 있습니다. Bravura Vault 암호 생성기는 강력한 암호를 만드는데 도움을 줄 것입니다."
+    "message": "취약한 비밀번호는 해커와 암호 해독에 사용되는 자동화 도구로 쉽게 짐작할 수 있습니다. Bravura Safe 암호 생성기는 강력한 암호를 만드는데 도움을 줄 것입니다."
   },
   "weakPasswordsFound": {
     "message": "취약한 비밀번호가 발견됨"
@@ -1606,11 +1606,11 @@
   },
   "accountCredit": {
     "message": "계정 크레딧",
-    "description": "Financial term. In the case of Bravura Vault, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Vault owes you money)."
+    "description": "Financial term. In the case of Bravura Safe, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Safe owes you money)."
   },
   "accountBalance": {
     "message": "계정 잔액",
-    "description": "Financial term. In the case of Bravura Vault, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Vault owes you money)."
+    "description": "Financial term. In the case of Bravura Safe, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Safe owes you money)."
   },
   "addCredit": {
     "message": "크레딧 추가",
@@ -2216,7 +2216,7 @@
     "message": "사용자 초대"
   },
   "inviteUserDesc": {
-    "message": "아래에 Bravura Vault 계정 이메일 주소를 입력하여 조직에 새 사용자를 초대하십시오. Bravura Vault 계정을 가지고 있지 않다면, 새로운 계정을 만들라는 메시지가 표시됩니다."
+    "message": "아래에 Bravura Safe 계정 이메일 주소를 입력하여 조직에 새 사용자를 초대하십시오. Bravura Safe 계정을 가지고 있지 않다면, 새로운 계정을 만들라는 메시지가 표시됩니다."
   },
   "inviteMultipleEmailDesc": {
     "message": "이메일 주소 목록을 쉼표(,)로 구분하여 한 번에 최대 $COUNT$명의 사용자를 초대할 수 있습니다.",
@@ -2732,7 +2732,7 @@
     "message": "조직 참가"
   },
   "joinOrganizationDesc": {
-    "message": "이 조직에서 귀하에게 가입 초대를 보냈습니다. 초대를 수락하려면 로그인하거나 Bravura Vault 계정을 생성해야 합니다."
+    "message": "이 조직에서 귀하에게 가입 초대를 보냈습니다. 초대를 수락하려면 로그인하거나 Bravura Safe 계정을 생성해야 합니다."
   },
   "inviteAccepted": {
     "message": "초대 수락됨"
@@ -3011,7 +3011,7 @@
     "message": "우리는 더 나은 보안 및 새로운 기능에 대한 액세스를 제공하는 더 큰 암호화 키로 이동했습니다. 암호화 키를 업데이트하는 것은 빠르고 쉽습니다. 그저 마스터 비밀번호를 입력하면 됩니다. 이 업데이트는 결국 필수사항이 될 것입니다."
   },
   "updateEncryptionKeyWarning": {
-    "message": "암호화 키를 업데이트하고난 후 현재 사용 중인 모든 Bravura Vault 애플리케이션(예. 모바일 앱 혹은 브라우저 확장 기능)에서 로그아웃 후 다시 로그인해야 합니다. 재로그인하지 않으면 (새 암호화 키를 다운로드받는 경우) 데이터 손실이 발생할 수 있습니다. 자동으로 로그아웃을 시도하지만 지연될 수 있습니다."
+    "message": "암호화 키를 업데이트하고난 후 현재 사용 중인 모든 Bravura Safe 애플리케이션(예. 모바일 앱 혹은 브라우저 확장 기능)에서 로그아웃 후 다시 로그인해야 합니다. 재로그인하지 않으면 (새 암호화 키를 다운로드받는 경우) 데이터 손실이 발생할 수 있습니다. 자동으로 로그아웃을 시도하지만 지연될 수 있습니다."
   },
   "updateEncryptionKeyExportWarning": {
     "message": "이전에 암호화 상태로 내보내기하여 저장한 데이터도 무효화됩니다."
@@ -3131,7 +3131,7 @@
     "message": "취약한 마스터 비밀번호"
   },
   "weakMasterPasswordDesc": {
-    "message": "선택한 마스터 비밀번호는 취약합니다. Bravura Vault 계정을 확실히 보호하려면 강력한 마스터 비밀번호(혹은 패스프레이즈)를 사용해야 합니다. 정말 이 마스터 비밀번호를 사용하시겠습니까?"
+    "message": "선택한 마스터 비밀번호는 취약합니다. Bravura Safe 계정을 확실히 보호하려면 강력한 마스터 비밀번호(혹은 패스프레이즈)를 사용해야 합니다. 정말 이 마스터 비밀번호를 사용하시겠습니까?"
   },
   "rotateAccountEncKey": {
     "message": "내 계정의 암호화 키 회전"
@@ -3175,7 +3175,7 @@
     "message": "API 키"
   },
   "apiKeyDesc": {
-    "message": "API 키를 사용하여 Bravura Vault 공용 API에 인증할 수 있습니다."
+    "message": "API 키를 사용하여 Bravura Safe 공용 API에 인증할 수 있습니다."
   },
   "apiKeyRotateDesc": {
     "message": "API 키를 교체하면 이전 키는 무효화됩니다. 현재 키가 더 이상 안전하지 않다고 판단되면 API 키를 교체할 수 있습니다."
@@ -3184,7 +3184,7 @@
     "message": "귀하의 API 키는 조직에 대한 전체 액세스 권한을 가집니다. 이것은 비밀로 해야 합니다."
   },
   "userApiKeyDesc": {
-    "message": "API 키를 사용하여 Bravura Vault CLI에 인증할 수 있습니다."
+    "message": "API 키를 사용하여 Bravura Safe CLI에 인증할 수 있습니다."
   },
   "userApiKeyWarning": {
     "message": "당신의 API 키는 대체 인증 수단입니다. 안전하게 보관해주세요."
@@ -3454,7 +3454,7 @@
     "message": "사용자들이 다른 조직에 가입하지 못하도록 제한합니다."
   },
   "singleOrgBlockCreateMessage": {
-    "message": "현재 조직에 하나 이상의 조직에 참가할 수 없도록 정책이 지정되어 있습니다. 조직 관리자에게 문의하거나 다른 Bravura Vault 계정으로 로그앤해주세요."
+    "message": "현재 조직에 하나 이상의 조직에 참가할 수 없도록 정책이 지정되어 있습니다. 조직 관리자에게 문의하거나 다른 Bravura Safe 계정으로 로그앤해주세요."
   },
   "singleOrgPolicyWarning": {
     "message": "소유자 또는 관리자가 아닌 조직 구성원 및 이미 다른 조직의 구성원인 경우 이 조직에서 제거됩니다."
@@ -3485,78 +3485,78 @@
   },
   "createSend": {
     "message": "새 Send 생성",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "editSend": {
     "message": "Send 편집",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "createdSend": {
     "message": "Send 생성함",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "editedSend": {
     "message": "Send 수정함",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "deletedSend": {
     "message": "Send 삭제함",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "deleteSend": {
     "message": "Send 삭제",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "deleteSendConfirmation": {
     "message": "정말 이 Send를 삭제하시겠습니까?",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "whatTypeOfSend": {
     "message": "어떤 유형의 Send인가요?",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "deletionDate": {
     "message": "삭제 날짜"
   },
   "deletionDateDesc": {
     "message": "이 Send가 정해진 일시에 영구적으로 삭제됩니다.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "expirationDate": {
     "message": "만료일"
   },
   "expirationDateDesc": {
     "message": "설정할 경우, 이 Send에 대한 접근 권한이 정해진 일시에 만료됩니다.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "maxAccessCount": {
     "message": "최대 접근 횟수"
   },
   "maxAccessCountDesc": {
     "message": "설정할 경우, 최대 접근 횟수에 도달할 때 이 Send에 접근할 수 없게 됩니다.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "currentAccessCount": {
     "message": "현재 접근 횟수"
   },
   "sendPasswordDesc": {
     "message": "이 Send에 접근하기 위해 암호를 입력하도록 선택적으로 요구합니다.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendNotesDesc": {
     "message": "이 Send에 대한 비공개 메모",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "disabled": {
     "message": "비활성화됨"
   },
   "sendLink": {
     "message": "Send 링크",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "copySendLink": {
     "message": "Send 링크 복사",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "removePassword": {
     "message": "비밀번호 제거"
@@ -3572,7 +3572,7 @@
   },
   "disableThisSend": {
     "message": "이 Send를 비활성화하여 아무도 접근할 수 없게 합니다.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "allSends": {
     "message": "모든 Send"
@@ -3588,34 +3588,34 @@
   },
   "searchSends": {
     "message": "Send 검색",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendProtectedPassword": {
     "message": "이 Send는 비밀번호로 보호되어 있습니다. 계속하려면 비밀번호를 입력해주세요.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
     "message": "비밀번호를 모르시나요? 보낸 사람에게 Send에 접근할 수 있는 비밀번호를 요청하세요.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendHiddenByDefault": {
     "message": "이 Send는 기본적으로 숨겨져 있습니다. 아래의 버튼을 눌러 공개 여부를 전환할 수 있습니다.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "downloadFile": {
     "message": "파일 다운로드"
   },
   "sendAccessUnavailable": {
     "message": "접근하려고 하는 Send가 존재하지 않거나 더이상 제공되지 않습니다.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "missingSendFile": {
     "message": "이 Send와 연관된 파일을 찾을 수 없습니다.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "noSendsInList": {
     "message": "Send가 없습니다.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "emergencyAccess": {
     "message": "긴급 접근"
@@ -3648,7 +3648,7 @@
     "message": "긴급 연락처 편집"
   },
   "inviteEmergencyContactDesc": {
-    "message": "긴급 연락처로 초대하고자 하는 사람의 Bravura Vault 계정 이메일 주소를 아래에 입력하십시오. 초대받는 사람이 Bravura Vault 계정을 가지고 있지 않은 경우에는 새로운 계정을 만들라는 메시지가 표시될 것입니다."
+    "message": "긴급 연락처로 초대하고자 하는 사람의 Bravura Safe 계정 이메일 주소를 아래에 입력하십시오. 초대받는 사람이 Bravura Safe 계정을 가지고 있지 않은 경우에는 새로운 계정을 만들라는 메시지가 표시될 것입니다."
   },
   "emergencyAccessRecoveryInitiated": {
     "message": "긴급 접근 시작됨"
@@ -3687,7 +3687,7 @@
     "message": "사용자를 초대했습니다."
   },
   "acceptEmergencyAccess": {
-    "message": "위에 표시된 사용자가 자신의 긴급 연락처에 당신을 초대했습니다. 이 초대를 수락하기 위해서는 로그인하거나 새로운 Bravura Vault 계정을 만들어야 합니다."
+    "message": "위에 표시된 사용자가 자신의 긴급 연락처에 당신을 초대했습니다. 이 초대를 수락하기 위해서는 로그인하거나 새로운 Bravura Safe 계정을 만들어야 합니다."
   },
   "emergencyInviteAcceptFailed": {
     "message": "초대를 수락할 수 없습니다. 해당 사용자에게 새 초대장을 보내도록 요청하십시오."
@@ -3775,41 +3775,41 @@
     "message": "Send 비활성화"
   },
   "disableSendPolicyDesc": {
-    "message": "사용자가 Bravura Vault Send를 생성하거나 수정할 수 없게 합니다. 이미 생성된 Send를 삭제하는 것은 계속 허용됩니다.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "message": "사용자가 Bravura Safe Send를 생성하거나 수정할 수 없게 합니다. 이미 생성된 Send를 삭제하는 것은 계속 허용됩니다.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "disableSendExemption": {
     "message": "조직의 정책을 관리할 수 있는 사용자는 이 정책의 영향을 받지 않습니다."
   },
   "sendDisabled": {
     "message": "Send 비활성화됨",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendDisabledWarning": {
     "message": "엔터프라이즈 정책으로 인해 이미 생성된 Send를 삭제하는 것만 허용됩니다.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendOptions": {
     "message": "Send 설정",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendOptionsPolicyDesc": {
     "message": "Send를 생성하거나 수정하는 것과 관련된 옵션을 설정합니다.",
-    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendOptionsExemption": {
     "message": "조직의 정책을 관리할 수 있는 사용자는 이 정책의 영향을 받지 않습니다."
   },
   "disableHideEmail": {
     "message": "사용자가 Send를 생성하거나 수정할 때 받는 사람으로부터 자신의 이메일 주소를 숨기지 못하게 합니다.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendOptionsPolicyInEffect": {
     "message": "다음 단체 정책이 현재 영향을 미치고 있습니다:"
   },
   "sendDisableHideEmailInEffect": {
     "message": "사용자는 Send를 생성하거나 수정할 때 받는 사람으로부터 자신의 이메일 주소를 숨기지 못하게 됩니다.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "modifiedPolicyId": {
     "message": "$ID$ 정책을 편집했습니다.",
@@ -3903,11 +3903,11 @@
   },
   "textHiddenByDefault": {
     "message": "Send에 접근할 때 기본적으로 텍스트를 숨김",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendNameDesc": {
     "message": "이 Send의 이름",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendTextDesc": {
     "message": "전송하려는 텍스트"
@@ -3920,19 +3920,19 @@
   },
   "sendLinkLabel": {
     "message": "Send 링크",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "send": {
     "message": "Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendAccessTaglineProductDesc": {
-    "message": "Bravura Vault Send는 민감하고 일시적인 정보를 다른 사람들에게 쉽고 안전하게 보낼 수 있게 해줍니다.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "message": "Bravura Safe Send는 민감하고 일시적인 정보를 다른 사람들에게 쉽고 안전하게 보낼 수 있게 해줍니다.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendAccessTaglineLearnMore": {
     "message": "오늘",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Vault Send or sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Safe Send or sign up to try it today.'"
   },
   "sendVaultCardProductDesc": {
     "message": "다른 사람에게 텍스트 또는 파일을 공유하세요."
@@ -3959,18 +3959,18 @@
   },
   "sendAccessTaglineOr": {
     "message": "에 대해서 알아보거나",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send **or** sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send **or** sign up to try it today.'"
   },
   "sendAccessTaglineSignUp": {
     "message": "가입을",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send or **sign up** to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send or **sign up** to try it today.'"
   },
   "sendAccessTaglineTryToday": {
     "message": "해서 체험해보세요.",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send or sign up to **try it today.**'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send or sign up to **try it today.**'"
   },
   "sendCreatorIdentifier": {
-    "message": "Bravura Vault의 $USER_IDENTIFIER$ 사용자가 다음 내용을 당신과 공유했습니다",
+    "message": "Bravura Safe의 $USER_IDENTIFIER$ 사용자가 다음 내용을 당신과 공유했습니다",
     "placeholders": {
       "user_identifier": {
         "content": "$1",
@@ -3979,8 +3979,8 @@
     }
   },
   "viewSendHiddenEmailWarning": {
-    "message": "이 Send를 생성한 Bravura Vault 사용자가 자신의 이메일 주소를 숨겼습니다. 이 링크에 접속하거나 내용을 다운로드하기 전에, 이 링크의 출처를 신뢰하는지 확인하십시오.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "message": "이 Send를 생성한 Bravura Safe 사용자가 자신의 이메일 주소를 숨겼습니다. 이 링크에 접속하거나 내용을 다운로드하기 전에, 이 링크의 출처를 신뢰하는지 확인하십시오.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "expirationDateIsInvalid": {
     "message": "제공된 만료 날짜가 유효하지 않습니다."
@@ -4199,7 +4199,7 @@
     "message": "공급자 설정"
   },
   "setupProviderLoginDesc": {
-    "message": "You've been invited to setup a new provider. To continue, you need to log in or create a new Bravura Vault account."
+    "message": "You've been invited to setup a new provider. To continue, you need to log in or create a new Bravura Safe account."
   },
   "setupProviderDesc": {
     "message": "Please enter the details below to complete the provider setup. Contact Customer Support if you have any questions."
@@ -4226,13 +4226,13 @@
     "message": "Service users can access and manage all client organizations."
   },
   "providerInviteUserDesc": {
-    "message": "Invite a new user to your provider by entering their Bravura Vault account email address below. If they do not have a Bravura Vault account already, they will be prompted to create a new account."
+    "message": "Invite a new user to your provider by entering their Bravura Safe account email address below. If they do not have a Bravura Safe account already, they will be prompted to create a new account."
   },
   "joinProvider": {
     "message": "공급자 참가"
   },
   "joinProviderDesc": {
-    "message": "You've been invited to join the provider listed above. To accept the invitation, you need to log in or create a new Bravura Vault account."
+    "message": "You've been invited to join the provider listed above. To accept the invitation, you need to log in or create a new Bravura Safe account."
   },
   "providerInviteAcceptFailed": {
     "message": "Unable to accept invitation. Ask a provider admin to send a new invitation."
@@ -4489,16 +4489,16 @@
     "message": "Single Sign-On configuration was saved."
   },
   "sponsoredFamilies": {
-    "message": "Free Bravura Vault Families"
+    "message": "Free Bravura Safe Families"
   },
   "sponsoredFamiliesEligible": {
-    "message": "You and your family are eligible for Free Bravura Vault Families. Redeem with your personal email to keep your data secure even when you are not at work."
+    "message": "You and your family are eligible for Free Bravura Safe Families. Redeem with your personal email to keep your data secure even when you are not at work."
   },
   "sponsoredFamiliesEligibleCard": {
-    "message": "Redeem your Free Bravura Vault for Families plan today to keep your data secure even when you are not at work."
+    "message": "Redeem your Free Bravura Safe for Families plan today to keep your data secure even when you are not at work."
   },
   "sponsoredFamiliesInclude": {
-    "message": "The Bravura Vault for Families plan include"
+    "message": "The Bravura Safe for Families plan include"
   },
   "sponsoredFamiliesPremiumAccess": {
     "message": "Premium access for up to 6 users"
@@ -4522,7 +4522,7 @@
     "message": "Which Free Families offer would you like to redeem?"
   },
   "sponsoredFamiliesEmail": {
-    "message": "Enter your personal email to redeem Bravura Vault Families"
+    "message": "Enter your personal email to redeem Bravura Safe Families"
   },
   "sponsoredFamiliesLeaveCopy": {
     "message": "If you leave or are removed from the sponsoring organization, your Families plan will expire at the end of the billing period."
@@ -4531,7 +4531,7 @@
     "message": "Accept offer for an existing organization or create a new Families organization."
   },
   "setupSponsoredFamiliesLoginDesc": {
-    "message": "You've been offered a free Bravura Vault Families Plan Organization. To continue, you need to log in to the account that received the offer."
+    "message": "You've been offered a free Bravura Safe Families Plan Organization. To continue, you need to log in to the account that received the offer."
   },
   "sponsoredFamiliesAcceptFailed": {
     "message": "Unable to accept offer. Please resend the offer email from your enterprise account and try again."
@@ -4546,10 +4546,10 @@
     }
   },
   "sponsoredFamiliesOffer": {
-    "message": "Accept Free Bravura Vault Families"
+    "message": "Accept Free Bravura Safe Families"
   },
   "sponsoredFamiliesOfferRedeemed": {
-    "message": "Free Bravura Vault Families offer successfully redeemed"
+    "message": "Free Bravura Safe Families offer successfully redeemed"
   },
   "redeemed": {
     "message": "Redeemed"
@@ -4681,7 +4681,7 @@
     "message": "키 커넥터"
   },
   "memberDecryptionKeyConnectorDesc": {
-    "message": "Connect Login with SSO to your self-hosted decryption key server. Using this option, members won’t need to use their Master Passwords to decrypt vault data. Contact Bravura Vault Support for set up assistance."
+    "message": "Connect Login with SSO to your self-hosted decryption key server. Using this option, members won’t need to use their Master Passwords to decrypt vault data. Contact Bravura Safe Support for set up assistance."
   },
   "keyConnectorPolicyRestriction": {
     "message": "\"Login with SSO and Key Connector Decryption\" is enabled. This policy will only apply to Owners and Admins."

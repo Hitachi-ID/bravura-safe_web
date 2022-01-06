@@ -5,7 +5,7 @@
     "placeholders": {
       "app_name": {
         "content": "$1",
-        "example": "Bravura Vault"
+        "example": "Bravura Safe"
       }
     }
   },
@@ -838,7 +838,7 @@
     "message": "Αυτή η εξαγωγή κρυπτογραφεί τα δεδομένα σας χρησιμοποιώντας το κλειδί κρυπτογράφησης του λογαριασμού σας. Εάν ποτέ περιστρέψετε το κλειδί κρυπτογράφησης του λογαριασμού σας, θα πρέπει να κάνετε εξαγωγή ξανά, καθώς δεν θα μπορείτε να αποκρυπτογραφήσετε αυτό το αρχείο εξαγωγής."
   },
   "encExportAccountWarningDesc": {
-    "message": "Τα κλειδιά κρυπτογράφησης λογαριασμού είναι μοναδικά για κάθε λογαριασμό χρήστη Bravura Vault, οπότε δεν μπορείτε να εισάγετε μια κρυπτογραφημένη εξαγωγή σε διαφορετικό λογαριασμό."
+    "message": "Τα κλειδιά κρυπτογράφησης λογαριασμού είναι μοναδικά για κάθε λογαριασμό χρήστη Bravura Safe, οπότε δεν μπορείτε να εισάγετε μια κρυπτογραφημένη εξαγωγή σε διαφορετικό λογαριασμό."
   },
   "export": {
     "message": "Εξαγωγή"
@@ -931,7 +931,7 @@
     "message": "Παρακαλούμε συνδεθείτε ξανά."
   },
   "logBackInOthersToo": {
-    "message": "Παρακαλούμε συνδεθείτε ξανά. Εάν χρησιμοποιείτε άλλες εφαρμογές Bravura Vault, αποσυνδεθείτε και επιστρέψτε σε αυτές επίσης."
+    "message": "Παρακαλούμε συνδεθείτε ξανά. Εάν χρησιμοποιείτε άλλες εφαρμογές Bravura Safe, αποσυνδεθείτε και επιστρέψτε σε αυτές επίσης."
   },
   "changeMasterPassword": {
     "message": "Αλλαγή Κύριου Κωδικού"
@@ -967,7 +967,7 @@
     }
   },
   "kdfIterationsWarning": {
-    "message": "Η ρύθμιση των επαναλήψεων KDF σε υπερβολικά υψηλά επίπεδα μπορεί να οδηγήσει σε κακή απόδοση κατά τη σύνδεση (και ξεκλειδώματος) του Bravura Vault σε συσκευές με βραδύτερους CPU. Σας συνιστούμε να αυξήσετε την τιμή σε $INCREMENT$ και στη συνέχεια να δοκιμάσετε όλες τις συσκευές σας.",
+    "message": "Η ρύθμιση των επαναλήψεων KDF σε υπερβολικά υψηλά επίπεδα μπορεί να οδηγήσει σε κακή απόδοση κατά τη σύνδεση (και ξεκλειδώματος) του Bravura Safe σε συσκευές με βραδύτερους CPU. Σας συνιστούμε να αυξήσετε την τιμή σε $INCREMENT$ και στη συνέχεια να δοκιμάσετε όλες τις συσκευές σας.",
     "placeholders": {
       "increment": {
         "content": "$1",
@@ -1132,7 +1132,7 @@
     "message": "Κανόνες Tομέα"
   },
   "domainRulesDesc": {
-    "message": "Αν έχετε την ίδια σύνδεση σε πολλούς διαφορετικούς τομείς ιστοσελίδων, μπορείτε να την επισημάνετε \"Ταυτόσημη\". Οι \"Παγκόσμιοι\" τομείς θα δημιουργηθούν για εσάς από το Bravura Vault."
+    "message": "Αν έχετε την ίδια σύνδεση σε πολλούς διαφορετικούς τομείς ιστοσελίδων, μπορείτε να την επισημάνετε \"Ταυτόσημη\". Οι \"Παγκόσμιοι\" τομείς θα δημιουργηθούν για εσάς από το Bravura Safe."
   },
   "globalEqDomains": {
     "message": "Παγκόσμιοι Tαυτόσημοι Tομείς"
@@ -1177,7 +1177,7 @@
     "message": "Απαιτήστε σύνδεση σε δύο βήματα για τους χρήστες του οργανισμού σας, ρυθμίζοντας τους παρόχους σε επίπεδο οργανισμού."
   },
   "twoStepLoginRecoveryWarning": {
-    "message": "Η ενεργοποίηση σύνδεσης δύο βημάτων μπορεί να κλειδώσει οριστικά το λογαριασμό σας από το Bravura Vault. Ένας κωδικός ανάκτησης σάς επιτρέπει να έχετε πρόσβαση στον λογαριασμό σας σε περίπτωση που δεν μπορείτε πλέον να χρησιμοποιήσετε τη σύνδεση δύο βημάτων (π. χ. χάνετε τη συσκευή σας). Η υποστήριξη πελατών του Bravura Vault δεν θα είναι σε θέση να σας βοηθήσει αν χάσετε την πρόσβαση στο λογαριασμό σας. Συνιστούμε να γράψετε ή να εκτυπώσετε τον κωδικό ανάκτησης και να τον φυλάξετε σε ασφαλές μέρος."
+    "message": "Η ενεργοποίηση σύνδεσης δύο βημάτων μπορεί να κλειδώσει οριστικά το λογαριασμό σας από το Bravura Safe. Ένας κωδικός ανάκτησης σάς επιτρέπει να έχετε πρόσβαση στον λογαριασμό σας σε περίπτωση που δεν μπορείτε πλέον να χρησιμοποιήσετε τη σύνδεση δύο βημάτων (π. χ. χάνετε τη συσκευή σας). Η υποστήριξη πελατών του Bravura Safe δεν θα είναι σε θέση να σας βοηθήσει αν χάσετε την πρόσβαση στο λογαριασμό σας. Συνιστούμε να γράψετε ή να εκτυπώσετε τον κωδικό ανάκτησης και να τον φυλάξετε σε ασφαλές μέρος."
   },
   "viewRecoveryCode": {
     "message": "Προβολή Κωδικού Ανάκτησης"
@@ -1278,7 +1278,7 @@
     "message": "Αποθηκεύστε τη φόρμα."
   },
   "twoFactorYubikeyWarning": {
-    "message": "Λόγω περιορισμών της πλατφόρμας, το YubiKey δεν μπορεί να χρησιμοποιηθεί σε όλες τις εφαρμογές του Bravura Vault. Θα πρέπει να ενεργοποιήσετε έναν άλλο πάροχο σύνδεσης δύο βημάτων, ώστε να έχετε πρόσβαση στον λογαριασμό σας όταν δεν θα μπορείτε να χρησιμοποιήσετε το YubiKey. Υποστηριζόμενες πλατφόρμες:"
+    "message": "Λόγω περιορισμών της πλατφόρμας, το YubiKey δεν μπορεί να χρησιμοποιηθεί σε όλες τις εφαρμογές του Bravura Safe. Θα πρέπει να ενεργοποιήσετε έναν άλλο πάροχο σύνδεσης δύο βημάτων, ώστε να έχετε πρόσβαση στον λογαριασμό σας όταν δεν θα μπορείτε να χρησιμοποιήσετε το YubiKey. Υποστηριζόμενες πλατφόρμες:"
   },
   "twoFactorYubikeySupportUsb": {
     "message": "Web vault, εφαρμογή υπολογιστή, CLI και όλες τις επεκτάσεις του προγράμματος περιήγησης σε μια συσκευή με θύρα USB που μπορεί να δεχτεί YubiKey."
@@ -1329,7 +1329,7 @@
     "message": "Απενεργοποίηση Όλων των Κλειδιών"
   },
   "twoFactorDuoDesc": {
-    "message": "Καταχωρίστε τις πληροφορίες εφαρμογής Bravura Vault από τον πίνακα διαχειριστή Duo."
+    "message": "Καταχωρίστε τις πληροφορίες εφαρμογής Bravura Safe από τον πίνακα διαχειριστή Duo."
   },
   "twoFactorDuoIntegrationKey": {
     "message": "Κλειδί Ολοκλήρωσης"
@@ -1380,7 +1380,7 @@
     "message": "Αποθηκεύστε τη φόρμα."
   },
   "twoFactorU2fWarning": {
-    "message": "Λόγω περιορισμών της πλατφόρμας, το YubiKey δεν μπορεί να χρησιμοποιηθεί σε όλες τις εφαρμογές του Bravura Vault. Θα πρέπει να ενεργοποιήσετε έναν άλλο πάροχο σύνδεσης δύο βημάτων, ώστε να έχετε πρόσβαση στον λογαριασμό σας όταν δεν μπορείτε να χρησιμοποιήσετε το YubiKey. Υποστηριζόμενες πλατφόρμες:"
+    "message": "Λόγω περιορισμών της πλατφόρμας, το YubiKey δεν μπορεί να χρησιμοποιηθεί σε όλες τις εφαρμογές του Bravura Safe. Θα πρέπει να ενεργοποιήσετε έναν άλλο πάροχο σύνδεσης δύο βημάτων, ώστε να έχετε πρόσβαση στον λογαριασμό σας όταν δεν μπορείτε να χρησιμοποιήσετε το YubiKey. Υποστηριζόμενες πλατφόρμες:"
   },
   "twoFactorU2fSupportWeb": {
     "message": "Web vault και επεκτάσεις προγραμμάτων περιήγησης σε επιτραπέζιο/φορητό υπολογιστή με ενεργοποιημένη τη δυνατότητα U2F (Chrome, Opera, Vivaldi ή Firefox με ενεργοποιημένο το FIDO U2F)."
@@ -1395,13 +1395,13 @@
     "message": "Παρουσιάστηκε πρόβλημα κατά την ανάγνωση του κλειδιού ασφαλείας. Προσπάθησε ξανά."
   },
   "twoFactorWebAuthnWarning": {
-    "message": "Λόγω περιορισμών της πλατφόρμας, το WebAuthn δεν μπορεί να χρησιμοποιηθεί σε όλες τις εφαρμογές Bravura Vault. Θα πρέπει να ενεργοποιήσετε έναν άλλο πάροχο σύνδεσης δύο βημάτων, ώστε να έχετε πρόσβαση στο λογαριασμό σας όταν δεν μπορεί να χρησιμοποιηθεί το WebAuthn. Υποστηριζόμενες πλατφόρμες:"
+    "message": "Λόγω περιορισμών της πλατφόρμας, το WebAuthn δεν μπορεί να χρησιμοποιηθεί σε όλες τις εφαρμογές Bravura Safe. Θα πρέπει να ενεργοποιήσετε έναν άλλο πάροχο σύνδεσης δύο βημάτων, ώστε να έχετε πρόσβαση στο λογαριασμό σας όταν δεν μπορεί να χρησιμοποιηθεί το WebAuthn. Υποστηριζόμενες πλατφόρμες:"
   },
   "twoFactorWebAuthnSupportWeb": {
     "message": "Web vault και επεκτάσεις browser σε έναν σταθερό / φορητό υπολογιστή με ένα πρόγραμμα περιήγησης WebAuthn (Chrome, Opera, Vivaldi, ή Firefox με FIDO U2F ενεργοποιημένο)."
   },
   "twoFactorRecoveryYourCode": {
-    "message": "Ο Bravura Vault κωδικός ανάκτησης, εισόδου δύο βημάτων"
+    "message": "Ο Bravura Safe κωδικός ανάκτησης, εισόδου δύο βημάτων"
   },
   "twoFactorRecoveryNoCode": {
     "message": "Δεν έχετε ενεργοποιήσει κάποιον πάροχο σύνδεσης δύο παραγόντων ακόμα. Αφού ενεργοποιήσετε έναν πάροχο σύνδεσης, μπορείτε να ελέγξετε εδώ, για τον κωδικό ανάκτησης."
@@ -1495,7 +1495,7 @@
     "message": "Αναφορά Αδύναμων Κωδικών"
   },
   "weakPasswordsReportDesc": {
-    "message": "Οι αδύναμοι κωδικοί μπορούν εύκολα να βρεθούν από τους χάκερ με τα αυτοματοποιημένα εργαλεία που χρησιμοποιούν για να σπάσουν τους κωδικούς. Η γεννήτρια κωδικού του Bravura Vault μπορεί να σας βοηθήσει να δημιουργήσετε ισχυρούς κωδικούς."
+    "message": "Οι αδύναμοι κωδικοί μπορούν εύκολα να βρεθούν από τους χάκερ με τα αυτοματοποιημένα εργαλεία που χρησιμοποιούν για να σπάσουν τους κωδικούς. Η γεννήτρια κωδικού του Bravura Safe μπορεί να σας βοηθήσει να δημιουργήσετε ισχυρούς κωδικούς."
   },
   "weakPasswordsFound": {
     "message": "Βρέθηκαν Αδύναμοι Κωδικοί"
@@ -1606,11 +1606,11 @@
   },
   "accountCredit": {
     "message": "Λογαριασμός Πίστωσης",
-    "description": "Financial term. In the case of Bravura Vault, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Vault owes you money)."
+    "description": "Financial term. In the case of Bravura Safe, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Safe owes you money)."
   },
   "accountBalance": {
     "message": "Υπόλοιπο Λογαριασμού",
-    "description": "Financial term. In the case of Bravura Vault, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Vault owes you money)."
+    "description": "Financial term. In the case of Bravura Safe, a positive balance means that you owe money, while a negative balance means that you have a credit (Bravura Safe owes you money)."
   },
   "addCredit": {
     "message": "Προσθήκη Μονάδων",
@@ -2216,7 +2216,7 @@
     "message": "Προσκαλέστε Χρήστη"
   },
   "inviteUserDesc": {
-    "message": "Προσκαλέστε έναν νέο χρήστη στον οργανισμό σας εισάγοντας παρακάτω τη διεύθυνση email του λογαριασμού Bravura Vault. Αν δεν έχουν ήδη λογαριασμό Bravura Vault, θα τους ζητηθεί να δημιουργήσουν ένα νέο λογαριασμό."
+    "message": "Προσκαλέστε έναν νέο χρήστη στον οργανισμό σας εισάγοντας παρακάτω τη διεύθυνση email του λογαριασμού Bravura Safe. Αν δεν έχουν ήδη λογαριασμό Bravura Safe, θα τους ζητηθεί να δημιουργήσουν ένα νέο λογαριασμό."
   },
   "inviteMultipleEmailDesc": {
     "message": "Μπορείτε να προσκαλέσετε στη λίστα σας μέχρι $COUNT$ χρήστες κάθε φορά διαχωρίζοντας με κόμμα κάθε διεύθυνση email.",
@@ -2732,7 +2732,7 @@
     "message": "Εγγραφή στον οργανισμό"
   },
   "joinOrganizationDesc": {
-    "message": "Έχετε προσκληθεί να συμμετάσχετε στον παραπάνω οργανισμό. Για να αποδεχτείτε την πρόσκληση, πρέπει να συνδεθείτε ή να δημιουργήσετε ένα νέο λογαριασμό Bravura Vault."
+    "message": "Έχετε προσκληθεί να συμμετάσχετε στον παραπάνω οργανισμό. Για να αποδεχτείτε την πρόσκληση, πρέπει να συνδεθείτε ή να δημιουργήσετε ένα νέο λογαριασμό Bravura Safe."
   },
   "inviteAccepted": {
     "message": "Η Πρόσκληση έγινε αποδεκτή"
@@ -2774,7 +2774,7 @@
     "message": "Εάν ο λογαριασμός σας υπάρχει ήδη, θα δείτε να σας έχουμε στείλει ένα email με περεταίρω οδηγίες."
   },
   "deleteRecoverConfirmDesc": {
-    "message": "Ζητήσατε να διαγράψετε το λογαριασμό Bravura Vault. Κάντε κλικ στο παρακάτω κουμπί για επιβεβαίωση."
+    "message": "Ζητήσατε να διαγράψετε το λογαριασμό Bravura Safe. Κάντε κλικ στο παρακάτω κουμπί για επιβεβαίωση."
   },
   "myOrganization": {
     "message": "Ο οργανισμός μου"
@@ -3011,7 +3011,7 @@
     "message": "Έχουμε μετακινηθεί σε μεγαλύτερα κλειδιά κρυπτογράφησης που παρέχουν καλύτερη ασφάλεια και πρόσβαση σε νεότερες λειτουργίες. Η ενημέρωση του κλειδιού κρυπτογράφησης είναι γρήγορη και εύκολη. Απλά πληκτρολογήστε τον κύριο κωδικό σας παρακάτω. Αυτή η ενημέρωση τελικά θα καταστεί υποχρεωτική."
   },
   "updateEncryptionKeyWarning": {
-    "message": "Μετά την ενημέρωση του κλειδιού κρυπτογράφησης, πρέπει να αποσυνδεθείτε και να επιστρέψετε σε όλες τις εφαρμογές Bravura Vault που χρησιμοποιείτε αυτήν τη στιγμή (όπως η εφαρμογή για κινητά ή οι επεκτάσεις του προγράμματος περιήγησης). Η αποτυχία αποσύνδεσης και επαναφοράς (στην οποία γίνεται λήψη του νέου κλειδιού κρυπτογράφησης) ενδέχεται να προκαλέσει καταστροφή δεδομένων. Θα προσπαθήσουμε να αποσυνδεθείτε αυτόματα, ωστόσο αυτό μπορεί να καθυστερήσει."
+    "message": "Μετά την ενημέρωση του κλειδιού κρυπτογράφησης, πρέπει να αποσυνδεθείτε και να επιστρέψετε σε όλες τις εφαρμογές Bravura Safe που χρησιμοποιείτε αυτήν τη στιγμή (όπως η εφαρμογή για κινητά ή οι επεκτάσεις του προγράμματος περιήγησης). Η αποτυχία αποσύνδεσης και επαναφοράς (στην οποία γίνεται λήψη του νέου κλειδιού κρυπτογράφησης) ενδέχεται να προκαλέσει καταστροφή δεδομένων. Θα προσπαθήσουμε να αποσυνδεθείτε αυτόματα, ωστόσο αυτό μπορεί να καθυστερήσει."
   },
   "updateEncryptionKeyExportWarning": {
     "message": "Οποιεσδήποτε κρυπτογραφημένες εξαγωγές που έχετε αποθηκεύσει θα είναι επίσης άκυρες."
@@ -3131,7 +3131,7 @@
     "message": "Αδύναμος Κύριος Κωδικός"
   },
   "weakMasterPasswordDesc": {
-    "message": "Ο κύριος κωδικός που έχετε επιλέξει είναι αδύναμος. Θα πρέπει να χρησιμοποιήσετε έναν ισχυρό κύριο κωδικό (ή μια φράση) για την κατάλληλη προστασία του λογαριασμού Bravura Vault. Είστε βέβαιοι ότι θέλετε να χρησιμοποιήσετε αυτόν τον κύριο κωδικό;"
+    "message": "Ο κύριος κωδικός που έχετε επιλέξει είναι αδύναμος. Θα πρέπει να χρησιμοποιήσετε έναν ισχυρό κύριο κωδικό (ή μια φράση) για την κατάλληλη προστασία του λογαριασμού Bravura Safe. Είστε βέβαιοι ότι θέλετε να χρησιμοποιήσετε αυτόν τον κύριο κωδικό;"
   },
   "rotateAccountEncKey": {
     "message": "Επίσης, περιστροφή κλειδιού κρυπτογράφησης του λογαριασμού μου"
@@ -3175,7 +3175,7 @@
     "message": "Kλειδί API"
   },
   "apiKeyDesc": {
-    "message": "Το κλειδί API μπορεί να χρησιμοποιηθεί για τον έλεγχο ταυτότητας στο δημόσιο API Bravura Vault."
+    "message": "Το κλειδί API μπορεί να χρησιμοποιηθεί για τον έλεγχο ταυτότητας στο δημόσιο API Bravura Safe."
   },
   "apiKeyRotateDesc": {
     "message": "Η περιστροφή του κλειδιού API θα ακυρώσει το προηγούμενο κλειδί. Μπορείτε να περιστρέψετε το κλειδί API αν πιστεύετε ότι το τρέχον κλειδί δεν είναι πλέον ασφαλές στη χρήση."
@@ -3184,7 +3184,7 @@
     "message": "Το κλειδί API έχει πλήρη πρόσβαση στον οργανισμό. Πρέπει να το κρατήσετε μυστικό."
   },
   "userApiKeyDesc": {
-    "message": "Το κλειδί API σας μπορεί να χρησιμοποιηθεί για έλεγχο ταυτότητας στο Bravura Vault CLI."
+    "message": "Το κλειδί API σας μπορεί να χρησιμοποιηθεί για έλεγχο ταυτότητας στο Bravura Safe CLI."
   },
   "userApiKeyWarning": {
     "message": "Το κλειδί API σας είναι ένας εναλλακτικός μηχανισμός ελέγχου ταυτότητας. Θα πρέπει να κρατηθεί μυστικό."
@@ -3454,7 +3454,7 @@
     "message": "Περιορίστε τους χρήστες να μην μπορούν να συμμετάσχουν σε άλλους οργανισμούς."
   },
   "singleOrgBlockCreateMessage": {
-    "message": "Ο τρέχων οργανισμός σας έχει μια πολιτική που δεν σας επιτρέπει να συμμετάσχετε σε περισσότερους από έναν οργανισμούς. Επικοινωνήστε με τους διαχειριστές του οργανισμού σας ή εγγραφείτε από διαφορετικό λογαριασμό Bravura Vault."
+    "message": "Ο τρέχων οργανισμός σας έχει μια πολιτική που δεν σας επιτρέπει να συμμετάσχετε σε περισσότερους από έναν οργανισμούς. Επικοινωνήστε με τους διαχειριστές του οργανισμού σας ή εγγραφείτε από διαφορετικό λογαριασμό Bravura Safe."
   },
   "singleOrgPolicyWarning": {
     "message": "Τα μέλη του οργανισμού που δεν είναι κάτοχοι ή διαχειριστές και είναι ήδη μέλη άλλου οργανισμού θα αφαιρεθούν από τον οργανισμό σας."
@@ -3485,78 +3485,78 @@
   },
   "createSend": {
     "message": "Δημιουργία Νέου Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "editSend": {
     "message": "Επεξεργασία Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "createdSend": {
     "message": "Το Send Δημιουργήθηκε",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "editedSend": {
     "message": "Το Send Επεξεργάστηκε",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "deletedSend": {
     "message": "Το Send Διαγράφηκε",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "deleteSend": {
     "message": "Διαγραφή Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "deleteSendConfirmation": {
     "message": "Είστε βέβαιοι ότι θέλετε να διαγράψετε το Send;",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "whatTypeOfSend": {
     "message": "Τι είδους Send είναι αυτό;",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "deletionDate": {
     "message": "Ημερομηνία διαγραφής"
   },
   "deletionDateDesc": {
     "message": "Το Send θα διαγραφεί οριστικά την καθορισμένη ημερομηνία και ώρα.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "expirationDate": {
     "message": "Ημερομηνία Λήξης"
   },
   "expirationDateDesc": {
     "message": "Εάν οριστεί, η πρόσβαση σε αυτό το Send θα λήξει την καθορισμένη ημερομηνία και ώρα.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "maxAccessCount": {
     "message": "Μέγιστος Αριθμός Πρόσβασης"
   },
   "maxAccessCountDesc": {
     "message": "Εάν οριστεί, οι χρήστες δεν θα μπορούν πλέον να έχουν πρόσβαση σε αυτό το send μόλις επιτευχθεί ο μέγιστος αριθμός πρόσβασης.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "currentAccessCount": {
     "message": "Τρέχων Αριθμός Πρόσβασης"
   },
   "sendPasswordDesc": {
     "message": "Προαιρετικά απαιτείται κωδικός πρόσβασης για τους χρήστες για να έχουν πρόσβαση σε αυτό το Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendNotesDesc": {
     "message": "Ιδιωτικές σημειώσεις σχετικά με αυτό το Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "disabled": {
     "message": "Απενεργοποιημένο"
   },
   "sendLink": {
     "message": "Αποστολή Συνδέσμου",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "copySendLink": {
     "message": "Αντιγραφή Συνδέσμου Αποστολής",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "removePassword": {
     "message": "Αφαίρεση κωδικού"
@@ -3572,7 +3572,7 @@
   },
   "disableThisSend": {
     "message": "Απενεργοποιήστε αυτό το Send έτσι ώστε κανείς να μην μπορεί να έχει πρόσβαση σε αυτό.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "allSends": {
     "message": "Όλα τα Sends"
@@ -3588,34 +3588,34 @@
   },
   "searchSends": {
     "message": "Αναζήτηση Sends",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendProtectedPassword": {
     "message": "Αυτό το Send προστατεύεται με κωδικό πρόσβασης. Πληκτρολογήστε τον κωδικό πρόσβασης παρακάτω για να συνεχίσετε.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
     "message": "Δεν γνωρίζετε τον κωδικό; Ζητήστε από τον αποστολέα τον κωδικό που απαιτείται για την πρόσβαση σε αυτό το Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendHiddenByDefault": {
     "message": "Αυτό το send είναι κρυμμένο από προεπιλογή. Μπορείτε να αλλάξετε την ορατότητά του χρησιμοποιώντας το παρακάτω κουμπί.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "downloadFile": {
     "message": "Λήψη Αρχείου"
   },
   "sendAccessUnavailable": {
     "message": "Το Send που προσπαθείτε να αποκτήσετε πρόσβαση, δεν υπάρχει ή δεν είναι πλέον διαθέσιμο.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "missingSendFile": {
     "message": "Το αρχείο που σχετίζεται με αυτό το Send δεν βρέθηκε.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "noSendsInList": {
     "message": "Δεν υπάρχουν Sends στη λίστα.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "emergencyAccess": {
     "message": "Πρόσβαση Έκτακτης Ανάγκης"
@@ -3648,7 +3648,7 @@
     "message": "Επεξεργασία επαφής έκτακτης ανάγκης"
   },
   "inviteEmergencyContactDesc": {
-    "message": "Προσκαλέστε μια νέα επαφή έκτακτης ανάγκης, εισάγοντας την διεύθυνση email τους, του λογαριασμού Bravura Vault, παρακάτω. Εάν δεν έχουν ήδη λογαριασμό Bravura Vault, θα τους ζητηθεί να δημιουργήσουν ένα νέο λογαριασμό."
+    "message": "Προσκαλέστε μια νέα επαφή έκτακτης ανάγκης, εισάγοντας την διεύθυνση email τους, του λογαριασμού Bravura Safe, παρακάτω. Εάν δεν έχουν ήδη λογαριασμό Bravura Safe, θα τους ζητηθεί να δημιουργήσουν ένα νέο λογαριασμό."
   },
   "emergencyAccessRecoveryInitiated": {
     "message": "Έναρξη Πρόσβασης Έκτακτης Ανάγκης"
@@ -3687,7 +3687,7 @@
     "message": "Προσκεκλημένος χρήστης."
   },
   "acceptEmergencyAccess": {
-    "message": "Έχετε προσκληθεί να γίνετε μια επαφή έκτακτης ανάγκης για τον χρήστη που αναφέρεται παραπάνω. Για να αποδεχτείτε την πρόσκληση, πρέπει να συνδεθείτε ή να δημιουργήσετε ένα νέο λογαριασμό Bravura Vault."
+    "message": "Έχετε προσκληθεί να γίνετε μια επαφή έκτακτης ανάγκης για τον χρήστη που αναφέρεται παραπάνω. Για να αποδεχτείτε την πρόσκληση, πρέπει να συνδεθείτε ή να δημιουργήσετε ένα νέο λογαριασμό Bravura Safe."
   },
   "emergencyInviteAcceptFailed": {
     "message": "Αδυναμία αποδοχής πρόσκλησης. Ζητήστε από τον χρήστη να στείλει μια νέα πρόσκληση."
@@ -3775,41 +3775,41 @@
     "message": "Απενεργοποίηση Αποστολής"
   },
   "disableSendPolicyDesc": {
-    "message": "Μην επιτρέπετε στους χρήστες να δημιουργήσουν ή να επεξεργαστούν μια Αποστολή Bravura Vault. Η διαγραφή μιας υπάρχουσας Αποστολής εξακολουθεί να επιτρέπεται.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "message": "Μην επιτρέπετε στους χρήστες να δημιουργήσουν ή να επεξεργαστούν μια Αποστολή Bravura Safe. Η διαγραφή μιας υπάρχουσας Αποστολής εξακολουθεί να επιτρέπεται.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "disableSendExemption": {
     "message": "Οι χρήστες του οργανισμού που μπορούν να διαχειριστούν τις πολιτικές του οργανισμού εξαιρούνται από την εφαρμογή αυτής της πολιτικής."
   },
   "sendDisabled": {
     "message": "Send Απενεργοποιημένο",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendDisabledWarning": {
     "message": "Λόγω μιας επιχειρηματικής πολιτικής, είστε σε θέση να διαγράψετε μόνο ένα υπάρχον Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendOptions": {
     "message": "Επιλογές Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendOptionsPolicyDesc": {
     "message": "Καθορίστε επιλογές για τη δημιουργία και επεξεργασία sends.",
-    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendOptionsExemption": {
     "message": "Οι χρήστες του οργανισμού που μπορούν να διαχειριστούν τις πολιτικές του οργανισμού εξαιρούνται από την εφαρμογή αυτής της πολιτικής."
   },
   "disableHideEmail": {
     "message": "Μην επιτρέπετε στους χρήστες να αποκρύψουν τη διεύθυνση email τους από τους παραλήπτες κατά τη δημιουργία ή την επεξεργασία ενός send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendOptionsPolicyInEffect": {
     "message": "Οι ακόλουθες οργανωτικές πολιτικές εφαρμόζονται επί του παρόντος:"
   },
   "sendDisableHideEmailInEffect": {
     "message": "Οι χρήστες δεν επιτρέπεται να αποκρύψουν τη διεύθυνση email τους από τους παραλήπτες κατά τη δημιουργία ή την επεξεργασία ενός send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "modifiedPolicyId": {
     "message": "Τροποποιημένη πολιτική $ID$.",
@@ -3903,11 +3903,11 @@
   },
   "textHiddenByDefault": {
     "message": "Κατά την πρόσβαση στην αποστολή, απόκρυψη του κειμένου από προεπιλογή",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendNameDesc": {
     "message": "Ένα φιλικό όνομα για την περιγραφή αυτού του Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendTextDesc": {
     "message": "Το κείμενο που θέλετε να στείλετε."
@@ -3920,19 +3920,19 @@
   },
   "sendLinkLabel": {
     "message": "Σύνδεσμος Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "send": {
     "message": "Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendAccessTaglineProductDesc": {
-    "message": "Το Bravura Vault Send μεταδίδει ευαίσθητες, προσωρινές πληροφορίες σε άλλους, εύκολα και με ασφάλεια.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "message": "Το Bravura Safe Send μεταδίδει ευαίσθητες, προσωρινές πληροφορίες σε άλλους, εύκολα και με ασφάλεια.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendAccessTaglineLearnMore": {
     "message": "Περισσότερες πληροφορίες για",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Vault Send or sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Safe Send or sign up to try it today.'"
   },
   "sendVaultCardProductDesc": {
     "message": "Κοινή χρήση κειμένου ή αρχείων απευθείας με οποιονδήποτε."
@@ -3959,18 +3959,18 @@
   },
   "sendAccessTaglineOr": {
     "message": "ή",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send **or** sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send **or** sign up to try it today.'"
   },
   "sendAccessTaglineSignUp": {
     "message": "εγγραφείτε",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send or **sign up** to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send or **sign up** to try it today.'"
   },
   "sendAccessTaglineTryToday": {
     "message": "για να το δοκιμάσετε σήμερα.",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Vault Send or sign up to **try it today.**'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send or sign up to **try it today.**'"
   },
   "sendCreatorIdentifier": {
-    "message": "Ο χρήστης Bravura Vault $USER_IDENTIFIER$ κοινοποίησε τα ακόλουθα μαζί σας",
+    "message": "Ο χρήστης Bravura Safe $USER_IDENTIFIER$ κοινοποίησε τα ακόλουθα μαζί σας",
     "placeholders": {
       "user_identifier": {
         "content": "$1",
@@ -3979,8 +3979,8 @@
     }
   },
   "viewSendHiddenEmailWarning": {
-    "message": "Ο χρήστης Bravura Vault που δημιούργησε αυτό το send έχει επιλέξει να κρύψει τη διεύθυνση email του. Πρέπει να διασφαλίσετε ότι εμπιστεύεστε την πηγή αυτού του συνδέσμου πριν χρησιμοποιήσετε ή κατεβάσετε το περιεχόμενό του.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Vault Send'. It should not be translated."
+    "message": "Ο χρήστης Bravura Safe που δημιούργησε αυτό το send έχει επιλέξει να κρύψει τη διεύθυνση email του. Πρέπει να διασφαλίσετε ότι εμπιστεύεστε την πηγή αυτού του συνδέσμου πριν χρησιμοποιήσετε ή κατεβάσετε το περιεχόμενό του.",
+    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "expirationDateIsInvalid": {
     "message": "Η ημερομηνία λήξης που δόθηκε δεν είναι έγκυρη."
@@ -4199,7 +4199,7 @@
     "message": "Ρύθμιση Παρόχου"
   },
   "setupProviderLoginDesc": {
-    "message": "Έχετε προσκληθεί να ρυθμίσετε έναν νέο πάροχο. Για να συνεχίσετε, πρέπει να συνδεθείτε ή να δημιουργήσετε ένα νέο λογαριασμό Bravura Vault."
+    "message": "Έχετε προσκληθεί να ρυθμίσετε έναν νέο πάροχο. Για να συνεχίσετε, πρέπει να συνδεθείτε ή να δημιουργήσετε ένα νέο λογαριασμό Bravura Safe."
   },
   "setupProviderDesc": {
     "message": "Παρακαλούμε εισάγετε τα παρακάτω στοιχεία για να ολοκληρώσετε την εγκατάσταση του παρόχου. Επικοινωνήστε με την Υποστήριξη πελατών αν έχετε οποιεσδήποτε απορίες."
@@ -4226,13 +4226,13 @@
     "message": "Οι χρήστες υπηρεσιών μπορούν να έχουν πρόσβαση και να διαχειρίζονται όλους τους οργανισμούς πελατών."
   },
   "providerInviteUserDesc": {
-    "message": "Προσκαλέστε έναν νέο χρήστη στον πάροχο σας εισάγοντας το email λογαριασμού Bravura Vault παρακάτω. Εάν δεν έχουν ήδη λογαριασμό Bravura Vault, θα τους ζητηθεί να δημιουργήσουν ένα νέο λογαριασμό."
+    "message": "Προσκαλέστε έναν νέο χρήστη στον πάροχο σας εισάγοντας το email λογαριασμού Bravura Safe παρακάτω. Εάν δεν έχουν ήδη λογαριασμό Bravura Safe, θα τους ζητηθεί να δημιουργήσουν ένα νέο λογαριασμό."
   },
   "joinProvider": {
     "message": "Συμμετοχή Στον Πάροχο"
   },
   "joinProviderDesc": {
-    "message": "Έχετε προσκληθεί να συμμετάσχετε στον παραπάνω πάροχο. Για να αποδεχτείτε την πρόσκληση, πρέπει να συνδεθείτε ή να δημιουργήσετε ένα νέο λογαριασμό Bravura Vault."
+    "message": "Έχετε προσκληθεί να συμμετάσχετε στον παραπάνω πάροχο. Για να αποδεχτείτε την πρόσκληση, πρέπει να συνδεθείτε ή να δημιουργήσετε ένα νέο λογαριασμό Bravura Safe."
   },
   "providerInviteAcceptFailed": {
     "message": "Αδυναμία αποδοχής πρόσκλησης. Ζητήστε από τον διαχειριστή του παρόχου να στείλει μια νέα πρόσκληση."
@@ -4489,16 +4489,16 @@
     "message": "Οι ρυθμίσεις για απλή σύνδεση αποθηκεύτηκαν."
   },
   "sponsoredFamilies": {
-    "message": "Δωρεάν Bravura Vault Families"
+    "message": "Δωρεάν Bravura Safe Families"
   },
   "sponsoredFamiliesEligible": {
-    "message": "Εσείς και η οικογένεια σας έχετε δικαίωμα για Δωρεάν Bravura Vault Families. Εξαργυρώστε με το προσωπικό σας email για να διατηρείτε τα δεδομένα σας ασφαλή ακόμα και όταν δεν εργάζεστε."
+    "message": "Εσείς και η οικογένεια σας έχετε δικαίωμα για Δωρεάν Bravura Safe Families. Εξαργυρώστε με το προσωπικό σας email για να διατηρείτε τα δεδομένα σας ασφαλή ακόμα και όταν δεν εργάζεστε."
   },
   "sponsoredFamiliesEligibleCard": {
-    "message": "Εξαργυρώστε το Δωρεάν Bravura Vault Families σήμερα για να διατηρήσουν τα δεδομένα σας ασφαλή ακόμα και όταν δεν είστε στη δουλειά."
+    "message": "Εξαργυρώστε το Δωρεάν Bravura Safe Families σήμερα για να διατηρήσουν τα δεδομένα σας ασφαλή ακόμα και όταν δεν είστε στη δουλειά."
   },
   "sponsoredFamiliesInclude": {
-    "message": "Το πλάνο Bravura Vault Families περιλαμβάνει"
+    "message": "Το πλάνο Bravura Safe Families περιλαμβάνει"
   },
   "sponsoredFamiliesPremiumAccess": {
     "message": "Premium πρόσβαση για έως 6 χρήστες"
@@ -4522,7 +4522,7 @@
     "message": "Ποια Free Families προσφορά θα θέλατε να εξαργυρώσετε;"
   },
   "sponsoredFamiliesEmail": {
-    "message": "Εισάγετε το προσωπικό σας email για να εξαργυρώσετε το Bravura Vault Families"
+    "message": "Εισάγετε το προσωπικό σας email για να εξαργυρώσετε το Bravura Safe Families"
   },
   "sponsoredFamiliesLeaveCopy": {
     "message": "Αν φύγετε ή απομακρυνθείτε από αυτόν τον οργανισμό, το πλάνο Families θα λήξει στο τέλος της περιόδου τιμολόγησης."
@@ -4531,7 +4531,7 @@
     "message": "Αποδοχή προσφοράς για έναν υπάρχοντα οργανισμό ή δημιουργία ενός νέου οργανισμού οικογενειών."
   },
   "setupSponsoredFamiliesLoginDesc": {
-    "message": "Έχετε προσφερθεί έναn δωρεάν οργανισμό πλάνου Bravura Vault Families. Για να συνεχίσετε, πρέπει να συνδεθείτε στο λογαριασμό που έλαβε την προσφορά."
+    "message": "Έχετε προσφερθεί έναn δωρεάν οργανισμό πλάνου Bravura Safe Families. Για να συνεχίσετε, πρέπει να συνδεθείτε στο λογαριασμό που έλαβε την προσφορά."
   },
   "sponsoredFamiliesAcceptFailed": {
     "message": "Δεν είναι δυνατή η αποδοχή προσφοράς. Παρακαλώ στείλτε ξανά το email προσφοράς από τον λογαριασμό επιχείρησής σας και προσπαθήστε ξανά."
@@ -4546,10 +4546,10 @@
     }
   },
   "sponsoredFamiliesOffer": {
-    "message": "Αποδοχή Δωρεάν Bravura Vault Families"
+    "message": "Αποδοχή Δωρεάν Bravura Safe Families"
   },
   "sponsoredFamiliesOfferRedeemed": {
-    "message": "H Δωρεάν προσφορά Bravura Vault Families, εξαργυρώθηκε με επιτυχία"
+    "message": "H Δωρεάν προσφορά Bravura Safe Families, εξαργυρώθηκε με επιτυχία"
   },
   "redeemed": {
     "message": "Εξαργυρώθηκε"

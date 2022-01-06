@@ -21,7 +21,7 @@ export class RouterService {
                 this.previousUrl = this.currentUrl;
                 this.currentUrl = event.url;
 
-                let title = i18nService.t('pageTitle', 'Bravura Vault');
+                let title = i18nService.t('pageTitle', 'Bravura Safe');
                 let titleId: string = null;
                 let rawTitle: string = null;
                 let child = this.activatedRoute.firstChild;
