@@ -57,9 +57,12 @@
 
     td.table-list-options {
         height: 50px;
-        max-width: 76px;
         text-align: right;
         width: 76px;
+        &.reduced-lh {
+            height: auto;
+            line-height: 1;
+        }
 
         &.wider {
             max-width: 100px;
@@ -69,6 +72,35 @@
         .btn {
             line-height: 1;
             transition: initial;
+        }
+
+        
+        .list-options {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            a.list-options-item {
+                padding: 7px 3px;
+                color: $table-options;
+                &:hover {
+                    background: $table-options-hover-bg;
+                    border-radius: 100px;
+                }
+                &:last-of-type {
+                    margin-right: 5px;
+                }
+            }
+            a.list-options-item.list-options-item-disable {
+                color: $table-options-disable;
+                cursor: default;
+                &:hover {
+                    background: inherit;
+                }
+            }
+        }
+
+        button.btn-outline-secondary {
+            color: $table-options;
         }
 
         .dropdown-menu {

@@ -11,6 +11,8 @@ $white: #FFFFFF;
 $primary-dark: #003c64;
 $primary-light: #e5eff6;
 
+$black: #000000;
+
 $theme-colors: (  
     "primary-accent": $primary-accent,
     "secondary-alt": $secondary-alt,
@@ -63,8 +65,11 @@ $input-focus-bg: $white;
 $input-disabled-bg: #E0E0E0;
 $input-placeholder-color: #B4B4B4;
 
-$table-accent-bg: rgba(#000000, .02);
+$table-options: rgba($black, 0.8);
+$table-options-disable: rgba($black, 0.2);
+$table-accent-bg: rgba($black, .02);
 $table-hover-bg: rgba($primary, 0.1);
+$table-options-hover-bg:rgba($black, 0.15);
 
 $modal-backdrop-opacity: 0.3;
 $btn-font-weight: 600;

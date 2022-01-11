@@ -9,9 +9,8 @@
                 <td (click)="checkCipher(c)" class="table-list-icon">
                     <app-vault-icon [cipher]="c"></app-vault-icon>
                 </td>
-                <td (click)="checkCipher(c)" class="reduced-lh wrap">
-                    <a href="#" appStopClick appStopProp (click)="selectCipher(c)"
-                        title="{{'editItem' | i18n}}">{{c.name}}</a>
+                <td (click)="selectCipher(c)" class="reduced-lh wrap" >
+                    <a href="#" appStopClick appStopProp (click)="selectCipher(c)" title="{{'editItem' | i18n}}">{{c.name}}</a>
                     <ng-container *ngIf="!organization && c.organizationId">
                         <i class="fa fa-cube" appStopProp title="{{'shared' | i18n}}" aria-hidden="true"></i>
                         <span class="sr-only">{{'shared' | i18n}}</span>
@@ -28,69 +27,65 @@
                     <br>
                     <small appStopProp>{{c.subTitle}}</small>
                 </td>
-                <td class="table-list-options">
-                    <div class="dropdown" appListDropdown>
-                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                            appA11yTitle="{{'options' | i18n}}">
-                            <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                            <ng-container *ngIf="c.type === cipherType.Login && !c.isDeleted">
+
+                <!-- table-list-options has height: 50px -->
+                <!-- reduced-lh has line-height: 1, which is height 49.95px. so it will cause a gap -->
+                <!-- best solution is to add reduced-lh class to these table-list-options items, make them the same line-height -->
+                <td class="table-list-options reduced-lh">
+                    <div class="list-options">
+                        <ng-container *ngIf="c.type === cipherType.Login && !c.isDeleted">
+                            <a class="list-options-item" [ngClass]="{'list-options-item-disable': !c.login.canLaunch}" href="#" appStopClick (click)="launch(c.login.launchUri)">
+                                <i class="fa fa-fw fa-share-square-o fa-lg" aria-hidden="true" title="{{'launch' | i18n}}"></i>
+                            </a>
+                            <a class="list-options-item" [ngClass]="{'list-options-item-disable': !c.login.username}" href="#" appStopClick (click)="copy(c, c.login.username, 'username', 'Username')">
+                                <i class="fa fa-fw fa-user fa-lg" aria-hidden="true" title="{{'copyUsername' | i18n}}"></i>
+                            </a>
+                            <a class="list-options-item" [ngClass]="{'list-options-item-disable': !c.login.password}" href="#" appStopClick (click)="copy(c, c.login.password, 'password', 'Password')">
+                                <i class="fa fa-fw fa-key fa-lg" aria-hidden="true" title="{{'copyPassword' | i18n}}"></i>
+                            </a>
+                            <a class="list-options-item" [ngClass]="{'list-options-item-disable': !displayTotpCopyButton(c)}" href="#" appStopClick (click)="copy(c, c.login.totp, 'verificationCodeTotp', 'TOTP')">
+                                <i class="fa fa-fw fa-clock-o fa-lg" aria-hidden="true" title="{{'copyVerificationCode' | i18n}}"></i>
+                            </a>
+                        </ng-container>
+                        <a class="list-options-item" href="#" [ngClass]="{'list-options-item-disable': !c}" appStopClick (click)="attachments(c)">
+                            <i class="fa fa-fw fa-paperclip fa-lg" aria-hidden="true" title="{{'attachments' | i18n}}"></i>
+                        </a>
+                        <a class="list-optioins-item" href="#" appStopClick (click)="restore(c)" *ngIf="c.isDeleted">
+                            <i class="fa fa-fw fa-undo fa-lg" aria-hidden="true" title="{{'restore' | i18n}}"></i>
+                        </a>
+                        <div appListDropdown>
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                appA11yTitle="{{'options' | i18n}}">
+                                <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="#" appStopClick
-                                    (click)="copy(c, c.login.username, 'username', 'Username')">
-                                    <i class="fa fa-fw fa-clone" aria-hidden="true"></i>
-                                    {{'copyUsername' | i18n}}
+                                    *ngIf="((!organization && !c.organizationId) || organization) && !c.isDeleted"
+                                    (click)="clone(c)">
+                                    <i class="fa fa-fw fa-files-o" aria-hidden="true"></i>
+                                    {{'clone' | i18n}}
                                 </a>
                                 <a class="dropdown-item" href="#" appStopClick
-                                    (click)="copy(c, c.login.password, 'password', 'Password')" *ngIf="c.viewPassword">
-                                    <i class="fa fa-fw fa-clone" aria-hidden="true"></i>
-                                    {{'copyPassword' | i18n}}
+                                    *ngIf="!organization && !c.organizationId && !c.isDeleted" (click)="share(c)">
+                                    <i class="fa fa-fw fa-arrow-circle-o-right" aria-hidden="true"></i>
+                                    {{'moveToOrganization' | i18n}}
                                 </a>
-                                <a class="dropdown-item" href="#" appStopClick (click)="copy(c, c.login.totp, 'verificationCodeTotp', 'TOTP')"
-                                    *ngIf="displayTotpCopyButton(c)">
-                                    <i class="fa fa-fw fa-clone" aria-hidden="true"></i>
-                                    {{'copyVerificationCode' | i18n}}
+                                <a class="dropdown-item" href="#" appStopClick *ngIf="c.organizationId && !c.isDeleted"
+                                    (click)="collections(c)">
+                                    <i class="fa fa-fw fa-cubes" aria-hidden="true"></i>
+                                    {{'collections' | i18n}}
                                 </a>
-                                <a class="dropdown-item" href="#" appStopClick *ngIf="c.login.canLaunch"
-                                    (click)="launch(c.login.launchUri)">
-                                    <i class="fa fa-fw fa-share-square-o" aria-hidden="true"></i>
-                                    {{'launch' | i18n}}
+                                <a class="dropdown-item" href="#" appStopClick *ngIf="c.organizationId && accessEvents"
+                                    (click)="events(c)">
+                                    <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i>
+                                    {{'eventLogs' | i18n}}
                                 </a>
-                            </ng-container>
-                            <a class="dropdown-item" href="#" appStopClick (click)="attachments(c)">
-                                <i class="fa fa-fw fa-paperclip" aria-hidden="true"></i>
-                                {{'attachments' | i18n}}
-                            </a>
-                            <a class="dropdown-item" href="#" appStopClick
-                                *ngIf="((!organization && !c.organizationId) || organization) && !c.isDeleted"
-                                (click)="clone(c)">
-                                <i class="fa fa-fw fa-files-o" aria-hidden="true"></i>
-                                {{'clone' | i18n}}
-                            </a>
-                            <a class="dropdown-item" href="#" appStopClick
-                                *ngIf="!organization && !c.organizationId && !c.isDeleted" (click)="share(c)">
-                                <i class="fa fa-fw fa-arrow-circle-o-right" aria-hidden="true"></i>
-                                {{'moveToOrganization' | i18n}}
-                            </a>
-                            <a class="dropdown-item" href="#" appStopClick *ngIf="c.organizationId && !c.isDeleted"
-                                (click)="collections(c)">
-                                <i class="fa fa-fw fa-cubes" aria-hidden="true"></i>
-                                {{'collections' | i18n}}
-                            </a>
-                            <a class="dropdown-item" href="#" appStopClick *ngIf="c.organizationId && accessEvents"
-                                (click)="events(c)">
-                                <i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i>
-                                {{'eventLogs' | i18n}}
-                            </a>
-                            <a class="dropdown-item" href="#" appStopClick (click)="restore(c)" *ngIf="c.isDeleted">
-                                <i class="fa fa-fw fa-undo" aria-hidden="true"></i>
-                                {{'restore' | i18n}}
-                            </a>
-                            <a class="dropdown-item text-danger" href="#" appStopClick (click)="delete(c)">
-                                <i class="fa fa-fw fa-trash-o" aria-hidden="true"></i>
-                                {{(c.isDeleted ? 'permanentlyDelete' : 'delete') | i18n}}
-                            </a>
+                                <a class="dropdown-item text-danger" href="#" appStopClick (click)="delete(c)">
+                                    <i class="fa fa-fw fa-trash-o" aria-hidden="true"></i>
+                                    {{(c.isDeleted ? 'permanentlyDelete' : 'delete') | i18n}}
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </td>
