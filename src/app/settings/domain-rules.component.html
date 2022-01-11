@@ -39,7 +39,7 @@
             <tr *ngFor="let d of global">
                 <td [ngClass]="{'table-list-strike': d.excluded}">{{d.domains}}</td>
                 <td class="table-list-options">
-                    <div class="dropdown" appListDropdown>
+                    <div appListDropdown>
                         <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false" appA11yTitle="{{'options' | i18n}}">
                             <i class="fa fa-cog fa-lg" aria-hidden="true"></i>

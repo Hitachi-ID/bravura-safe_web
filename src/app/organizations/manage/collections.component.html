@@ -27,7 +27,7 @@
                     <a href="#" appStopClick (click)="edit(c)">{{c.name}}</a>
                 </td>
                 <td class="table-list-options">
-                    <div class="dropdown" appListDropdown *ngIf="this.canEdit(c) || this.canDelete(c)">
+                    <div appListDropdown *ngIf="this.canEdit(c) || this.canDelete(c)">
                         <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false" appA11yTitle="{{'options' | i18n}}">
                             <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
@@ -37,7 +37,8 @@
                                 <i class="fa fa-fw fa-users" aria-hidden="true"></i>
                                 {{'users' | i18n}}
                             </a>
-                            <a class="dropdown-item text-danger" href="#" appStopClick *ngIf="this.canDelete(c)" (click)="delete(c)">
+                            <a class="dropdown-item text-danger" href="#" appStopClick *ngIf="this.canDelete(c)"
+                                (click)="delete(c)">
                                 <i class="fa fa-fw fa-trash-o" aria-hidden="true"></i>
                                 {{'delete' | i18n}}
                             </a>
