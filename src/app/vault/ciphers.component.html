@@ -50,7 +50,7 @@
                         <a class="list-options-item" href="#" [ngClass]="{'list-options-item-disable': !c}" appStopClick (click)="attachments(c)">
                             <i class="fa fa-fw fa-paperclip fa-lg" aria-hidden="true" title="{{'attachments' | i18n}}"></i>
                         </a>
-                        <a class="list-optioins-item" href="#" appStopClick (click)="restore(c)" *ngIf="c.isDeleted">
+                        <a class="list-options-item" href="#" appStopClick (click)="restore(c)" *ngIf="c.isDeleted">
                             <i class="fa fa-fw fa-undo fa-lg" aria-hidden="true" title="{{'restore' | i18n}}"></i>
                         </a>
                         <div appListDropdown>
