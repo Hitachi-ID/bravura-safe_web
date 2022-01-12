@@ -54,16 +54,32 @@
         line-height: 30px;
         padding: 0 0 0 10px;
         &.active {
-            background: #c7e2f4;
-            color: #0064a7;
+            @include themify($themes) {
+                background-color: themed('filterPanelActiveBackgroundColor');
+                color: themed('filterPanelActiveColor');
+            }
             font-weight: 700;
             border-radius: 0 100px 100px 0;
+            // make sure filter panel color won't be replaced by a child link color
+            & a {
+                @include themify($themes) {
+                    color: themed('filterPanelActiveColor');
+                }
+            }
         }
         &:hover {
-            background: #d6eaf7;
+            @include themify($themes) {
+                background-color: themed('filterPanelHoverBackgroundColor');
+                color: themed('filterPanelHoverColor');
+            }
             border-left-color: rgba(103,103,103,.4);
             border-radius: 0 100px 100px 0;
-            color: #0064a7;
+            // make sure filter panel color won't be replaced by a child link color
+            & a {
+                @include themify($themes) {
+                    color: themed('filterPanelHoverColor');
+                }
+            }
         }
         div.d-flex {
             a.text-break {
