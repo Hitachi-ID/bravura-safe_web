@@ -65,11 +65,8 @@ $input-focus-bg: $white;
 $input-disabled-bg: #E0E0E0;
 $input-placeholder-color: #B4B4B4;
 
-$table-options: rgba($black, 0.8);
-$table-options-disable: rgba($black, 0.2);
 $table-accent-bg: rgba($black, .02);
 $table-hover-bg: rgba($primary, 0.1);
-$table-options-hover-bg:rgba($black, 0.15);
 
 $modal-backdrop-opacity: 0.3;
 $btn-font-weight: 600;
@@ -232,6 +229,9 @@ $themes: (
         tableColorHover: #333333,
         tableLinkColor: $primary,
         tableLinkColorHover: #104097,
+        tableOptionsHoverBackground: rgba($black, 0.15),
+        tableOptionsTextColor: rgba($black, 0.8),
+        tableOptionsTextDisableColor: rgba($black, 0.2),
         tableRowHover: rgba(0,0,0,0.03),
         tableSeparator: #DEE2E6,
         browserInputIconsFilter: invert(0),
@@ -352,6 +352,9 @@ $themes: (
         tableColorHover: $darkGrey1,
         tableLinkColor: $white,
         tableLinkColorHover: $white,
+        tableOptionsHoverBackground: rgba($white, 0.15),
+        tableOptionsTextColor: rgba($white, 0.8),
+        tableOptionsTextDisableColor: rgba($white, 0.2),
         tableRowHover: rgba(255, 255, 255, 0.03),
         tableSeparator: $darkBlue1,
         browserInputIconsFilter: invert(1),

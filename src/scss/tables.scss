@@ -82,9 +82,13 @@
             justify-content: flex-end;
             a.list-options-item {
                 padding: 7px 3px;
-                color: $table-options;
+                @include themify($themes) {
+                    color: themed('tableOptionsTextColor');
+                }
                 &:hover {
-                    background: $table-options-hover-bg;
+                    @include themify($themes) {
+                        background: themed('tableOptionsHoverBackground');
+                    }
                     border-radius: 100px;
                 }
                 &:last-of-type {
@@ -92,16 +96,21 @@
                 }
             }
             a.list-options-item.list-options-item-disable {
-                color: $table-options-disable;
+                @include themify($themes) {
+                    color: themed('tableOptionsTextDisableColor');
+                }
                 cursor: default;
+                // themify will be dealy, a.list-options-item:hover style will replace a.list-options-item.list-options-item-disable:hover
                 &:hover {
-                    background: inherit;
+                    background: inherit !important;
                 }
             }
         }
 
         button.btn-outline-secondary {
-            color: $table-options;
+            @include themify($themes) {
+                color: themed('tableOptionsTextColor');
+            }
         }
 
         .dropdown-menu {
