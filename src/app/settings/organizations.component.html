@@ -7,7 +7,7 @@
         <ul class="fa-ul card-ul carets" *ngIf="organizations && organizations.length">
             <li *ngFor="let o of organizations" (click)="navigateOrg(o.id)">
                 <a [routerLink]="['/organizations', o.id]" class="text-body">
-                    <i class="fa-li fa fa-caret-right" aria-hidden="true"></i> {{o.name}}
+                    {{o.name}}
                     <ng-container *ngIf="!o.enabled">
                         <i class="fa fa-exclamation-triangle text-danger" title="{{'organizationIsDisabled' | i18n}}"
                             aria-hidden="true"></i>
