@@ -147,7 +147,9 @@ app-vault {
                 width: 100%;
             }
             .dropdown-menu {
-                background-color: $primary-light;
+                @include themify($themes) {
+                    background-color: themed('orgDropdownBackground');
+                }
                 ul {
                     margin-left: 0;
                     li {
