@@ -82,11 +82,12 @@
             }
         }
         div.d-flex {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
             a.text-break {
-                width: 80%;
-            }
-            a.ml-auto {
-                margin-left: 5px !important;
+                flex: 1 0 60%;
             }
         }
     }

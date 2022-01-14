@@ -98,17 +98,19 @@
                 <ul class="fa-ul card-ul">
                     <ng-template #recursiveCollections let-collections>
                         <li *ngFor="let c of collections" [ngClass]="{active: c.node.id === selectedCollectionId}">
-                            <i *ngIf="c.children.length" class="fa-li fa" title="{{'toggleCollapse' | i18n}}"
-                                [ngClass]="{'fa-caret-right': isCollapsed(c.node), 'fa-caret-down': !isCollapsed(c.node)}"
-                                (click)="collapse(c.node)"></i>
-                            <a href="#" class="text-break" appStopClick (click)="selectCollection(c.node)">
-                                <i *ngIf="c.children.length === 0" class="fa-li fa fa-cube" aria-hidden="true"></i>{{c.node.name}}
-                            </a>
-                            <ul class="fa-ul card-ul carets" *ngIf="c.children.length && !isCollapsed(c.node)">
-                                <ng-container
-                                    *ngTemplateOutlet="recursiveCollections; context:{ $implicit: c.children }">
-                                </ng-container>
-                            </ul>
+                            <div class="d-flex">
+                                <i *ngIf="c.children.length" class="fa-li fa" title="{{'toggleCollapse' | i18n}}"
+                                    [ngClass]="{'fa-caret-right': isCollapsed(c.node), 'fa-caret-down': !isCollapsed(c.node)}"
+                                    (click)="collapse(c.node)"></i>
+                                <a href="#" class="text-break" appStopClick (click)="selectCollection(c.node)">
+                                    <i *ngIf="c.children.length === 0" class="fa-li fa fa-cube" aria-hidden="true"></i>{{c.node.name}}
+                                </a>
+                                <ul class="fa-ul card-ul carets" *ngIf="c.children.length && !isCollapsed(c.node)">
+                                    <ng-container
+                                        *ngTemplateOutlet="recursiveCollections; context:{ $implicit: c.children }">
+                                    </ng-container>
+                                </ul>
+                            </div>
                         </li>
                     </ng-template>
                     <ng-container *ngTemplateOutlet="recursiveCollections; context:{ $implicit: nestedCollections }">
