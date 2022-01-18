@@ -105,12 +105,12 @@
                                 <a href="#" class="text-break" appStopClick (click)="selectCollection(c.node)">
                                     <i *ngIf="c.children.length === 0" class="fa-li fa fa-cube" aria-hidden="true"></i>{{c.node.name}}
                                 </a>
-                                <ul class="fa-ul card-ul carets" *ngIf="c.children.length && !isCollapsed(c.node)">
-                                    <ng-container
-                                        *ngTemplateOutlet="recursiveCollections; context:{ $implicit: c.children }">
-                                    </ng-container>
-                                </ul>
                             </div>
+                            <ul class="fa-ul card-ul carets" *ngIf="c.children.length && !isCollapsed(c.node)">
+                                <ng-container
+                                    *ngTemplateOutlet="recursiveCollections; context:{ $implicit: c.children }">
+                                </ng-container>
+                            </ul>
                         </li>
                     </ng-template>
                     <ng-container *ngTemplateOutlet="recursiveCollections; context:{ $implicit: nestedCollections }">
