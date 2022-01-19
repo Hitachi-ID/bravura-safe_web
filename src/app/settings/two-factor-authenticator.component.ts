@@ -81,8 +81,8 @@ export class TwoFactorAuthenticatorComponent extends TwoFactorBaseComponent impl
         window.setTimeout(() => {
             const qr = new (window as any).QRious({
                 element: document.getElementById('qr'),
-                value: 'otpauth://totp/Bitwarden:' + encodeURIComponent(email) +
-                    '?secret=' + encodeURIComponent(this.key) + '&issuer=Bitwarden',
+                value: 'otpauth://totp/Bravura Safe:' + encodeURIComponent(email) +
+                    '?secret=' + encodeURIComponent(this.key) + '&issuer=Hitachi ID',
                 size: 160,
             });
         }, 100);
