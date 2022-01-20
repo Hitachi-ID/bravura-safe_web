@@ -140,6 +140,14 @@ app-send div.vault-filters div.card-body {
     }
 }
 
+/** fix app-vault-bulk-actions alignment issue **/
+app-vault, app-org-vault {
+    app-vault-bulk-actions {
+        display: flex;
+        align-items: center;
+    }
+}
+
 app-vault {
     .sidebar-panel {
         .organizations {
