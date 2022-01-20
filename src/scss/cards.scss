@@ -86,13 +86,13 @@
         & > div.d-flex {
             margin-left: 10px;
         }
-        & > ul.fa-ul.card-ul.carets {
+        &.expand > ul.fa-ul.card-ul.carets {
             display: flex;
             flex-direction: column;
             margin-left: 0 !important;
             & > li > div.d-flex {
-                margin-left: 30px;
-                & > a.text-break > i {
+                margin-left: 38px;
+                & > i {
                     margin-right: 5px;
                 }
             }
@@ -109,8 +109,9 @@
     }
 
     .fa-li {
-        top: 4px;
         position: static;
+        margin-top: 8px;
+        align-self: flex-start;
     }
 
     .fa-folder-o {

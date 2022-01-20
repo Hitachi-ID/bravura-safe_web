@@ -70,8 +70,9 @@
                                 <i *ngIf="f.children.length" class="fa-li fa" title="{{'toggleCollapse' | i18n}}"
                                     [ngClass]="{'fa-caret-right': isCollapsed(f.node), 'fa-caret-down': !isCollapsed(f.node)}"
                                     (click)="collapse(f.node)"></i>
+                                <i *ngIf="f.children.length === 0" class="fa-li fa fa-folder-o" aria-hidden="true"></i>
                                 <a href="#" class="text-break" appStopClick (click)="selectFolder(f.node)">
-                                    <i *ngIf="f.children.length === 0" class="fa-li fa fa-folder-o" aria-hidden="true"></i>{{f.node.name}}
+                                    {{f.node.name}}
                                 </a>
                                 <a href="#" class="text-muted ml-auto show-active" appStopClick
                                     (click)="editFolder(f.node)" appA11yTitle="{{'editFolder' | i18n}}"
@@ -102,8 +103,9 @@
                                 <i *ngIf="c.children.length" class="fa-li fa" title="{{'toggleCollapse' | i18n}}"
                                     [ngClass]="{'fa-caret-right': isCollapsed(c.node), 'fa-caret-down': !isCollapsed(c.node)}"
                                     (click)="collapse(c.node)"></i>
+                                <i *ngIf="c.children.length === 0" class="fa-li fa fa-cube" aria-hidden="true"></i>
                                 <a href="#" class="text-break" appStopClick (click)="selectCollection(c.node)">
-                                    <i *ngIf="c.children.length === 0" class="fa-li fa fa-cube" aria-hidden="true"></i>{{c.node.name}}
+                                   {{c.node.name}}
                                 </a>
                             </div>
                             <ul class="fa-ul card-ul carets" *ngIf="c.children.length && !isCollapsed(c.node)">
