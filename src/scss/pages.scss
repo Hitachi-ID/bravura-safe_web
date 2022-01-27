@@ -140,6 +140,14 @@ app-send div.vault-filters div.card-body {
     }
 }
 
+/** fix app-vault-bulk-actions alignment issue **/
+app-vault, app-org-vault {
+    app-vault-bulk-actions {
+        display: flex;
+        align-items: center;
+    }
+}
+
 app-vault {
     .sidebar-panel {
         .organizations {
@@ -147,11 +155,13 @@ app-vault {
                 width: 100%;
             }
             .dropdown-menu {
-                background-color: $primary-light;
+                @include themify($themes) {
+                    background-color: themed('orgDropdownBackground');
+                }
                 ul {
                     margin-left: 0;
                     li {
-                        padding: 5px;
+                        padding: 5px 10px;
                         &:hover {
                             background-color: $table-hover-bg;
                         }

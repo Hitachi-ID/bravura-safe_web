@@ -65,11 +65,8 @@ $input-focus-bg: $white;
 $input-disabled-bg: #E0E0E0;
 $input-placeholder-color: #B4B4B4;
 
-$table-options: rgba($black, 0.8);
-$table-options-disable: rgba($black, 0.2);
 $table-accent-bg: rgba($black, .02);
 $table-hover-bg: rgba($primary, 0.1);
-$table-options-hover-bg:rgba($black, 0.15);
 
 $modal-backdrop-opacity: 0.3;
 $btn-font-weight: 600;
@@ -189,6 +186,10 @@ $themes: (
         dropdownHover: rgba(0,0,0,0.06),
         dropdownTextColor: $text-color,
         dropdownTextMuted: #6C757D,
+        filterPanelActiveBackgroundColor: #c7e2f4,
+        filterPanelActiveColor: #0064a7,
+        filterPanelHoverBackgroundColor: #d6eaf7,
+        filterPanelHoverColor: #333,
         focus: rgb(23 93 220 / 25%),
         footerBackgroundColor: #FBFBFB,
         foregroundColor: $white,
@@ -218,6 +219,7 @@ $themes: (
         navBackgroundAlt: $secondary-alt,
         navOrgBackgroundColor: #FBFBFB,
         navWeight: 600,
+        orgDropdownBackground: $primary-light,
         pwLetter: $text-color,
         pwNumber: #007FDE,
         pwSpecial: #C40800,
@@ -228,6 +230,9 @@ $themes: (
         tableColorHover: #333333,
         tableLinkColor: $primary,
         tableLinkColorHover: #104097,
+        tableOptionsHoverBackground: rgba($black, 0.15),
+        tableOptionsTextColor: rgba($black, 0.8),
+        tableOptionsTextDisableColor: rgba($black, 0.2),
         tableRowHover: rgba(0,0,0,0.03),
         tableSeparator: #DEE2E6,
         browserInputIconsFilter: invert(0),
@@ -305,6 +310,10 @@ $themes: (
         dropdownHover: rgba(255, 255, 255, 0.03),
         dropdownTextColor: $white,
         dropdownTextMuted: #BEC6CF,
+        filterPanelActiveBackgroundColor: rgba(255, 255, 255, 0.15),
+        filterPanelActiveColor: #b4ccf7,
+        filterPanelHoverBackgroundColor: rgba(255, 255, 255, 0.08),
+        filterPanelHoverColor: $white,
         focus: rgb(106 153 240 / 25%),
         footerBackgroundColor: $darkBlue1,
         foregroundColor: $darkDarkBlue1,
@@ -322,7 +331,7 @@ $themes: (
         learnMoreHover: $darkPrimary-alt,
         linkColor: $darkLinks,
         linkColorHover: $darkLinks,
-        linkWeight: 600,
+        linkWeight: 400,
         listItemActive: $darkPrimary,
         listItemBorder: $darkBlue1,
         listItemColor: $white,
@@ -334,6 +343,7 @@ $themes: (
         navBackgroundAlt: $darkDarkBlue1,
         navOrgBackgroundColor: #161C26,
         navWeight: 400,
+        orgDropdownBackground: $darkDarkBlue2,
         pwLetter: $white,
         pwNumber: #52BDFB,
         pwSpecial: #FF7C70,
@@ -344,6 +354,9 @@ $themes: (
         tableColorHover: $darkGrey1,
         tableLinkColor: $white,
         tableLinkColorHover: $white,
+        tableOptionsHoverBackground: rgba($white, 0.15),
+        tableOptionsTextColor: rgba($white, 0.8),
+        tableOptionsTextDisableColor: rgba($white, 0.2),
         tableRowHover: rgba(255, 255, 255, 0.03),
         tableSeparator: $darkBlue1,
         browserInputIconsFilter: invert(1),

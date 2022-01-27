@@ -52,32 +52,66 @@
     li {
         word-break: break-all;
         line-height: 30px;
-        padding: 0 0 0 10px;
         &.active {
-            background: #c7e2f4;
-            color: #0064a7;
             font-weight: 700;
-            border-radius: 0 100px 100px 0;
+            border-radius: 0 10px 10px 0;
+            @include themify($themes) {
+                background-color: themed('filterPanelActiveBackgroundColor');
+                color: themed('filterPanelActiveColor');
+            }
+            // make sure filter panel color won't be replaced by a child link color
+            & a {
+                @include themify($themes) {
+                    color: themed('filterPanelActiveColor') !important;
+                }
+            }
         }
         &:hover {
-            background: #d6eaf7;
             border-left-color: rgba(103,103,103,.4);
-            border-radius: 0 100px 100px 0;
-            color: #0064a7;
+            border-radius: 0 10px 10px 0;
+            @include themify($themes) {
+                background-color: themed('filterPanelHoverBackgroundColor');
+                color: themed('filterPanelHoverColor');
+            }
+            // make sure filter panel color won't be replaced by a child link color
+            & a {
+                @include themify($themes) {
+                    color: themed('filterPanelHoverColor');
+                }
+            }
+        }
+        & > a {
+            margin-left: 10px;
+        }
+        & > div.d-flex {
+            margin-left: 10px;
+        }
+        &.expand > ul.fa-ul.card-ul.carets {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0 !important;
+            & > li > div.d-flex {
+                margin-left: 38px;
+                & > i {
+                    margin-right: 5px;
+                }
+            }
         }
         div.d-flex {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
             a.text-break {
-                width: 80%;
-            }
-            a.ml-auto {
-                margin-left: 5px !important;
+                flex: 1 0 60%;
             }
         }
     }
 
     .fa-li {
-        top: 4px;
         position: static;
+        margin-top: 8px;
+        align-self: flex-start;
     }
 
     .fa-folder-o {
