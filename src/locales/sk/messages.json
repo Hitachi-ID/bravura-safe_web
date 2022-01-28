@@ -16,11 +16,11 @@
     "message": "Meno"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "Nové URI"
+    "message": "Nové URL"
   },
   "username": {
     "message": "Používateľské meno"
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Spôsob mapovania",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "Predvolené mapovanie",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Nikdy"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "Kopírovať URI",
-    "description": "Copy URI to clipboard"
+    "message": "Kopírovať URL",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "Môj trezor"
@@ -1423,7 +1423,7 @@
     "message": "Našli sa nezabezpečené stránky"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "Našli sme $COUNT$ položky vo vašom trezore s nezabezpečenými URI. Ak to stránka podporuje, môžete zmeniť schému URI na https://.",
+    "message": "Našli sme $COUNT$ položky vo vašom trezore s nezabezpečenými URL. Ak to stránka podporuje, môžete zmeniť schému URL na https://.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "Vo vašom trezore nemáte nezabezpečené URI."
+    "message": "Vo vašom trezore nemáte nezabezpečené URL."
   },
   "inactive2faReport": {
     "message": "Správa o neaktívnych 2FA"

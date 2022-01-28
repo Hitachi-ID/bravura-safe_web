@@ -16,11 +16,11 @@
     "message": "Nimi"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "Uusi URI"
+    "message": "Uusi URL"
   },
   "username": {
     "message": "Käyttäjätunnus"
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Tunnistustapa",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "Tunnistuksen oletustapa",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Ei koskaan"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "Kopioi URI",
-    "description": "Copy URI to clipboard"
+    "message": "Kopioi URL",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "Oma holvi"
@@ -1423,7 +1423,7 @@
     "message": "Suojaamattomia verkkosivustoja löytyi"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "Löysimme holvistasi $COUNT$ kohdetta suojaamattomilla URI-osoitteilla. Sinun tulisi muuttaa niiden URI suojattuun \"https://\" -muotoon, jos sivusto tukee sitä.",
+    "message": "Löysimme holvistasi $COUNT$ kohdetta suojaamattomilla URL-osoitteilla. Sinun tulisi muuttaa niiden URL suojattuun \"https://\" -muotoon, jos sivusto tukee sitä.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "Holviisi tallennetuista kirjautumistiedoista ei löydetty suojaamattomia URI-osoitteita."
+    "message": "Holviisi tallennetuista kirjautumistiedoista ei löydetty suojaamattomia URL-osoitteita."
   },
   "inactive2faReport": {
     "message": "Tunnusten 2FA-tila"

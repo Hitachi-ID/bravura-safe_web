@@ -16,11 +16,11 @@
     "message": "Nome"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "Novo URI"
+    "message": "Novo URL"
   },
   "username": {
     "message": "Nome de utilizador"
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Deteção de correspondência",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "Deteção de correspondência predefinida",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Nunca"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "Copiar URI",
-    "description": "Copy URI to clipboard"
+    "message": "Copiar URL",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "Meu cofre"
@@ -1423,7 +1423,7 @@
     "message": "Websites inseguros encontrados"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "Encontrámos $COUNT$ itens no seu cofre com URIs inseguros. Deve alterar os seus esquemas de URI para https:// se o website permitir.",
+    "message": "Encontrámos $COUNT$ itens no seu cofre com URLs inseguros. Deve alterar os seus esquemas de URL para https:// se o website permitir.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "Nenhum item no seu cofre tem URIs inseguros."
+    "message": "Nenhum item no seu cofre tem URLs inseguros."
   },
   "inactive2faReport": {
     "message": "Relatório de 2FA inativo"

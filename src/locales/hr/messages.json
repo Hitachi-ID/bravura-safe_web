@@ -16,11 +16,11 @@
     "message": "Naziv"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "Novi URI"
+    "message": "Novi URL"
   },
   "username": {
     "message": "Korisničko ime"
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Otkrivanje podudaranja",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "Zadano otkrivanje podudaranja",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Nikad"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "Kopiraj URI",
-    "description": "Copy URI to clipboard"
+    "message": "Kopiraj URL",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "Moj trezor"
@@ -1423,7 +1423,7 @@
     "message": "Pronađena neosigurana web mjesta"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "Pronašli smo $COUNT$ stavki u tvom trezoru koje koriste neosigurane URI-je (http://). Ako web mjesto omogućuje trebalo bi URI-je promijeniti na https://",
+    "message": "Pronašli smo $COUNT$ stavki u tvom trezoru koje koriste neosigurane URL-je (http://). Ako web mjesto omogućuje trebalo bi URL-je promijeniti na https://",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "Niti jedna stavka u tvom trezoru nema neosigurane URI-je."
+    "message": "Niti jedna stavka u tvom trezoru nema neosigurane URL-je."
   },
   "inactive2faReport": {
     "message": "Izvještaj o neaktivnim 2FA"

@@ -20,7 +20,7 @@
   },
   "uriPosition": {
     "message": "Адрес $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Откриване на съвпадения",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "Стандартно откриване на съвпадения",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Никога"
@@ -402,7 +402,7 @@
   },
   "copyUri": {
     "message": "Копиране на адреса",
-    "description": "Copy URI to clipboard"
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "Моят трезор"
@@ -1423,7 +1423,7 @@
     "message": "Открити са записи без защита"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "Открити са $COUNT$ записи в трезора с адрес без защита. Трябва да смените схемата за URI-то им на „https://“, ако сайтовете го поддържат.",
+    "message": "Открити са $COUNT$ записи в трезора с адрес без защита. Трябва да смените схемата за URL-то им на „https://“, ако сайтовете го поддържат.",
     "placeholders": {
       "count": {
         "content": "$1",

@@ -16,11 +16,11 @@
     "message": "Nama"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "URl Baru"
+    "message": "URL Baru"
   },
   "username": {
     "message": "Nama Pengguna"
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Deteksi kecocokan",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "Deteksi kecocokan standar",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Jangan pernah"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "Salin URI",
-    "description": "Copy URI to clipboard"
+    "message": "Salin URL",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "Brankas Saya"
@@ -1423,7 +1423,7 @@
     "message": "Situs Web Tidak Aman Ditemukan"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "Kami menemukan $COUNT$ item di lemari besi Anda dengan URI yang tidak aman. Anda harus mengubah skema URI mereka menjadi https: // jika situs web mengizinkannya.",
+    "message": "Kami menemukan $COUNT$ item di lemari besi Anda dengan URL yang tidak aman. Anda harus mengubah skema URL mereka menjadi https: // jika situs web mengizinkannya.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "Tidak ada item di vault Anda yang memiliki URI tidak aman."
+    "message": "Tidak ada item di vault Anda yang memiliki URL tidak aman."
   },
   "inactive2faReport": {
     "message": "Laporan 2FA tidak aktif"

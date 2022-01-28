@@ -16,11 +16,11 @@
     "message": "Ad"
   },
   "uri": {
-    "message": "URl"
+    "message": "URL"
   },
   "uriPosition": {
     "message": "URL $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "Yeni URI"
+    "message": "Yeni URL"
   },
   "username": {
     "message": "Kullanıcı adı"
@@ -197,7 +197,7 @@
     "message": "Tam"
   },
   "startsWith": {
-    "message": "URI başlangıcı"
+    "message": "URL başlangıcı"
   },
   "regEx": {
     "message": "Düzenli ifade",
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Eşleşme tespiti",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "Varsayılan eşleşme tespiti",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Asla"
@@ -402,7 +402,7 @@
   },
   "copyUri": {
     "message": "URL'i kopyala",
-    "description": "Copy URI to clipboard"
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "Kasam"
@@ -1423,7 +1423,7 @@
     "message": "Güvensiz web siteleri bulundu"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "Kasanızda güvenli olmayan URI'ye sahip $COUNT$ öge bulduk. Web sitesi izin veriyorsa, URI şemasını https:// olarak değiştirmelisiniz.",
+    "message": "Kasanızda güvenli olmayan URL'ye sahip $COUNT$ öge bulduk. Web sitesi izin veriyorsa, URL şemasını https:// olarak değiştirmelisiniz.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "Kasanızda güvenli olmayan URI'ye sahip hiç kayıt yok."
+    "message": "Kasanızda güvenli olmayan URL'ye sahip hiç kayıt yok."
   },
   "inactive2faReport": {
     "message": "2FA raporu pasif"

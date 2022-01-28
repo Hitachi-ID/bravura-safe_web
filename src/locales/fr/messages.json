@@ -16,11 +16,11 @@
     "message": "Nom"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "Nouvelle URI"
+    "message": "Nouvelle URL"
   },
   "username": {
     "message": "Nom d'utilisateur"
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Détection de correspondance",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "Détection de correspondance par défaut",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Jamais"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "Copier l'URI",
-    "description": "Copy URI to clipboard"
+    "message": "Copier l'URL",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "Mon coffre"
@@ -1423,7 +1423,7 @@
     "message": "Sites web non sécurisés trouvés"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "Nous avons trouvé $COUNT$ éléments dans votre coffre avec des URI non sécurisés. Vous devriez remplacer leur schéma URI par https:// si le site Web le permet.",
+    "message": "Nous avons trouvé $COUNT$ éléments dans votre coffre avec des URL non sécurisés. Vous devriez remplacer leur schéma URL par https:// si le site Web le permet.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "Aucun élément dans votre coffre n'a d'URI non sécurisés."
+    "message": "Aucun élément dans votre coffre n'a d'URL non sécurisés."
   },
   "inactive2faReport": {
     "message": "Rapport 2FA inactif"

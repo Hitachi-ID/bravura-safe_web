@@ -16,11 +16,11 @@
     "message": "Navn"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "Ny URI"
+    "message": "Ny URL"
   },
   "username": {
     "message": "Brukernavn"
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Samsvar-gjenkjenning",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "Standard match-gjenkjenning",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Aldri"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "Kopier URIen",
-    "description": "Copy URI to clipboard"
+    "message": "Kopier URLen",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "Mitt hvelv"
@@ -1423,7 +1423,7 @@
     "message": "Usikrede nettsteder ble funnet"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "Vi fant $COUNT$ elementer i hvelvet ditt som benytter usikrede URIer. Du burde endre deres URI til å benytte https://, dersom det nettstedet tillater det.",
+    "message": "Vi fant $COUNT$ elementer i hvelvet ditt som benytter usikrede URLer. Du burde endre deres URL til å benytte https://, dersom det nettstedet tillater det.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "Ingen gjenstander i hvelvet ditt har usikrede URI-er."
+    "message": "Ingen gjenstander i hvelvet ditt har usikrede URL-er."
   },
   "inactive2faReport": {
     "message": "Rapport om 2FA-nettsteder"

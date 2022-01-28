@@ -16,11 +16,11 @@
     "message": "Ad"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "Yeni URI"
+    "message": "Yeni URL"
   },
   "username": {
     "message": "İstifadəçi adı"
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Uyğunluq aşkarlaması",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "İlkin uyğunluq aşkarlaması",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Heç vaxt"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "URI-ni kopyala",
-    "description": "Copy URI to clipboard"
+    "message": "URL-ni kopyala",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "Anbarım"
@@ -1423,7 +1423,7 @@
     "message": "Güvənli olmayan veb sayt tapıldı"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "Anbarınızda güvənli olmayan URI-lərə sahib $COUNT$ element tapıldı. Veb sayt icazə verirsə, onların URI sxemini https:// olaraq dəyişdirməlisiniz.",
+    "message": "Anbarınızda güvənli olmayan URL-lərə sahib $COUNT$ element tapıldı. Veb sayt icazə verirsə, onların URL sxemini https:// olaraq dəyişdirməlisiniz.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "Anbarınızda güvənli olmayan URI-ə sahib element yoxdur."
+    "message": "Anbarınızda güvənli olmayan URL-ə sahib element yoxdur."
   },
   "inactive2faReport": {
     "message": "2FA hesabatı aktiv deyil"

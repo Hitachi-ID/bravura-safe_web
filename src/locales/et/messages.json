@@ -16,11 +16,11 @@
     "message": "Nimi"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "Uus URI"
+    "message": "Uus URL"
   },
   "username": {
     "message": "Kasutajanimi"
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Sobivuse tuvastamine",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "Tavaline sobivuse tuvastamine",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Ära tuvasta"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "Kopeeri URI",
-    "description": "Copy URI to clipboard"
+    "message": "Kopeeri URL",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "Minu hoidla"
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "Hoidlas olevad kirjed ei kasuta ebaturvalisi URI-sid."
+    "message": "Hoidlas olevad kirjed ei kasuta ebaturvalisi URL-sid."
   },
   "inactive2faReport": {
     "message": "Sisselülitamata 2FA raport"

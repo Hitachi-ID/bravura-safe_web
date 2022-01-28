@@ -16,11 +16,11 @@
     "message": "Имя"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "Новый URI"
+    "message": "Новый URL"
   },
   "username": {
     "message": "Имя пользователя"
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Обнаружение совпадений",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "Метод обнаружения по умолчанию",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Никогда"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "Скопировать URI",
-    "description": "Copy URI to clipboard"
+    "message": "Скопировать URL",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "Хранилище"
@@ -1423,7 +1423,7 @@
     "message": "Найдены незащищенные сайты"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "В хранилище обнаружены элементы ($COUNT$ шт.) с незащищенными URI. Вам следует изменить их схему URI на https://, если сайт это позволяет.",
+    "message": "В хранилище обнаружены элементы ($COUNT$ шт.) с незащищенными URL. Вам следует изменить их схему URL на https://, если сайт это позволяет.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "В вашем хранилище нет элементов с незащищенными URI."
+    "message": "В вашем хранилище нет элементов с незащищенными URL."
   },
   "inactive2faReport": {
     "message": "Отчет о неактивной 2ФА"

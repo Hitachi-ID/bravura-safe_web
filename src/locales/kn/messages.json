@@ -20,7 +20,7 @@
   },
   "uriPosition": {
     "message": "ಯು ಆರ್ ಐ $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "ಹೊಂದಾಣಿಕೆ ಪತ್ತೆ",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "ಡೀಫಾಲ್ಟ್ ಪಂದ್ಯ ಪತ್ತೆ",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "ಇಲ್ಲವೇ ಇಲ್ಲ"
@@ -402,7 +402,7 @@
   },
   "copyUri": {
     "message": "ಯು ಆರ್ ಐ ಅನ್ನು ನಕಲಿಸಿ",
-    "description": "Copy URI to clipboard"
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "ನನ್ನ ವಾಲ್ಟ್"
@@ -1423,7 +1423,7 @@
     "message": "ಅಸುರಕ್ಷಿತ ವೆಬ್‌ಸೈಟ್‌ಗಳು ಕಂಡುಬಂದಿವೆ"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "ಅಸುರಕ್ಷಿತ URI ಗಳೊಂದಿಗೆ ನಿಮ್ಮ ವಾಲ್ಟ್‌ನಲ್ಲಿ $COUNT$ ವಸ್ತುಗಳನ್ನು ನಾವು ಕಂಡುಕೊಂಡಿದ್ದೇವೆ. ವೆಬ್‌ಸೈಟ್ ಅನುಮತಿಸಿದರೆ ನೀವು ಅವರ ಯುಆರ್‌ಐ ಯೋಜನೆಯನ್ನು https: // ಗೆ ಬದಲಾಯಿಸಬೇಕು.",
+    "message": "ಅಸುರಕ್ಷಿತ URL ಗಳೊಂದಿಗೆ ನಿಮ್ಮ ವಾಲ್ಟ್‌ನಲ್ಲಿ $COUNT$ ವಸ್ತುಗಳನ್ನು ನಾವು ಕಂಡುಕೊಂಡಿದ್ದೇವೆ. ವೆಬ್‌ಸೈಟ್ ಅನುಮತಿಸಿದರೆ ನೀವು ಅವರ ಯುಆರ್‌ಐ ಯೋಜನೆಯನ್ನು https: // ಗೆ ಬದಲಾಯಿಸಬೇಕು.",
     "placeholders": {
       "count": {
         "content": "$1",

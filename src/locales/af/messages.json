@@ -16,11 +16,11 @@
     "message": "Naam"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "Nuwe URI"
+    "message": "Nuwe URL"
   },
   "username": {
     "message": "Gebruikersnaam"
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Ooreenkomsbespeuring",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "Verstekooreenkomsbespeuring",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Nooit"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "Kopieer URI",
-    "description": "Copy URI to clipboard"
+    "message": "Kopieer URL",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "My kluis"
@@ -1423,7 +1423,7 @@
     "message": "Unsecured Websites Found"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "We found $COUNT$ items in your vault with unsecured URIs. You should change their URI scheme to https:// if the website allows it.",
+    "message": "We found $COUNT$ items in your vault with unsecured URLs. You should change their URL scheme to https:// if the website allows it.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "No items in your vault have unsecured URIs."
+    "message": "No items in your vault have unsecured URLs."
   },
   "inactive2faReport": {
     "message": "Inactive 2FA Report"

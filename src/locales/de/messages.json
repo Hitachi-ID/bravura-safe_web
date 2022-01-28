@@ -16,11 +16,11 @@
     "message": "Name"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Übereinstimmungserkennung",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "Standard Übereinstimmungserkennung",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Niemals"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "URI kopieren",
-    "description": "Copy URI to clipboard"
+    "message": "URL kopieren",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "Mein Tresor"
@@ -1423,7 +1423,7 @@
     "message": "Ungesicherte Webseiten gefunden"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "Wir haben $COUNT$ Elemente in Ihrem Tresor mit ungesicherten URIs gefunden. Sie sollten ihr URI-Präfix auf https:// ändern, wenn die Webseite dies zulässt.",
+    "message": "Wir haben $COUNT$ Elemente in Ihrem Tresor mit ungesicherten URLs gefunden. Sie sollten ihr URL-Präfix auf https:// ändern, wenn die Webseite dies zulässt.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "Es gibt keine Einträge in Ihrem Tresor, die unsichere URIs benutzen."
+    "message": "Es gibt keine Einträge in Ihrem Tresor, die unsichere URLs benutzen."
   },
   "inactive2faReport": {
     "message": "Bericht über inaktive 2FA"

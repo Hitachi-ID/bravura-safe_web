@@ -16,11 +16,11 @@
     "message": "Nosaukums"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "Jauns URI"
+    "message": "Jauns URL"
   },
   "username": {
     "message": "Lietotājvārds"
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Atbilstības noteikšana",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "Noklusējuma atbilstības noteikšana",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Nekad"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "Ievietot URI starpliktuvē",
-    "description": "Copy URI to clipboard"
+    "message": "Ievietot URL starpliktuvē",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "Mana glabātava"
@@ -1423,7 +1423,7 @@
     "message": "Atrastas nedrošās tīmekļa vietnes"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "Glabātavā tika atrasts(i) $COUNT$ vienums(i) ar nedrošām adresēm. Ir ieteicams tās mainīt uz URI ar https://, ja tīmekļa vietne to nodrošina.",
+    "message": "Glabātavā tika atrasts(i) $COUNT$ vienums(i) ar nedrošām adresēm. Ir ieteicams tās mainīt uz URL ar https://, ja tīmekļa vietne to nodrošina.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "Nevienam glabātavas vienumam nav nedrošu URI."
+    "message": "Nevienam glabātavas vienumam nav nedrošu URL."
   },
   "inactive2faReport": {
     "message": "Neizmantoto 2FA pārskats"

@@ -16,11 +16,11 @@
     "message": "Όνομα"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "Νέο URI"
+    "message": "Νέο URL"
   },
   "username": {
     "message": "Όνομα χρήστη"
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Εντοπισμός Αντιστοίχισης",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "Προεπιλεγμένος εντοπισμός αντιστοίχισης",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Ποτέ"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "Αντιγραφή URI",
-    "description": "Copy URI to clipboard"
+    "message": "Αντιγραφή URL",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "Το Vault μου"
@@ -1423,7 +1423,7 @@
     "message": "Βρέθηκαν μη ασφαλής ιστοσελίδες"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "Βρήκαμε $COUNT$ στοιχεία στο vault σας, με μη ασφαλές URI. Θα πρέπει να αλλάξετε το URI σε https:/ εφόσον το επιτρέπει η ιστοσελίδα.",
+    "message": "Βρήκαμε $COUNT$ στοιχεία στο vault σας, με μη ασφαλές URL. Θα πρέπει να αλλάξετε το URL σε https:/ εφόσον το επιτρέπει η ιστοσελίδα.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "Κανένα στοιχείο στο vault σας δεν διαθέτει ανασφάλιστα URIs."
+    "message": "Κανένα στοιχείο στο vault σας δεν διαθέτει ανασφάλιστα URLs."
   },
   "inactive2faReport": {
     "message": "Μη Ενεργή Αναφορά 2FA"

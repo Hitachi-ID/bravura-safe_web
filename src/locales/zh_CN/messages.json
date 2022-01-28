@@ -16,11 +16,11 @@
     "message": "名称"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "新增 URI"
+    "message": "新增 URL"
   },
   "username": {
     "message": "用户名"
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "匹配检测",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "默认匹配检测",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "从不"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "复制 URI",
-    "description": "Copy URI to clipboard"
+    "message": "复制 URL",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "密码库"
@@ -1423,7 +1423,7 @@
     "message": "发现不安全的网站"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "我们在您的密码库中发现了 $COUNT$ 个项目带有不安全的 URI。如果网站允许，您应该将他们更改为 https://。",
+    "message": "我们在您的密码库中发现了 $COUNT$ 个项目带有不安全的 URL。如果网站允许，您应该将他们更改为 https://。",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "没有在你的密码库中发现带不安全 URI 的项目。"
+    "message": "没有在你的密码库中发现带不安全 URL 的项目。"
   },
   "inactive2faReport": {
     "message": "未激活 2FA 报告"

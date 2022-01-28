@@ -16,11 +16,11 @@
     "message": "Nome"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "Nuovo URI"
+    "message": "Nuovo URL"
   },
   "username": {
     "message": "Nome utente"
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Rilevamento di corrispondenza",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "Rilevamento di corrispondenza predefinito",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Mai"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "Copia URI",
-    "description": "Copy URI to clipboard"
+    "message": "Copia URL",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "La mia cassaforte"
@@ -1423,7 +1423,7 @@
     "message": "Trovati siti web non protetti"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "Abbiamo trovato $COUNT$ elementi nella tua cassaforte con URI non protetti. Dovresti cambiare il loro schema URL in https:// se il sito lo consente.",
+    "message": "Abbiamo trovato $COUNT$ elementi nella tua cassaforte con URL non protetti. Dovresti cambiare il loro schema URL in https:// se il sito lo consente.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "Nessun elemento nella tua cassaforte ha URI non protetti."
+    "message": "Nessun elemento nella tua cassaforte ha URL non protetti."
   },
   "inactive2faReport": {
     "message": "Resoconto 2FA inattivi"

@@ -16,11 +16,11 @@
     "message": "名稱"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "新增 URI"
+    "message": "新增 URL"
   },
   "username": {
     "message": "使用者名稱"
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "一致性偵測",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "預設一致性偵測",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "永不"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "複製 URI",
-    "description": "Copy URI to clipboard"
+    "message": "複製 URL",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "我的密碼庫"
@@ -1423,7 +1423,7 @@
     "message": "發現不安全的網站"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "我們在您的密碼庫中找到 $COUNT$ 個使用不安全 URI 的項目。如果網站允許，您應變更其網址方案為 https://。",
+    "message": "我們在您的密碼庫中找到 $COUNT$ 個使用不安全 URL 的項目。如果網站允許，您應變更其網址方案為 https://。",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "您的密碼庫中沒有使用不安全 URI 的項目。"
+    "message": "您的密碼庫中沒有使用不安全 URL 的項目。"
   },
   "inactive2faReport": {
     "message": "無效 2FA 報告"

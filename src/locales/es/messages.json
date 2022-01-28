@@ -16,11 +16,11 @@
     "message": "Nombre"
   },
   "uri": {
-    "message": "URI"
+    "message": "URL"
   },
   "uriPosition": {
-    "message": "URI $POSITION$",
-    "description": "A listing of URIs. Ex: URI 1, URI 2, URI 3, etc.",
+    "message": "URL $POSITION$",
+    "description": "A listing of URLs. Ex: URL 1, URL 2, URL 3, etc.",
     "placeholders": {
       "position": {
         "content": "$1",
@@ -29,7 +29,7 @@
     }
   },
   "newUri": {
-    "message": "Nueva URI"
+    "message": "Nueva URL"
   },
   "username": {
     "message": "Usuario"
@@ -205,11 +205,11 @@
   },
   "matchDetection": {
     "message": "Tipo de detección",
-    "description": "URI match detection for auto-fill."
+    "description": "URL match detection for auto-fill."
   },
   "defaultMatchDetection": {
     "message": "Detección por defecto",
-    "description": "Default URI match detection for auto-fill."
+    "description": "Default URL match detection for auto-fill."
   },
   "never": {
     "message": "Nunca"
@@ -401,8 +401,8 @@
     "description": "Copy credit card security code (CVV)"
   },
   "copyUri": {
-    "message": "Copiar URI",
-    "description": "Copy URI to clipboard"
+    "message": "Copiar URL",
+    "description": "Copy URL to clipboard"
   },
   "myVault": {
     "message": "Mi caja fuerte"
@@ -1423,7 +1423,7 @@
     "message": "Sitios web no seguros encontrados"
   },
   "unsecuredWebsitesFoundDesc": {
-    "message": "Hemos encontrado $COUNT$ elemento(s) en su caja fuerte con URIs no seguras. Si el sitio web lo permite debe cambiar su esquema URI a https://.",
+    "message": "Hemos encontrado $COUNT$ elemento(s) en su caja fuerte con URLs no seguras. Si el sitio web lo permite debe cambiar su esquema URL a https://.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1432,7 +1432,7 @@
     }
   },
   "noUnsecuredWebsites": {
-    "message": "No hay elementos en su caja fuerte con URIs no seguras."
+    "message": "No hay elementos en su caja fuerte con URLs no seguras."
   },
   "inactive2faReport": {
     "message": "Informe 2FA inactivo"
