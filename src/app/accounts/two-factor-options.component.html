@@ -26,23 +26,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="list-group-item list-group-item-action" (click)="recover()">
-                        <div class="two-factor-content">
-                            <div class="logo-col">
-                                <img class="recovery-code-img" alt="rc logo">
-                            </div>
-                            <div class="text-col">
-                                <h3>{{'recoveryCodeTitle' | i18n}}</h3>
-                                {{'recoveryCodeDesc' | i18n}}
-                            </div>
-                            <div class="btn-col">
-                                <button [attr.aria-descibedby]="'recoveryCodeTitle' | i18n" type="button"
-                                    class="btn btn-outline-secondary btn-sm" (click)="recover()">
-                                    {{'select' | i18n}}
-                                </button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="modal-footer">

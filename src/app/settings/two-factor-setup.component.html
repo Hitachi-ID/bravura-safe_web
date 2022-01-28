@@ -3,11 +3,6 @@
 </div>
 <p *ngIf="!organizationId">{{'twoStepLoginDesc' | i18n}}</p>
 <p *ngIf="organizationId">{{'twoStepLoginOrganizationDesc' | i18n}}</p>
-<app-callout type="warning" *ngIf="!organizationId">
-    <p>{{'twoStepLoginRecoveryWarning' | i18n}}</p>
-    <button type="button" class="btn btn-outline-secondary"
-        (click)="recoveryCode()">{{'viewRecoveryCode' | i18n}}</button>
-</app-callout>
 <h2 [ngClass]="{'mt-5':!organizationId}">
     {{'providers' | i18n}}
     <small *ngIf="loading">
