@@ -277,7 +277,7 @@
     "description": "Search item type"
   },
   "searchVault": {
-    "message": "Search Vault"
+    "message": "Search Item"
   },
   "allItems": {
     "message": "All Items"
@@ -405,10 +405,10 @@
     "description": "Copy URI to clipboard"
   },
   "myVault": {
-    "message": "My Vault"
+    "message": "My Safe"
   },
   "vault": {
-    "message": "Vault"
+    "message": "Safe"
   },
   "moveSelectedToOrg": {
     "message": "Move Selected to Organization"
