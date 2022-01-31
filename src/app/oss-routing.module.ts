@@ -148,13 +148,6 @@ const routes: Routes = [
                 component: AcceptEmergencyComponent,
                 data: { titleId: 'acceptEmergency' },
             },
-            { path: 'recover', pathMatch: 'full', redirectTo: 'recover-2fa' },
-            {
-                path: 'recover-2fa',
-                component: RecoverTwoFactorComponent,
-                canActivate: [UnauthGuardService],
-                data: { titleId: 'recoverAccountTwoStep' },
-            },
             {
                 path: 'recover-delete',
                 component: RecoverDeleteComponent,
