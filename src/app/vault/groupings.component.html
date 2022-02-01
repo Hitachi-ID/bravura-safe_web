@@ -53,8 +53,11 @@
         </p>
         <ng-container *ngIf="loaded">
             <ng-container *ngIf="showFolders">
-                <span class="folder-label">
-                    <h3 class="d-flex">
+                <span class="folder-label" [ngClass]="{'expand': !foldersCollapsed}">
+                    <h3 class="d-flex align-items-center">
+                        <i *ngIf="folders.length" class="fa fa-fw cursor-pointer" title="{{'toggleCollapse' | i18n}}"
+                            [ngClass]="{'fa-caret-right': foldersCollapsed, 'fa-caret-down': !foldersCollapsed}"
+                            (click)="foldersCollapse()" role="button"></i>
                         {{'folders' | i18n}}
                         <a href="#" class="text-muted ml-auto" appStopClick (click)="addFolder()"
                             appA11yTitle="{{'addFolder' | i18n}}">
@@ -62,7 +65,7 @@
                         </a>
                     </h3>
                 </span>
-                <ul class="fa-ul card-ul">
+                <ul class="fa-ul card-ul" *ngIf="!foldersCollapsed">
                     <ng-template #recursiveFolders let-folders>
                         <li *ngFor="let f of folders"
                             [ngClass]="{active: selectedFolder && f.node.id === selectedFolderId, 'expand': f.children.length && !isCollapsed(f.node)}">
@@ -91,12 +94,15 @@
                 </ul>
             </ng-container>
             <ng-container *ngIf="showCollections && collections && collections.length">
-                <span class="collection-label">
-                    <h3 class="d-flex">
+                <span class="collection-label" [ngClass]="{'expand': !collectionsCollapsed}">
+                    <h3 class="d-flex align-items-center">
+                        <i *ngIf="collections.length" class="fa fa-fw cursor-pointer" title="{{'toggleCollapse' | i18n}}"
+                            [ngClass]="{'fa-caret-right': collectionsCollapsed, 'fa-caret-down': !collectionsCollapsed}"
+                            (click)="collectionsCollapse()" role="button"></i>
                         {{'collections' | i18n}}
                     </h3>
                 </span>
-                <ul class="fa-ul card-ul">
+                <ul class="fa-ul card-ul" *ngIf="!collectionsCollapsed">
                     <ng-template #recursiveCollections let-collections>
                         <li *ngFor="let c of collections" [ngClass]="{active: c.node.id === selectedCollectionId, 'expand': c.children.length && !isCollapsed(c.node)}">
                             <div class="d-flex">
