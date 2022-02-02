@@ -1,26 +1,30 @@
 <div class="container page-content">
-    <ng-container *ngIf="loading">
-        <i class="fa fa-spinner fa-spin text-muted" title="{{'loading' | i18n}}" aria-hidden="true"></i>
-        <span class="sr-only">{{'loading' | i18n}}</span>
-    </ng-container>
-    <ng-container *ngIf="!loading">
-        <div class="row">
-            <div class="col-3">
-                <div class="card mb-4" *ngIf="organization.canAccessImportExport">
-                    <div class="card-header">{{'tools' | i18n}}</div>
-                    <div class="list-group list-group-flush">
-                        <a routerLink="import" class="list-group-item" routerLinkActive="active">
-                            {{'importData' | i18n}}
-                        </a>
-                        <a routerLink="export" class="list-group-item" routerLinkActive="active">
-                            {{'exportVault' | i18n}}
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-9">
-                <router-outlet></router-outlet>
-            </div>
+  <ng-container *ngIf="loading">
+    <i
+      class="fa fa-spinner fa-spin text-muted"
+      title="{{ 'loading' | i18n }}"
+      aria-hidden="true"
+    ></i>
+    <span class="sr-only">{{ "loading" | i18n }}</span>
+  </ng-container>
+  <ng-container *ngIf="!loading">
+    <div class="row">
+      <div class="col-3">
+        <div class="card mb-4" *ngIf="organization.canAccessImportExport">
+          <div class="card-header">{{ "tools" | i18n }}</div>
+          <div class="list-group list-group-flush">
+            <a routerLink="import" class="list-group-item" routerLinkActive="active">
+              {{ "importData" | i18n }}
+            </a>
+            <a routerLink="export" class="list-group-item" routerLinkActive="active">
+              {{ "exportVault" | i18n }}
+            </a>
+          </div>
         </div>
-    </ng-container>
+      </div>
+      <div class="col-9">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </ng-container>
 </div>

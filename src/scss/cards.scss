@@ -1,155 +1,156 @@
 .card {
-    margin: .5em 0 .5em 0;
-    @include themify($themes) {
-        background-color: themed('foregroundColor');
-        border-color: themed('borderColor');
-        color: themed('textColor');
+  margin: 0.5em 0 0.5em 0;
+  @include themify($themes) {
+    background-color: themed("foregroundColor");
+    border-color: themed("borderColor");
+    color: themed("textColor");
+  }
+
+  &.text-danger {
+    &.text-danger > .card-body {
+      @include themify($themes) {
+        color: themed("danger");
+      }
     }
-    
-    &.text-danger {
-        &.text-danger > .card-body {
-            @include themify($themes) {
-                color: themed('danger');
-            }
-        }
-    }
+  }
 }
 
-.card-header, .modal-header {
-    font-weight: bold;
-    text-transform: uppercase;
+.card-header,
+.modal-header {
+  font-weight: bold;
+  text-transform: uppercase;
 
-    small {
-        font-weight: normal;
-        text-transform: none;
-        @extend .text-muted;
-    }
+  small {
+    font-weight: normal;
+    text-transform: none;
+    @extend .text-muted;
+  }
 }
 
 .card-header {
-    @include themify($themes) {
-        background-color: themed('headerColor');
-        color: themed('headingColor');
-    }
+  @include themify($themes) {
+    background-color: themed("headerColor");
+    color: themed("headingColor");
+  }
 
-    a:hover {
-        &:not(.badge){
-            @include themify($themes) {
-                color: themed('learnMoreHover');
-            }
-        }
+  a:hover {
+    &:not(.badge) {
+      @include themify($themes) {
+        color: themed("learnMoreHover");
+      }
     }
+  }
 }
 
 .card-body-header {
-    font-size: $font-size-lg;
-    @extend .mb-4
+  font-size: $font-size-lg;
+  @extend .mb-4;
 }
 
 .card ul.fa-ul.card-ul {
-    margin-left: 1.9em;
+  margin-left: 1.9em;
 
-    li {
-        word-break: break-all;
-        line-height: 30px;
-        &.active {
-            font-weight: 700;
-            border-radius: 0 10px 10px 0;
-            @include themify($themes) {
-                background-color: themed('filterPanelActiveBackgroundColor');
-                color: themed('filterPanelActiveColor');
-            }
-            // make sure filter panel color won't be replaced by a child link color
-            & a {
-                @include themify($themes) {
-                    color: themed('filterPanelActiveColor') !important;
-                }
-            }
+  li {
+    word-break: break-all;
+    line-height: 30px;
+    &.active {
+      font-weight: 700;
+      border-radius: 0 10px 10px 0;
+      @include themify($themes) {
+        background-color: themed("filterPanelActiveBackgroundColor");
+        color: themed("filterPanelActiveColor");
+      }
+      // make sure filter panel color won't be replaced by a child link color
+      & a {
+        @include themify($themes) {
+          color: themed("filterPanelActiveColor") !important;
         }
-        &:hover {
-            border-left-color: rgba(103,103,103,.4);
-            border-radius: 0 10px 10px 0;
-            @include themify($themes) {
-                background-color: themed('filterPanelHoverBackgroundColor');
-                color: themed('filterPanelHoverColor');
-            }
-            // make sure filter panel color won't be replaced by a child link color
-            & a {
-                @include themify($themes) {
-                    color: themed('filterPanelHoverColor');
-                }
-            }
-        }
-        & > a {
-            margin-left: 10px;
-        }
-        & > div.d-flex {
-            margin-left: 10px;
-        }
-        &.expand > ul.fa-ul.card-ul.carets {
-            display: flex;
-            flex-direction: column;
-            margin-left: 0 !important;
-            & > li > div.d-flex {
-                margin-left: 38px;
-                & > i {
-                    margin-right: 5px;
-                }
-            }
-        }
-        div.d-flex {
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            flex-wrap: wrap;
-            a.text-break {
-                flex: 1 0 60%;
-            }
-        }
+      }
     }
+    &:hover {
+      border-left-color: rgba(103, 103, 103, 0.4);
+      border-radius: 0 10px 10px 0;
+      @include themify($themes) {
+        background-color: themed("filterPanelHoverBackgroundColor");
+        color: themed("filterPanelHoverColor");
+      }
+      // make sure filter panel color won't be replaced by a child link color
+      & a {
+        @include themify($themes) {
+          color: themed("filterPanelHoverColor");
+        }
+      }
+    }
+    & > a {
+      margin-left: 10px;
+    }
+    & > div.d-flex {
+      margin-left: 10px;
+    }
+    &.expand > ul.fa-ul.card-ul.carets {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0 !important;
+      & > li > div.d-flex {
+        margin-left: 38px;
+        & > i {
+          margin-right: 5px;
+        }
+      }
+    }
+    div.d-flex {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      a.text-break {
+        flex: 1 0 60%;
+      }
+    }
+  }
+
+  .fa-li {
+    position: static;
+    margin-top: 8px;
+    align-self: flex-start;
+  }
+
+  .fa-folder-o {
+    top: 10px;
+  }
+
+  &.carets {
+    margin-left: 1.1em;
 
     .fa-li {
-        position: static;
-        margin-top: 8px;
-        align-self: flex-start;
+      left: -17px;
+      width: 1.1em;
     }
+  }
 
-    .fa-folder-o {
-        top: 10px;
-    }
-
+  ul {
     &.carets {
-        margin-left: 1.1em;
-
-        .fa-li {
-            left: -17px;
-            width: 1.1em;
-        }
+      margin-left: 0.85em;
     }
-
-    ul {
-        &.carets {
-            margin-left: 0.85em;
-        }
-    }
+  }
 }
 
 .card-org-plans {
-    h2 {
-        font-size: $font-size-lg;
-    }
+  h2 {
+    font-size: $font-size-lg;
+  }
 }
 
 .card-body {
-    &:not(.bg-light > .card-body) {
-        @include themify($themes) {
-            background-color: themed('foregroundColor');
-            color: themed('textColor');
-        }
-        &.card-body a:not(li a) {
-            @include themify($themes) {
-                font-weight: themed('linkWeight');
-            }
-        }
+  &:not(.bg-light > .card-body) {
+    @include themify($themes) {
+      background-color: themed("foregroundColor");
+      color: themed("textColor");
     }
+    &.card-body a:not(li a) {
+      @include themify($themes) {
+        font-weight: themed("linkWeight");
+      }
+    }
+  }
 }

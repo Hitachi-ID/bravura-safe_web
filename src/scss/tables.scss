@@ -1,187 +1,194 @@
 .table {
+  @include themify($themes) {
+    color: themed("textColor");
+  }
+
+  td {
+    vertical-align: middle;
     @include themify($themes) {
-        color: themed('textColor');
+      color: themed("textColor");
     }
 
-    td {
-        vertical-align: middle;
+    & > a {
+      &:not(.badge) {
         @include themify($themes) {
-            color: themed('textColor');
+          color: themed("tableLinkColor");
         }
-
-        & > a {
-            &:not(.badge) {
-                @include themify($themes) {
-                    color: themed('tableLinkColor');
-                }
-                &:hover {
-                    @include themify($themes) {
-                        color: themed('tableLinkColorHover');
-                    }
-                }
-            }
+        &:hover {
+          @include themify($themes) {
+            color: themed("tableLinkColorHover");
+          }
         }
-
-        &.reduced-lh {
-            line-height: 1;
-            
-            small {
-                font-size: 80%;
-            }
-        }
-
-        small, > .fa, .icon {
-            @include themify($themes) {
-                color: themed('textMuted');
-            }
-        }
-
-        input, a, button {
-            &.focus, &:focus, &:focus-visible {
-                box-shadow: none;
-                outline: solid 2px rgba(mix(color-yiq($primary), $primary, 15%), .5);
-                outline-style: auto;
-            }
-        }
-
-        .fa-globe {
-            @include themify($themes) {
-                color: themed('iconColor');
-            }
-        }
+      }
     }
 
-    td.wrap {
-        word-break: break-all;
+    &.reduced-lh {
+      line-height: 1;
+
+      small {
+        font-size: 80%;
+      }
     }
 
-    td.table-list-options {
-        height: 50px;
-        text-align: right;
-        width: 76px;
-        &.reduced-lh {
-            height: auto;
-            line-height: 1;
-        }
-
-        &.wider {
-            max-width: 100px;
-            width: 100px;
-        }
-
-        .btn {
-            line-height: 1;
-            transition: initial;
-        }
-
-        
-        .list-options {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-end;
-            a.list-options-item {
-                padding: 7px 3px;
-                @include themify($themes) {
-                    color: themed('tableOptionsTextColor');
-                }
-                &:hover {
-                    @include themify($themes) {
-                        background: themed('tableOptionsHoverBackground');
-                    }
-                    border-radius: 100px;
-                }
-                &:last-of-type {
-                    margin-right: 5px;
-                }
-            }
-            a.list-options-item.list-options-item-disable {
-                @include themify($themes) {
-                    color: themed('tableOptionsTextDisableColor');
-                }
-                cursor: default;
-                // themify will be dealy, a.list-options-item:hover style will replace a.list-options-item.list-options-item-disable:hover
-                &:hover {
-                    background: inherit !important;
-                }
-            }
-        }
-
-        button.btn-outline-secondary {
-            @include themify($themes) {
-                color: themed('tableOptionsTextColor');
-            }
-        }
-
-        .dropdown-menu {
-            line-height: $line-height-base;
-        }
+    small,
+    > .fa,
+    .icon {
+      @include themify($themes) {
+        color: themed("textMuted");
+      }
     }
 
-    td.table-action-right {
-        text-align: right;
+    input,
+    a,
+    button {
+      &.focus,
+      &:focus,
+      &:focus-visible {
+        box-shadow: none;
+        outline: solid 2px rgba(mix(color-yiq($primary), $primary, 15%), 0.5);
+        outline-style: auto;
+      }
     }
 
-    tr:not(:hover) td.table-list-options {
-        > .dropdown:not(.show) button:not(:focus):not(:active), > button:not(:focus):not(:active) {
-            @extend .sr-only;
-        }
+    .fa-globe {
+      @include themify($themes) {
+        color: themed("iconColor");
+      }
+    }
+  }
+
+  td.wrap {
+    word-break: break-all;
+  }
+
+  td.table-list-options {
+    height: 50px;
+    text-align: right;
+    width: 76px;
+    &.reduced-lh {
+      height: auto;
+      line-height: 1;
     }
 
-    td.table-list-icon {
-        max-width: 45px;
-        text-align: center;
-        width: 45px;
-        
-        img {
-            @extend .rounded;
-            @extend .img-fluid;
-            max-height: 24px;
-        }
+    &.wider {
+      max-width: 100px;
+      width: 100px;
     }
 
-    td.table-list-checkbox {
-        max-width: 35px;
-        width: 35px;
+    .btn {
+      line-height: 1;
+      transition: initial;
     }
 
-    td.table-list-strike {
-        text-decoration: line-through;
+    .list-options {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      a.list-options-item {
+        padding: 7px 3px;
         @include themify($themes) {
-            color: themed('textMuted');
+          color: themed("tableOptionsTextColor");
         }
+        &:hover {
+          @include themify($themes) {
+            background: themed("tableOptionsHoverBackground");
+          }
+          border-radius: 100px;
+        }
+        &:last-of-type {
+          margin-right: 5px;
+        }
+      }
+      a.list-options-item.list-options-item-disable {
+        @include themify($themes) {
+          color: themed("tableOptionsTextDisableColor");
+        }
+        cursor: default;
+        // themify will be dealy, a.list-options-item:hover style will replace a.list-options-item.list-options-item-disable:hover
+        &:hover {
+          background: inherit !important;
+        }
+      }
     }
 
-    &.table-list {
-        &.table td, .table th {
-            &:not(tr:first-child td) {
-                @include themify($themes) {
-                    border-top: 1px solid themed('tableSeparator');
-                }
-            }
-        }
-
-        thead th {
-            border-top: none;
-        }
-
-        tr:first-child {
-            td {
-                border: none;
-            }
-        }
+    button.btn-outline-secondary {
+      @include themify($themes) {
+        color: themed("tableOptionsTextColor");
+      }
     }
+
+    .dropdown-menu {
+      line-height: $line-height-base;
+    }
+  }
+
+  td.table-action-right {
+    text-align: right;
+  }
+
+  tr:not(:hover) td.table-list-options {
+    > .dropdown:not(.show) button:not(:focus):not(:active),
+    > button:not(:focus):not(:active) {
+      @extend .sr-only;
+    }
+  }
+
+  td.table-list-icon {
+    max-width: 45px;
+    text-align: center;
+    width: 45px;
+
+    img {
+      @extend .rounded;
+      @extend .img-fluid;
+      max-height: 24px;
+    }
+  }
+
+  td.table-list-checkbox {
+    max-width: 35px;
+    width: 35px;
+  }
+
+  td.table-list-strike {
+    text-decoration: line-through;
+    @include themify($themes) {
+      color: themed("textMuted");
+    }
+  }
+
+  &.table-list {
+    &.table td,
+    .table th {
+      &:not(tr:first-child td) {
+        @include themify($themes) {
+          border-top: 1px solid themed("tableSeparator");
+        }
+      }
+    }
+
+    thead th {
+      border-top: none;
+    }
+
+    tr:first-child {
+      td {
+        border: none;
+      }
+    }
+  }
 }
 
 .table-hover tbody tr:hover {
-    @include themify($themes) {
-        background-color: themed('tableRowHover');
-        color: themed('tableColorHover');
-    }
+  @include themify($themes) {
+    background-color: themed("tableRowHover");
+    color: themed("tableColorHover");
+  }
 }
 
 .table.table-active {
-    tbody tr {
-        background: rgba(0, 122, 204, 0.1);
-    }
+  tbody tr {
+    background: rgba(0, 122, 204, 0.1);
+  }
 }
