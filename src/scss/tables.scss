@@ -69,6 +69,7 @@
       height: auto;
       line-height: 1;
     }
+  }
 
     &.wider {
       max-width: 100px;
@@ -117,6 +118,7 @@
         color: themed("tableOptionsTextColor");
       }
     }
+  }
 
     .dropdown-menu {
       line-height: $line-height-base;
