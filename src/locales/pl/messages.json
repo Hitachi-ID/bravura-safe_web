@@ -4516,10 +4516,10 @@
     "message": "Wykup"
   },
   "sponsoredFamiliesSelectOffer": {
-    "message": "Select the organization you would like sponsored"
+    "message": "Wybierz organizację, którą chcesz za sponsorować"
   },
   "familiesSponsoringOrgSelect": {
-    "message": "Which Free Families offer would you like to redeem?"
+    "message": "Którą z darmowych ofert rodzinnych chciałbyś użyć?"
   },
   "sponsoredFamiliesEmail": {
     "message": "Enter your personal email to redeem Bravura Safe Families"
@@ -4576,7 +4576,7 @@
     }
   },
   "freeFamiliesPlan": {
-    "message": "Free Families Plan"
+    "message": "Darmowy plan rodzin"
   },
   "redeemNow": {
     "message": "Redeem Now"
@@ -4597,7 +4597,7 @@
     "message": "Revoke"
   },
   "emailSent": {
-    "message": "Email Sent"
+    "message": "Wiadomość została wysłana"
   },
   "revokeSponsorshipConfirmation": {
     "message": "After removing this account, the Families organization owner will be responsible for this subscription and related invoices. Are you sure you want to continue?"

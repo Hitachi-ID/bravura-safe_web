@@ -4016,10 +4016,10 @@
     "message": "Записаться на сброс пароля"
   },
   "enrolledPasswordReset": {
-    "message": "Записано на сброс пароля"
+    "message": "Запрос на сброс пароля зарегистрирован"
   },
   "withdrawPasswordReset": {
-    "message": "Отменить сброс пароля"
+    "message": "Отписаться от сброса пароля"
   },
   "enrollPasswordResetSuccess": {
     "message": "Регистрация успешна!"
@@ -4037,7 +4037,7 @@
     }
   },
   "eventWithdrawPasswordReset": {
-    "message": "Пользователь $ID$ отменил помощь по сбросу пароля.",
+    "message": "Пользователь $ID$ отказался от помощи по сбросу пароля.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -4103,19 +4103,19 @@
     "message": "Разрешить администраторам организации сбрасывать мастер-пароль пользователей организации."
   },
   "resetPasswordPolicyWarning": {
-    "message": "Пользователи в организации должны самостоятельно зарегистрироваться или быть автоматически зарегистрированными, чтобы администраторы могли сбросить их мастер-пароль."
+    "message": "Пользователи организации должны зарегистрироваться самостоятельно или быть зарегистрированными автоматически, чтобы администраторы могли сбросить их мастер-пароль."
   },
   "resetPasswordPolicyAutoEnroll": {
     "message": "Автоматическая регистрация"
   },
   "resetPasswordPolicyAutoEnrollDescription": {
-    "message": "Все пользователи будут автоматически зачислены на сброс пароля после того, как их приглашение будет принято."
+    "message": "Все пользователи будут автоматически записаны на сброс пароля, после того как их приглашение будет принято, и им не будет разрешено отказаться от его выполнения."
   },
   "resetPasswordPolicyAutoEnrollWarning": {
-    "message": "Пользователи, уже входящие в организацию, не будут задним числом зачислены на сброс пароля. Им придется зарегистрироваться самостоятельно, чтобы администраторы могли сбросить их мастер-пароль."
+    "message": "Пользователи, уже входящие в организацию, не смогут записаться на сброс пароля задним числом. Они должны будут зарегистрироваться самостоятельно, прежде чем администраторы смогут сбросить их мастер-пароль."
   },
   "resetPasswordPolicyAutoEnrollCheckbox": {
-    "message": "Автоматически регистрировать новых пользователей"
+    "message": "Автоматически записывать новых пользователей"
   },
   "resetPasswordAutoEnrollInviteWarning": {
     "message": "В этой организации действует корпоративная политика, которая автоматически зарегистрирует вас на сброс пароля. Регистрация позволит администраторам организации изменить ваш мастер-пароль."
@@ -4423,7 +4423,7 @@
     "message": "Дополнительные/пользовательские типы требований к имени (разделенные запятыми)"
   },
   "acrValues": {
-    "message": "Запрошенные справочные значения класса контекста аутентификации (acr_values)"
+    "message": "Запрашиваемый контекст аутентификации 'Класс справочных значений' (acr_values)"
   },
   "expectedReturnAcrValue": {
     "message": "Ожидаемый \"acr\" Значение утверждения в ответе (проверка acr)"
@@ -4495,16 +4495,15 @@
     "message": "Вы и ваша семья имеют право на бесплатные семьи Bravura Safe. Используйте свой личный адрес электронной почты, чтобы защитить данные даже тогда, когда вы не на работе."
   },
   "sponsoredFamiliesEligibleCard": {
-    "message": "Redeem your Free Bravura Safe for Families plan today to keep your data secure even when you are not at work."
-  },
+    "message": "Воспользуйтесь бесплатным планом Bravura Safe для семей сегодня, чтобы обеспечить безопасность ваших данных, даже когда вы не на работе."
   "sponsoredFamiliesInclude": {
-    "message": "The Bravura Safe for Families plan include"
+    "message": "План Bravura Safe для Семей включает"
   },
   "sponsoredFamiliesPremiumAccess": {
     "message": "Премиум-доступ для 6 пользователей"
   },
   "sponsoredFamiliesSharedCollections": {
-    "message": "Shared collections for Family secrets"
+    "message": "Общие коллекции для Семейных секретов"
   },
   "badToken": {
     "message": "Ссылка больше не действительна. Пожалуйста, попросите спонсора повторно отправить предложение."
@@ -4516,28 +4515,28 @@
     "message": "Redeem"
   },
   "sponsoredFamiliesSelectOffer": {
-    "message": "Select the organization you would like sponsored"
+    "message": "Выберите организацию, которую вы хотите спонсировать"
   },
   "familiesSponsoringOrgSelect": {
-    "message": "Which Free Families offer would you like to redeem?"
+    "message": "Какое бесплатное Семейное предложение вы хотели бы использовать?"
   },
   "sponsoredFamiliesEmail": {
-    "message": "Enter your personal email to redeem Bravura Safe Families"
+    "message": "Введите свой личный адрес электронной почты, чтобы активировать Семейный Bravura Safe"
   },
   "sponsoredFamiliesLeaveCopy": {
-    "message": "If you leave or are removed from the sponsoring organization, your Families plan will expire at the end of the billing period."
+    "message": "Если вы покинете или откажетесь от организации со спонсорским предложением, срок действия вашего семейного плана истечет в конце расчетного периода."
   },
   "acceptBitwardenFamiliesHelp": {
-    "message": "Accept offer for an existing organization or create a new Families organization."
+    "message": "Примите предложение существующей организации или создайте новую Семейную организацию."
   },
   "setupSponsoredFamiliesLoginDesc": {
-    "message": "You've been offered a free Bravura Safe Families Plan Organization. To continue, you need to log in to the account that received the offer."
+    "message": "Вам предложили бесплатный Семейный план Bravura Safe. Чтобы продолжить, вам необходимо войти в учетную запись, в которую поступило предложение."
   },
   "sponsoredFamiliesAcceptFailed": {
-    "message": "Unable to accept offer. Please resend the offer email from your enterprise account and try again."
+    "message": "Не удается принять предложение. Отправьте письмо с предложением еще раз из своей корпоративной учетной записи и повторите попытку."
   },
   "sponsoredFamiliesAcceptFailedShort": {
-    "message": "Unable to accept offer. $DESCRIPTION$",
+    "message": "Невозможно принять предложение. $DESCRIPTION$",
     "placeholders": {
       "description": {
         "content": "$1",
@@ -4546,19 +4545,19 @@
 }
   },
   "sponsoredFamiliesOffer": {
-    "message": "Accept Free Bravura Safe Families"
+    "message": "Принять бесплатный Семейный план Bravura Safe"
   },
   "sponsoredFamiliesOfferRedeemed": {
-    "message": "Free Bravura Safe Families offer successfully redeemed"
+    "message": "Бесплатное Семейное предложение Bravura Safe успешно активировано"
   },
   "redeemed": {
     "message": "Redeemed"
   },
   "redeemedAccount": {
-    "message": "Redeemed Account"
+    "message": "Активированный аккаунт"
   },
   "revokeAccount": {
-    "message": "Revoke account $NAME$",
+    "message": "Отозвать активацию аккаунта $NAME$",
     "placeholders": {
       "name": {
         "content": "$1",
@@ -4576,7 +4575,7 @@
     }
   },
   "freeFamiliesPlan": {
-    "message": "Free Families Plan"
+    "message": "Бесплатный Семейный план"
   },
   "redeemNow": {
     "message": "Redeem Now"
@@ -4588,22 +4587,22 @@
     "message": "Remove Sponsorship"
   },
   "removeSponsorshipConfirmation": {
-    "message": "After removing a sponsorship, you will be responsible for this subscription and related invoices. Are you sure you want to continue?"
+    "message": "После удаления спонсорства вы будете нести ответственность за эту подписку и связанные с ней счета. Вы уверены что хотите продолжить?"
   },
   "sponsorshipCreated": {
     "message": "Sponsorship Created"
   },
   "revoke": {
-    "message": "Revoke"
+    "message": "Отозвать"
   },
   "emailSent": {
-    "message": "Email Sent"
+    "message": "Письмо отправлено"
   },
   "revokeSponsorshipConfirmation": {
-    "message": "After removing this account, the Families organization owner will be responsible for this subscription and related invoices. Are you sure you want to continue?"
+    "message": "После удаления этой учетной записи владелец организации Семейства будет нести ответственность за эту подписку и связанные счета. Вы уверены что хотите продолжить?"
   },
   "removeSponsorshipSuccess": {
-    "message": "Sponsorship Removed"
+    "message": "Спонсорство удалено"
   },
   "ssoKeyConnectorUnavailable": {
     "message": "Не удается подключиться к соединителю ключей, повторите попытку позже."
@@ -4661,7 +4660,7 @@
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enable the SSO Authentication policy to require all members to log in with SSO.'"
   },
   "ssoPolicyHelpLink": {
-    "message": "политику SSO",
+    "message": "Политика аутентификации SSO",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enable the SSO Authentication policy to require all members to log in with SSO.'"
   },
   "ssoPolicyHelpEnd": {
@@ -4705,19 +4704,19 @@
     "message": "Выполнена миграция на соединитель ключей"
   },
   "paymentSponsored": {
-    "message": "Please provide a payment method to associate with the organization. Don't worry, we won't charge you anything unless you select additional features or your sponsorship expires. "
+    "message": "Укажите способ оплаты для сопоставления с организацией. Не волнуйтесь, мы не будем ничего взимать с вас, если вы не выберете дополнительные функции или ваше спонсорское предложение не истечет. "
   },
   "orgCreatedSponsorshipInvalid": {
-    "message": "The sponsorship offer has expired. You may delete the organization you created to avoid a charge at the end of your 7 day trial. Otherwise you may close this prompt to keep the organization and assume billing responsibility."
+    "message": "Срок действия спонсорского предложения истек. Вы можете удалить созданную вами организацию, чтобы избежать списания средств по истечении 7-дневного пробного периода. В противном случае вы можете закрыть эту подсказку, чтобы сохранить организацию и принять на себя платежные обязательства."
   },
   "newFamiliesOrganization": {
-    "message": "New Families Organization"
+    "message": "Новая Семейная организация"
   },
   "acceptOffer": {
-    "message": "Accept Offer"
+    "message": "Принять предложение"
   },
   "sponsoringOrg": {
-    "message": "Sponsoring Organization"
+    "message": "Спонсорская организация"
   },
   "keyConnectorTest": {
     "message": "Тест"
@@ -4729,7 +4728,7 @@
     "message": "Не удается связаться с соединителем ключей. Проверьте URL."
   },
   "sponsorshipTokenHasExpired": {
-    "message": "The sponsorship offer has expired."
+    "message": "Срок действия спонсорского предложения истек."
   },
   "freeWithSponsorship": {
     "message": "БЕСПЛАТНО при спонсорской поддержке"
