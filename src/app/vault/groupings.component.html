@@ -1,5 +1,5 @@
 <div class="card vault-filters">
-    <div class="card-header d-flex">
+    <div class="card-header d-flex" *ngIf="false">
         {{'filters' | i18n}}
     </div>
     <div class="card-body">
@@ -22,10 +22,10 @@
                 </a>
             </li>
         </ul>
-        <span class="type-label">
+        <span class="type-label" *ngIf="false">
             <h3>{{'types' | i18n}}</h3>
         </span>
-        <ul class="fa-ul card-ul">
+        <ul class="fa-ul card-ul" *ngIf="false">
             <li [ngClass]="{active: selectedType === cipherType.Login}">
                 <a href="#" appStopClick (click)="selectType(cipherType.Login)">
                     <i class="fa-li fa fa-fw fa-globe"></i>{{'typeLogin' | i18n}}
