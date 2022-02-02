@@ -71,58 +71,56 @@
     }
   }
 
-    &.wider {
-      max-width: 100px;
-      width: 100px;
-    }
+  &.wider {
+    max-width: 100px;
+    width: 100px;
+  }
 
-    .btn {
-      line-height: 1;
-      transition: initial;
-    }
+  .btn {
+    line-height: 1;
+    transition: initial;
+  }
 
-    .list-options {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-end;
-      a.list-options-item {
-        padding: 7px 3px;
-        @include themify($themes) {
-          color: themed("tableOptionsTextColor");
-        }
-        &:hover {
-          @include themify($themes) {
-            background: themed("tableOptionsHoverBackground");
-          }
-          border-radius: 100px;
-        }
-        &:last-of-type {
-          margin-right: 5px;
-        }
-      }
-      a.list-options-item.list-options-item-disable {
-        @include themify($themes) {
-          color: themed("tableOptionsTextDisableColor");
-        }
-        cursor: default;
-        // themify will be dealy, a.list-options-item:hover style will replace a.list-options-item.list-options-item-disable:hover
-        &:hover {
-          background: inherit !important;
-        }
-      }
-    }
-
-    button.btn-outline-secondary {
+  .list-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    a.list-options-item {
+      padding: 7px 3px;
       @include themify($themes) {
         color: themed("tableOptionsTextColor");
+      }
+      &:hover {
+        @include themify($themes) {
+          background: themed("tableOptionsHoverBackground");
+        }
+        border-radius: 100px;
+      }
+      &:last-of-type {
+        margin-right: 5px;
+      }
+    }
+    a.list-options-item.list-options-item-disable {
+      @include themify($themes) {
+        color: themed("tableOptionsTextDisableColor");
+      }
+      cursor: default;
+      // themify will be dealy, a.list-options-item:hover style will replace a.list-options-item.list-options-item-disable:hover
+      &:hover {
+        background: inherit !important;
       }
     }
   }
 
-    .dropdown-menu {
-      line-height: $line-height-base;
+  button.btn-outline-secondary {
+    @include themify($themes) {
+      color: themed("tableOptionsTextColor");
     }
+  }
+
+  .dropdown-menu {
+    line-height: $line-height-base;
   }
 
   td.table-action-right {

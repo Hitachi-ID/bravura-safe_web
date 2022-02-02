@@ -112,7 +112,6 @@ export class ChangePasswordComponent extends BaseChangePasswordComponent {
       this.platformUtilsService.showToast("error", null, this.i18nService.t("updateKey"));
       return;
     }
-  }
 
     await super.submit();
   }
