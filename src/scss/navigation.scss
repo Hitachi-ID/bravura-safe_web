@@ -34,6 +34,9 @@
     }
     .nav-item {
         > .nav-link {
+            padding-top: 0;
+            padding-bottom: 0;
+
             @include themify($themes) {
                 font-weight: themed('navWeight');
             }
@@ -59,15 +62,18 @@
 }
 
 ul.navbar-nav {
-    line-height: 46px;
+    line-height: $navbar-height - 6px; // subtract border bottom and top of nav-item
     padding: 0 10px;
     li.nav-item {
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid transparent;
+
         &:hover {
             background-color: $navbar-bg;
         }
         &.active {
             background-color: $navbar-bg;
-            border-bottom: 2px solid $primary-accent;
+            border-bottom-color: $primary-accent;
         }
     }
 }
