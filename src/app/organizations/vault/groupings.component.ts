@@ -22,10 +22,18 @@ import { GroupingsComponent as BaseGroupingsComponent } from '../../vault/groupi
 export class GroupingsComponent extends BaseGroupingsComponent {
     organization: Organization;
 
+    public foldersCollapsed: boolean;
+    public collectionsCollapsed: boolean;
+
     constructor(collectionService: CollectionService, folderService: FolderService,
         storageService: StorageService, userService: UserService,
         private apiService: ApiService, private i18nService: I18nService) {
         super(collectionService, folderService, storageService, userService);
+    }
+
+    async ngOnInit() {
+        this.foldersCollapsed = await !!this.storageService.get<boolean>('foldersCollapsed');
+        this.collectionsCollapsed = await !!this.storageService.get<boolean>('collectionsCollapsed');
     }
 
     async loadCollections() {
@@ -58,5 +66,15 @@ export class GroupingsComponent extends BaseGroupingsComponent {
 
     isCollapsed(grouping: CollectionView) {
         return super.isCollapsed(grouping, 'org_');
+    }
+
+    async foldersCollapse() {
+        this.foldersCollapsed = !this.foldersCollapsed;
+        await this.storageService.save('foldersCollapsed', this.foldersCollapsed);
+    }
+
+    async collectionsCollapse() {
+        this.collectionsCollapsed = !this.collectionsCollapsed;
+        await this.storageService.save('collectionsCollapsed', this.collectionsCollapsed);
     }
 }

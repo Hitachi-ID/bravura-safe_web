@@ -44,25 +44,26 @@ app-vault-groupings, app-org-vault-groupings, .groupings {
             }
         }
 
-        span {
+        div.card-body > span {
             display: inline-block;
             margin-bottom: .25rem;
-            padding: .25rem 0 .25rem 1rem;
+            padding: .25rem 0 .75rem 0;
             position: relative;
             width: 100%;
             &.type-label,
-            &.folder-label,
-            &.collection-label {
+            &.folder-label.expand,
+            &.collection-label.expand {
                 &::after {
                     background-color: #c00;
                     bottom: 0;
                     content: "";
                     height: 2px;
-                    left: 1rem;
+                    left: 17px;
                     position: absolute;
                     width: 4ch
                 }
             }
+            
             h3 {
                 font-weight: normal;
                 text-transform: uppercase;
@@ -73,6 +74,22 @@ app-vault-groupings, app-org-vault-groupings, .groupings {
                     color: themed('textMuted');
                 }
             }
+            &.type-label {
+                h3.d-flex {
+                    margin: 0 0 0 17px;
+                    i {
+                        padding: 2px;
+                        margin: 0 0 2px 0;
+                    }
+                }
+            }
+            &.folder-label,
+            &.collection-label {
+                h3.d-flex {
+                    margin-bottom: 0;
+                }
+            }
+
         }
 
         ul:last-child {
@@ -134,7 +151,7 @@ app-vault-groupings, app-org-vault-groupings, .groupings {
 app-vault div.vault-filters div.card-body,
 app-org-vault div.vault-filters div.card-body,
 app-send div.vault-filters div.card-body {
-    padding: 0;
+    padding: 0 0 10px 0;
     ul.card-ul {
         margin-left: 0;
     }
