@@ -38,6 +38,16 @@ body {
     width: 980px;
 }
 
+.page-header {
+    position: sticky;
+    top: $navbar-height;
+    z-index: 1;
+
+    @include themify($themes) {
+        background: themed('backgroundColor');
+    }
+}
+
 .page-header, .secondary-header {
     margin-bottom: 0.5rem;
     padding-bottom: 0.6rem;
