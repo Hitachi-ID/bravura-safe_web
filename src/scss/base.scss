@@ -40,9 +40,13 @@ body {
 
 .page-header {
     padding-top: $navbar-bottom-margin;
-    position: sticky;
-    top: $navbar-height;
-    z-index: 1;
+
+    // Attempted to make page-header float, but it causes issues with the
+    // layering of nested dialogs in bulk actions, so will require a
+    // greater restructure to support.
+    // position: sticky;
+    // top: $navbar-height;
+    // z-index: 1;
 
     @include themify($themes) {
         background: themed('backgroundColor');
