@@ -1,6 +1,6 @@
 <div class="container page-content">
     <div class="row">
-        <div class="col-3 sidebar-panel">
+        <div class="col-3 sidebar-panel d-flex flex-column">
             <div class="card border-warning mb-4" *ngIf="showUpdateKey">
                 <div class="card-header bg-warning text-white">
                     <i class="fa fa-warning fa-fw" aria-hidden="true"></i> {{'updateKeyTitle' | i18n}}
@@ -36,7 +36,7 @@
                     </a>
                 </div>
             </div>
-            <div class="dropdown organizations">
+            <div class="dropdown organizations flex-grow-0 flex-shrink-0">
                 <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                     appA11yTitle="{{'organizations' | i18n}}">
@@ -47,7 +47,7 @@
                     <app-organizations [vault]="true"></app-organizations>
                 </div>
             </div>
-            <app-vault-groupings (onAllClicked)="clearGroupingFilters()" (onFavoritesClicked)="filterFavorites()"
+            <app-vault-groupings class="d-flex flex-column overflow-hidden" (onAllClicked)="clearGroupingFilters()" (onFavoritesClicked)="filterFavorites()"
                 (onCipherTypeClicked)="filterCipherType($event)" (onFolderClicked)="filterFolder($event.id)"
                 (onAddFolder)="addFolder()" (onEditFolder)="editFolder($event.id)"
                 (onCollectionClicked)="filterCollection($event.id)" (onSearchTextChanged)="filterSearchText($event)"

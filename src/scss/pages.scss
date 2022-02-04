@@ -255,6 +255,18 @@ app-sponsored-families {
     }
 }
 
+.page-content > .row > .col-3:first-child {
+    height: 100%;
+    padding-top: $navbar-bottom-margin;
+    position: sticky;
+    top: $navbar-height;
+}
+
+app-vault, app-org-vault {
+    .page-content > .row > .col-3:first-child {
+        height: calc(100vh - $navbar-height - $navbar-bottom-margin);
+    }
+}
 
 /* Register Layout Page */
 .layout {

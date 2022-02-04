@@ -39,6 +39,7 @@ body {
 }
 
 .page-header {
+    padding-top: $navbar-bottom-margin;
     position: sticky;
     top: $navbar-height;
     z-index: 1;
@@ -81,10 +82,6 @@ img.logo {
         }
     }
 } 
-
-.page-content {
-    margin-top: 20px;
-}
 
 .footer {
     margin-top: 40px;
