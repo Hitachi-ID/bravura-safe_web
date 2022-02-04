@@ -1,4 +1,6 @@
 .navbar {
+    z-index: 2;
+
     @include themify($themes) {
         background-color: themed('navBackground');
     }
