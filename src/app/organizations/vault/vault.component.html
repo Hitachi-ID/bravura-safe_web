@@ -1,7 +1,7 @@
 <div class="container page-content">
     <div class="row">
-        <div class="col-3">
-            <app-org-vault-groupings [showFolders]="false" [showFavorites]="false" [showTrash]="true"
+        <div class="col-3 d-flex flex-column">
+            <app-org-vault-groupings class="d-flex flex-column overflow-hidden" [showFolders]="false" [showFavorites]="false" [showTrash]="true"
                 (onAllClicked)="clearGroupingFilters()" (onCipherTypeClicked)="filterCipherType($event)"
                 (onCollectionClicked)="filterCollection($event.id)" (onSearchTextChanged)="filterSearchText($event)"
                 (onTrashClicked)="filterDeleted()">
@@ -37,6 +37,8 @@
                 (onCollectionsClicked)="editCipherCollections($event)" (onEventsClicked)="viewEvents($event)"
                 (onCloneClicked)="cloneCipher($event)">
             </app-org-vault-ciphers>
+            <div class="vertical-spacer"></div>
+            <app-footer></app-footer>
         </div>
     </div>
 </div>

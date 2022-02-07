@@ -1,4 +1,6 @@
 .navbar {
+    z-index: 2;
+
     @include themify($themes) {
         background-color: themed('navBackground');
     }
@@ -86,8 +88,11 @@ ul.navbar-nav {
 }
 
 .org-nav {
-    height: 100px;
-    min-height: 100px;
+    height: $org-header-height;
+    min-height: $org-header-height;
+    top: $navbar-height;
+    z-index: 1;
+
     @include themify($themes) {
         background-color: themed('navOrgBackgroundColor');
         border-bottom: 1px solid themed('borderColor');

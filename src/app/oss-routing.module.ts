@@ -475,6 +475,7 @@ const routes: Routes = [
     imports: [RouterModule.forRoot(routes, {
         useHash: true,
         paramsInheritanceStrategy: 'always',
+        scrollPositionRestoration: 'enabled',
         /*enableTracing: true,*/
     })],
     exports: [RouterModule],

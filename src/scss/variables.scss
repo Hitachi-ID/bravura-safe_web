@@ -38,6 +38,7 @@ $code-font-size: 100%;
 $navbar-padding-y: 0;
 $navbar-padding-x: 0;
 $navbar-height: 50px;
+$navbar-bottom-margin: 20px;
 $grid-gutter-width: 20px;
 $card-spacer-y: .6rem;
 
@@ -54,6 +55,8 @@ $navbar-brand-padding-y: 0;
 $navbar-dark-color: rgba($white, .7);
 $navbar-dark-hover-color: rgba($white, .9);
 $navbar-nav-link-padding-x: 0.8rem;
+
+$org-header-height: 100px;
 
 $dropdown-link-color: $navbar-dark-color;
 $dropdown-link-hover-bg: rgba(#000000, .06);

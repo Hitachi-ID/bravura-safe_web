@@ -255,6 +255,37 @@ app-sponsored-families {
     }
 }
 
+.container.page-content {
+    padding-bottom: 20px;
+}
+
+.col-9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    > * {
+        flex: 0 0 auto;
+    }
+
+    > .vertical-spacer {
+        flex: 1 1 auto;
+    }
+}
+
+.page-content > .row > .col-3:first-child {
+    height: calc(100vh - $navbar-height - $navbar-bottom-margin);
+    padding-top: $navbar-bottom-margin;
+    position: sticky;
+    top: $navbar-height;
+}
+
+app-organization-layout {
+    .page-content > .row > .col-3:first-child {
+        height: calc(100vh - $navbar-height - $navbar-bottom-margin - $org-header-height);
+        top: $navbar-height + $org-header-height;
+    }
+}
 
 /* Register Layout Page */
 .layout {
