@@ -83,19 +83,10 @@
         & > a {
             margin-left: 10px;
         }
-        & > div.d-flex {
-            margin-left: 10px;
-        }
         &.expand > ul.fa-ul.card-ul.carets {
             display: flex;
             flex-direction: column;
             margin-left: 0 !important;
-            & > li > div.d-flex {
-                margin-left: 38px;
-                & > i {
-                    margin-right: 5px;
-                }
-            }
         }
         div.d-flex {
             flex-direction: row;
@@ -120,18 +111,11 @@
 
     &.carets {
         margin-left: 1.1em;
-
-        .fa-li {
-            left: -17px;
-            width: 1.1em;
-        }
     }
+}
 
-    ul {
-        &.carets {
-            margin-left: 0.85em;
-        }
-    }
+.card > .card-body > ul.fa-ul.card-ul > li > div.d-flex {
+    @include recursiveIndent();
 }
 
 .card-org-plans {
