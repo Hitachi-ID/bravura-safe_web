@@ -1,6 +1,7 @@
 {
   "name": "bitwarden-web",
   "version": "2.25.0",
+  "internalVersion": "2022-01",
   "license": "GPL-3.0",
   "repository": "https://github.com/bitwarden/web",
   "scripts": {

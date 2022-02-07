@@ -143,6 +143,12 @@ const plugins = [
                 transform (content, path) {
                     return content.toString().replace('process.env.APPLICATION_VERSION', pjson.version);
                 },
+            },
+            {
+                from: './src/internalVersion.json',
+                transform (content, path) {
+                    return content.toString().replace('process.env.INTERNAL_APPLICATION_VERSION', pjson.internalVersion);
+                },
             }
         ],
     }),
@@ -154,6 +160,7 @@ const plugins = [
         'ENV': ENV,
         'NODE_ENV': NODE_ENV === 'production' ? 'production' : 'development',
         'APPLICATION_VERSION': pjson.version,
+        'INTERNAL_APPLICATION_VERSION': pjson.internalVersion,
         'CACHE_TAG': Math.random().toString(36).substring(7),
         'URLS': envConfig['urls'] ?? {},
         'STRIPE_KEY': envConfig['stripeKey'] ?? '', 

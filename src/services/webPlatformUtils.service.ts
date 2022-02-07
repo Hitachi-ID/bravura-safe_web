@@ -155,6 +155,10 @@ export class WebPlatformUtilsService implements PlatformUtilsService {
         return Promise.resolve(process.env.APPLICATION_VERSION || '-');
     }
 
+    getInternalApplicationVersion(): Promise<string> {
+        return Promise.resolve(process.env.INTERNAL_APPLICATION_VERSION || '-');
+    }
+
     supportsWebAuthn(win: Window): boolean {
         return (typeof (PublicKeyCredential) !== 'undefined');
     }
