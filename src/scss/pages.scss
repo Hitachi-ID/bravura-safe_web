@@ -262,9 +262,16 @@ app-sponsored-families {
     top: $navbar-height;
 }
 
-app-vault, app-org-vault {
+app-vault {
     .page-content > .row > .col-3:first-child {
         height: calc(100vh - $navbar-height - $navbar-bottom-margin);
+    }
+}
+
+app-organization-layout {
+    .page-content > .row > .col-3:first-child {
+        height: calc(100vh - $navbar-height - $navbar-bottom-margin - $org-header-height);
+        top: $navbar-height + $org-header-height;
     }
 }
 
