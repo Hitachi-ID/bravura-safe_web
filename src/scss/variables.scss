@@ -120,6 +120,7 @@ $darkInputPlaceholderColor: $darkGrey1;
 $themes: (
     light: (
         logoSuffix: 'dark',
+        logoNavSuffix: 'white',
         primary: $primary,
         primaryAlt: $primary-accent,
         danger: $danger,
@@ -244,6 +245,7 @@ $themes: (
     ),
     dark: (
         logoSuffix: 'white',
+        logoNavSuffix: 'white',
         primary: $darkPrimary,
         primaryAlt: $darkPrimary-alt,
         danger: $darkDanger,

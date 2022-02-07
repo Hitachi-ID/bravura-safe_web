@@ -76,15 +76,26 @@ body {
 
 img.logo {
     display: block;
-    height: 43px;
+    height: 46px;
     margin: 0 auto;
-    width: 284px;
+    width: 240px;
 
     &.logo-themed {
         @include themify($themes) {
-            content: url('../images/hitachi-id-logo-black.png');
+            content: url('../images/hitachi-id-logo-' + themed('logoSuffix') + '.svg');
         }
     }
+
+    &.logo-themed-nav-bar {
+        height: 26px;
+        pointer-events: none;
+        width: 136px;
+
+        @include themify($themes) {
+            content: url('../images/hitachi-id-logo-' + themed('logoNavSuffix') + '.svg');
+        }
+    }
+
 } 
 
 .footer {
