@@ -268,7 +268,7 @@ app-sponsored-families {
         flex: 1 1 auto;
     }
 
-    > .page-header, app-footer {
+    > .page-header, app-footer, router-outlet {
         flex: 0 0 auto;
     }
 }
