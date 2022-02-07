@@ -9,8 +9,8 @@
                 <td (click)="checkCipher(c)" class="table-list-icon">
                     <app-vault-icon [cipher]="c"></app-vault-icon>
                 </td>
-                <td (click)="selectCipher(c)" class="reduced-lh wrap" >
-                    <a href="#" appStopClick appStopProp (click)="selectCipher(c)" title="{{'editItem' | i18n}}">{{c.name}}</a>
+                <td (click)="selectCipher(c)" class="reduced-lh wrap cursor-pointer" role="button">
+                    <a class="text-decoration-none text-body" href="#" appStopClick appStopProp (click)="selectCipher(c)" title="{{'editItem' | i18n}}">{{c.name}}</a>
                     <ng-container *ngIf="!organization && c.organizationId">
                         <i class="fa fa-cube" appStopProp title="{{'shared' | i18n}}" aria-hidden="true"></i>
                         <span class="sr-only">{{'shared' | i18n}}</span>
