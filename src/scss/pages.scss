@@ -265,25 +265,19 @@ app-sponsored-families {
     justify-content: flex-start;
 
     > * {
-        flex: 1 1 auto;
+        flex: 0 0 auto;
     }
 
-    > .page-header, app-footer, router-outlet {
-        flex: 0 0 auto;
+    > .vertical-spacer {
+        flex: 1 1 auto;
     }
 }
 
 .page-content > .row > .col-3:first-child {
-    height: 100%;
+    height: calc(100vh - $navbar-height - $navbar-bottom-margin);
     padding-top: $navbar-bottom-margin;
     position: sticky;
     top: $navbar-height;
-}
-
-app-vault {
-    .page-content > .row > .col-3:first-child {
-        height: calc(100vh - $navbar-height - $navbar-bottom-margin);
-    }
 }
 
 app-organization-layout {
