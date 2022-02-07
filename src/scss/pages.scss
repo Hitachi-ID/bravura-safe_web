@@ -255,6 +255,24 @@ app-sponsored-families {
     }
 }
 
+.container.page-content {
+    padding-bottom: 20px;
+}
+
+.col-9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    > * {
+        flex: 1 1 auto;
+    }
+
+    > .page-header, app-footer {
+        flex: 0 0 auto;
+    }
+}
+
 .page-content > .row > .col-3:first-child {
     height: 100%;
     padding-top: $navbar-bottom-margin;

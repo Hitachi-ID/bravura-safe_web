@@ -89,7 +89,7 @@ img.logo {
 
 .footer {
     margin-top: 40px;
-    padding: 40px 0 40px 0;
+    padding: 5px 0;
     @include themify($themes) {
         border-top: 1px solid themed('separator');
     }
