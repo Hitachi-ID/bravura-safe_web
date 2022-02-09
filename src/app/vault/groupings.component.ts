@@ -16,15 +16,34 @@ export class GroupingsComponent extends BaseGroupingsComponent {
   searchText: string = "";
   searchPlaceholder: string = null;
 
+  public foldersCollapsed: boolean;
+  public collectionsCollapsed: boolean;
+
   constructor(
     collectionService: CollectionService,
     folderService: FolderService,
     stateService: StateService
   ) {
     super(collectionService, folderService, stateService);
+    this.collectionsCollapsed = true;
+  }
+
+  async ngOnInit() {
+    this.foldersCollapsed = await !!this.storageService.get<boolean>("foldersCollapsed");
+    this.collectionsCollapsed = await !!this.storageService.get<boolean>("collectionsCollapsed");
   }
 
   searchTextChanged() {
     this.onSearchTextChanged.emit(this.searchText);
+  }
+
+  async foldersCollapse() {
+    this.foldersCollapsed = !this.foldersCollapsed;
+    await this.storageService.save("foldersCollapsed", this.foldersCollapsed);
+  }
+
+  async collectionsCollapse() {
+    this.collectionsCollapsed = !this.collectionsCollapsed;
+    await this.storageService.save("collectionsCollapsed", this.collectionsCollapsed);
   }
 }

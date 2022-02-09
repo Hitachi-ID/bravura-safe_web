@@ -27,7 +27,9 @@
             </li>
           </ul>
           <span class="type-label">
-            <h3>{{ "types" | i18n }}</h3>
+            <h3 class="d-flex">
+              {{ "types" | i18n }}
+            </h3>
           </span>
           <ul class="fa-ul card-ul">
             <li [ngClass]="{ active: selectedType === sendType.Text }">
@@ -184,6 +186,8 @@
           </button>
         </ng-container>
       </div>
+      <div class="vertical-spacer"></div>
+      <app-footer></app-footer>
     </div>
   </div>
 </div>

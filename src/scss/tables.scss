@@ -106,7 +106,7 @@
         color: themed("tableOptionsTextDisableColor");
       }
       cursor: default;
-      // themify will be dealy, a.list-options-item:hover style will replace a.list-options-item.list-options-item-disable:hover
+      // themify will be delay, a.list-options-item:hover style will replace a.list-options-item.list-options-item-disable:hover
       &:hover {
         background: inherit !important;
       }

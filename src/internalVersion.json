@@ -1,0 +1,1 @@
+{ "version": "process.env.INTERNAL_APPLICATION_VERSION" }

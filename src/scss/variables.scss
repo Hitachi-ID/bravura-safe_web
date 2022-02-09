@@ -38,6 +38,8 @@ $code-font-size: 100%;
 
 $navbar-padding-y: 0;
 $navbar-padding-x: 0;
+$navbar-height: 50px;
+$navbar-bottom-margin: 20px;
 $grid-gutter-width: 20px;
 $card-spacer-y: 0.6rem;
 
@@ -54,6 +56,8 @@ $navbar-brand-padding-y: 0;
 $navbar-dark-color: rgba($white, 0.7);
 $navbar-dark-hover-color: rgba($white, 0.9);
 $navbar-nav-link-padding-x: 0.8rem;
+
+$org-header-height: 100px;
 
 $dropdown-link-color: $navbar-dark-color;
 $dropdown-link-hover-bg: rgba(#000000, 0.06);
@@ -117,6 +121,7 @@ $darkInputPlaceholderColor: $darkGrey1;
 $themes: (
   light: (
     logoSuffix: "dark",
+    logoNavSuffix: "white",
     primary: $primary,
     primaryAlt: $primary-accent,
     danger: $danger,
@@ -241,6 +246,7 @@ $themes: (
   ),
   dark: (
     logoSuffix: "white",
+    logoNavSuffix: "white",
     primary: $darkPrimary,
     primaryAlt: $darkPrimary-alt,
     danger: $darkDanger,

@@ -38,6 +38,21 @@ body {
   width: 980px;
 }
 
+.page-header {
+  padding-top: $navbar-bottom-margin;
+
+  // Attempted to make page-header float, but it causes issues with the
+  // layering of nested dialogs in bulk actions, so will require a
+  // greater restructure to support.
+  // position: sticky;
+  // top: $navbar-height;
+  // z-index: 1;
+
+  @include themify($themes) {
+    background: themed("backgroundColor");
+  }
+}
+
 .page-header,
 .secondary-header {
   margin-bottom: 0.5rem;
@@ -66,13 +81,23 @@ body {
 
 img.logo {
   display: block;
-  height: 43px;
+  height: 46px;
   margin: 0 auto;
-  width: 284px;
+  width: 240px;
 
   &.logo-themed {
     @include themify($themes) {
-      content: url("../images/hitachi-id-logo-black.png");
+      content: url("../images/hitachi-id-logo-" + themed("logoSuffix") + ".svg");
+    }
+  }
+
+  &.logo-themed-nav-bar {
+    height: 26px;
+    pointer-events: none;
+    width: 136px;
+
+    @include themify($themes) {
+      content: url("../images/hitachi-id-logo-" + themed("logoNavSuffix") + ".svg");
     }
   }
 }
@@ -83,7 +108,7 @@ img.logo {
 
 .footer {
   margin-top: 40px;
-  padding: 40px 0 40px 0;
+  padding: 5px 0;
   @include themify($themes) {
     border-top: 1px solid themed("separator");
   }

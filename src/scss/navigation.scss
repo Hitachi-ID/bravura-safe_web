@@ -1,4 +1,6 @@
 .navbar {
+  z-index: 2;
+
   @include themify($themes) {
     background-color: themed("navBackground");
   }
@@ -35,6 +37,9 @@
   }
   .nav-item {
     > .nav-link {
+      padding-top: 0;
+      padding-bottom: 0;
+
       @include themify($themes) {
         font-weight: themed("navWeight");
       }
@@ -60,15 +65,18 @@
 }
 
 ul.navbar-nav {
-  line-height: 46px;
+  line-height: $navbar-height - 6px; // subtract border bottom and top of nav-item
   padding: 0 10px;
   li.nav-item {
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+
     &:hover {
       background-color: $navbar-bg;
     }
     &.active {
       background-color: $navbar-bg;
-      border-bottom: 2px solid $primary-accent;
+      border-bottom-color: $primary-accent;
     }
   }
 }
@@ -81,8 +89,11 @@ ul.navbar-nav {
 }
 
 .org-nav {
-  height: 100px;
-  min-height: 100px;
+  height: $org-header-height;
+  min-height: $org-header-height;
+  top: $navbar-height;
+  z-index: 1;
+
   @include themify($themes) {
     background-color: themed("navOrgBackgroundColor");
     border-bottom: 1px solid themed("borderColor");
