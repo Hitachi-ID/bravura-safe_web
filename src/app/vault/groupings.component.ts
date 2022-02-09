@@ -29,8 +29,8 @@ export class GroupingsComponent extends BaseGroupingsComponent {
   }
 
   async ngOnInit() {
-    this.foldersCollapsed = await !!this.storageService.get<boolean>("foldersCollapsed");
-    this.collectionsCollapsed = await !!this.storageService.get<boolean>("collectionsCollapsed");
+    this.foldersCollapsed = await !!this.stateService.getFoldersCollapsed();
+    this.collectionsCollapsed = await !!this.stateService.getCollectionsCollapsed();
   }
 
   searchTextChanged() {
@@ -39,11 +39,11 @@ export class GroupingsComponent extends BaseGroupingsComponent {
 
   async foldersCollapse() {
     this.foldersCollapsed = !this.foldersCollapsed;
-    await this.storageService.save("foldersCollapsed", this.foldersCollapsed);
+    await this.stateService.setFoldersCollapsed(this.foldersCollapsed);
   }
 
   async collectionsCollapse() {
     this.collectionsCollapsed = !this.collectionsCollapsed;
-    await this.storageService.save("collectionsCollapsed", this.collectionsCollapsed);
+    await this.stateService.setCollectionsCollapsed(this.collectionsCollapsed);
   }
 }
