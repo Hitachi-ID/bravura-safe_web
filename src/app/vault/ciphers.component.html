@@ -15,8 +15,9 @@
         <td (click)="checkCipher(c)" class="table-list-icon">
           <app-vault-icon [cipher]="c"></app-vault-icon>
         </td>
-        <td (click)="selectCipher(c)" class="reduced-lh wrap">
+        <td (click)="selectCipher(c)" class="reduced-lh wrap cursor-pointer" role="button">
           <a
+            class="text-decoration-none text-body"
             href="#"
             appStopClick
             appStopProp

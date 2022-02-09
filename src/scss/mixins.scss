@@ -1,0 +1,8 @@
+@mixin recursiveIndent($default: 10) {
+  margin-left: $default * 1px;
+  @if $default <= 85 {
+    & + ul.fa-ul.card-ul.carets > li > div.d-flex {
+      @include recursiveIndent($default + 17);
+    }
+  }
+}
