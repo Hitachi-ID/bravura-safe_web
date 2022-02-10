@@ -55,7 +55,7 @@
         </a>
       </li>
     </ul>
-    <p *ngIf="!loaded" class="text-muted ml-2">
+    <p *ngIf="!loaded" class="text-muted ml-3">
       <i class="fa fa-fw fa-spinner fa-spin" title="{{ 'loading' | i18n }}" aria-hidden="true"></i>
       <span class="sr-only">{{ "loading" | i18n }}</span>
     </p>
@@ -63,14 +63,22 @@
       <ng-container *ngIf="showFolders">
         <span class="folder-label" [ngClass]="{ expand: !foldersCollapsed }">
           <h3 class="d-flex align-items-center">
-            <i
-              *ngIf="folders.length"
-              class="fa fa-fw cursor-pointer"
-              title="{{ 'toggleCollapse' | i18n }}"
-              [ngClass]="{ 'fa-caret-right': foldersCollapsed, 'fa-caret-down': !foldersCollapsed }"
+            <a
+              href="#"
+              class="text-muted"
+              appStopClick
               (click)="foldersCollapse()"
-              role="button"
-            ></i>
+              *ngIf="folders.length"
+              appA11yTitle="{{ 'toggleCollapse' | i18n }}"
+            >
+              <i
+                class="fa fa-fw mr-0"
+                [ngClass]="{
+                  'fa-caret-right': foldersCollapsed,
+                  'fa-caret-down': !foldersCollapsed
+                }"
+              ></i>
+            </a>
             {{ "folders" | i18n }}
             <a
               href="#"
@@ -93,16 +101,22 @@
                 class="d-flex"
                 [ngClass]="{ active: selectedFolder && f.node.id === selectedFolderId }"
               >
-                <i
-                  class="fa-li fa"
-                  title="{{ 'toggleCollapse' | i18n }}"
-                  [ngClass]="{
-                    'fa-caret-right': isCollapsed(f.node),
-                    'fa-caret-down': !isCollapsed(f.node),
-                    invisible: !f.children.length
-                  }"
+                <a
+                  href="#"
+                  class="text-muted"
+                  [ngClass]="{ invisible: !f.children.length }"
+                  appStopClick
                   (click)="collapse(f.node)"
-                ></i>
+                  appA11yTitle="{{ 'toggleCollapse' | i18n }}"
+                >
+                  <i
+                    class="fa-li fa mr-0"
+                    [ngClass]="{
+                      'fa-caret-right': isCollapsed(f.node),
+                      'fa-caret-down': !isCollapsed(f.node)
+                    }"
+                  ></i>
+                </a>
                 <i class="fa fa-folder-o" aria-hidden="true"></i>
                 <a href="#" class="text-break" appStopClick (click)="selectFolder(f.node)">
                   {{ f.node.name }}
@@ -133,17 +147,22 @@
       <ng-container *ngIf="showCollections && collections && collections.length">
         <span class="collection-label" [ngClass]="{ expand: !collectionsCollapsed }">
           <h3 class="d-flex align-items-center">
-            <i
-              *ngIf="collections.length"
-              class="fa fa-fw cursor-pointer"
-              title="{{ 'toggleCollapse' | i18n }}"
-              [ngClass]="{
-                'fa-caret-right': collectionsCollapsed,
-                'fa-caret-down': !collectionsCollapsed
-              }"
+            <a
+              href="#"
+              class="text-muted"
+              appStopClick
               (click)="collectionsCollapse()"
-              role="button"
-            ></i>
+              *ngIf="collections.length"
+              appA11yTitle="{{ 'toggleCollapse' | i18n }}"
+            >
+              <i
+                class="fa fa-fw mr-0"
+                [ngClass]="{
+                  'fa-caret-right': collectionsCollapsed,
+                  'fa-caret-down': !collectionsCollapsed
+                }"
+              ></i>
+            </a>
             {{ "collections" | i18n }}
           </h3>
         </span>
@@ -154,16 +173,22 @@
               [ngClass]="{ expand: c.children.length && !isCollapsed(c.node) }"
             >
               <div class="d-flex" [ngClass]="{ active: c.node.id === selectedCollectionId }">
-                <i
-                  class="fa-li fa"
-                  title="{{ 'toggleCollapse' | i18n }}"
-                  [ngClass]="{
-                    'fa-caret-right': isCollapsed(c.node),
-                    'fa-caret-down': !isCollapsed(c.node),
-                    invisible: !c.children.length
-                  }"
+                <a
+                  href="#"
+                  class="text-muted"
+                  [ngClass]="{ invisible: !c.children.length }"
+                  appStopClick
                   (click)="collapse(c.node)"
-                ></i>
+                  appA11yTitle="{{ 'toggleCollapse' | i18n }}"
+                >
+                  <i
+                    class="fa-li fa mr-0"
+                    [ngClass]="{
+                      'fa-caret-right': isCollapsed(c.node),
+                      'fa-caret-down': !isCollapsed(c.node)
+                    }"
+                  ></i>
+                </a>
                 <i class="fa fa-cube" aria-hidden="true"></i>
                 <a href="#" class="text-break" appStopClick (click)="selectCollection(c.node)">
                   {{ c.node.name }}
