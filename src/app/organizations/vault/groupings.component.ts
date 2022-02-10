@@ -5,6 +5,7 @@ import { CollectionService } from "jslib-common/abstractions/collection.service"
 import { FolderService } from "jslib-common/abstractions/folder.service";
 import { I18nService } from "jslib-common/abstractions/i18n.service";
 import { StateService } from "jslib-common/abstractions/state.service";
+import { StorageService } from "jslib-common/abstractions/storage.service";
 
 import { CollectionData } from "jslib-common/models/data/collectionData";
 import { Collection } from "jslib-common/models/domain/collection";
@@ -21,22 +22,18 @@ import { GroupingsComponent as BaseGroupingsComponent } from "../../vault/groupi
 export class GroupingsComponent extends BaseGroupingsComponent {
   organization: Organization;
 
-  public foldersCollapsed: boolean;
-  public collectionsCollapsed: boolean;
+  foldersCollapsed: boolean;
+  collectionsCollapsed: boolean;
 
   constructor(
     collectionService: CollectionService,
     folderService: FolderService,
     stateService: StateService,
+    storageService: StorageService,
     private apiService: ApiService,
     private i18nService: I18nService
   ) {
-    super(collectionService, folderService, stateService);
-  }
-
-  async ngOnInit() {
-    this.foldersCollapsed = await !!this.stateService.getFoldersCollapsed();
-    this.collectionsCollapsed = await !!this.stateService.getCollectionsCollapsed();
+    super(collectionService, folderService, stateService, storageService);
   }
 
   async loadCollections() {
@@ -64,21 +61,11 @@ export class GroupingsComponent extends BaseGroupingsComponent {
     this.nestedCollections = await this.collectionService.getAllNested(this.collections);
   }
 
-  async collapse(grouping: CollectionView) {
-    await super.collapse(grouping, "org_");
+  collapse(grouping: CollectionView)  {
+    return super.collapse(grouping, "org_");
   }
 
   isCollapsed(grouping: CollectionView) {
     return super.isCollapsed(grouping, "org_");
-  }
-
-  async foldersCollapse() {
-    this.foldersCollapsed = !this.foldersCollapsed;
-    await this.stateService.setFoldersCollapsed(this.foldersCollapsed);
-  }
-
-  async collectionsCollapse() {
-    this.collectionsCollapsed = !this.collectionsCollapsed;
-    await this.stateService.setCollectionsCollapsed(this.collectionsCollapsed);
   }
 }

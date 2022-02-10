@@ -2,9 +2,10 @@ import { Component, EventEmitter, Output } from "@angular/core";
 
 import { CollectionService } from "jslib-common/abstractions/collection.service";
 import { FolderService } from "jslib-common/abstractions/folder.service";
-import { StateService } from "jslib-common/abstractions/state.service";
+import { StorageService } from "jslib-common/abstractions/storage.service";
 
 import { GroupingsComponent as BaseGroupingsComponent } from "jslib-angular/components/groupings.component";
+import { StateService } from "jslib-common/abstractions/state.service";
 
 @Component({
   selector: "app-vault-groupings",
@@ -16,21 +17,23 @@ export class GroupingsComponent extends BaseGroupingsComponent {
   searchText: string = "";
   searchPlaceholder: string = null;
 
-  public foldersCollapsed: boolean;
-  public collectionsCollapsed: boolean;
+  foldersCollapsed: boolean;
+  collectionsCollapsed: boolean;
 
   constructor(
     collectionService: CollectionService,
     folderService: FolderService,
-    stateService: StateService
+    stateService: StateService,
+    private storageService: StorageService,
   ) {
     super(collectionService, folderService, stateService);
+
     this.collectionsCollapsed = true;
   }
 
   async ngOnInit() {
-    this.foldersCollapsed = await !!this.stateService.getFoldersCollapsed();
-    this.collectionsCollapsed = await !!this.stateService.getCollectionsCollapsed();
+    this.foldersCollapsed = await this.storageService.get<boolean>("foldersCollapsed");
+    this.collectionsCollapsed = await this.storageService.get<boolean>("collectionsCollapsed");
   }
 
   searchTextChanged() {
@@ -39,11 +42,11 @@ export class GroupingsComponent extends BaseGroupingsComponent {
 
   async foldersCollapse() {
     this.foldersCollapsed = !this.foldersCollapsed;
-    await this.stateService.setFoldersCollapsed(this.foldersCollapsed);
+    await this.storageService.save("foldersCollapsed", this.foldersCollapsed);
   }
 
   async collectionsCollapse() {
     this.collectionsCollapsed = !this.collectionsCollapsed;
-    await this.stateService.setCollectionsCollapsed(this.collectionsCollapsed);
+    await this.storageService.save("collectionsCollapsed", this.collectionsCollapsed);
   }
 }

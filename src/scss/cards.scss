@@ -47,67 +47,66 @@
   @extend .mb-4;
 }
 
-.card ul.fa-ul.card-ul {
-  margin-left: 1.9em;
+// card-body direct ul.fa-ul.card-ul + direct but not expand li
+// apply .active styles and hover styles
+.card .card-body > ul.fa-ul.card-ul {
+  & > li:not(.expand).active {
+    @include filterPanelActive;
+  }
+  & > li:not(.expand):hover {
+    @include filterPanelHover;
+  }
+}
 
+// card-body all ul.fa-ul.card-ul li direct div.d-flex
+// apply .active styles and hover styles
+.card .card-body ul.fa-ul.card-ul {
   li {
     word-break: break-all;
     line-height: 30px;
-    &.active {
-      font-weight: 700;
-      border-radius: 0 10px 10px 0;
-      @include themify($themes) {
-        background-color: themed("filterPanelActiveBackgroundColor");
-        color: themed("filterPanelActiveColor");
-      }
-      // make sure filter panel color won't be replaced by a child link color
-      & a {
-        @include themify($themes) {
-          color: themed("filterPanelActiveColor") !important;
-        }
-      }
-    }
-    &:hover {
-      border-left-color: rgba(103, 103, 103, 0.4);
-      border-radius: 0 10px 10px 0;
-      @include themify($themes) {
-        background-color: themed("filterPanelHoverBackgroundColor");
-        color: themed("filterPanelHoverColor");
-      }
-      // make sure filter panel color won't be replaced by a child link color
-      & a {
-        @include themify($themes) {
-          color: themed("filterPanelHoverColor");
-        }
-      }
-    }
-    & > a {
-      margin-left: 10px;
-    }
-    &.expand > ul.fa-ul.card-ul.carets {
-      display: flex;
-      flex-direction: column;
-      margin-left: 0 !important;
-    }
     div.d-flex {
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      flex-wrap: wrap;
       a.text-break {
-        flex: 1 0 60%;
+        flex: 1 0 50%;
+      }
+      a.text-muted {
+        align-self: flex-start;
+      }
+    }
+    & > div.d-flex.active {
+      @include filterPanelActive;
+    }
+    & > div.d-flex:hover {
+      @include filterPanelHover;
+    }
+    & > a {
+      margin-left: 10px;
+    }
+    &.expand {
+      ul.fa-ul.card-ul.carets {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0 !important;
       }
     }
   }
 
   .fa-li {
+    align-self: flex-start;
     position: static;
     margin-top: 8px;
-    align-self: flex-start;
+    text-align: center;
+    width: 1.2857142857em;
   }
 
-  .fa-folder-o {
-    top: 10px;
+  .fa-folder-o,
+  .fa-cube {
+    align-self: flex-start;
+    margin: 8px 2px 0 0;
+    width: 1.2857142857em;
+    text-align: center;
   }
 
   &.carets {
