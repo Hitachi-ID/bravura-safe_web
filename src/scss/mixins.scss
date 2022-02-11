@@ -1,5 +1,35 @@
-@mixin recursiveIndent($default: 10) {
-  margin-left: $default * 1px;
+@mixin filterPanelActive {
+  font-weight: 700;
+  border-radius: 0 10px 10px 0;
+  @include themify($themes) {
+    background-color: themed("filterPanelActiveBackgroundColor");
+    color: themed("filterPanelActiveColor");
+  }
+  // make sure filter panel color won't be replaced by a child link color
+  & a {
+    @include themify($themes) {
+      color: themed("filterPanelActiveColor") !important;
+    }
+  }
+}
+
+@mixin filterPanelHover {
+  border-left-color: rgba(103, 103, 103, 0.4);
+  border-radius: 0 10px 10px 0;
+  @include themify($themes) {
+    background-color: themed("filterPanelHoverBackgroundColor");
+    color: themed("filterPanelHoverColor");
+  }
+  // make sure filter panel color won't be replaced by a child link color
+  & a {
+    @include themify($themes) {
+      color: themed("filterPanelHoverColor");
+    }
+  }
+}
+
+@mixin recursiveIndent($default: 14) {
+  padding-left: $default * 1px;
   @if $default <= 85 {
     & + ul.fa-ul.card-ul.carets > li > div.d-flex {
       @include recursiveIndent($default + 17);
