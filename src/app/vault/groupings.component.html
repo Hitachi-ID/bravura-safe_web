@@ -117,9 +117,8 @@
                     }"
                   ></i>
                 </a>
-                <i class="fa fa-folder-o" aria-hidden="true"></i>
                 <a href="#" class="text-break" appStopClick (click)="selectFolder(f.node)">
-                  {{ f.node.name }}
+                  <i class="fa fa-folder-o" aria-hidden="true"></i>{{ f.node.name }}
                 </a>
                 <a
                   href="#"
@@ -189,9 +188,8 @@
                     }"
                   ></i>
                 </a>
-                <i class="fa fa-cube" aria-hidden="true"></i>
                 <a href="#" class="text-break" appStopClick (click)="selectCollection(c.node)">
-                  {{ c.node.name }}
+                  <i class="fa fa-cube" aria-hidden="true"></i>{{ c.node.name }}
                 </a>
               </div>
               <ul class="fa-ul card-ul carets" *ngIf="c.children.length && !isCollapsed(c.node)">
