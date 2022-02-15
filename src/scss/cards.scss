@@ -82,7 +82,7 @@
       @include filterPanelHover;
     }
     & > a {
-      margin-left: 10px;
+      padding-left: 1.5rem;
     }
     &.expand {
       ul.fa-ul.card-ul.carets {
@@ -104,7 +104,7 @@
   .fa-folder-o,
   .fa-cube {
     align-self: flex-start;
-    margin: 8px 2px 0 0;
+    margin: 8px 3px 0 0;
     width: 1.2857142857em;
     text-align: center;
   }

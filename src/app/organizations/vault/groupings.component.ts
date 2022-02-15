@@ -61,7 +61,7 @@ export class GroupingsComponent extends BaseGroupingsComponent {
     this.nestedCollections = await this.collectionService.getAllNested(this.collections);
   }
 
-  collapse(grouping: CollectionView)  {
+  collapse(grouping: CollectionView) {
     return super.collapse(grouping, "org_");
   }
 

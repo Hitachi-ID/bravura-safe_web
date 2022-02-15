@@ -24,7 +24,7 @@ export class GroupingsComponent extends BaseGroupingsComponent {
     collectionService: CollectionService,
     folderService: FolderService,
     stateService: StateService,
-    private storageService: StorageService,
+    private storageService: StorageService
   ) {
     super(collectionService, folderService, stateService);
 
