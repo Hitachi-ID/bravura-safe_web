@@ -194,19 +194,38 @@ app-vault {
       .dropdown-menu {
         @include themify($themes) {
           background-color: themed("orgDropdownBackground");
+          box-shadow: 0 3px 10px themed("dropdownShadow");
         }
-        ul {
-          margin-left: 0;
-          li {
-            padding: 5px 10px;
-            &:hover {
-              background-color: $table-hover-bg;
-            }
-            i.fa-li {
-              position: relative;
-              left: 0;
+        app-organizations {
+          p.text-muted {
+            i.fa.fa-spinner.fa-spin,
+            span.sr-only {
+              margin-left: 10px;
             }
           }
+          ul.fa-ul.card-ul {
+            margin-left: 0;
+            li.d-flex {
+              cursor: pointer;
+              &:hover {
+                @include themify($themes) {
+                  background-color: themed("filterPanelHoverBackgroundColor");
+                }
+              }
+              a.text-body {
+                margin: 5px 10px;
+                text-decoration: none;
+              }
+              i.fa-li {
+                position: relative;
+                left: 0;
+              }
+            }
+          }
+        }
+        a.btn.btn-block {
+          margin: 5px 10px;
+          width: auto;
         }
       }
     }
