@@ -72,6 +72,7 @@
       padding-bottom: 5px;
       a.text-break {
         flex: 1 0 50%;
+        margin-top: 3px;
       }
       a.text-muted {
         align-self: flex-start;
@@ -104,7 +105,8 @@
   }
 
   .fa-folder-o,
-  .fa-cube {
+  .fa-cube,
+  .fa-pencil {
     align-self: flex-start;
     margin: 8px 3px 0 0;
     width: 1.2857142857em;
