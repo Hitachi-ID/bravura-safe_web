@@ -369,3 +369,17 @@ app-organization-layout {
     }
   }
 }
+
+app-footer {
+  font-size: 0.9rem;
+  div.footer {
+    div.row {
+      div.col:first-child {
+        flex-basis: 70%;
+      }
+      div.col.text-right {
+        flex-basis: 30%;
+      }
+    }
+  }
+}
