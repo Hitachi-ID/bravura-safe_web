@@ -2,7 +2,7 @@
     <img src="https://raw.githubusercontent.com/bravura-safe/brand/master/screenshots/web-vault-macbook.png" alt="" width="600" height="358" />
 </p>
 <p align="center">
-    Bravura Safe web is a clone/fork of the Bitwwarden web project
+    Bravura Safe web is a clone/fork of the Bitwarden web project
 </p>
 
 ## Build/Run
