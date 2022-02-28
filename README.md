@@ -4,11 +4,6 @@
 <p align="center">
     Bravura Safe web is a clone/fork of the Bitwwarden web project
 </p>
-<p align="center">
-  <a href="https://github.com/hitachi-id/bravura-safe_web/actions?query=branch:master" target="_blank">
-    <img src="https://github.com/hitachi-id/bravura-safe_web/actions/workflows/build.yml/badge.svg?branch=master" alt="Github Workflow build on master" />
-  </a>
-</p>
 
 ## Build/Run
 
