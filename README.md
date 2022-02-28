@@ -1,21 +1,12 @@
 <p align="center">
-    <img src="https://raw.githubusercontent.com/bitwarden/brand/master/screenshots/web-vault-macbook.png" alt="" width="600" height="358" />
+    <img src="https://raw.githubusercontent.com/bravura-safe/brand/master/screenshots/web-vault-macbook.png" alt="" width="600" height="358" />
 </p>
 <p align="center">
-    The Bitwarden web project is an Angular application that powers the web vault (https://vault.bitwarden.com/).
+    Bravura Safe web is a clone/fork of the Bitwwarden web project
 </p>
 <p align="center">
-  <a href="https://github.com/bitwarden/web/actions?query=branch:master" target="_blank">
-    <img src="https://github.com/bitwarden/web/actions/workflows/build.yml/badge.svg?branch=master" alt="Github Workflow build on master" />
-  </a>
-  <a href="https://crowdin.com/project/bitwarden-web" target="_blank">
-    <img src="https://d322cqt584bo4o.cloudfront.net/bitwarden-web/localized.svg" alt="Crowdin" />
-  </a>
-  <a href="https://hub.docker.com/u/bitwarden/" target="_blank">
-    <img src="https://img.shields.io/docker/pulls/bitwarden/web.svg" alt="DockerHub" />
-  </a>
-  <a href="https://gitter.im/bitwarden/Lobby" target="_blank">
-    <img src="https://badges.gitter.im/bitwarden/Lobby.svg" alt="gitter chat" />
+  <a href="https://github.com/hitachi-id/bravura-safe_web/actions?query=branch:master" target="_blank">
+    <img src="https://github.com/hitachi-id/bravura-safe_web/actions/workflows/build.yml/badge.svg?branch=master" alt="Github Workflow build on master" />
   </a>
 </p>
 
@@ -59,7 +50,7 @@ You can also manually adjusting your API endpoint settings by adding `config/loc
 }
 ```
 
-Where the `urls` object is defined by the [Urls type in jslib](https://github.com/bitwarden/jslib/blob/master/common/src/abstractions/environment.service.ts).
+Where the `urls` object is defined by the [Urls type in jslib](https://github.com/hitachi-id/bravura-safe_jslib/blob/master/common/src/abstractions/environment.service.ts).
 
 ## Contribute
 
