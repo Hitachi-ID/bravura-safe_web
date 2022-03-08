@@ -2748,7 +2748,7 @@
     "placeholders": {
       "description": {
         "content": "$1",
-        "example": "You must enable 2FA on your user account before you can join this organization."
+        "example": "You must enable 2FA on your user account before you can join this team."
       }
     }
   },
@@ -3700,7 +3700,7 @@
     "placeholders": {
       "description": {
         "content": "$1",
-        "example": "You must enable 2FA on your user account before you can join this organization."
+        "example": "You must enable 2FA on your user account before you can join this team."
       }
     }
   },
@@ -4124,7 +4124,7 @@
     "message": "Cette organisation a une politique d'entreprise qui vous inscrira automatiquement à la réinitialisation du mot de passe. L'inscription permettra aux administrateurs de l'organisation de changer votre mot de passe maître."
   },
   "resetPasswordOrgKeysError": {
-    "message": "Erreur lors du traitement de votre demande : \"Organization Keys response is null\""
+    "message": "Erreur lors du traitement de votre demande : \"Team Keys response is null\""
   },
   "resetPasswordDetailsError": {
     "message": "Erreur lors du traitement de votre demande : \"Reset Password Details response is null\""
@@ -4544,7 +4544,7 @@
     "placeholders": {
       "description": {
         "content": "$1",
-        "example": "You must have at least one existing Families Organization."
+        "example": "You must have at least one existing Families Team."
       }
     }
   },

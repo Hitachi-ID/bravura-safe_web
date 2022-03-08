@@ -1,9 +1,10 @@
 <p align="center">
-   Hitachi ID Bravura Safe is a modified version of Bitwarden®. It was developed using Bitwarden open source software. Hitachi ID Systems, Inc. and Bravura Safe are not affiliated with or endorsed by Bitwarden or Bitwarden, Inc. Bitwarden is a trademark or registered trademark of Bitwarden, Inc. in the United States and/or other countries. 
+   Hitachi ID Bravura Safe is a modified version of Bitwarden®. It was developed using Bitwarden open source software. Hitachi ID Systems, Inc. and Bravura Safe are not affiliated with or endorsed by Bitwarden or Bitwarden, Inc. Bitwarden is a trademark or registered trademark of Bitwarden, Inc. in the United States and/or other countries.
 
-The original work is available at [https://github.com/bitwarden/web]. 
+The original work is available at [https://github.com/bitwarden/web].
 The original documentation is available at [https://bitwarden.com/help/].
 A complete list of all changes is available in the git history of this project.
+
 </p>
 
 ## Build/Run

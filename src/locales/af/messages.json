@@ -742,7 +742,7 @@
     "description": "'Duo Security' and 'Duo Mobile' are product names and should not be translated."
   },
   "duoOrganizationDesc": {
-    "message": "Verify with Duo Security for your organization using the Duo Mobile app, SMS, phone call, or U2F security key.",
+    "message": "Verify with Duo Security for your team using the Duo Mobile app, SMS, phone call, or U2F security key.",
     "description": "'Duo Security' and 'Duo Mobile' are product names and should not be translated."
   },
   "u2fDesc": {
@@ -769,7 +769,7 @@
   "continue": {
     "message": "Gaan voort"
   },
-  "organization": {
+  "team": {
     "message": "Organisasie"
   },
   "organizations": {
@@ -782,7 +782,7 @@
     "message": "Kies ’n organisasie waarheen u hierdie items wil skuif. Deur te skuif kry die organisasie die einaarskap van die items. U is dan nie meer die direkte eienaar van die items wanneer dit geskuif is nie."
   },
   "collectionsDesc": {
-    "message": "Edit the collections that this item is being shared with. Only organization users with access to these collections will be able to see this item."
+    "message": "Edit the collections that this item is being shared with. Only team users with access to these collections will be able to see this item."
   },
   "deleteSelectedItemsDesc": {
     "message": "U het $COUNT$ item(s) gekies om te skrap. Is u seker u wil al hierdie items skrap?",
@@ -1003,16 +1003,16 @@
     "message": "Purge Vault"
   },
   "purgedOrganizationVault": {
-    "message": "Purged organization vault."
+    "message": "Purged team vault."
   },
   "vaultAccessedByProvider": {
     "message": "Vault accessed by provider."
   },
   "purgeVaultDesc": {
-    "message": "Proceed below to delete all items and folders in your vault. Items that belong to an organization that you share with will not be deleted."
+    "message": "Proceed below to delete all items and folders in your vault. Items that belong to a team that you share with will not be deleted."
   },
   "purgeOrgVaultDesc": {
-    "message": "Proceed below to delete all items in the organization's vault."
+    "message": "Proceed below to delete all items in the team's vault."
   },
   "purgeVaultWarning": {
     "message": "Purging your vault is permanent. It cannot be undone."
@@ -1054,7 +1054,7 @@
     "message": "Data has been successfully imported into your vault."
   },
   "importWarning": {
-    "message": "You are importing data to $ORGANIZATION$. Your data may be shared with members of this organization. Do you want to proceed?",
+    "message": "You are importing data to $ORGANIZATION$. Your data may be shared with members of this team. Do you want to proceed?",
     "placeholders": {
       "organization": {
         "content": "$1",
@@ -1676,7 +1676,7 @@
     "message": "Premie-toegang"
   },
   "premiumAccessDesc": {
-    "message": "You can add premium access to all members of your organization for $PRICE$ /$INTERVAL$.",
+    "message": "You can add premium access to all members of your team for $PRICE$ /$INTERVAL$.",
     "placeholders": {
       "price": {
         "content": "$1",
@@ -1923,13 +1923,13 @@
     "message": "To upgrade your account to a premium membership you need to upload a valid license file."
   },
   "uploadLicenseFileOrg": {
-    "message": "To create an on-premise hosted organization you need to upload a valid license file."
+    "message": "To create an on-premise hosted team you need to upload a valid license file."
   },
   "accountEmailMustBeVerified": {
     "message": "U rekening se e-posadres moet bevestig word."
   },
-  "newOrganizationDesc": {
-    "message": "Organizations allow you to share parts of your vault with others as well as manage related users for a specific entity such as a family, small team, or large company."
+  "newteamDesc": {
+    "message": "Teams allow you to share parts of your vault with others as well as manage related users for a specific entity such as a family, small team, or large company."
   },
   "generalInformation": {
     "message": "Algemene Inligting"
@@ -2177,7 +2177,7 @@
     "message": "Is u seker u wil hierdie gebruiker verwyder?"
   },
   "removeUserConfirmationKeyConnector": {
-    "message": "Warning! This user requires Key Connector to manage their encryption. Removing this user from your organization will permanently disable their account. This action cannot be undone. Do you want to proceed?"
+    "message": "Warning! This user requires Key Connector to manage their encryption. Removing this user from your team will permanently disable their account. This action cannot be undone. Do you want to proceed?"
   },
   "externalId": {
     "message": "Eksterne ID"
@@ -2216,7 +2216,7 @@
     "message": "Nooi Gebruiker Uit"
   },
   "inviteUserDesc": {
-    "message": "Invite a new user to your organization by entering their Bravura Safe account email address below. If they do not have a Bravura Safe account already, they will be prompted to create a new account."
+    "message": "Invite a new user to your team by entering their Bravura Safe account email address below. If they do not have a Bravura Safe account already, they will be prompted to create a new account."
   },
   "inviteMultipleEmailDesc": {
     "message": "You can invite up to $COUNT$ users at a time by comma separating a list of email addresses.",
@@ -2255,22 +2255,22 @@
     "message": "Eienaar"
   },
   "ownerDesc": {
-    "message": "The highest access user that can manage all aspects of your organization."
+    "message": "The highest access user that can manage all aspects of your team."
   },
   "clientOwnerDesc": {
-    "message": "This user should be independent of the Provider. If the Provider is disassociated with the organization, this user will maintain ownership of the organization."
+    "message": "This user should be independent of the Provider. If the Provider is disassociated with the team, this user will maintain ownership of the team."
   },
   "admin": {
     "message": "Admin"
   },
   "adminDesc": {
-    "message": "Admins can access and manage all items, collections and users in your organization."
+    "message": "Admins can access and manage all items, collections and users in your team."
   },
   "user": {
     "message": "Gebruiker"
   },
   "userDesc": {
-    "message": "A regular user with access to assigned collections in your organization."
+    "message": "A regular user with access to assigned collections in your team."
   },
   "manager": {
     "message": "Bestuurder"
@@ -2335,7 +2335,7 @@
   "exportedVault": {
     "message": "Kluis uitgestuur."
   },
-  "exportedOrganizationVault": {
+  "exportedteamVault": {
     "message": "Organisasiekluis uitgestuur."
   },
   "editedOrgSettings": {
@@ -2369,7 +2369,7 @@
     }
   },
   "movedItemIdToOrg": {
-    "message": "Moved item $ID$ to an organization.",
+    "message": "Moved item $ID$ to a team.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2593,8 +2593,8 @@
       }
     }
   },
-  "createdOrganizationId": {
-    "message": "Created organization $ID$.",
+  "createdteamId": {
+    "message": "Created team $ID$.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2602,8 +2602,8 @@
       }
     }
   },
-  "addedOrganizationId": {
-    "message": "Added organization $ID$.",
+  "addedteamId": {
+    "message": "Added team $ID$.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2611,8 +2611,8 @@
       }
     }
   },
-  "removedOrganizationId": {
-    "message": "Removed organization $ID$.",
+  "removedteamId": {
+    "message": "Removed team $ID$.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2621,7 +2621,7 @@
     }
   },
   "accessedClientVault": {
-    "message": "Accessed $ID$ organization vault.",
+    "message": "Accessed $ID$ team vault.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2729,26 +2729,26 @@
     "message": "You are using an unsupported web browser. The web vault may not function properly."
   },
   "joinOrganization": {
-    "message": "Join Organization"
+    "message": "Join Team"
   },
   "joinOrganizationDesc": {
-    "message": "You've been invited to join the organization listed above. To accept the invitation, you need to log in or create a new Bravura Safe account."
+    "message": "You've been invited to join the team listed above. To accept the invitation, you need to log in or create a new Bravura Safe account."
   },
   "inviteAccepted": {
     "message": "Uitnodiging is Aanvaar"
   },
   "inviteAcceptedDesc": {
-    "message": "You can access this organization once an administrator confirms your membership. We'll send you an email when that happens."
+    "message": "You can access this team once an administrator confirms your membership. We'll send you an email when that happens."
   },
   "inviteAcceptFailed": {
-    "message": "Unable to accept invitation. Ask an organization admin to send a new invitation."
+    "message": "Unable to accept invitation. Ask a team admin to send a new invitation."
   },
   "inviteAcceptFailedShort": {
     "message": "Kan nie uitnodiging aanvaar nie. $DESCRIPTION$",
     "placeholders": {
       "description": {
         "content": "$1",
-        "example": "You must enable 2FA on your user account before you can join this organization."
+        "example": "You must enable 2FA on your user account before you can join this team."
       }
     }
   },
@@ -2838,7 +2838,7 @@
     "message": "We have made two micro-deposits to your bank account (it may take 1-2 business days to show up). Enter these amounts to verify the bank account."
   },
   "verifyBankAccountInitialDesc": {
-    "message": "Payment with a bank account is only available to customers in the United States. You will be required to verify your bank account. We will make two micro-deposits within the next 1-2 business days. Enter these amounts on the organization's billing page to verify the bank account."
+    "message": "Payment with a bank account is only available to customers in the United States. You will be required to verify your bank account. We will make two micro-deposits within the next 1-2 business days. Enter these amounts on the team's billing page to verify the bank account."
   },
   "verifyBankAccountFailureWarning": {
     "message": "Failure to verify the bank account will result in a missed payment and your subscription being disabled."
@@ -2957,7 +2957,7 @@
     }
   },
   "subscriptionSponsoredFamiliesPlan": {
-    "message": "Your subscription allows for a total of $COUNT$ users. Your plan is sponsored and billed to an external organization.",
+    "message": "Your subscription allows for a total of $COUNT$ users. Your plan is sponsored and billed to an external team.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -3227,10 +3227,10 @@
     "message": "Vereis tweestapaantekening op gebruikers se persoonlike rekeninge."
   },
   "twoStepLoginPolicyWarning": {
-    "message": "Organization members who are not Owners or Administrators and do not have two-step login enabled for their personal account will be removed from the organization and will receive an email notifying them about the change."
+    "message": "Team members who are not Owners or Administrators and do not have two-step login enabled for their personal account will be removed from the team and will receive an email notifying them about the change."
   },
   "twoStepLoginPolicyUserWarning": {
-    "message": "You are a member of an organization that requires two-step login to be enabled on your user account. If you disable all two-step login providers you will be automatically removed from these organizations."
+    "message": "You are a member of a team that requires two-step login to be enabled on your user account. If you disable all two-step login providers you will be automatically removed from these teams."
   },
   "passwordGeneratorPolicyDesc": {
     "message": "Stel minimum vereistes vir opstelling van wagwoordgenereerder."
@@ -3445,7 +3445,7 @@
     "message": "Unlink SSO"
   },
   "unlinkSsoConfirmation": {
-    "message": "Are you sure you want to unlink SSO for this organization?"
+    "message": "Are you sure you want to unlink SSO for this team?"
   },
   "linkSso": {
     "message": "Link SSO"
@@ -3454,13 +3454,13 @@
     "message": "Enkele organisasie"
   },
   "singleOrgDesc": {
-    "message": "Restrict users from being able to join any other organizations."
+    "message": "Restrict users from being able to join any other teams."
   },
   "singleOrgBlockCreateMessage": {
     "message": "U huidige organisasie het ’n beleid wat u nie toelaat om deel te neem aan meer as een organisasie nie. Kontak u organisasie se beheerders of teken aan met’n ander Bravura Safe-rekening."
   },
   "singleOrgPolicyWarning": {
-    "message": "Organization members who are not Owners or Administrators and are already a member of another organization will be removed from your organization."
+    "message": "team members who are not Owners or Administrators and are already a member of another team will be removed from your team."
   },
   "requireSso": {
     "message": "Single Sign-On Authentication"
@@ -3472,10 +3472,10 @@
     "message": "Voorvereiste"
   },
   "requireSsoPolicyReq": {
-    "message": "The Single Organization enterprise policy must be enabled before activating this policy."
+    "message": "The Single team enterprise policy must be enabled before activating this policy."
   },
   "requireSsoPolicyReqError": {
-    "message": "Single Organization policy not enabled."
+    "message": "Single Team policy not enabled."
   },
   "requireSsoExemption": {
     "message": "Organisasie-eienaars en -administrateurs is vrygestel van die afdwing van hierdie beleid."
@@ -3700,7 +3700,7 @@
     "placeholders": {
       "description": {
         "content": "$1",
-        "example": "You must enable 2FA on your user account before you can join this organization."
+        "example": "You must enable 2FA on your user account before you can join this team."
       }
     }
   },
@@ -3766,10 +3766,10 @@
     "message": "Persoonlike eienaarskap"
   },
   "personalOwnershipPolicyDesc": {
-    "message": "Require users to save vault items to an organization by removing the personal ownership option."
+    "message": "Require users to save vault items to a team by removing the personal ownership option."
   },
   "personalOwnershipExemption": {
-    "message": "Organization Owners and Administrators are exempt from this policy's enforcement."
+    "message": "Team Owners and Administrators are exempt from this policy's enforcement."
   },
   "personalOwnershipSubmitError": {
     "message": "Weens ’n ondernemingsbeleid mag u geen wagwoorde in u persoonlike kluis bewaar nie. Verander die eienaarskap na ’n organisasie en kies uit ’n van die beskikbare versamelings."
@@ -3782,7 +3782,7 @@
     "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "disableSendExemption": {
-    "message": "Organization users that can manage the organization's policies are exempt from this policy's enforcement."
+    "message": "Team users that can manage the team's policies are exempt from this policy's enforcement."
   },
   "sendDisabled": {
     "message": "Send gedeaktiveer",
@@ -3801,14 +3801,14 @@
     "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendOptionsExemption": {
-    "message": "Organization users that can manage the organization's policies are exempt from this policy's enforcement."
+    "message": "Team users that can manage the team's policies are exempt from this policy's enforcement."
   },
   "disableHideEmail": {
     "message": "Do not allow users to hide their email address from recipients when creating or editing a Send.",
     "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
   },
   "sendOptionsPolicyInEffect": {
-    "message": "The following organization policies are currently in effect:"
+    "message": "The following team policies are currently in effect:"
   },
   "sendDisableHideEmailInEffect": {
     "message": "Users are not allowed to hide their email address from recipients when creating or editing a Send.",
@@ -3899,7 +3899,7 @@
     "message": "’n Organisasiebeleid beïnvloed u eienaarskapopsies."
   },
   "personalOwnershipPolicyInEffectImports": {
-    "message": "An organization policy has disabled importing items into your personal vault."
+    "message": "A team policy has disabled importing items into your personal vault."
   },
   "personalOwnershipCheckboxDesc": {
     "message": "Deaktiveer persoonlike eienaarskap vir organisasiegebruikers"
@@ -4103,7 +4103,7 @@
     "message": "Bestuur wagwoordherstel"
   },
   "resetPasswordPolicyDescription": {
-    "message": "Allow administrators in the organization to reset organization users' master password."
+    "message": "Allow administrators in the team to reset team users' master password."
   },
   "resetPasswordPolicyWarning": {
     "message": "Gebruikers in die organisasie sal self moet inskryf of moet outomaties ingeskryf word voor beheerders hul hoofwagwoord sal kan terugstel."
@@ -4124,7 +4124,7 @@
     "message": "Hierdie organisasie het ’n ondernemingsbeleid wat u outomaties inskryf in die terugstel van u wagwoord. Inskrywing stel organisasiebeheerders in staat om u hoofwagwoord te wysig."
   },
   "resetPasswordOrgKeysError": {
-    "message": "Organization Keys response is null"
+    "message": "Team Keys response is null"
   },
   "resetPasswordDetailsError": {
     "message": "Reset Password Details response is null"
@@ -4220,13 +4220,13 @@
     "message": "Provider Admin"
   },
   "providerAdminDesc": {
-    "message": "The highest access user that can manage all aspects of your provider as well as access and manage client organizations."
+    "message": "The highest access user that can manage all aspects of your provider as well as access and manage client teams."
   },
   "serviceUser": {
     "message": "Service User"
   },
   "serviceUserDesc": {
-    "message": "Service users can access and manage all client organizations."
+    "message": "Service users can access and manage all client teams."
   },
   "providerInviteUserDesc": {
     "message": "Invite a new user to your provider by entering their Bravura Safe account email address below. If they do not have a Bravura Safe account already, they will be prompted to create a new account."
@@ -4250,13 +4250,13 @@
     "message": "Provider"
   },
   "newClientOrganization": {
-    "message": "New Client Organization"
+    "message": "New Client Team"
   },
   "newClientOrganizationDesc": {
-    "message": "Create a new client organization that will be associated with you as the provider. You will be able to access and manage this organization."
+    "message": "Create a new client team that will be associated with you as the provider. You will be able to access and manage this team."
   },
-  "addExistingOrganization": {
-    "message": "Add Existing Organization"
+  "addExistingteam": {
+    "message": "Add Existing Team"
   },
   "myProvider": {
     "message": "My Provider"
@@ -4275,10 +4275,10 @@
     }
   },
   "organizationJoinedProvider": {
-    "message": "Organization was successfully added to the provider"
+    "message": "Team was successfully added to the provider"
   },
   "accessingUsingProvider": {
-    "message": "Accessing organization using provider $PROVIDER$",
+    "message": "Accessing team using provider $PROVIDER$",
     "placeholders": {
       "provider": {
         "content": "$1",
@@ -4293,7 +4293,7 @@
     "message": "Provider updated"
   },
   "yourProviderIs": {
-    "message": "Your provider is $PROVIDER$. They have administrative and billing privileges for your organization.",
+    "message": "Your provider is $PROVIDER$. They have administrative and billing privileges for your team.",
     "placeholders": {
       "provider": {
         "content": "$1",
@@ -4302,7 +4302,7 @@
     }
   },
   "detachedOrganization": {
-    "message": "The organization $ORGANIZATION$ has been detached from your provider.",
+    "message": "The team $ORGANIZATION$ has been detached from your provider.",
     "placeholders": {
       "organization": {
         "content": "$1",
@@ -4311,7 +4311,7 @@
     }
   },
   "detachOrganizationConfirmation": {
-    "message": "Are you sure you want to detach this organization? The organization will continue to exist but will no longer be managed by the provider."
+    "message": "Are you sure you want to detach this team? The team will continue to exist but will no longer be managed by the provider."
   },
   "add": {
     "message": "Add"
@@ -4323,7 +4323,7 @@
     "message": "Update Master Password"
   },
   "updateMasterPasswordWarning": {
-    "message": "Your Master Password was recently changed by an administrator in your organization. In order to access the vault, you must update your Master Password now. Proceeding will log you out of your current session, requiring you to log back in. Active sessions on other devices may continue to remain active for up to one hour."
+    "message": "Your Master Password was recently changed by an administrator in your team. In order to access the vault, you must update your Master Password now. Proceeding will log you out of your current session, requiring you to log back in. Active sessions on other devices may continue to remain active for up to one hour."
   },
   "maximumVaultTimeout": {
     "message": "Vault Timeout"
@@ -4344,7 +4344,7 @@
     "message": "Minutes"
   },
   "vaultTimeoutPolicyInEffect": {
-    "message": "Your organization policies are affecting your vault timeout. Maximum allowed Vault Timeout is $HOURS$ hour(s) and $MINUTES$ minute(s)",
+    "message": "Your team policies are affecting your vault timeout. Maximum allowed Vault Timeout is $HOURS$ hour(s) and $MINUTES$ minute(s)",
     "placeholders": {
       "hours": {
         "content": "$1",
@@ -4360,7 +4360,7 @@
     "message": "Custom Vault Timeout"
   },
   "vaultTimeoutToLarge": {
-    "message": "Your vault timeout exceeds the restriction set by your organization."
+    "message": "Your vault timeout exceeds the restriction set by your team."
   },
   "disablePersonalVaultExport": {
     "message": "Disable Personal Vault Export"
@@ -4372,7 +4372,7 @@
     "message": "Vault Export Disabled"
   },
   "personalVaultExportPolicyInEffect": {
-    "message": "One or more organization policies prevents you from exporting your personal vault."
+    "message": "One or more team policies prevents you from exporting your personal vault."
   },
   "selectType": {
     "message": "Select SSO Type"
@@ -4519,7 +4519,7 @@
     "message": "Redeem"
   },
   "sponsoredFamiliesSelectOffer": {
-    "message": "Select the organization you would like sponsored"
+    "message": "Select the team you would like sponsored"
   },
   "familiesSponsoringOrgSelect": {
     "message": "Which Free Families offer would you like to redeem?"
@@ -4528,13 +4528,13 @@
     "message": "Enter your personal email to redeem Bravura Safe Families"
   },
   "sponsoredFamiliesLeaveCopy": {
-    "message": "If you leave or are removed from the sponsoring organization, your Families plan will expire at the end of the billing period."
+    "message": "If you leave or are removed from the sponsoring team, your Families plan will expire at the end of the billing period."
   },
   "acceptBitwardenFamiliesHelp": {
-    "message": "Accept offer for an existing organization or create a new Families organization."
+    "message": "Accept offer for an existing team or create a new Families team."
   },
   "setupSponsoredFamiliesLoginDesc": {
-    "message": "You've been offered a free Bravura Safe Families Plan Organization. To continue, you need to log in to the account that received the offer."
+    "message": "You've been offered a free Bravura Safe Families Plan Team. To continue, you need to log in to the account that received the offer."
   },
   "sponsoredFamiliesAcceptFailed": {
     "message": "Unable to accept offer. Please resend the offer email from your enterprise account and try again."
@@ -4544,7 +4544,7 @@
     "placeholders": {
       "description": {
         "content": "$1",
-        "example": "You must have at least one existing Families Organization."
+        "example": "You must have at least one existing Families Team."
       }
     }
   },
@@ -4603,7 +4603,7 @@
     "message": "Email Sent"
   },
   "revokeSponsorshipConfirmation": {
-    "message": "After removing this account, the Families organization owner will be responsible for this subscription and related invoices. Are you sure you want to continue?"
+    "message": "After removing this account, the Families team owner will be responsible for this subscription and related invoices. Are you sure you want to continue?"
   },
   "removeSponsorshipSuccess": {
     "message": "Sponsorship Removed"
@@ -4636,16 +4636,16 @@
     "message": "Invalid verification code"
   },
   "convertOrganizationEncryptionDesc": {
-    "message": "$ORGANIZATION$ is using SSO with a self-hosted key server. A master password is no longer required to log in for members of this organization.",
+    "message": "$ORGANIZATION$ is using SSO with a self-hosted key server. A master password is no longer required to log in for members of this team.",
     "placeholders": {
-      "organization": {
+      "team": {
         "content": "$1",
         "example": "My Org Name"
       }
     }
   },
   "leaveOrganization": {
-    "message": "Leave Organization"
+    "message": "Leave Team"
   },
   "removeMasterPassword": {
     "message": "Remove Master Password"
@@ -4672,7 +4672,7 @@
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enable the SSO Authentication policy to require all members to log in with SSO.'"
   },
   "ssoPolicyHelpKeyConnector": {
-    "message": "SSO Authentication and Single Organization policies are required to set up Key Connector decryption."
+    "message": "SSO Authentication and Single Team policies are required to set up Key Connector decryption."
   },
   "memberDecryptionOption": {
     "message": "Member Decryption Options"
@@ -4702,25 +4702,25 @@
     "message": "Disabled Key Connector"
   },
   "keyConnectorWarning": {
-    "message": "Once members begin using Key Connector, your Organization cannot revert to Master Password decryption. Proceed only if you are comfortable deploying and managing a key server."
+    "message": "Once members begin using Key Connector, your Team cannot revert to Master Password decryption. Proceed only if you are comfortable deploying and managing a key server."
   },
   "migratedKeyConnector": {
     "message": "Migrated to Key Connector"
   },
   "paymentSponsored": {
-    "message": "Please provide a payment method to associate with the organization. Don't worry, we won't charge you anything unless you select additional features or your sponsorship expires. "
+    "message": "Please provide a payment method to associate with the team. Don't worry, we won't charge you anything unless you select additional features or your sponsorship expires. "
   },
   "orgCreatedSponsorshipInvalid": {
-    "message": "The sponsorship offer has expired. You may delete the organization you created to avoid a charge at the end of your 7 day trial. Otherwise you may close this prompt to keep the organization and assume billing responsibility."
+    "message": "The sponsorship offer has expired. You may delete the team you created to avoid a charge at the end of your 7 day trial. Otherwise you may close this prompt to keep the team and assume billing responsibility."
   },
-  "newFamiliesOrganization": {
-    "message": "New Families Organization"
+  "newFamiliesteam": {
+    "message": "New Families Team"
   },
   "acceptOffer": {
     "message": "Accept Offer"
   },
   "sponsoringOrg": {
-    "message": "Sponsoring Organization"
+    "message": "Sponsoring Team"
   },
   "keyConnectorTest": {
     "message": "Test"
