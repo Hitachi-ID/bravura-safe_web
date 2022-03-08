@@ -2748,7 +2748,7 @@
     "placeholders": {
       "description": {
         "content": "$1",
-        "example": "You must enable 2FA on your user account before you can join this organization."
+        "example": "You must enable 2FA on your user account before you can join this team."
       }
     }
   },
@@ -3700,7 +3700,7 @@
     "placeholders": {
       "description": {
         "content": "$1",
-        "example": "You must enable 2FA on your user account before you can join this organization."
+        "example": "You must enable 2FA on your user account before you can join this team."
       }
     }
   },
@@ -4544,7 +4544,7 @@
     "placeholders": {
       "description": {
         "content": "$1",
-        "example": "You must have at least one existing Families Organization."
+        "example": "You must have at least one existing Families Team."
       }
     }
   },
@@ -4672,7 +4672,7 @@
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enable the SSO Authentication policy to require all members to log in with SSO.'"
   },
   "ssoPolicyHelpKeyConnector": {
-    "message": "SSO Authentication and Single Organization policies are required to set up Key Connector decryption."
+    "message": "SSO Authentication and Single Team policies are required to set up Key Connector decryption."
   },
   "memberDecryptionOption": {
     "message": "Üzv şifrə açma seçimləri"
@@ -4708,13 +4708,13 @@
     "message": "Açar Bağlayıcıya daşındı"
   },
   "paymentSponsored": {
-    "message": "Please provide a payment method to associate with the organization. Don't worry, we won't charge you anything unless you select additional features or your sponsorship expires. "
+    "message": "Please provide a payment method to associate with the team. Don't worry, we won't charge you anything unless you select additional features or your sponsorship expires. "
   },
   "orgCreatedSponsorshipInvalid": {
-    "message": "The sponsorship offer has expired. You may delete the organization you created to avoid a charge at the end of your 7 day trial. Otherwise you may close this prompt to keep the organization and assume billing responsibility."
+    "message": "The sponsorship offer has expired. You may delete the team you created to avoid a charge at the end of your 7 day trial. Otherwise you may close this prompt to keep the team and assume billing responsibility."
   },
   "newFamiliesOrganization": {
-    "message": "New Families Organization"
+    "message": "New Families Team"
   },
   "acceptOffer": {
     "message": "Təklifi qəbul et"

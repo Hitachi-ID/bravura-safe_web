@@ -116,7 +116,7 @@ export class CollectionAddEditComponent implements OnInit {
 
   async submit() {
     if (this.orgKey == null) {
-      throw new Error("No encryption key for this organization.");
+      throw new Error("No encryption key for this team.");
     }
 
     const request = new CollectionRequest();

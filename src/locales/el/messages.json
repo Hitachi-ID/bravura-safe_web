@@ -2748,7 +2748,7 @@
     "placeholders": {
       "description": {
         "content": "$1",
-        "example": "You must enable 2FA on your user account before you can join this organization."
+        "example": "You must enable 2FA on your user account before you can join this team."
       }
     }
   },
@@ -3445,7 +3445,7 @@
     "message": "Αποσύνδεση SSO"
   },
   "unlinkSsoConfirmation": {
-    "message": "Are you sure you want to unlink SSO for this organization?"
+    "message": "Are you sure you want to unlink SSO for this team?"
   },
   "linkSso": {
     "message": "Σύνδεσμος SSO"
@@ -3700,7 +3700,7 @@
     "placeholders": {
       "description": {
         "content": "$1",
-        "example": "You must enable 2FA on your user account before you can join this organization."
+        "example": "You must enable 2FA on your user account before you can join this team."
       }
     }
   },
@@ -4544,7 +4544,7 @@
     "placeholders": {
       "description": {
         "content": "$1",
-        "example": "You must have at least one existing Families Organization."
+        "example": "You must have at least one existing Families Team."
       }
     }
   },
