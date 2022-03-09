@@ -3487,79 +3487,79 @@
     "message": "Text"
   },
   "createSend": {
-    "message": "Creare de nou Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Creare de nou Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "editSend": {
-    "message": "Editare Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Editare Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "createdSend": {
-    "message": "S-a creat un nou Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "S-a creat un nou Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "editedSend": {
-    "message": "Send-ul a fost editat",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share-ul a fost editat",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deletedSend": {
-    "message": "Send-ul a fost șters",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share-ul a fost șters",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deleteSend": {
-    "message": "Ștergere Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Ștergere Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deleteSendConfirmation": {
-    "message": "Sigur doriți să ștergeți acest Send?",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Sigur doriți să ștergeți acest Share?",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "whatTypeOfSend": {
-    "message": "Ce fel de Send este acesta?",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Ce fel de Share este acesta?",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deletionDate": {
     "message": "Data ștergerii"
   },
   "deletionDateDesc": {
-    "message": "Send-ul va fi șters definitiv la data și ora specificate.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share-ul va fi șters definitiv la data și ora specificate.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "expirationDate": {
     "message": "Data expirării"
   },
   "expirationDateDesc": {
-    "message": "Dacă este setat, accesul la acest Send va expira la data și ora specificate.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Dacă este setat, accesul la acest Share va expira la data și ora specificate.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "maxAccessCount": {
     "message": "Număr maxim de accesări"
   },
   "maxAccessCountDesc": {
-    "message": "Dacă este configurat, utilizatorii nu vor mai putea accesa acest Send când a fost atins numărul maxim de accesări.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Dacă este configurat, utilizatorii nu vor mai putea accesa acest Share când a fost atins numărul maxim de accesări.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "currentAccessCount": {
     "message": "Număr actual de accesări"
   },
   "sendPasswordDesc": {
-    "message": "Opțional, este necesară o parolă pentru ca utilizatorii să acceseze acest Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Opțional, este necesară o parolă pentru ca utilizatorii să acceseze acest Share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendNotesDesc": {
-    "message": "Note private despre acest Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Note private despre acest Share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "disabled": {
     "message": "Dezactivat"
   },
   "sendLink": {
-    "message": "Link Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Link Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "copySendLink": {
-    "message": "Copiere link Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Copiere link Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "removePassword": {
     "message": "Eliminare parolă"
@@ -3574,11 +3574,11 @@
     "message": "Ascundeți adresa mea de e-mail de la destinatari."
   },
   "disableThisSend": {
-    "message": "Dezactivați acest Send astfel încât nimeni să nu îl poată accesa.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Dezactivați acest Share astfel încât nimeni să nu îl poată accesa.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "allSends": {
-    "message": "Toate Send-urile"
+    "message": "Toate Share-urile"
   },
   "maxAccessCountReached": {
     "message": "S-a atins numărul maxim de acces"
@@ -3590,35 +3590,35 @@
     "message": "Expirat"
   },
   "searchSends": {
-    "message": "Căutare în Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Căutare în Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendProtectedPassword": {
-    "message": "Acest Send este protejat cu parolă. Vă rugăm să introduceți mai jos parola pentru a continua.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Acest Share este protejat cu parolă. Vă rugăm să introduceți mai jos parola pentru a continua.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
-    "message": "Nu știți parola? Cereți Expeditorului parola necesară pentru a accesa acest Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Nu știți parola? Cereți Expeditorului parola necesară pentru a accesa acest Share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendHiddenByDefault": {
-    "message": "Acest Send este ascuns în mod implicit. Puteți comuta vizibilitatea acestuia folosind butonul de mai jos.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Acest Share este ascuns în mod implicit. Puteți comuta vizibilitatea acestuia folosind butonul de mai jos.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "downloadFile": {
     "message": "Descărcare fișier"
   },
   "sendAccessUnavailable": {
-    "message": "Send-ul pe care încercați să-l accesați nu există sau nu mai este disponibil.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share-ul pe care încercați să-l accesați nu există sau nu mai este disponibil.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "missingSendFile": {
-    "message": "Fișierul asociat cu acest Send nu a putut fi găsit.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Fișierul asociat cu acest Share nu a putut fi găsit.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "noSendsInList": {
-    "message": "Niciun Send de afișat.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Niciun Share de afișat.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "emergencyAccess": {
     "message": "Acces de urgență"
@@ -3775,44 +3775,44 @@
     "message": "Datorită unei politici pentru întreprinderi, vă este restricționată salvarea de articole în seiful dvs. personal. Schimbați opțiunea de proprietate la o organizație și alegeți dintre colecțiile disponibile."
   },
   "disableSend": {
-    "message": "Dezactivare Send"
+    "message": "Dezactivare Share"
   },
   "disableSendPolicyDesc": {
-    "message": "Nu permiteți utilizatorilor să creeze sau să editeze un Send Bravura Safe. Ștergerea unui Send existent este încă permisă.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Nu permiteți utilizatorilor să creeze sau să editeze un Share Bravura Safe. Ștergerea unui Share existent este încă permisă.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "disableSendExemption": {
     "message": "Utilizatorii organizației care pot gestiona politicile organizației sunt exceptați de la aplicarea acestei politici."
   },
   "sendDisabled": {
-    "message": "Send dezactivat",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share dezactivat",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendDisabledWarning": {
-    "message": "Datorită unei politici de întreprindere, puteți șterge numai un Send existent.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Datorită unei politici de întreprindere, puteți șterge numai un Share existent.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptions": {
-    "message": "Opțiuni Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Opțiuni Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptionsPolicyDesc": {
-    "message": "Setați opțiunile pentru crearea și editarea Send-urilor.",
-    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Setați opțiunile pentru crearea și editarea Share-urilor.",
+    "description": "'Shares' is a plural noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptionsExemption": {
     "message": "Utilizatorii organizației care pot gestiona politicile organizației sunt exceptați de la aplicarea acestei politici."
   },
   "disableHideEmail": {
-    "message": "Nu permiteți utilizatorilor să-și ascundă adresa de e-mail de la destinatari, atunci când creează sau editează un Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Nu permiteți utilizatorilor să-și ascundă adresa de e-mail de la destinatari, atunci când creează sau editează un Share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptionsPolicyInEffect": {
     "message": "În prezent, sunt în vigoare următoarele politici de organizare:"
   },
   "sendDisableHideEmailInEffect": {
-    "message": "Utilizatorii nu au voie să-și ascundă adresa de e-mail de la destinatari atunci când creează sau editează un Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Utilizatorii nu au voie să-și ascundă adresa de e-mail de la destinatari atunci când creează sau editează un Share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "modifiedPolicyId": {
     "message": "Politica $ID$ a fost editată.",
@@ -3905,12 +3905,12 @@
     "message": "Dezactivează proprietatea personală pentru utilizatorii organizației"
   },
   "textHiddenByDefault": {
-    "message": "Când Send-ul este accesat, ascundeți textul în mod implicit",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Când Share-ul este accesat, ascundeți textul în mod implicit",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendNameDesc": {
-    "message": "Un nume prietenos pentru a descrie acest Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Un nume prietenos pentru a descrie acest Share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendTextDesc": {
     "message": "Textul pe care doriți să-l trimiteți."
@@ -3919,23 +3919,23 @@
     "message": "Fișierul pe care doriți să-l trimiteți."
   },
   "copySendLinkOnSave": {
-    "message": "Copiați linkul pentru a partaja acest Send în clipboard-ul meu la salvare."
+    "message": "Copiați linkul pentru a partaja acest Share în clipboard-ul meu la salvare."
   },
   "sendLinkLabel": {
-    "message": "Link Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Link Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "send": {
-    "message": "Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendAccessTaglineProductDesc": {
-    "message": "Bravura Safe Send transmite celorlalți informații sensibile, temporare, cu ușurință și în siguranță.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Bravura Safe Share transmite celorlalți informații sensibile, temporare, cu ușurință și în siguranță.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendAccessTaglineLearnMore": {
     "message": "Aflați mai multe despre",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Safe Send or sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Safe Share or sign up to try it today.'"
   },
   "sendVaultCardProductDesc": {
     "message": "Partajați text sau fișiere direct cu oricine."
@@ -3962,15 +3962,15 @@
   },
   "sendAccessTaglineOr": {
     "message": "sau",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send **or** sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Share **or** sign up to try it today.'"
   },
   "sendAccessTaglineSignUp": {
     "message": "înregistrați-vă",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send or **sign up** to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Share or **sign up** to try it today.'"
   },
   "sendAccessTaglineTryToday": {
     "message": "pentru a-l încerca astăzi.",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send or sign up to **try it today.**'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Share or sign up to **try it today.**'"
   },
   "sendCreatorIdentifier": {
     "message": "Utilizatorul Bravura Safe $USER_IDENTIFIER$ a partajat următoarele cu dvs.",
@@ -3982,8 +3982,8 @@
     }
   },
   "viewSendHiddenEmailWarning": {
-    "message": "Utilizatorul Bravura Safe care a creat acest Send a ales să-și ascundă adresa de e-mail. Ar trebui să vă asigurați că aveți încredere în sursa acestui link înainte de utilizarea sau descărcarea conținutului acestuia.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Utilizatorul Bravura Safe care a creat acest Share a ales să-și ascundă adresa de e-mail. Ar trebui să vă asigurați că aveți încredere în sursa acestui link înainte de utilizarea sau descărcarea conținutului acestuia.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "expirationDateIsInvalid": {
     "message": "Data de expirare furnizată nu este validă."
