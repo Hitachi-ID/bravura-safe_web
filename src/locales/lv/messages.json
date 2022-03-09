@@ -3487,79 +3487,79 @@
     "message": "Teksts"
   },
   "createSend": {
-    "message": "Izveidot jaunu \"Send\"",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Izveidot jaunu \"Share\"",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "editSend": {
-    "message": "Labot \"Send\"",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Labot \"Share\"",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "createdSend": {
-    "message": "\"Send\" izveidots",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "\"Share\" izveidots",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "editedSend": {
-    "message": "\"Send\" labots",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "\"Share\" labots",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deletedSend": {
-    "message": "\"Send\" izdzēsts",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "\"Share\" izdzēsts",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deleteSend": {
-    "message": "Dzēst \"Send\"",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Dzēst \"Share\"",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deleteSendConfirmation": {
-    "message": "Vai tiešām izdzēst šo \"Send\"?",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Vai tiešām izdzēst šo \"Share\"?",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "whatTypeOfSend": {
-    "message": "Kāds veids ir šim \"Send\"?",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Kāds veids ir šim \"Share\"?",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deletionDate": {
     "message": "Dzēšanas datums"
   },
   "deletionDateDesc": {
-    "message": "\"Send\" tiks pastāvīgi izdzēsts norādītajā dienā un laikā.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "\"Share\" tiks pastāvīgi izdzēsts norādītajā dienā un laikā.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "expirationDate": {
     "message": "Derīguma beigu datums"
   },
   "expirationDateDesc": {
-    "message": "Ja uzstādīts, piekļuve šim \"Send\" beigsies norādītajā dienā un laikā.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Ja uzstādīts, piekļuve šim \"Share\" beigsies norādītajā dienā un laikā.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "maxAccessCount": {
     "message": "Lielākais pieļaujamais piekļuvju skaits"
   },
   "maxAccessCountDesc": {
-    "message": "Ja uzstādīts, lietotāji nevarēs piekļūt šim \"Send\", kad tiks sasniegts lielākais pieļaujamais piekļūšanas reižu skaits.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Ja uzstādīts, lietotāji nevarēs piekļūt šim \"Share\", kad tiks sasniegts lielākais pieļaujamais piekļūšanas reižu skaits.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "currentAccessCount": {
     "message": "Pašreizējais piekļuvju skaits"
   },
   "sendPasswordDesc": {
-    "message": "Pēc izvēles pieprasīt lietotājiem paroli, lai viņi varētu piekļūt šim \"Send\".",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Pēc izvēles pieprasīt lietotājiem paroli, lai viņi varētu piekļūt šim \"Share\".",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendNotesDesc": {
-    "message": "Personīgās piezīmes par šo \"Send\".",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Personīgās piezīmes par šo \"Share\".",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "disabled": {
     "message": "Atspējots"
   },
   "sendLink": {
-    "message": "\"Send\" saite",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "\"Share\" saite",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "copySendLink": {
-    "message": "Ievietot \"Send\" saiti starpliktuvē",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Ievietot \"Share\" saiti starpliktuvē",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "removePassword": {
     "message": "Noņemt paroli"
@@ -3574,11 +3574,11 @@
     "message": "Slēpt e-pasta adresi no saņēmējiem."
   },
   "disableThisSend": {
-    "message": "Atspējot šo \"Send\", lai neviens tam nevarētu piekļūt.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Atspējot šo \"Share\", lai neviens tam nevarētu piekļūt.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "allSends": {
-    "message": "Visi \"Send\""
+    "message": "Visi \"Share\""
   },
   "maxAccessCountReached": {
     "message": "Sasniegts lielākais pieļaujamais piekļuvju skaits"
@@ -3590,35 +3590,35 @@
     "message": "Beidzies izmantošanas laiks"
   },
   "searchSends": {
-    "message": "Meklēt \"Send\"",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Meklēt \"Share\"",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendProtectedPassword": {
-    "message": "Šis \"Send\" ir aizsargāts ar paroli. Lūgums ievadīt paroli, lai varētu turpināt.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Šis \"Share\" ir aizsargāts ar paroli. Lūgums ievadīt paroli, lai varētu turpināt.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
-    "message": "Nezini paroli? Vaicā to sūtītājam, lai varētu piekļūt šim \"Send\"!",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Nezini paroli? Vaicā to sūtītājam, lai varētu piekļūt šim \"Share\"!",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendHiddenByDefault": {
-    "message": "Šis \"Send\" pēc noklusējuma ir paslēpts. Tā redzamību var pārslēgt ar zemāk esošo pogu.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Šis \"Share\" pēc noklusējuma ir paslēpts. Tā redzamību var pārslēgt ar zemāk esošo pogu.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "downloadFile": {
     "message": "Lejupielādēt datni"
   },
   "sendAccessUnavailable": {
-    "message": "\"Send\", kam mēģini piekļūt, nepastāv vai arī nav vairs pieejams.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "\"Share\", kam mēģini piekļūt, nepastāv vai arī nav vairs pieejams.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "missingSendFile": {
-    "message": "Ar šo \"Send\" saistīto datni nevarēja atrast.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Ar šo \"Share\" saistīto datni nevarēja atrast.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "noSendsInList": {
-    "message": "Nav \"Send\", ko parādīt.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Nav \"Share\", ko parādīt.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "emergencyAccess": {
     "message": "Ārkārtas piekļuve"
@@ -3775,44 +3775,44 @@
     "message": "Uzņēmuma nosacījumi liedz saglabāt vienumus privātajā glabātavā. Ir jānorāda piederība apvienībai un jāizvēlas kāds no pieejamajiem krājumiem."
   },
   "disableSend": {
-    "message": "Atspējot \"Send\""
+    "message": "Atspējot \"Share\""
   },
   "disableSendPolicyDesc": {
-    "message": "Neļaut lietotājiem izveidot vai labot Bravura Safe \"Send\". Esošu \"Send\" dzēšana joprojām ir iespējama.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Neļaut lietotājiem izveidot vai labot Bravura Safe \"Share\". Esošu \"Share\" dzēšana joprojām ir iespējama.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "disableSendExemption": {
     "message": "Apvienību lietotāji, kas var pārvaldīt apvienības nosacījumu kopas, nav pakļauti šīs nosacījumu kopas piemērošanai."
   },
   "sendDisabled": {
-    "message": "\"Send\" atspējots",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "\"Share\" atspējots",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendDisabledWarning": {
-    "message": "Uzņēmuma nosacījumu kopas dēļ ir tikai iespējams dzēst esošu \"Send\".",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Uzņēmuma nosacījumu kopas dēļ ir tikai iespējams dzēst esošu \"Share\".",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptions": {
-    "message": "\"Send\" iestatījumi",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "\"Share\" iestatījumi",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptionsPolicyDesc": {
-    "message": "Uzstādīt iestatījumus \"Send\" izveidošanai un labošanai.",
-    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Uzstādīt iestatījumus \"Share\" izveidošanai un labošanai.",
+    "description": "'Shares' is a plural noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptionsExemption": {
     "message": "Apvienību lietotāji, kas var pārvaldīt apvienības nosacījumu kopas, nav pakļauti šīs nosacījumu kopas piemērošanai."
   },
   "disableHideEmail": {
-    "message": "Neļaut lietotājiem slēpt e-pasta adresi no saņēmējiem, kad tiek izveidots vai labots \"Send\".",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Neļaut lietotājiem slēpt e-pasta adresi no saņēmējiem, kad tiek izveidots vai labots \"Share\".",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptionsPolicyInEffect": {
     "message": "Ir spēkā zemāk uzskaitītie apvienības nosacījumi:"
   },
   "sendDisableHideEmailInEffect": {
-    "message": "Lietotājiem nav ļauts slēpt e-pasta adresi no saņēmējiem, kad tiek izveidots vai labots \"Send\".",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Lietotājiem nav ļauts slēpt e-pasta adresi no saņēmējiem, kad tiek izveidots vai labots \"Share\".",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "modifiedPolicyId": {
     "message": "Nosacījums $ID$ izmainīts.",
@@ -3905,12 +3905,12 @@
     "message": "Atspējot personīgās īpašumtiesības apvienības lietotājiem"
   },
   "textHiddenByDefault": {
-    "message": "Kad piekļūst šim \"Send\", pēc noklusējuma paslēpt saturu",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Kad piekļūst šim \"Share\", pēc noklusējuma paslēpt saturu",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendNameDesc": {
-    "message": "Lasāms nosaukums, kas apraksta šo \"Send\".",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Lasāms nosaukums, kas apraksta šo \"Share\".",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendTextDesc": {
     "message": "Teksts, kuru ir vēlme nosūtīt."
@@ -3919,23 +3919,23 @@
     "message": "Datne, kuru ir vēlme nosūtīt."
   },
   "copySendLinkOnSave": {
-    "message": "Saglabājot ievietot šī \"Send\" saiti starpliktuvē."
+    "message": "Saglabājot ievietot šī \"Share\" saiti starpliktuvē."
   },
   "sendLinkLabel": {
-    "message": "\"Send\" saite",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "\"Share\" saite",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "send": {
-    "message": "\"Send\"",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "\"Share\"",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendAccessTaglineProductDesc": {
-    "message": "Bravura Safe \"Send\" vienkārši un droši pārsūta citiem slepenu un īslaicīgu informāciju.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Bravura Safe \"Share\" vienkārši un droši pārsūta citiem slepenu un īslaicīgu informāciju.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendAccessTaglineLearnMore": {
     "message": "Uzzināt vairāk par",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Safe Send or sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Safe Share or sign up to try it today.'"
   },
   "sendVaultCardProductDesc": {
     "message": "Tieša teksta vai datņu kopīgošana ar jebkuru."
@@ -3962,15 +3962,15 @@
   },
   "sendAccessTaglineOr": {
     "message": "vai",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send **or** sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Share **or** sign up to try it today.'"
   },
   "sendAccessTaglineSignUp": {
     "message": "pieteikties",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send or **sign up** to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Share or **sign up** to try it today.'"
   },
   "sendAccessTaglineTryToday": {
     "message": "izmēģinātu šodien.",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send or sign up to **try it today.**'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Share or sign up to **try it today.**'"
   },
   "sendCreatorIdentifier": {
     "message": "Bravura Safe lietotājs $USER_IDENTIFIER$ kopīgoja sekojošo",
@@ -3982,8 +3982,8 @@
     }
   },
   "viewSendHiddenEmailWarning": {
-    "message": "Bravura Safe lietotājs, kurš izveidoja šo \"Send\", ir izvēlējies slēpt savu e-pasta adresi. Ir jāpārliecinās par avota uzticamību, pirms tiek izmantots vai lejupielādēts tā saturs.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Bravura Safe lietotājs, kurš izveidoja šo \"Share\", ir izvēlējies slēpt savu e-pasta adresi. Ir jāpārliecinās par avota uzticamību, pirms tiek izmantots vai lejupielādēts tā saturs.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "expirationDateIsInvalid": {
     "message": "Norādītais derīguma beigu datums nav derīgs."

@@ -3487,79 +3487,79 @@
     "message": "文字"
   },
   "createSend": {
-    "message": "創建新的 Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "創建新的 Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "editSend": {
-    "message": "編輯 Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "編輯 Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "createdSend": {
-    "message": "Send 已創建",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share 已創建",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "editedSend": {
-    "message": "Send 已編輯",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share 已編輯",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deletedSend": {
-    "message": "Send 已刪除",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share 已刪除",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deleteSend": {
-    "message": "刪除 Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "刪除 Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deleteSendConfirmation": {
-    "message": "您確定要刪除此 Send 嗎？",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "您確定要刪除此 Share 嗎？",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "whatTypeOfSend": {
-    "message": "這是什麽類型的 Send？",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "這是什麽類型的 Share？",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deletionDate": {
     "message": "刪除日期"
   },
   "deletionDateDesc": {
-    "message": "此 Send 將在指定的日期和時間被永久删除。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "此 Share 將在指定的日期和時間被永久删除。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "expirationDate": {
     "message": "逾期日期"
   },
   "expirationDateDesc": {
-    "message": "如果設定此選項，對此 Send 的存取將在指定的日期和時間後逾期。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "如果設定此選項，對此 Share 的存取將在指定的日期和時間後逾期。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "maxAccessCount": {
     "message": "最大存取次數"
   },
   "maxAccessCountDesc": {
-    "message": "如果設定此選項，當達到最大存取次數時，使用者將無法再次存取此 Send。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "如果設定此選項，當達到最大存取次數時，使用者將無法再次存取此 Share。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "currentAccessCount": {
     "message": "目前存取次數"
   },
   "sendPasswordDesc": {
-    "message": "可選。使用者需提供密碼才能存取此 Send。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "可選。使用者需提供密碼才能存取此 Share。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendNotesDesc": {
-    "message": "關於此 Send 的私人注釋。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "關於此 Share 的私人注釋。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "disabled": {
     "message": "已停用"
   },
   "sendLink": {
-    "message": "Send 連結",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share 連結",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "copySendLink": {
-    "message": "複製 Send 連結",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "複製 Share 連結",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "removePassword": {
     "message": "移除密碼"
@@ -3574,11 +3574,11 @@
     "message": "對收件人隱藏我的電子郵件位址。"
   },
   "disableThisSend": {
-    "message": "停用此 Send 以阻止任何人存取它。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "停用此 Share 以阻止任何人存取它。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "allSends": {
-    "message": "所有 Send"
+    "message": "所有 Share"
   },
   "maxAccessCountReached": {
     "message": "已達最大存取次數"
@@ -3590,35 +3590,35 @@
     "message": "已逾期"
   },
   "searchSends": {
-    "message": "搜尋 Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "搜尋 Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendProtectedPassword": {
-    "message": "此 Send 受到密碼保護，請在下方輸入密碼以繼續。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "此 Share 受到密碼保護，請在下方輸入密碼以繼續。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
-    "message": "不知道密碼？請向此 Send 的發起人索取密碼。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "不知道密碼？請向此 Share 的發起人索取密碼。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendHiddenByDefault": {
-    "message": "此 Send 預設為隱藏。您可使用下方的按鈕切換其可見性。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "此 Share 預設為隱藏。您可使用下方的按鈕切換其可見性。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "downloadFile": {
     "message": "下載檔案"
   },
   "sendAccessUnavailable": {
-    "message": "您嘗試存取的 Send 不存在或不再可用。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "您嘗試存取的 Share 不存在或不再可用。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "missingSendFile": {
-    "message": "未找到與此 Send 相關聯的檔案。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "未找到與此 Share 相關聯的檔案。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "noSendsInList": {
-    "message": "沒有可顯示的 Send。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "沒有可顯示的 Share。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "emergencyAccess": {
     "message": "緊急存取"
@@ -3775,44 +3775,44 @@
     "message": "由於某個企業原則，您被限制為儲存項目到您的個人密碼庫。將擁有權變更爲組織，並從可用的集合中選擇。"
   },
   "disableSend": {
-    "message": "停用 Send"
+    "message": "停用 Share"
   },
   "disableSendPolicyDesc": {
-    "message": "不允許使用者創建或編輯 Bravura Safe Send。但允許刪除現有的 Send。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "不允許使用者創建或編輯 Bravura Safe Share。但允許刪除現有的 Share。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "disableSendExemption": {
     "message": "可以管理組織原則的組織使用者豁免此原則的執行。"
   },
   "sendDisabled": {
-    "message": "Send 已停用",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share 已停用",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendDisabledWarning": {
-    "message": "由於某個企業原則，您只能刪除已有的 Send。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "由於某個企業原則，您只能刪除已有的 Share。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptions": {
-    "message": "Send 選項",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share 選項",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptionsPolicyDesc": {
-    "message": "設定用於創建和編輯 Send 的選項。",
-    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "設定用於創建和編輯 Share 的選項。",
+    "description": "'Shares' is a plural noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptionsExemption": {
     "message": "可以管理組織原則的組織使用者豁免此原則的執行。"
   },
   "disableHideEmail": {
-    "message": "不允許使用者在創建或編輯 Send 時隱藏他們的電子郵件位址。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "不允許使用者在創建或編輯 Share 時隱藏他們的電子郵件位址。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptionsPolicyInEffect": {
     "message": "以下組織原則當前正起作用："
   },
   "sendDisableHideEmailInEffect": {
-    "message": "使用者在創建或編輯 Send 時不允許隱藏他們的電子郵件位址。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "使用者在創建或編輯 Share 時不允許隱藏他們的電子郵件位址。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "modifiedPolicyId": {
     "message": "原則 $ID$ 已修改。",
@@ -3905,12 +3905,12 @@
     "message": "為組織使用者禁用個人擁有權。"
   },
   "textHiddenByDefault": {
-    "message": "存取此 Send 時，預設將隱藏文字",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "存取此 Share 時，預設將隱藏文字",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendNameDesc": {
-    "message": "用於描述此 Send 的友好名稱。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "用於描述此 Share 的友好名稱。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendTextDesc": {
     "message": "您想要傳送的文字。"
@@ -3919,23 +3919,23 @@
     "message": "您想要傳送的檔案。"
   },
   "copySendLinkOnSave": {
-    "message": "储存時複製連結到剪貼簿以便分享此 Send。"
+    "message": "储存時複製連結到剪貼簿以便分享此 Share。"
   },
   "sendLinkLabel": {
-    "message": "Send 連結",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share 連結",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "send": {
-    "message": "Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendAccessTaglineProductDesc": {
     "message": "Bravura Safe Send可以輕鬆安全地向其他人傳輸敏感的臨時資訊。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendAccessTaglineLearnMore": {
     "message": "了解更多",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Safe Send or sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Safe Share or sign up to try it today.'"
   },
   "sendVaultCardProductDesc": {
     "message": "與任何人直接共享文字或檔案。"
@@ -3962,15 +3962,15 @@
   },
   "sendAccessTaglineOr": {
     "message": "或",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send **or** sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Share **or** sign up to try it today.'"
   },
   "sendAccessTaglineSignUp": {
     "message": "註冊",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send or **sign up** to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Share or **sign up** to try it today.'"
   },
   "sendAccessTaglineTryToday": {
     "message": "今天就體驗。",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send or sign up to **try it today.**'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Share or sign up to **try it today.**'"
   },
   "sendCreatorIdentifier": {
     "message": "Bravura Safe 使用者 $USER_IDENTIFIER$ 為您共享了如下資料",
@@ -3982,8 +3982,8 @@
     }
   },
   "viewSendHiddenEmailWarning": {
-    "message": "創建此 Send 的 Bravura Safe 使用者已選擇隱藏他們的電子郵件位址。在使用或下載此連結的內容之前，應確保您信任此連結的來源。",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "創建此 Share 的 Bravura Safe 使用者已選擇隱藏他們的電子郵件位址。在使用或下載此連結的內容之前，應確保您信任此連結的來源。",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "expirationDateIsInvalid": {
     "message": "指定的逾期日期無效。"

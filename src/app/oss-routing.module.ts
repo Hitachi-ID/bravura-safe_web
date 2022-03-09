@@ -152,7 +152,7 @@ const routes: Routes = [
       {
         path: "send/:sendId/:key",
         component: AccessComponent,
-        data: { title: "Bravura Safe Send" },
+        data: { title: "Bravura Safe Share" },
       },
       {
         path: "update-temp-password",
@@ -174,7 +174,7 @@ const routes: Routes = [
     canActivate: [AuthGuardService],
     children: [
       { path: "vault", component: VaultComponent, data: { titleId: "myVault" } },
-      { path: "sends", component: SendComponent, data: { title: "Send" } },
+      { path: "sends", component: SendComponent, data: { title: "Share" } },
       {
         path: "settings",
         component: SettingsComponent,

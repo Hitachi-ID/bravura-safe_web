@@ -3487,79 +3487,79 @@
     "message": "Κείμενο"
   },
   "createSend": {
-    "message": "Δημιουργία Νέου Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Δημιουργία Νέου Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "editSend": {
-    "message": "Επεξεργασία Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Επεξεργασία Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "createdSend": {
-    "message": "Το Send Δημιουργήθηκε",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Το Share Δημιουργήθηκε",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "editedSend": {
-    "message": "Το Send Επεξεργάστηκε",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Το Share Επεξεργάστηκε",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deletedSend": {
-    "message": "Το Send Διαγράφηκε",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Το Share Διαγράφηκε",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deleteSend": {
-    "message": "Διαγραφή Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Διαγραφή Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deleteSendConfirmation": {
-    "message": "Είστε βέβαιοι ότι θέλετε να διαγράψετε το Send;",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Είστε βέβαιοι ότι θέλετε να διαγράψετε το Share;",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "whatTypeOfSend": {
-    "message": "Τι είδους Send είναι αυτό;",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Τι είδους Share είναι αυτό;",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deletionDate": {
     "message": "Ημερομηνία διαγραφής"
   },
   "deletionDateDesc": {
-    "message": "Το Send θα διαγραφεί οριστικά την καθορισμένη ημερομηνία και ώρα.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Το Share θα διαγραφεί οριστικά την καθορισμένη ημερομηνία και ώρα.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "expirationDate": {
     "message": "Ημερομηνία Λήξης"
   },
   "expirationDateDesc": {
-    "message": "Εάν οριστεί, η πρόσβαση σε αυτό το Send θα λήξει την καθορισμένη ημερομηνία και ώρα.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Εάν οριστεί, η πρόσβαση σε αυτό το Share θα λήξει την καθορισμένη ημερομηνία και ώρα.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "maxAccessCount": {
     "message": "Μέγιστος Αριθμός Πρόσβασης"
   },
   "maxAccessCountDesc": {
-    "message": "Εάν οριστεί, οι χρήστες δεν θα μπορούν πλέον να έχουν πρόσβαση σε αυτό το send μόλις επιτευχθεί ο μέγιστος αριθμός πρόσβασης.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Εάν οριστεί, οι χρήστες δεν θα μπορούν πλέον να έχουν πρόσβαση σε αυτό το share μόλις επιτευχθεί ο μέγιστος αριθμός πρόσβασης.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "currentAccessCount": {
     "message": "Τρέχων Αριθμός Πρόσβασης"
   },
   "sendPasswordDesc": {
-    "message": "Προαιρετικά απαιτείται κωδικός πρόσβασης για τους χρήστες για να έχουν πρόσβαση σε αυτό το Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Προαιρετικά απαιτείται κωδικός πρόσβασης για τους χρήστες για να έχουν πρόσβαση σε αυτό το Share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendNotesDesc": {
-    "message": "Ιδιωτικές σημειώσεις σχετικά με αυτό το Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Ιδιωτικές σημειώσεις σχετικά με αυτό το Share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "disabled": {
     "message": "Απενεργοποιημένο"
   },
   "sendLink": {
     "message": "Αποστολή Συνδέσμου",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "copySendLink": {
     "message": "Αντιγραφή Συνδέσμου Αποστολής",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "removePassword": {
     "message": "Αφαίρεση κωδικού"
@@ -3574,11 +3574,11 @@
     "message": "Απόκρυψη της διεύθυνσης email μου από τους παραλήπτες."
   },
   "disableThisSend": {
-    "message": "Απενεργοποιήστε αυτό το Send έτσι ώστε κανείς να μην μπορεί να έχει πρόσβαση σε αυτό.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Απενεργοποιήστε αυτό το Share έτσι ώστε κανείς να μην μπορεί να έχει πρόσβαση σε αυτό.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "allSends": {
-    "message": "Όλα τα Sends"
+    "message": "Όλα τα Sharesf"
   },
   "maxAccessCountReached": {
     "message": "Φτάσατε στον μέγιστο αριθμό πρόσβασης"
@@ -3590,35 +3590,35 @@
     "message": "Έληξε"
   },
   "searchSends": {
-    "message": "Αναζήτηση Sends",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Αναζήτηση Shares",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendProtectedPassword": {
-    "message": "Αυτό το Send προστατεύεται με κωδικό πρόσβασης. Πληκτρολογήστε τον κωδικό πρόσβασης παρακάτω για να συνεχίσετε.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Αυτό το Share προστατεύεται με κωδικό πρόσβασης. Πληκτρολογήστε τον κωδικό πρόσβασης παρακάτω για να συνεχίσετε.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
-    "message": "Δεν γνωρίζετε τον κωδικό; Ζητήστε από τον αποστολέα τον κωδικό που απαιτείται για την πρόσβαση σε αυτό το Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Δεν γνωρίζετε τον κωδικό; Ζητήστε από τον αποστολέα τον κωδικό που απαιτείται για την πρόσβαση σε αυτό το Share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendHiddenByDefault": {
-    "message": "Αυτό το send είναι κρυμμένο από προεπιλογή. Μπορείτε να αλλάξετε την ορατότητά του χρησιμοποιώντας το παρακάτω κουμπί.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Αυτό το share είναι κρυμμένο από προεπιλογή. Μπορείτε να αλλάξετε την ορατότητά του χρησιμοποιώντας το παρακάτω κουμπί.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "downloadFile": {
     "message": "Λήψη Αρχείου"
   },
   "sendAccessUnavailable": {
-    "message": "Το Send που προσπαθείτε να αποκτήσετε πρόσβαση, δεν υπάρχει ή δεν είναι πλέον διαθέσιμο.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Το Share που προσπαθείτε να αποκτήσετε πρόσβαση, δεν υπάρχει ή δεν είναι πλέον διαθέσιμο.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "missingSendFile": {
-    "message": "Το αρχείο που σχετίζεται με αυτό το Send δεν βρέθηκε.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Το αρχείο που σχετίζεται με αυτό το Share δεν βρέθηκε.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "noSendsInList": {
-    "message": "Δεν υπάρχουν Sends στη λίστα.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Δεν υπάρχουν Shares στη λίστα.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "emergencyAccess": {
     "message": "Πρόσβαση Έκτακτης Ανάγκης"
@@ -3779,40 +3779,40 @@
   },
   "disableSendPolicyDesc": {
     "message": "Μην επιτρέπετε στους χρήστες να δημιουργήσουν ή να επεξεργαστούν μια Αποστολή Bravura Safe. Η διαγραφή μιας υπάρχουσας Αποστολής εξακολουθεί να επιτρέπεται.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "disableSendExemption": {
     "message": "Οι χρήστες του οργανισμού που μπορούν να διαχειριστούν τις πολιτικές του οργανισμού εξαιρούνται από την εφαρμογή αυτής της πολιτικής."
   },
   "sendDisabled": {
-    "message": "Send Απενεργοποιημένο",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share Απενεργοποιημένο",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendDisabledWarning": {
-    "message": "Λόγω μιας επιχειρηματικής πολιτικής, είστε σε θέση να διαγράψετε μόνο ένα υπάρχον Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Λόγω μιας επιχειρηματικής πολιτικής, είστε σε θέση να διαγράψετε μόνο ένα υπάρχον Share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptions": {
-    "message": "Επιλογές Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Επιλογές Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptionsPolicyDesc": {
-    "message": "Καθορίστε επιλογές για τη δημιουργία και επεξεργασία sends.",
-    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Καθορίστε επιλογές για τη δημιουργία και επεξεργασία shares.",
+    "description": "'Shares' is a plural noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptionsExemption": {
     "message": "Οι χρήστες του οργανισμού που μπορούν να διαχειριστούν τις πολιτικές του οργανισμού εξαιρούνται από την εφαρμογή αυτής της πολιτικής."
   },
   "disableHideEmail": {
-    "message": "Μην επιτρέπετε στους χρήστες να αποκρύψουν τη διεύθυνση email τους από τους παραλήπτες κατά τη δημιουργία ή την επεξεργασία ενός send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Μην επιτρέπετε στους χρήστες να αποκρύψουν τη διεύθυνση email τους από τους παραλήπτες κατά τη δημιουργία ή την επεξεργασία ενός share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptionsPolicyInEffect": {
     "message": "Οι ακόλουθες οργανωτικές πολιτικές εφαρμόζονται επί του παρόντος:"
   },
   "sendDisableHideEmailInEffect": {
-    "message": "Οι χρήστες δεν επιτρέπεται να αποκρύψουν τη διεύθυνση email τους από τους παραλήπτες κατά τη δημιουργία ή την επεξεργασία ενός send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Οι χρήστες δεν επιτρέπεται να αποκρύψουν τη διεύθυνση email τους από τους παραλήπτες κατά τη δημιουργία ή την επεξεργασία ενός share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "modifiedPolicyId": {
     "message": "Τροποποιημένη πολιτική $ID$.",
@@ -3906,11 +3906,11 @@
   },
   "textHiddenByDefault": {
     "message": "Κατά την πρόσβαση στην αποστολή, απόκρυψη του κειμένου από προεπιλογή",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendNameDesc": {
-    "message": "Ένα φιλικό όνομα για την περιγραφή αυτού του Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Ένα φιλικό όνομα για την περιγραφή αυτού του Share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendTextDesc": {
     "message": "Το κείμενο που θέλετε να στείλετε."
@@ -3919,23 +3919,23 @@
     "message": "Το αρχείο που θέλετε να στείλετε."
   },
   "copySendLinkOnSave": {
-    "message": "Αντιγράψτε το σύνδεσμο, για να μοιραστείτε αυτό το Send στο πρόχειρο μου, κατά την αποθήκευση."
+    "message": "Αντιγράψτε το σύνδεσμο, για να μοιραστείτε αυτό το Share στο πρόχειρο μου, κατά την αποθήκευση."
   },
   "sendLinkLabel": {
-    "message": "Σύνδεσμος Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Σύνδεσμος Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "send": {
-    "message": "Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendAccessTaglineProductDesc": {
-    "message": "Το Bravura Safe Send μεταδίδει ευαίσθητες, προσωρινές πληροφορίες σε άλλους, εύκολα και με ασφάλεια.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Το Bravura Safe Share μεταδίδει ευαίσθητες, προσωρινές πληροφορίες σε άλλους, εύκολα και με ασφάλεια.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendAccessTaglineLearnMore": {
     "message": "Περισσότερες πληροφορίες για",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Safe Send or sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Safe Share or sign up to try it today.'"
   },
   "sendVaultCardProductDesc": {
     "message": "Κοινή χρήση κειμένου ή αρχείων απευθείας με οποιονδήποτε."
@@ -3962,15 +3962,15 @@
   },
   "sendAccessTaglineOr": {
     "message": "ή",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send **or** sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Share **or** sign up to try it today.'"
   },
   "sendAccessTaglineSignUp": {
     "message": "εγγραφείτε",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send or **sign up** to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Share or **sign up** to try it today.'"
   },
   "sendAccessTaglineTryToday": {
     "message": "για να το δοκιμάσετε σήμερα.",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send or sign up to **try it today.**'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Share or sign up to **try it today.**'"
   },
   "sendCreatorIdentifier": {
     "message": "Ο χρήστης Bravura Safe $USER_IDENTIFIER$ κοινοποίησε τα ακόλουθα μαζί σας",
@@ -3982,8 +3982,8 @@
     }
   },
   "viewSendHiddenEmailWarning": {
-    "message": "Ο χρήστης Bravura Safe που δημιούργησε αυτό το send έχει επιλέξει να κρύψει τη διεύθυνση email του. Πρέπει να διασφαλίσετε ότι εμπιστεύεστε την πηγή αυτού του συνδέσμου πριν χρησιμοποιήσετε ή κατεβάσετε το περιεχόμενό του.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Ο χρήστης Bravura Safe που δημιούργησε αυτό το share έχει επιλέξει να κρύψει τη διεύθυνση email του. Πρέπει να διασφαλίσετε ότι εμπιστεύεστε την πηγή αυτού του συνδέσμου πριν χρησιμοποιήσετε ή κατεβάσετε το περιεχόμενό του.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "expirationDateIsInvalid": {
     "message": "Η ημερομηνία λήξης που δόθηκε δεν είναι έγκυρη."

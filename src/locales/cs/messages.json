@@ -3487,79 +3487,79 @@
     "message": "Text"
   },
   "createSend": {
-    "message": "Vytvořit nový Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Vytvořit nový Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "editSend": {
-    "message": "Upravit Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Upravit Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "createdSend": {
-    "message": "Send vytvořen",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share vytvořen",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "editedSend": {
-    "message": "Send upraven",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share upraven",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deletedSend": {
-    "message": "Send smazán",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share smazán",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deleteSend": {
-    "message": "Smazat Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Smazat Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deleteSendConfirmation": {
-    "message": "Jste si jisti, že chcete odstranit tento Send?",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Jste si jisti, že chcete odstranit tento Share?",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "whatTypeOfSend": {
-    "message": "Jakého typu je tento Send?",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Jakého typu je tento Share?",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "deletionDate": {
     "message": "Datum odstranění"
   },
   "deletionDateDesc": {
-    "message": "Tento Send bude trvale smazán v určený datum a čas.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Tento Share bude trvale smazán v určený datum a čas.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "expirationDate": {
     "message": "Datum expirace"
   },
   "expirationDateDesc": {
-    "message": "Je-li nastaveno, přístup k tomuto Send vyprší v daný datum a čas.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Je-li nastaveno, přístup k tomuto Share vyprší v daný datum a čas.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "maxAccessCount": {
     "message": "Maximální počet přístupů"
   },
   "maxAccessCountDesc": {
-    "message": "Je-li nastaveno, uživatelé již nebudou mít přístup k tomuto Send, jakmile bude dosaženo maximálního počtu přístupů.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Je-li nastaveno, uživatelé již nebudou mít přístup k tomuto Share, jakmile bude dosaženo maximálního počtu přístupů.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "currentAccessCount": {
     "message": "Počet aktuálních přístupů"
   },
   "sendPasswordDesc": {
-    "message": "Volitelně vyžadovat heslo pro přístup k tomuto Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Volitelně vyžadovat heslo pro přístup k tomuto Share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendNotesDesc": {
-    "message": "Soukromé poznámky o tomto Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Soukromé poznámky o tomto Share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "disabled": {
     "message": "Zakázáno"
   },
   "sendLink": {
-    "message": "Odkaz tohoto Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Odkaz tohoto Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "copySendLink": {
-    "message": "Zkopírovat odkaz Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Zkopírovat odkaz Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "removePassword": {
     "message": "Odstranit heslo"
@@ -3574,11 +3574,11 @@
     "message": "Skrýt mou e-mailovou adresu před příjemci."
   },
   "disableThisSend": {
-    "message": "Zakažte tento Send, aby k němu nikdo neměl přístup.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Zakažte tento Share, aby k němu nikdo neměl přístup.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "allSends": {
-    "message": "Všechny Sends"
+    "message": "Všechny Shares"
   },
   "maxAccessCountReached": {
     "message": "Dosažen maximální počet přístupů"
@@ -3590,35 +3590,35 @@
     "message": "Vypršela platnost"
   },
   "searchSends": {
-    "message": "Hledat Sends",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Hledat Shares",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendProtectedPassword": {
-    "message": "Toto Send je chráněno heslem. Pro pokračování zadejte prosím níže heslo.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Toto Share je chráněno heslem. Pro pokračování zadejte prosím níže heslo.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
-    "message": "Neznáte heslo? Požádejte odesílatele o heslo potřebné pro přístup k tomuto Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Neznáte heslo? Požádejte odesílatele o heslo potřebné pro přístup k tomuto Share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendHiddenByDefault": {
-    "message": "Toto Send je ve výchozím nastavení skryté. Viditelnost můžete přepnout pomocí tlačítka níže.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Toto Share je ve výchozím nastavení skryté. Viditelnost můžete přepnout pomocí tlačítka níže.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "downloadFile": {
     "message": "Stáhnout soubor"
   },
   "sendAccessUnavailable": {
-    "message": "Send, ke kterému se pokoušíte přistupovat, neexistuje nebo již není k dispozici.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share, ke kterému se pokoušíte přistupovat, neexistuje nebo již není k dispozici.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "missingSendFile": {
-    "message": "Soubor přidružený tomuto Send nebyl nalezen.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Soubor přidružený tomuto Share nebyl nalezen.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "noSendsInList": {
-    "message": "Nebyly nalezeny žádné Send položky.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Nebyly nalezeny žádné Share položky.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "emergencyAccess": {
     "message": "Nouzový přístup"
@@ -3775,44 +3775,44 @@
     "message": "Vzhledem k podnikovým zásadám je zakázáno ukládat položky do vašeho osobního trezoru. Změňte možnost vlastnictví na organizaci a vyberte z dostupných kolekcí."
   },
   "disableSend": {
-    "message": "Deaktivovat Send"
+    "message": "Deaktivovat Share"
   },
   "disableSendPolicyDesc": {
-    "message": "Nedovolit uživatelům vytvářet nebo upravovat Bravura Safe Send. Smazání existujícího Send je stále povoleno.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Nedovolit uživatelům vytvářet nebo upravovat Bravura Safe Share. Smazání existujícího Share je stále povoleno.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "disableSendExemption": {
     "message": "Uživatelé organizace, kteří mohou spravovat zásady organizace, jsou osvobozeni od vynucování těchto zásad."
   },
   "sendDisabled": {
-    "message": "Send deaktivován",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share deaktivován",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendDisabledWarning": {
-    "message": "Kvůli zásadám podniku můžete odstranit pouze existující Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Kvůli zásadám podniku můžete odstranit pouze existující Share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptions": {
-    "message": "Nastavení Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Nastavení Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptionsPolicyDesc": {
     "message": "Nastavte možnosti pro vytváření a úpravy Sendů.",
-    "description": "'Sends' is a plural noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "description": "'Shares' is a plural noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptionsExemption": {
     "message": "Uživatelé organizace, kteří mohou spravovat zásady organizace, jsou osvobozeni od vynucování těchto zásad."
   },
   "disableHideEmail": {
-    "message": "Nedovolte uživatelům skrýt svou e-mailovou adresu před příjemci při vytváření nebo úpravách Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Nedovolte uživatelům skrýt svou e-mailovou adresu před příjemci při vytváření nebo úpravách Share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptionsPolicyInEffect": {
     "message": "V současné době platí následující zásady organizace:"
   },
   "sendDisableHideEmailInEffect": {
-    "message": "Uživatelé nesmí při vytváření nebo úpravách Send skrýt svou e-mailovou adresu před příjemci.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Uživatelé nesmí při vytváření nebo úpravách Share skrýt svou e-mailovou adresu před příjemci.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "modifiedPolicyId": {
     "message": "Změněné zásady $ID$.",
@@ -3905,12 +3905,12 @@
     "message": "Zakázat osobní vlastnictví pro uživatele organizace"
   },
   "textHiddenByDefault": {
-    "message": "Při přístupu k Send, skrýt text ve výchozím nastavení",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Při přístupu k Share, skrýt text ve výchozím nastavení",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendNameDesc": {
-    "message": "Přátelský název pro popis tohoto Send.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Přátelský název pro popis tohoto Share.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendTextDesc": {
     "message": "Text, který chcete odeslat."
@@ -3919,23 +3919,23 @@
     "message": "Soubor, který chcete odeslat."
   },
   "copySendLinkOnSave": {
-    "message": "Zkopírovat odkaz tohoto Send do mé schránky při uložení."
+    "message": "Zkopírovat odkaz tohoto Share do mé schránky při uložení."
   },
   "sendLinkLabel": {
-    "message": "Odkaz tohoto Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Odkaz tohoto Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "send": {
-    "message": "Send",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Share",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendAccessTaglineProductDesc": {
-    "message": "Bravura Safe Send odesílá citlivé, dočasné informace ostatním snadno a bezpečně.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Bravura Safe Share odesílá citlivé, dočasné informace ostatním snadno a bezpečně.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendAccessTaglineLearnMore": {
     "message": "Zjistěte více o",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Safe Send or sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bravura Safe Share or sign up to try it today.'"
   },
   "sendVaultCardProductDesc": {
     "message": "Sdílejte text či soubory s kýmkoliv."
@@ -3962,15 +3962,15 @@
   },
   "sendAccessTaglineOr": {
     "message": "nebo",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send **or** sign up to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Share **or** sign up to try it today.'"
   },
   "sendAccessTaglineSignUp": {
     "message": "se zaregistrujte",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send or **sign up** to try it today.'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Share or **sign up** to try it today.'"
   },
   "sendAccessTaglineTryToday": {
     "message": "abyste to vyzkoušeli již dnes.",
-    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Send or sign up to **try it today.**'"
+    "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bravura Safe Share or sign up to **try it today.**'"
   },
   "sendCreatorIdentifier": {
     "message": "Uživatel Bravura Safe $USER_IDENTIFIER$ s vámi sdílel následující",
@@ -3982,8 +3982,8 @@
     }
   },
   "viewSendHiddenEmailWarning": {
-    "message": "Uživatel Bravura Safe, který vytvořil tento Send, se rozhodl skrýt svou e-mailovou adresu. Před použitím nebo stažením jeho obsahu byste se měli ujistit, že zdroji tohoto odkazu důvěřujete.",
-    "description": "'Send' is a noun and the name of a feature called 'Bravura Safe Send'. It should not be translated."
+    "message": "Uživatel Bravura Safe, který vytvořil tento Share, se rozhodl skrýt svou e-mailovou adresu. Před použitím nebo stažením jeho obsahu byste se měli ujistit, že zdroji tohoto odkazu důvěřujete.",
+    "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "expirationDateIsInvalid": {
     "message": "Uvedené datum vypršení platnosti není platné."
