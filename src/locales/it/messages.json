@@ -3598,7 +3598,7 @@
     "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
-    "message": "Non conosci la password? Chiedi al Sender la password necessaria per l'accesso a questo Share.",
+    "message": "Non conosci la password? Chiedi al sender la password necessaria per l'accesso a questo Share.",
     "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendHiddenByDefault": {
