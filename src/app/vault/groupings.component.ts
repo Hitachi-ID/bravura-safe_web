@@ -6,7 +6,6 @@ import { FolderService } from "jslib-common/abstractions/folder.service";
 import { StateService } from "jslib-common/abstractions/state.service";
 import { StorageService } from "jslib-common/abstractions/storage.service";
 
-
 @Component({
   selector: "app-vault-groupings",
   templateUrl: "groupings.component.html",

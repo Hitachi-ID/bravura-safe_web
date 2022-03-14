@@ -70,7 +70,7 @@
                 (click)="launch(c.login.launchUri)"
               >
                 <i
-                  class="bwi bwi-fw bwi-share-square-o bwi-lg"
+                  class="bwi bwi-fw bwi-share-square bwi-lg"
                   aria-hidden="true"
                   title="{{ 'launch' | i18n }}"
                 ></i>
@@ -109,7 +109,7 @@
                 (click)="copy(c, c.login.totp, 'verificationCodeTotp', 'TOTP')"
               >
                 <i
-                  class="bwi bwi-fw bwi-clock-o bwi-lg"
+                  class="bwi bwi-fw bwi-clock bwi-lg"
                   aria-hidden="true"
                   title="{{ 'copyVerificationCode' | i18n }}"
                 ></i>
@@ -161,7 +161,7 @@
                   *ngIf="((!organization && !c.organizationId) || organization) && !c.isDeleted"
                   (click)="clone(c)"
                 >
-                  <i class="bwi bwi-fw bwi-files-o" aria-hidden="true"></i>
+                  <i class="bwi bwi-fw bwi-files" aria-hidden="true"></i>
                   {{ "clone" | i18n }}
                 </a>
                 <a
@@ -171,7 +171,7 @@
                   *ngIf="!organization && !c.organizationId && !c.isDeleted"
                   (click)="share(c)"
                 >
-                  <i class="bwi bwi-fw bwi-arrow-circle-o-right" aria-hidden="true"></i>
+                  <i class="bwi bwi-fw bwi-arrow-circle-right" aria-hidden="true"></i>
                   {{ "moveToOrganization" | i18n }}
                 </a>
                 <a
@@ -191,11 +191,11 @@
                   *ngIf="c.organizationId && accessEvents"
                   (click)="events(c)"
                 >
-                  <i class="bwi bwi-fw bwi-file-text-o" aria-hidden="true"></i>
+                  <i class="bwi bwi-fw bwi-file-text" aria-hidden="true"></i>
                   {{ "eventLogs" | i18n }}
                 </a>
                 <a class="dropdown-item text-danger" href="#" appStopClick (click)="delete(c)">
-                  <i class="bwi bwi-fw bwi-trash-o" aria-hidden="true"></i>
+                  <i class="bwi bwi-fw bwi-trash" aria-hidden="true"></i>
                   {{ (c.isDeleted ? "permanentlyDelete" : "delete") | i18n }}
                 </a>
               </div>
