@@ -1,9 +1,10 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 
-import { FrontendLayoutComponent } from "./layouts/frontend-layout.component";
-import { OrganizationLayoutComponent } from "./layouts/organization-layout.component";
-import { UserLayoutComponent } from "./layouts/user-layout.component";
+import { AuthGuardService } from "jslib-angular/services/auth-guard.service";
+import { LockGuardService } from "jslib-angular/services/lock-guard.service";
+import { UnauthGuardService } from "jslib-angular/services/unauth-guard.service";
+import { Permissions } from "jslib-common/enums/permissions";
 
 import { AcceptEmergencyComponent } from "./accounts/accept-emergency.component";
 import { AcceptOrganizationComponent } from "./accounts/accept-organization.component";
@@ -17,79 +18,64 @@ import { RemovePasswordComponent } from "./accounts/remove-password.component";
 import { SetPasswordComponent } from "./accounts/set-password.component";
 import { SsoComponent } from "./accounts/sso.component";
 import { TwoFactorComponent } from "./accounts/two-factor.component";
+import { UpdatePasswordComponent } from "./accounts/update-password.component";
 import { UpdateTempPasswordComponent } from "./accounts/update-temp-password.component";
 import { VerifyEmailTokenComponent } from "./accounts/verify-email-token.component";
 import { VerifyRecoverDeleteComponent } from "./accounts/verify-recover-delete.component";
-
+import { FrontendLayoutComponent } from "./layouts/frontend-layout.component";
+import { OrganizationLayoutComponent } from "./layouts/organization-layout.component";
+import { UserLayoutComponent } from "./layouts/user-layout.component";
 import { CollectionsComponent as OrgManageCollectionsComponent } from "./organizations/manage/collections.component";
 import { EventsComponent as OrgEventsComponent } from "./organizations/manage/events.component";
 import { GroupsComponent as OrgGroupsComponent } from "./organizations/manage/groups.component";
 import { ManageComponent as OrgManageComponent } from "./organizations/manage/manage.component";
 import { PeopleComponent as OrgPeopleComponent } from "./organizations/manage/people.component";
 import { PoliciesComponent as OrgPoliciesComponent } from "./organizations/manage/policies.component";
-
 import { ExposedPasswordsReportComponent as OrgExposedPasswordsReportComponent } from "./organizations/reports/exposed-passwords-report.component";
 import { InactiveTwoFactorReportComponent as OrgInactiveTwoFactorReportComponent } from "./organizations/reports/inactive-two-factor-report.component";
 import { ReportsComponent as OrgReportsComponent } from "./organizations/reports/reports.component";
 import { ReusedPasswordsReportComponent as OrgReusedPasswordsReportComponent } from "./organizations/reports/reused-passwords-report.component";
 import { UnsecuredWebsitesReportComponent as OrgUnsecuredWebsitesReportComponent } from "./organizations/reports/unsecured-websites-report.component";
 import { WeakPasswordsReportComponent as OrgWeakPasswordsReportComponent } from "./organizations/reports/weak-passwords-report.component";
-
 import { AccountComponent as OrgAccountComponent } from "./organizations/settings/account.component";
 import { OrganizationBillingComponent } from "./organizations/settings/organization-billing.component";
 import { OrganizationSubscriptionComponent } from "./organizations/settings/organization-subscription.component";
 import { SettingsComponent as OrgSettingsComponent } from "./organizations/settings/settings.component";
 import { TwoFactorSetupComponent as OrgTwoFactorSetupComponent } from "./organizations/settings/two-factor-setup.component";
-
 import { FamiliesForEnterpriseSetupComponent } from "./organizations/sponsorships/families-for-enterprise-setup.component";
-
 import { ExportComponent as OrgExportComponent } from "./organizations/tools/export.component";
 import { ImportComponent as OrgImportComponent } from "./organizations/tools/import.component";
 import { ToolsComponent as OrgToolsComponent } from "./organizations/tools/tools.component";
-
 import { VaultComponent as OrgVaultComponent } from "./organizations/vault/vault.component";
-
 import { ExposedPasswordsReportComponent } from "./reports/exposed-passwords-report.component";
 import { InactiveTwoFactorReportComponent } from "./reports/inactive-two-factor-report.component";
 import { ReportsComponent } from "./reports/reports.component";
 import { ReusedPasswordsReportComponent } from "./reports/reused-passwords-report.component";
 import { UnsecuredWebsitesReportComponent } from "./reports/unsecured-websites-report.component";
 import { WeakPasswordsReportComponent } from "./reports/weak-passwords-report.component";
-
 import { AccessComponent } from "./send/access.component";
 import { SendComponent } from "./send/send.component";
-
+import { OrganizationGuardService } from "./services/organization-guard.service";
+import { OrganizationTypeGuardService } from "./services/organization-type-guard.service";
 import { AccountComponent } from "./settings/account.component";
 import { CreateOrganizationComponent } from "./settings/create-organization.component";
 import { DomainRulesComponent } from "./settings/domain-rules.component";
+import { EmergencyAccessViewComponent } from "./settings/emergency-access-view.component";
+import { EmergencyAccessComponent } from "./settings/emergency-access.component";
 import { OptionsComponent } from "./settings/options.component";
 import { OrganizationsComponent } from "./settings/organizations.component";
 import { PremiumComponent } from "./settings/premium.component";
 import { SettingsComponent } from "./settings/settings.component";
+import { SponsoredFamiliesComponent } from "./settings/sponsored-families.component";
 import { TwoFactorSetupComponent } from "./settings/two-factor-setup.component";
 import { UserBillingComponent } from "./settings/user-billing.component";
 import { UserSubscriptionComponent } from "./settings/user-subscription.component";
-
 import { BreachReportComponent } from "./tools/breach-report.component";
 import { ExportComponent } from "./tools/export.component";
 import { ImportComponent } from "./tools/import.component";
 import { PasswordGeneratorComponent } from "./tools/password-generator.component";
 import { ToolsComponent } from "./tools/tools.component";
-
 import { VaultComponent } from "./vault/vault.component";
-
-import { OrganizationGuardService } from "./services/organization-guard.service";
-import { OrganizationTypeGuardService } from "./services/organization-type-guard.service";
-
-import { AuthGuardService } from "jslib-angular/services/auth-guard.service";
-import { LockGuardService } from "jslib-angular/services/lock-guard.service";
-import { UnauthGuardService } from "jslib-angular/services/unauth-guard.service";
-
-import { Permissions } from "jslib-common/enums/permissions";
-
-import { EmergencyAccessViewComponent } from "./settings/emergency-access-view.component";
-import { EmergencyAccessComponent } from "./settings/emergency-access.component";
-import { SponsoredFamiliesComponent } from "./settings/sponsored-families.component";
 
 const routes: Routes = [
   {
@@ -159,6 +145,12 @@ const routes: Routes = [
         component: UpdateTempPasswordComponent,
         canActivate: [AuthGuardService],
         data: { titleId: "updateTempPassword" },
+      },
+      {
+        path: "update-password",
+        component: UpdatePasswordComponent,
+        canActivate: [AuthGuardService],
+        data: { titleId: "updatePassword" },
       },
       {
         path: "remove-password",

@@ -1,15 +1,17 @@
-const path = require("path");
 const fs = require("fs");
-const webpack = require("webpack");
+const path = require("path");
+
+const { AngularWebpackPlugin } = require("@ngtools/webpack");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const HtmlWebpackInjector = require("html-webpack-injector");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const HtmlWebpackInjector = require("html-webpack-injector");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
-const { AngularWebpackPlugin } = require("@ngtools/webpack");
-const pjson = require("./package.json");
+const webpack = require("webpack");
+
 const config = require("./config.js");
+const pjson = require("./package.json");
 
 const ENV = process.env.ENV == null ? "development" : process.env.ENV;
 const NODE_ENV = process.env.NODE_ENV == null ? "development" : process.env.NODE_ENV;
@@ -19,11 +21,6 @@ config.log(envConfig);
 
 const moduleRules = [
   {
-    test: /\.ts$/,
-    enforce: "pre",
-    loader: "tslint-loader",
-  },
-  {
     test: /\.(html)$/,
     loader: "html-loader",
   },
@@ -31,15 +28,15 @@ const moduleRules = [
     test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
     exclude: /(loading(|-white)|hitachi-id-logo-(dark|white)).svg/,
     generator: {
-      filename: "fonts/[name].[ext]",
+      filename: "fonts/[name][ext]",
     },
     type: "asset/resource",
   },
   {
-    test: /\.(jpe?g|png|gif|svg)$/i,
-    exclude: /.*(fontawesome-webfont)\.svg/,
+    test: /\.(jpe?g|png|gif|svg|webp|avif)$/i,
+    exclude: /.*(bwi-font)\.svg/,
     generator: {
-      filename: "images/[name].[ext]",
+      filename: "images/[name][ext]",
     },
     type: "asset/resource",
   },
@@ -76,11 +73,6 @@ const plugins = [
     template: "./src/connectors/duo.html",
     filename: "duo-connector.html",
     chunks: ["connectors/duo"],
-  }),
-  new HtmlWebpackPlugin({
-    template: "./src/connectors/u2f.html",
-    filename: "u2f-connector.html",
-    chunks: ["connectors/u2f"],
   }),
   new HtmlWebpackPlugin({
     template: "./src/connectors/webauthn.html",
@@ -123,7 +115,6 @@ const plugins = [
       { from: "./src/404", to: "404" },
       { from: "./src/images", to: "images" },
       { from: "./src/locales", to: "locales" },
-      { from: "./src/scripts", to: "scripts" },
       { from: "./node_modules/qrious/dist/qrious.min.js", to: "scripts" },
       { from: "./node_modules/braintree-web-drop-in/dist/browser/dropin.js", to: "scripts" },
       {
@@ -207,6 +198,17 @@ const devServer =
             changeOrigin: true,
           },
         },
+        headers: (req) => {
+          if (!req.originalUrl.includes("connector.html")) {
+            return [
+              {
+                key: "Content-Security-Policy",
+                value:
+                  "default-src 'self'; script-src 'self' 'sha256-ryoU+5+IUZTuUyTElqkrQGBJXr1brEv6r2CA62WUw8w=' https://js.stripe.com https://js.braintreegateway.com https://www.paypalobjects.com; style-src 'self' https://assets.braintreegateway.com https://*.paypal.com 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-JVRXyYPueLWdwGwY9m/7u4QlZ1xeQdqUj2t8OVIzZE4='; img-src 'self' data: https://icons.bitwarden.net https://*.paypal.com https://www.paypalobjects.com https://q.stripe.com https://haveibeenpwned.com https://www.gravatar.com; child-src 'self' https://js.stripe.com https://assets.braintreegateway.com https://*.paypal.com https://*.duosecurity.com; frame-src 'self' https://js.stripe.com https://assets.braintreegateway.com https://*.paypal.com https://*.duosecurity.com; connect-src 'self' wss://notifications.bitwarden.com https://notifications.bitwarden.com https://cdn.bitwarden.net https://api.pwnedpasswords.com https://2fa.directory/api/v2/totp.json https://2fa.directory/api/v3/totp.json https://api.stripe.com https://www.paypal.com https://api.braintreegateway.com https://client-analytics.braintreegateway.com https://*.braintree-api.com https://bitwardenxx5keu3w.blob.core.windows.net; object-src 'self' blob:;",
+              },
+            ];
+          }
+        },
         hot: false,
         allowedHosts: envConfig.dev?.allowedHosts ?? "auto",
         client: {
@@ -224,16 +226,12 @@ const webpackConfig = {
   entry: {
     "app/polyfills": "./src/app/polyfills.ts",
     "app/main": "./src/app/main.ts",
-    "connectors/u2f": "./src/connectors/u2f.js",
     "connectors/webauthn": "./src/connectors/webauthn.ts",
     "connectors/webauthn-fallback": "./src/connectors/webauthn-fallback.ts",
     "connectors/duo": "./src/connectors/duo.ts",
     "connectors/sso": "./src/connectors/sso.ts",
     "connectors/captcha": "./src/connectors/captcha.ts",
     theme_head: "./src/theme.js",
-  },
-  externals: {
-    u2f: "u2f",
   },
   optimization: {
     splitChunks: {
@@ -259,10 +257,15 @@ const webpackConfig = {
     extensions: [".ts", ".js"],
     symlinks: false,
     modules: [path.resolve("node_modules")],
+    alias: {
+      sweetalert2: require.resolve("sweetalert2/dist/sweetalert2.js"),
+      "#sweetalert2": require.resolve("sweetalert2/src/sweetalert2.scss"),
+    },
     fallback: {
       buffer: false,
       util: require.resolve("util/"),
       assert: false,
+      url: false,
     },
   },
   output: {

@@ -21,13 +21,9 @@ import { PolicyService } from "jslib-common/abstractions/policy.service";
 import { SearchService } from "jslib-common/abstractions/search.service";
 import { SettingsService } from "jslib-common/abstractions/settings.service";
 import { StateService } from "jslib-common/abstractions/state.service";
-import { StorageService } from "jslib-common/abstractions/storage.service";
 import { SyncService } from "jslib-common/abstractions/sync.service";
 import { TokenService } from "jslib-common/abstractions/token.service";
 import { VaultTimeoutService } from "jslib-common/abstractions/vaultTimeout.service";
-
-import { PolicyListService } from "./services/policy-list.service";
-import { RouterService } from "./services/router.service";
 
 import { DisableSendPolicy } from "./organizations/policies/disable-send.component";
 import { MasterPasswordPolicy } from "./organizations/policies/master-password.component";
@@ -38,6 +34,8 @@ import { ResetPasswordPolicy } from "./organizations/policies/reset-password.com
 import { SendOptionsPolicy } from "./organizations/policies/send-options.component";
 import { SingleOrgPolicy } from "./organizations/policies/single-org.component";
 import { TwoFactorAuthenticationPolicy } from "./organizations/policies/two-factor-authentication.component";
+import { PolicyListService } from "./services/policy-list.service";
+import { RouterService } from "./services/router.service";
 
 const BroadcasterSubscriptionId = "AppComponent";
 const IdleTimeout = 60000 * 10; // 10 minutes
@@ -117,7 +115,7 @@ export class AppComponent implements OnDestroy, OnInit {
             break;
           case "syncCompleted":
             break;
-          case "upgradeOrganization":
+          case "upgradeOrganization": {
             const upgradeConfirmed = await this.platformUtilsService.showDialog(
               this.i18nService.t("upgradeOrganizationDesc"),
               this.i18nService.t("upgradeOrganization"),
@@ -133,7 +131,8 @@ export class AppComponent implements OnDestroy, OnInit {
               ]);
             }
             break;
-          case "premiumRequired":
+          }
+          case "premiumRequired": {
             const premiumConfirmed = await this.platformUtilsService.showDialog(
               this.i18nService.t("premiumRequiredDesc"),
               this.i18nService.t("premiumRequired"),
@@ -145,7 +144,8 @@ export class AppComponent implements OnDestroy, OnInit {
             }
             this.router.navigate(["settings/premium"]);
             break;
-          case "emailVerificationRequired":
+          }
+          case "emailVerificationRequired": {
             const emailVerificationConfirmed = await this.platformUtilsService.showDialog(
               this.i18nService.t("emailVerificationRequiredDesc"),
               this.i18nService.t("emailVerificationRequired"),
@@ -153,6 +153,7 @@ export class AppComponent implements OnDestroy, OnInit {
               this.i18nService.t("cancel")
             );
             break;
+          }
           case "showToast":
             this.showToast(message);
             break;
@@ -160,7 +161,6 @@ export class AppComponent implements OnDestroy, OnInit {
             this.setFullWidth();
             break;
           case "convertAccountToKeyConnector":
-            this.keyConnectorService.setConvertAccountRequired(true);
             this.router.navigate(["/remove-password"]);
             break;
           default:
@@ -207,7 +207,6 @@ export class AppComponent implements OnDestroy, OnInit {
     await Promise.all([
       this.eventService.clearEvents(),
       this.syncService.setLastSync(new Date(0)),
-      this.tokenService.clearToken(),
       this.cryptoService.clearKeys(),
       this.settingsService.clear(userId),
       this.cipherService.clear(userId),

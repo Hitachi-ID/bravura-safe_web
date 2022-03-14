@@ -6,7 +6,6 @@ import { MessagingService } from "jslib-common/abstractions/messaging.service";
 import { PlatformUtilsService } from "jslib-common/abstractions/platformUtils.service";
 import { StateService } from "jslib-common/abstractions/state.service";
 import { VaultTimeoutService } from "jslib-common/abstractions/vaultTimeout.service";
-
 import { ThemeType } from "jslib-common/enums/themeType";
 import { Utils } from "jslib-common/misc/utils";
 
@@ -15,11 +14,11 @@ import { Utils } from "jslib-common/misc/utils";
   templateUrl: "options.component.html",
 })
 export class OptionsComponent implements OnInit {
-  vaultTimeoutAction: string = "lock";
+  vaultTimeoutAction = "lock";
   disableIcons: boolean;
   enableGravatars: boolean;
   enableFullWidth: boolean;
-  theme: string = null;
+  theme: ThemeType;
   locale: string;
   vaultTimeouts: { name: string; value: number }[];
   localeOptions: any[];
@@ -28,7 +27,7 @@ export class OptionsComponent implements OnInit {
   vaultTimeout: FormControl = new FormControl(null);
 
   private startingLocale: string;
-  private startingTheme: string;
+  private startingTheme: ThemeType;
 
   constructor(
     private stateService: StateService,

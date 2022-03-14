@@ -138,7 +138,7 @@ ul.navbar-nav {
       display: block;
       font-size: $font-size-lg;
       @include themify($themes) {
-        color: themed("headingColor");
+        color: themed("textHeadingColor");
       }
     }
   }
