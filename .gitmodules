@@ -1,4 +1,4 @@
 [submodule "jslib"]
 	path = jslib
 	url = https://gitlab.hitachi-id.com/product/bravura-safe/jslib.git
-	branch = tmp/gisselac/upgrade
+	branch = develop
