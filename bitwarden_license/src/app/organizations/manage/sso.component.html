@@ -3,7 +3,11 @@
 </div>
 
 <ng-container *ngIf="loading">
-  <i class="fa fa-spinner fa-spin text-muted" title="{{ 'loading' | i18n }}" aria-hidden="true"></i>
+  <i
+    class="bwi bwi-spinner bwi-spin text-muted"
+    title="{{ 'loading' | i18n }}"
+    aria-hidden="true"
+  ></i>
   <span class="sr-only">{{ "loading" | i18n }}</span>
 </ng-container>
 
@@ -63,14 +67,6 @@
       />
       <label class="form-check-label" for="memberDecryptionKey">
         {{ "keyConnector" | i18n }}
-        <a
-          target="_blank"
-          rel="noopener"
-          appA11yTitle="{{ 'learnMore' | i18n }}"
-          href="https://bitwarden.com/help/article/about-key-connector/"
-        >
-          <i class="fa fa-question-circle-o" aria-hidden="true"></i>
-        </a>
         <small>{{ "memberDecryptionKeyConnectorDesc" | i18n }}</small>
       </label>
     </div>
@@ -98,7 +94,7 @@
             [disabled]="!enableTestKeyConnector"
           >
             <i
-              class="fa fa-spinner fa-spin"
+              class="bwi bwi-spinner bwi-spin"
               title="{{ 'loading' | i18n }}"
               aria-hidden="true"
               *ngIf="keyConnectorUrl.pending"
@@ -111,11 +107,11 @@
       </div>
       <ng-container *ngIf="keyConnectorUrl.pristine && !keyConnectorUrl.pending">
         <div class="text-danger" *ngIf="keyConnectorUrl.hasError('invalidUrl')" role="alert">
-          <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+          <i class="bwi bwi-exclamation-circle" aria-hidden="true"></i>
           {{ "keyConnectorTestFail" | i18n }}
         </div>
         <div class="text-success" *ngIf="!keyConnectorUrl.hasError('invalidUrl')" role="alert">
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+          <i class="bwi bwi-check-circle" aria-hidden="true"></i>
           {{ "keyConnectorTestSuccess" | i18n }}
         </div>
       </ng-container>
@@ -146,7 +142,7 @@
               appA11yTitle="{{ 'copyValue' | i18n }}"
               (click)="copy(callbackPath)"
             >
-              <i class="fa fa-lg fa-clone" aria-hidden="true"></i>
+              <i class="bwi bwi-lg bwi-clone" aria-hidden="true"></i>
             </button>
           </div>
         </div>
@@ -162,7 +158,7 @@
               appA11yTitle="{{ 'copyValue' | i18n }}"
               (click)="copy(signedOutCallbackPath)"
             >
-              <i class="fa fa-lg fa-clone" aria-hidden="true"></i>
+              <i class="bwi bwi-lg bwi-clone" aria-hidden="true"></i>
             </button>
           </div>
         </div>
@@ -261,7 +257,7 @@
               appA11yTitle="{{ 'copyValue' | i18n }}"
               (click)="copy(spEntityId)"
             >
-              <i class="fa fa-lg fa-clone" aria-hidden="true"></i>
+              <i class="bwi bwi-lg bwi-clone" aria-hidden="true"></i>
             </button>
           </div>
         </div>
@@ -277,7 +273,7 @@
               appA11yTitle="{{ 'launch' | i18n }}"
               (click)="launchUri(spMetadataUrl)"
             >
-              <i class="fa fa-lg fa-external-link" aria-hidden="true"></i>
+              <i class="bwi bwi-lg bwi-external-link" aria-hidden="true"></i>
             </button>
             <button
               type="button"
@@ -285,7 +281,7 @@
               appA11yTitle="{{ 'copyValue' | i18n }}"
               (click)="copy(spMetadataUrl)"
             >
-              <i class="fa fa-lg fa-clone" aria-hidden="true"></i>
+              <i class="bwi bwi-lg bwi-clone" aria-hidden="true"></i>
             </button>
           </div>
         </div>
@@ -301,7 +297,7 @@
               appA11yTitle="{{ 'copyValue' | i18n }}"
               (click)="copy(spAcsUrl)"
             >
-              <i class="fa fa-lg fa-clone" aria-hidden="true"></i>
+              <i class="bwi bwi-lg bwi-clone" aria-hidden="true"></i>
             </button>
           </div>
         </div>
@@ -309,15 +305,15 @@
       <div class="form-group">
         <label for="spNameIdFormat">{{ "spNameIdFormat" | i18n }}</label>
         <select class="form-control" formControlName="spNameIdFormat" id="spNameIdFormat">
-          <option value="0">Not Configured</option>
-          <option value="1">Unspecified</option>
-          <option value="2">Email Address</option>
-          <option value="3">X.509 Subject Name</option>
-          <option value="4">Windows Domain Qualified Name</option>
-          <option value="5">Kerberos Principal Name</option>
-          <option value="6">Entity Identifier</option>
-          <option value="7">Persistent</option>
-          <option value="8">Transient</option>
+          <option [ngValue]="0">Not Configured</option>
+          <option [ngValue]="1">Unspecified</option>
+          <option [ngValue]="2">Email Address</option>
+          <option [ngValue]="3">X.509 Subject Name</option>
+          <option [ngValue]="4">Windows Domain Qualified Name</option>
+          <option [ngValue]="5">Kerberos Principal Name</option>
+          <option [ngValue]="6">Entity Identifier</option>
+          <option [ngValue]="7">Persistent</option>
+          <option [ngValue]="8">Transient</option>
         </select>
       </div>
       <div class="form-group">
@@ -333,9 +329,9 @@
       <div class="form-group">
         <label for="spSigningBehavior">{{ "spSigningBehavior" | i18n }}</label>
         <select class="form-control" formControlName="spSigningBehavior" id="spSigningBehavior">
-          <option value="0">If IdP Wants Authn Requests Signed</option>
-          <option value="1">Always</option>
-          <option value="3">Never</option>
+          <option [ngValue]="0">If IdP Wants Authn Requests Signed</option>
+          <option [ngValue]="1">Always</option>
+          <option [ngValue]="3">Never</option>
         </select>
       </div>
       <div class="form-group">
@@ -389,9 +385,8 @@
       <div class="form-group">
         <label for="idpBindingType">{{ "idpBindingType" | i18n }}</label>
         <select class="form-control" formControlName="idpBindingType" id="idpBindingType">
-          <option value="1">Redirect</option>
-          <option value="2">HTTP POST</option>
-          <option value="4">Artifact</option>
+          <option [ngValue]="1">Redirect</option>
+          <option [ngValue]="2">HTTP POST</option>
         </select>
       </div>
       <div class="form-group">
@@ -408,16 +403,6 @@
           class="form-control"
           formControlName="idpSingleLogoutServiceUrl"
           id="idpSingleLogoutServiceUrl"
-        />
-      </div>
-      <div class="form-group">
-        <label for="idpArtifactResolutionServiceUrl">{{
-          "idpArtifactResolutionServiceUrl" | i18n
-        }}</label>
-        <input
-          class="form-control"
-          formControlName="idpArtifactResolutionServiceUrl"
-          id="idpArtifactResolutionServiceUrl"
         />
       </div>
       <div class="form-group">
@@ -439,7 +424,8 @@
           <option *ngFor="let o of samlSigningAlgorithms" [ngValue]="o">{{ o }}</option>
         </select>
       </div>
-      <div class="form-group">
+      <div class="form-group" [hidden]="true">
+        <!--TODO: Unhide once Unsolicited IdP Response is supported-->
         <div class="form-check">
           <input
             class="form-check-input"
@@ -482,7 +468,7 @@
   </div>
 
   <button type="submit" class="btn btn-primary btn-submit" [disabled]="form.loading">
-    <i class="fa fa-spinner fa-spin" title="{{ 'loading' | i18n }}" aria-hidden="true"></i>
+    <i class="bwi bwi-spinner bwi-spin" title="{{ 'loading' | i18n }}" aria-hidden="true"></i>
     <span>{{ "save" | i18n }}</span>
   </button>
 </form>

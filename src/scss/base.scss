@@ -14,7 +14,7 @@ body {
     }
     @include themify($themes) {
       background-color: themed("layoutFrontendColor");
-      color: themed("headingColor");
+      color: themed("textHeadingColor");
     }
   }
 
@@ -68,7 +68,7 @@ body {
     h4 {
       margin: 0;
       @include themify($themes) {
-        color: themed("headingColor");
+        color: themed("textHeadingColor");
       }
     }
   }
@@ -139,7 +139,7 @@ h3,
 h4,
 h5 {
   @include themify($themes) {
-    color: themed("headingColor");
+    color: themed("textHeadingColor");
   }
 
   small {
@@ -148,7 +148,7 @@ h5 {
 
   &.spaced-header {
     @include themify($themes) {
-      color: themed("headingColor");
+      color: themed("textHeadingColor");
     }
   }
 }
@@ -160,7 +160,7 @@ a {
 
   &.text-body {
     @include themify($themes) {
-      color: themed("headingColor") !important;
+      color: themed("textHeadingColor") !important;
       font-weight: themed("linkWeight");
     }
   }
@@ -172,7 +172,7 @@ code {
   }
 }
 
-.fa-icon-above-input {
+.bwi-icon-above-input {
   height: 1.5em;
 }
 
@@ -215,14 +215,14 @@ code {
 .bg-success {
   @include themify($themes) {
     background-color: themed("success") !important;
-    color: themed("successTextColor") !important;
+    color: themed("textSuccessColor") !important;
   }
 }
 
 .bg-warning {
   @include themify($themes) {
     background-color: themed("warning") !important;
-    color: themed("warningTextColor") !important;
+    color: themed("textWarningColor") !important;
   }
 }
 
@@ -230,14 +230,14 @@ code {
 .bg-danger {
   @include themify($themes) {
     background-color: themed("danger") !important;
-    color: themed("dangerTextColor") !important;
+    color: themed("textDangerColor") !important;
   }
 }
 
 .bg-info {
   @include themify($themes) {
     background-color: themed("info") !important;
-    color: themed("infoTextColor") !important;
+    color: themed("textInfoColor") !important;
   }
 }
 
@@ -316,4 +316,8 @@ code {
   @include themify($themes) {
     color: themed("textMuted") !important;
   }
+}
+
+button i.bwi {
+  margin-right: 0.25rem;
 }

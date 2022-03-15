@@ -24,7 +24,7 @@
       </div>
       <div class="modal-body" *ngIf="loading">
         <i
-          class="fa fa-spinner fa-spin text-muted"
+          class="bwi bwi-spinner bwi-spin text-muted"
           title="{{ 'loading' | i18n }}"
           aria-hidden="true"
         ></i>
@@ -99,7 +99,7 @@
           [disabled]="loading || submitBtn.loading || readOnly"
         >
           <i
-            class="fa fa-spinner fa-spin"
+            class="bwi bwi-spinner bwi-spin"
             title="{{ 'loading' | i18n }}"
             aria-hidden="true"
             *ngIf="loading || submitBtn.loading"
@@ -120,12 +120,12 @@
             [disabled]="deleteBtn.loading"
           >
             <i
-              class="fa fa-trash-o fa-lg fa-fw"
+              class="bwi bwi-trash bwi-lg bwi-fw"
               [hidden]="deleteBtn.loading"
               aria-hidden="true"
             ></i>
             <i
-              class="fa fa-spinner fa-spin fa-lg fa-fw"
+              class="bwi bwi-spinner bwi-spin bwi-lg bwi-fw"
               [hidden]="!deleteBtn.loading"
               title="{{ 'loading' | i18n }}"
               aria-hidden="true"
