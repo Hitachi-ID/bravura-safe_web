@@ -300,6 +300,18 @@
   "typeSecureNote": {
     "message": "Nota segura"
   },
+  "typeLoginPlural": {
+    "message": "Inicis de sessió"
+  },
+  "typeCardPlural": {
+    "message": "Targetes"
+  },
+  "typeIdentityPlural": {
+    "message": "Identitats"
+  },
+  "typeSecureNotePlural": {
+    "message": "Notes segures"
+  },
   "folders": {
     "message": "Carpetes"
   },
@@ -2782,11 +2794,26 @@
   "deleteOrganization": {
     "message": "Suprimeix l'organització"
   },
-  "deleteOrganizationDesc": {
-    "message": "Procediu a eliminar aquesta organització i totes les dades associades. Els comptes d'usuari individuals es mantindran, encara que ja no hi estaran associats. "
+  "deletingOrganizationContentWarning": {
+    "message": "Enter the master password to confirm deletion of $ORGANIZATION$ and all associated data. Vault data in $ORGANIZATION$ includes:",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
   },
-  "deleteOrganizationWarning": {
-    "message": "La supressió de l'organització és permanent. No es pot desfer."
+  "deletingOrganizationActiveUserAccountsWarning": {
+    "message": "User accounts will remain active after deletion but will no longer be associated to this team."
+  },
+  "deletingOrganizationIsPermanentWarning": {
+    "message": "Deleting $ORGANIZATION$ is permanent and irreversible.",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
   },
   "organizationDeleted": {
     "message": "S'ha suprimit l'organització"
@@ -4473,9 +4500,6 @@
   "idpSingleLogoutServiceUrl": {
     "message": "URL del servei de tancament de sessió únic"
   },
-  "idpArtifactResolutionServiceUrl": {
-    "message": "URL del servei de resolució d'artefactes"
-  },
   "idpX509PublicCert": {
     "message": "Certificat públic X509"
   },
@@ -4485,11 +4509,11 @@
   "idpAllowUnsolicitedAuthnResponse": {
     "message": "Permet la resposta d'autenticació no sol·licitada"
   },
-  "idpDisableOutboundLogoutRequests": {
-    "message": "Inhabilita les sol·licituds de tancament de sessió d'eixida"
+  "idpAllowOutboundLogoutRequests": {
+    "message": "Allow outbound logout requests"
   },
-  "idpWantAuthnRequestsSigned": {
-    "message": "Voleu que les sol·licituds d'autenticació estiguen signades"
+  "idpSignAuthenticationRequests": {
+    "message": "Sign authentication requests"
   },
   "ssoSettingsSaved": {
     "message": "S'ha guardat la configuració de l'inici de sessió únic."
@@ -4739,5 +4763,68 @@
   },
   "freeWithSponsorship": {
     "message": "GRATUÏT amb patrocini"
+  },
+  "formErrorSummaryPlural": {
+    "message": "$COUNT$ fields above need your attention.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "formErrorSummarySingle": {
+    "message": "1 field above needs your attention."
+  },
+  "fieldRequiredError": {
+    "message": "$FIELDNAME$ is required.",
+    "placeholders": {
+      "fieldname": {
+        "content": "$1",
+        "example": "Full name"
+      }
+    }
+  },
+  "required": {
+    "message": "requerit"
+  },
+  "idpSingleSignOnServiceUrlRequired": {
+    "message": "Required if Entity ID is not a URL."
+  },
+  "openIdOptionalCustomizations": {
+    "message": "Optional Customizations"
+  },
+  "openIdAuthorityRequired": {
+    "message": "Required if Authority is not valid."
+  },
+  "separateMultipleWithComma": {
+    "message": "Separate multiple with a comma."
+  },
+  "sessionTimeout": {
+    "message": "Your session has timed out. Please go back and try logging in again."
+  },
+  "exportingPersonalVaultTitle": {
+    "message": "Exporting Personal Vault"
+  },
+  "exportingOrganizationVaultTitle": {
+    "message": "Exporting Team Vault"
+  },
+  "exportingPersonalVaultDescription": {
+    "message": "Only the personal vault items associated with $EMAIL$ will be exported. Team vault items will not be included.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "name@example.com"
+      }
+    }
+  },
+  "exportingOrganizationVaultDescription": {
+    "message": "Only the team vault associated with $ORGANIZATION$ will be exported. Personal vault items and items from other teams will not be included.",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
   }
 }

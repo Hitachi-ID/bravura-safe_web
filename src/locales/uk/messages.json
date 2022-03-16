@@ -300,6 +300,18 @@
   "typeSecureNote": {
     "message": "Захищена нотатка"
   },
+  "typeLoginPlural": {
+    "message": "Logins"
+  },
+  "typeCardPlural": {
+    "message": "Cards"
+  },
+  "typeIdentityPlural": {
+    "message": "Identities"
+  },
+  "typeSecureNotePlural": {
+    "message": "Secure Notes"
+  },
   "folders": {
     "message": "Теки"
   },
@@ -2782,11 +2794,26 @@
   "deleteOrganization": {
     "message": "Видалити організацію"
   },
-  "deleteOrganizationDesc": {
-    "message": "Продовжуйте внизу, щоб видалити цю організацію і всі пов'язані дані. Індивідуальні облікові записи користувачів залишаться без змін, однак, вони більше не будуть пов'язані з цією організацією. "
+  "deletingOrganizationContentWarning": {
+    "message": "Enter the master password to confirm deletion of $ORGANIZATION$ and all associated data. Vault data in $ORGANIZATION$ includes:",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
   },
-  "deleteOrganizationWarning": {
-    "message": "Видалення організації є незворотною дією. Її неможливо скасувати."
+  "deletingOrganizationActiveUserAccountsWarning": {
+    "message": "User accounts will remain active after deletion but will no longer be associated to this team."
+  },
+  "deletingOrganizationIsPermanentWarning": {
+    "message": "Deleting $ORGANIZATION$ is permanent and irreversible.",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
   },
   "organizationDeleted": {
     "message": "Організацію видалено"
@@ -4473,9 +4500,6 @@
   "idpSingleLogoutServiceUrl": {
     "message": "URL служби єдиного виходу"
   },
-  "idpArtifactResolutionServiceUrl": {
-    "message": "URL служби розв'язання артефактів"
-  },
   "idpX509PublicCert": {
     "message": "Публічний сертифікат X509"
   },
@@ -4485,11 +4509,11 @@
   "idpAllowUnsolicitedAuthnResponse": {
     "message": "Дозволити небажану відповідь авторизації"
   },
-  "idpDisableOutboundLogoutRequests": {
-    "message": "Вимкнути вихідні запити виходу"
+  "idpAllowOutboundLogoutRequests": {
+    "message": "Allow outbound logout requests"
   },
-  "idpWantAuthnRequestsSigned": {
-    "message": "Вимагається підписання запитів на підтвердження"
+  "idpSignAuthenticationRequests": {
+    "message": "Sign authentication requests"
   },
   "ssoSettingsSaved": {
     "message": "Конфігурацію єдиного входу збережено."
@@ -4739,5 +4763,68 @@
   },
   "freeWithSponsorship": {
     "message": "БЕЗПЛАТНО зі спонсоруванням"
+  },
+  "formErrorSummaryPlural": {
+    "message": "$COUNT$ fields above need your attention.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "formErrorSummarySingle": {
+    "message": "1 field above needs your attention."
+  },
+  "fieldRequiredError": {
+    "message": "$FIELDNAME$ is required.",
+    "placeholders": {
+      "fieldname": {
+        "content": "$1",
+        "example": "Full name"
+      }
+    }
+  },
+  "required": {
+    "message": "required"
+  },
+  "idpSingleSignOnServiceUrlRequired": {
+    "message": "Required if Entity ID is not a URL."
+  },
+  "openIdOptionalCustomizations": {
+    "message": "Optional Customizations"
+  },
+  "openIdAuthorityRequired": {
+    "message": "Required if Authority is not valid."
+  },
+  "separateMultipleWithComma": {
+    "message": "Separate multiple with a comma."
+  },
+  "sessionTimeout": {
+    "message": "Your session has timed out. Please go back and try logging in again."
+  },
+  "exportingPersonalVaultTitle": {
+    "message": "Exporting Personal Vault"
+  },
+  "exportingOrganizationVaultTitle": {
+    "message": "Exporting Team Vault"
+  },
+  "exportingPersonalVaultDescription": {
+    "message": "Only the personal vault items associated with $EMAIL$ will be exported. Team vault items will not be included.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "name@example.com"
+      }
+    }
+  },
+  "exportingOrganizationVaultDescription": {
+    "message": "Only the team vault associated with $ORGANIZATION$ will be exported. Personal vault items and items from other teams will not be included.",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
   }
 }
