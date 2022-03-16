@@ -300,6 +300,18 @@
   "typeSecureNote": {
     "message": "Veilige notitie"
   },
+  "typeLoginPlural": {
+    "message": "Logins"
+  },
+  "typeCardPlural": {
+    "message": "Kaarten"
+  },
+  "typeIdentityPlural": {
+    "message": "Identiteiten"
+  },
+  "typeSecureNotePlural": {
+    "message": "Beveiligde notities"
+  },
   "folders": {
     "message": "Mappen"
   },
@@ -2782,11 +2794,26 @@
   "deleteOrganization": {
     "message": "Organisatie verwijderen"
   },
-  "deleteOrganizationDesc": {
-    "message": "Ga hieronder verder om deze organisatie en alle bijbehorende gegevens te verwijderen. De individuele gebruikersaccounts blijven bestaan maar ze zullen niet meer gekoppeld zijn aan deze organisatie."
+  "deletingOrganizationContentWarning": {
+    "message": "Voer het hoofdwachtwoord in om de verwijdering van $ORGANIZATION$ en alle bijbehorende gegevens te bevestigen. De kluisgegevens in $ORGANIZATION$ bevatten:",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
   },
-  "deleteOrganizationWarning": {
-    "message": "Verwijdering van de organisatie is definitief. Je kunt dit niet ongedaan maken."
+  "deletingOrganizationActiveUserAccountsWarning": {
+    "message": "Gebruikersaccounts blijven actief na het verwijderen maar worden niet langer gekoppeld aan deze organisatie."
+  },
+  "deletingOrganizationIsPermanentWarning": {
+    "message": "Het verwijderen van $ORGANIZATION$ is permanent en onomkeerbaar.",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
   },
   "organizationDeleted": {
     "message": "Organisatie verwijderd"
@@ -4473,9 +4500,6 @@
   "idpSingleLogoutServiceUrl": {
     "message": "Single Log Out Service URL"
   },
-  "idpArtifactResolutionServiceUrl": {
-    "message": "Artifact Resolution Service URL"
-  },
   "idpX509PublicCert": {
     "message": "X509 Public Certificate"
   },
@@ -4485,11 +4509,11 @@
   "idpAllowUnsolicitedAuthnResponse": {
     "message": "Unsolicited Authentication Response toestaan"
   },
-  "idpDisableOutboundLogoutRequests": {
-    "message": "Outbound Logout Requests uitschakelen"
+  "idpAllowOutboundLogoutRequests": {
+    "message": "Uitgaande uitlog aanvragen toestaan"
   },
-  "idpWantAuthnRequestsSigned": {
-    "message": "Want Authentication Requests Signed"
+  "idpSignAuthenticationRequests": {
+    "message": "Onderteken authenticatie aanvragen"
   },
   "ssoSettingsSaved": {
     "message": "Single Sign-On configuratie is opgeslagen."
@@ -4739,5 +4763,68 @@
   },
   "freeWithSponsorship": {
     "message": "GRATIS met sponsoring"
+  },
+  "formErrorSummaryPlural": {
+    "message": "$COUNT$ velden hierboven vereisen je aandacht.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "formErrorSummarySingle": {
+    "message": "1 veld hierboven vereist je aandacht."
+  },
+  "fieldRequiredError": {
+    "message": "$FIELDNAME$ is vereist.",
+    "placeholders": {
+      "fieldname": {
+        "content": "$1",
+        "example": "Full name"
+      }
+    }
+  },
+  "required": {
+    "message": "vereist"
+  },
+  "idpSingleSignOnServiceUrlRequired": {
+    "message": "Vereist als Entiteit ID geen URL is."
+  },
+  "openIdOptionalCustomizations": {
+    "message": "Optionele aanpassingen"
+  },
+  "openIdAuthorityRequired": {
+    "message": "Vereist als Autoriteit niet geldig is."
+  },
+  "separateMultipleWithComma": {
+    "message": "Separate multiple with a comma."
+  },
+  "sessionTimeout": {
+    "message": "Je sessie is verlopen. Ga terug en probeer opnieuw in te loggen."
+  },
+  "exportingPersonalVaultTitle": {
+    "message": "Persoonlijke kluis exporteren"
+  },
+  "exportingOrganizationVaultTitle": {
+    "message": "Organisatiekluis exporteren"
+  },
+  "exportingPersonalVaultDescription": {
+    "message": "Exporteert alleen de persoonlijke kluis-items gerelateerd aan $EMAIL$. Geen kluis-items van de organisatie.",
+    "placeholders": {
+      "email": {
+        "content": "$1",
+        "example": "name@example.com"
+      }
+    }
+  },
+  "exportingOrganizationVaultDescription": {
+    "message": "Exporteert alleen de organisatiekluis van $ORGANIZATION$. Geen persoonlijke kluis-items of items van andere organisaties.",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
   }
 }
