@@ -380,7 +380,7 @@
     "message": "Share"
   },
   "moveToOrganization": {
-    "message": "Move to Organisation"
+    "message": "Move to Team"
   },
   "valueCopied": {
     "message": "$VALUE$ copied",
@@ -423,7 +423,7 @@
     "message": "Safe"
   },
   "moveSelectedToOrg": {
-    "message": "Move Selected to Organisation"
+    "message": "Move Selected to Team"
   },
   "deleteSelected": {
     "message": "Delete selected"
@@ -668,10 +668,10 @@
     "message": "There are no events to list."
   },
   "newOrganization": {
-    "message": "New organisation"
+    "message": "New team"
   },
   "noOrganizationsList": {
-    "message": "You do not belong to any organisations. Organisations allow you to securely share items with other users."
+    "message": "You do not belong to any teams. Teams allow you to securely share items with other users."
   },
   "versionNumber": {
     "message": "Version $VERSION_NUMBER$",
@@ -754,7 +754,7 @@
     "description": "'Duo Security' and 'Duo Mobile' are product names and should not be translated."
   },
   "duoOrganizationDesc": {
-    "message": "Verify with Duo Security for your organisation using the Duo Mobile app, SMS, phone call, or U2F security key.",
+    "message": "Verify with Duo Security for your team using the Duo Mobile app, SMS, phone call, or U2F security key.",
     "description": "'Duo Security' and 'Duo Mobile' are product names and should not be translated."
   },
   "u2fDesc": {
@@ -782,19 +782,19 @@
     "message": "Continue"
   },
   "organization": {
-    "message": "Organisation"
+    "message": "Team"
   },
   "organizations": {
-    "message": "Organisations"
+    "message": "Teams"
   },
   "moveToOrgDesc": {
-    "message": "Choose an organisation that you wish to move this item to. Moving to an organisation transfers ownership of the item to that organisation. You will no longer be the direct owner of this item once it has been moved."
+    "message": "Choose a team that you wish to move this item to. Moving to a team transfers ownership of the item to that team. You will no longer be the direct owner of this item once it has been moved."
   },
   "moveManyToOrgDesc": {
-    "message": "Choose an organisation that you wish to move these items to. Moving to an organisation transfers ownership of the items to that organisation. You will no longer be the direct owner of these items once they have been moved."
+    "message": "Choose a team that you wish to move these items to. Moving to a team transfers ownership of the items to that team. You will no longer be the direct owner of these items once they have been moved."
   },
   "collectionsDesc": {
-    "message": "Edit the collections that this item is being shared with. Only organisation users with access to these collections will be able to see this item."
+    "message": "Edit the collections that this item is being shared with. Only team users with access to these collections will be able to see this item."
   },
   "deleteSelectedItemsDesc": {
     "message": "You have selected $COUNT$ item(s) to delete. Are you sure you want to delete all of these items?",
@@ -815,7 +815,7 @@
     }
   },
   "moveSelectedItemsCountDesc": {
-    "message": "You have selected $COUNT$ item(s). $MOVEABLE_COUNT$ item(s) can be moved to an organisation, $NONMOVEABLE_COUNT$ cannot.",
+    "message": "You have selected $COUNT$ item(s). $MOVEABLE_COUNT$ item(s) can be moved to a team, $NONMOVEABLE_COUNT$ cannot.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -1015,16 +1015,16 @@
     "message": "Purge vault"
   },
   "purgedOrganizationVault": {
-    "message": "Purged organisation vault."
+    "message": "Purged team vault."
   },
   "vaultAccessedByProvider": {
     "message": "Vault accessed by provider."
   },
   "purgeVaultDesc": {
-    "message": "Proceed below to delete all items and folders in your vault. Items that belong to an organisation that you share with will not be deleted."
+    "message": "Proceed below to delete all items and folders in your vault. Items that belong to a team that you share with will not be deleted."
   },
   "purgeOrgVaultDesc": {
-    "message": "Proceed below to delete all items in the organisation's vault."
+    "message": "Proceed below to delete all items in the team's vault."
   },
   "purgeVaultWarning": {
     "message": "Purging your vault is permanent. It cannot be undone."
@@ -1186,7 +1186,7 @@
     "message": "Secure your account by requiring an additional step when logging in."
   },
   "twoStepLoginOrganizationDesc": {
-    "message": "Require two-step login for your organisation's users by configuring providers at the organisation level."
+    "message": "Require two-step login for your team's users by configuring providers at the team level."
   },
   "twoStepLoginRecoveryWarning": {
     "message": "Enabling two-step login can permanently lock you out of your Bravura Safe account. A recovery code allows you to access your account in the event that you can no longer use your normal two-step login provider (e.g. you lose your device). Bravura Safe support will not be able to assist you if you lose access to your account. We recommend you write down or print the recovery code and keep it in a safe place."
@@ -1221,7 +1221,7 @@
     "message": "You have premium access"
   },
   "alreadyPremiumFromOrg": {
-    "message": "You already have access to premium features because of an organisation of which you are a member."
+    "message": "You already have access to premium features because of a team of which you are a member."
   },
   "manage": {
     "message": "Manage"
@@ -1688,7 +1688,7 @@
     "message": "Premium access"
   },
   "premiumAccessDesc": {
-    "message": "You can add premium access to all members of your organisation for $PRICE$ /$INTERVAL$.",
+    "message": "You can add premium access to all members of your team for $PRICE$ /$INTERVAL$.",
     "placeholders": {
       "price": {
         "content": "$1",
@@ -1935,19 +1935,19 @@
     "message": "To upgrade your account to a premium membership you need to upload a valid licence file."
   },
   "uploadLicenseFileOrg": {
-    "message": "To create an on-premises hosted organisation you need to upload a valid licence file."
+    "message": "To create an on-premises hosted team you need to upload a valid licence file."
   },
   "accountEmailMustBeVerified": {
     "message": "Your account's email address must be verified."
   },
   "newOrganizationDesc": {
-    "message": "Organisations allow you to share parts of your vault with others as well as manage related users for a specific entity such as a family, small team, or large company."
+    "message": "Teams allow you to share parts of your vault with others as well as manage related users for a specific entity such as a family, small team, or large company."
   },
   "generalInformation": {
     "message": "General information"
   },
   "organizationName": {
-    "message": "Organisation name"
+    "message": "Team name"
   },
   "accountOwnedBusiness": {
     "message": "This account is owned by a business."
@@ -2012,13 +2012,13 @@
     "message": "Teams"
   },
   "planDescTeams": {
-    "message": "For businesses and other team organisations."
+    "message": "For businesses and other team teams."
   },
   "planNameEnterprise": {
     "message": "Enterprise"
   },
   "planDescEnterprise": {
-    "message": "For businesses and other large organisations."
+    "message": "For businesses and other large teams."
   },
   "freeForever": {
     "message": "Free forever"
@@ -2126,22 +2126,22 @@
     "message": "Base price"
   },
   "organizationCreated": {
-    "message": "Organisation created"
+    "message": "Team created"
   },
   "organizationReadyToGo": {
-    "message": "Your new organisation is ready to go!"
+    "message": "Your new team is ready to go!"
   },
   "organizationUpgraded": {
-    "message": "Your organisation has been upgraded."
+    "message": "Your team has been upgraded."
   },
   "leave": {
     "message": "Leave"
   },
   "leaveOrganizationConfirmation": {
-    "message": "Are you sure you want to leave this organisation?"
+    "message": "Are you sure you want to leave this team?"
   },
   "leftOrganization": {
-    "message": "You have left the organisation."
+    "message": "You have left the team."
   },
   "defaultCollection": {
     "message": "Default collection"
@@ -2228,7 +2228,7 @@
     "message": "Invite user"
   },
   "inviteUserDesc": {
-    "message": "Invite a new user to your organisation by entering their Bravura Safe account email address below. If they do not have a Bravura Safe account already, they will be prompted to create a new account."
+    "message": "Invite a new user to your team by entering their Bravura Safe account email address below. If they do not have a Bravura Safe account already, they will be prompted to create a new account."
   },
   "inviteMultipleEmailDesc": {
     "message": "You can invite up to $COUNT$ users at a time by comma separating a list of email addresses.",
@@ -2267,7 +2267,7 @@
     "message": "Owner"
   },
   "ownerDesc": {
-    "message": "The highest access user that can manage all aspects of your organisation."
+    "message": "The highest access user that can manage all aspects of your team."
   },
   "clientOwnerDesc": {
     "message": "This user should be independent of the Provider. If the Provider is disassociated with the team, this user will maintain ownership of the team."
@@ -2276,19 +2276,19 @@
     "message": "Admin"
   },
   "adminDesc": {
-    "message": "Admins can access and manage all items, collections and users in your organisation."
+    "message": "Admins can access and manage all items, collections and users in your team."
   },
   "user": {
     "message": "User"
   },
   "userDesc": {
-    "message": "A regular user with access to assigned collections in your organisation."
+    "message": "A regular user with access to assigned collections in your team."
   },
   "manager": {
     "message": "Manager"
   },
   "managerDesc": {
-    "message": "Managers can access and manage assigned collections in your organisation."
+    "message": "Managers can access and manage assigned collections in your team."
   },
   "all": {
     "message": "All"
@@ -2348,10 +2348,10 @@
     "message": "Exported vault."
   },
   "exportedOrganizationVault": {
-    "message": "Exported organisation vault."
+    "message": "Exported team vault."
   },
   "editedOrgSettings": {
-    "message": "Edited organisation settings."
+    "message": "Edited team settings."
   },
   "createdItemId": {
     "message": "Created item $ID$.",
@@ -2381,7 +2381,7 @@
     }
   },
   "movedItemIdToOrg": {
-    "message": "Moved item $ID$ to an organisation.",
+    "message": "Moved item $ID$ to a team.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2702,7 +2702,7 @@
     "message": "Confirm users"
   },
   "usersNeedConfirmed": {
-    "message": "You have users that have accepted their invitation, but still need to be confirmed. Users will not have access to the organisation until they are confirmed."
+    "message": "You have users that have accepted their invitation, but still need to be confirmed. Users will not have access to the team until they are confirmed."
   },
   "startDate": {
     "message": "Start date"
@@ -2741,19 +2741,19 @@
     "message": "You are using an unsupported web browser. The web vault may not function properly."
   },
   "joinOrganization": {
-    "message": "Join organisation"
+    "message": "Join team"
   },
   "joinOrganizationDesc": {
-    "message": "You've been invited to join the organisation listed above. To accept the invitation, you need to log in or create a new Bravura Safe account."
+    "message": "You've been invited to join the team listed above. To accept the invitation, you need to log in or create a new Bravura Safe account."
   },
   "inviteAccepted": {
     "message": "Invitation accepted"
   },
   "inviteAcceptedDesc": {
-    "message": "You can access this organisation once an administrator confirms your membership. We'll send you an email when that happens."
+    "message": "You can access this team once an administrator confirms your membership. We'll send you an email when that happens."
   },
   "inviteAcceptFailed": {
-    "message": "Unable to accept invitation. Ask an organisation admin to send a new invitation."
+    "message": "Unable to accept invitation. Ask a team admin to send a new invitation."
   },
   "inviteAcceptFailedShort": {
     "message": "Unable to accept invitation. $DESCRIPTION$",
@@ -2789,10 +2789,10 @@
     "message": "You have requested to delete your Bravura Safe account. Click the button below to confirm."
   },
   "myOrganization": {
-    "message": "My organisation"
+    "message": "My team"
   },
   "deleteOrganization": {
-    "message": "Delete organisation"
+    "message": "Delete team"
   },
   "deletingOrganizationContentWarning": {
     "message": "Enter the master password to confirm deletion of $ORGANIZATION$ and all associated data. Vault data in $ORGANIZATION$ includes:",
@@ -2816,13 +2816,13 @@
     }
   },
   "organizationDeleted": {
-    "message": "Organisation deleted"
+    "message": "Team deleted"
   },
   "organizationDeletedDesc": {
-    "message": "The organisation and all associated data has been deleted."
+    "message": "The team and all associated data has been deleted."
   },
   "organizationUpdated": {
-    "message": "Organisation updated"
+    "message": "Team updated"
   },
   "taxInformation": {
     "message": "Tax information"
@@ -2865,7 +2865,7 @@
     "message": "We have made two micro-deposits to your bank account (it may take 1-2 business days to show up). Enter these amounts to verify the bank account."
   },
   "verifyBankAccountInitialDesc": {
-    "message": "Payment with a bank account is only available to customers in the United States. You will be required to verify your bank account. We will make two micro-deposits within the next 1-2 business days. Enter these amounts on the organisation's billing page to verify the bank account."
+    "message": "Payment with a bank account is only available to customers in the United States. You will be required to verify your bank account. We will make two micro-deposits within the next 1-2 business days. Enter these amounts on the team's billing page to verify the bank account."
   },
   "verifyBankAccountFailureWarning": {
     "message": "Failure to verify the bank account will result in a missed payment and your subscription being disabled."
@@ -3053,16 +3053,16 @@
     "message": "Upgrade"
   },
   "upgradeOrganization": {
-    "message": "Upgrade organisation"
+    "message": "Upgrade team"
   },
   "upgradeOrganizationDesc": {
-    "message": "This feature is not available for free organisations. Switch to a paid plan to unlock more features."
+    "message": "This feature is not available for free teams. Switch to a paid plan to unlock more features."
   },
   "createOrganizationStep1": {
-    "message": "Create organisation: step 1"
+    "message": "Create team: step 1"
   },
   "createOrganizationCreatePersonalAccount": {
-    "message": "Before creating your organisation, you first need to create a free personal account."
+    "message": "Before creating your team, you first need to create a free personal account."
   },
   "refunded": {
     "message": "Refunded"
@@ -3121,7 +3121,7 @@
     "description": "ex. Date this password was updated"
   },
   "organizationIsDisabled": {
-    "message": "Organisation is disabled."
+    "message": "Team is disabled."
   },
   "licenseIsExpired": {
     "message": "Licence is expired."
@@ -3208,7 +3208,7 @@
     "message": "Rotating the API key will invalidate the previous key. You can rotate your API key if you believe that the current key is no longer safe to use."
   },
   "apiKeyWarning": {
-    "message": "Your API key has full access to the organisation. It should be kept secret."
+    "message": "Your API key has full access to the team. It should be kept secret."
   },
   "userApiKeyDesc": {
     "message": "Your API key can be used to authenticate in the Bravura Safe CLI."
@@ -3254,19 +3254,19 @@
     "message": "Require users to set up two-step login on their personal accounts."
   },
   "twoStepLoginPolicyWarning": {
-    "message": "Organisation members who do not have two-step login enabled for their personal account will be removed from the organisation and will receive an email notifying them about the change."
+    "message": "Team members who do not have two-step login enabled for their personal account will be removed from the team and will receive an email notifying them about the change."
   },
   "twoStepLoginPolicyUserWarning": {
-    "message": "You are a member of an organisation that requires two-step login to be enabled on your user account. If you disable all two-step login providers you will be automatically removed from these organisations."
+    "message": "You are a member of a team that requires two-step login to be enabled on your user account. If you disable all two-step login providers you will be automatically removed from these teams."
   },
   "passwordGeneratorPolicyDesc": {
     "message": "Set minimum requirements for password generator configuration."
   },
   "passwordGeneratorPolicyInEffect": {
-    "message": "One or more organisation policies are affecting your generator settings."
+    "message": "One or more team policies are affecting your generator settings."
   },
   "masterPasswordPolicyInEffect": {
-    "message": "One or more organisation policies require your master password to meet the following requirements:"
+    "message": "One or more team policies require your master password to meet the following requirements:"
   },
   "policyInEffectMinComplexity": {
     "message": "Minimum complexity score of $SCORE$",
@@ -3442,10 +3442,10 @@
     "message": "Identifier"
   },
   "organizationIdentifier": {
-    "message": "Organisation identifier"
+    "message": "Team identifier"
   },
   "ssoLogInWithOrgIdentifier": {
-    "message": "Log in using your organisation's single sign-on portal. Please enter your organisation's identifier to begin."
+    "message": "Log in using your team's single sign-on portal. Please enter your team's identifier to begin."
   },
   "enterpriseSingleSignOn": {
     "message": "Enterprise single sign-on"
@@ -3466,7 +3466,7 @@
     "message": "SSO validation failed"
   },
   "ssoIdentifierRequired": {
-    "message": "Organisation identifier is required."
+    "message": "Team identifier is required."
   },
   "unlinkSso": {
     "message": "Unlink SSO"
@@ -3828,14 +3828,14 @@
     "description": "'Shares' is a plural noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptionsExemption": {
-    "message": "Organisation users that can manage the organisation's policies are exempt from this policy's enforcement."
+    "message": "Team users that can manage the team's policies are exempt from this policy's enforcement."
   },
   "disableHideEmail": {
     "message": "Do not allow users to hide their email address from recipients when creating or editing a Share.",
     "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendOptionsPolicyInEffect": {
-    "message": "The following organisation policies are currently in effect:"
+    "message": "The following team policies are currently in effect:"
   },
   "sendDisableHideEmailInEffect": {
     "message": "Users are not allowed to hide their email address from recipients when creating or editing a Share.",
@@ -4118,22 +4118,22 @@
     "message": "this user"
   },
   "resetPasswordMasterPasswordPolicyInEffect": {
-    "message": "One or more organisation policies require the master password to meet the following requirements:"
+    "message": "One or more team policies require the master password to meet the following requirements:"
   },
   "resetPasswordSuccess": {
     "message": "Password reset success!"
   },
   "resetPasswordEnrollmentWarning": {
-    "message": "Enrollment will allow organisation administrators to change your master password. Are you sure you want to enroll?"
+    "message": "Enrollment will allow team administrators to change your master password. Are you sure you want to enroll?"
   },
   "resetPasswordPolicy": {
     "message": "Master Password Reset"
   },
   "resetPasswordPolicyDescription": {
-    "message": "Allow administrators in the organisation to reset team users' master password."
+    "message": "Allow administrators in the team to reset team users' master password."
   },
   "resetPasswordPolicyWarning": {
-    "message": "Users in the organisation will need to self-enroll or be auto-enrolled before administrators can reset their master password."
+    "message": "Users in the team will need to self-enroll or be auto-enrolled before administrators can reset their master password."
   },
   "resetPasswordPolicyAutoEnroll": {
     "message": "Automatic Enrollment"
@@ -4142,16 +4142,16 @@
     "message": "All users will be automatically enrolled in password reset once their invite is accepted."
   },
   "resetPasswordPolicyAutoEnrollWarning": {
-    "message": "Users already in the organisation will not be retroactively enrolled in password reset. They will need to self-enroll before administrators can reset their master password."
+    "message": "Users already in the team will not be retroactively enrolled in password reset. They will need to self-enroll before administrators can reset their master password."
   },
   "resetPasswordPolicyAutoEnrollCheckbox": {
     "message": "Automatically enroll new users"
   },
   "resetPasswordAutoEnrollInviteWarning": {
-    "message": "This organisation has an enterprise policy that will automatically enroll you in password reset. Enrollment will allow organisation administrators to change your master password."
+    "message": "This team has an enterprise policy that will automatically enroll you in password reset. Enrollment will allow team administrators to change your master password."
   },
   "resetPasswordOrgKeysError": {
-    "message": "Organisation Keys response is null"
+    "message": "Team Keys response is null"
   },
   "resetPasswordDetailsError": {
     "message": "Reset Password Details response is null"
@@ -4353,7 +4353,7 @@
     "message": "Your Master Password was recently changed by an administrator in your team. In order to access the vault, you must update your Master Password now. Proceeding will log you out of your current session, requiring you to log back in. Active sessions on other devices may continue to remain active for up to one hour."
   },
   "masterPasswordInvalidWarning": {
-    "message": "Your Master Password does not meet the policy requirements of this organization. In order to join the organization, you must update your Master Password now. Proceeding will log you out of your current session, requiring you to log back in. Active sessions on other devices may continue to remain active for up to one hour."
+    "message": "Your Master Password does not meet the policy requirements of this team. In order to join the team, you must update your Master Password now. Proceeding will log you out of your current session, requiring you to log back in. Active sessions on other devices may continue to remain active for up to one hour."
   },
   "maximumVaultTimeout": {
     "message": "Vault Timeout"

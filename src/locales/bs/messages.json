@@ -2018,7 +2018,7 @@
     "message": "Enterprise"
   },
   "planDescEnterprise": {
-    "message": "For businesses and other large organizations."
+    "message": "For businesses and other large teams."
   },
   "freeForever": {
     "message": "Free Forever"
@@ -3940,10 +3940,10 @@
     "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendTextDesc": {
-    "message": "The text you want to send."
+    "message": "The text you want to share."
   },
   "sendFileDesc": {
-    "message": "The file you want to send."
+    "message": "The file you want to share."
   },
   "copySendLinkOnSave": {
     "message": "Copy the link to share this Share to my clipboard upon save."
