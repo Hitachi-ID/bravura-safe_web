@@ -671,7 +671,7 @@
     "message": "New Team"
   },
   "noOrganizationsList": {
-    "message": "You do not belong to any organizations. Teams allow you to securely share items with other users."
+    "message": "You do not belong to any teams. Teams allow you to securely share items with other users."
   },
   "versionNumber": {
     "message": "Version $VERSION_NUMBER$",
@@ -2012,13 +2012,13 @@
     "message": "Teams"
   },
   "planDescTeams": {
-    "message": "For businesses and other team organizations."
+    "message": "For businesses and other team teams."
   },
   "planNameEnterprise": {
     "message": "Enterprise"
   },
   "planDescEnterprise": {
-    "message": "For businesses and other large organizations."
+    "message": "For businesses and other large teams."
   },
   "freeForever": {
     "message": "Free Forever"
@@ -3056,7 +3056,7 @@
     "message": "Upgrade Team"
   },
   "upgradeOrganizationDesc": {
-    "message": "This feature is not available for free organizations. Switch to a paid plan to unlock more features."
+    "message": "This feature is not available for free teams. Switch to a paid plan to unlock more features."
   },
   "createOrganizationStep1": {
     "message": "Create Team: Step 1"
@@ -3257,7 +3257,7 @@
     "message": "Team members who are not Owners or Administrators and do not have two-step login enabled for their personal account will be removed from the team and will receive an email notifying them about the change."
   },
   "twoStepLoginPolicyUserWarning": {
-    "message": "You are a member of a team that requires two-step login to be enabled on your user account. If you disable all two-step login providers you will be automatically removed from these organizations."
+    "message": "You are a member of a team that requires two-step login to be enabled on your user account. If you disable all two-step login providers you will be automatically removed from these teams."
   },
   "passwordGeneratorPolicyDesc": {
     "message": "Set minimum requirements for password generator configuration."
@@ -3481,7 +3481,7 @@
     "message": "Single Team"
   },
   "singleOrgDesc": {
-    "message": "Restrict users from being able to join any other organizations."
+    "message": "Restrict users from being able to join any other teams."
   },
   "singleOrgBlockCreateMessage": {
     "message": "Your current team has a policy that does not allow you to join more than one team. Please contact your team admins or sign up from a different Bravura Safe account."
@@ -3654,7 +3654,7 @@
     "message": "Grant and manage emergency access for trusted contacts. Trusted contacts may request access to either View or Takeover your account in case of an emergency. Visit our help page for more information and details into how zero knowledge sharing works."
   },
   "emergencyAccessOwnerWarning": {
-    "message": "You are an Owner of one or more organizations. If you give takeover access to an emergency contact, they will be able to use all your permissions as Owner after a takeover."
+    "message": "You are an Owner of one or more teams. If you give takeover access to an emergency contact, they will be able to use all your permissions as Owner after a takeover."
   },
   "trustedEmergencyContacts": {
     "message": "Trusted emergency contacts"
@@ -3940,10 +3940,10 @@
     "description": "'Share' is a noun and the name of a feature called 'Bravura Safe Share'. It should not be translated."
   },
   "sendTextDesc": {
-    "message": "The text you want to send."
+    "message": "The text you want to share."
   },
   "sendFileDesc": {
-    "message": "The file you want to send."
+    "message": "The file you want to share."
   },
   "copySendLinkOnSave": {
     "message": "Copy the link to share this Share to my clipboard upon save."
@@ -4247,13 +4247,13 @@
     "message": "Provider Admin"
   },
   "providerAdminDesc": {
-    "message": "The highest access user that can manage all aspects of your provider as well as access and manage client organizations."
+    "message": "The highest access user that can manage all aspects of your provider as well as access and manage client teams."
   },
   "serviceUser": {
     "message": "Service User"
   },
   "serviceUserDesc": {
-    "message": "Service users can access and manage all client organizations."
+    "message": "Service users can access and manage all client teams."
   },
   "providerInviteUserDesc": {
     "message": "Invite a new user to your provider by entering their Bravura Safe account email address below. If they do not have a Bravura Safe account already, they will be prompted to create a new account."
