@@ -42,6 +42,6 @@ COPY ./build .
 COPY entrypoint.sh /
 RUN chmod +x /entrypoint.sh
 
-HEALTHCHECK --interval=5m --timeout=3s CMD wget --no-verbose --tries=1 --spider http://localhost:5000 || exit 1
+HEALTHCHECK --interval=1m --timeout=3s CMD wget --no-verbose --tries=1 --spider http://localhost:5000 || exit 1
 
 ENTRYPOINT ["sh", "/entrypoint.sh"]
