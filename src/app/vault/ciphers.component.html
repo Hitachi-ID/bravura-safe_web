@@ -65,7 +65,7 @@
                 (click)="launch(c.login.launchUri)"
               >
                 <i
-                  class="fa fa-fw fa-share-square fa-lg"
+                  class="fa fa-fw fa-share-square-o fa-lg"
                   aria-hidden="true"
                   title="{{ 'launch' | i18n }}"
                 ></i>
@@ -104,7 +104,7 @@
                 (click)="copy(c, c.login.totp, 'verificationCodeTotp', 'TOTP')"
               >
                 <i
-                  class="fa fa-fw fa-clock fa-lg"
+                  class="fa fa-fw fa-clock-o fa-lg"
                   aria-hidden="true"
                   title="{{ 'copyVerificationCode' | i18n }}"
                 ></i>
@@ -156,7 +156,7 @@
                   *ngIf="((!organization && !c.organizationId) || organization) && !c.isDeleted"
                   (click)="clone(c)"
                 >
-                  <i class="fa fa-fw fa-files" aria-hidden="true"></i>
+                  <i class="fa fa-fw fa-files-o" aria-hidden="true"></i>
                   {{ "clone" | i18n }}
                 </a>
                 <a
@@ -166,7 +166,7 @@
                   *ngIf="!organization && !c.organizationId && !c.isDeleted"
                   (click)="share(c)"
                 >
-                  <i class="fa fa-fw fa-arrow-circle-right" aria-hidden="true"></i>
+                  <i class="fa fa-fw fa-arrow-circle-o-right" aria-hidden="true"></i>
                   {{ "moveToOrganization" | i18n }}
                 </a>
                 <a
@@ -190,7 +190,7 @@
                   {{ "eventLogs" | i18n }}
                 </a>
                 <a class="dropdown-item text-danger" href="#" appStopClick (click)="delete(c)">
-                  <i class="fa fa-fw fa-trash" aria-hidden="true"></i>
+                  <i class="fa fa-fw fa-trash-o" aria-hidden="true"></i>
                   {{ (c.isDeleted ? "permanentlyDelete" : "delete") | i18n }}
                 </a>
               </div>

@@ -16,17 +16,17 @@
     <ul class="fa-ul card-ul">
       <li [ngClass]="{ active: selectedAll }">
         <a href="#" appStopClick (click)="selectAll()">
-          <i class="fa fa-li fa-fw fa-filter"></i>{{ "allItems" | i18n }}
+          <i class="fa fa-li fa-fw fa-th"></i>{{ "allItems" | i18n }}
         </a>
       </li>
       <li [ngClass]="{ active: selectedFavorites }" *ngIf="showFavorites">
         <a href="#" appStopClick (click)="selectFavorites()">
-          <i class="fa fa-li fa-fw fa-star-f"></i>{{ "favorites" | i18n }}
+          <i class="fa fa-li fa-fw fa-star"></i>{{ "favorites" | i18n }}
         </a>
       </li>
       <li [ngClass]="{ active: selectedTrash }" *ngIf="showTrash">
         <a href="#" appStopClick (click)="selectTrash()">
-          <i class="fa fa-li fa-fw fa-trash"></i>{{ "trash" | i18n }}
+          <i class="fa fa-li fa-fw fa-trash-o"></i>{{ "trash" | i18n }}
         </a>
       </li>
     </ul>
@@ -46,12 +46,12 @@
       </li>
       <li [ngClass]="{ active: selectedType === cipherType.Identity }">
         <a href="#" appStopClick (click)="selectType(cipherType.Identity)">
-          <i class="fa fa-li fa-fw fa-id-card"></i>{{ "typeIdentity" | i18n }}
+          <i class="fa fa-li fa-fw fa-id-card-o"></i>{{ "typeIdentity" | i18n }}
         </a>
       </li>
       <li [ngClass]="{ active: selectedType === cipherType.SecureNote }">
         <a href="#" appStopClick (click)="selectType(cipherType.SecureNote)">
-          <i class="fa fa-li fa-fw fa-sticky-note"></i>{{ "typeSecureNote" | i18n }}
+          <i class="fa fa-li fa-fw fa-sticky-note-o"></i>{{ "typeSecureNote" | i18n }}
         </a>
       </li>
     </ul>
@@ -118,7 +118,7 @@
                   ></i>
                 </a>
                 <a href="#" class="text-muted" appStopClick (click)="selectFolder(f.node)">
-                  <i class="fa fa-folder" aria-hidden="true"></i>
+                  <i class="fa fa-folder-o" aria-hidden="true"></i>
                 </a>
                 <a href="#" class="text-break" appStopClick (click)="selectFolder(f.node)">
                   {{ f.node.name }}
@@ -192,7 +192,7 @@
                   ></i>
                 </a>
                 <a href="#" class="text-muted" appStopClick (click)="selectCollection(c.node)">
-                  <i class="fa fa-collection" aria-hidden="true"></i>
+                  <i class="fa fa-cube" aria-hidden="true"></i>
                 </a>
                 <a href="#" class="text-break" appStopClick (click)="selectCollection(c.node)">
                   {{ c.node.name }}
