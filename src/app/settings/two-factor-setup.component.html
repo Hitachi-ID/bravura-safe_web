@@ -7,7 +7,7 @@
   {{ "providers" | i18n }}
   <small *ngIf="loading">
     <i
-      class="bwi bwi-spinner bwi-spin bwi-fw text-muted"
+      class="fa fa-spinner fa-spin fa-fw text-muted"
       title="{{ 'loading' | i18n }}"
       aria-hidden="true"
     ></i>
@@ -28,7 +28,7 @@
           {{ p.name }}
           <ng-container *ngIf="p.enabled">
             <i
-              class="bwi bwi-check text-success bwi-fw"
+              class="fa fa-check text-success fa-fw"
               title="{{ 'enabled' | i18n }}"
               aria-hidden="true"
             ></i>

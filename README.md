@@ -2,15 +2,13 @@
 Hitachi ID Systems, Inc. and Bravura Safe are not affiliated with or endorsed by Bitwarden or Bitwarden, Inc.  
 Bitwarden is a trademark or registered trademark of Bitwarden, Inc. in the United States and/or other countries.**
 
-
 The original work is available at [https://github.com/bitwarden/server].
 The original documentation is available at [https://bitwarden.com/help/].
 A complete list of all changes is available in the git history of this project.
 
 This project contains the user interface elements and other core infrastructure items needed for the "web" portion of all bitwarden client applications.
 
-The server project is written in Angular/Node JS.  The codebase can be developed, built, run, and deployed cross-platform on Windows, macOS, and Linux distributions.
-
+The server project is written in Angular/Node JS. The codebase can be developed, built, run, and deployed cross-platform on Windows, macOS, and Linux distributions.
 
 </p>
 

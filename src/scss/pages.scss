@@ -130,8 +130,8 @@ app-org-vault-groupings,
     }
 
     li {
-      > .bwi,
-      > div > .bwi {
+      > .fa,
+      > div > .fa {
         cursor: pointer;
       }
     }
@@ -152,8 +152,8 @@ app-org-vault-groupings,
         }
       }
 
-      > .bwi,
-      > div > .bwi {
+      > .fa,
+      > div > .fa {
         @include themify($themes) {
           color: themed("linkColor");
         }

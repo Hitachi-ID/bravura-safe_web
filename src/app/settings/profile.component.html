@@ -1,9 +1,5 @@
 <div *ngIf="loading">
-  <i
-    class="bwi bwi-spinner bwi-spin text-muted"
-    title="{{ 'loading' | i18n }}"
-    aria-hidden="true"
-  ></i>
+  <i class="fa fa-spinner fa-spin text-muted" title="{{ 'loading' | i18n }}" aria-hidden="true"></i>
   <span class="sr-only">{{ "loading" | i18n }}</span>
 </div>
 <form
@@ -49,8 +45,7 @@
           dynamic="true"
           size="75"
           fontSize="35"
-        >
-        </app-avatar>
+        ></app-avatar>
       </div>
       <hr />
       <p *ngIf="fingerprint">
@@ -61,7 +56,7 @@
     </div>
   </div>
   <button type="submit" class="btn btn-primary btn-submit" [disabled]="form.loading">
-    <i class="bwi bwi-spinner bwi-spin" title="{{ 'loading' | i18n }}" aria-hidden="true"></i>
+    <i class="fa fa-spinner fa-spin" title="{{ 'loading' | i18n }}" aria-hidden="true"></i>
     <span>{{ "save" | i18n }}</span>
   </button>
 </form>
