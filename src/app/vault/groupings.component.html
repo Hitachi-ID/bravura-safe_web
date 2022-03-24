@@ -21,7 +21,7 @@
       </li>
       <li [ngClass]="{ active: selectedFavorites }" *ngIf="showFavorites">
         <a href="#" appStopClick (click)="selectFavorites()">
-          <i class="bwi bwi-li bwi-fw bwi-star"></i>{{ "favorites" | i18n }}
+          <i class="bwi bwi-li bwi-fw bwi-star-f"></i>{{ "favorites" | i18n }}
         </a>
       </li>
       <li [ngClass]="{ active: selectedTrash }" *ngIf="showTrash">
