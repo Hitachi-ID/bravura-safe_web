@@ -174,7 +174,7 @@
               *ngFor="let c of collections"
               [ngClass]="{ expand: c.children.length && !isCollapsed(c.node) }"
             >
-              <div class="d-flex" [ngClass]="{ active: c.node.id === selectedCollectionId }">
+              <div class="d-flex pr-1" [ngClass]="{ active: c.node.id === selectedCollectionId }">
                 <a
                   href="#"
                   class="text-muted"
