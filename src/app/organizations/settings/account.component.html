@@ -2,11 +2,7 @@
   <h1>{{ "myOrganization" | i18n }}</h1>
 </div>
 <div *ngIf="loading">
-  <i
-    class="bwi bwi-spinner bwi-spin text-muted"
-    title="{{ 'loading' | i18n }}"
-    aria-hidden="true"
-  ></i>
+  <i class="fa fa-spinner fa-spin text-muted" title="{{ 'loading' | i18n }}" aria-hidden="true"></i>
   <span class="sr-only">{{ "loading" | i18n }}</span>
 </div>
 <form
@@ -45,7 +41,7 @@
     </div>
   </div>
   <button type="submit" class="btn btn-primary btn-submit" [disabled]="form.loading">
-    <i class="bwi bwi-spinner bwi-spin" title="{{ 'loading' | i18n }}" aria-hidden="true"></i>
+    <i class="fa fa-spinner fa-spin" title="{{ 'loading' | i18n }}" aria-hidden="true"></i>
     <span>{{ "save" | i18n }}</span>
   </button>
 </form>
@@ -64,11 +60,7 @@
   </button>
 </ng-container>
 <div *ngIf="!org || loading">
-  <i
-    class="bwi bwi-spinner bwi-spin text-muted"
-    title="{{ 'loading' | i18n }}"
-    aria-hidden="true"
-  ></i>
+  <i class="fa fa-spinner fa-spin text-muted" title="{{ 'loading' | i18n }}" aria-hidden="true"></i>
   <span class="sr-only">{{ "loading" | i18n }}</span>
 </div>
 <ng-template #deleteOrganizationTemplate></ng-template>

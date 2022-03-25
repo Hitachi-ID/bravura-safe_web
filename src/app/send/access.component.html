@@ -17,7 +17,7 @@
       <div class="card d-block">
         <div class="card-body" *ngIf="loading" class="text-center">
           <i
-            class="bwi bwi-spinner bwi-spin bwi-2x text-muted"
+            class="fa fa-spinner fa-spin fa-2x text-muted"
             title="{{ 'loading' | i18n }}"
             aria-hidden="true"
           ></i>
@@ -46,10 +46,10 @@
               [disabled]="form.loading"
             >
               <span>
-                <i class="bwi bwi-sign-in" aria-hidden="true"></i> {{ "continue" | i18n }}
+                <i class="fa fa-sign-in" aria-hidden="true"></i> {{ "continue" | i18n }}
               </span>
               <i
-                class="bwi bwi-spinner bwi-spin"
+                class="fa fa-spinner fa-spin"
                 title="{{ 'loading' | i18n }}"
                 aria-hidden="true"
               ></i>
@@ -89,14 +89,14 @@
               *ngIf="send.text.hidden"
             >
               <i
-                class="bwi bwi-lg"
+                class="fa fa-lg"
                 aria-hidden="true"
-                [ngClass]="{ 'bwi-eye': !showText, 'bwi-eye-slash': showText }"
+                [ngClass]="{ 'fa-eye': !showText, 'fa-eye-slash': showText }"
               ></i>
               {{ "toggleVisibility" | i18n }}
             </button>
             <button class="btn btn-block btn-link" type="button" (click)="copyText()">
-              <i class="bwi bwi-copy" aria-hidden="true"></i> {{ "copyValue" | i18n }}
+              <i class="fa fa-copy" aria-hidden="true"></i> {{ "copyValue" | i18n }}
             </button>
           </ng-container>
           <!-- File -->
@@ -108,7 +108,7 @@
               (click)="download()"
               *ngIf="!downloading"
             >
-              <i class="bwi bwi-download" aria-hidden="true"></i>
+              <i class="fa fa-download" aria-hidden="true"></i>
               {{ "downloadFile" | i18n }} ({{ send.file.sizeName }})
             </button>
             <button
@@ -118,7 +118,7 @@
               disabled="true"
             >
               <i
-                class="bwi bwi-spinner bwi-spin"
+                class="fa fa-spinner fa-spin"
                 title="{{ 'loading' | i18n }}"
                 aria-hidden="true"
               ></i>

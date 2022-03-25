@@ -163,7 +163,7 @@
 .btn-submit {
   position: relative;
 
-  .bwi-spinner {
+  .fa-spinner {
     align-items: center;
     bottom: 0;
     display: none;
@@ -176,7 +176,7 @@
 
   &:disabled:not(.manual),
   &.loading {
-    .bwi-spinner {
+    .fa-spinner {
       display: flex;
     }
 

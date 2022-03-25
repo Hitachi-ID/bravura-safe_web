@@ -3,8 +3,7 @@
     <div class="col-3 sidebar-panel d-flex flex-column">
       <div class="card border-warning mb-4" *ngIf="showUpdateKey">
         <div class="card-header bg-warning text-white">
-          <i class="bwi bwi-exclamation-triangle bwi-fw" aria-hidden="true"></i>
-          {{ "updateKeyTitle" | i18n }}
+          <i class="fa fa-warning fa-fw" aria-hidden="true"></i> {{ "updateKeyTitle" | i18n }}
         </div>
         <div class="card-body">
           <p>{{ "updateEncryptionKeyShortDesc" | i18n }}</p>
@@ -16,8 +15,7 @@
       <app-verify-email *ngIf="showVerifyEmail" class="d-block mb-4"></app-verify-email>
       <div class="card border-warning mb-4" *ngIf="showBrowserOutdated">
         <div class="card-header bg-warning text-white">
-          <i class="bwi bwi-exclamation-triangle bwi-fw" aria-hidden="true"></i>
-          {{ "updateBrowser" | i18n }}
+          <i class="fa fa-warning fa-fw" aria-hidden="true"></i> {{ "updateBrowser" | i18n }}
         </div>
         <div class="card-body">
           <p>{{ "updateBrowserDesc" | i18n }}</p>
@@ -33,7 +31,7 @@
       </div>
       <div class="card border-success mb-4" *ngIf="showPremiumCallout">
         <div class="card-header bg-success text-white">
-          <i class="bwi bwi-star-f bwi-fw" aria-hidden="true"></i> {{ "goPremium" | i18n }}
+          <i class="fa fa-star fa-fw" aria-hidden="true"></i> {{ "goPremium" | i18n }}
         </div>
         <div class="card-body">
           <p>{{ "premiumUpgradeUnlockFeatures" | i18n }}</p>
@@ -52,7 +50,7 @@
           aria-expanded="false"
           appA11yTitle="{{ 'organizations' | i18n }}"
         >
-          <i class="bwi bwi-cog bwi-lg" aria-hidden="true"></i>
+          <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
           {{ "organizations" | i18n }}
         </button>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
@@ -88,7 +86,7 @@
           <small #actionSpinner [appApiAction]="ciphersComponent.actionPromise">
             <ng-container *ngIf="actionSpinner.loading">
               <i
-                class="bwi bwi-spinner bwi-spin text-muted"
+                class="fa fa-spinner fa-spin text-muted"
                 title="{{ 'loading' | i18n }}"
                 aria-hidden="true"
               ></i>
@@ -105,11 +103,11 @@
             (click)="addCipher()"
             *ngIf="!deleted"
           >
-            <i class="bwi bwi-plus bwi-fw" aria-hidden="true"></i>{{ "addItem" | i18n }}
+            <i class="fa fa-plus fa-fw" aria-hidden="true"></i>{{ "addItem" | i18n }}
           </button>
         </div>
       </div>
-      <app-callout type="warning" *ngIf="deleted" icon="bwi-exclamation-triangle">
+      <app-callout type="warning" *ngIf="deleted" icon="fa-warning">
         {{ trashCleanupWarning }}
       </app-callout>
       <app-vault-ciphers

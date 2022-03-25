@@ -172,7 +172,7 @@ code {
   }
 }
 
-.bwi-icon-above-input {
+.fa-icon-above-input {
   height: 1.5em;
 }
 
@@ -316,8 +316,4 @@ code {
   @include themify($themes) {
     color: themed("textMuted") !important;
   }
-}
-
-button i.bwi {
-  margin-right: 0.25rem;
 }

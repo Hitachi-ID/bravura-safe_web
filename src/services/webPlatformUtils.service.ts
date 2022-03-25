@@ -204,16 +204,16 @@ export class WebPlatformUtilsService implements PlatformUtilsService {
       // If you add custom types to this part, the type to SweetAlertIcon cast below needs to be changed.
       switch (type) {
         case "success":
-          iconClasses = "bwi-check text-success";
+          iconClasses = "fa-check text-success";
           break;
         case "warning":
-          iconClasses = "bwi-exclamation-triangle text-warning";
+          iconClasses = "fa-warning text-warning";
           break;
         case "error":
-          iconClasses = "bwi-error text-danger";
+          iconClasses = "fa-bolt text-danger";
           break;
         case "info":
-          iconClasses = "bwi-info-circle text-info";
+          iconClasses = "fa-info-circle text-info";
           break;
         default:
           break;
@@ -226,7 +226,7 @@ export class WebPlatformUtilsService implements PlatformUtilsService {
     }
 
     const iconHtmlStr =
-      iconClasses != null ? `<i class="swal-custom-icon bwi ${iconClasses}"></i>` : undefined;
+      iconClasses != null ? `<i class="swal-custom-icon fa ${iconClasses}"></i>` : undefined;
     const confirmed = await Swal.fire({
       heightAuto: false,
       buttonsStyling: false,
