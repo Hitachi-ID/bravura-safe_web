@@ -1,5 +1,4 @@
 @mixin filterPanelActive {
-  font-weight: 700;
   border-radius: 0 10px 10px 0;
   @include themify($themes) {
     background-color: themed("filterPanelActiveBackgroundColor");
@@ -7,6 +6,7 @@
   }
   // make sure filter panel color won't be replaced by a child link color
   & a {
+    font-weight: 700;
     @include themify($themes) {
       color: themed("filterPanelActiveColor") !important;
     }
