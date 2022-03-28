@@ -1,7 +1,7 @@
 {
   "name": "@bitwarden/web-vault",
   "version": "2.27.0",
-  "internalVersion": "2022-02",
+  "internalVersion": "2022-03",
   "license": "GPL-3.0",
   "repository": "https://github.com/bitwarden/web",
   "scripts": {
