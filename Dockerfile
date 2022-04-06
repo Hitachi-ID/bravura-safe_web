@@ -18,7 +18,7 @@ RUN set -eux; \
         \
 # verify the signature
         export GNUPGHOME="$(mktemp -d)"; \
-        if [ -n "$(http_proxy+set)" ]; then \
+        if [ -n "${http_proxy+set}" ]; then \
             gpg --batch --keyserver hkps://keys.openpgp.org --keyserver-options "http-proxy=$http_proxy" --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; \
         else \
             gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; \
