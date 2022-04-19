@@ -429,7 +429,7 @@
     "message": "Delete selected"
   },
   "moveSelected": {
-    "message": "Move selected"
+    "message": "Move Selected to Folder"
   },
   "selectAll": {
     "message": "Select all"
