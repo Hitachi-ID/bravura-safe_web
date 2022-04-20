@@ -6,7 +6,7 @@
   <ng-container *ngIf="loaded">
     <ul class="fa-ul card-ul carets" *ngIf="organizations && organizations.length">
       <li *ngFor="let o of organizations" class="d-flex" (click)="navigateOrg(o.id)">
-        <a [routerLink]="['/organizations', o.id]" class="text-body">
+        <a [routerLink]="['/organizations', o.id]" class="text-body text-break">
           {{ o.name }}
           <ng-container *ngIf="!o.enabled">
             <i
