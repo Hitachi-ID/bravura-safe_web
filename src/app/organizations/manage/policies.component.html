@@ -7,15 +7,17 @@
 </ng-container>
 <table class="table table-hover table-list" *ngIf="!loading">
   <tbody>
-    <tr *ngFor="let p of policies">
-      <td *ngIf="p.display(organization)">
-        <a href="#" appStopClick (click)="edit(p)">{{ p.name | i18n }}</a>
-        <span class="badge badge-success" *ngIf="policiesEnabledMap.get(p.type)">{{
-          "enabled" | i18n
-        }}</span>
-        <small class="text-muted d-block">{{ p.description | i18n }}</small>
-      </td>
-    </tr>
+    <ng-template ngFor let-p [ngForOf]="policies">
+      <tr *ngIf="p.display(organization)">
+        <td>
+          <a href="#" appStopClick (click)="edit(p)">{{ p.name | i18n }}</a>
+          <span class="badge badge-success" *ngIf="policiesEnabledMap.get(p.type)">{{
+            "enabled" | i18n
+          }}</span>
+          <small class="text-muted d-block">{{ p.description | i18n }}</small>
+        </td>
+      </tr>
+    </ng-template>
   </tbody>
 </table>
 <ng-template #editTemplate></ng-template>
