@@ -197,6 +197,9 @@ app-vault {
           box-shadow: 0 3px 10px themed("dropdownShadow");
         }
         app-organizations {
+          p {
+            margin: 5px 10px 10px;
+          }
           p.text-muted {
             i.fa.fa-spinner.fa-spin,
             span.sr-only {
