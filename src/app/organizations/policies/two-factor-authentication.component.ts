@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 
 import { PolicyType } from "jslib-common/enums/policyType";
+import { Organization } from "jslib-common/models/domain/organization";
 
 import { BasePolicy, BasePolicyComponent } from "./base-policy.component";
 
@@ -9,6 +10,10 @@ export class TwoFactorAuthenticationPolicy extends BasePolicy {
   description = "twoStepLoginPolicyDesc";
   type = PolicyType.TwoFactorAuthentication;
   component = TwoFactorAuthenticationPolicyComponent;
+
+  display(organization: Organization) {
+    return organization.use2fa;
+  }
 }
 
 @Component({
